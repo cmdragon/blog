@@ -12,7 +12,7 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt.js
+  - nuxt
   - 重定向
   - SSR
   - 钩子

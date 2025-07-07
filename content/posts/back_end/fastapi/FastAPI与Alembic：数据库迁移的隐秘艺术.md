@@ -9,10 +9,10 @@ summary:
   Alembic是SQLAlchemy作者开发的数据库迁移工具，用于管理数据库结构的版本迭代。其核心工作原理包括版本仓库构建、差异检测机制和迁移脚本生成。FastAPI集成Alembic可实现应用逻辑与数据库结构的同步演进。通过配置`alembic/env.py`，Alembic能够扫描模型类并与数据库结构进行对比，生成包含差异操作的迁移脚本。典型命令如`alembic revision --autogenerate -m "add user table"`。迁移脚本包含`upgrade`和`downgrade`方法，分别用于升级和回滚操作。Alembic通过对象关系映射对比实现智能生成，确保数据库结构的准确变更。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - Alembic
   - 数据库迁移
   - SQLAlchemy

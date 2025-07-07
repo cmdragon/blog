@@ -9,10 +9,10 @@ summary:
   FastAPI生产环境权限配置涉及多个核心要素，包括用户认证、权限验证和资源访问控制。生产环境需满足HTTPS强制启用、强密码策略、登录失败锁定机制等安全要求。权限验证通过依赖注入实现，推荐使用RBAC模型进行角色权限管理。动态权限配置支持通过接口添加角色权限。实践案例展示了基于组织架构的文件下载权限控制。常见报错如403 Forbidden和422 Validation Error，需检查权限配置和请求头格式。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - 权限管理
   - 生产环境
   - RBAC模型

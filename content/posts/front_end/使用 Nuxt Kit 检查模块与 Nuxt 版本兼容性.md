@@ -18,7 +18,7 @@ tags:
   - 检查
   - 模块
   - 版本
-  - Nuxt3
+  - nuxt
   - Nuxt2
 ---
 

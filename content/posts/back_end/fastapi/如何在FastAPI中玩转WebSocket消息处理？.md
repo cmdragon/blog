@@ -9,11 +9,11 @@ summary:
   FastAPI 提供了强大的 WebSocket 支持，适用于多种实时通信场景。通过 `WebSocket` 类，可以实现文本消息的接收与发送，支持实时聊天、协同编辑等应用。对于二进制数据传输，使用 `receive_bytes()` 和 `send_bytes()` 方法，适合处理图片、音频等文件。JSON 消息可通过 Pydantic 模型自动解析和验证，确保数据结构正确。此外，通过 `asyncio.wait_for` 实现超时控制，定期发送心跳包维持连接。WebSocket 支持多种消息类型，结合异常处理机制，确保通信的稳定性和可靠性。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - WebSocket
-  - FastAPI
+  - fastapi
   - 实时通信
   - 二进制数据传输
   - JSON序列化

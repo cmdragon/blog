@@ -9,10 +9,10 @@ summary:
   MongoDB聚合管道是一种分阶段处理数据的流水线，通过$match、$group等阶段对文档进行特定操作，具有内存优化和原生操作的优势。聚合查询常用阶段包括$match、$group、$project等，适用于订单分析等场景。优化策略包括遵循ESR原则创建索引、使用$facet实现高效分页。常见错误如内存限制和游标配置问题，可通过添加`allowDiskUse=True`和正确处理游标解决。进阶技巧包括使用$expr实现复杂逻辑、日期处理和条件投影。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - MongoDB
   - 聚合管道
   - 查询优化

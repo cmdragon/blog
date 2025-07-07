@@ -9,11 +9,11 @@ summary:
   在 FastAPI 中，使用 Pydantic 模型实现动态条件必填字段时，需结合 `Field` 的 `depends` 参数、`@model_validator(mode='before')` 装饰器和条件判断逻辑。例如，用户注册接口根据 `register_type` 动态决定 `email` 或 `mobile` 字段是否必填，并在 `accept_promotion=True` 时要求至少填写一种联系方式。通过 `@model_validator` 在类型转换前验证字段值，确保数据符合条件。测试用例和常见报错解决方案帮助调试和优化验证逻辑。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - Pydantic
-  - FastAPI
+  - fastapi
   - 动态必填字段
   - 数据验证
   - 用户注册

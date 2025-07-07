@@ -13,7 +13,7 @@ categories:
 
 tags:
   - SEO优化
-  - Nuxt3
+  - nuxt
   - Web开发
   - 代码示例
   - 元标签

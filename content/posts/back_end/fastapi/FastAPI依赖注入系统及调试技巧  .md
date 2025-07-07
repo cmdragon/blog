@@ -9,10 +9,10 @@ summary:
   FastAPI的依赖注入系统采用树状结构管理依赖关系，自动解析并执行依赖项。复杂依赖关系可能导致循环依赖、性能问题、逻辑错误和调试困难。使用FastAPI内置调试接口和pydeps工具可生成依赖图，帮助可视化调试。通过重构代码打破循环依赖，使用lru_cache缓存实例，可解决常见报错如DependencyCycleError和DependencyNotInstantiableError。保持依赖树层级不超过5层，定期检查依赖结构，编写单元测试，使用类型提示，可预防问题。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - 依赖注入
   - 调试工具
   - 循环依赖

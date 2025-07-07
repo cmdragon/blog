@@ -9,10 +9,10 @@ summary:
   FastAPI 的安全机制基于 OAuth2 规范、JWT 和依赖注入系统三大核心组件，提供了标准化的授权框架和无状态的身份验证。OAuth2 密码流通过 `CryptContext` 进行密码哈希处理，`OAuth2PasswordBearer` 自动提取和验证 Bearer Token，JWT 令牌包含过期时间，确保服务端无需存储会话状态。依赖注入系统通过 `Depends()` 实现身份验证逻辑的解耦。典型请求流程包括 Token 验证、JWT 解码和用户验证，确保请求的合法性。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - 安全机制
   - OAuth2
   - JWT

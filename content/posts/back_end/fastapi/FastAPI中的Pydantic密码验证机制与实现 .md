@@ -10,10 +10,10 @@ summary:
 
 categories:
    - 后端开发
-   - FastAPI
+   - fastapi
 
 tags:
-   - FastAPI
+   - fastapi
    - 密码验证
    - Pydantic
    - 数据验证

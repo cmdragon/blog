@@ -9,11 +9,11 @@ summary:
   OAuth2 是现代应用程序实现安全认证的行业标准协议，通过令牌而非直接使用用户凭证进行授权。FastAPI 提供 `OAuth2PasswordBearer` 类支持密码授权模式，流程包括用户提交凭证、服务器验证、生成访问令牌及验证令牌有效性。配置安全模块需安装依赖库并创建 `security.py`，包含密码哈希、验证及 JWT 令牌生成功能。用户认证通过模拟数据库实现，提供登录接口和受保护路由。安全路由保护机制依赖 `get_current_user` 函数验证令牌。进阶实践包括刷新令牌、权限分级和速率限制，遵循 OWASP 安全规范。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - OAuth2
-  - FastAPI
+  - fastapi
   - 用户认证
   - JWT
   - 安全路由

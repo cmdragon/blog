@@ -12,7 +12,7 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt.js
+  - nuxt
   - 数据水合
   - SSR
   - 前端

@@ -9,10 +9,10 @@ summary:
   FastAPI 安全认证与 RBAC 系统原理基于角色的访问控制（RBAC）模型，包含用户、角色和权限三个核心要素。通过 JWT 令牌实现认证，动态权限依赖注入进行权限校验。数据模型使用 Pydantic 和 SQLAlchemy 构建，密码存储采用 bcrypt 加密，并引入请求速率限制防止暴力破解。单元测试和错误处理确保系统稳定性，JWT 令牌设置过期时间以降低泄露风险。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - RBAC
   - 安全认证
   - JWT
@@ -270,7 +270,7 @@ def test_admin_access():
 所有代码在以下环境验证通过：
 
 - Python 3.8+
-- FastAPI 0.95+
+- fastapi 0.95+
 - SQLAlchemy 1.4+
 - Redis 6.2+
 

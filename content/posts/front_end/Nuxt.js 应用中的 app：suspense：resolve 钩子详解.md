@@ -12,7 +12,7 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt.js
+  - nuxt
   - app:suspense:resolve
   - Vue Suspense
   - 异步数据

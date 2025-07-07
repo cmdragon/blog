@@ -12,7 +12,7 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt.js
+  - nuxt
   - 重启方法
   - 应用重启
   - 硬重启

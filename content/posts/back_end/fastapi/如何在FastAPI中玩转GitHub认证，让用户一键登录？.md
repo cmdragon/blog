@@ -9,12 +9,12 @@ summary:
   GitHub第三方认证集成通过OAuth2.0授权码流程实现，包含用户跳转GitHub认证、获取授权码、交换访问令牌及调用API获取用户信息四个步骤。首先需在GitHub注册应用，获取CLIENT_ID和CLIENT_SECRET。使用FastAPI实现认证流程，包括初始化认证、处理回调、生成JWT令牌及验证用户。安全措施包括使用state参数防止CSRF攻击和正确配置Authorization头。常见问题如redirect_uri不匹配、invalid_state错误和JWT解码失败，需检查回调地址、state一致性和SECRET_KEY配置。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - GitHub认证
   - OAuth2.0
-  - FastAPI
+  - fastapi
   - JWT
   - 第三方登录
   - 安全增强

@@ -9,11 +9,11 @@ summary:
   MongoDB与FastAPI的基础集成方法。首先，环境要求包括Python 3.8+、MongoDB 4.4+、FastAPI 0.95+和Motor 3.1+，并提供了依赖安装命令。其次，通过Motor驱动配置异步数据库连接，使用Pydantic进行数据验证，并实现异步CRUD操作。此外，还展示了聚合管道实践和索引优化策略，如创建单字段索引、复合索引和文本索引。最后，提供了常见报错的解决方案，如ServerSelectionTimeoutError、ValidationError和查询性能低下的处理方法。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - MongoDB
-  - FastAPI
+  - fastapi
   - 异步编程
   - 数据库集成
   - CRUD操作
@@ -40,7 +40,7 @@ tags:
 
 - Python 3.8+
 - MongoDB 4.4+
-- FastAPI 0.95+
+- fastapi 0.95+
 - Motor 3.1+
 
 安装所需依赖：

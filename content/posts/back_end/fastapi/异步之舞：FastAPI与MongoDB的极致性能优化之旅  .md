@@ -9,10 +9,10 @@ summary:
   FastAPI与MongoDB的异步写入优化通过Motor驱动实现非阻塞I/O操作，显著提升吞吐量。Motor驱动深度集成支持批量写入优化，使用bulk_write方法比单条插入快10倍以上。聚合管道性能调优通过索引优化策略和典型聚合场景提升查询效率。实战案例展示了构建可处理10万TPS的日志处理API，通过批量插入和异步操作实现高效日志处理。常见报错解决方案包括验证错误处理和预防建议，确保API稳定性和数据完整性。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - MongoDB
   - 异步写入
   - Motor驱动

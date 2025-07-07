@@ -9,7 +9,7 @@ summary:
   RBAC权限模型通过用户、角色和权限的关联实现访问控制，核心组件包括用户、角色、权限和API端点。数据模型使用SQLAlchemy定义，包含用户、角色、权限表及中间关联表。权限校验流程通过中间件实现，动态权限注入支持灵活路由配置。敏感操作审计日志记录用户访问信息，包括时间、端点和处理时长。常见报错如JWTDecodeError和NoneType错误，需检查令牌格式和用户处理。运行环境要求FastAPI、SQLAlchemy等，建议使用SSL加密部署。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - RBAC
@@ -17,7 +17,7 @@ tags:
   - 访问控制
   - 中间件
   - 审计日志
-  - FastAPI
+  - fastapi
   - 安全认证
 
 ---

@@ -12,7 +12,7 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt.js
+  - nuxt
   - 生命周期
   - ready钩子
   - 应用初始化

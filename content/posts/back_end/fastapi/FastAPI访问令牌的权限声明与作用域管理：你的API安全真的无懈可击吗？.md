@@ -9,10 +9,10 @@ summary:
   FastAPI中，权限声明通过JWT令牌的`scopes`字段定义用户访问资源范围，如read、write、admin。使用`OAuth2PasswordBearer`配置令牌获取方式和作用域说明，`jwt`进行令牌编解码。通过依赖注入实现权限验证，确保用户访问特定端点时具备相应权限。常见错误包括422（缺少Authorization字段）和401（无效凭证），建议使用RSA非对称加密并定期轮换密钥。生产环境中，作用域管理可扩展至多租户系统和功能权限开关。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - 访问令牌
   - 权限声明
   - 作用域管理

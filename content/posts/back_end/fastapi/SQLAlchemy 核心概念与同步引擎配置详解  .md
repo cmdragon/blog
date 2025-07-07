@@ -9,13 +9,13 @@ summary:
   SQLAlchemy 的核心概念包括 ORM、Engine、Connection 和 Session。ORM 将数据库表映射为 Python 类，行记录转为对象实例。Engine 管理数据库连接池，Connection 是具体连接，Session 跟踪对象状态变化。同步引擎配置涉及安装依赖、创建引擎、定义模型类及与 FastAPI 集成。连接池通过 pool_size、max_overflow 和 pool_recycle 管理连接。Session 生命周期需正确管理，避免连接泄漏和数据不一致。常见错误包括表不存在、连接池溢出和验证错误，需通过建表、调整连接池配置和请求模型验证解决。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - SQLAlchemy
   - ORM
   - 数据库连接池
-  - FastAPI
+  - fastapi
   - 同步引擎配置
   - 数据库会话管理
   - 错误处理

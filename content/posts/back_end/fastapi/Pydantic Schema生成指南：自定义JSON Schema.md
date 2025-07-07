@@ -9,7 +9,7 @@ summary:
   Pydantic的Schema生成机制支持从基础定义到企业级应用的完整解决方案。默认流程包含字段定义、元数据收集、类型映射和Schema组装四个步骤。通过Field的json_schema_extra可注入字段级扩展元数据，继承GenerateJsonSchema实现类型映射重载。动态生成支持运行时模型构建和环境感知调整，企业级方案涵盖OpenAPI增强和版本化管理。性能优化推荐LRU缓存，错误处理需注意格式兼容性和必填字段验证。最佳实践包括契约优先、版本控制和自动化测试。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - Pydantic Schema生成

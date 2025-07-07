@@ -9,11 +9,11 @@ summary:
   事务回滚机制确保数据库操作的原子性，适用于需要保持数据一致性的场景，如银行转账。FastAPI通过SQLAlchemy的session管理实现事务控制，使用上下文管理器处理事务，确保在异常时回滚。Alembic用于数据库版本控制，生成迁移脚本并管理多环境迁移策略。综合应用案例展示了用户注册时的事务处理，包括检查用户名唯一性、创建用户及其关联记录，并在异常时回滚。课后Quiz和常见报错解决提供了实际操作中的指导和问题处理方法。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - 事务回滚
-  - FastAPI
+  - fastapi
   - SQLAlchemy
   - Alembic
   - 数据库迁移

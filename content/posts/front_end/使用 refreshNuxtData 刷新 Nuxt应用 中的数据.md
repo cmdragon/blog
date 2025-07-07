@@ -13,7 +13,7 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt3
+  - nuxt
   - 数据刷新
   - 页面更新
   - 缓存失效

@@ -9,10 +9,10 @@ summary:
   FastAPI框架中敏感数据处理规范包括密码哈希存储、请求体加密传输和数据库字段级加密。密码哈希使用bcrypt算法，生成随机盐值并进行多轮加密，确保安全存储。请求体加密采用AES-CBC模式，通过中间件实现请求和响应的加解密。数据库字段级加密通过SQLAlchemy的TypeDecorator实现，支持双层次加密方案，并自动记录加密字段的修改日志。生产环境中需定期调整哈希算法的工作因子，并监控安全通告以确保系统安全。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - 敏感数据处理
   - 密码哈希
   - AES加密

@@ -9,10 +9,10 @@ summary:
   FastAPI认证系统的基础架构包括用户注册、登录认证、权限验证和令牌刷新机制。实现步骤涵盖环境准备、数据库模型定义、安全工具函数、路由实现及API端点保护。通过Swagger UI可测试注册、登录和受保护端点。常见报错如422验证错误和401未授权，可通过检查请求参数和令牌有效性解决。JWT令牌由Header、Payload和Signature组成，密码存储使用哈希函数确保安全性。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - 认证系统
   - JWT
   - 用户注册

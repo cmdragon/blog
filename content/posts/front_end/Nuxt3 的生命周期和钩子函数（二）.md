@@ -12,7 +12,7 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt3
+  - nuxt
   - SSR
   - CSR
   - 钩子函数

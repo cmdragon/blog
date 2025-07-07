@@ -9,10 +9,10 @@ summary:
   FastAPI与Tortoise-ORM结合实现关系型数据库关联，支持1:1、1:N和M:N关系。1:N关系通过`ForeignKeyField`定义，M:N关系使用`ManyToManyField`处理。Pydantic模型用于数据验证和序列化，路由实现中通过`prefetch_related`优化查询性能。M:N关系通过中间表操作，支持复杂查询。常见报错包括422验证错误和外键约束失败，可通过事务和类型检查解决。安装依赖后，使用uvicorn启动服务进行测试。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - Tortoise-ORM
   - 关系型数据库
   - 1:N关系

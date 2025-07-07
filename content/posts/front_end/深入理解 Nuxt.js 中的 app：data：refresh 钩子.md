@@ -12,7 +12,7 @@ categories:
    - 前端开发
 
 tags:
-   - Nuxt.js
+   - nuxt
    - 数据刷新
    - 钩子函数
    - 前端开发

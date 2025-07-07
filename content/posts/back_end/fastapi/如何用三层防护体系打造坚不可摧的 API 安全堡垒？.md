@@ -9,10 +9,10 @@ summary:
   FastAPI 安全与认证综合实战涵盖了 JWT 认证、OAuth2 集成和渗透测试等内容。JWT 认证通过生成和验证令牌实现用户身份验证，OAuth2 集成支持第三方登录如 Google，渗透测试则包括信息收集、漏洞扫描和攻击防护。SQL 注入防护通过 SQLAlchemy 防止恶意输入。常见错误如 422 Validation Error 通常由缺失字段或格式错误引起，可通过 Pydantic 模型验证解决。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - JWT认证
   - OAuth2集成
   - 渗透测试

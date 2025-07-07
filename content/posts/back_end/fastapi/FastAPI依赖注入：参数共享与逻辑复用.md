@@ -9,7 +9,7 @@ summary:
   本文系统讲解FastAPI依赖注入的28个技术要点，涵盖参数共享、多级依赖、异步注入、上下文管理等高级场景。通过16个生产级代码示例、7种DI设计模式和3种架构范式，完整呈现现代化API的参数处理体系。包含Dependency Overrides测试方案、Celery集成技巧、以及依赖图可视化调试方法，帮助开发者构建可维护的企业级应用。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - 依赖注入模式

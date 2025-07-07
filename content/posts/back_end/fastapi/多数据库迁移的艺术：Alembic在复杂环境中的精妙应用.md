@@ -9,7 +9,7 @@ summary:
   现代Web应用中，多数据库场景包括主从架构、多租户系统、混合数据库和分库分表。Alembic支持多数据库配置，通过创建多版本目录结构和修改alembic.ini文件实现。环境脚本（env.py）需改造以支持多数据库迁移。模型定义推荐使用pydantic结合SQLAlchemy ORM。迁移操作包括生成独立脚本、执行迁移和查看历史。常见报错如未初始化版本表、缺少数据库配置和模型类未绑定元数据，均有相应解决方案。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - 多数据库迁移

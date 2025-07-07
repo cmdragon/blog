@@ -9,10 +9,10 @@ summary:
   FastAPI框架安全加固方案包括密钥轮换自动化、请求频率限制和安全头部配置。密钥轮换通过定时任务和双密钥过渡机制实现，确保JWT验证的安全性。请求频率限制使用Redis存储和分层防护策略，有效防止恶意请求。安全头部配置通过中间件强制HTTPS，并添加CSP、HSTS等头部，增强应用的安全性。这些措施结合KMS服务和WAF，可显著提升FastAPI应用的安全防护能力。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - 安全加固
   - 密钥轮换
   - 请求频率限制

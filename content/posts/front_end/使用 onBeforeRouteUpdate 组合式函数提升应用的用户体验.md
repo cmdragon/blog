@@ -12,7 +12,7 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt3
+  - nuxt
   - 路由
   - 组件
   - 守卫

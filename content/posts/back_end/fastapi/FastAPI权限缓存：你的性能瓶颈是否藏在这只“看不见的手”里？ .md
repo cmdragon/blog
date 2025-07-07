@@ -9,10 +9,10 @@ summary:
   FastAPI权限缓存与性能优化通过减少重复权限验证提升系统性能。使用`lru_cache`实现内存级缓存，或通过Redis实现分布式缓存，有效降低数据库查询压力。优化策略包括异步IO操作、查询优化、缓存预热和分页优化，显著提升QPS和响应速度。常见报错如403 Forbidden和422 Validation Error，需检查权限缓存和接口参数。缓存策略根据业务场景选择，如单实例部署使用`lru_cache`，微服务集群使用Redis。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - 权限缓存
   - 性能优化
   - Redis

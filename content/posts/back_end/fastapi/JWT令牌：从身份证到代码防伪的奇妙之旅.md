@@ -9,13 +9,13 @@ summary:
   JWT（JSON Web Token）是一种用于安全传输信息的开放标准，由Header、Payload和Signature三部分组成。Header描述算法和令牌类型，Payload存放实际数据，Signature通过密钥和算法生成，确保数据未被篡改。PyJWT库可用于生成和验证JWT令牌，FastAPI框架中可通过OAuth2PasswordBearer实现身份验证。常见问题包括签名验证失败和令牌过期，需确保密钥一致并定期轮换。JWT适用于身份认证和信息交换，但需避免在Payload中存储敏感数据。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - JWT令牌
   - 签名机制
   - PyJWT库
-  - FastAPI集成
+  - fastapi集成
   - 身份认证
   - 安全传输
   - 报错解决方案

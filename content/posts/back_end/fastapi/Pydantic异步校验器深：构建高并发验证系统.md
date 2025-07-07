@@ -9,7 +9,7 @@ summary:
   Pydantic异步校验器基于async/await实现非阻塞验证，支持DNS查询等网络操作。高并发场景下运用批量API验证与异步数据库查询，通过asyncio.gather提升吞吐效率。企业级方案集成分布式锁确保订单唯一性，策略模式动态加载验证规则。流式数据处理采用aiostream进行转换与限流，动态依赖验证实现余额实时获取。错误处理机制包含异步超时控制与批量错误聚合，推荐asyncio.timeout管理响应时限。架构设计遵循非阻塞原则，采用星形拓扑与Semaphore控制并发，需注意事件循环管理及await正确使用，避免异步生成器处理错误。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - Pydantic异步校验

@@ -12,7 +12,7 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt3
+  - nuxt
   - 混合渲染
   - 路由规则
   - 预渲染

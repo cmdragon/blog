@@ -9,13 +9,13 @@ summary:
   API安全的核心需求包括认证与授权机制。认证验证用户身份，如用户名密码登录；授权验证用户是否有权限执行特定操作，如管理员删除数据。典型安全威胁包括未授权访问、凭证泄露和权限提升。FastAPI通过OpenAPI规范支持OAuth2、HTTP Basic等安全方案，依赖注入系统实现灵活验证。OAuth2协议通过授权请求、授权许可、访问令牌等步骤确保安全访问。FastAPI实现OAuth2密码流程示例包括环境准备、核心代码实现和运行测试，确保用户身份验证和权限控制。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - API安全
   - 认证与授权
   - OAuth2协议
-  - FastAPI
+  - fastapi
   - 安全威胁
   - 依赖注入
   - 访问令牌

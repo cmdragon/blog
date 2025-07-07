@@ -9,10 +9,10 @@ summary:
   FastAPI数据库连接池通过预先创建和复用连接，显著降低连接创建开销。配置参数包括最小连接数（minsize）、最大连接数（maxsize）和空闲连接存活时间（max_inactive_connection_lifetime）。通过Tortoise-ORM集成Prometheus和Grafana实现实时监控，优化连接管理。常见问题如连接池耗尽和连接泄漏，可通过增加maxsize、检查未提交事务和使用async with管理事务来解决。定期监控和优化连接池参数是确保数据库性能的关键。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - 数据库连接池
   - Tortoise-ORM
   - 性能监控

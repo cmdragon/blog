@@ -12,7 +12,7 @@ categories:
    - 前端开发
 
 tags:
-   - Nuxt3
+   - nuxt
    - Web开发
    - URL处理
    - 组件函数

@@ -12,7 +12,7 @@ categories:
    - 前端开发
 
 tags:
-   - Nuxt.js
+   - nuxt
    - Vue.js
    - SSR
    - 服务器端渲染

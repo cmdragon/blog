@@ -9,10 +9,10 @@ summary:
   FastAPI与SQLAlchemy的集成通过创建虚拟环境、安装依赖、配置数据库连接、定义数据模型和实现路由来完成。核心模块包括数据库引擎、会话工厂和声明性基类。数据模型通过SQLAlchemy定义，路由通过FastAPI实现，支持创建和查询用户。测试接口通过curl命令进行，常见报错包括表不存在、请求体验证错误和会话不可用。高级配置涉及连接池优化和单元测试。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - SQLAlchemy
   - 数据库集成
   - 依赖注入

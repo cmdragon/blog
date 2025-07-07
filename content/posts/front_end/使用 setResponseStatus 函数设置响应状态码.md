@@ -13,7 +13,7 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt.js
+  - nuxt
   - 响应码
   - SSR
   - 404页面

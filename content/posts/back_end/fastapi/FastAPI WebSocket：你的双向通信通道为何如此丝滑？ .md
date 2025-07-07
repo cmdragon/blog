@@ -9,11 +9,11 @@ summary:
   FastAPI 的 WebSocket 路由通过 `@app.websocket` 装饰器声明，支持路径参数和查询参数验证。连接建立时需显式调用 `websocket.accept()`，并通过 `receive_text()` 和 `send_text()` 实现双向通信。握手验证可自定义，失败时返回 403 状态码并关闭连接。连接状态可通过字典维护，心跳检测机制确保连接活跃。常见错误包括 403 握手失败、1006 非正常断开和数据类型错误，需通过正确关闭连接和数据类型处理解决。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - WebSocket
-  - FastAPI
+  - fastapi
   - 路由声明
   - 握手验证
   - 连接管理

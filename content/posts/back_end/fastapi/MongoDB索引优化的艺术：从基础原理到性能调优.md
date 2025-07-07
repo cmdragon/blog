@@ -9,13 +9,13 @@ summary:
   MongoDB索引优化与性能调优的核心策略包括：索引基础原理，如单字段、复合、唯一和TTL索引；索引创建与管理，通过FastAPI集成Motor实现；查询性能优化，使用Explain分析、覆盖查询和聚合管道优化；实战案例，如电商平台订单查询优化；常见报错解决方案，如索引创建失败、查询性能下降和文档扫描过多问题。这些策略能显著提升查询速度和系统性能。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - MongoDB
   - 索引优化
   - 性能调优
-  - FastAPI
+  - fastapi
   - 查询分析
   - 聚合管道
   - 错误处理
@@ -230,7 +230,7 @@ async def rebuild_indexes():
 **运行环境要求：**
 
 - Python 3.8+
-- FastAPI==0.78.0
+- fastapi==0.78.0
 - motor==3.1.1
 - pydantic==1.10.7
 - uvicorn==0.18.2

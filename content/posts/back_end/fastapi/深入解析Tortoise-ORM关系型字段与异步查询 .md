@@ -9,13 +9,13 @@ summary:
   Tortoise-ORM在FastAPI异步架构中处理模型关系时，与传统同步ORM有显著差异。通过`ForeignKeyField`和`ManyToManyField`定义关系，使用字符串形式的模型路径进行引用。异步查询必须通过`await`调用，`prefetch_related`实现关联数据的异步预加载。`in_transaction`上下文管理器处理异步事务，`add()`/`remove()`方法维护多对多关系。性能测试显示异步ORM在单条插入、批量关联查询和多对多关系维护上均有显著提升。常见报错包括事务管理错误、连接关闭和模型引用路径错误，需正确使用事务管理和`await`。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - Tortoise-ORM
   - 异步数据库操作
   - 模型关系定义
-  - FastAPI集成
+  - fastapi集成
   - 多对多关系处理
   - 性能优化
   - 异步事务管理

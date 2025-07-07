@@ -9,10 +9,10 @@ summary:
   FastAPI与SQLAlchemy集成指南：首先配置SQLite数据库连接，创建会话工厂和声明性基类。定义用户模型并映射表结构，使用Pydantic进行数据验证。通过依赖项获取数据库会话，实现用户创建和转账功能。事务控制通过显式开始事务和错误处理确保数据一致性。常见问题包括422验证错误、500服务器错误和完整性错误，需检查请求体、数据库连接和约束。课后Quiz解答事务回滚、SQL注入防护和并发写操作处理。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - SQLAlchemy
   - 数据库集成
   - 事务管理

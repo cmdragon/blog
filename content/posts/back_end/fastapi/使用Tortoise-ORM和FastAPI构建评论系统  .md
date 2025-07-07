@@ -9,12 +9,12 @@ summary:
   在models.py中定义了Comment模型，包含id、content、created_at、updated_at字段，并与User和Article模型建立外键关系。schemas.py中定义了CommentBase、CommentCreate、CommentUpdate和CommentResponse等Pydantic模型，用于数据验证和响应。路由层实现了创建、获取和删除评论的API，使用get_or_none处理不存在的评论，并捕获异常。测试接口通过requests进行创建和异常测试。常见报错包括外键约束失败、验证错误和事件循环未关闭，需检查外键值、请求体匹配和正确关闭事件循环。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - Tortoise-ORM
   - Pydantic
-  - FastAPI
+  - fastapi
   - 评论系统
   - 数据库模型
   - 数据验证

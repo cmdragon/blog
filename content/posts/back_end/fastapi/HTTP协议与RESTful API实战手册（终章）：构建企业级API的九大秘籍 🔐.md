@@ -9,7 +9,7 @@ summary:
   🏭 本文作为系列终章，通过物流管理系统的案例，揭秘API开发的完整流程。你将掌握：</br> 深度解读28个HTTP协议进阶特性（ETag/CORS/内容协商）</br> 实现RBAC权限系统与OAuth2授权中心</br> 设计支持千万级数据的分页/过滤/排序方案</br> 用OpenTelemetry实现API全链路监控
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - 企业级API设计

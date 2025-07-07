@@ -9,10 +9,10 @@ summary:
   FastAPI与Tortoise-ORM结合实现全链路开发，涵盖环境配置、数据模型定义、Pydantic模式设计及API端点实现。文章模型包含软删除功能，通过`is_deleted`字段实现逻辑删除。API支持创建、分页查询、条件更新和软删除操作，确保数据安全与完整性。分页机制通过`offset`和`limit`实现，条件更新使用`exclude_unset=True`避免未传字段被覆盖。软删除通过`filter().update()`实现原子操作。系统具备用户认证、输入验证、防注入和细粒度权限控制等安全特性。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - TortoiseORM
   - 全链路开发
   - 数据模型

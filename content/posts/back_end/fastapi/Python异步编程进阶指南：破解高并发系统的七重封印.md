@@ -9,7 +9,7 @@ summary:
   🦾 本文是异步编程系列的终极篇章：</br>异步上下文管理器与迭代器的工程化应用</br>跨进程通信的7种异步模式（Redis/RabbitMQ/Kafka）</br>异步单元测试与性能剖析的完整方法论</br>十万级QPS系统的线程池/协程池混合调度方案
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - 异步高级模式

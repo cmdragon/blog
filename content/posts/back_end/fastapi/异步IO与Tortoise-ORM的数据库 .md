@@ -9,13 +9,13 @@ summary:
   异步IO与同步IO的核心区别在于阻塞与非阻塞模式。Tortoise-ORM通过协议层、连接池层和ORM层实现异步数据库操作，支持高效的并发处理。用户管理系统搭建中，Tortoise-ORM与FastAPI结合，实现了用户创建和查询功能，并通过Pydantic进行数据校验。异步ORM适用于高并发场景，参数化查询可防止SQL注入。最佳实践包括连接池配置、查询优化和事务管理，确保系统性能和数据一致性。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - 异步IO
   - Tortoise-ORM
   - 数据库操作
-  - FastAPI
+  - fastapi
   - 异步编程
   - 连接池
   - 事务管理

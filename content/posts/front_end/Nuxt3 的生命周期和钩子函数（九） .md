@@ -12,7 +12,7 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt3
+  - nuxt
   - Vite
   - 生命周期
   - 钩子函数

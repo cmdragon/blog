@@ -12,7 +12,7 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt3
+  - nuxt
   - 页面开发
   - 实战探索
   - 前端开发
@@ -1035,14 +1035,14 @@ export default {
 ### 10.2 Nuxt3 社区与资源
 
 - [cmdragon's Blog](https://cmdragon.cn)
-- Nuxt3 官方网站：<https://nuxtjs.org/docs/guide/release-notes/nuxt3>
-- Nuxt3 官方文档：<https://nuxtjs.org/docs/get-started/installation>
-- Nuxt3 官方 GitHub 仓库：<https://github.com/nuxt/nuxt.js>
-- Nuxt3 社区论坛：<https://forum.nuxtjs.org/>
-- Nuxt3 社区 Discord 频道：<https://discord.com/invite/nuxt>
-- Nuxt3 社区 Stack Overflow 频道：<https://stackoverflow.com/questions/tagged/nuxt.js>
-- Nuxt3 社区 Twitter 账号：<https://twitter.com/nuxt_js>
-- Nuxt3 社区 YouTube 频道：<https://www.youtube.com/channel/UC3fCJlDHUxO8QCVxr_OyKZg>
+- nuxt 官方网站：<https://nuxtjs.org/docs/guide/release-notes/nuxt3>
+- nuxt 官方文档：<https://nuxtjs.org/docs/get-started/installation>
+- nuxt 官方 GitHub 仓库：<https://github.com/nuxt/nuxt.js>
+- nuxt 社区论坛：<https://forum.nuxtjs.org/>
+- nuxt 社区 Discord 频道：<https://discord.com/invite/nuxt>
+- nuxt 社区 Stack Overflow 频道：<https://stackoverflow.com/questions/tagged/nuxt.js>
+- nuxt 社区 Twitter 账号：<https://twitter.com/nuxt_js>
+- nuxt 社区 YouTube 频道：<https://www.youtube.com/channel/UC3fCJlDHUxO8QCVxr_OyKZg>
 
 ## 免费好用的热门在线工具
 

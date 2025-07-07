@@ -12,7 +12,7 @@ categories:
    - 前端开发
 
 tags:
-   - Nuxt.js
+   - nuxt
    - 错误处理
    - 生命周期
    - 钩子

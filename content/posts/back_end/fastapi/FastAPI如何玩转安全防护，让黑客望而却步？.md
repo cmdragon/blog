@@ -9,10 +9,10 @@ summary:
   FastAPI通过内置的OAuth2和JWT支持，提供了开箱即用的安全解决方案，包括认证流程和权限验证。针对OWASP Top10中的SQL注入，FastAPI使用参数化查询进行防护。推荐的工具链集成方案包括Bandit和Dependency-Check，用于自动化安全测试和扫描。典型的安全事件处理流程涵盖事件检测、初步评估、系统隔离、漏洞分析、修复验证和系统恢复。常见报错如JWT验证失败，需检查令牌有效期、签名算法和携带方式。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - 安全架构
   - OAuth2
   - JWT

@@ -10,10 +10,10 @@ summary:
 
 categories:
    - 后端开发
-   - FastAPI
+   - fastapi
 
 tags:
-   - FastAPI
+   - fastapi
    - 依赖注入
    - 路由处理
    - 认证系统

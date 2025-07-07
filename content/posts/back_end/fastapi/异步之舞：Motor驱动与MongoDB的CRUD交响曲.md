@@ -9,14 +9,14 @@ summary:
   Motor 异步驱动是专为 Python 异步框架设计的 MongoDB 连接器，基于 asyncio 实现非阻塞 I/O 操作，提升 FastAPI 的并发处理能力。通过 CRUD 操作示例，展示了如何使用 `insert_one`、`find`、`update_one` 和 `delete` 方法进行文档的创建、查询、更新和删除。聚合管道用于统计用户年龄分布，索引优化策略包括单字段索引和复合索引，遵循 ESR 规则提升查询性能。常见报错如 `ServerSelectionTimeoutError`、`ValidationError` 和 `DuplicateKeyError` 的处理方法也进行了详细说明。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - Motor
   - 异步驱动
   - CRUD操作
   - MongoDB
-  - FastAPI
+  - fastapi
   - 索引优化
   - 聚合管道
 

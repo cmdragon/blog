@@ -9,7 +9,7 @@ summary:
   Alembic迁移脚本冲突检测与合并方案主要解决团队协作中的迁移脚本冲突问题。冲突场景包括并行开发、分支合并和环境差异。通过自动化检测脚本`check_migration_conflicts.py`可识别多个头版本。手动合并流程包括确定基准版本、创建合并分支和编辑迁移文件。合并后通过测试用例验证迁移的兼容性，确保升级和回滚的一致性。常见报错如“Multiple head revisions”和“Failed to alter column”提供了具体的解决方案，确保迁移过程顺利进行。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - Alembic

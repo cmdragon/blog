@@ -13,7 +13,7 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt.js
+  - nuxt
   - close钩子
   - 生命周期
   - 应用关闭

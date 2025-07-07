@@ -9,11 +9,11 @@ summary:
   Web 安全三要素包括机密性、完整性和可用性。机密性通过加密算法保护数据传输和存储，FastAPI 默认支持 HTTPS。完整性通过哈希校验和数字签名确保数据未被篡改，FastAPI 使用 Pydantic 进行数据验证。可用性通过请求速率限制保障服务稳定，使用 Redis 实现分布式限流。HTTPS 通过 TLS 加密通信信道，证书配置可生成自签名证书。安全威胁防御包括 XSS 防护（HTML 转义）、CSRF 防护（令牌验证）和 SQL 注入防护（参数化查询）。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - Web安全
-  - FastAPI
+  - fastapi
   - HTTPS
   - 数据加密
   - XSS防护

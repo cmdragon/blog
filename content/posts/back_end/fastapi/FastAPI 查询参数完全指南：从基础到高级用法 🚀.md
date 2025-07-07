@@ -9,10 +9,10 @@ summary:
   探讨 FastAPI 查询参数的核心机制，涵盖从必需与可选参数、默认值到多参数处理的全方位知识。通过详细的代码示例、课后测验和常见错误解决方案，通过类型转换、校验和默认值设置来构建灵活、高效的 API 接口。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - 查询参数
   - 必需参数
   - 可选参数

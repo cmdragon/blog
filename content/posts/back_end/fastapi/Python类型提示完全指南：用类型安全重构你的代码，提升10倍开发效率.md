@@ -9,7 +9,7 @@ summary:
   你将掌握：类型注解的7种高级写法（含泛型/嵌套类型/异步类型）Pydantic与FastAPI的深度类型集成技巧10个常见类型错误的诊断与修复方案类型驱动开发（TDD）在大型项目中的落地实践
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - Python类型革命
@@ -17,7 +17,7 @@ tags:
   - Pydantic模型验证
   - Mypy实战
   - 代码健壮性
-  - FastAPI最佳实践
+  - fastapi最佳实践
   - 安全编程
 ---
 

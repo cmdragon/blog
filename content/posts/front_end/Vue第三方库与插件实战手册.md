@@ -1294,7 +1294,7 @@ Nuxt.js是一个基于Vue.js的SSR框架，简化了SSR的实现过程。
 3. **路由管理**
 
     - Vue Router：Vue官方的路由管理器，用于构建单页面应用。
-    - Nuxt.js：基于Vue.js的通用应用框架，内置Vue Router。
+    - nuxt：基于Vue.js的通用应用框架，内置Vue Router。
 
 4. **图表库**
 

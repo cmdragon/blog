@@ -9,7 +9,7 @@ summary:
   涵盖字段继承、属性覆盖、多态模型等关键机制。将掌握类型安全的继承体系构建方法，实现企业级数据校验方案，避免传统面向对象继承的常见陷阱。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - Pydantic模型继承

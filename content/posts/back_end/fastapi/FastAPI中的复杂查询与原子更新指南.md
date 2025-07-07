@@ -9,10 +9,10 @@ summary:
   FastAPI 结合 Tortoise-ORM 实现复杂查询与原子更新。通过 Q 对象构建多条件查询，支持 AND、OR、NOT 逻辑运算符，动态组合查询条件。使用 F 表达式进行原子更新，避免竞态条件，确保数据一致性。示例包括订单状态与金额的复杂查询、库存扣减的原子操作，以及商品促销的价格更新。常见错误包括字段拼写错误、类型不匹配和空结果集，需通过模型检查和异常处理解决。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - Tortoise-ORM
   - 复杂查询
   - 原子更新
