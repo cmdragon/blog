@@ -9,10 +9,10 @@ summary:
   本教程深入探讨 FastAPI 中 Cookie 和 Header 参数的读取与设置，涵盖从基础操作到高级用法。通过详细的代码示例、课后测验和常见错误解决方案，帮助初学者快速掌握 FastAPI 中 Cookie 和 Header 参数的使用技巧。您将学习到如何通过 Cookie 和 Header 传递数据、进行数据校验以及优化 API 接口的安全性，从而构建高效、安全的 Web 应用。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - Cookie
   - Header
   - API设计

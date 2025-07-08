@@ -9,10 +9,10 @@ summary:
   在构建现代Web应用程序时，分页是一个不可或缺的功能。无论是处理大量数据还是优化用户体验，分页都起到了至关重要的作用。本文将深入探讨如何在FastAPI中实现分页参数（如page、page_size以及总页数计算），并涵盖相关的核心机制、最佳实践、常见问题及解决方案。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - 分页
   - Web开发
   - 数据库查询

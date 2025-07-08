@@ -9,10 +9,10 @@ summary:
   本文系统阐述FastAPI性能优化的核心方法论，聚焦参数解析机制优化与惰性加载实现。通过12种性能分析工具使用技巧、7种Pydantic高级验证模式、5种异步惰性加载方案，深入剖析影响API性能的关键因素。包含ASGI底层原理、解析器定制开发、依赖树延迟加载等企业级解决方案，助力开发者构建毫秒级响应的API服务。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI性能优化
+  - fastapi性能优化
   - 参数解析加速
   - 惰性加载技术
   - Pydantic验证优化

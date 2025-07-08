@@ -9,14 +9,14 @@ summary:
   Tortoise-ORM通过异步方式实现级联查询与预加载机制，显著提升API性能。模型关联关系基础中，定义一对多关系如作者与文章。级联查询通过`select_related`方法实现，预加载通过`prefetch_related`优化N+1查询问题。实战中，构建高效查询接口，如获取作者详情及最近发布的文章。高级技巧包括嵌套关联预加载、条件预加载和自定义预加载方法。常见报错处理如`RelationNotFoundError`、`QueryTimeoutError`和`ValidationError`。最佳实践建议包括测试环境查询分析、添加Redis缓存层、添加数据库索引和分页限制返回数据量。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - Tortoise-ORM
   - 级联查询
   - 预加载
   - 性能优化
-  - FastAPI
+  - fastapi
   - 数据库关联
   - N+1查询问题
 

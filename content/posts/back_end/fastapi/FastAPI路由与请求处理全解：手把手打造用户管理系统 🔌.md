@@ -9,10 +9,10 @@ summary:
   通过咖啡店点单系统的生动案例，零基础掌握FastAPI路由核心机制。你将：</br> 用真实场景理解@app.get/@app.post等6种HTTP方法装饰器</br> 通过用户管理API实现完整CRUD操作</br> 学习路径参数与查询参数的进阶玩法</br> 获得防误操作锦囊（含参数校验/SQL注入防御方案）
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI路由实战
+  - fastapi路由实战
   - HTTP方法详解
   - 路径参数技巧
   - 查询参数进阶

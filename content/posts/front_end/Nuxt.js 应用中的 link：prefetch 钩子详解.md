@@ -12,7 +12,7 @@ categories:
    - 前端开发
 
 tags:
-   - Nuxt.js
+   - nuxt
    - link:prefetch
    - 钩子
    - 页面加载

@@ -13,7 +13,7 @@ categories:
 
 tags:
   - SEO优化
-  - Nuxt3
+  - nuxt
   - 服务器渲染
   - 网站性能
   - OpenGraph

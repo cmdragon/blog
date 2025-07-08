@@ -9,10 +9,10 @@ summary:
   FastAPI权限管理系统通过RBAC（基于角色的访问控制）实现用户与权限的解耦，核心要素包括用户、角色、权限和访问策略。系统使用OAuth2PasswordBearer进行认证，并通过依赖项工厂函数实现权限检查。权限依赖项支持多层级组合，允许组合多个权限检查或创建组合验证函数。常见报错包括HTTP 403 Forbidden和HTTP 401 Unauthorized，建议通过中间件和单元测试进行预防和验证。开发环境配置简单，使用FastAPI、Pydantic和Uvicorn即可快速搭建系统。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - RBAC
   - 权限管理
   - 多层级权限

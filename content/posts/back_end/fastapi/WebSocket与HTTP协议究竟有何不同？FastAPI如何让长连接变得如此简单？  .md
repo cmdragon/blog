@@ -9,12 +9,12 @@ summary:
   WebSocket协议与HTTP协议在通信模式、连接持久性、数据传输效率、数据格式和服务端推送能力等方面存在显著差异。WebSocket支持全双工双向通信和长连接，而HTTP基于请求-响应模式且为短连接。FastAPI通过简洁的装饰器语法支持WebSocket端点定义，具备异步处理架构、自动协议升级、数据验证集成和连接生命周期管理等特性。常见应用场景包括实时聊天系统、实时数据监控和实时通知推送。WebSocket连接建立时，客户端需发送`Upgrade: websocket`头进行协议升级。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - WebSocket
   - HTTP协议
-  - FastAPI
+  - fastapi
   - 实时通信
   - 长连接
   - 异步处理

@@ -9,10 +9,10 @@ summary:
   本章详细介绍了如何在FastAPI中实现OAuth2密码流程的认证机制。通过创建令牌端点，用户可以使用用户名和密码获取JWT访问令牌。代码示例展示了如何使用`CryptContext`进行密码哈希处理，生成和验证JWT令牌，并实现安全路由保护。此外，还提供了JWT令牌的结构解析、常见报错解决方案以及安全增强建议，如使用HTTPS传输令牌和从环境变量读取密钥。最后，通过课后Quiz巩固了关键概念。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - OAuth2
   - JWT
   - 安全认证

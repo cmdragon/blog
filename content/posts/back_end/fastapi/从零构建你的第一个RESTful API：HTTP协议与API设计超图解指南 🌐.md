@@ -9,7 +9,7 @@ summary:
   🍔 本文通过开汉堡店的趣味比喻，零基础讲解HTTP协议与RESTful API设计。你将：</br> 用快递盒理解HTTP请求/响应的状态码/Header/Body</br> 通过5个汉堡店API案例掌握RESTful设计精髓</br> 亲手实现带验证的API（代码可直接复制运行）</br> 获得错误调试锦囊（含422等9种常见错误解决方案）
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - HTTP协议入门
@@ -17,7 +17,7 @@ tags:
   - API开发基础
   - 状态码图解
   - 请求响应结构
-  - FastAPI快速上手
+  - fastapi快速上手
   - 错误调试手册
 ---
 

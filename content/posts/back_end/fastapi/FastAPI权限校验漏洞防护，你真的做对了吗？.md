@@ -10,10 +10,10 @@ summary:
   FastAPI权限校验是保护API资源的关键，通过认证和授权机制确保用户访问权限。常见安全漏洞包括横向越权、SQL注入和XSS攻击，解决方案包括资源归属验证、参数化查询和安全头部配置。FastAPI通过依赖注入和OAuth2、JWT技术实现模块化权限控制，角色权限模型和权限校验依赖项确保路由安全。常见错误如401 Unauthorized、422 Validation Error和403 Forbidden，需检查令牌、参数验证和用户权限设置。最佳实践强调在后端实施资源归属检查和ORM参数化查询，防止越权和注入风险。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - 权限校验
   - 安全漏洞
   - 防护措施

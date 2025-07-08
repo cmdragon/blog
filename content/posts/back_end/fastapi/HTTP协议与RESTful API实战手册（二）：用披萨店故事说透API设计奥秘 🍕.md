@@ -9,7 +9,7 @@ summary:
   📦 本系列第二篇通过披萨店创业的完整案例，手把手教你：</br> 用外卖订单理解HTTP协议细节</br> 5个RESTful设计常见误区与修正方案</br> 从零搭建支持用户/订单/库存管理的完整API</br> 错误排查工具箱（含11种常见问题速查表）
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - HTTP实战图解
@@ -17,7 +17,7 @@ tags:
   - 披萨店API案例
   - 请求响应可视化
   - 数据验证陷阱
-  - FastAPI快速入门
+  - fastapi快速入门
   - 新手友好教程
 ---
 

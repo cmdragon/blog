@@ -9,10 +9,10 @@ summary:
   FastAPI的中间件机制允许对HTTP请求和响应进行拦截处理，适用于身份认证、日志记录、流量控制等场景。通过注册中间件，可以实现IP黑名单拦截、敏感词过滤等功能。集成JWT认证和角色权限验证，确保API的安全性。常见错误如422、401、500等可通过全局异常处理器进行统一处理。最佳实践包括启用HTTPS、使用环境变量管理敏感配置、定期更新依赖库等，以构建企业级安全的API服务。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - 中间件
   - 安全防护
   - 请求拦截
@@ -257,7 +257,7 @@ async def custom_exception_handler(request, exc):
 运行要求：
 
 - Python 3.7+
-- FastAPI 0.68+
+- fastapi 0.68+
 - Uvicorn 0.15+
 
 安装命令：

@@ -9,11 +9,11 @@ summary:
   MongoDB与FastAPI集成构建日志分析系统，通过Motor驱动实现异步操作，提升数据处理效率。使用Pydantic进行数据验证，配置环境变量，创建REST API端点。聚合管道用于日志统计，如按级别分组计数。索引优化策略通过创建复合索引和文本索引，显著提升查询性能。完整案例实现错误追踪和日志搜索功能。常见报错包括422验证错误和连接超时，提供具体解决方案。课后Quiz强调索引优化、高效分页和写入可靠性。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - MongoDB
-  - FastAPI
+  - fastapi
   - 日志分析
   - 异步编程
   - 聚合管道

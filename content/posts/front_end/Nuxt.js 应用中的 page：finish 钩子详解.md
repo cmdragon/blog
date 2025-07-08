@@ -12,7 +12,7 @@ categories:
    - 前端开发
 
 tags:
-   - Nuxt.js
+   - nuxt
    - page:finish
    - 钩子
    - Suspense

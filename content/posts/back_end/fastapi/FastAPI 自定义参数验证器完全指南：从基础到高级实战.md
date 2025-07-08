@@ -9,10 +9,10 @@ summary:
   本教程深入探讨 FastAPI 中自定义参数验证器的使用，特别是通过 Field 函数进行数据校验。从基础概念到高级用法，通过详细的代码示例、课后测验和常见错误解决方案，帮助初学者快速掌握 FastAPI 中自定义参数验证器的核心知识。您将学习到如何通过自定义验证器优化 API 接口的数据校验、提升代码的可维护性，从而构建高效、安全的 Web 应用。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - 参数验证
   - Field函数
   - API设计

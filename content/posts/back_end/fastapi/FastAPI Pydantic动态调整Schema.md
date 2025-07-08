@@ -9,7 +9,7 @@ summary:
   Pydantic动态Schema支持运行时字段调整和环境变量控制，实现毫秒级配置生效。通过字段级动态注入和条件必填验证，灵活适应业务需求。多租户系统采用条件字段过滤实现数据隔离，配合Feature Flag控制功能发布。性能优化采用LRU缓存和增量更新策略，错误处理包含版本回滚和冲突检测机制。动态Schema需遵循最小变更原则，建议结合GitOps管理变更流程，确保系统稳定性和灵活性。（120字）
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - 动态Schema生成

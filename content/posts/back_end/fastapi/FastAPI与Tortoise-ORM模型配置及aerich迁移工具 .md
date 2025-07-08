@@ -9,10 +9,10 @@ summary:
   FastAPI中使用Tortoise-ORM时，模型类通过继承`tortoise.models.Model`并定义`class Meta`来映射数据库字段。元数据配置包括表名、schema、表注释和联合唯一约束等。初始化数据库连接推荐使用`lifespan`事件处理，配置参数包括数据库URL、模型模块路径等。aerich迁移工具用于管理数据库迁移，通过`init-db`、`migrate`和`upgrade`等命令实现迁移文件的生成和应用。常见问题包括模型注册失败和迁移文件冲突，需检查模型路径和清除冲突文件。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - Tortoise-ORM
   - 数据库迁移
   - aerich工具

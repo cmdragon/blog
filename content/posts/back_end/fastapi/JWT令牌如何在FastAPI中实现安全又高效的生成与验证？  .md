@@ -9,11 +9,11 @@ summary:
   JWT（JSON Web Token）是一种用于安全传递声明信息的开放标准，由头部、载荷和签名三部分组成。在FastAPI中，JWT常用于用户身份认证、API授权和跨服务通信。通过`python-jose`库生成和验证JWT，核心步骤包括配置安全参数、生成访问令牌、实现登录接口和验证机制。令牌生成时需设置过期时间以防止长期盗用，验证时通过中间件检查令牌的有效性。此外，可通过刷新令牌机制更新访问令牌，确保系统的安全性和用户体验。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - JWT
-  - FastAPI
+  - fastapi
   - 令牌生成
   - 令牌验证
   - 身份认证

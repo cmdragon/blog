@@ -9,10 +9,10 @@ summary:
   权限隔离通过用户身份验证和角色判定限制系统资源访问。FastAPI实现步骤包括用户认证、角色识别和访问控制。认证机制采用OAuth2密码授权流程结合JWT令牌，通过创建角色校验依赖项实现授权系统。进阶权限控制模式包括数据级权限隔离，确保用户只能访问自己的数据。测试与验证使用TestClient进行权限测试，常见报错如401 Unauthorized、403 Forbidden和422 Validation Error均有相应解决方案。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - 权限隔离
   - 用户认证
   - 角色识别

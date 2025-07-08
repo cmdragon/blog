@@ -9,7 +9,7 @@ summary:
   用APIRouter实现多版本API共存与灰度发布 </br> 通过中间件打造全链路追踪系统 </br> 自定义星际标准响应模型（含错误码/分页/签名校验） </br> 编写军工级路由测试用例（覆盖率>95%）
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - 路由版本控制

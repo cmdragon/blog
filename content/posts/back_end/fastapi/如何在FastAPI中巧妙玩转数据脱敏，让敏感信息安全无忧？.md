@@ -9,10 +9,10 @@ summary:
   FastAPI框架中，数据脱敏通过Pydantic模型标记敏感字段，使用SecretStr类型自动隐藏敏感数据，并配置模型以排除特定字段。响应数据动态脱敏策略包括响应模型过滤、动态字段排除和条件脱敏实现。第三方加密服务集成如Vault，提供加密数据和密钥管理功能。常见问题如422验证错误和Vault连接超时，通过检查请求体、验证字段类型和更新客户端令牌解决。环境配置和代码验证方法确保安全实践的有效性。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - 数据脱敏
   - Pydantic模型
   - 敏感字段处理

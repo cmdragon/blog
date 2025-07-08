@@ -9,7 +9,7 @@ summary:
   🚀 深入剖析Python异步编程的核心机制。你将掌握：\n 事件循环的底层实现原理与调度算法\n async/await协程的6种高级用法模式\n 异步HTTP请求的性能优化技巧（速度提升15倍+）\n 常见异步陷阱的26种解决方案
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - Python异步革命

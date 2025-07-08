@@ -9,10 +9,10 @@ summary:
   本教程深入探讨 FastAPI 请求体参数与 Pydantic 模型的核心机制，涵盖从基础模型定义到嵌套模型的高级用法。通过详细的代码示例、课后测验和常见错误解决方案，帮助初学者快速掌握 FastAPI 请求体参数的使用技巧。您将学习到如何通过 Pydantic 模型进行数据校验、类型转换和嵌套模型设计，从而构建安全、高效的 API 接口。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - 请求体参数
   - Pydantic模型
   - 嵌套模型

@@ -9,12 +9,12 @@ summary:
   异步编程通过async/await语法实现协程，单线程可处理多个并发请求，适合IO密集型场景。Tortoise-ORM专为异步设计，支持完整ORM功能和多种数据库，与Pydantic深度集成。整合FastAPI时，通过`register_tortoise`初始化ORM，使用`in_transaction`管理事务，确保操作原子性。常见问题包括未使用await返回协程对象和事件循环关闭错误，需通过正确的事件循环启动和事务管理解决。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - 异步编程
   - Tortoise-ORM
-  - FastAPI
+  - fastapi
   - 协程机制
   - 数据库事务
   - Pydantic集成

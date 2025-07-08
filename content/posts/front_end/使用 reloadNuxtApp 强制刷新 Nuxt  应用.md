@@ -13,7 +13,7 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt3
+  - nuxt
   - 强制刷新
   - 页面重载
   - 状态管理

@@ -9,10 +9,10 @@ summary:
   FastAPI的OAuth2PasswordBearer是处理OAuth2密码授权流程的核心工具，负责从请求头提取Bearer Token、验证令牌格式有效性，并管理401未认证的自动响应。通过配置`tokenUrl`和`auto_error`参数，开发者可以定制认证流程。依赖注入系统支持分层解析策略，包括路由级依赖、路径操作函数参数和子依赖项。生产环境中建议使用密码哈希和JWT配置增强安全性。测试时可通过`dependency_overrides`覆盖安全依赖，确保测试环境的灵活性。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - OAuth2
   - 安全认证
   - 依赖注入

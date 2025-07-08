@@ -9,10 +9,10 @@ summary:
   FastAPI的依赖覆盖机制通过重写依赖项实现运行环境切换，适用于隔离测试和模拟特定场景。依赖项存储在`dependency_overrides`字典中，优先检查覆盖字典，使用`@app.dependency_overrides`装饰器进行临时替换，测试完成后自动恢复。通过pytest搭建测试环境，覆盖数据库依赖，使用`TestClient`进行测试。多场景模拟测试案例包括用户权限验证和第三方API模拟，分层测试策略涵盖单元测试、集成测试和E2E测试。最佳实践包括使用pytest参数化进行多场景测试，确保测试覆盖率统计包含依赖注入代码。常见报错如`DependencyOverrideNotFound`和`TestClient响应验证失败`，可通过检查依赖项定义、模拟数据格式和类型注解解决。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - 依赖覆盖
   - 测试环境模拟
   - pytest

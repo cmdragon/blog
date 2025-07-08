@@ -12,7 +12,7 @@ categories:
    - 前端开发
 
 tags:
-   - Nuxt3
+   - nuxt
    - Composables
    - 目录架构
    - 内置API

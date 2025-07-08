@@ -9,10 +9,10 @@ summary:
   MongoDB Change Stream与FastAPI集成可实现毫秒级实时数据处理。Change Stream通过oplog机制捕获数据变更事件，支持insert、update、replace、delete操作监听，具备断点续传和事件过滤能力。集成步骤包括环境准备、基础监听实现、WebSocket实时推送，以及性能优化策略如索引优化、批处理配置和资源控制。生产环境建议使用独立物理节点部署oplog，配置心跳检测，并监控事件处理延迟、内存使用和网络带宽消耗。该方案适用于实时数据分析、即时通讯和物联网等场景。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - MongoDB
   - Change Stream
   - 实时数据处理
@@ -233,7 +233,7 @@ class OrderUpdate(BaseModel):
 
 - MongoDB 5.0 副本集
 - Python 3.9
-- FastAPI 0.68
+- fastapi 0.68
 - Motor 3.3.2
 
 通过本方案可实现每秒处理超过10,000个变更事件，平均延迟控制在50ms以内，适合构建实时数据分析、即时通讯、物联网等场景的应用系统。

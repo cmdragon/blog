@@ -9,11 +9,11 @@ summary:
   Tortoise-ORM通过类继承方式定义数据模型，每个模型类对应数据库中的一张表。模型字段类型与数据库类型自动映射，支持主键、唯一约束、索引等配置。模型间通过外键建立关联，支持异步查询和CRUD操作。FastAPI集成时，通过`register_tortoise`初始化数据库连接，并结合Pydantic模型实现数据验证。常见错误包括字段验证失败和数据库连接超时，可通过中间件和连接池配置解决。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - Tortoise-ORM
-  - FastAPI
+  - fastapi
   - 异步数据库
   - 模型定义
   - 数据库配置

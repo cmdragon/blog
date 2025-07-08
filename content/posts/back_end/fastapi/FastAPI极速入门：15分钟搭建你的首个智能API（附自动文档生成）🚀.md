@@ -9,10 +9,10 @@ summary:
   用虚拟环境打造纯净开发空间的3种方法</br> 只需5行代码实现智能API端点</br> 自动生成媲美大厂的交互式API文档</br> 解决新手必踩的9大坑点（含依赖冲突/端口占用等）
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI零基础
+  - fastapi零基础
   - 虚拟环境配置
   - Uvicorn实战
   - Swagger UI

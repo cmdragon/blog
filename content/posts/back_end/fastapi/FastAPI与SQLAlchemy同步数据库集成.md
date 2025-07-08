@@ -9,10 +9,10 @@ summary:
   FastAPI与SQLAlchemy集成通过ORM框架实现Python类与数据库表的双向转换。SQLAlchemy提供Core层和ORM层，FastAPI选择ORM层以符合Pythonic风格。声明式模型通过`declarative_base()`创建基类，定义数据库结构。数据库引擎通过连接字符串配置，会话管理机制确保操作生命周期。完整示例展示了用户管理API的实现，包括创建和查询接口。常见问题涉及会话报错和数据验证错误，解决方案包括检查表结构和验证请求格式。高级配置技巧包括复合索引优化和事务管理。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - SQLAlchemy
   - ORM框架
   - 数据库集成

@@ -13,7 +13,7 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt.js
+  - nuxt
   - 兼容性
   - 浏览器
   - 钩子

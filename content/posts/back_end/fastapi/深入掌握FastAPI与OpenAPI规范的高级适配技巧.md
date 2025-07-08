@@ -9,11 +9,11 @@ summary:
   OpenAPI规范是RESTful API的标准描述格式，FastAPI通过自动化Schema生成机制将Pydantic模型和路径操作转换为标准OpenAPI文档，实现实时同步、交互式测试和严格验证。开发者可通过FastAPI配置全局文档信息、定制路径操作文档、配置安全方案，并利用Pydantic进行动态Schema生成和自定义字段类型。常见问题如422 Validation Error和文档不更新问题，可通过检查请求体、启用自动重新加载和手动生成最新文档解决。FastAPI与OpenAPI的结合为API开发提供了强大的文档化和验证功能。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
   - OpenAPI规范
-  - FastAPI
+  - fastapi
   - API文档生成
   - Pydantic模型
   - 安全方案配置

@@ -13,7 +13,7 @@ categories:
 
 tags:
   - Vue
-  - Nuxt3
+  - nuxt
   - 组件开发
   - 管理策略
   - 生命周期

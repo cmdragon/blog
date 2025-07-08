@@ -9,10 +9,10 @@ summary:
   FastAPI与MongoDB整合实现日志监控系统的实战指南。首先配置MongoDB异步连接，定义日志数据模型。核心功能包括日志写入接口、聚合管道查询和索引优化。性能优化技巧涵盖批量写入和查询分页。常见报错解决方案涉及422 Validation Error和MongoClient连接超时。生产环境建议包括连接池配置、读写分离、慢查询监控和TTL索引。通过该方案，可构建日均千万级日志处理系统，建议配合Prometheus和Grafana进行监控和可视化。
 
 categories:
-  - FastAPI
+  - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - MongoDB
   - 日志监控系统
   - 异步编程
