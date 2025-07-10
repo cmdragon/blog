@@ -1,0 +1,805 @@
+<!doctype html><html lang=zh-cn><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>如何用WebSocket打造毫秒级实时协作系统？ - cmdragon's Blog</title><meta name=description content="实时协作系统实现多用户同时操作同一文档或白板，并实时同步变更。核心需求包括毫秒级延迟、操作一致性、冲突处理和状态恢复。后端使用WebSocket协议，维护活动连接池，通过Pydantic模型验证操作格式，采用广播模式实现同步。前端使用Vue.js连接WebSocket，处理用户输入并应用远程操作。冲突解决采用操作转换算法，确保最终一致性。部署方案包括Nginx反向代理和Redis集群，压力测试通过websocket-client工具进行。"><meta name=author content="cmdragon"><meta name=robots content="index, follow"><link rel=canonical href=https://blog.cmdragon.cn/posts/da5b64cb0ded23e4d5b1f19ffd5ac53d/><meta property="og:title" content="如何用WebSocket打造毫秒级实时协作系统？ - cmdragon's Blog"><meta property="og:description" content="实时协作系统实现多用户同时操作同一文档或白板，并实时同步变更。核心需求包括毫秒级延迟、操作一致性、冲突处理和状态恢复。后端使用WebSocket协议，维护活动连接池，通过Pydantic模型验证操作格式，采用广播模式实现同步。前端使用Vue.js连接WebSocket，处理用户输入并应用远程操作。冲突解决采用操作转换算法，确保最终一致性。部署方案包括Nginx反向代理和Redis集群，压力测试通过websocket-client工具进行。"><meta property="og:type" content="article"><meta property="og:url" content="https://blog.cmdragon.cn/posts/da5b64cb0ded23e4d5b1f19ffd5ac53d/"><meta property="og:image" content="https://blog.cmdragon.cn/images/logo/social-card.png"><meta property="og:site_name" content="cmdragon's Blog"><meta property="article:published_time" content="2025-07-10T14:59:43+08:00"><meta property="article:modified_time" content="2025-07-10T14:59:43+08:00"><meta property="article:section" content="fastapi"><meta property="article:tag" content="实时协作系统"><meta property="article:tag" content="WebSocket"><meta property="article:tag" content="FastAPI"><meta property="article:tag" content="Vue.js"><meta property="article:tag" content="冲突解决"><meta property="article:tag" content="压力测试"><meta property="article:tag" content="部署方案"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="如何用WebSocket打造毫秒级实时协作系统？ - cmdragon's Blog"><meta name=twitter:description content="实时协作系统实现多用户同时操作同一文档或白板，并实时同步变更。核心需求包括毫秒级延迟、操作一致性、冲突处理和状态恢复。后端使用WebSocket协议，维护活动连接池，通过Pydantic模型验证操作格式，采用广播模式实现同步。前端使用Vue.js连接WebSocket，处理用户输入并应用远程操作。冲突解决采用操作转换算法，确保最终一致性。部署方案包括Nginx反向代理和Redis集群，压力测试通过websocket-client工具进行。"><meta name=twitter:image content="https://blog.cmdragon.cn/images/logo/social-card.png"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"如何用WebSocket打造毫秒级实时协作系统？","datePublished":"2025-07-10T14:59:43\u002b08:00","dateModified":"2025-07-10T14:59:43\u002b08:00","author":{"@type":"Person","name":"cmdragon"},"description":"实时协作系统实现多用户同时操作同一文档或白板，并实时同步变更。核心需求包括毫秒级延迟、操作一致性、冲突处理和状态恢复。后端使用WebSocket协议，维护活动连接池，通过Pydantic模型验证操作格式，采用广播模式实现同步。前端使用Vue.js连接WebSocket，处理用户输入并应用远程操作。冲突解决采用操作转换算法，确保最终一致性。部署方案包括Nginx反向代理和Redis集群，压力测试通过websocket-client工具进行。","image":"https:\/\/blog.cmdragon.cn\/images\/logo\/social-card.png","url":"https:\/\/blog.cmdragon.cn\/posts\/da5b64cb0ded23e4d5b1f19ffd5ac53d\/","publisher":{"@type":"Organization","name":"cmdragon\u0027s Blog","logo":{"@type":"ImageObject","url":"https:\/\/blog.cmdragon.cn\/images\/logo\/small.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/blog.cmdragon.cn\/posts\/da5b64cb0ded23e4d5b1f19ffd5ac53d\/"},"keywords":"fastapi","keywords":"实时协作系统, WebSocket, FastAPI, Vue.js, 冲突解决, 压力测试, 部署方案","wordCount":"5949"}</script><link rel=preconnect href=https://cdnjs.cloudflare.com><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=preload href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js as=script><link rel=icon href=/favicon.ico type=image/x-icon><link rel=apple-touch-icon href=/images/logo/small.png><link rel=icon type=image/png sizes=32x32 href=/images/logo/small.png><link rel=icon type=image/svg+xml href=/images/logo/scalable.svg><meta name=theme-color content="#3B82F6"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2874982874195135" crossorigin=anonymous></script><script src=https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.3.0/mermaid.min.js></script><script>(function(){if(typeof mermaid!="undefined"){window.mermaid=mermaid;const e=document.documentElement.classList.contains("dark")||window.matchMedia("(prefers-color-scheme: dark)").matches;window.mermaid.initialize({startOnLoad:!0,theme:e?"dark":"default",securityLevel:"loose",flowchart:{curve:"basis",htmlLabels:!0},sequence:{mirrorActors:!1,wrap:!0},themeVariables:{primaryColor:"#3b82f6",primaryTextColor:"#ffffff",primaryBorderColor:e?"#60a5fa":"#2563eb",lineColor:e?"#94a3b8":"#4b5563",secondaryColor:e?"#1e293b":"#f0f9ff",tertiaryColor:e?"#334155":"#f3f4f6"}}),document.addEventListener("DOMContentLoaded",function(){try{typeof window.mermaid.init=="function"&&window.mermaid.init(0[0],document.querySelectorAll(".mermaid"))}catch{}})}})()</script><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.css><script defer src=https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.js></script><script defer src=https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/contrib/auto-render.min.js></script><link rel=stylesheet href=/css/tailwind.min.min.8d5b8a19f2eb08102c953ce635e7ffd5be385b922609a777b14468c7947c6b2c662bc73348c7ab305e84808980195fddf453225da42c96512b533cfd0a92b306.css integrity="sha512-jVuKGfLrCBAslTzmNef/1b44W5ImCad3sURox5R8ayxmK8czSMerMF6EgImAGV/d9FMiXaQsllErUzz9CpKzBg=="><script src=/js/iconify-icon.min.min.a13169dff51a76f7324930d6009999bcdb255cfce4f8905c8dfb81ad553f614e2b31758516e7e0f28a906336e8fc1daf694fa7855c5a97b1300d2f8854786294.js integrity="sha512-oTFp3/UadvcySTDWAJmZvNslXPzk+JBcjfuBrVU/YU4rMXWFFufg8oqQYzbo/B2vaU+nhVxal7EwDS+IVHhilA=="></script><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"><link rel=stylesheet href=/css/code-highlight.min.51dfa065ab162646837177a2e3e5b81b53a2ff5e94c43bb56b24c6104de59ab5421ffa0d4cad27795ac11005ca9d08a383f1e0345a3695b45b44a19721407f31.css integrity="sha512-Ud+gZasWJkaDcXei4+W4G1Oi/16UxDu1ayTGEE3lmrVCH/oNTK0neVrBEAXKnQijg/HgNFo2lbRbRKGXIUB/MQ=="><link rel=stylesheet href=/css/markdown.min.51414bce1fc78f4dfaa148991cb4f79b5392952f6ff7ac2348c00617e80400d7f7b00d566a8a1bffb37ceffa16d116bc2e46a2d2a92001c7962a27ceaba699d3.css integrity="sha512-UUFLzh/Hj036oUiZHLT3m1OSlS9v96wjSMAGF+gEANf3sA1Waoob/7N87/oW0Ra8Lkai0qkgAceWKifOq6aZ0w=="><style>.mermaid{margin:2rem auto;text-align:center;overflow:visible;width:auto;max-width:100%;background-color:#f9fafb;padding:1.5rem .5rem;border-radius:.5rem;box-shadow:0 2px 4px rgba(0,0,0,5%);display:block}.dark .mermaid{background-color:#1e293b;box-shadow:0 2px 4px rgba(0,0,0,.15)}.mermaid svg{display:block !important;max-width:100%;width:auto !important;height:auto !important;font-size:14px;margin:0 auto}.mermaid .node rect,.mermaid .node circle,.mermaid .node ellipse,.mermaid .node polygon,.mermaid .node path{stroke-width:1px}.mermaid .edgePath .path{stroke-width:1.5px}.mermaid .edgeLabel{font-size:.85em;background-color:inherit !important}.mermaid .label text,.mermaid text.label{fill:#374151;font-weight:400}.dark .mermaid .label text,.dark .mermaid text.label{fill:#e5e7eb}@media(max-width:768px){.mermaid{max-width:98%;padding:.8rem .3rem;margin:1.2rem auto}.mermaid svg{font-size:12px}}</style></head><body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 min-h-screen flex flex-col"><div class="flex-grow flex flex-col"><div id=ad-block-message class="bg-amber-50 dark:bg-amber-900/30 shadow-sm w-full px-4 py-2 border-b border-amber-200 dark:border-amber-800" style=display:none><div class="flex items-center justify-between container md:px-4 sm:px-2 mx-auto"><div class="flex items-center"><svg aria-hidden="true" class="h-4 w-4 text-amber-500 dark:text-amber-400 mr-2" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v2h-2v-2zm0-10h2v8h-2V7z"/></svg><p class="text-sm text-gray-700 dark:text-gray-200">我们检测到您正在使用广告拦截器，将我们的网站添加到白名单中有助于网站的长期维护和运营，感谢您的支持！</p></div></div></div><script src=/js/ad-blocker-detection.min.b685b8e0e9ce1f8fb2811345a36c22a78e937b879bdcfed9ab75065b8ebea135.js></script><header class="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-30 transition-all duration-300 border-b border-gray-100 dark:border-gray-700"><div class="container mx-auto px-4"><div class="flex justify-between items-center h-16"><div class="flex items-center"><a href=https://blog.cmdragon.cn/ class="flex items-center gap-2 text-xl font-bold text-gray-900 dark:text-white group transition-all duration-300"><div class="h-9 w-9 flex items-center justify-center transition-all duration-300 transform group-hover:scale-105"><img src=/images/logo/small.png alt="cmdragon's Blog Logo" class="h-full w-auto"></div><span class="group-hover:text-primary transition-colors duration-300">cmdragon's Blog</span></a></div><nav class="hidden md:flex space-x-1"><a href=/ class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 relative overflow-hidden group text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700" aria-label=首页 tabindex=0><span class="relative z-10">首页</span>
+<span class="absolute bottom-0 left-0 w-full h-0 bg-gradient-to-r from-blue-500 to-indigo-600 transition-all duration-300 group-hover:h-full opacity-80 -z-0"></span>
+<span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+</a><a href=/archives/ class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 relative overflow-hidden group text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700" aria-label=归档 tabindex=0><span class="relative z-10">归档</span>
+<span class="absolute bottom-0 left-0 w-full h-0 bg-gradient-to-r from-blue-500 to-indigo-600 transition-all duration-300 group-hover:h-full opacity-80 -z-0"></span>
+<span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+</a><a href=/categories/ class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 relative overflow-hidden group text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700" aria-label=分类 tabindex=0><span class="relative z-10">分类</span>
+<span class="absolute bottom-0 left-0 w-full h-0 bg-gradient-to-r from-blue-500 to-indigo-600 transition-all duration-300 group-hover:h-full opacity-80 -z-0"></span>
+<span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+</a><a href=/tags/ class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 relative overflow-hidden group text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700" aria-label=标签 tabindex=0><span class="relative z-10">标签</span>
+<span class="absolute bottom-0 left-0 w-full h-0 bg-gradient-to-r from-blue-500 to-indigo-600 transition-all duration-300 group-hover:h-full opacity-80 -z-0"></span>
+<span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+</a><a href=/friends/ class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 relative overflow-hidden group text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700" aria-label=友链 tabindex=0><span class="relative z-10">友链</span>
+<span class="absolute bottom-0 left-0 w-full h-0 bg-gradient-to-r from-blue-500 to-indigo-600 transition-all duration-300 group-hover:h-full opacity-80 -z-0"></span>
+<span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span></a></nav><div class="flex items-center space-x-3"><button class="p-2 rounded-lg hover:bg-blue-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary" aria-label=搜索 tabindex=0 onclick=openSiteSearch()>
+<iconify-icon icon=mdi:magnify width=20 height=20></iconify-icon></button>
+<button id=theme-toggle class="p-2 rounded-lg hover:bg-blue-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary" aria-label=切换深色模式 tabindex=0>
+<iconify-icon icon=mdi:weather-sunny class=dark:hidden width=20 height=20></iconify-icon><iconify-icon icon=mdi:weather-night class="hidden dark:block" width=20 height=20></iconify-icon></button>
+<button id=mobile-menu-button class="md:hidden p-2 rounded-lg hover:bg-blue-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary" aria-label=打开菜单 tabindex=0>
+<iconify-icon icon=mdi:menu width=20 height=20></iconify-icon></button></div></div><div id=mobile-menu class="md:hidden hidden pb-3"><div class="space-y-2 px-2 pt-2 pb-3 rounded-lg bg-gray-50 dark:bg-gray-700 mt-2 shadow-inner"><a href=/ class="block px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" aria-label=首页 tabindex=0><div class="flex items-center"><iconify-icon icon=mdi:chevron-right class=mr-2 width=18 height=18></iconify-icon>首页</div></a><a href=/archives/ class="block px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" aria-label=归档 tabindex=0><div class="flex items-center"><iconify-icon icon=mdi:chevron-right class=mr-2 width=18 height=18></iconify-icon>归档</div></a><a href=/categories/ class="block px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" aria-label=分类 tabindex=0><div class="flex items-center"><iconify-icon icon=mdi:chevron-right class=mr-2 width=18 height=18></iconify-icon>分类</div></a><a href=/tags/ class="block px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" aria-label=标签 tabindex=0><div class="flex items-center"><iconify-icon icon=mdi:chevron-right class=mr-2 width=18 height=18></iconify-icon>标签</div></a><a href=/friends/ class="block px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" aria-label=友链 tabindex=0><div class="flex items-center"><iconify-icon icon=mdi:chevron-right class=mr-2 width=18 height=18></iconify-icon>友链</div></a></div></div></div></header><script>document.getElementById("mobile-menu-button").addEventListener("click",function(){const e=document.getElementById("mobile-menu");e.classList.toggle("hidden")}),document.getElementById("theme-toggle").addEventListener("click",function(){document.documentElement.classList.contains("dark")?(document.documentElement.classList.remove("dark"),localStorage.setItem("color-theme","light")):(document.documentElement.classList.add("dark"),localStorage.setItem("color-theme","dark"))}),window.addEventListener("scroll",function(){const e=document.querySelector("header");window.scrollY>10?e.classList.add("shadow-lg","bg-white/95","backdrop-blur-sm","dark:bg-gray-800/95"):e.classList.remove("shadow-lg","bg-white/95","backdrop-blur-sm","dark:bg-gray-800/95")})</script><main class="container mx-auto px-4 py-8 flex-grow"><div class="container mx-auto px-4 sm:px-6 relative"><div class="flex flex-col lg:flex-row lg:gap-8"><article class="w-full lg:w-3/4 bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 lg:p-8 mb-8 border border-gray-100 dark:border-gray-700"><nav class="text-sm text-gray-600 dark:text-gray-400 mb-4" aria-label=面包屑导航><ol class="flex flex-wrap items-center" itemscope itemtype=https://schema.org/BreadcrumbList><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a href=https://blog.cmdragon.cn/ class="hover:text-primary dark:hover:text-primary-light transition-colors" itemprop=item aria-label=首页><span itemprop=name>首页</span>
+</a><meta itemprop=position content="1"></li><li class=mx-2>/</li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a href=https://blog.cmdragon.cn/posts class="hover:text-primary dark:hover:text-primary-light transition-colors" itemprop=item aria-label=Posts><span itemprop=name>Posts</span>
+</a><meta itemprop=position content="2"></li><li class=mx-2>/</li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span class="text-gray-800 dark:text-gray-200" itemprop=name title=如何用WebSocket打造毫秒级实时协作系统？>如何用WebSocket打造毫秒级实时协作系统？...</span>
+<meta itemprop=position content="3"></li></ol></nav><header class="mb-8 border-b border-gray-100 dark:border-gray-700 pb-6"><h1 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white leading-tight">如何用WebSocket打造毫秒级实时协作系统？</h1><div class="flex flex-wrap items-center text-sm text-gray-600 dark:text-gray-300 gap-3"><span class="flex items-center bg-gray-200 dark:bg-gray-700 px-3 py-1.5 rounded-full"><iconify-icon icon=mdi:calendar class=mr-1 width=16 height=16></iconify-icon>2025-07-10
+</span><span class="flex items-center bg-blue-200 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1.5 rounded-full"><iconify-icon icon=mdi:folder class=mr-1 width=16 height=16></iconify-icon><a href=/categories/fastapi class="hover:text-blue-700 dark:hover:text-blue-300 transition-colors">fastapi
+</a></span><span class="flex items-center bg-purple-200 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-3 py-1.5 rounded-full"><iconify-icon icon=mdi:clock-outline class=mr-1 width=16 height=16></iconify-icon>30 分钟阅读
+</span><a href=https://creativecommons.org/licenses/by-nc-sa/4.0/deed target=_blank rel="noopener noreferrer" class="flex items-center bg-green-200 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1.5 rounded-full hover:bg-green-300 dark:hover:bg-green-800 transition-colors" aria-label="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 License" tabindex=0><iconify-icon icon=simple-icons:creativecommons width=16 height=16 class=mr-1></iconify-icon><iconify-icon icon=simple-icons:creativecommonsbysa width=16 height=16 class=mr-1></iconify-icon><iconify-icon icon=simple-icons:creativecommonsnc width=16 height=16 class=mr-1></iconify-icon><span>BY-NC-SA 4.0</span></a></div></header><div class="article-content prose dark:prose-invert lg:prose-lg max-w-none mb-8 leading-relaxed"><img src=/images/779ae1883fdee19e890c5dad42cb06f5.jpeg title=cmdragon_cn.png alt=cmdragon_cn.png>
+<img src=https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg title=cmdragon_cn.png alt=cmdragon_cn.png><p>扫描<a href=https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg>二维码</a>
+关注或者微信搜一搜：<code>编程智域 前端至全栈交流与成长</code></p><p><a href="https://tools.cmdragon.cn/zh/apps?category=ai_chat">发现1000+提升效率与开发的AI工具和实用程序</a>：https://tools.cmdragon.cn/</p><h2 id=第六章全栈项目实战示例实时协作系统>第六章：全栈项目实战示例：实时协作系统</h2><h3 id=一需求分析实时白板协同编辑场景>一、需求分析：实时白板/协同编辑场景</h3><p>实时协作系统需要实现多用户同时操作同一文档/白板，并实时同步所有变更。核心需求包括：</p><ol><li><strong>毫秒级延迟</strong>：用户操作需在300ms内同步给所有参与者</li><li><strong>操作一致性</strong>：保证最终所有客户端呈现相同内容</li><li><strong>冲突处理</strong>：解决多用户同时修改同一区域的问题</li><li><strong>状态恢复</strong>：断线重连后自动同步最新状态</li></ol><div class=mermaid-container><div class="mermaid sequence">sequenceDiagram
+participant 用户A
+participant 用户B
+participant 服务器
+用户A ->> 服务器: 用户A登录
+服务器 -->> 用户A: 登录成功响应
+用户B ->> 服务器: 用户B登录
+服务器 -->> 用户B: 登录成功响应
+用户A ->> 服务器: 用户A创建新的白板会话
+服务器 -->> 用户A: 白板会话ID
+用户B ->> 服务器: 加入现有的白板会话 (会话ID)
+服务器 -->> 用户B: 加入成功响应
+用户A ->> 服务器: 用户A在白板上绘图/编辑
+服务器 -->> 用户B: 更新操作
+用户B ->> 服务器: 用户B在白板上绘图/编辑
+服务器 -->> 用户A: 更新操作
+用户A ->> 服务器: 保存白板内容
+服务器 -->> 用户A: 保存成功确认
+用户B ->> 服务器: 检视白板内容
+服务器 -->> 用户B: 白板内容数据
+用户A ->> 服务器: 退出白板会话
+服务器 -->> 用户A: 退出成功确认
+用户B ->> 服务器: 退出白板会话
+服务器 -->> 用户B: 退出成功确认</div></div><style>.mermaid-container{width:100%;overflow:auto;margin:1.5rem 0}.mermaid-container .mermaid{min-width:fit-content}@media screen and (max-width:768px){.mermaid-container{max-width:100%;overflow-x:auto}}</style><h3 id=二后端websocket服务搭建>二、后端WebSocket服务搭建</h3><p><strong>依赖安装</strong>：</p><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>pip install fastapi==0.104.0 websockets==12.0 uvicorn==0.23.2 pydantic==2.5.2</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:transparent;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><p><strong>核心代码实现</strong>：</p><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>import asyncio
+import logging
+from typing import List, Dict
+
+from fastapi import FastAPI, WebSocket
+from pydantic import BaseModel
+
+app = FastAPI()
+logger = logging.getLogger(&#34;uvicorn.error&#34;)
+
+
+class Operation(BaseModel):
+    type: str  # &#34;insert&#34; or &#34;delete&#34;
+    position: int
+    content: str = &#34;&#34;  # 插入内容
+    length: int = 1  # 删除长度
+    client_id: str = &#34;&#34;  # 客户端标识
+    version: int = 0  # 操作版本号
+
+
+# OT转换引擎（示例）
+class OTEngine:
+    @staticmethod
+    def transform(op1: Operation, op2: Operation) -&gt; Operation:
+        &#34;&#34;&#34;操作转换核心算法&#34;&#34;&#34;
+        # 插入 vs 插入
+        if op1.type == &#34;insert&#34; and op2.type == &#34;insert&#34;:
+            if op1.position &lt; op2.position:
+                return Operation(**{**op2.dict(), &#34;position&#34;: op2.position &#43; len(op1.content)})
+            elif op1.position &gt; op2.position:
+                return op2
+            else:  # 相同位置按客户端ID排序
+                return op2 if op1.client_id &lt; op2.client_id else Operation(
+                    **{**op2.dict(), &#34;position&#34;: op2.position &#43; len(op1.content)})
+
+        # 插入 vs 删除
+        elif op1.type == &#34;insert&#34; and op2.type == &#34;delete&#34;:
+            if op1.position &lt;= op2.position:
+                return Operation(**{**op2.dict(), &#34;position&#34;: op2.position &#43; len(op1.content)})
+            else:
+                return Operation(**{**op2.dict(), &#34;position&#34;: op2.position})
+
+        # 删除 vs 插入
+        elif op1.type == &#34;delete&#34; and op2.type == &#34;insert&#34;:
+            if op1.position &lt; op2.position:
+                return Operation(**{**op2.dict(), &#34;position&#34;: max(op2.position - op1.length, 0)})
+            else:
+                return op2
+
+        # 删除 vs 删除
+        else:
+            if op1.position &lt; op2.position:
+                return Operation(**{**op2.dict(), &#34;position&#34;: max(op2.position - op1.length, 0)})
+            elif op1.position &gt; op2.position:
+                return Operation(**{**op2.dict(), &#34;position&#34;: op2.position})
+            else:  # 相同位置取范围更大的删除
+                return op2 if op1.length &gt;= op2.length else Operation(**{**op2.dict(), &#34;length&#34;: op1.length})
+
+
+# 协同编辑房间管理器
+class CollaborationRoom:
+    def __init__(self, room_id: str):
+        self.room_id = room_id
+        self.connections = set()  # 实际使用redis实现, 这里使用set模拟
+        self.document = &#34;&#34;
+        self.version = 0
+        self.pending_ops: List[Operation] = []
+        self.lock = asyncio.Lock()
+        self.client_states: Dict[str, int] = {}  # 客户端最后确认版本
+
+    async def add_connection(self, websocket: WebSocket, client_id: str):
+        async with self.lock:
+            self.connections.add(websocket)
+            self.client_states[client_id] = self.version
+            # 发送初始状态
+            await websocket.send_json({
+                &#34;type&#34;: &#34;snapshot&#34;,
+                &#34;document&#34;: self.document,
+                &#34;version&#34;: self.version
+            })
+
+    async def remove_connection(self, websocket: WebSocket, client_id: str):
+        async with self.lock:
+            self.connections.discard(websocket)
+            if client_id in self.client_states:
+                del self.client_states[client_id]
+
+    async def apply_operation(self, operation: Operation):
+        &#34;&#34;&#34;应用操作转换并更新文档&#34;&#34;&#34;
+        async with self.lock:
+            # 转换所有待处理操作
+            transformed_op = operation
+            for pending in self.pending_ops:
+                transformed_op = OTEngine.transform(pending, transformed_op)
+
+            # 应用转换后的操作
+            if transformed_op.type == &#34;insert&#34;:
+                self.document = (self.document[:transformed_op.position] &#43;
+                                 transformed_op.content &#43;
+                                 self.document[transformed_op.position:])
+            elif transformed_op.type == &#34;delete&#34;:
+                start = transformed_op.position
+                end = min(start &#43; transformed_op.length, len(self.document))
+                self.document = self.document[:start] &#43; self.document[end:]
+
+            # 更新状态
+            self.version &#43;= 1
+            self.pending_ops.append(transformed_op)
+
+            # 广播转换后的操作
+            broadcast_tasks = []
+            for conn in self.connections:
+                try:
+                    broadcast_tasks.append(conn.send_json({
+                        &#34;type&#34;: &#34;operation&#34;,
+                        &#34;operation&#34;: transformed_op.dict(),
+                        &#34;document&#34;: self.document,
+                        &#34;version&#34;: self.version
+                    }))
+                except:
+                    pass
+            await asyncio.gather(*broadcast_tasks, return_exceptions=True)
+
+            # 清除已处理的操作
+            min_client_version = min(self.client_states.values(), default=self.version)
+            self.pending_ops = [op for op in self.pending_ops if op.version &gt;= min_client_version]
+
+
+# 全局房间管理
+room_manager: Dict[str, CollaborationRoom] = {}  # 实际使用redis实现, 这里使用字典模拟
+global_lock = asyncio.Lock()
+
+
+@app.websocket(&#34;/ws/{room_id}/{client_id}&#34;)
+async def websocket_endpoint(websocket: WebSocket, room_id: str, client_id: str):
+    await websocket.accept()
+
+    # 获取或创建房间
+    async with global_lock:
+        if room_id not in room_manager:
+            room_manager[room_id] = CollaborationRoom(room_id)
+        room = room_manager[room_id]
+
+    # 加入房间
+    await room.add_connection(websocket, client_id)
+    logger.info(f&#34;Client {client_id} joined room {room_id}&#34;)
+
+    try:
+        while True:
+            data = await websocket.receive_json()
+            op = Operation(**data)
+            op.client_id = client_id
+
+            # 应用操作转换
+            await room.apply_operation(op)
+
+    except Exception as e:
+        logger.error(f&#34;Error in room {room_id}: {str(e)}&#34;)
+    finally:
+        # 离开房间
+        await room.remove_connection(websocket, client_id)
+        logger.info(f&#34;Client {client_id} left room {room_id}&#34;)
+
+        # 清理空房间
+        async with global_lock:
+            if not room.connections:
+                del room_manager[room_id]
+                logger.info(f&#34;Room {room_id} closed&#34;)</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:transparent;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><p><strong>关键机制</strong>：</p><ol><li>使用<code>WebSocket</code>协议替代HTTP长轮询</li><li>维护活动连接池<code>active_connections</code></li><li>通过Pydantic模型验证操作格式</li><li>广播模式实现实时同步</li></ol><p><strong>优化技巧</strong>：</p><ol><li>使用<code>requestAnimationFrame</code>合并高频操作</li><li>添加操作版本号解决时序问题</li><li>实现本地缓存防止数据丢失</li><li>添加心跳机制检测连接状态</li></ol><h3 id=三前端vuejs连接实现>三、前端Vue.js连接实现</h3><p><strong>组件核心代码</strong>：</p><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>
+&lt;template&gt;
+  &lt;div class=&#34;collaborative-editor&#34;&gt;
+    &lt;div class=&#34;toolbar&#34;&gt;
+      &lt;div class=&#34;room-info&#34;&gt;房间: {{ roomId }} | 用户: {{ clientId }}&lt;/div&gt;
+      &lt;div :class=&#34;connectionStatus&#34; class=&#34;status&#34;&gt;{{ statusText }}&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&#34;editor-container&#34;&gt;
+      &lt;div
+          ref=&#34;editor&#34;
+          class=&#34;editor&#34;
+          contenteditable=&#34;true&#34;
+          @input=&#34;handleInput&#34;
+          @keydown=&#34;handleKeyDown&#34;
+          @mousedown=&#34;saveCaretPosition&#34;
+          @mouseup=&#34;saveCaretPosition&#34;
+          @paste=&#34;handlePaste&#34;
+          @touchend=&#34;saveCaretPosition&#34;
+      &gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&#34;participants&#34;&gt;
+      &lt;div class=&#34;title&#34;&gt;在线用户 ({{ users.length }})&lt;/div&gt;
+      &lt;div v-for=&#34;user in users&#34; :key=&#34;user&#34; class=&#34;user&#34;&gt;
+        &lt;span :style=&#34;{ backgroundColor: getUserColor(user) }&#34; class=&#34;indicator&#34;&gt;&lt;/span&gt;
+        {{ user }}
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+  import {onMounted, onUnmounted, ref} from &#39;vue&#39;;
+
+  export default {
+    props: {
+      roomId: String,
+      clientId: String
+    },
+    setup(props) {
+      const editor = ref(null);
+      const document = ref(&#39;&#39;);
+      const version = ref(0);
+      const users = ref([]);
+      const connectionStatus = ref(&#39;connecting&#39;);
+      const statusText = ref(&#39;连接中...&#39;);
+      const caretPosition = ref(0);
+      const pendingOperations = ref([]);
+      const ws = ref(null);
+      const userColors = ref({});
+
+      // 初始化WebSocket连接
+      const initWebSocket = () =&gt; {
+        const protocol = window.location.protocol === &#39;https:&#39; ? &#39;wss:&#39; : &#39;ws:&#39;;
+        const host = window.location.host;
+        ws.value = new WebSocket(`${protocol}//${host}/ws/${props.roomId}/${props.clientId}`);
+
+        ws.value.onopen = () =&gt; {
+          connectionStatus.value = &#39;connected&#39;;
+          statusText.value = &#39;已连接&#39;;
+        };
+
+        ws.value.onmessage = (event) =&gt; {
+          const data = JSON.parse(event.data);
+          handleServerMessage(data);
+        };
+
+        ws.value.onerror = (error) =&gt; {
+          console.error(&#39;WebSocket error:&#39;, error);
+          connectionStatus.value = &#39;error&#39;;
+          statusText.value = &#39;连接错误&#39;;
+        };
+
+        ws.value.onclose = () =&gt; {
+          connectionStatus.value = &#39;disconnected&#39;;
+          statusText.value = &#39;已断开&#39;;
+        };
+      };
+
+      // 处理服务器消息
+      const handleServerMessage = (data) =&gt; {
+        switch (data.type) {
+          case &#39;snapshot&#39;:
+            document.value = data.document;
+            version.value = data.version;
+            updateEditorContent();
+            break;
+
+          case &#39;operation&#39;:
+            applyRemoteOperation(data.operation);
+            version.value = data.version;
+            break;
+
+          case &#39;participants&#39;:
+            users.value = data.users;
+            assignUserColors(data.users);
+            break;
+
+          default:
+            console.warn(&#39;Unknown message type:&#39;, data.type);
+        }
+      };
+
+      // 应用远程操作
+      const applyRemoteOperation = (operation) =&gt; {
+        // 跳过自己发送的操作（已乐观更新）
+        if (operation.client_id === props.clientId) {
+          // 移除已确认的本地操作
+          pendingOperations.value = pendingOperations.value.filter(
+              op =&gt; op.client_id !== operation.client_id
+          );
+          return;
+        }
+
+        // 应用操作到文档
+        if (operation.type === &#39;insert&#39;) {
+          document.value =
+              document.value.slice(0, operation.position) &#43;
+              operation.content &#43;
+              document.value.slice(operation.position);
+        } else if (operation.type === &#39;delete&#39;) {
+          document.value =
+              document.value.slice(0, operation.position) &#43;
+              document.value.slice(operation.position &#43; operation.length);
+        }
+
+        // 更新编辑器内容
+        updateEditorContent();
+      };
+
+      // 保存光标位置
+      const saveCaretPosition = () =&gt; {
+        const selection = window.getSelection();
+        if (selection.rangeCount &gt; 0) {
+          const range = selection.getRangeAt(0);
+          const preCaretRange = range.cloneRange();
+          preCaretRange.selectNodeContents(editor.value);
+          preCaretRange.setEnd(range.endContainer, range.endOffset);
+          caretPosition.value = preCaretRange.toString().length;
+        }
+      };
+
+      // 恢复光标位置
+      const restoreCaretPosition = () =&gt; {
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+
+        const range = document.createRange();
+        range.setStart(editor.value, 0);
+
+        let pos = 0;
+        let found = false;
+
+        const findNode = (node) =&gt; {
+          if (node.nodeType === Node.TEXT_NODE) {
+            const nextPos = pos &#43; node.length;
+
+            if (!found &amp;&amp; nextPos &gt;= caretPosition.value) {
+              const offset = caretPosition.value - pos;
+              range.setStart(node, offset);
+              range.setEnd(node, offset);
+              found = true;
+            }
+
+            pos = nextPos;
+          } else {
+            for (let i = 0; i &lt; node.childNodes.length &amp;&amp; !found; i&#43;&#43;) {
+              findNode(node.childNodes[i]);
+            }
+          }
+        };
+
+        findNode(editor.value);
+        selection.addRange(range);
+      };
+
+      // 更新编辑器内容
+      const updateEditorContent = () =&gt; {
+        // 保存当前滚动位置
+        const scrollTop = editor.value.scrollTop;
+
+        // 更新内容
+        editor.value.innerHTML = document.value
+            .replace(/\n/g, &#39;&lt;br&gt;&#39;)
+            .replace(/ /g, &#39;&amp;nbsp;&#39;);
+
+        // 恢复滚动位置
+        editor.value.scrollTop = scrollTop;
+
+        // 恢复光标位置
+        if (document.activeElement === editor.value) {
+          restoreCaretPosition();
+        }
+      };
+
+      // 处理输入事件
+      const handleInput = (event) =&gt; {
+        const oldDocument = document.value;
+        const newDocument = getEditorText();
+
+        // 计算变化
+        const diff = calculateDiff(oldDocument, newDocument);
+
+        if (diff) {
+          // 乐观更新本地文档
+          document.value = newDocument;
+
+          // 创建操作对象
+          const operation = {
+            type: diff.type,
+            position: diff.position,
+            client_id: props.clientId,
+            version: version.value
+          };
+
+          if (diff.type === &#39;insert&#39;) {
+            operation.content = diff.text;
+          } else {
+            operation.length = diff.length;
+          }
+
+          // 添加到待处理队列
+          pendingOperations.value.push(operation);
+
+          // 发送到服务器
+          ws.value.send(JSON.stringify(operation));
+        }
+      };
+
+      // 获取编辑器纯文本内容
+      const getEditorText = () =&gt; {
+        return editor.value.innerText
+            .replace(/\u00A0/g, &#39; &#39;)  // 替换 &amp;nbsp;
+            .replace(/\u200B/g, &#39;&#39;);  // 移除零宽空格
+      };
+
+      // 计算文本差异
+      const calculateDiff = (oldText, newText) =&gt; {
+        let start = 0;
+        const oldEnd = oldText.length;
+        const newEnd = newText.length;
+
+        // 查找开始不同的位置
+        while (start &lt; oldEnd &amp;&amp; start &lt; newEnd &amp;&amp; oldText[start] === newText[start]) {
+          start&#43;&#43;;
+        }
+
+        // 查找结束不同的位置
+        let oldEndIndex = oldEnd;
+        let newEndIndex = newEnd;
+        while (
+            oldEndIndex &gt; start &amp;&amp;
+            newEndIndex &gt; start &amp;&amp;
+            oldText[oldEndIndex - 1] === newText[newEndIndex - 1]
+            ) {
+          oldEndIndex--;
+          newEndIndex--;
+        }
+
+        // 判断操作类型
+        const insertedLength = newEndIndex - start;
+        const deletedLength = oldEndIndex - start;
+
+        if (insertedLength &gt; 0 &amp;&amp; deletedLength === 0) {
+          // 插入操作
+          return {
+            type: &#39;insert&#39;,
+            position: start,
+            text: newText.substring(start, newEndIndex)
+          };
+        } else if (deletedLength &gt; 0 &amp;&amp; insertedLength === 0) {
+          // 删除操作
+          return {
+            type: &#39;delete&#39;,
+            position: start,
+            length: deletedLength
+          };
+        } else if (insertedLength &gt; 0 &amp;&amp; deletedLength &gt; 0) {
+          // 替换操作（分解为删除&#43;插入）
+          // 先发送删除操作
+          ws.value.send(JSON.stringify({
+            type: &#39;delete&#39;,
+            position: start,
+            length: deletedLength,
+            client_id: props.clientId,
+            version: version.value
+          }));
+
+          // 再发送插入操作
+          return {
+            type: &#39;insert&#39;,
+            position: start,
+            text: newText.substring(start, newEndIndex)
+          };
+        }
+
+        return null;
+      };
+
+      // 处理删除键
+      const handleKeyDown = (event) =&gt; {
+        if (event.key === &#39;Backspace&#39; || event.key === &#39;Delete&#39;) {
+          saveCaretPosition();
+        }
+      };
+
+      // 处理粘贴事件
+      const handlePaste = (event) =&gt; {
+        event.preventDefault();
+        const text = event.clipboardData.getData(&#39;text/plain&#39;);
+
+        if (text) {
+          const selection = window.getSelection();
+          if (selection.rangeCount &gt; 0) {
+            const range = selection.getRangeAt(0);
+            range.deleteContents();
+
+            const textNode = document.createTextNode(text);
+            range.insertNode(textNode);
+
+            // 移动光标到插入内容后
+            range.setStart(textNode, text.length);
+            range.setEnd(textNode, text.length);
+            selection.removeAllRanges();
+            selection.addRange(range);
+
+            // 触发输入事件
+            const inputEvent = new Event(&#39;input&#39;, {bubbles: true});
+            editor.value.dispatchEvent(inputEvent);
+          }
+        }
+      };
+
+      // 分配用户颜色
+      const assignUserColors = (userList) =&gt; {
+        const colors = [
+          &#39;#FF6B6B&#39;, &#39;#4ECDC4&#39;, &#39;#FFD166&#39;, &#39;#6A0572&#39;,
+          &#39;#1A535C&#39;, &#39;#FF9F1C&#39;, &#39;#2EC4B6&#39;, &#39;#E71D36&#39;
+        ];
+
+        userList.forEach(user =&gt; {
+          if (!userColors.value[user]) {
+            // 简单哈希算法分配颜色
+            const hash = Array.from(user).reduce(
+                (acc, char) =&gt; acc &#43; char.charCodeAt(0),
+                0
+            );
+            userColors.value[user] = colors[hash % colors.length];
+          }
+        });
+      };
+
+      // 获取用户颜色
+      const getUserColor = (userId) =&gt; {
+        return userColors.value[userId] || &#39;#999&#39;;
+      };
+
+      // 初始化编辑器
+      onMounted(() =&gt; {
+        initWebSocket();
+        editor.value.focus();
+      });
+
+      // 清理资源
+      onUnmounted(() =&gt; {
+        if (ws.value) {
+          ws.value.close();
+        }
+      });
+
+      return {
+        editor,
+        document,
+        version,
+        users,
+        connectionStatus,
+        statusText,
+        handleInput,
+        handleKeyDown,
+        handlePaste,
+        saveCaretPosition,
+        getUserColor
+      };
+    }
+  };
+&lt;/script&gt;
+
+&lt;style scoped&gt;
+  .collaborative-editor {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: &#39;Segoe UI&#39;, Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 16px;
+    background: #2c3e50;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .room-info {
+    font-weight: 600;
+  }
+
+  .status {
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+  }
+
+  .status.connecting {
+    background: #f39c12;
+  }
+
+  .status.connected {
+    background: #27ae60;
+  }
+
+  .status.disconnected {
+    background: #7f8c8d;
+  }
+
+  .status.error {
+    background: #e74c3c;
+  }
+
+  .editor-container {
+    flex: 1;
+    overflow: auto;
+    padding: 20px;
+    background: #f8f9fa;
+  }
+
+  .editor {
+    min-height: 100%;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    outline: none;
+    line-height: 1.6;
+    font-size: 16px;
+    white-space: pre-wrap;
+  }
+
+  .participants {
+    padding: 16px;
+    background: white;
+    border-top: 1px solid #eee;
+  }
+
+  .title {
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #2c3e50;
+  }
+
+  .user {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .user:last-child {
+    border-bottom: none;
+  }
+
+  .indicator {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+&lt;/style&gt;</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:transparent;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><div class=mermaid-container><div class="mermaid sequence">sequenceDiagram
+participant ClientA
+participant Server
+participant ClientB
+ClientA->>ClientA: 用户输入操作
+ClientA->>ClientA: 乐观更新UI
+ClientA->>Server: 发送操作(位置+内容)
+Server->>Server: 应用OT转换
+Server->>ClientA: 广播确认操作
+Server->>ClientB: 广播转换后操作
+ClientB->>ClientB: 应用转换后操作</div></div><style>.mermaid-container{width:100%;overflow:auto;margin:1.5rem 0}.mermaid-container .mermaid{min-width:fit-content}@media screen and (max-width:768px){.mermaid-container{max-width:100%;overflow-x:auto}}</style><h3 id=四消息同步策略与冲突解决>四、消息同步策略与冲突解决</h3><ol><li><p><strong>状态同步机制</strong>：</p><div class=mermaid-container><div class="mermaid sequence">sequenceDiagram
+participant ClientA
+participant Server
+participant ClientB
+ClientA->>Server: 发送操作OP_A(位置P)
+Server->>Server: 转换操作：OP_A' = OT(OP_A, 待处理操作)
+Server->>Server: 更新文档状态
+Server->>ClientA: 广播转换后的OP_A'
+Server->>ClientB: 广播转换后的OP_A'
+ClientB->>ClientB: 应用OP_A'更新本地文档
+ClientB->>Server: 发送新操作OP_B</div></div><style>.mermaid-container{width:100%;overflow:auto;margin:1.5rem 0}.mermaid-container .mermaid{min-width:fit-content}@media screen and (max-width:768px){.mermaid-container{max-width:100%;overflow-x:auto}}</style></li><li><p><strong>冲突解决流程</strong>：</p><ul><li>客户端发送操作时携带当前位置和版本</li><li>服务端对并发操作进行转换排序</li><li>转换后操作广播给所有客户端</li><li>客户端收到操作后无条件应用</li></ul></li><li><p><strong>消息协议设计</strong>：</p><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>// 快照消息（初始同步）
+{
+  &#34;type&#34;: &#34;snapshot&#34;,
+  &#34;document&#34;: &#34;当前文本&#34;,
+  &#34;version&#34;: 15
+}
+
+// 操作消息
+{
+  &#34;type&#34;: &#34;operation&#34;,
+  &#34;operation&#34;: {
+     &#34;type&#34;: &#34;insert&#34;,
+     &#34;position&#34;: 5,
+     &#34;content&#34;: &#34;hello&#34;,
+     &#34;client_id&#34;: &#34;user1&#34;,
+     &#34;version&#34;: 16
+  },
+  &#34;document&#34;: &#34;更新后文本&#34;,
+  &#34;version&#34;: 16
+}</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:transparent;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style></li></ol><p><strong>同步策略对比</strong>：</p><table><thead><tr><th>策略</th><th>优点</th><th>缺点</th></tr></thead><tbody><tr><td>最后写入优先</td><td>实现简单</td><td>可能丢失用户操作</td></tr><tr><td>操作转换(OT)</td><td>精确解决冲突</td><td>算法复杂度高</td></tr><tr><td>CRDT</td><td>无需中心协调</td><td>内存消耗较大</td></tr></tbody></table><h3 id=五压力测试与部署方案>五、压力测试与部署方案</h3><p><strong>压力测试命令</strong>：</p><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>pip install websocket-client
+python -m websockets ws://localhost:8000/ws/room1 -c 1000 -m &#34;测试消息&#34;</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:transparent;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><p><strong>部署架构</strong>：</p><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>客户端 → Nginx → FastAPI (Uvicorn) → Redis Cluster</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:transparent;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><p><strong>Nginx配置要点</strong>：</p><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>http {
+    map $http_upgrade $connection_upgrade {
+        default upgrade;
+        &#39;&#39; close;
+    }
+
+    server {
+        location /ws/ {
+            proxy_pass http://backend;
+            proxy_http_version 1.1;
+            proxy_set_header Upgrade $http_upgrade;
+            proxy_set_header Connection $connection_upgrade;
+        }
+    }
+}</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:transparent;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><hr><h3 id=课后-quiz>课后 Quiz</h3><p><strong>Q1：当两个用户同时在第5个字符位置插入不同内容时，如何保证最终一致性？</strong></p><p><strong>答案</strong>：采用操作转换算法，根据操作逻辑时间戳调整插入位置。例如用户A插入"X"，用户B插入"Y"，最终在第5位显示"YX"或"XY"
+，取决于操作到达服务器的顺序。</p><p><strong>Q2：WebSocket连接频繁断开可能是什么原因？</strong></p><p><strong>解决方案</strong>：</p><ol><li>检查防火墙设置是否允许WS协议</li><li>配置合理的心跳间隔（建议30秒）</li><li>增加Nginx的超时设置：<div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>proxy_read_timeout 3600s;
+proxy_send_timeout 3600s;</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:transparent;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style></li></ol><hr><h3 id=常见报错处理>常见报错处理</h3><p><strong>错误1：403 Forbidden</strong></p><ul><li><strong>原因</strong>：跨域请求被阻止</li><li><strong>解决</strong>：添加CORS中间件<div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[&#34;*&#34;],
+    allow_credentials=True,
+    allow_methods=[&#34;*&#34;],
+    allow_headers=[&#34;*&#34;],
+)</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:transparent;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style></li></ul><p><strong>错误2：1006 Connection Closed Abnormally</strong></p><ul><li><strong>原因</strong>：客户端未正确处理断开事件</li><li><strong>解决</strong>：添加重连机制<div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>function connect() {
+  const ws = new WebSocket(url)
+  ws.onclose = () =&gt; setTimeout(connect, 1000)
+}</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:transparent;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style></li></ul><hr><p>通过本文的实践，开发者可以掌握实时协作系统的核心实现技术。建议在开发过程中使用<code>wireshark</code>
+工具监控WebSocket流量，并配合<code>Chrome DevTools</code>的Performance面板进行前端性能优化。</p><p>余下文章内容请点击跳转至 个人博客页面 或者 扫码关注或者微信搜一搜：<code>编程智域 前端至全栈交流与成长</code>
+，阅读完整的文章：<a href=https://blog.cmdragon.cn/posts/da5b64cb0ded23e4d5b1f19ffd5ac53d/>如何用WebSocket打造毫秒级实时协作系统？</a></p><h2 id=往期文章归档>往期文章归档：</h2><ul><li><a href=https://blog.cmdragon.cn/posts/eb598d50b76ea1823746ab7cdf49ce05/>如何让你的WebSocket连接既安全又高效？</a></li><li><a href=https://blog.cmdragon.cn/posts/08ba771dbb2eec087c4bc6dc584113c5/>如何让多客户端会话管理不再成为你的技术噩梦？ - cmdragon&rsquo;s Blog</a></li><li><a href=https://blog.cmdragon.cn/posts/fbf7d6843e430133547057254deb2dfb/>如何在FastAPI中玩转WebSocket消息处理？</a></li><li><a href=https://blog.cmdragon.cn/posts/0faebb0f6c2b1bde4ba75869f4f67b76/>如何在FastAPI中玩转WebSocket，让实时通信不再烦恼？ - cmdragon&rsquo;s Blog</a></li><li><a href=https://blog.cmdragon.cn/posts/903448c85701a6a747fc9a4417e2bdc8/>WebSocket与HTTP协议究竟有何不同？FastAPI如何让长连接变得如此简单？ - cmdragon&rsquo;s Blog</a></li><li><a href=https://blog.cmdragon.cn/posts/c1314c623211c9269f36053179a53d5c/>FastAPI如何玩转安全防护，让黑客望而却步？</a></li><li><a href=https://blog.cmdragon.cn/posts/0bbb4a455ef36bf6f81ac97189586fda/#%E4%B8%80jwt-%E8%AE%A4%E8%AF%81%E8%81%94%E8%B0%83%E6%96%B9%E6%A1%88>如何用三层防护体系打造坚不可摧的 API 安全堡垒？ - cmdragon&rsquo;s Blog</a></li><li><a href=https://blog.cmdragon.cn/posts/f96ba438de34dc197fd2598f91ae133d/>FastAPI安全加固：密钥轮换、限流策略与安全头部如何实现三重防护？ - cmdragon&rsquo;s Blog</a></li><li><a href=https://blog.cmdragon.cn/posts/045021f8831a03bcdf71e44cb793baf4/>如何在FastAPI中巧妙玩转数据脱敏，让敏感信息安全无忧？ - cmdragon&rsquo;s Blog</a></li><li><a href=https://blog.cmdragon.cn/posts/9f01e838545ae8d34016c759ef461423/>RBAC权限模型如何让API访问控制既安全又灵活？ - cmdragon&rsquo;s Blog</a></li><li><a href=https://blog.cmdragon.cn/posts/88e8615e4c961e7a4f0ef31c0e41cb0b/>FastAPI中的敏感数据如何在不泄露的情况下翩翩起舞？</a></li><li><a href=https://blog.cmdragon.cn/posts/17d5c40ff6c84ad652f962fed0ce46ab/>FastAPI安全认证的终极秘籍：OAuth2与JWT如何完美融合？ - cmdragon&rsquo;s Blog</a></li><li><a href=https://blog.cmdragon.cn/posts/9d6200ae7ce0a1a1a523591e3d65a82e/>如何在FastAPI中打造坚不可摧的Web安全防线？ - cmdragon&rsquo;s Blog</a></li><li><a href=https://blog.cmdragon.cn/posts/d878b5dbef959058b8098551c70594f8/>如何用 FastAPI 和 RBAC 打造坚不可摧的安全堡垒？ - cmdragon&rsquo;s Blog</a></li><li><a href=https://blog.cmdragon.cn/posts/96b6ede65030daa4613ab92da1d739a6/#%E5%BE%80%E6%9C%9F%E6%96%87%E7%AB%A0%E5%BD%92%E6%A1%A3>FastAPI权限配置：你的系统真的安全吗？ - cmdragon&rsquo;s Blog</a></li><li><a href=https://blog.cmdragon.cn/posts/0c8c5a3fdaf69250ac3db7429b102625/>FastAPI权限缓存：你的性能瓶颈是否藏在这只“看不见的手”里？ | cmdragon&rsquo;s Blog</a></li><li><a href=https://blog.cmdragon.cn/posts/84bf7b11b342415bddb50e0521c64dfe/>FastAPI日志审计：你的权限系统是否真的安全无虞？ | cmdragon&rsquo;s Blog</a></li><li><a href=https://blog.cmdragon.cn/posts/e2ec1e31dd5d97e0f32d2125385fd955/>如何在FastAPI中打造坚不可摧的安全防线？ | cmdragon&rsquo;s Blog</a></li><li><a href=https://blog.cmdragon.cn/posts/74777546a240b16b32196e5eb29ec8f7/>如何在FastAPI中实现权限隔离并让用户乖乖听话？ | cmdragon&rsquo;s Blog</a></li><li><a href=https://blog.cmdragon.cn/posts/9dd24a9753ba15f98f24c1e5134fe40e/>如何在FastAPI中玩转权限控制与测试，让代码安全又优雅？ | cmdragon&rsquo;s Blog</a></li><li><a href=https://blog.cmdragon.cn/posts/277aa1628a2fa9855cdfe5f7c302bd92/>如何在FastAPI中打造一个既安全又灵活的权限管理系统？ | cmdragon&rsquo;s Blog</a></li><li><a href=https://blog.cmdragon.cn/posts/82bae833ad460aec0965cc77b7d6f652/>FastAPI访问令牌的权限声明与作用域管理：你的API安全真的无懈可击吗？ | cmdragon&rsquo;s Blog</a></li><li><a href=https://blog.cmdragon.cn/posts/13fc113ef1dff03927d46235ad333a7f/>如何在FastAPI中构建一个既安全又灵活的多层级权限系统？ | cmdragon&rsquo;s Blog</a></li><li><a href=https://blog.cmdragon.cn/posts/cc7aa0af577ae2bc0694e76886373e12/>FastAPI如何用角色权限让Web应用安全又灵活？ | cmdragon&rsquo;s Blog</a></li><li><a href=https://blog.cmdragon.cn/posts/3e287e8b907561728ded1be34a19b22c/>FastAPI权限验证依赖项究竟藏着什么秘密？ | cmdragon&rsquo;s Blog</a></li><li><a href=https://blog.cmdragon.cn/posts/2b0a2003074eba56a6f6c57aa9690900/>如何用FastAPI和Tortoise-ORM打造一个既高效又灵活的角色管理系统？ | cmdragon&rsquo;s Blog</a></li><li><a href=https://blog.cmdragon.cn/posts/031a4b22bb8d624cf23ef593f72d1ec6/>JWT令牌如何在FastAPI中实现安全又高效的生成与验证？ | cmdragon&rsquo;s Blog</a></li><li><a href=https://blog.cmdragon.cn/posts/5f8821250c5a4e9cc08bd08faef76c77/>你的密码存储方式是否在向黑客招手？ | cmdragon&rsquo;s Blog</a></li><li><a href=https://blog.cmdragon.cn/posts/c290754b532ebf91c5415aa0b30715d0/>如何在FastAPI中轻松实现OAuth2认证并保护你的API？ | cmdragon&rsquo;s Blog</a></li><li><a href=https://blog.cmdragon.cn/posts/30ed200ec25b55e1ba159366401ed6ee/>FastAPI安全机制：从OAuth2到JWT的魔法通关秘籍 | cmdragon&rsquo;s Blog</a></li><li><a href=https://blog.cmdragon.cn/posts/69f7189d3ff058334889eb2e02f2ea2c/>FastAPI认证系统：从零到令牌大师的奇幻之旅 | cmdragon&rsquo;s Blog</a></li><li><a href=https://blog.cmdragon.cn/posts/92a7a3de40eb9ce71620716632f68676/>FastAPI安全异常处理：从401到422的奇妙冒险 | cmdragon&rsquo;s Blog</a></li><li><a href=https://blog.cmdragon.cn/posts/ee5486714707d4835d4a774696dca30a/>FastAPI权限迷宫：RBAC与多层级依赖的魔法通关秘籍 | cmdragon&rsquo;s Blog</a></li><li><a href=https://blog.cmdragon.cn/posts/a39277914464b007ac61874292578de0/>JWT令牌：从身份证到代码防伪的奇妙之旅 | cmdragon&rsquo;s Blog</a></li><li><a href=https://blog.cmdragon.cn/posts/7d79b5a5c4a3adad15117a45d7976554/>FastAPI安全认证：从密码到令牌的魔法之旅 | cmdragon&rsquo;s Blog</a></li><li><a href=https://blog.cmdragon.cn/posts/f3671b2501c23bd156bfd75c5b56ce4c/>密码哈希：Bcrypt的魔法与盐值的秘密 | cmdragon&rsquo;s Blog</a></li></ul><h2 id=免费好用的热门在线工具>免费好用的热门在线工具</h2><ul><li><a href=https://tools.cmdragon.cn/zh>CMDragon 在线工具 - 高级AI工具箱与开发者套件 | 免费好用的在线工具</a></li><li><a href="https://tools.cmdragon.cn/zh/apps?category=trending">应用商店 - 发现1000+提升效率与开发的AI工具和实用程序 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/changelog>CMDragon 更新日志 - 最新更新、功能与改进 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/sponsor>支持我们 - 成为赞助者 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/text-to-image-ai>AI文本生成图像 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/temp-email>临时邮箱 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/qrcode-parser>二维码解析器 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/text-to-mindmap>文本转思维导图 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/regex-visualizer>正则表达式可视化工具 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/steganography-tool>文件隐写工具 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/iptv-explorer>IPTV 频道探索器 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/snapdrop>快传 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/lucky-draw>随机抽奖工具 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/anime-scene-finder>动漫场景查找器 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/time-toolkit>时间工具箱 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/speed-test>网速测试 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/background-remover>AI 智能抠图工具 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/background-replacer>背景替换工具 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/artistic-qrcode>艺术二维码生成器 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/open-graph-generator>Open Graph 元标签生成器 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/image-comparison>图像对比工具 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/image-compressor>图片压缩专业版 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/password-generator>密码生成器 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/svg-optimizer>SVG优化器 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/color-palette>调色板生成器 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/online-metronome>在线节拍器 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/ip-geolocation>IP归属地查询 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/css-grid-layout>CSS网格布局生成器 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/email-validator>邮箱验证工具 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/calligraphy-practice>书法练习字帖 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/finance-calculator-suite>金融计算器套件 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/chinese-kinship-calculator>中国亲戚关系计算器 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/protobuf-toolkit>Protocol Buffer 工具箱 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/ip-geolocation>IP归属地查询 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/image-upscaler>图片无损放大 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/text-compare>文本比较工具 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/ip-batch-lookup>IP批量查询工具 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/domain-finder>域名查询工具 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/dns-toolkit>DNS工具箱 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/favicon-generator>网站图标生成器 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/sitemap_index.xml>XML Sitemap</a></li></ul></div><div class="border-t border-gray-200 dark:border-gray-700 pt-6 mt-8"><h2 class="text-lg font-medium mb-4 flex items-center"><div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-1.5 rounded text-white mr-2"><iconify-icon icon=mdi:tag-multiple width=16 height=16></iconify-icon></div>标签</h2><div class="flex flex-wrap gap-2"><a href=/tags/%E5%AE%9E%E6%97%B6%E5%8D%8F%E4%BD%9C%E7%B3%BB%E7%BB%9F class="bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 px-3 py-1.5 rounded-full text-sm hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 dark:hover:text-white transition-colors duration-200" aria-label="标签: 实时协作系统" tabindex=0><iconify-icon icon=mdi:tag class=mr-1 inline></iconify-icon>实时协作系统
+</a><a href=/tags/WebSocket class="bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 px-3 py-1.5 rounded-full text-sm hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 dark:hover:text-white transition-colors duration-200" aria-label="标签: WebSocket" tabindex=0><iconify-icon icon=mdi:tag class=mr-1 inline></iconify-icon>WebSocket
+</a><a href=/tags/FastAPI class="bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 px-3 py-1.5 rounded-full text-sm hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 dark:hover:text-white transition-colors duration-200" aria-label="标签: FastAPI" tabindex=0><iconify-icon icon=mdi:tag class=mr-1 inline></iconify-icon>FastAPI
+</a><a href=/tags/Vue.js class="bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 px-3 py-1.5 rounded-full text-sm hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 dark:hover:text-white transition-colors duration-200" aria-label="标签: Vue.js" tabindex=0><iconify-icon icon=mdi:tag class=mr-1 inline></iconify-icon>Vue.js
+</a><a href=/tags/%E5%86%B2%E7%AA%81%E8%A7%A3%E5%86%B3 class="bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 px-3 py-1.5 rounded-full text-sm hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 dark:hover:text-white transition-colors duration-200" aria-label="标签: 冲突解决" tabindex=0><iconify-icon icon=mdi:tag class=mr-1 inline></iconify-icon>冲突解决
+</a><a href=/tags/%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95 class="bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 px-3 py-1.5 rounded-full text-sm hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 dark:hover:text-white transition-colors duration-200" aria-label="标签: 压力测试" tabindex=0><iconify-icon icon=mdi:tag class=mr-1 inline></iconify-icon>压力测试
+</a><a href=/tags/%E9%83%A8%E7%BD%B2%E6%96%B9%E6%A1%88 class="bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 px-3 py-1.5 rounded-full text-sm hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 dark:hover:text-white transition-colors duration-200" aria-label="标签: 部署方案" tabindex=0><iconify-icon icon=mdi:tag class=mr-1 inline></iconify-icon>部署方案</a></div></div><nav class="border-t border-gray-200 dark:border-gray-700 pt-6 mt-8 grid grid-cols-1 md:grid-cols-2 gap-6"><div class="bg-gray-100 dark:bg-gray-700 p-4 rounded-xl transition-all hover:shadow-md duration-300"><span class="block text-sm text-gray-600 dark:text-gray-300 mb-2 flex items-center"><iconify-icon icon=mdi:arrow-left class=mr-2 width=16 height=16></iconify-icon>上一篇
+</span><a href=https://blog.cmdragon.cn/posts/eb598d50b76ea1823746ab7cdf49ce05/ class="font-medium text-blue-700 dark:text-blue-300 hover:text-blue-800 dark:hover:text-blue-200 block" aria-label="上一篇: 如何让你的WebSocket连接既安全又高效？" tabindex=0>如何让你的WebSocket连接既安全又高效？</a></div><div></div></nav><div class="border-t border-gray-200 dark:border-gray-700 pt-6 mt-8"><h2 class="text-lg font-medium mb-4 flex items-center"><div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-1.5 rounded text-white mr-2"><iconify-icon icon=mdi:share-variant width=16 height=16></iconify-icon></div>分享</h2><div class="flex flex-wrap gap-3"><a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fblog.cmdragon.cn%2fposts%2fda5b64cb0ded23e4d5b1f19ffd5ac53d%2f&text=%e5%a6%82%e4%bd%95%e7%94%a8WebSocket%e6%89%93%e9%80%a0%e6%af%ab%e7%a7%92%e7%ba%a7%e5%ae%9e%e6%97%b6%e5%8d%8f%e4%bd%9c%e7%b3%bb%e7%bb%9f%ef%bc%9f" target=_blank rel="noopener noreferrer" class="bg-gradient-to-r from-[#1DA1F2] to-[#0a6da6] text-white px-4 py-2 rounded-lg hover:shadow-md transition-all duration-300" aria-label="分享到 Twitter" tabindex=0><iconify-icon icon=mdi:twitter width=20 height=20></iconify-icon></a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fblog.cmdragon.cn%2fposts%2fda5b64cb0ded23e4d5b1f19ffd5ac53d%2f" target=_blank rel="noopener noreferrer" class="bg-gradient-to-r from-[#1877F2] to-[#0a4fad] text-white px-4 py-2 rounded-lg hover:shadow-md transition-all duration-300" aria-label="分享到 Facebook" tabindex=0><iconify-icon icon=mdi:facebook width=20 height=20></iconify-icon></a><a href="https://service.weibo.com/share/share.php?url=https%3a%2f%2fblog.cmdragon.cn%2fposts%2fda5b64cb0ded23e4d5b1f19ffd5ac53d%2f&title=%e5%a6%82%e4%bd%95%e7%94%a8WebSocket%e6%89%93%e9%80%a0%e6%af%ab%e7%a7%92%e7%ba%a7%e5%ae%9e%e6%97%b6%e5%8d%8f%e4%bd%9c%e7%b3%bb%e7%bb%9f%ef%bc%9f" target=_blank rel="noopener noreferrer" class="bg-gradient-to-r from-[#E6162D] to-[#ad0f21] text-white px-4 py-2 rounded-lg hover:shadow-md transition-all duration-300" aria-label=分享到微博 tabindex=0><iconify-icon icon=mdi:sina-weibo width=20 height=20></iconify-icon></a><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fblog.cmdragon.cn%2fposts%2fda5b64cb0ded23e4d5b1f19ffd5ac53d%2f" target=_blank rel="noopener noreferrer" class="bg-gradient-to-r from-[#0A66C2] to-[#07508f] text-white px-4 py-2 rounded-lg hover:shadow-md transition-all duration-300" aria-label="分享到 LinkedIn" tabindex=0><iconify-icon icon=mdi:linkedin width=20 height=20></iconify-icon></a></div></div><div class="border-t border-gray-200 dark:border-gray-700 pt-6 mt-8"><h2 class="text-lg font-medium mb-4 flex items-center"><div class="bg-gradient-to-br from-yellow-500 to-red-600 p-1.5 rounded text-white mr-2"><iconify-icon icon=mdi:hand-coin width=16 height=16></iconify-icon></div>赞赏支持</h2><div class=text-center><p class="text-gray-700 dark:text-gray-300 mb-4">如果我的文章对您有所帮助，欢迎赞赏支持</p><div class="flex flex-col sm:flex-row justify-center items-center gap-6"><div class=donation-item><button class="donate-button alipay-btn bg-[#0066b3] text-white px-5 py-2 rounded-lg hover:bg-[#00518f] transition-colors mb-3 flex items-center justify-center w-full" aria-label=打开支付宝收款码 type=button tabindex=0>
+<iconify-icon icon=mdi:alipay class=mr-2 width=20 height=20></iconify-icon>支付宝</button><div class="donate-qrcode alipay-qrcode hidden"><div class="bg-white p-3 rounded-lg shadow-lg"><img src=/images/alipay.webp alt=支付宝收款码 class="w-48 h-48 object-cover"></div></div></div><div class=donation-item><button class="donate-button wechat-btn bg-green-800 text-white px-5 py-2 rounded-lg hover:bg-green-900 transition-colors mb-3 flex items-center justify-center w-full" aria-label=打开微信收款码 type=button tabindex=0>
+<iconify-icon icon=mdi:wechat class=mr-2 width=20 height=20></iconify-icon>微信</button><div class="donate-qrcode wechat-qrcode hidden"><div class="bg-white p-3 rounded-lg shadow-lg"><img src=/images/wechat_pay.webp alt=微信收款码 class="w-48 h-48 object-cover"></div></div></div></div></div></div><style>.donation-item{position:relative;display:inline-block}.donate-qrcode{width:200px;position:absolute;top:-260px;left:50%;transform:translateX(-50%);z-index:10}</style><script>document.addEventListener("DOMContentLoaded",function(){const n=document.querySelector(".alipay-btn"),s=document.querySelector(".wechat-btn"),e=document.querySelector(".alipay-qrcode"),t=document.querySelector(".wechat-qrcode");n.addEventListener("click",function(){e.classList.toggle("hidden"),t.classList.add("hidden")}),s.addEventListener("click",function(){t.classList.toggle("hidden"),e.classList.add("hidden")}),n.addEventListener("keydown",function(n){(n.key==="Enter"||n.key===" ")&&(n.preventDefault(),e.classList.toggle("hidden"),t.classList.add("hidden"))}),s.addEventListener("keydown",function(n){(n.key==="Enter"||n.key===" ")&&(n.preventDefault(),t.classList.toggle("hidden"),e.classList.add("hidden"))}),document.addEventListener("click",function(o){!n.contains(o.target)&&!e.contains(o.target)&&e.classList.add("hidden"),!s.contains(o.target)&&!t.contains(o.target)&&t.classList.add("hidden")})})</script></article><aside class="w-full lg:w-1/4"><button id=mobile-toc-toggle class="z-50 fixed bottom-4 right-4 z-20 lg:hidden bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+<iconify-icon icon=mdi:table-of-contents width=24 height=24></iconify-icon></button><div id=toc-container class="lg:sticky lg:top-24 bg-white dark:bg-gray-800 rounded-xl shadow-md p-5 mb-8 transition-all duration-300 border border-gray-100 dark:border-gray-700
+fixed inset-y-0 right-0 w-72 z-40 lg:z-20 transform translate-x-full lg:transform-none lg:w-auto
+lg:overflow-visible flex flex-col"><div class="toc-header flex justify-between items-center pb-3 border-b border-gray-100 dark:border-gray-700 lg:mb-4"><h2 class="text-lg font-medium flex items-center"><div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-1.5 rounded text-white mr-2"><iconify-icon icon=mdi:table-of-contents width=16 height=16></iconify-icon></div>目录</h2><div class="flex items-center"><button id=toc-toggle class="text-gray-500 hover:text-blue-700 dark:hover:text-blue-300 transition-colors p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full" aria-label=滚动到底部/顶部>
+<iconify-icon id=toc-icon icon=mdi:arrow-down width=20 height=20></iconify-icon></button>
+<button id=toc-close class="ml-1 lg:hidden text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full">
+<iconify-icon icon=mdi:close width=20 height=20></iconify-icon></button></div></div><div id=toc-content class="toc text-sm text-gray-700 dark:text-gray-300 flex-grow overflow-y-auto"><nav id=TableOfContents><ul><li><a href=#第六章全栈项目实战示例实时协作系统>第六章：全栈项目实战示例：实时协作系统</a><ul><li><a href=#一需求分析实时白板协同编辑场景>一、需求分析：实时白板/协同编辑场景</a></li><li><a href=#二后端websocket服务搭建>二、后端WebSocket服务搭建</a></li><li><a href=#三前端vuejs连接实现>三、前端Vue.js连接实现</a></li><li><a href=#四消息同步策略与冲突解决>四、消息同步策略与冲突解决</a></li><li><a href=#五压力测试与部署方案>五、压力测试与部署方案</a></li><li><a href=#课后-quiz>课后 Quiz</a></li><li><a href=#常见报错处理>常见报错处理</a></li></ul></li><li><a href=#往期文章归档>往期文章归档：</a></li><li><a href=#免费好用的热门在线工具>免费好用的热门在线工具</a></li></ul></nav></div></div><div id=toc-overlay class="fixed inset-0 bg-black bg-opacity-50 z-30 hidden lg:hidden backdrop-blur-sm"></div></aside></div></div><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/bash.min.js></script><link rel=stylesheet href=/css/markdown.min.51414bce1fc78f4dfaa148991cb4f79b5392952f6ff7ac2348c00617e80400d7f7b00d566a8a1bffb37ceffa16d116bc2e46a2d2a92001c7962a27ceaba699d3.css integrity="sha512-UUFLzh/Hj036oUiZHLT3m1OSlS9v96wjSMAGF+gEANf3sA1Waoob/7N87/oW0Ra8Lkai0qkgAceWKifOq6aZ0w=="><link rel=stylesheet href=/css/code-highlight.min.51dfa065ab162646837177a2e3e5b81b53a2ff5e94c43bb56b24c6104de59ab5421ffa0d4cad27795ac11005ca9d08a383f1e0345a3695b45b44a19721407f31.css integrity="sha512-Ud+gZasWJkaDcXei4+W4G1Oi/16UxDu1ayTGEE3lmrVCH/oNTK0neVrBEAXKnQijg/HgNFo2lbRbRKGXIUB/MQ=="><link rel=stylesheet href=/css/image-viewer.min.19e6702d6a59cdcb573d6f71c86918fa188fd88d1baab7e120c30b489514081845862e29c571e08d7c03a879a3ce9d9f376b38b719226aa4d6ebbbfd72523749.css integrity="sha512-GeZwLWpZzctXPW9xyGkY+hiP2I0bqrfhIMMLSJUUCBhFhi4pxXHgjXwDqHmjzp2fN2s4txkiaqTW67v9clI3SQ=="><script src=/js/code-highlight.min.4842a0354e92cb0dda865ccf94d2765aed80ac8c38ecfdfa73acb9d96533900a060f638558e82d702f706f2dee31810e14803438e9b540a91f1e47da7585fba2.js integrity="sha512-SEKgNU6Syw3ahlzPlNJ2Wu2ArIw47P36c6y52WUzkAoGD2OFWOgtcC9wby3uMYEOFIA0OOm1QKkfHkfadYX7og=="></script><script src=/js/toc.min.92a4653787fea9432dea3eeb9adc03e050ff554e6d14172e05ab388e02e2710fad92e2eee79e77f913e6a1eb6121b9fcdc7e01737092c908fe94037db5245260.js integrity="sha512-kqRlN4f+qUMt6j7rmtwD4FD/VU5tFBcuBas4jgLicQ+tkuLu5553+RPmoethIbn83H4Bc3CSyQj+lAN9tSRSYA=="></script><script src=/js/image-viewer.min.9f1010ebec4f14ac3dc59adef576c5430e73339d1e527a832c0fb7243683f73a93584bfdc11198edec5c27e609d69d3b985b98cd1931c3f0595e429bf874d23d.js integrity="sha512-nxAQ6+xPFKw9xZre9XbFQw5zM50eUnqDLA+3JDaD9zqTWEv9wRGY7excJ+YJ1p07mFuYzRkxw/BZXkKb+HTSPQ=="></script><script>document.addEventListener("DOMContentLoaded",function(){console.log("初始化代码高亮..."),window.hljs?(console.log("highlight.js 已加载"),document.querySelectorAll("pre code").forEach(function(e){console.log("应用高亮到代码块"),hljs.highlightElement(e)})):console.error("highlight.js 未加载!")})</script><style>#toc-content{max-height:none}@media(min-width:1024px){#toc-content{max-height:none;overflow:visible}#toc-container{max-height:calc(100vh - 120px);overflow-y:auto}nav#TableOfContents{overflow:visible}}@media(max-width:1023px){#toc-container{padding-bottom:env(safe-area-inset-bottom,20px);display:flex;flex-direction:column}#toc-content{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding-bottom:20px}}</style></main><footer class="bg-gradient-to-b from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 shadow-inner py-10 mt-12 border-t border-gray-200 dark:border-gray-700"><div class="container mx-auto px-4"><div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8"><div><h3 class="text-lg font-bold mb-4 text-gray-900 dark:text-white flex items-center"><div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-1.5 rounded text-white mr-2"><iconify-icon icon=mdi:information width=16 height=16></iconify-icon></div>关于本站</h3><p class="text-sm text-gray-600 dark:text-gray-400 mb-4">cmdragon's Blog 是一个专注于编程和技术分享的个性化网站，旨在为编程爱好者、学习者和从业者提供全面的前端开发、后端开发以及全栈开发学习资源。</p><div class="flex space-x-3"><a href=https://github.com/cmdragon class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-300 bg-gray-100 dark:bg-gray-700 p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600" aria-label=GitHub tabindex=0 target=_blank rel="noopener noreferrer"><iconify-icon icon=mdi:github width=18 height=18></iconify-icon></a><button id=wechat-btn class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-300 bg-gray-100 dark:bg-gray-700 p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600" aria-label=微信 tabindex=0>
+<iconify-icon icon=mdi:wechat width=18 height=18></iconify-icon></button>
+<a href=mailto:support@cmdragon.cn class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-300 bg-gray-100 dark:bg-gray-700 p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600" aria-label=Email tabindex=0><iconify-icon icon=mdi:email width=18 height=18></iconify-icon></a><a href=/index.xml class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-300 bg-gray-100 dark:bg-gray-700 p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600" aria-label=RSS tabindex=0><iconify-icon icon=mdi:rss width=18 height=18></iconify-icon></a></div></div><div><h3 class="text-lg font-bold mb-4 text-gray-900 dark:text-white flex items-center"><div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-1.5 rounded text-white mr-2"><iconify-icon icon=mdi:link-variant width=16 height=16></iconify-icon></div>快速链接</h3><ul class=space-y-2><li><a href=https://movie.cmdragon.cn/ class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-300 flex items-center" target=_blank rel="noopener noreferrer"><iconify-icon icon=mdi:chevron-right class="mr-2 text-primary" width=16 height=16></iconify-icon>高清影视库</a></li><li><a href=https://comic.cmdragon.cn/ class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-300 flex items-center" target=_blank rel="noopener noreferrer"><iconify-icon icon=mdi:chevron-right class="mr-2 text-primary" width=16 height=16></iconify-icon>精选漫画阅读</a></li><li><a href=https://tools.cmdragon.cn/zh class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-300 flex items-center" target=_blank rel="noopener noreferrer"><iconify-icon icon=mdi:chevron-right class="mr-2 text-primary" width=16 height=16></iconify-icon>实用在线工具</a></li><li><a href=https://hot-movie.cmdragon.cn/ class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-300 flex items-center" target=_blank rel="noopener noreferrer"><iconify-icon icon=mdi:chevron-right class="mr-2 text-primary" width=16 height=16></iconify-icon>热映影视推荐</a></li></ul></div><div><h3 class="text-lg font-bold mb-4 text-gray-900 dark:text-white flex items-center"><div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-1.5 rounded text-white mr-2"><iconify-icon icon=mdi:tag-multiple width=16 height=16></iconify-icon></div>热门标签</h3><div class="flex flex-wrap gap-2"><a href=https://blog.cmdragon.cn/tags/nuxt/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#Nuxt <span class="text-xs opacity-70">(147)</span>
+</a><a href=https://blog.cmdragon.cn/tags/fastapi/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#Fastapi <span class="text-xs opacity-70">(99)</span>
+</a><a href=https://blog.cmdragon.cn/tags/%E9%92%A9%E5%AD%90/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#钩子 <span class="text-xs opacity-70">(62)</span>
+</a><a href=https://blog.cmdragon.cn/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#性能优化 <span class="text-xs opacity-70">(49)</span>
+</a><a href=https://blog.cmdragon.cn/tags/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#在线工具 <span class="text-xs opacity-70">(47)</span>
+</a><a href=https://blog.cmdragon.cn/tags/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#生命周期 <span class="text-xs opacity-70">(38)</span>
+</a><a href=https://blog.cmdragon.cn/tags/%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#错误处理 <span class="text-xs opacity-70">(34)</span>
+</a><a href=https://blog.cmdragon.cn/tags/%E7%BB%84%E4%BB%B6/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#组件 <span class="text-xs opacity-70">(29)</span>
+</a><a href=https://blog.cmdragon.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#数据库管理 <span class="text-xs opacity-70">(27)</span>
+</a><a href=https://blog.cmdragon.cn/tags/%E5%85%8D%E8%B4%B9%E5%B7%A5%E5%85%B7/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#免费工具 <span class="text-xs opacity-70">(25)</span></a></div></div></div><div class="border-t border-gray-200 dark:border-gray-700 pt-6"><div class="flex flex-col md:flex-row justify-between items-center"><div class="text-center md:text-left mb-4 md:mb-0"><p class="text-sm text-gray-600 dark:text-gray-400">&copy; 2023 cmdragon's Blog. 保留所有权利.</p><p class="text-xs text-gray-500 dark:text-gray-500 mt-1">由 <a href=https://gohugo.io/ class="hover:text-primary transition-colors duration-300" target=_blank rel="noopener noreferrer">Hugo</a> 强力驱动 |
+<a href=/license/ class="hover:text-primary transition-colors duration-300" aria-label="Apache 2.0 许可证" tabindex=0>Apache License 2.0</a></p></div><button id=back-to-top class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white p-2 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center text-sm font-medium">
+<iconify-icon icon=mdi:arrow-up class=mr-1 width=16 height=16></iconify-icon>返回顶部</button></div></div></div><div id=wechat-modal class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center hidden" onclick='this.classList.add("hidden")'><div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-xl max-w-sm w-full relative" onclick=event.stopPropagation()><button class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200" onclick='document.getElementById("wechat-modal").classList.add("hidden")'>
+<iconify-icon icon=mdi:close width=20 height=20></iconify-icon></button><h4 class="text-center font-medium text-gray-800 dark:text-gray-200 mb-4">扫码关注公众号</h4><div class="flex justify-center"><img src=/images/wechat_qrcode.webp alt=微信二维码 class="w-64 h-64 object-contain"></div></div></div></footer><script>const backToTopButton=document.getElementById("back-to-top");window.addEventListener("scroll",function(){window.scrollY>300?(backToTopButton.classList.remove("opacity-0","invisible"),backToTopButton.classList.add("opacity-100","visible")):(backToTopButton.classList.add("opacity-0","invisible"),backToTopButton.classList.remove("opacity-100","visible"))}),backToTopButton.addEventListener("click",function(){window.scrollTo({top:0,behavior:"smooth"})}),document.getElementById("wechat-btn").addEventListener("click",function(){document.getElementById("wechat-modal").classList.remove("hidden")}),document.getElementById("wechat-btn").addEventListener("keydown",function(e){(e.key==="Enter"||e.key===" ")&&(e.preventDefault(),document.getElementById("wechat-modal").classList.remove("hidden"))})</script></div><script>localStorage.getItem("color-theme")==="dark"||!("color-theme"in localStorage)&&window.matchMedia("(prefers-color-scheme: dark)").matches?document.documentElement.classList.add("dark"):document.documentElement.classList.remove("dark")</script><script src=/js/code-highlight.min.4842a0354e92cb0dda865ccf94d2765aed80ac8c38ecfdfa73acb9d96533900a060f638558e82d702f706f2dee31810e14803438e9b540a91f1e47da7585fba2.js integrity="sha512-SEKgNU6Syw3ahlzPlNJ2Wu2ArIw47P36c6y52WUzkAoGD2OFWOgtcC9wby3uMYEOFIA0OOm1QKkfHkfadYX7og=="></script><script src=/js/advanced-render.min.077c50eb205e6c2bdd8338b745aa82315971b8a9a4e848099a29b66f42acaee66a260c6ac20b9cac91863baf86da9a641bb920235a53045145fa313a514fe6c3.js integrity="sha512-B3xQ6yBebCvdgzi3RaqCMVlxuKmk6EgJmim2b0KsruZqJgxqwgucrJGGO6+G2ppkG7kgI1pTBFFF+jE6UU/mww=="></script><div id=site-search-modal class="fixed inset-0 z-50 flex items-center justify-center hidden opacity-0 transition-opacity duration-300"><div id=site-search-backdrop class="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div><div class="relative bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 rounded-xl shadow-xl max-w-lg w-full mx-4 z-10 transform transition-all duration-300 scale-95 opacity-0 border border-gray-100 dark:border-gray-700"><div class="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700"><h3 class="text-lg font-medium flex items-center"><div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-1.5 rounded text-white mr-2 shadow-sm"><iconify-icon icon=mdi:magnify width=16 height=16></iconify-icon></div><span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-indigo-600">站内搜索</span></h3><button id=site-search-close class="text-gray-400 hover:text-gray-500 focus:outline-none transition-colors duration-200 p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full">
+<iconify-icon icon=mdi:close width=20 height=20></iconify-icon></button></div><div class=p-6><form id=site-search-form action=/search/ method=get><div class=relative><div class="flex items-center border border-gray-300 dark:border-gray-600 rounded-lg overflow-hidden focus-within:ring-2 focus-within:ring-blue-500 transition-all duration-300 shadow-sm hover:shadow-md"><span class="pl-4 text-gray-400"><iconify-icon icon=mdi:magnify width=20 height=20></iconify-icon></span><input type=text id=site-search-input name=q placeholder=输入关键词搜索... class="w-full px-3 py-3 border-none focus:outline-none bg-transparent text-gray-800 dark:text-gray-200" aria-label=搜索内容 tabindex=0>
+<button type=submit class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-4 py-3 hover:shadow-md transition-all duration-300 flex items-center" aria-label=搜索 tabindex=0>
+<span class="mr-1 hidden sm:inline">搜索</span>
+<iconify-icon icon=mdi:arrow-right width=18 height=18></iconify-icon></button></div></div></form><div class="mt-6 text-sm text-gray-500 dark:text-gray-400 bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg border border-blue-100 dark:border-blue-800/30 flex items-start"><div class="bg-blue-100 dark:bg-blue-800/50 p-1.5 rounded-full mr-3 mt-0.5"><iconify-icon icon=mdi:information width=16 height=16 class="text-blue-500 dark:text-blue-300"></iconify-icon></div><div><p class=mb-1>快捷键提示:</p><ul class=space-y-1><li class="flex items-center"><span class="bg-gray-100 dark:bg-gray-700 px-2 py-0.5 rounded text-xs font-mono mr-2">/</span>
+<span>打开搜索</span></li><li class="flex items-center"><span class="bg-gray-100 dark:bg-gray-700 px-2 py-0.5 rounded text-xs font-mono mr-2">Esc</span>
+<span>关闭搜索</span></li><li class="flex items-center"><span class="bg-gray-100 dark:bg-gray-700 px-2 py-0.5 rounded text-xs font-mono mr-2">Enter</span>
+<span>提交搜索</span></li></ul></div></div><div class="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700"><div class="flex flex-wrap gap-2"><a href=/tags/ class="bg-gradient-to-r hover:bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 text-gray-700 dark:text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-700 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-md flex items-center"><iconify-icon icon=mdi:tag-multiple class=mr-1 width=16 height=16></iconify-icon>标签
+</a><a href=/categories/ class="bg-gradient-to-r hover:bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 text-gray-700 dark:text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-700 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-md flex items-center"><iconify-icon icon=mdi:folder-multiple class=mr-1 width=16 height=16></iconify-icon>分类
+</a><a href=/archives/ class="bg-gradient-to-r hover:bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 text-gray-700 dark:text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-700 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-md flex items-center"><iconify-icon icon=mdi:archive class=mr-1 width=16 height=16></iconify-icon>归档</a></div></div></div></div></div><script>document.addEventListener("DOMContentLoaded",()=>{const e=document.getElementById("site-search-modal"),t=e.querySelector('div[class*="rounded-xl"]'),s=document.getElementById("site-search-backdrop"),o=document.getElementById("site-search-close"),a=document.getElementById("site-search-form"),i=document.getElementById("site-search-input");window.openSiteSearch=function(){e.classList.remove("hidden"),document.body.classList.add("overflow-hidden"),setTimeout(()=>{e.classList.add("opacity-100"),t.classList.remove("scale-95","opacity-0"),t.classList.add("scale-100","opacity-100"),i.focus()},10)};function n(){e.classList.remove("opacity-100"),t.classList.remove("scale-100","opacity-100"),t.classList.add("scale-95","opacity-0"),setTimeout(()=>{e.classList.add("hidden"),document.body.classList.remove("overflow-hidden")},300)}s&&s.addEventListener("click",n),o&&o.addEventListener("click",n),document.addEventListener("keydown",t=>{t.key==="Escape"&&!e.classList.contains("hidden")&&n(),t.key==="/"&&e.classList.contains("hidden")&&document.activeElement.tagName!=="INPUT"&&(t.preventDefault(),openSiteSearch())}),t.addEventListener("click",e=>{e.stopPropagation()})})</script></body></html>
