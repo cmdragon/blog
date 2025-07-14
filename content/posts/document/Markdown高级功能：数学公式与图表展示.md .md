@@ -1,10 +1,11 @@
 ---
 url: /posts/1d52f24a41ac648650f2200210d60ddd/
-title: "Markdown高级功能：数学公式与图表展示"
+title: Markdown高级功能：数学公式与图表展示
 date: 2023-08-10T14:30:00+08:00
 lastmod: 2023-08-10T14:30:00+08:00
 draft: false
-categories: ["教程"]
+categories: 
+  - 帮助文档
 tags: ["Markdown", "KaTeX", "Mermaid", "图表", "数学公式"]
 summary: "本文介绍如何在博客中使用KaTeX渲染数学公式和Mermaid绘制流程图、时序图等图表，丰富您的技术文章表现力。"
 ---
