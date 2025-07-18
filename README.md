@@ -1,6 +1,5 @@
-# 我的Hugo博客
 
-这是一个使用Hugo构建的个人博客，采用自定义设计，使用TailwindCSS进行样式设计。.
+这是一个使用Hugo构建的个人博客，采用自定义设计，使用TailwindCSS进行样式设计。
 
 ## 特点
 
@@ -15,6 +14,7 @@
 ```
 .
 ├── archetypes/        # 内容模板
+├── assets/            # 静态资源文件
 ├── content/           # 站点内容
 │   ├── posts/         # 博客文章
 │   └── about.md       # 关于页面
@@ -25,6 +25,9 @@
 │   └── ...
 ├── static/            # 静态文件
 ├── hugo.toml          # Hugo配置文件
+├── tailwind.config.js # TailwindCSS配置文件
+├── postcss.config.js  # PostCSS配置文件
+├── package.json       # 项目依赖
 └── README.md          # 本文件
 ```
 
