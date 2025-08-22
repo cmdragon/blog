@@ -28,7 +28,7 @@
                 {{ end }}
             </nav>
             
-            <!-- 右侧搜索和深色模式切换 -->
+            <!-- 右侧搜索、域名切换和深色模式切换 -->
             <div class="flex items-center space-x-3">
                 <!-- 搜索按钮 -->
                 <button 
@@ -38,6 +38,21 @@
                     onclick="openSiteSearch()">
                     <iconify-icon icon="mdi:magnify" width="20" height="20"></iconify-icon>
                 </button>
+                
+                <!-- 域名切换按钮 -->
+                <div class="relative">
+                    <button 
+                        id="domain-toggle" 
+                        class="p-2 rounded-lg hover:bg-blue-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+                        aria-label="切换域名"
+                        tabindex="0">
+                        <iconify-icon icon="mdi:web" width="20" height="20"></iconify-icon>
+                    </button>
+                    <div id="domain-dropdown" class="hidden absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-lg py-1 z-50 border border-gray-200 dark:border-gray-700">
+                        <a href="https://blog.cmdragon.cn{{ .RelPermalink }}" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">分流一</a>
+                        <a href="https://blog1.cmdragon.cn{{ .RelPermalink }}" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">分流二</a>
+                    </div>
+                </div>
                 
                 <!-- 深色模式切换 -->
                 <button 
@@ -97,6 +112,21 @@
         }
     });
     
+    // 域名切换下拉菜单
+    document.getElementById('domain-toggle').addEventListener('click', function(e) {
+        e.stopPropagation();
+        const dropdown = document.getElementById('domain-dropdown');
+        dropdown.classList.toggle('hidden');
+    });
+    
+    // 点击页面其他地方关闭下拉菜单
+    document.addEventListener('click', function(e) {
+        const dropdown = document.getElementById('domain-dropdown');
+        if (!dropdown.classList.contains('hidden')) {
+            dropdown.classList.add('hidden');
+        }
+    });
+    
     // 滚动时改变导航栏样式
     window.addEventListener('scroll', function() {
         const header = document.querySelector('header');
@@ -106,4 +136,4 @@
             header.classList.remove('shadow-lg', 'bg-white/95', 'backdrop-blur-sm', 'dark:bg-gray-800/95');
         }
     });
-</script> 
+</script>
