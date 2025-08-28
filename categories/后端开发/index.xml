@@ -1,118 +1,118 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>后端开发 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/</link><description>Recent content in 后端开发 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Fri, 04 Apr 2025 16:28:51 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml"/><item><title>FastAPI依赖注入：从基础概念到应用</title><link>https://blog.cmdragon.cn/posts/27a9080982ab01fc46bc583fd794bd24/</link><pubDate>Fri, 04 Apr 2025 16:28:51 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/27a9080982ab01fc46bc583fd794bd24/</guid><description>FastAPI的依赖注入机制通过&lt;code>Depends&lt;/code>实现，自动创建和注入依赖项，解耦组件并提高可测性。依赖项可以是函数或类，按声明顺序执行，支持同步/异步混合使用。嵌套依赖构建清晰的依赖关系树，如用户认证系统中，&lt;code>oauth2_scheme&lt;/code>提取Token，&lt;code>validate_token&lt;/code>验证有效性，&lt;code>get_user&lt;/code>获取用户信息。常见问题包括422验证错误和依赖项循环引用，可通过Pydantic模型验证和&lt;code>lambda&lt;/code>延迟解析解决。依赖项返回None会引发400错误，需注意参数默认值设置。</description></item><item><title>掌握FastAPI与Pydantic的跨字段验证技巧</title><link>https://blog.cmdragon.cn/posts/2e0c3ce718a08345f384ace84e80e891/</link><pubDate>Tue, 01 Apr 2025 00:32:07 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/2e0c3ce718a08345f384ace84e80e891/</guid><description>FastAPI中的Pydantic跨字段一致性验证用于处理用户注册、表单提交等场景中多个字段的联合验证需求。Pydantic通过验证器装饰器和根验证器实现字段间的联合判断，如密码确认、邮箱匹配等。文章详细介绍了验证器的基础用法、最佳实践示例以及如何在FastAPI中集成验证逻辑。进阶技巧包括自定义验证方法和组合验证规则。常见报错解决方案和最佳实践总结帮助开发者构建健壮的API系统。</description></item><item><title>FastAPI中的Pydantic密码验证机制与实现</title><link>https://blog.cmdragon.cn/posts/a72a86da313f399c29b36ec08f75361d/</link><pubDate>Mon, 31 Mar 2025 00:04:51 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/a72a86da313f399c29b36ec08f75361d/</guid><description>FastAPI 中通过 Pydantic 模型实现密码验证，采用分层机制确保高效与灵活扩展。验证流程包括基础类型检查、长度验证、复杂度验证和泄露检测，任一阶段失败即终止后续验证。通过 &lt;code>SecretStr&lt;/code> 安全获取密码明文，结合正则表达式验证密码复杂度，并利用哈希函数检测密码是否泄露。模块化设计便于后续添加更多安全规则，如密码过期策略和历史密码比对。</description></item><item><title>Django集成elasticsearch</title><link>https://blog.cmdragon.cn/posts/0a47f405d0a04677bb894315ff0f4c83/</link><pubDate>Thu, 30 May 2024 09:01:33 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/0a47f405d0a04677bb894315ff0f4c83/</guid><description>&lt;p>在Django项目中集成Elasticsearch通常涉及以下几个步骤：&lt;/p>
-&lt;h3 id="1-安装elasticsearch">1. &lt;strong>安装Elasticsearch&lt;/strong>：&lt;/h3>
-&lt;p>首先，你需要在你的服务器或本地机器上安装Elasticsearch。可以从&lt;a href="https://www.elastic.co/downloads/elasticsearch">Elasticsearch官网&lt;/a>
-下载并安装。&lt;/p></description></item><item><title>Django与前端框架协作开发实战：高效构建现代Web应用</title><link>https://blog.cmdragon.cn/posts/9df3c2f23696d525e532c8f2e1f84cb6/</link><pubDate>Wed, 22 May 2024 20:07:47 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/9df3c2f23696d525e532c8f2e1f84cb6/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_22 20_14_41.png" title="2024_05_22 20_14_41.png" alt="2024_05_22 20_14_41.png"/>
-&lt;h2 id="第1章简介">&lt;strong>第1章：简介&lt;/strong>&lt;/h2>
-&lt;h3 id="11-django简介">&lt;strong>1.1 Django简介&lt;/strong>&lt;/h3>
-&lt;p>Django是一个高级的Python
-Web框架，它鼓励快速开发和干净、实用的设计。由经验丰富的开发者构建，它解决了Web开发中的许多麻烦，因此你可以专注于编写应用而无需重新发明轮子。Django遵循MTV（模型-模板-视图）设计模式，它类似于MVC（模型-视图-控制器），但略有不同。&lt;/p></description></item><item><title>Django与微服务架构：构建可扩展的Web应用</title><link>https://blog.cmdragon.cn/posts/61b57747a82113c01f83b72ade53c352/</link><pubDate>Tue, 21 May 2024 20:15:19 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/61b57747a82113c01f83b72ade53c352/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_21 20_18_51.png" title="2024_05_21 20_18_51.png" alt="2024_05_21 20_18_51.png"/>
-&lt;h2 id="前言">前言&lt;/h2>
-&lt;p>在当今快速发展的软件开发领域，微服务架构已经成为构建可扩展、灵活且易于维护的系统的热门选择。微服务架构通过将大型应用程序分解为一组小型、独立的服务来工作，每个服务都围绕特定的业务功能构建，并可以独立开发、部署和扩展。这种架构模式的优势在于提高了系统的灵活性和可维护性，同时允许团队以更快的速度迭代和部署新功能。&lt;/p></description></item><item><title>Django性能优化：提升加载速度</title><link>https://blog.cmdragon.cn/posts/c2c209c55d5a7e090dd79f486f581a31/</link><pubDate>Mon, 20 May 2024 20:16:28 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/c2c209c55d5a7e090dd79f486f581a31/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_20 20_18_55.png" title="2024_05_20 20_18_55.png" alt="2024_05_20 20_18_55.png"/>
-&lt;h2 id="第一章django性能优化概述">&lt;strong>第一章：Django性能优化概述&lt;/strong>&lt;/h2>
-&lt;h3 id="11-性能优化的意义">&lt;strong>1.1 性能优化的意义&lt;/strong>&lt;/h3>
-&lt;p>性能优化是Web开发中的关键环节，它直接影响到网站的用户体验。良好的性能意味着更快的页面加载速度，更低的延迟，更高的用户满意度。在竞争激烈的市场环境下，快速加载的网站能够吸引和留住用户，提升搜索引擎排名，降低跳出率，从而提高网站的转化率和商业价值。&lt;/p></description></item><item><title>深入Django项目实战与最佳实践</title><link>https://blog.cmdragon.cn/posts/bd5faca957b56442891a719976bb1866/</link><pubDate>Sun, 19 May 2024 21:41:38 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/bd5faca957b56442891a719976bb1866/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_19 21_55_37.png" title="2024_05_19 21_55_37.png" alt="2024_05_19 21_55_37.png"/>
-&lt;h2 id="第一章django项目架构与设计原则">第一章：Django项目架构与设计原则&lt;/h2>
-&lt;h3 id="django框架概述">Django框架概述&lt;/h3>
-&lt;p>Django是一个高级的Python Web框架，它鼓励快速开发和干净、实用的设计。由于其“包含电池”的特性，Django提供了许多构建现代Web应用程序所需的工具和功能，从而减少了开发者需要从头开始编写的代码量。&lt;/p></description></item><item><title>Django测试与持续集成：从入门到精通</title><link>https://blog.cmdragon.cn/posts/d81e79d960dcfe37be921f2c557a78b2/</link><pubDate>Sat, 18 May 2024 16:38:41 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/d81e79d960dcfe37be921f2c557a78b2/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_18 16_43_35.png" title="2024_05_18 16_43_35.png" alt="2024_05_18 16_43_35.png"/>
-&lt;h2 id="第1章django测试基础">第1章：Django测试基础&lt;/h2>
-&lt;h3 id="11-django测试框架概述">1.1 Django测试框架概述&lt;/h3>
-&lt;p>Django测试框架是Django web
-框架的一部分，提供了一个强大的工具集，帮助开发人员编写、运行和维护测试用例。Django测试框架基于Python的unittest模块，并扩展了许多有用的特性，例如数据库支持、测试客户端、模型和视图测试等。AD：&lt;a href="https://cmdragon.cn/">首页 | 一个覆盖广泛主题工具的高效在线平台&lt;/a>&lt;/p></description></item><item><title>Django自定义模板标签与过滤器</title><link>https://blog.cmdragon.cn/posts/2b6bd11099b5566885f6c25db84ea9f8/</link><pubDate>Fri, 17 May 2024 18:00:02 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/2b6bd11099b5566885f6c25db84ea9f8/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_17 18_10_17.png" title="2024_05_17 18_10_17.png" alt="2024_05_17 18_10_17.png"/>
-&lt;h3 id="django模板系统基础">Django模板系统基础&lt;/h3>
-&lt;h4 id="1-django模板语言概述">1. Django模板语言概述&lt;/h4>
-&lt;p>Django模板语言（DTL）是一种用于在HTML中插入动态内容的语言。它允许开发者在模板中使用变量、标签、过滤器和注释，以便动态生成页面内容。变量用于显示动态数据，标签用于控制模板逻辑，过滤器用于格式化变量的输出，注释用于添加注释而不会在最终渲染中显示。&lt;/p></description></item><item><title>Django 自定义管理命令：从入门到高级</title><link>https://blog.cmdragon.cn/posts/a8afecb00bd2b7776e7c3d79738685cd/</link><pubDate>Thu, 16 May 2024 18:34:29 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/a8afecb00bd2b7776e7c3d79738685cd/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_16 18_43_11.png" title="2024_05_16 18_43_11.png" alt="2024_05_16 18_43_11.png"/>
-&lt;h2 id="第-1-章-简介">&lt;strong>第 1 章 简介&lt;/strong>&lt;/h2>
-&lt;h3 id="11django-管理命令简介">1.1 &lt;strong>Django 管理命令简介&lt;/strong>&lt;/h3>
-&lt;p>Django 是一个流行的 Python 网络框架，提供了许多有用的工具和特性，帮助开发人员快速构建强大的 Web
-应用程序。其中一项重要特性是管理命令，它允许您在命令行界面 (CLI) 中执行各种任务，如数据库迁移、数据库操作、缓存清理和其他系统管理任务。&lt;/p></description></item><item><title>Django信号与扩展：深入理解与实践</title><link>https://blog.cmdragon.cn/posts/13ce298742c5b544510b64df767a9f23/</link><pubDate>Wed, 15 May 2024 22:40:52 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/13ce298742c5b544510b64df767a9f23/</guid><description>&lt;h2 id="第一部分django信号基础">第一部分：Django信号基础&lt;/h2>
-&lt;h3 id="django信号概述">Django信号概述&lt;/h3>
-&lt;p>一. Django信号的定义与作用&lt;/p>
-&lt;p>Django信号（Signal）是Django框架中的一种机制，用于在特定事件发生时进行通信。信号可以让不同的Django组件松耦合地通信，即使它们不直接相互依赖。这种松耦合的设计使得Django应用更加灵活、可扩展和可维护。&lt;/p></description></item><item><title>Django RESTful API设计与实践指南</title><link>https://blog.cmdragon.cn/posts/eb1fa8383e445fbb6f0f2ff1276d4ae2/</link><pubDate>Tue, 14 May 2024 15:37:45 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/eb1fa8383e445fbb6f0f2ff1276d4ae2/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_14 15_39_32.png" title="2024_05_14 15_39_32.png" alt="2024_05_14 15_39_32.png"/>
-&lt;h2 id="第1章django基础知识">&lt;strong>第1章：Django基础知识&lt;/strong>&lt;/h2>
-&lt;h3 id="11-django简介">&lt;strong>1.1 Django简介：&lt;/strong>  &lt;/h3>
-&lt;p>Django是一个使用Python语言开发的开源Web应用框架，它遵循MVC（Model-View-Controller）模式，旨在帮助开发者快速构建高质量、功能强大的Web应用程序。Django具有强大的功能和丰富的功能模块，如ORM（对象关系映射）、模板引擎、表单处理、管理后台等，使得开发过程更加高效和简洁。&lt;/p></description></item><item><title>Django 安全性与防御性编程：如何保护 Django Web 应用</title><link>https://blog.cmdragon.cn/posts/f8ba40152b39d84f918402253b9e3158/</link><pubDate>Mon, 13 May 2024 20:26:58 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/f8ba40152b39d84f918402253b9e3158/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_13 20_31_47.png" title="2024_05_13 20_31_47.png" alt="2024_05_13 20_31_47.png"/>
-&lt;h2 id="跨站请求伪造csrf">跨站请求伪造（CSRF）&lt;/h2>
-&lt;p>跨站请求伪造（CSRF）是一种常见的网络攻击，它利用用户的身份和权限，欺骗服务器执行非预期的操作。Django 提供了一种内置的 CSRF
-保护机制，可以帮助保护应用免受 CSRF 攻击。&lt;/p></description></item><item><title>Django国际化与本地化指南</title><link>https://blog.cmdragon.cn/posts/fb3988914d7d0faa88af45cb045aba9e/</link><pubDate>Sun, 12 May 2024 16:51:04 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/fb3988914d7d0faa88af45cb045aba9e/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_12 16_54_10.png" title="2024_05_12 16_54_10.png" alt="2024_05_12 16_54_10.png"/>
-&lt;h2 id="引言">引言&lt;/h2>
-&lt;p>在数字化时代，网站和应用程序必须跨越地域限制，服务于全球用户。这就是国际化（Internationalization, I18N）和本地化（Localization,
-L10N）的重要性日益凸显。它们不仅关乎用户体验，也影响着企业的全球市场竞争力。一个成功的国际化应用不仅能让用户感受到尊重，还能提高用户的满意度和忠诚度。&lt;/p></description></item><item><title>Django性能之道：缓存应用与优化实战</title><link>https://blog.cmdragon.cn/posts/887a0a7da3a77358a6c56b53de583bfd/</link><pubDate>Sat, 11 May 2024 18:34:22 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/887a0a7da3a77358a6c56b53de583bfd/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_11 18_37_29.png" title="2024_05_11 18_37_29.png" alt="2024_05_11 18_37_29.png"/>
-&lt;p>&lt;strong>引言&lt;/strong>&lt;/p>
-&lt;p>在当今的互联网时代，用户对网站和应用程序的性能要求越来越高。一个响应迅速、加载快速的网站不仅能提升用户体验，还能在搜索引擎排名中占据优势。Django，作为一个高级Python
-Web框架，以其快速开发和干净、实用的设计而闻名。然而，即使是最优化的Django应用，也可能因为频繁的数据库查询、复杂的计算或外部API调用而变得缓慢。这就是缓存发挥作用的地方。&lt;/p></description></item><item><title>Django 静态文件管理与部署指南</title><link>https://blog.cmdragon.cn/posts/2b0af3c98704bebb8dc67f5bf5ad6aeb/</link><pubDate>Fri, 10 May 2024 17:38:36 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/2b0af3c98704bebb8dc67f5bf5ad6aeb/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_10 17_44_56.png" title="2024_05_10 17_44_56.png" alt="2024_05_10 17_44_56.png"/>
-&lt;h2 id="第一章介绍">&lt;strong>第一章：介绍&lt;/strong>&lt;/h2>
-&lt;h3 id="django-静态文件的概念和重要性">&lt;strong>Django 静态文件的概念和重要性&lt;/strong>&lt;/h3>
-&lt;p>在 Web 开发中，静态文件通常指的是 CSS、JavaScript、图片等不需要经过服务器处理的文件。在 Django 中，静态文件包括项目中使用的
-CSS 样式表、JavaScript 脚本、图片、字体等资源。这些静态文件对于网站的外观和功能起着至关重要的作用，因此有效管理和部署静态文件对于项目的成功至关重要。&lt;/p></description></item><item><title>深入理解Django：中间件与信号处理的艺术</title><link>https://blog.cmdragon.cn/posts/2754fe06b895a4268f93c63424bd4c13/</link><pubDate>Thu, 09 May 2024 18:41:21 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/2754fe06b895a4268f93c63424bd4c13/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_09 18_45_49.png" title="2024_05_09 18_45_49.png" alt="2024_05_09 18_45_49.png"/>
-&lt;h2 id="引言">&lt;strong>引言&lt;/strong>&lt;/h2>
-&lt;p>在当今的Web开发领域，Django以其强大的功能、简洁的代码结构和高度的可扩展性，已成为众多开发者的首选框架。Django不仅是一个内容管理系统，更是一个全面的框架，它提供了一套完整的解决方案，包括ORM、模板引擎、URL路由系统和强大的管理后台，使得开发者能够快速构建高质量的Web应用。&lt;/p></description></item><item><title>Django Admin后台管理：高效开发与实践</title><link>https://blog.cmdragon.cn/posts/0b2b3e994397eac87a215e08b901342a/</link><pubDate>Wed, 08 May 2024 14:24:15 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/0b2b3e994397eac87a215e08b901342a/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_08 14_27_23.png" title="2024_05_08 14_27_23.png" alt="2024_05_08 14_27_23.png"/>
-&lt;h2 id="第1章django-admin基础">&lt;strong>第1章：Django Admin基础&lt;/strong>&lt;/h2>
-&lt;h3 id="11-django-admin简介">&lt;strong>1.1 Django Admin简介&lt;/strong>&lt;/h3>
-&lt;p>Django Admin是Django框架自带的一个管理后台工具，它允许开发者通过一个直观的Web界面轻松地管理应用中的数据模型。Admin提供了模型的CRUD（Create,
-Read, Update, Delete）操作，以及数据的批量处理和搜索功能，极大地简化了日常的数据库管理。它不仅适用于开发阶段，也非常适合在生产环境中进行数据维护。&lt;/p></description></item><item><title>深入Django：用户认证与权限控制实战指南</title><link>https://blog.cmdragon.cn/posts/97960a5ff919d42c971469663fb1203c/</link><pubDate>Tue, 07 May 2024 18:50:33 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/97960a5ff919d42c971469663fb1203c/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_07 18_57_50.png" title="2024_05_07 18_57_50.png" alt="2024_05_07 18_57_50.png"/>
-&lt;h2 id="第1章入门django与设置">&lt;strong>第1章：入门Django与设置&lt;/strong>&lt;/h2>
-&lt;h3 id="11-django安装与环境配置">&lt;strong>1.1 Django安装与环境配置&lt;/strong>&lt;/h3>
-&lt;p>在开始使用Django之前，需要确保已经安装了Python环境。在安装好Python后，可以使用以下命令安装Django：&lt;/p></description></item><item><title>Django高级表单处理与验证实战</title><link>https://blog.cmdragon.cn/posts/d16b468457895cfcfb0397217cb62acd/</link><pubDate>Mon, 06 May 2024 20:47:15 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/d16b468457895cfcfb0397217cb62acd/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_06 20_52_18.png" title="2024_05_06 20_52_18.png" alt="2024_05_06 20_52_18.png"/>
-&lt;h2 id="引言">引言：&lt;/h2>
-&lt;p>在Web应用开发中，表单是用户与应用之间进行交互的重要方式，它承载着用户输入的数据，是用户与应用之间信息传递的桥梁。Django作为一个强大的Web框架，提供了丰富而灵活的表单处理功能，使得开发者能够轻松地创建、验证和处理表单数据。&lt;/p></description></item><item><title>深入学习和理解Django模板层：构建动态页面</title><link>https://blog.cmdragon.cn/posts/bea111715764852706f5ef8b2e4401e4/</link><pubDate>Sun, 05 May 2024 20:53:51 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/bea111715764852706f5ef8b2e4401e4/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_05 20_55_55.png" title="2024_05_05 20_55_55.png" alt="2024_05_05 20_55_55.png"/>
-&lt;h2 id="第一章模板语法基础">&lt;strong>第一章：模板语法基础&lt;/strong>&lt;/h2>
-&lt;h3 id="django模板语法介绍">&lt;strong>Django模板语法介绍&lt;/strong>&lt;/h3>
-&lt;p>Django模板语法是一种简洁而强大的语法，用于在HTML中插入动态数据和控制页面逻辑。以下是一些常用的模板语法元素：&lt;/p>
-&lt;ol>
-&lt;li>&lt;strong>变量&lt;/strong>：使用双大括号&lt;code>{{ variable }}&lt;/code>来表示变量，可以在模板中输出变量的值。&lt;/li>
-&lt;li>&lt;strong>标签&lt;/strong>：使用单大括号和百分号&lt;code>{% tag %}&lt;/code>来表示标签，用于执行控制逻辑，如for循环、if语句等。&lt;/li>
-&lt;li>&lt;strong>过滤器&lt;/strong>：在变量后面使用管道符&lt;code>|&lt;/code>来应用过滤器，对变量进行处理，如格式化输出、大小写转换等。&lt;/li>
-&lt;/ol>
-&lt;p>&lt;strong>变量、过滤器和标签&lt;/strong>&lt;/p></description></item><item><title>深入学习和理解Django视图层：处理请求与响应</title><link>https://blog.cmdragon.cn/posts/3476dd0354c04bdd0485e1bbe91ccb1b/</link><pubDate>Sat, 04 May 2024 17:47:55 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/3476dd0354c04bdd0485e1bbe91ccb1b/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_04 17_51_09.png" title="2024_05_04 17_51_09.png" alt="2024_05_04 17_51_09.png"/>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>后端开发 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/</link><description>Recent content in 后端开发 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Fri, 04 Apr 2025 16:28:51 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml"/><item><title>FastAPI依赖注入：从基础概念到应用</title><link>https://blog.cmdragon.cn/posts/27a9080982ab01fc46bc583fd794bd24/</link><pubDate>Fri, 04 Apr 2025 16:28:51 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/27a9080982ab01fc46bc583fd794bd24/</guid><description>FastAPI的依赖注入机制通过&lt;code&gt;Depends&lt;/code&gt;实现，自动创建和注入依赖项，解耦组件并提高可测性。依赖项可以是函数或类，按声明顺序执行，支持同步/异步混合使用。嵌套依赖构建清晰的依赖关系树，如用户认证系统中，&lt;code&gt;oauth2_scheme&lt;/code&gt;提取Token，&lt;code&gt;validate_token&lt;/code&gt;验证有效性，&lt;code&gt;get_user&lt;/code&gt;获取用户信息。常见问题包括422验证错误和依赖项循环引用，可通过Pydantic模型验证和&lt;code&gt;lambda&lt;/code&gt;延迟解析解决。依赖项返回None会引发400错误，需注意参数默认值设置。</description></item><item><title>掌握FastAPI与Pydantic的跨字段验证技巧</title><link>https://blog.cmdragon.cn/posts/2e0c3ce718a08345f384ace84e80e891/</link><pubDate>Tue, 01 Apr 2025 00:32:07 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/2e0c3ce718a08345f384ace84e80e891/</guid><description>FastAPI中的Pydantic跨字段一致性验证用于处理用户注册、表单提交等场景中多个字段的联合验证需求。Pydantic通过验证器装饰器和根验证器实现字段间的联合判断，如密码确认、邮箱匹配等。文章详细介绍了验证器的基础用法、最佳实践示例以及如何在FastAPI中集成验证逻辑。进阶技巧包括自定义验证方法和组合验证规则。常见报错解决方案和最佳实践总结帮助开发者构建健壮的API系统。</description></item><item><title>FastAPI中的Pydantic密码验证机制与实现</title><link>https://blog.cmdragon.cn/posts/a72a86da313f399c29b36ec08f75361d/</link><pubDate>Mon, 31 Mar 2025 00:04:51 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/a72a86da313f399c29b36ec08f75361d/</guid><description>FastAPI 中通过 Pydantic 模型实现密码验证，采用分层机制确保高效与灵活扩展。验证流程包括基础类型检查、长度验证、复杂度验证和泄露检测，任一阶段失败即终止后续验证。通过 &lt;code&gt;SecretStr&lt;/code&gt; 安全获取密码明文，结合正则表达式验证密码复杂度，并利用哈希函数检测密码是否泄露。模块化设计便于后续添加更多安全规则，如密码过期策略和历史密码比对。</description></item><item><title>Django集成elasticsearch</title><link>https://blog.cmdragon.cn/posts/0a47f405d0a04677bb894315ff0f4c83/</link><pubDate>Thu, 30 May 2024 09:01:33 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/0a47f405d0a04677bb894315ff0f4c83/</guid><description>&lt;p&gt;在Django项目中集成Elasticsearch通常涉及以下几个步骤：&lt;/p&gt;
+&lt;h3 id="1-安装elasticsearch"&gt;1. &lt;strong&gt;安装Elasticsearch&lt;/strong&gt;：&lt;/h3&gt;
+&lt;p&gt;首先，你需要在你的服务器或本地机器上安装Elasticsearch。可以从&lt;a href="https://www.elastic.co/downloads/elasticsearch"&gt;Elasticsearch官网&lt;/a&gt;
+下载并安装。&lt;/p&gt;</description></item><item><title>Django与前端框架协作开发实战：高效构建现代Web应用</title><link>https://blog.cmdragon.cn/posts/9df3c2f23696d525e532c8f2e1f84cb6/</link><pubDate>Wed, 22 May 2024 20:07:47 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/9df3c2f23696d525e532c8f2e1f84cb6/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_22 20_14_41.png" title="2024_05_22 20_14_41.png" alt="2024_05_22 20_14_41.png"/&gt;
+&lt;h2 id="第1章简介"&gt;&lt;strong&gt;第1章：简介&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id="11-django简介"&gt;&lt;strong&gt;1.1 Django简介&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Django是一个高级的Python
+Web框架，它鼓励快速开发和干净、实用的设计。由经验丰富的开发者构建，它解决了Web开发中的许多麻烦，因此你可以专注于编写应用而无需重新发明轮子。Django遵循MTV（模型-模板-视图）设计模式，它类似于MVC（模型-视图-控制器），但略有不同。&lt;/p&gt;</description></item><item><title>Django与微服务架构：构建可扩展的Web应用</title><link>https://blog.cmdragon.cn/posts/61b57747a82113c01f83b72ade53c352/</link><pubDate>Tue, 21 May 2024 20:15:19 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/61b57747a82113c01f83b72ade53c352/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_21 20_18_51.png" title="2024_05_21 20_18_51.png" alt="2024_05_21 20_18_51.png"/&gt;
+&lt;h2 id="前言"&gt;前言&lt;/h2&gt;
+&lt;p&gt;在当今快速发展的软件开发领域，微服务架构已经成为构建可扩展、灵活且易于维护的系统的热门选择。微服务架构通过将大型应用程序分解为一组小型、独立的服务来工作，每个服务都围绕特定的业务功能构建，并可以独立开发、部署和扩展。这种架构模式的优势在于提高了系统的灵活性和可维护性，同时允许团队以更快的速度迭代和部署新功能。&lt;/p&gt;</description></item><item><title>Django性能优化：提升加载速度</title><link>https://blog.cmdragon.cn/posts/c2c209c55d5a7e090dd79f486f581a31/</link><pubDate>Mon, 20 May 2024 20:16:28 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/c2c209c55d5a7e090dd79f486f581a31/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_20 20_18_55.png" title="2024_05_20 20_18_55.png" alt="2024_05_20 20_18_55.png"/&gt;
+&lt;h2 id="第一章django性能优化概述"&gt;&lt;strong&gt;第一章：Django性能优化概述&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id="11-性能优化的意义"&gt;&lt;strong&gt;1.1 性能优化的意义&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;性能优化是Web开发中的关键环节，它直接影响到网站的用户体验。良好的性能意味着更快的页面加载速度，更低的延迟，更高的用户满意度。在竞争激烈的市场环境下，快速加载的网站能够吸引和留住用户，提升搜索引擎排名，降低跳出率，从而提高网站的转化率和商业价值。&lt;/p&gt;</description></item><item><title>深入Django项目实战与最佳实践</title><link>https://blog.cmdragon.cn/posts/bd5faca957b56442891a719976bb1866/</link><pubDate>Sun, 19 May 2024 21:41:38 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/bd5faca957b56442891a719976bb1866/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_19 21_55_37.png" title="2024_05_19 21_55_37.png" alt="2024_05_19 21_55_37.png"/&gt;
+&lt;h2 id="第一章django项目架构与设计原则"&gt;第一章：Django项目架构与设计原则&lt;/h2&gt;
+&lt;h3 id="django框架概述"&gt;Django框架概述&lt;/h3&gt;
+&lt;p&gt;Django是一个高级的Python Web框架，它鼓励快速开发和干净、实用的设计。由于其“包含电池”的特性，Django提供了许多构建现代Web应用程序所需的工具和功能，从而减少了开发者需要从头开始编写的代码量。&lt;/p&gt;</description></item><item><title>Django测试与持续集成：从入门到精通</title><link>https://blog.cmdragon.cn/posts/d81e79d960dcfe37be921f2c557a78b2/</link><pubDate>Sat, 18 May 2024 16:38:41 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/d81e79d960dcfe37be921f2c557a78b2/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_18 16_43_35.png" title="2024_05_18 16_43_35.png" alt="2024_05_18 16_43_35.png"/&gt;
+&lt;h2 id="第1章django测试基础"&gt;第1章：Django测试基础&lt;/h2&gt;
+&lt;h3 id="11-django测试框架概述"&gt;1.1 Django测试框架概述&lt;/h3&gt;
+&lt;p&gt;Django测试框架是Django web
+框架的一部分，提供了一个强大的工具集，帮助开发人员编写、运行和维护测试用例。Django测试框架基于Python的unittest模块，并扩展了许多有用的特性，例如数据库支持、测试客户端、模型和视图测试等。AD：&lt;a href="https://cmdragon.cn/"&gt;首页 | 一个覆盖广泛主题工具的高效在线平台&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Django自定义模板标签与过滤器</title><link>https://blog.cmdragon.cn/posts/2b6bd11099b5566885f6c25db84ea9f8/</link><pubDate>Fri, 17 May 2024 18:00:02 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/2b6bd11099b5566885f6c25db84ea9f8/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_17 18_10_17.png" title="2024_05_17 18_10_17.png" alt="2024_05_17 18_10_17.png"/&gt;
+&lt;h3 id="django模板系统基础"&gt;Django模板系统基础&lt;/h3&gt;
+&lt;h4 id="1-django模板语言概述"&gt;1. Django模板语言概述&lt;/h4&gt;
+&lt;p&gt;Django模板语言（DTL）是一种用于在HTML中插入动态内容的语言。它允许开发者在模板中使用变量、标签、过滤器和注释，以便动态生成页面内容。变量用于显示动态数据，标签用于控制模板逻辑，过滤器用于格式化变量的输出，注释用于添加注释而不会在最终渲染中显示。&lt;/p&gt;</description></item><item><title>Django 自定义管理命令：从入门到高级</title><link>https://blog.cmdragon.cn/posts/a8afecb00bd2b7776e7c3d79738685cd/</link><pubDate>Thu, 16 May 2024 18:34:29 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/a8afecb00bd2b7776e7c3d79738685cd/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_16 18_43_11.png" title="2024_05_16 18_43_11.png" alt="2024_05_16 18_43_11.png"/&gt;
+&lt;h2 id="第-1-章-简介"&gt;&lt;strong&gt;第 1 章 简介&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id="11django-管理命令简介"&gt;1.1 &lt;strong&gt;Django 管理命令简介&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Django 是一个流行的 Python 网络框架，提供了许多有用的工具和特性，帮助开发人员快速构建强大的 Web
+应用程序。其中一项重要特性是管理命令，它允许您在命令行界面 (CLI) 中执行各种任务，如数据库迁移、数据库操作、缓存清理和其他系统管理任务。&lt;/p&gt;</description></item><item><title>Django信号与扩展：深入理解与实践</title><link>https://blog.cmdragon.cn/posts/13ce298742c5b544510b64df767a9f23/</link><pubDate>Wed, 15 May 2024 22:40:52 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/13ce298742c5b544510b64df767a9f23/</guid><description>&lt;h2 id="第一部分django信号基础"&gt;第一部分：Django信号基础&lt;/h2&gt;
+&lt;h3 id="django信号概述"&gt;Django信号概述&lt;/h3&gt;
+&lt;p&gt;一. Django信号的定义与作用&lt;/p&gt;
+&lt;p&gt;Django信号（Signal）是Django框架中的一种机制，用于在特定事件发生时进行通信。信号可以让不同的Django组件松耦合地通信，即使它们不直接相互依赖。这种松耦合的设计使得Django应用更加灵活、可扩展和可维护。&lt;/p&gt;</description></item><item><title>Django RESTful API设计与实践指南</title><link>https://blog.cmdragon.cn/posts/eb1fa8383e445fbb6f0f2ff1276d4ae2/</link><pubDate>Tue, 14 May 2024 15:37:45 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/eb1fa8383e445fbb6f0f2ff1276d4ae2/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_14 15_39_32.png" title="2024_05_14 15_39_32.png" alt="2024_05_14 15_39_32.png"/&gt;
+&lt;h2 id="第1章django基础知识"&gt;&lt;strong&gt;第1章：Django基础知识&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id="11-django简介"&gt;&lt;strong&gt;1.1 Django简介：&lt;/strong&gt;  &lt;/h3&gt;
+&lt;p&gt;Django是一个使用Python语言开发的开源Web应用框架，它遵循MVC（Model-View-Controller）模式，旨在帮助开发者快速构建高质量、功能强大的Web应用程序。Django具有强大的功能和丰富的功能模块，如ORM（对象关系映射）、模板引擎、表单处理、管理后台等，使得开发过程更加高效和简洁。&lt;/p&gt;</description></item><item><title>Django 安全性与防御性编程：如何保护 Django Web 应用</title><link>https://blog.cmdragon.cn/posts/f8ba40152b39d84f918402253b9e3158/</link><pubDate>Mon, 13 May 2024 20:26:58 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/f8ba40152b39d84f918402253b9e3158/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_13 20_31_47.png" title="2024_05_13 20_31_47.png" alt="2024_05_13 20_31_47.png"/&gt;
+&lt;h2 id="跨站请求伪造csrf"&gt;跨站请求伪造（CSRF）&lt;/h2&gt;
+&lt;p&gt;跨站请求伪造（CSRF）是一种常见的网络攻击，它利用用户的身份和权限，欺骗服务器执行非预期的操作。Django 提供了一种内置的 CSRF
+保护机制，可以帮助保护应用免受 CSRF 攻击。&lt;/p&gt;</description></item><item><title>Django国际化与本地化指南</title><link>https://blog.cmdragon.cn/posts/fb3988914d7d0faa88af45cb045aba9e/</link><pubDate>Sun, 12 May 2024 16:51:04 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/fb3988914d7d0faa88af45cb045aba9e/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_12 16_54_10.png" title="2024_05_12 16_54_10.png" alt="2024_05_12 16_54_10.png"/&gt;
+&lt;h2 id="引言"&gt;引言&lt;/h2&gt;
+&lt;p&gt;在数字化时代，网站和应用程序必须跨越地域限制，服务于全球用户。这就是国际化（Internationalization, I18N）和本地化（Localization,
+L10N）的重要性日益凸显。它们不仅关乎用户体验，也影响着企业的全球市场竞争力。一个成功的国际化应用不仅能让用户感受到尊重，还能提高用户的满意度和忠诚度。&lt;/p&gt;</description></item><item><title>Django性能之道：缓存应用与优化实战</title><link>https://blog.cmdragon.cn/posts/887a0a7da3a77358a6c56b53de583bfd/</link><pubDate>Sat, 11 May 2024 18:34:22 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/887a0a7da3a77358a6c56b53de583bfd/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_11 18_37_29.png" title="2024_05_11 18_37_29.png" alt="2024_05_11 18_37_29.png"/&gt;
+&lt;p&gt;&lt;strong&gt;引言&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在当今的互联网时代，用户对网站和应用程序的性能要求越来越高。一个响应迅速、加载快速的网站不仅能提升用户体验，还能在搜索引擎排名中占据优势。Django，作为一个高级Python
+Web框架，以其快速开发和干净、实用的设计而闻名。然而，即使是最优化的Django应用，也可能因为频繁的数据库查询、复杂的计算或外部API调用而变得缓慢。这就是缓存发挥作用的地方。&lt;/p&gt;</description></item><item><title>Django 静态文件管理与部署指南</title><link>https://blog.cmdragon.cn/posts/2b0af3c98704bebb8dc67f5bf5ad6aeb/</link><pubDate>Fri, 10 May 2024 17:38:36 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/2b0af3c98704bebb8dc67f5bf5ad6aeb/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_10 17_44_56.png" title="2024_05_10 17_44_56.png" alt="2024_05_10 17_44_56.png"/&gt;
+&lt;h2 id="第一章介绍"&gt;&lt;strong&gt;第一章：介绍&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id="django-静态文件的概念和重要性"&gt;&lt;strong&gt;Django 静态文件的概念和重要性&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;在 Web 开发中，静态文件通常指的是 CSS、JavaScript、图片等不需要经过服务器处理的文件。在 Django 中，静态文件包括项目中使用的
+CSS 样式表、JavaScript 脚本、图片、字体等资源。这些静态文件对于网站的外观和功能起着至关重要的作用，因此有效管理和部署静态文件对于项目的成功至关重要。&lt;/p&gt;</description></item><item><title>深入理解Django：中间件与信号处理的艺术</title><link>https://blog.cmdragon.cn/posts/2754fe06b895a4268f93c63424bd4c13/</link><pubDate>Thu, 09 May 2024 18:41:21 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/2754fe06b895a4268f93c63424bd4c13/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_09 18_45_49.png" title="2024_05_09 18_45_49.png" alt="2024_05_09 18_45_49.png"/&gt;
+&lt;h2 id="引言"&gt;&lt;strong&gt;引言&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;在当今的Web开发领域，Django以其强大的功能、简洁的代码结构和高度的可扩展性，已成为众多开发者的首选框架。Django不仅是一个内容管理系统，更是一个全面的框架，它提供了一套完整的解决方案，包括ORM、模板引擎、URL路由系统和强大的管理后台，使得开发者能够快速构建高质量的Web应用。&lt;/p&gt;</description></item><item><title>Django Admin后台管理：高效开发与实践</title><link>https://blog.cmdragon.cn/posts/0b2b3e994397eac87a215e08b901342a/</link><pubDate>Wed, 08 May 2024 14:24:15 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/0b2b3e994397eac87a215e08b901342a/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_08 14_27_23.png" title="2024_05_08 14_27_23.png" alt="2024_05_08 14_27_23.png"/&gt;
+&lt;h2 id="第1章django-admin基础"&gt;&lt;strong&gt;第1章：Django Admin基础&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id="11-django-admin简介"&gt;&lt;strong&gt;1.1 Django Admin简介&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Django Admin是Django框架自带的一个管理后台工具，它允许开发者通过一个直观的Web界面轻松地管理应用中的数据模型。Admin提供了模型的CRUD（Create,
+Read, Update, Delete）操作，以及数据的批量处理和搜索功能，极大地简化了日常的数据库管理。它不仅适用于开发阶段，也非常适合在生产环境中进行数据维护。&lt;/p&gt;</description></item><item><title>深入Django：用户认证与权限控制实战指南</title><link>https://blog.cmdragon.cn/posts/97960a5ff919d42c971469663fb1203c/</link><pubDate>Tue, 07 May 2024 18:50:33 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/97960a5ff919d42c971469663fb1203c/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_07 18_57_50.png" title="2024_05_07 18_57_50.png" alt="2024_05_07 18_57_50.png"/&gt;
+&lt;h2 id="第1章入门django与设置"&gt;&lt;strong&gt;第1章：入门Django与设置&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id="11-django安装与环境配置"&gt;&lt;strong&gt;1.1 Django安装与环境配置&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;在开始使用Django之前，需要确保已经安装了Python环境。在安装好Python后，可以使用以下命令安装Django：&lt;/p&gt;</description></item><item><title>Django高级表单处理与验证实战</title><link>https://blog.cmdragon.cn/posts/d16b468457895cfcfb0397217cb62acd/</link><pubDate>Mon, 06 May 2024 20:47:15 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/d16b468457895cfcfb0397217cb62acd/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_06 20_52_18.png" title="2024_05_06 20_52_18.png" alt="2024_05_06 20_52_18.png"/&gt;
+&lt;h2 id="引言"&gt;引言：&lt;/h2&gt;
+&lt;p&gt;在Web应用开发中，表单是用户与应用之间进行交互的重要方式，它承载着用户输入的数据，是用户与应用之间信息传递的桥梁。Django作为一个强大的Web框架，提供了丰富而灵活的表单处理功能，使得开发者能够轻松地创建、验证和处理表单数据。&lt;/p&gt;</description></item><item><title>深入学习和理解Django模板层：构建动态页面</title><link>https://blog.cmdragon.cn/posts/bea111715764852706f5ef8b2e4401e4/</link><pubDate>Sun, 05 May 2024 20:53:51 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/bea111715764852706f5ef8b2e4401e4/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_05 20_55_55.png" title="2024_05_05 20_55_55.png" alt="2024_05_05 20_55_55.png"/&gt;
+&lt;h2 id="第一章模板语法基础"&gt;&lt;strong&gt;第一章：模板语法基础&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id="django模板语法介绍"&gt;&lt;strong&gt;Django模板语法介绍&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Django模板语法是一种简洁而强大的语法，用于在HTML中插入动态数据和控制页面逻辑。以下是一些常用的模板语法元素：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;变量&lt;/strong&gt;：使用双大括号&lt;code&gt;{{ variable }}&lt;/code&gt;来表示变量，可以在模板中输出变量的值。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;标签&lt;/strong&gt;：使用单大括号和百分号&lt;code&gt;{% tag %}&lt;/code&gt;来表示标签，用于执行控制逻辑，如for循环、if语句等。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;过滤器&lt;/strong&gt;：在变量后面使用管道符&lt;code&gt;|&lt;/code&gt;来应用过滤器，对变量进行处理，如格式化输出、大小写转换等。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;变量、过滤器和标签&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>深入学习和理解Django视图层：处理请求与响应</title><link>https://blog.cmdragon.cn/posts/3476dd0354c04bdd0485e1bbe91ccb1b/</link><pubDate>Sat, 04 May 2024 17:47:55 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/3476dd0354c04bdd0485e1bbe91ccb1b/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_04 17_51_09.png" title="2024_05_04 17_51_09.png" alt="2024_05_04 17_51_09.png"/&gt;
 ## 第一章：Django框架概述
-&lt;h3 id="11-什么是django">1.1 什么是Django？&lt;/h3>
-&lt;p>Django是一个高级的Python Web框架，它鼓励快速开发和干净、实用的设计。它由Wall Street
-Journal的程序员在2005年开发，用于他们的新闻网站。自那时起，Django已经成为全球范围内广泛使用的Web框架之一。&lt;/p></description></item><item><title>深入 Django 模型层：数据库设计与 ORM 实践指南</title><link>https://blog.cmdragon.cn/posts/45f66244be583a6db133781c25b25d98/</link><pubDate>Fri, 03 May 2024 18:25:33 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/45f66244be583a6db133781c25b25d98/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_03 18_32_02.png" title="2024_05_03 18_32_02.png" alt="2024_05_03 18_32_02.png"/>
-&lt;h2 id="第一章引言">第一章：引言&lt;/h2>
-&lt;p>Django是一个基于Python的开源Web应用程序框架，它遵循MTV（模型-模板-视图）的设计模式。Django框架的目标是使Web开发变得简单、快速和高效。它提供了许多功能强大且易于使用的工具，包括URL路由、模板系统、表单处理、认证系统等，使开发人员能够专注于业务逻辑的实现而不必从头开始构建基本功能。&lt;/p></description></item><item><title>从零开始：Django项目的创建与配置指南</title><link>https://blog.cmdragon.cn/posts/2475bf07d05f2d1a78dd47bfe9a73bd2/</link><pubDate>Thu, 02 May 2024 18:29:33 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/2475bf07d05f2d1a78dd47bfe9a73bd2/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_02 18_33_49.png" title="2024_05_02 18_33_49.png" alt="2024_05_02 18_33_49.png"/>
-&lt;h2 id="django简介">&lt;strong>Django简介：&lt;/strong>&lt;/h2>
-&lt;p>Django是一个开源的高级Python Web框架，由法国人Guido
-Zempe于2003年创建。它以“快速开发、可维护的网站”为目标，提供了许多内置的功能，如ORM（对象关系映射）、URL路由、模板系统、管理后台等，让开发者能够专注于业务逻辑，而无需从头开始构建网站的底层结构。&lt;/p></description></item><item><title>快速了解Django：核心概念解析与实践指南</title><link>https://blog.cmdragon.cn/posts/2b2b6760669b85aaf90735be36159327/</link><pubDate>Wed, 01 May 2024 20:31:41 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/2b2b6760669b85aaf90735be36159327/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_01 20_39_00.png" title="2024_05_01 20_39_00.png" alt="2024_05_01 20_39_00.png"/>
-&lt;h2 id="第一章django简介">第一章：&lt;strong>Django简介&lt;/strong>&lt;/h2>
-&lt;h3 id="背景和发展历程">&lt;strong>背景和发展历程：&lt;/strong>&lt;/h3>
-&lt;p>Django是一个开放源代码的Web应用框架，由Lawrence
-Journal-World开发并于2005年发布。最初是为了满足新闻网站的需求而开发的，后来成为一个功能强大且灵活的Web开发框架。Django得到了全球开发者的广泛认可和使用，目前被许多知名网站和公司所采用。&lt;/p></description></item><item><title>深入理解Python多进程：从基础到实战</title><link>https://blog.cmdragon.cn/posts/e812fcfaa2f6e1e4e25715242373b47b/</link><pubDate>Mon, 29 Apr 2024 20:49:41 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/e812fcfaa2f6e1e4e25715242373b47b/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_04_29 20_53_37.png" title="2024_04_29 20_53_37.png" alt="2024_04_29 20_53_37.png"/>
-&lt;h2 id="引言">&lt;strong>引言&lt;/strong>&lt;/h2>
-&lt;p>在Python编程中，多进程是一种重要的并发编程方式，可以让我们充分利用多核处理器的计算能力，实现并行处理任务，提高程序的运行效率。与多线程相比，多进程具有独立的内存空间，避免了全局解释器锁（GIL）的影响，因此更适合于CPU密集型的任务。&lt;/p></description></item><item><title>Python多线程编程深度探索：从入门到实战</title><link>https://blog.cmdragon.cn/posts/8d7b4344fdbb3d86c53804ac8f3b6fb6/</link><pubDate>Sun, 28 Apr 2024 18:57:17 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/8d7b4344fdbb3d86c53804ac8f3b6fb6/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_04_28 19_06_58.png" title="2024_04_28 19_06_58.png" alt="2024_04_28 19_06_58.png"/>
-&lt;h2 id="第1章python基础知识与多线程概念">&lt;strong>第1章：Python基础知识与多线程概念&lt;/strong>&lt;/h2>
-&lt;h3 id="python简介">&lt;strong>Python简介：&lt;/strong>&lt;/h3>
-&lt;p>Python是一种高级、通用、解释型的编程语言，由Guido van
-Rossum于1991年创建。Python以其简洁、易读的语法而闻名，被广泛用于Web开发、数据科学、人工智能等领域。Python具有丰富的标准库和第三方库，支持多种编程范式，包括面向对象、函数式和过程式编程。&lt;/p></description></item><item><title>深入理解Python协程：从基础到实战</title><link>https://blog.cmdragon.cn/posts/5d1545ed32733a56b5e71c7ee880a847/</link><pubDate>Sat, 27 Apr 2024 16:48:43 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/5d1545ed32733a56b5e71c7ee880a847/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_04_27 17_03_18.png" title="2024_04_27 17_03_18.png" alt="2024_04_27 17_03_18.png"/>
-&lt;img src="https://blog.cmdragon.cn/images/2024_04_27 17_05_32.png" title="2024_04_27 17_05_32.png" alt="2024_04_27 17_05_32.png"/>
-&lt;h2 id="第1章协程基础">&lt;strong>第1章：协程基础&lt;/strong>&lt;/h2>
-&lt;h3 id="11-协程概念介绍">&lt;strong>1.1 协程概念介绍&lt;/strong>&lt;/h3>
-&lt;p>协程（Coroutines）是一种特殊的软件构造，它允许程序在执行过程中暂停并恢复执行，而不会丢失当前的执行上下文。与线程和进程不同，协程在单个线程中运行，通过调度机制实现并发，降低了上下文切换的开销，提高了程序的执行效率。协程通常用于处理I/O密集型任务，如网络请求、文件读写等。&lt;/p></description></item><item><title>多进程编程：原理、技术与应用</title><link>https://blog.cmdragon.cn/posts/acb62ae2b56d9c6ac77eafbca169b7a0/</link><pubDate>Fri, 26 Apr 2024 12:14:47 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/acb62ae2b56d9c6ac77eafbca169b7a0/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_04_26 12_21_48.png" title="2024_04_26 12_21_48.png" alt="2024_04_26 12_21_48.png"/>
-&lt;h3 id="第一章进程与线程">第一章：进程与线程&lt;/h3>
-&lt;h4 id="进程与线程的概念及区别">进程与线程的概念及区别：&lt;/h4>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>进程&lt;/strong>：进程是操作系统中的一个程序执行实例。每个进程都有自己独立的内存空间，包括代码、数据、堆栈等。进程之间是相互独立的，彼此不会直接影响。进程是系统进行资源分配和调度的基本单位。&lt;/p></description></item><item><title>深入理解多线程编程</title><link>https://blog.cmdragon.cn/posts/adaeacb52ca7729c73c2d63d95a0ffe2/</link><pubDate>Thu, 25 Apr 2024 17:32:02 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/adaeacb52ca7729c73c2d63d95a0ffe2/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_04_25 17_38_00.png" title="2024_04_25 17_38_00.png" alt="2024_04_25 17_38_00.png"/>
-&lt;h2 id="第一章多线程基础">&lt;strong>第一章：多线程基础&lt;/strong>&lt;/h2>
-&lt;h3 id="11-线程概念与原理">&lt;strong>1.1 线程概念与原理&lt;/strong>&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>线程&lt;/strong>：在操作系统中，一个程序可以被划分为多个执行流，每个执行流就是一个独立的线程。线程是进程中的一个执行实体，它可以拥有自己的局部变量、栈和程序计数器。&lt;/li>
-&lt;li>&lt;strong>并发执行&lt;/strong>：线程允许程序同时执行多个任务，每个任务在单个处理器核心上交替执行，看起来像是同时进行的。&lt;/li>
-&lt;li>&lt;strong>线程与进程的区别&lt;/strong>：线程是进程内的一个执行单元，进程是资源分配和独立执行的基本单位。一个进程可以包含多个线程，但一个线程只能属于一个进程。&lt;/li>
-&lt;/ul>
-&lt;h3 id="12-多线程编程的优势">&lt;strong>1.2 多线程编程的优势&lt;/strong>&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>提高响应性&lt;/strong>：多线程允许程序在等待I/O操作时继续执行其他任务，提高用户体验。&lt;/li>
-&lt;li>&lt;strong>资源利用&lt;/strong>：通过并发，可以更有效地利用处理器的多核心优势，提高系统性能。&lt;/li>
-&lt;li>&lt;strong>任务并行&lt;/strong>：适合处理大量独立或部分独立的计算任务，如网络请求、文件处理等。&lt;/li>
-&lt;/ul>
-&lt;h3 id="13-多线程编程的应用场景">&lt;strong>1.3 多线程编程的应用场景&lt;/strong>&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>Web服务器&lt;/strong>：处理并发请求，每个请求作为独立的线程处理。&lt;/li>
-&lt;li>&lt;strong>游戏开发&lt;/strong>：游戏中的多线程用于音频、图形渲染和逻辑处理的分离。&lt;/li>
-&lt;li>&lt;strong>数据分析&lt;/strong>：大数据处理、机器学习中的并行计算。&lt;/li>
-&lt;li>&lt;strong>用户界面&lt;/strong>：线程可以用于实现后台任务的异步执行，避免阻塞UI线程。&lt;/li>
-&lt;/ul>
-&lt;h3 id="14-线程的创建与销毁">&lt;strong>1.4 线程的创建与销毁&lt;/strong>&lt;/h3>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>创建线程&lt;/strong>：&lt;/p></description></item></channel></rss>
+&lt;h3 id="11-什么是django"&gt;1.1 什么是Django？&lt;/h3&gt;
+&lt;p&gt;Django是一个高级的Python Web框架，它鼓励快速开发和干净、实用的设计。它由Wall Street
+Journal的程序员在2005年开发，用于他们的新闻网站。自那时起，Django已经成为全球范围内广泛使用的Web框架之一。&lt;/p&gt;</description></item><item><title>深入 Django 模型层：数据库设计与 ORM 实践指南</title><link>https://blog.cmdragon.cn/posts/45f66244be583a6db133781c25b25d98/</link><pubDate>Fri, 03 May 2024 18:25:33 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/45f66244be583a6db133781c25b25d98/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_03 18_32_02.png" title="2024_05_03 18_32_02.png" alt="2024_05_03 18_32_02.png"/&gt;
+&lt;h2 id="第一章引言"&gt;第一章：引言&lt;/h2&gt;
+&lt;p&gt;Django是一个基于Python的开源Web应用程序框架，它遵循MTV（模型-模板-视图）的设计模式。Django框架的目标是使Web开发变得简单、快速和高效。它提供了许多功能强大且易于使用的工具，包括URL路由、模板系统、表单处理、认证系统等，使开发人员能够专注于业务逻辑的实现而不必从头开始构建基本功能。&lt;/p&gt;</description></item><item><title>从零开始：Django项目的创建与配置指南</title><link>https://blog.cmdragon.cn/posts/2475bf07d05f2d1a78dd47bfe9a73bd2/</link><pubDate>Thu, 02 May 2024 18:29:33 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/2475bf07d05f2d1a78dd47bfe9a73bd2/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_02 18_33_49.png" title="2024_05_02 18_33_49.png" alt="2024_05_02 18_33_49.png"/&gt;
+&lt;h2 id="django简介"&gt;&lt;strong&gt;Django简介：&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Django是一个开源的高级Python Web框架，由法国人Guido
+Zempe于2003年创建。它以“快速开发、可维护的网站”为目标，提供了许多内置的功能，如ORM（对象关系映射）、URL路由、模板系统、管理后台等，让开发者能够专注于业务逻辑，而无需从头开始构建网站的底层结构。&lt;/p&gt;</description></item><item><title>快速了解Django：核心概念解析与实践指南</title><link>https://blog.cmdragon.cn/posts/2b2b6760669b85aaf90735be36159327/</link><pubDate>Wed, 01 May 2024 20:31:41 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/2b2b6760669b85aaf90735be36159327/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_01 20_39_00.png" title="2024_05_01 20_39_00.png" alt="2024_05_01 20_39_00.png"/&gt;
+&lt;h2 id="第一章django简介"&gt;第一章：&lt;strong&gt;Django简介&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id="背景和发展历程"&gt;&lt;strong&gt;背景和发展历程：&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Django是一个开放源代码的Web应用框架，由Lawrence
+Journal-World开发并于2005年发布。最初是为了满足新闻网站的需求而开发的，后来成为一个功能强大且灵活的Web开发框架。Django得到了全球开发者的广泛认可和使用，目前被许多知名网站和公司所采用。&lt;/p&gt;</description></item><item><title>深入理解Python多进程：从基础到实战</title><link>https://blog.cmdragon.cn/posts/e812fcfaa2f6e1e4e25715242373b47b/</link><pubDate>Mon, 29 Apr 2024 20:49:41 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/e812fcfaa2f6e1e4e25715242373b47b/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_04_29 20_53_37.png" title="2024_04_29 20_53_37.png" alt="2024_04_29 20_53_37.png"/&gt;
+&lt;h2 id="引言"&gt;&lt;strong&gt;引言&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;在Python编程中，多进程是一种重要的并发编程方式，可以让我们充分利用多核处理器的计算能力，实现并行处理任务，提高程序的运行效率。与多线程相比，多进程具有独立的内存空间，避免了全局解释器锁（GIL）的影响，因此更适合于CPU密集型的任务。&lt;/p&gt;</description></item><item><title>Python多线程编程深度探索：从入门到实战</title><link>https://blog.cmdragon.cn/posts/8d7b4344fdbb3d86c53804ac8f3b6fb6/</link><pubDate>Sun, 28 Apr 2024 18:57:17 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/8d7b4344fdbb3d86c53804ac8f3b6fb6/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_04_28 19_06_58.png" title="2024_04_28 19_06_58.png" alt="2024_04_28 19_06_58.png"/&gt;
+&lt;h2 id="第1章python基础知识与多线程概念"&gt;&lt;strong&gt;第1章：Python基础知识与多线程概念&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id="python简介"&gt;&lt;strong&gt;Python简介：&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Python是一种高级、通用、解释型的编程语言，由Guido van
+Rossum于1991年创建。Python以其简洁、易读的语法而闻名，被广泛用于Web开发、数据科学、人工智能等领域。Python具有丰富的标准库和第三方库，支持多种编程范式，包括面向对象、函数式和过程式编程。&lt;/p&gt;</description></item><item><title>深入理解Python协程：从基础到实战</title><link>https://blog.cmdragon.cn/posts/5d1545ed32733a56b5e71c7ee880a847/</link><pubDate>Sat, 27 Apr 2024 16:48:43 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/5d1545ed32733a56b5e71c7ee880a847/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_04_27 17_03_18.png" title="2024_04_27 17_03_18.png" alt="2024_04_27 17_03_18.png"/&gt;
+&lt;img src="https://blog.cmdragon.cn/images/2024_04_27 17_05_32.png" title="2024_04_27 17_05_32.png" alt="2024_04_27 17_05_32.png"/&gt;
+&lt;h2 id="第1章协程基础"&gt;&lt;strong&gt;第1章：协程基础&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id="11-协程概念介绍"&gt;&lt;strong&gt;1.1 协程概念介绍&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;协程（Coroutines）是一种特殊的软件构造，它允许程序在执行过程中暂停并恢复执行，而不会丢失当前的执行上下文。与线程和进程不同，协程在单个线程中运行，通过调度机制实现并发，降低了上下文切换的开销，提高了程序的执行效率。协程通常用于处理I/O密集型任务，如网络请求、文件读写等。&lt;/p&gt;</description></item><item><title>多进程编程：原理、技术与应用</title><link>https://blog.cmdragon.cn/posts/acb62ae2b56d9c6ac77eafbca169b7a0/</link><pubDate>Fri, 26 Apr 2024 12:14:47 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/acb62ae2b56d9c6ac77eafbca169b7a0/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_04_26 12_21_48.png" title="2024_04_26 12_21_48.png" alt="2024_04_26 12_21_48.png"/&gt;
+&lt;h3 id="第一章进程与线程"&gt;第一章：进程与线程&lt;/h3&gt;
+&lt;h4 id="进程与线程的概念及区别"&gt;进程与线程的概念及区别：&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;进程&lt;/strong&gt;：进程是操作系统中的一个程序执行实例。每个进程都有自己独立的内存空间，包括代码、数据、堆栈等。进程之间是相互独立的，彼此不会直接影响。进程是系统进行资源分配和调度的基本单位。&lt;/p&gt;</description></item><item><title>深入理解多线程编程</title><link>https://blog.cmdragon.cn/posts/adaeacb52ca7729c73c2d63d95a0ffe2/</link><pubDate>Thu, 25 Apr 2024 17:32:02 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/adaeacb52ca7729c73c2d63d95a0ffe2/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_04_25 17_38_00.png" title="2024_04_25 17_38_00.png" alt="2024_04_25 17_38_00.png"/&gt;
+&lt;h2 id="第一章多线程基础"&gt;&lt;strong&gt;第一章：多线程基础&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id="11-线程概念与原理"&gt;&lt;strong&gt;1.1 线程概念与原理&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;线程&lt;/strong&gt;：在操作系统中，一个程序可以被划分为多个执行流，每个执行流就是一个独立的线程。线程是进程中的一个执行实体，它可以拥有自己的局部变量、栈和程序计数器。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;并发执行&lt;/strong&gt;：线程允许程序同时执行多个任务，每个任务在单个处理器核心上交替执行，看起来像是同时进行的。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;线程与进程的区别&lt;/strong&gt;：线程是进程内的一个执行单元，进程是资源分配和独立执行的基本单位。一个进程可以包含多个线程，但一个线程只能属于一个进程。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="12-多线程编程的优势"&gt;&lt;strong&gt;1.2 多线程编程的优势&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;提高响应性&lt;/strong&gt;：多线程允许程序在等待I/O操作时继续执行其他任务，提高用户体验。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;资源利用&lt;/strong&gt;：通过并发，可以更有效地利用处理器的多核心优势，提高系统性能。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;任务并行&lt;/strong&gt;：适合处理大量独立或部分独立的计算任务，如网络请求、文件处理等。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="13-多线程编程的应用场景"&gt;&lt;strong&gt;1.3 多线程编程的应用场景&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Web服务器&lt;/strong&gt;：处理并发请求，每个请求作为独立的线程处理。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;游戏开发&lt;/strong&gt;：游戏中的多线程用于音频、图形渲染和逻辑处理的分离。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数据分析&lt;/strong&gt;：大数据处理、机器学习中的并行计算。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;用户界面&lt;/strong&gt;：线程可以用于实现后台任务的异步执行，避免阻塞UI线程。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="14-线程的创建与销毁"&gt;&lt;strong&gt;1.4 线程的创建与销毁&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;创建线程&lt;/strong&gt;：&lt;/p&gt;</description></item></channel></rss>

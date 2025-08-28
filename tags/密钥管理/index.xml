@@ -1,64 +1,64 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>密钥管理 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/%E5%AF%86%E9%92%A5%E7%AE%A1%E7%90%86/</link><description>Recent content in 密钥管理 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sun, 29 Jun 2025 06:55:35 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/%E5%AF%86%E9%92%A5%E7%AE%A1%E7%90%86/index.xml" rel="self" type="application/rss+xml"/><item><title>FastAPI安全认证的终极秘籍：OAuth2与JWT如何完美融合？</title><link>https://blog.cmdragon.cn/posts/17d5c40ff6c84ad652f962fed0ce46ab/</link><pubDate>Sun, 29 Jun 2025 06:55:35 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/17d5c40ff6c84ad652f962fed0ce46ab/</guid><description>FastAPI安全与认证实战指南深入解析了OAuth2协议的核心模式，包括授权码模式、密码模式、客户端凭证模式和简化模式，并提供了相应的代码实现。文章详细探讨了JWT令牌的结构与安全增强措施，强调算法选择、有效期管理和签发者验证等最佳实践。通过OAuth2PasswordBearer的深度集成，展示了完整的认证流程与异常处理机制。此外，指南还提供了环境配置清单和进阶安全实践，如动态权限控制和密钥轮换方案，确保系统安全性与可维护性。</description></item><item><title>数据库加密全解析：从传输到存储的安全实践</title><link>https://blog.cmdragon.cn/posts/123dc22a37df8d53292d1269e39dbbc0/</link><pubDate>Mon, 17 Feb 2025 00:18:53 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/123dc22a37df8d53292d1269e39dbbc0/</guid><description>数据加密是数据库安全的最后一道物理防线。传输层SSL/TLS配置、存储加密技术及加密函数实战应用，覆盖MySQL、PostgreSQL、Oracle等主流数据库的20+生产级加密方案。通过OpenSSL双向认证配置、AES-GCM列级加密、透明数据加密（TDE）等真实案例，揭示如何构建符合GDPR/HIPAA标准的安全体系。</description></item><item><title>HMAC：Introduction History and Applications</title><link>https://blog.cmdragon.cn/posts/5255d53346ad861384a2a938be282cb6/</link><pubDate>Mon, 22 Apr 2024 18:46:28 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/5255d53346ad861384a2a938be282cb6/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_04_22 18_56_51.png" title="2024_04_22 18_56_51.png" alt="2024_04_22 18_56_51.png"/>
-&lt;h3 id="第一章介绍">第一章：介绍&lt;/h3>
-&lt;h4 id="1-什么是hash-based-message-authentication-code-hmac">1. 什么是Hash-based Message Authentication Code (HMAC)？&lt;/h4>
-&lt;p>Hash-based Message Authentication Code (HMAC)
-是一种基于哈希函数和密钥的消息认证码算法。它用于验证消息的完整性和真实性，同时防止消息被篡改或伪造。HMAC结合了哈希函数的不可逆性和密钥的安全性，能够提供高强度的消息认证保护。&lt;/p></description></item><item><title>深入理解DES算法：原理、实现与应用</title><link>https://blog.cmdragon.cn/posts/f3a5102a7ed71eec81557e52cdcd93c4/</link><pubDate>Sun, 14 Apr 2024 21:30:21 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/f3a5102a7ed71eec81557e52cdcd93c4/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_04_14 21_36_33.png" title="2024_04_14 21_36_33.png" alt="2024_04_14 21_36_33.png"/>
-&lt;h3 id="des算法简介">DES算法简介&lt;/h3>
-&lt;h4 id="历史">历史&lt;/h4>
-&lt;p>DES（Data Encryption Standard）算法是由IBM研发，并于1977年被美国国家标准局（NBS，现NIST）确定为数据加密标准。&lt;/p>
-&lt;h4 id="设计目的">设计目的&lt;/h4>
-&lt;p>DES算法的设计目的是提供一种高度安全的对称加密算法，用于保护敏感信息的机密性。&lt;/p></description></item><item><title>深入理解Triple DES算法：安全加密的基础与应用</title><link>https://blog.cmdragon.cn/posts/2926584ed7c2b017f12b0e563a345711/</link><pubDate>Sat, 13 Apr 2024 19:56:05 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/2926584ed7c2b017f12b0e563a345711/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_04_13 20_01_54.png" title="2024_04_13 20_01_54.png" alt="2024_04_13 20_01_54.png"/>
-&lt;!-- TOC -->
-&lt;ul>
-&lt;li>&lt;a href="#%E5%BC%95%E8%A8%80">&lt;strong>引言&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#des%E7%AE%97%E6%B3%95%E5%8E%9F%E7%90%86%E5%92%8C%E5%B7%A5%E4%BD%9C%E6%96%B9%E5%BC%8F">&lt;strong>DES算法原理和工作方式&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#triple-des3des%E7%9A%84%E4%BB%8B%E7%BB%8D">&lt;strong>Triple DES（3DES）的介绍&lt;/strong>&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#%E8%83%8C%E6%99%AF">&lt;strong>背景&lt;/strong>：&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#%E5%8E%9F%E7%90%86">&lt;strong>原理&lt;/strong>：&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#%E4%BC%98%E5%8A%BF">&lt;strong>优势&lt;/strong>：&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E5%AF%B9des%E8%BF%9B%E8%A1%8C%E4%B8%89%E6%AC%A1%E5%8A%A0%E5%AF%86%E4%BB%A5%E5%A2%9E%E5%BC%BA%E5%AE%89%E5%85%A8%E6%80%A7">&lt;strong>为什么需要对DES进行三次加密以增强安全性&lt;/strong>：&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="#%E5%8A%A0%E5%AF%86%E8%BF%87%E7%A8%8B">加密过程&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#%E8%A7%A3%E5%AF%86%E8%BF%87%E7%A8%8B">解密过程&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF">应用场景&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#triple-des%E7%9A%84%E5%AE%89%E5%85%A8%E6%80%A7%E5%88%86%E6%9E%90">Triple DES的安全性分析&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#%E5%B7%B2%E7%9F%A5%E6%94%BB%E5%87%BB%E7%9A%84%E9%98%B2%E8%8C%83%E6%8E%AA%E6%96%BD">已知攻击的防范措施&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#%E5%8F%AF%E8%83%BD%E7%9A%84%E5%BC%B1%E7%82%B9">可能的弱点&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#%E7%8E%B0%E4%BB%A3%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E7%9A%84%E6%9B%BF%E4%BB%A3%E9%80%89%E6%8B%A9">现代加密算法的替代选择&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="#%E6%9C%AA%E6%9D%A5%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%AF%86%E6%8A%80%E6%9C%AF%E7%9A%84%E5%8F%91%E5%B1%95%E6%96%B9%E5%90%91">未来数据加密技术的发展方向&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#%E6%96%B0%E5%85%B4%E6%8A%80%E6%9C%AF%E5%AF%B9%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E7%9A%84%E5%BD%B1%E5%93%8D">新兴技术对加密算法的影响&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="#%E9%99%84%E5%BD%95">附录&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#%E5%9C%A8%E7%BA%BF%E5%8A%A0%E5%AF%86">在线加密&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#%E4%BC%AA%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B">伪代码示例&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#%E7%A4%BA%E4%BE%8B%E4%BB%A3%E7%A0%81">示例代码&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#des%E7%AE%97%E6%B3%95%E5%85%AC%E5%BC%8F">DES算法公式：&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;!-- TOC -->
-&lt;h2 id="引言">&lt;strong>引言&lt;/strong>&lt;/h2>
-&lt;p>在当今信息时代，数据安全和隐私保护变得至关重要。随着互联网的普及和信息技术的迅猛发展，我们的个人、商业和政府数据面临着越来越多的威胁和风险。数据的泄露、篡改或窃取可能导致严重的后果，包括财务损失、声誉受损甚至国家安全问题。&lt;/p></description></item><item><title>AES算法：加密通信的新选择</title><link>https://blog.cmdragon.cn/posts/964839d3d6a445e06e81606a3373b881/</link><pubDate>Mon, 18 Mar 2024 16:07:04 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/964839d3d6a445e06e81606a3373b881/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_03_18 16_08_14.png" title="2024_03_18 16_08_14.png" alt="2024_03_18 16_08_14.png"/>
-&lt;h3 id="aes算法起源">AES算法起源：&lt;/h3>
-&lt;p>AES（Advanced Encryption Standard）算法是一种对称密钥加密算法，由比利时密码学家Joan Daemen和Vincent
-Rijmen设计，于2001年被美国国家标准技术研究所（NIST）确定为新的数据加密标准。AES算法取代了DES算法，成为当前最流行的对称加密算法之一。&lt;/p></description></item><item><title>HMAC算法：数据传输的保护神</title><link>https://blog.cmdragon.cn/posts/c1c01a3a9e2e67a18c27e9ca5c81f3eb/</link><pubDate>Sat, 16 Mar 2024 16:50:53 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/c1c01a3a9e2e67a18c27e9ca5c81f3eb/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_03_16 16_52_07.png" title="2024_03_16 16_52_07.png" alt="2024_03_16 16_52_07.png"/>
-&lt;h3 id="hmac算法起源">HMAC算法起源：&lt;/h3>
-&lt;p>HMAC（Hash-based Message Authentication Code）算法是由Mihir Bellare、Ran Canetti和Hugo
-Krawczyk于1996年提出的一种基于哈希函数的消息认证码算法。HMAC算法结合了哈希函数和密钥，用于验证消息的完整性和真实性，常用于网络通信、数字签名等领域。&lt;/p></description></item><item><title>DES加密技术概述与应用</title><link>https://blog.cmdragon.cn/posts/7232bcae35f62d1a6879d9967f8784e6/</link><pubDate>Wed, 24 Jan 2024 16:50:00 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/7232bcae35f62d1a6879d9967f8784e6/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_02_03 16_17_09.png" title="2024_02_03 16_17_09.png" alt="2024_02_03 16_17_09.png"/>
-&lt;h2 id="一引言">一、引言&lt;/h2>
-&lt;p>随着信息技术的飞速发展，数据安全已成为越来越受到重视的问题。数据加密技术作为保障信息安全的核心技术之一，得到了广泛的研究和应用。DES（Data Encryption Standard）作为一种对称加密算法，凭借其高效、可靠的加密特性，成为了数据加密领域的佼佼者。本文将对DES加密技术进行简要概述，并分析其优缺点及应用场景。&lt;/p></description></item><item><title>DES加密算法优缺点大揭秘：为何它逐渐被取代？</title><link>https://blog.cmdragon.cn/posts/549cbc8efcd5653b080b2d571bf72297/</link><pubDate>Tue, 23 Jan 2024 16:50:00 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/549cbc8efcd5653b080b2d571bf72297/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_02_03 16_19_50.png" title="2024_02_03 16_19_50.png" alt="2024_02_03 16_19_50.png"/>
-&lt;h2 id="一引言">一、引言&lt;/h2>
-&lt;p>DES（Data Encryption Standard）加密算法作为一种历史悠久的对称加密算法，自1972年由美国国家标准局（NBS）发布以来，广泛应用于各种数据安全场景。本文将从算法原理、优缺点及替代方案等方面，对DES加密算法进行全面解析。&lt;/p></description></item><item><title>Hash-based Message Authentication Code（HMAC）</title><link>https://blog.cmdragon.cn/posts/93ae6fed197ff1c57645fd1217c28a0b/</link><pubDate>Sun, 21 Jan 2024 16:50:00 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/93ae6fed197ff1c57645fd1217c28a0b/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_02_03 16_25_47.png" title="2024_02_03 16_25_47.png" alt="2024_02_03 16_25_47.png"/>
-&lt;h2 id="一引言">一、引言&lt;/h2>
-&lt;p>在现代信息安全领域，消息认证码（Message Authentication Code，简称MAC）起着至关重要的作用。Hash-based Message Authentication Code（基于哈希的MAC，简称HMAC）作为一种广泛应用的MAC算法，其性能和安全性得到了业界的认可。本文将从算法原理、优缺点、替代方案等方面，全面介绍和解释HMAC算法。&lt;/p></description></item><item><title>RC4Drop加密：提升数据保护的新选择</title><link>https://blog.cmdragon.cn/posts/9f9279054fc83f9e885e87ba4a943fa8/</link><pubDate>Sun, 14 Jan 2024 16:50:00 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/9f9279054fc83f9e885e87ba4a943fa8/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_02_03 16_42_15.png" title="2024_02_03 16_42_15.png" alt="2024_02_03 16_42_15.png"/>
-&lt;p>摘要：RC4Drop是一种基于RC4算法的加密技术，通过将明文数据分成多个部分并进行加密，实现了对数据的高效保护。本文将对RC4Drop加密技术的优缺点进行详细分析，并给出一个Java完整demo示例。&lt;/p></description></item><item><title>RC4加密技术探究：优缺点与实战应用</title><link>https://blog.cmdragon.cn/posts/6737e59786a6a15ab7f9714d061bd37e/</link><pubDate>Sat, 13 Jan 2024 16:50:00 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/6737e59786a6a15ab7f9714d061bd37e/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_02_03 16_50_52.png" title="2024_02_03 16_50_52.png" alt="2024_02_03 16_50_52.png"/>
-&lt;h2 id="1-引言">1. 引言&lt;/h2>
-&lt;p>在网络安全领域，加密技术一直是保障数据安全的重要手段。Rivest Cipher 4（简称RC4）作为一种对称加密算法，自20世纪80年代以来广泛应用于各种网络安全协议中。本文将详细分析RC4加密算法的优缺点以及其在实际应用中解决的问题，并给出一个Java完整demo示例。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>密钥管理 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/%E5%AF%86%E9%92%A5%E7%AE%A1%E7%90%86/</link><description>Recent content in 密钥管理 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sun, 29 Jun 2025 06:55:35 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/%E5%AF%86%E9%92%A5%E7%AE%A1%E7%90%86/index.xml" rel="self" type="application/rss+xml"/><item><title>FastAPI安全认证的终极秘籍：OAuth2与JWT如何完美融合？</title><link>https://blog.cmdragon.cn/posts/17d5c40ff6c84ad652f962fed0ce46ab/</link><pubDate>Sun, 29 Jun 2025 06:55:35 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/17d5c40ff6c84ad652f962fed0ce46ab/</guid><description>FastAPI安全与认证实战指南深入解析了OAuth2协议的核心模式，包括授权码模式、密码模式、客户端凭证模式和简化模式，并提供了相应的代码实现。文章详细探讨了JWT令牌的结构与安全增强措施，强调算法选择、有效期管理和签发者验证等最佳实践。通过OAuth2PasswordBearer的深度集成，展示了完整的认证流程与异常处理机制。此外，指南还提供了环境配置清单和进阶安全实践，如动态权限控制和密钥轮换方案，确保系统安全性与可维护性。</description></item><item><title>数据库加密全解析：从传输到存储的安全实践</title><link>https://blog.cmdragon.cn/posts/123dc22a37df8d53292d1269e39dbbc0/</link><pubDate>Mon, 17 Feb 2025 00:18:53 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/123dc22a37df8d53292d1269e39dbbc0/</guid><description>数据加密是数据库安全的最后一道物理防线。传输层SSL/TLS配置、存储加密技术及加密函数实战应用，覆盖MySQL、PostgreSQL、Oracle等主流数据库的20+生产级加密方案。通过OpenSSL双向认证配置、AES-GCM列级加密、透明数据加密（TDE）等真实案例，揭示如何构建符合GDPR/HIPAA标准的安全体系。</description></item><item><title>HMAC：Introduction History and Applications</title><link>https://blog.cmdragon.cn/posts/5255d53346ad861384a2a938be282cb6/</link><pubDate>Mon, 22 Apr 2024 18:46:28 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/5255d53346ad861384a2a938be282cb6/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_04_22 18_56_51.png" title="2024_04_22 18_56_51.png" alt="2024_04_22 18_56_51.png"/&gt;
+&lt;h3 id="第一章介绍"&gt;第一章：介绍&lt;/h3&gt;
+&lt;h4 id="1-什么是hash-based-message-authentication-code-hmac"&gt;1. 什么是Hash-based Message Authentication Code (HMAC)？&lt;/h4&gt;
+&lt;p&gt;Hash-based Message Authentication Code (HMAC)
+是一种基于哈希函数和密钥的消息认证码算法。它用于验证消息的完整性和真实性，同时防止消息被篡改或伪造。HMAC结合了哈希函数的不可逆性和密钥的安全性，能够提供高强度的消息认证保护。&lt;/p&gt;</description></item><item><title>深入理解DES算法：原理、实现与应用</title><link>https://blog.cmdragon.cn/posts/f3a5102a7ed71eec81557e52cdcd93c4/</link><pubDate>Sun, 14 Apr 2024 21:30:21 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/f3a5102a7ed71eec81557e52cdcd93c4/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_04_14 21_36_33.png" title="2024_04_14 21_36_33.png" alt="2024_04_14 21_36_33.png"/&gt;
+&lt;h3 id="des算法简介"&gt;DES算法简介&lt;/h3&gt;
+&lt;h4 id="历史"&gt;历史&lt;/h4&gt;
+&lt;p&gt;DES（Data Encryption Standard）算法是由IBM研发，并于1977年被美国国家标准局（NBS，现NIST）确定为数据加密标准。&lt;/p&gt;
+&lt;h4 id="设计目的"&gt;设计目的&lt;/h4&gt;
+&lt;p&gt;DES算法的设计目的是提供一种高度安全的对称加密算法，用于保护敏感信息的机密性。&lt;/p&gt;</description></item><item><title>深入理解Triple DES算法：安全加密的基础与应用</title><link>https://blog.cmdragon.cn/posts/2926584ed7c2b017f12b0e563a345711/</link><pubDate>Sat, 13 Apr 2024 19:56:05 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/2926584ed7c2b017f12b0e563a345711/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_04_13 20_01_54.png" title="2024_04_13 20_01_54.png" alt="2024_04_13 20_01_54.png"/&gt;
+&lt;!-- TOC --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#%E5%BC%95%E8%A8%80"&gt;&lt;strong&gt;引言&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#des%E7%AE%97%E6%B3%95%E5%8E%9F%E7%90%86%E5%92%8C%E5%B7%A5%E4%BD%9C%E6%96%B9%E5%BC%8F"&gt;&lt;strong&gt;DES算法原理和工作方式&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#triple-des3des%E7%9A%84%E4%BB%8B%E7%BB%8D"&gt;&lt;strong&gt;Triple DES（3DES）的介绍&lt;/strong&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#%E8%83%8C%E6%99%AF"&gt;&lt;strong&gt;背景&lt;/strong&gt;：&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#%E5%8E%9F%E7%90%86"&gt;&lt;strong&gt;原理&lt;/strong&gt;：&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#%E4%BC%98%E5%8A%BF"&gt;&lt;strong&gt;优势&lt;/strong&gt;：&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E5%AF%B9des%E8%BF%9B%E8%A1%8C%E4%B8%89%E6%AC%A1%E5%8A%A0%E5%AF%86%E4%BB%A5%E5%A2%9E%E5%BC%BA%E5%AE%89%E5%85%A8%E6%80%A7"&gt;&lt;strong&gt;为什么需要对DES进行三次加密以增强安全性&lt;/strong&gt;：&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#%E5%8A%A0%E5%AF%86%E8%BF%87%E7%A8%8B"&gt;加密过程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#%E8%A7%A3%E5%AF%86%E8%BF%87%E7%A8%8B"&gt;解密过程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF"&gt;应用场景&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#triple-des%E7%9A%84%E5%AE%89%E5%85%A8%E6%80%A7%E5%88%86%E6%9E%90"&gt;Triple DES的安全性分析&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#%E5%B7%B2%E7%9F%A5%E6%94%BB%E5%87%BB%E7%9A%84%E9%98%B2%E8%8C%83%E6%8E%AA%E6%96%BD"&gt;已知攻击的防范措施&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#%E5%8F%AF%E8%83%BD%E7%9A%84%E5%BC%B1%E7%82%B9"&gt;可能的弱点&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#%E7%8E%B0%E4%BB%A3%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E7%9A%84%E6%9B%BF%E4%BB%A3%E9%80%89%E6%8B%A9"&gt;现代加密算法的替代选择&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#%E6%9C%AA%E6%9D%A5%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%AF%86%E6%8A%80%E6%9C%AF%E7%9A%84%E5%8F%91%E5%B1%95%E6%96%B9%E5%90%91"&gt;未来数据加密技术的发展方向&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#%E6%96%B0%E5%85%B4%E6%8A%80%E6%9C%AF%E5%AF%B9%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E7%9A%84%E5%BD%B1%E5%93%8D"&gt;新兴技术对加密算法的影响&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#%E9%99%84%E5%BD%95"&gt;附录&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#%E5%9C%A8%E7%BA%BF%E5%8A%A0%E5%AF%86"&gt;在线加密&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#%E4%BC%AA%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B"&gt;伪代码示例&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#%E7%A4%BA%E4%BE%8B%E4%BB%A3%E7%A0%81"&gt;示例代码&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#des%E7%AE%97%E6%B3%95%E5%85%AC%E5%BC%8F"&gt;DES算法公式：&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- TOC --&gt;
+&lt;h2 id="引言"&gt;&lt;strong&gt;引言&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;在当今信息时代，数据安全和隐私保护变得至关重要。随着互联网的普及和信息技术的迅猛发展，我们的个人、商业和政府数据面临着越来越多的威胁和风险。数据的泄露、篡改或窃取可能导致严重的后果，包括财务损失、声誉受损甚至国家安全问题。&lt;/p&gt;</description></item><item><title>AES算法：加密通信的新选择</title><link>https://blog.cmdragon.cn/posts/964839d3d6a445e06e81606a3373b881/</link><pubDate>Mon, 18 Mar 2024 16:07:04 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/964839d3d6a445e06e81606a3373b881/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_03_18 16_08_14.png" title="2024_03_18 16_08_14.png" alt="2024_03_18 16_08_14.png"/&gt;
+&lt;h3 id="aes算法起源"&gt;AES算法起源：&lt;/h3&gt;
+&lt;p&gt;AES（Advanced Encryption Standard）算法是一种对称密钥加密算法，由比利时密码学家Joan Daemen和Vincent
+Rijmen设计，于2001年被美国国家标准技术研究所（NIST）确定为新的数据加密标准。AES算法取代了DES算法，成为当前最流行的对称加密算法之一。&lt;/p&gt;</description></item><item><title>HMAC算法：数据传输的保护神</title><link>https://blog.cmdragon.cn/posts/c1c01a3a9e2e67a18c27e9ca5c81f3eb/</link><pubDate>Sat, 16 Mar 2024 16:50:53 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/c1c01a3a9e2e67a18c27e9ca5c81f3eb/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_03_16 16_52_07.png" title="2024_03_16 16_52_07.png" alt="2024_03_16 16_52_07.png"/&gt;
+&lt;h3 id="hmac算法起源"&gt;HMAC算法起源：&lt;/h3&gt;
+&lt;p&gt;HMAC（Hash-based Message Authentication Code）算法是由Mihir Bellare、Ran Canetti和Hugo
+Krawczyk于1996年提出的一种基于哈希函数的消息认证码算法。HMAC算法结合了哈希函数和密钥，用于验证消息的完整性和真实性，常用于网络通信、数字签名等领域。&lt;/p&gt;</description></item><item><title>DES加密技术概述与应用</title><link>https://blog.cmdragon.cn/posts/7232bcae35f62d1a6879d9967f8784e6/</link><pubDate>Wed, 24 Jan 2024 16:50:00 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/7232bcae35f62d1a6879d9967f8784e6/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_02_03 16_17_09.png" title="2024_02_03 16_17_09.png" alt="2024_02_03 16_17_09.png"/&gt;
+&lt;h2 id="一引言"&gt;一、引言&lt;/h2&gt;
+&lt;p&gt;随着信息技术的飞速发展，数据安全已成为越来越受到重视的问题。数据加密技术作为保障信息安全的核心技术之一，得到了广泛的研究和应用。DES（Data Encryption Standard）作为一种对称加密算法，凭借其高效、可靠的加密特性，成为了数据加密领域的佼佼者。本文将对DES加密技术进行简要概述，并分析其优缺点及应用场景。&lt;/p&gt;</description></item><item><title>DES加密算法优缺点大揭秘：为何它逐渐被取代？</title><link>https://blog.cmdragon.cn/posts/549cbc8efcd5653b080b2d571bf72297/</link><pubDate>Tue, 23 Jan 2024 16:50:00 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/549cbc8efcd5653b080b2d571bf72297/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_02_03 16_19_50.png" title="2024_02_03 16_19_50.png" alt="2024_02_03 16_19_50.png"/&gt;
+&lt;h2 id="一引言"&gt;一、引言&lt;/h2&gt;
+&lt;p&gt;DES（Data Encryption Standard）加密算法作为一种历史悠久的对称加密算法，自1972年由美国国家标准局（NBS）发布以来，广泛应用于各种数据安全场景。本文将从算法原理、优缺点及替代方案等方面，对DES加密算法进行全面解析。&lt;/p&gt;</description></item><item><title>Hash-based Message Authentication Code（HMAC）</title><link>https://blog.cmdragon.cn/posts/93ae6fed197ff1c57645fd1217c28a0b/</link><pubDate>Sun, 21 Jan 2024 16:50:00 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/93ae6fed197ff1c57645fd1217c28a0b/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_02_03 16_25_47.png" title="2024_02_03 16_25_47.png" alt="2024_02_03 16_25_47.png"/&gt;
+&lt;h2 id="一引言"&gt;一、引言&lt;/h2&gt;
+&lt;p&gt;在现代信息安全领域，消息认证码（Message Authentication Code，简称MAC）起着至关重要的作用。Hash-based Message Authentication Code（基于哈希的MAC，简称HMAC）作为一种广泛应用的MAC算法，其性能和安全性得到了业界的认可。本文将从算法原理、优缺点、替代方案等方面，全面介绍和解释HMAC算法。&lt;/p&gt;</description></item><item><title>RC4Drop加密：提升数据保护的新选择</title><link>https://blog.cmdragon.cn/posts/9f9279054fc83f9e885e87ba4a943fa8/</link><pubDate>Sun, 14 Jan 2024 16:50:00 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/9f9279054fc83f9e885e87ba4a943fa8/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_02_03 16_42_15.png" title="2024_02_03 16_42_15.png" alt="2024_02_03 16_42_15.png"/&gt;
+&lt;p&gt;摘要：RC4Drop是一种基于RC4算法的加密技术，通过将明文数据分成多个部分并进行加密，实现了对数据的高效保护。本文将对RC4Drop加密技术的优缺点进行详细分析，并给出一个Java完整demo示例。&lt;/p&gt;</description></item><item><title>RC4加密技术探究：优缺点与实战应用</title><link>https://blog.cmdragon.cn/posts/6737e59786a6a15ab7f9714d061bd37e/</link><pubDate>Sat, 13 Jan 2024 16:50:00 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/6737e59786a6a15ab7f9714d061bd37e/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_02_03 16_50_52.png" title="2024_02_03 16_50_52.png" alt="2024_02_03 16_50_52.png"/&gt;
+&lt;h2 id="1-引言"&gt;1. 引言&lt;/h2&gt;
+&lt;p&gt;在网络安全领域，加密技术一直是保障数据安全的重要手段。Rivest Cipher 4（简称RC4）作为一种对称加密算法，自20世纪80年代以来广泛应用于各种网络安全协议中。本文将详细分析RC4加密算法的优缺点以及其在实际应用中解决的问题，并给出一个Java完整demo示例。&lt;/p&gt;</description></item></channel></rss>

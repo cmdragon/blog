@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>表单处理 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/%E8%A1%A8%E5%8D%95%E5%A4%84%E7%90%86/</link><description>Recent content in 表单处理 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sun, 05 May 2024 20:53:51 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/%E8%A1%A8%E5%8D%95%E5%A4%84%E7%90%86/index.xml" rel="self" type="application/rss+xml"/><item><title>深入学习和理解Django模板层：构建动态页面</title><link>https://blog.cmdragon.cn/posts/bea111715764852706f5ef8b2e4401e4/</link><pubDate>Sun, 05 May 2024 20:53:51 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/bea111715764852706f5ef8b2e4401e4/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_05 20_55_55.png" title="2024_05_05 20_55_55.png" alt="2024_05_05 20_55_55.png"/>
-&lt;h2 id="第一章模板语法基础">&lt;strong>第一章：模板语法基础&lt;/strong>&lt;/h2>
-&lt;h3 id="django模板语法介绍">&lt;strong>Django模板语法介绍&lt;/strong>&lt;/h3>
-&lt;p>Django模板语法是一种简洁而强大的语法，用于在HTML中插入动态数据和控制页面逻辑。以下是一些常用的模板语法元素：&lt;/p>
-&lt;ol>
-&lt;li>&lt;strong>变量&lt;/strong>：使用双大括号&lt;code>{{ variable }}&lt;/code>来表示变量，可以在模板中输出变量的值。&lt;/li>
-&lt;li>&lt;strong>标签&lt;/strong>：使用单大括号和百分号&lt;code>{% tag %}&lt;/code>来表示标签，用于执行控制逻辑，如for循环、if语句等。&lt;/li>
-&lt;li>&lt;strong>过滤器&lt;/strong>：在变量后面使用管道符&lt;code>|&lt;/code>来应用过滤器，对变量进行处理，如格式化输出、大小写转换等。&lt;/li>
-&lt;/ol>
-&lt;p>&lt;strong>变量、过滤器和标签&lt;/strong>&lt;/p></description></item><item><title>深入学习和理解Django视图层：处理请求与响应</title><link>https://blog.cmdragon.cn/posts/3476dd0354c04bdd0485e1bbe91ccb1b/</link><pubDate>Sat, 04 May 2024 17:47:55 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/3476dd0354c04bdd0485e1bbe91ccb1b/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_04 17_51_09.png" title="2024_05_04 17_51_09.png" alt="2024_05_04 17_51_09.png"/>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>表单处理 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/%E8%A1%A8%E5%8D%95%E5%A4%84%E7%90%86/</link><description>Recent content in 表单处理 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sun, 05 May 2024 20:53:51 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/%E8%A1%A8%E5%8D%95%E5%A4%84%E7%90%86/index.xml" rel="self" type="application/rss+xml"/><item><title>深入学习和理解Django模板层：构建动态页面</title><link>https://blog.cmdragon.cn/posts/bea111715764852706f5ef8b2e4401e4/</link><pubDate>Sun, 05 May 2024 20:53:51 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/bea111715764852706f5ef8b2e4401e4/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_05 20_55_55.png" title="2024_05_05 20_55_55.png" alt="2024_05_05 20_55_55.png"/&gt;
+&lt;h2 id="第一章模板语法基础"&gt;&lt;strong&gt;第一章：模板语法基础&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id="django模板语法介绍"&gt;&lt;strong&gt;Django模板语法介绍&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Django模板语法是一种简洁而强大的语法，用于在HTML中插入动态数据和控制页面逻辑。以下是一些常用的模板语法元素：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;变量&lt;/strong&gt;：使用双大括号&lt;code&gt;{{ variable }}&lt;/code&gt;来表示变量，可以在模板中输出变量的值。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;标签&lt;/strong&gt;：使用单大括号和百分号&lt;code&gt;{% tag %}&lt;/code&gt;来表示标签，用于执行控制逻辑，如for循环、if语句等。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;过滤器&lt;/strong&gt;：在变量后面使用管道符&lt;code&gt;|&lt;/code&gt;来应用过滤器，对变量进行处理，如格式化输出、大小写转换等。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;变量、过滤器和标签&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>深入学习和理解Django视图层：处理请求与响应</title><link>https://blog.cmdragon.cn/posts/3476dd0354c04bdd0485e1bbe91ccb1b/</link><pubDate>Sat, 04 May 2024 17:47:55 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/3476dd0354c04bdd0485e1bbe91ccb1b/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_04 17_51_09.png" title="2024_05_04 17_51_09.png" alt="2024_05_04 17_51_09.png"/&gt;
 ## 第一章：Django框架概述
-&lt;h3 id="11-什么是django">1.1 什么是Django？&lt;/h3>
-&lt;p>Django是一个高级的Python Web框架，它鼓励快速开发和干净、实用的设计。它由Wall Street
-Journal的程序员在2005年开发，用于他们的新闻网站。自那时起，Django已经成为全球范围内广泛使用的Web框架之一。&lt;/p></description></item></channel></rss>
+&lt;h3 id="11-什么是django"&gt;1.1 什么是Django？&lt;/h3&gt;
+&lt;p&gt;Django是一个高级的Python Web框架，它鼓励快速开发和干净、实用的设计。它由Wall Street
+Journal的程序员在2005年开发，用于他们的新闻网站。自那时起，Django已经成为全球范围内广泛使用的Web框架之一。&lt;/p&gt;</description></item></channel></rss>

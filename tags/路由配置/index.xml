@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>路由配置 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/%E8%B7%AF%E7%94%B1%E9%85%8D%E7%BD%AE/</link><description>Recent content in 路由配置 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sun, 26 May 2024 20:11:49 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/%E8%B7%AF%E7%94%B1%E9%85%8D%E7%BD%AE/index.xml" rel="self" type="application/rss+xml"/><item><title>Vue.js条件渲染与列表渲染指南</title><link>https://blog.cmdragon.cn/posts/468d237217761452b4c846ad37042ca1/</link><pubDate>Sun, 26 May 2024 20:11:49 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/468d237217761452b4c846ad37042ca1/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_26 20_22_57.png" title="2024_05_26 20_22_57.png" alt="2024_05_26 20_22_57.png"/>
-&lt;h2 id="第1章vuejs基础与环境设置">&lt;strong>第1章：Vue.js基础与环境设置&lt;/strong>&lt;/h2>
-&lt;h3 id="11-vuejs简介">&lt;strong>1.1 Vue.js简介&lt;/strong>&lt;/h3>
-&lt;p>Vue.js (读音：/vjuː/，类似于 &amp;ldquo;view&amp;rdquo;) 是一套用于构建用户界面的渐进式JavaScript框架。与其他大型框架不同的是，Vue.js
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>路由配置 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/%E8%B7%AF%E7%94%B1%E9%85%8D%E7%BD%AE/</link><description>Recent content in 路由配置 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sun, 26 May 2024 20:11:49 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/%E8%B7%AF%E7%94%B1%E9%85%8D%E7%BD%AE/index.xml" rel="self" type="application/rss+xml"/><item><title>Vue.js条件渲染与列表渲染指南</title><link>https://blog.cmdragon.cn/posts/468d237217761452b4c846ad37042ca1/</link><pubDate>Sun, 26 May 2024 20:11:49 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/468d237217761452b4c846ad37042ca1/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_26 20_22_57.png" title="2024_05_26 20_22_57.png" alt="2024_05_26 20_22_57.png"/&gt;
+&lt;h2 id="第1章vuejs基础与环境设置"&gt;&lt;strong&gt;第1章：Vue.js基础与环境设置&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id="11-vuejs简介"&gt;&lt;strong&gt;1.1 Vue.js简介&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Vue.js (读音：/vjuː/，类似于 &amp;ldquo;view&amp;rdquo;) 是一套用于构建用户界面的渐进式JavaScript框架。与其他大型框架不同的是，Vue.js
 被设计为可以自底向上逐层应用。这意味着，你可以在一个大型的单页应用中或者可复用的组件库中使用 Vue，同时也可以将 Vue
-用于简单的页面级别的交互。&lt;/p></description></item><item><title>nuxt开发</title><link>https://blog.cmdragon.cn/posts/1b603ec387c047de7e0eb7f961ae4b2c/</link><pubDate>Thu, 23 May 2024 19:37:34 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/1b603ec387c047de7e0eb7f961ae4b2c/</guid><description>&lt;h2 id="创建nuxtjs项目">创建Nuxt.js项目&lt;/h2>
-&lt;h3 id="步骤-1-安装-nodejs-和-npm">步骤 1: 安装 Node.js 和 NPM&lt;/h3>
-&lt;p>确保你的计算机上安装了 Node.js 和 NPM。你可以从 &lt;a href="https://nodejs.org/">Node.js 官网&lt;/a> 下载并安装。&lt;/p>
-&lt;h3 id="步骤-2-创建-nuxtjs-项目">步骤 2: 创建 Nuxt.js 项目&lt;/h3>
-&lt;p>打开命令行工具，运行以下命令来创建一个新的 Nuxt.js 项目：&lt;/p>
+用于简单的页面级别的交互。&lt;/p&gt;</description></item><item><title>nuxt开发</title><link>https://blog.cmdragon.cn/posts/1b603ec387c047de7e0eb7f961ae4b2c/</link><pubDate>Thu, 23 May 2024 19:37:34 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/1b603ec387c047de7e0eb7f961ae4b2c/</guid><description>&lt;h2 id="创建nuxtjs项目"&gt;创建Nuxt.js项目&lt;/h2&gt;
+&lt;h3 id="步骤-1-安装-nodejs-和-npm"&gt;步骤 1: 安装 Node.js 和 NPM&lt;/h3&gt;
+&lt;p&gt;确保你的计算机上安装了 Node.js 和 NPM。你可以从 &lt;a href="https://nodejs.org/"&gt;Node.js 官网&lt;/a&gt; 下载并安装。&lt;/p&gt;
+&lt;h3 id="步骤-2-创建-nuxtjs-项目"&gt;步骤 2: 创建 Nuxt.js 项目&lt;/h3&gt;
+&lt;p&gt;打开命令行工具，运行以下命令来创建一个新的 Nuxt.js 项目：&lt;/p&gt;
 
 
 
@@ -23,13 +23,13 @@
 
 
 
- &lt;div class="highlight-wrapper">
- &lt;div class="highlight">
- &lt;pre class="chroma">&lt;code class="language-" data-lang="">npx nuxi@latest init &amp;lt;project-name&amp;gt;&lt;/code>&lt;/pre>
- &lt;/div>
- &lt;/div>
+ &lt;div class="highlight-wrapper"&gt;
+ &lt;div class="highlight"&gt;
+ &lt;pre class="chroma"&gt;&lt;code class="language-" data-lang=""&gt;npx nuxi@latest init &amp;lt;project-name&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
 
- &lt;script>
+ &lt;script&gt;
  function copyCodeToClipboard(button) {
  const pre = button.parentElement.parentElement.querySelector('pre');
  const code = pre.textContent;
@@ -56,9 +56,9 @@
  }
  );
  }
- &lt;/script>
+ &lt;/script&gt;
  
- &lt;style>
+ &lt;style&gt;
  .highlight-wrapper {
  position: relative;
  margin: 1.5rem 0;
@@ -107,9 +107,9 @@
  background-color: rgba(160, 174, 192, 0.2);
  color: #e2e8f0;
  }
- &lt;/style>
- &lt;p>在这个过程中，你可以选择服务器框架、UI框架等。按照提示完成项目的基本配置。&lt;/p></description></item><item><title>Vue 3入门指南</title><link>https://blog.cmdragon.cn/posts/ab6d0d2bfb031bcf85fa63e9706be9e3/</link><pubDate>Thu, 23 May 2024 19:37:34 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/ab6d0d2bfb031bcf85fa63e9706be9e3/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_23 19_46_00.png" title="2024_05_23 19_46_00.png" alt="2024_05_23 19_46_00.png"/>
-&lt;h2 id="第1章vue-3简介">&lt;strong>第1章：Vue 3简介&lt;/strong>&lt;/h2>
-&lt;h3 id="11-vuejs的历史与发展">&lt;strong>1.1 Vue.js的历史与发展&lt;/strong>&lt;/h3>
-&lt;p>Vue.js由前谷歌工程师尤雨溪（Evan
-You）在2014年发布。它的设计目标是提供一个轻量级、渐进式的JavaScript框架，用于构建用户界面。Vue的核心库专注于视图层，易于上手，同时也便于与第三方库或既有项目整合。随着时间的推移，Vue.js因其简洁的API、灵活的组件系统和高效的性能而受到开发者的广泛欢迎。&lt;/p></description></item></channel></rss>
+ &lt;/style&gt;
+ &lt;p&gt;在这个过程中，你可以选择服务器框架、UI框架等。按照提示完成项目的基本配置。&lt;/p&gt;</description></item><item><title>Vue 3入门指南</title><link>https://blog.cmdragon.cn/posts/ab6d0d2bfb031bcf85fa63e9706be9e3/</link><pubDate>Thu, 23 May 2024 19:37:34 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/ab6d0d2bfb031bcf85fa63e9706be9e3/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_23 19_46_00.png" title="2024_05_23 19_46_00.png" alt="2024_05_23 19_46_00.png"/&gt;
+&lt;h2 id="第1章vue-3简介"&gt;&lt;strong&gt;第1章：Vue 3简介&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id="11-vuejs的历史与发展"&gt;&lt;strong&gt;1.1 Vue.js的历史与发展&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Vue.js由前谷歌工程师尤雨溪（Evan
+You）在2014年发布。它的设计目标是提供一个轻量级、渐进式的JavaScript框架，用于构建用户界面。Vue的核心库专注于视图层，易于上手，同时也便于与第三方库或既有项目整合。随着时间的推移，Vue.js因其简洁的API、灵活的组件系统和高效的性能而受到开发者的广泛欢迎。&lt;/p&gt;</description></item></channel></rss>

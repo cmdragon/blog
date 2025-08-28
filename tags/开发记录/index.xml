@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>开发记录 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95/</link><description>Recent content in 开发记录 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Fri, 19 Apr 2024 20:42:55 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95/index.xml" rel="self" type="application/rss+xml"/><item><title>解决 Flex 子元素居中，溢出滚动后被裁切的问题</title><link>https://blog.cmdragon.cn/posts/7f84053f9e5c1150830ea768d0f48d7e/</link><pubDate>Fri, 19 Apr 2024 20:42:55 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/7f84053f9e5c1150830ea768d0f48d7e/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/image-20240419204802719.png" title="image-20240419204802719.png" alt="image-20240419204802719.png"/>
-&lt;p>当面临元素横向滚动时子元素被裁切的问题，同时要求子元素保持居中显示，可通过以下优化措施进行解决：&lt;/p>
-&lt;ol>
-&lt;li>启用水平滚动：&lt;/li>
-&lt;/ol>
-&lt;p>在容器元素的 CSS 中应用 overflow-x: auto; 属性，以允许内容在水平方向溢出时自动显示滚动条。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>开发记录 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95/</link><description>Recent content in 开发记录 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Fri, 19 Apr 2024 20:42:55 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95/index.xml" rel="self" type="application/rss+xml"/><item><title>解决 Flex 子元素居中，溢出滚动后被裁切的问题</title><link>https://blog.cmdragon.cn/posts/7f84053f9e5c1150830ea768d0f48d7e/</link><pubDate>Fri, 19 Apr 2024 20:42:55 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/7f84053f9e5c1150830ea768d0f48d7e/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/image-20240419204802719.png" title="image-20240419204802719.png" alt="image-20240419204802719.png"/&gt;
+&lt;p&gt;当面临元素横向滚动时子元素被裁切的问题，同时要求子元素保持居中显示，可通过以下优化措施进行解决：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;启用水平滚动：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;在容器元素的 CSS 中应用 overflow-x: auto; 属性，以允许内容在水平方向溢出时自动显示滚动条。&lt;/p&gt;</description></item></channel></rss>

@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>组件开发 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/%E7%BB%84%E4%BB%B6%E5%BC%80%E5%8F%91/</link><description>Recent content in 组件开发 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Mon, 09 Sep 2024 00:18:53 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/%E7%BB%84%E4%BB%B6%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml"/><item><title>如何在 Nuxt 3 中有效使用 TypeScript</title><link>https://blog.cmdragon.cn/posts/3121b9f162f334cf3f36524ef4a0a21c/</link><pubDate>Mon, 09 Sep 2024 00:18:53 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/3121b9f162f334cf3f36524ef4a0a21c/</guid><description>摘要：本文详细介绍了如何在Nuxt 3项目中有效使用TypeScript，包括创建新项目、安装TypeScript依赖、进行类型检查、配置自动类型检查、使用自动生成的类型文件、实现更严格的类型检查、创建及使用TypeScript组件等步骤，旨在提升开发效率和代码质量</description></item><item><title>Nuxt 3组件开发与管理</title><link>https://blog.cmdragon.cn/posts/cc7cd2c85be6f573dbbab01a25b78ed7/</link><pubDate>Thu, 20 Jun 2024 00:18:53 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/cc7cd2c85be6f573dbbab01a25b78ed7/</guid><description>摘要：本文深入探讨了Nuxt 3的组件开发与管理，从基础概念、安装配置、目录结构、组件分类与开发实践、生命周期与优化，到测试与维护策略。详细介绍了Nuxt 3的核心特点，如服务器端渲染（SSR）、静态站点生成（SSG）以及与Vue生态系统的无缝集成。文章以Nuxt 3为基础，指导开发者如何高效构建高性能、可维护的Vue应用程序。内容涵盖了基本组件的定义与分类、独立组件与函数式组件的示例、Props和Slots的使用、Composition API的引入，以及组件的生命周期与优化方法。同时，文章还提供了组件开发的实践案例，包括自定义组件开发、异步加载组件、事件与方法的使用，以及组件测试与文档化指南。通过结构化的目录组织与详细的代码示例，旨在帮助开发者高效管理与维护组件，实现代码的复用与模块化。</description></item><item><title>nuxt开发</title><link>https://blog.cmdragon.cn/posts/1b603ec387c047de7e0eb7f961ae4b2c/</link><pubDate>Thu, 23 May 2024 19:37:34 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/1b603ec387c047de7e0eb7f961ae4b2c/</guid><description>&lt;h2 id="创建nuxtjs项目">创建Nuxt.js项目&lt;/h2>
-&lt;h3 id="步骤-1-安装-nodejs-和-npm">步骤 1: 安装 Node.js 和 NPM&lt;/h3>
-&lt;p>确保你的计算机上安装了 Node.js 和 NPM。你可以从 &lt;a href="https://nodejs.org/">Node.js 官网&lt;/a> 下载并安装。&lt;/p>
-&lt;h3 id="步骤-2-创建-nuxtjs-项目">步骤 2: 创建 Nuxt.js 项目&lt;/h3>
-&lt;p>打开命令行工具，运行以下命令来创建一个新的 Nuxt.js 项目：&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>组件开发 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/%E7%BB%84%E4%BB%B6%E5%BC%80%E5%8F%91/</link><description>Recent content in 组件开发 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Mon, 09 Sep 2024 00:18:53 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/%E7%BB%84%E4%BB%B6%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml"/><item><title>如何在 Nuxt 3 中有效使用 TypeScript</title><link>https://blog.cmdragon.cn/posts/3121b9f162f334cf3f36524ef4a0a21c/</link><pubDate>Mon, 09 Sep 2024 00:18:53 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/3121b9f162f334cf3f36524ef4a0a21c/</guid><description>摘要：本文详细介绍了如何在Nuxt 3项目中有效使用TypeScript，包括创建新项目、安装TypeScript依赖、进行类型检查、配置自动类型检查、使用自动生成的类型文件、实现更严格的类型检查、创建及使用TypeScript组件等步骤，旨在提升开发效率和代码质量</description></item><item><title>Nuxt 3组件开发与管理</title><link>https://blog.cmdragon.cn/posts/cc7cd2c85be6f573dbbab01a25b78ed7/</link><pubDate>Thu, 20 Jun 2024 00:18:53 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/cc7cd2c85be6f573dbbab01a25b78ed7/</guid><description>摘要：本文深入探讨了Nuxt 3的组件开发与管理，从基础概念、安装配置、目录结构、组件分类与开发实践、生命周期与优化，到测试与维护策略。详细介绍了Nuxt 3的核心特点，如服务器端渲染（SSR）、静态站点生成（SSG）以及与Vue生态系统的无缝集成。文章以Nuxt 3为基础，指导开发者如何高效构建高性能、可维护的Vue应用程序。内容涵盖了基本组件的定义与分类、独立组件与函数式组件的示例、Props和Slots的使用、Composition API的引入，以及组件的生命周期与优化方法。同时，文章还提供了组件开发的实践案例，包括自定义组件开发、异步加载组件、事件与方法的使用，以及组件测试与文档化指南。通过结构化的目录组织与详细的代码示例，旨在帮助开发者高效管理与维护组件，实现代码的复用与模块化。</description></item><item><title>nuxt开发</title><link>https://blog.cmdragon.cn/posts/1b603ec387c047de7e0eb7f961ae4b2c/</link><pubDate>Thu, 23 May 2024 19:37:34 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/1b603ec387c047de7e0eb7f961ae4b2c/</guid><description>&lt;h2 id="创建nuxtjs项目"&gt;创建Nuxt.js项目&lt;/h2&gt;
+&lt;h3 id="步骤-1-安装-nodejs-和-npm"&gt;步骤 1: 安装 Node.js 和 NPM&lt;/h3&gt;
+&lt;p&gt;确保你的计算机上安装了 Node.js 和 NPM。你可以从 &lt;a href="https://nodejs.org/"&gt;Node.js 官网&lt;/a&gt; 下载并安装。&lt;/p&gt;
+&lt;h3 id="步骤-2-创建-nuxtjs-项目"&gt;步骤 2: 创建 Nuxt.js 项目&lt;/h3&gt;
+&lt;p&gt;打开命令行工具，运行以下命令来创建一个新的 Nuxt.js 项目：&lt;/p&gt;
 
 
 
@@ -18,13 +18,13 @@
 
 
 
- &lt;div class="highlight-wrapper">
- &lt;div class="highlight">
- &lt;pre class="chroma">&lt;code class="language-" data-lang="">npx nuxi@latest init &amp;lt;project-name&amp;gt;&lt;/code>&lt;/pre>
- &lt;/div>
- &lt;/div>
+ &lt;div class="highlight-wrapper"&gt;
+ &lt;div class="highlight"&gt;
+ &lt;pre class="chroma"&gt;&lt;code class="language-" data-lang=""&gt;npx nuxi@latest init &amp;lt;project-name&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
 
- &lt;script>
+ &lt;script&gt;
  function copyCodeToClipboard(button) {
  const pre = button.parentElement.parentElement.querySelector('pre');
  const code = pre.textContent;
@@ -51,9 +51,9 @@
  }
  );
  }
- &lt;/script>
+ &lt;/script&gt;
  
- &lt;style>
+ &lt;style&gt;
  .highlight-wrapper {
  position: relative;
  margin: 1.5rem 0;
@@ -102,9 +102,9 @@
  background-color: rgba(160, 174, 192, 0.2);
  color: #e2e8f0;
  }
- &lt;/style>
- &lt;p>在这个过程中，你可以选择服务器框架、UI框架等。按照提示完成项目的基本配置。&lt;/p></description></item><item><title>Vue 3入门指南</title><link>https://blog.cmdragon.cn/posts/ab6d0d2bfb031bcf85fa63e9706be9e3/</link><pubDate>Thu, 23 May 2024 19:37:34 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/ab6d0d2bfb031bcf85fa63e9706be9e3/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_23 19_46_00.png" title="2024_05_23 19_46_00.png" alt="2024_05_23 19_46_00.png"/>
-&lt;h2 id="第1章vue-3简介">&lt;strong>第1章：Vue 3简介&lt;/strong>&lt;/h2>
-&lt;h3 id="11-vuejs的历史与发展">&lt;strong>1.1 Vue.js的历史与发展&lt;/strong>&lt;/h3>
-&lt;p>Vue.js由前谷歌工程师尤雨溪（Evan
-You）在2014年发布。它的设计目标是提供一个轻量级、渐进式的JavaScript框架，用于构建用户界面。Vue的核心库专注于视图层，易于上手，同时也便于与第三方库或既有项目整合。随着时间的推移，Vue.js因其简洁的API、灵活的组件系统和高效的性能而受到开发者的广泛欢迎。&lt;/p></description></item></channel></rss>
+ &lt;/style&gt;
+ &lt;p&gt;在这个过程中，你可以选择服务器框架、UI框架等。按照提示完成项目的基本配置。&lt;/p&gt;</description></item><item><title>Vue 3入门指南</title><link>https://blog.cmdragon.cn/posts/ab6d0d2bfb031bcf85fa63e9706be9e3/</link><pubDate>Thu, 23 May 2024 19:37:34 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/ab6d0d2bfb031bcf85fa63e9706be9e3/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_23 19_46_00.png" title="2024_05_23 19_46_00.png" alt="2024_05_23 19_46_00.png"/&gt;
+&lt;h2 id="第1章vue-3简介"&gt;&lt;strong&gt;第1章：Vue 3简介&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id="11-vuejs的历史与发展"&gt;&lt;strong&gt;1.1 Vue.js的历史与发展&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Vue.js由前谷歌工程师尤雨溪（Evan
+You）在2014年发布。它的设计目标是提供一个轻量级、渐进式的JavaScript框架，用于构建用户界面。Vue的核心库专注于视图层，易于上手，同时也便于与第三方库或既有项目整合。随着时间的推移，Vue.js因其简洁的API、灵活的组件系统和高效的性能而受到开发者的广泛欢迎。&lt;/p&gt;</description></item></channel></rss>

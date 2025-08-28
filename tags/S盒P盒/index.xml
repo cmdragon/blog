@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>S盒P盒 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/S%E7%9B%92P%E7%9B%92/</link><description>Recent content in S盒P盒 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sun, 14 Apr 2024 21:30:21 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/S%E7%9B%92P%E7%9B%92/index.xml" rel="self" type="application/rss+xml"/><item><title>深入理解DES算法：原理、实现与应用</title><link>https://blog.cmdragon.cn/posts/f3a5102a7ed71eec81557e52cdcd93c4/</link><pubDate>Sun, 14 Apr 2024 21:30:21 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/f3a5102a7ed71eec81557e52cdcd93c4/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_04_14 21_36_33.png" title="2024_04_14 21_36_33.png" alt="2024_04_14 21_36_33.png"/>
-&lt;h3 id="des算法简介">DES算法简介&lt;/h3>
-&lt;h4 id="历史">历史&lt;/h4>
-&lt;p>DES（Data Encryption Standard）算法是由IBM研发，并于1977年被美国国家标准局（NBS，现NIST）确定为数据加密标准。&lt;/p>
-&lt;h4 id="设计目的">设计目的&lt;/h4>
-&lt;p>DES算法的设计目的是提供一种高度安全的对称加密算法，用于保护敏感信息的机密性。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>S盒P盒 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/S%E7%9B%92P%E7%9B%92/</link><description>Recent content in S盒P盒 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sun, 14 Apr 2024 21:30:21 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/S%E7%9B%92P%E7%9B%92/index.xml" rel="self" type="application/rss+xml"/><item><title>深入理解DES算法：原理、实现与应用</title><link>https://blog.cmdragon.cn/posts/f3a5102a7ed71eec81557e52cdcd93c4/</link><pubDate>Sun, 14 Apr 2024 21:30:21 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/f3a5102a7ed71eec81557e52cdcd93c4/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_04_14 21_36_33.png" title="2024_04_14 21_36_33.png" alt="2024_04_14 21_36_33.png"/&gt;
+&lt;h3 id="des算法简介"&gt;DES算法简介&lt;/h3&gt;
+&lt;h4 id="历史"&gt;历史&lt;/h4&gt;
+&lt;p&gt;DES（Data Encryption Standard）算法是由IBM研发，并于1977年被美国国家标准局（NBS，现NIST）确定为数据加密标准。&lt;/p&gt;
+&lt;h4 id="设计目的"&gt;设计目的&lt;/h4&gt;
+&lt;p&gt;DES算法的设计目的是提供一种高度安全的对称加密算法，用于保护敏感信息的机密性。&lt;/p&gt;</description></item></channel></rss>

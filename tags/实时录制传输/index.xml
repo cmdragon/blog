@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>实时录制传输 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/%E5%AE%9E%E6%97%B6%E5%BD%95%E5%88%B6%E4%BC%A0%E8%BE%93/</link><description>Recent content in 实时录制传输 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sat, 02 Mar 2024 15:38:51 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/%E5%AE%9E%E6%97%B6%E5%BD%95%E5%88%B6%E4%BC%A0%E8%BE%93/index.xml" rel="self" type="application/rss+xml"/><item><title>探索浏览器录屏web api 接口的应用前景与限制</title><link>https://blog.cmdragon.cn/posts/6ff4bbd4784d2f850b5783990b3f1663/</link><pubDate>Sat, 02 Mar 2024 15:38:51 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/6ff4bbd4784d2f850b5783990b3f1663/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_03_02 15_38_23.png" title="2024_03_02 15_38_23.png" alt="2024_03_02 15_38_23.png"/>
-&lt;h2 id="一浏览器录屏web-api-接口的优点">一、浏览器录屏Web API 接口的优点：&lt;/h2>
-&lt;ol>
-&lt;li>简化录屏流程：浏览器录屏Web API 接口可以直接在网页中调用，无需安装额外的插件或软件，简化了录屏的流程。&lt;/li>
-&lt;li>实时录制与传输：Web API 接口可以实时录制用户操作并将录屏数据传输到服务器，实现即时的用户行为监测和分析。&lt;/li>
-&lt;li>跨平台兼容性：浏览器录屏Web API 接口在不同浏览器和操作系统上都有良好的兼容性，可以在多个平台上使用。&lt;/li>
-&lt;/ol>
-&lt;p>&lt;a href="https://cmdragon.cn/recordscreen">在线录屏 | 一个覆盖广泛主题工具的高效在线平台(cmdragon.cn)&lt;/a>&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>实时录制传输 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/%E5%AE%9E%E6%97%B6%E5%BD%95%E5%88%B6%E4%BC%A0%E8%BE%93/</link><description>Recent content in 实时录制传输 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sat, 02 Mar 2024 15:38:51 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/%E5%AE%9E%E6%97%B6%E5%BD%95%E5%88%B6%E4%BC%A0%E8%BE%93/index.xml" rel="self" type="application/rss+xml"/><item><title>探索浏览器录屏web api 接口的应用前景与限制</title><link>https://blog.cmdragon.cn/posts/6ff4bbd4784d2f850b5783990b3f1663/</link><pubDate>Sat, 02 Mar 2024 15:38:51 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/6ff4bbd4784d2f850b5783990b3f1663/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_03_02 15_38_23.png" title="2024_03_02 15_38_23.png" alt="2024_03_02 15_38_23.png"/&gt;
+&lt;h2 id="一浏览器录屏web-api-接口的优点"&gt;一、浏览器录屏Web API 接口的优点：&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;简化录屏流程：浏览器录屏Web API 接口可以直接在网页中调用，无需安装额外的插件或软件，简化了录屏的流程。&lt;/li&gt;
+&lt;li&gt;实时录制与传输：Web API 接口可以实时录制用户操作并将录屏数据传输到服务器，实现即时的用户行为监测和分析。&lt;/li&gt;
+&lt;li&gt;跨平台兼容性：浏览器录屏Web API 接口在不同浏览器和操作系统上都有良好的兼容性，可以在多个平台上使用。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href="https://cmdragon.cn/recordscreen"&gt;在线录屏 | 一个覆盖广泛主题工具的高效在线平台(cmdragon.cn)&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

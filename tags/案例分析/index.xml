@@ -1,22 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>案例分析 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90/</link><description>Recent content in 案例分析 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Tue, 23 Apr 2024 20:04:36 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90/index.xml" rel="self" type="application/rss+xml"/><item><title>深入理解高级加密标准（Advanced Encryption Standard）</title><link>https://blog.cmdragon.cn/posts/d1e54f865ff7846e64123f294982a233/</link><pubDate>Tue, 23 Apr 2024 20:04:36 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/d1e54f865ff7846e64123f294982a233/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_04_23 20_24_08.png" title="2024_04_23 20_24_08.png" alt="2024_04_23 20_24_08.png"/>
-&lt;h3 id="第一章aes概述">第一章：AES概述&lt;/h3>
-&lt;h4 id="aes的历史和背景">AES的历史和背景&lt;/h4>
-&lt;ul>
-&lt;li>**历史：**高级加密标准（Advanced Encryption Standard，AES）是一种对称密钥加密标准，由美国国（Advanced Encryption
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>案例分析 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90/</link><description>Recent content in 案例分析 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Tue, 23 Apr 2024 20:04:36 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90/index.xml" rel="self" type="application/rss+xml"/><item><title>深入理解高级加密标准（Advanced Encryption Standard）</title><link>https://blog.cmdragon.cn/posts/d1e54f865ff7846e64123f294982a233/</link><pubDate>Tue, 23 Apr 2024 20:04:36 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/d1e54f865ff7846e64123f294982a233/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_04_23 20_24_08.png" title="2024_04_23 20_24_08.png" alt="2024_04_23 20_24_08.png"/&gt;
+&lt;h3 id="第一章aes概述"&gt;第一章：AES概述&lt;/h3&gt;
+&lt;h4 id="aes的历史和背景"&gt;AES的历史和背景&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;**历史：**高级加密标准（Advanced Encryption Standard，AES）是一种对称密钥加密标准，由美国国（Advanced Encryption
 Standard），家标准与技术研究所（NIST）于2001年发布。AES取代了之前的数据加密标准（Data Encryption
-Standard，DES），成为目前广泛使用的加密算法之一。&lt;/li>
-&lt;li>&lt;strong>背景：即高级加密标准，是一种对称密钥加密算法，是美国国家标准与技术&lt;/strong>
-AES的产生是为了解决DES存在的密钥长度过短、安全性不足等问题，以适应当时互联网和电子商务快速发展的需求。AES研究所（NIST）于2001年正式公布的一种加密标准，用来替经过了严格的密码学分析和评估，成为一种安全可靠的加密算法。&lt;/li>
-&lt;/ul>
-&lt;h4 id="aes的基本原理">AES的基本原理&lt;/h4>
-&lt;ul>
-&lt;li>**对称密钥加密：**AES是一种对称密钥加密算法，即加密和解密使用相同的密钥。这种加密代之前的DES（Data Encryption
-Standard方式效率高，适用于大规模数据的加密和解密操作。&lt;/li>
-&lt;li>**替代网络：**AES使用代换-置换网络（Substitution-Permutation Network，SPN）结构，包括代换层和置换层，通过多轮迭代运算实现加密和解密过程。&lt;/li>
-&lt;li>**轮函数：**AES中的轮函数包括字节替代、行移位、列混淆和轮密钥加法等操作，通过多轮轮函数的迭代实现数据的混淆和扩散，）。DES因为密钥长度短（56位）而逐渐显露出安全性不足的问题增强了加密算法的安全性。&lt;/li>
-&lt;/ul>
-&lt;h4 id="aes的优势和特点">AES的优势和特点&lt;/h4>
-&lt;ul>
-&lt;li>**安全性高：**AES经过了广泛的密码学分析和评估，被，于是NIST通过国际竞赛的形式选择AES的算法作为其替代方案。&lt;/li>
-&lt;/ul>
-&lt;p>AES的算法来自于比利时密码学家Joan Daemen和Vincent Rijmen提出的Rijndael算法，该证明具有很高的安全性，能够抵抗目前已知的攻击方法。&lt;/p></description></item></channel></rss>
+Standard，DES），成为目前广泛使用的加密算法之一。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;背景：即高级加密标准，是一种对称密钥加密算法，是美国国家标准与技术&lt;/strong&gt;
+AES的产生是为了解决DES存在的密钥长度过短、安全性不足等问题，以适应当时互联网和电子商务快速发展的需求。AES研究所（NIST）于2001年正式公布的一种加密标准，用来替经过了严格的密码学分析和评估，成为一种安全可靠的加密算法。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="aes的基本原理"&gt;AES的基本原理&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;**对称密钥加密：**AES是一种对称密钥加密算法，即加密和解密使用相同的密钥。这种加密代之前的DES（Data Encryption
+Standard方式效率高，适用于大规模数据的加密和解密操作。&lt;/li&gt;
+&lt;li&gt;**替代网络：**AES使用代换-置换网络（Substitution-Permutation Network，SPN）结构，包括代换层和置换层，通过多轮迭代运算实现加密和解密过程。&lt;/li&gt;
+&lt;li&gt;**轮函数：**AES中的轮函数包括字节替代、行移位、列混淆和轮密钥加法等操作，通过多轮轮函数的迭代实现数据的混淆和扩散，）。DES因为密钥长度短（56位）而逐渐显露出安全性不足的问题增强了加密算法的安全性。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="aes的优势和特点"&gt;AES的优势和特点&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;**安全性高：**AES经过了广泛的密码学分析和评估，被，于是NIST通过国际竞赛的形式选择AES的算法作为其替代方案。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;AES的算法来自于比利时密码学家Joan Daemen和Vincent Rijmen提出的Rijndael算法，该证明具有很高的安全性，能够抵抗目前已知的攻击方法。&lt;/p&gt;</description></item></channel></rss>

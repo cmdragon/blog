@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>文本分析 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/%E6%96%87%E6%9C%AC%E5%88%86%E6%9E%90/</link><description>Recent content in 文本分析 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Thu, 03 Jul 2025 08:37:03 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/%E6%96%87%E6%9C%AC%E5%88%86%E6%9E%90/index.xml" rel="self" type="application/rss+xml"/><item><title>解锁经文奥秘：免费在线圣经探索器深度体验</title><link>https://blog.cmdragon.cn/posts/8a5fd7c4a8b9d0e7f1a2b3c4d5e6f7a8/</link><pubDate>Thu, 03 Jul 2025 08:37:03 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/8a5fd7c4a8b9d0e7f1a2b3c4d5e6f7a8/</guid><description>无需安装的专业级圣经研习工具！提供多版本对照、智能检索、主题分析等核心功能，支持跨设备无缝使用，助您深度探索经文真谛。</description></item><item><title>深入理解正则表达式：从入门到精通</title><link>https://blog.cmdragon.cn/posts/c5baeec7210f3ca0a683234f40132c0e/</link><pubDate>Tue, 30 Apr 2024 18:37:21 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/c5baeec7210f3ca0a683234f40132c0e/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_04_30 18_40_18.png" title="2024_04_30 18_40_18.png" alt="2024_04_30 18_40_18.png"/>
-&lt;h2 id="第一章正则表达式入门">&lt;strong>第一章：正则表达式入门&lt;/strong>&lt;/h2>
-&lt;h3 id="介绍正则表达式的基本概念和语法">&lt;strong>介绍正则表达式的基本概念和语法&lt;/strong> &lt;/h3>
-&lt;p>正则表达式是一种用于描述字符串模式的表达式，由普通字符和特殊字符组成。常用的特殊字符包括：&lt;/p>
-&lt;ul>
-&lt;li>&lt;code>.&lt;/code>：匹配任意单个字符&lt;/li>
-&lt;li>&lt;code>*&lt;/code>：匹配前面的字符0次或多次&lt;/li>
-&lt;li>&lt;code>+&lt;/code>：匹配前面的字符1次或多次&lt;/li>
-&lt;li>&lt;code>?&lt;/code>：匹配前面的字符0次或1次&lt;/li>
-&lt;li>&lt;code>[]&lt;/code>：匹配括号内的任意一个字符&lt;/li>
-&lt;li>&lt;code>^&lt;/code>：匹配字符串的开头&lt;/li>
-&lt;li>&lt;code>$&lt;/code>：匹配字符串的结尾&lt;/li>
-&lt;li>&lt;code>\d&lt;/code>：匹配任意数字&lt;/li>
-&lt;li>&lt;code>\w&lt;/code>：匹配任意字母、数字或下划线&lt;/li>
-&lt;li>&lt;code>\s&lt;/code>：匹配任意空白字符&lt;/li>
-&lt;/ul>
-&lt;h3 id="正则表达式在文本处理中的应用场景">&lt;strong>正则表达式在文本处理中的应用场景&lt;/strong> &lt;/h3>
-&lt;p>正则表达式在文本处理中有广泛的应用场景，例如：&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>文本分析 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/%E6%96%87%E6%9C%AC%E5%88%86%E6%9E%90/</link><description>Recent content in 文本分析 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Thu, 03 Jul 2025 08:37:03 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/%E6%96%87%E6%9C%AC%E5%88%86%E6%9E%90/index.xml" rel="self" type="application/rss+xml"/><item><title>解锁经文奥秘：免费在线圣经探索器深度体验</title><link>https://blog.cmdragon.cn/posts/8a5fd7c4a8b9d0e7f1a2b3c4d5e6f7a8/</link><pubDate>Thu, 03 Jul 2025 08:37:03 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/8a5fd7c4a8b9d0e7f1a2b3c4d5e6f7a8/</guid><description>无需安装的专业级圣经研习工具！提供多版本对照、智能检索、主题分析等核心功能，支持跨设备无缝使用，助您深度探索经文真谛。</description></item><item><title>深入理解正则表达式：从入门到精通</title><link>https://blog.cmdragon.cn/posts/c5baeec7210f3ca0a683234f40132c0e/</link><pubDate>Tue, 30 Apr 2024 18:37:21 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/c5baeec7210f3ca0a683234f40132c0e/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_04_30 18_40_18.png" title="2024_04_30 18_40_18.png" alt="2024_04_30 18_40_18.png"/&gt;
+&lt;h2 id="第一章正则表达式入门"&gt;&lt;strong&gt;第一章：正则表达式入门&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id="介绍正则表达式的基本概念和语法"&gt;&lt;strong&gt;介绍正则表达式的基本概念和语法&lt;/strong&gt; &lt;/h3&gt;
+&lt;p&gt;正则表达式是一种用于描述字符串模式的表达式，由普通字符和特殊字符组成。常用的特殊字符包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;.&lt;/code&gt;：匹配任意单个字符&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;*&lt;/code&gt;：匹配前面的字符0次或多次&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;+&lt;/code&gt;：匹配前面的字符1次或多次&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;?&lt;/code&gt;：匹配前面的字符0次或1次&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[]&lt;/code&gt;：匹配括号内的任意一个字符&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;^&lt;/code&gt;：匹配字符串的开头&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$&lt;/code&gt;：匹配字符串的结尾&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\d&lt;/code&gt;：匹配任意数字&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\w&lt;/code&gt;：匹配任意字母、数字或下划线&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\s&lt;/code&gt;：匹配任意空白字符&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="正则表达式在文本处理中的应用场景"&gt;&lt;strong&gt;正则表达式在文本处理中的应用场景&lt;/strong&gt; &lt;/h3&gt;
+&lt;p&gt;正则表达式在文本处理中有广泛的应用场景，例如：&lt;/p&gt;</description></item></channel></rss>

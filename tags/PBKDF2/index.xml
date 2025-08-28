@@ -1,19 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PBKDF2 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/PBKDF2/</link><description>Recent content in PBKDF2 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sat, 20 Apr 2024 20:37:35 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/PBKDF2/index.xml" rel="self" type="application/rss+xml"/><item><title>深入了解PBKDF2：密码学中的关键推导函数</title><link>https://blog.cmdragon.cn/posts/db0b90dce25843a9e352a3da45eb00b2/</link><pubDate>Sat, 20 Apr 2024 20:37:35 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/db0b90dce25843a9e352a3da45eb00b2/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_04_20 20_41_20.png" title="2024_04_20 20_41_20.png" alt="2024_04_20 20_41_20.png"/>
-&lt;h3 id="第一章密码学基础">第一章：密码学基础&lt;/h3>
-&lt;h4 id="对称加密和哈希函数">对称加密和哈希函数&lt;/h4>
-&lt;ul>
-&lt;li>&lt;strong>对称加密&lt;/strong>：对称加密是一种加密技术，使用相同的密钥进行加密和解密。常见的对称加密算法有AES、DES等。发送方和接收方必须共享相同的密钥才能进行加密和解密操作。&lt;/li>
-&lt;li>&lt;strong>哈希函数&lt;/strong>：哈希函数是一种将任意长度的输入数据映射为固定长度输出的函数。哈希函数具有单向性、固定输出长度、雪崩效应等特性。常见的哈希函数有SHA-256、MD5等。哈希函数常用于数据完整性验证、密码存储等场景。&lt;/li>
-&lt;/ul>
-&lt;h4 id="密钥派生函数的作用和原理">密钥派生函数的作用和原理&lt;/h4>
-&lt;ul>
-&lt;li>&lt;strong>密钥派生函数&lt;/strong>：密钥派生函数（Key Derivation
-Function，KDF）是一种用于从一个或多个输入中派生出密钥或密钥材料的函数。其主要作用是从用户提供的密码和一些额外的参数中生成出更强大的密钥。&lt;/li>
-&lt;li>&lt;strong>密钥派生函数的原理&lt;/strong>
-：密钥派生函数通常采用密码学哈希函数来实现。常见的密钥派生函数有PBKDF2、bcrypt、scrypt等。这些函数通常会使用盐值（salt）和迭代次数来增加生成密钥的难度，从而提高安全性。密钥派生函数的设计目的是为了抵抗暴力破解、字典攻击等密码破解手段，确保生成的密钥足够安全。&lt;/li>
-&lt;/ul>
-&lt;p>通过对称加密、哈希函数和密钥派生函数的基础理解，我们可以更好地理解密码学中的关键概念和技术，为后续学习和应用更复杂的密码学算法打下基础。&lt;/p></description></item><item><title>PBKDF2算法：保障密码安全的利器</title><link>https://blog.cmdragon.cn/posts/03e3aee6939ae26895392b8ccf581d31/</link><pubDate>Thu, 14 Mar 2024 16:40:05 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/03e3aee6939ae26895392b8ccf581d31/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_03_14 16_41_49.png" title="2024_03_14 16_41_49.png" alt="2024_03_14 16_41_49.png"/>
-&lt;h3 id="pbkdf2算法起源">PBKDF2算法起源：&lt;/h3>
-&lt;p>PBKDF2（Password-Based Key Derivation Function
-2）算法是一种基于密码的密钥派生函数，最初由RSA实验室的密码学家提出，用于从密码中生成密钥。PBKDF2算法的设计目的是增加破解密码的难度，提高密码的安全性。&lt;/p></description></item><item><title>PBKDF2算法：保护密码安全的重要工具</title><link>https://blog.cmdragon.cn/posts/1326f0b7ec6e8dcd0a579c31835210b4/</link><pubDate>Tue, 30 Jan 2024 17:50:00 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/1326f0b7ec6e8dcd0a579c31835210b4/</guid><description>&lt;img alt="2024_01_30 16_29_52.png" src="https://blog.cmdragon.cn/images/2024_01_30 16_29_52.png" title="2024_01_30 16_29_52.png"/>
-&lt;p>摘要：在当今的数字世界中，密码安全是至关重要的。为了保护用户密码免受未经授权的访问和破解，Password-Based Key Derivation Function 2 (PBKDF2)算法成为了一种重要的工具。本文将介绍PBKDF2算法的优缺点，以及它如何解决密码存储和验证中的一些问题。我们还将提供一个使用Java编写的完整示例，以帮助读者深入了解PBKDF2算法的实际应用。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PBKDF2 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/PBKDF2/</link><description>Recent content in PBKDF2 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sat, 20 Apr 2024 20:37:35 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/PBKDF2/index.xml" rel="self" type="application/rss+xml"/><item><title>深入了解PBKDF2：密码学中的关键推导函数</title><link>https://blog.cmdragon.cn/posts/db0b90dce25843a9e352a3da45eb00b2/</link><pubDate>Sat, 20 Apr 2024 20:37:35 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/db0b90dce25843a9e352a3da45eb00b2/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_04_20 20_41_20.png" title="2024_04_20 20_41_20.png" alt="2024_04_20 20_41_20.png"/&gt;
+&lt;h3 id="第一章密码学基础"&gt;第一章：密码学基础&lt;/h3&gt;
+&lt;h4 id="对称加密和哈希函数"&gt;对称加密和哈希函数&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;对称加密&lt;/strong&gt;：对称加密是一种加密技术，使用相同的密钥进行加密和解密。常见的对称加密算法有AES、DES等。发送方和接收方必须共享相同的密钥才能进行加密和解密操作。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;哈希函数&lt;/strong&gt;：哈希函数是一种将任意长度的输入数据映射为固定长度输出的函数。哈希函数具有单向性、固定输出长度、雪崩效应等特性。常见的哈希函数有SHA-256、MD5等。哈希函数常用于数据完整性验证、密码存储等场景。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="密钥派生函数的作用和原理"&gt;密钥派生函数的作用和原理&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;密钥派生函数&lt;/strong&gt;：密钥派生函数（Key Derivation
+Function，KDF）是一种用于从一个或多个输入中派生出密钥或密钥材料的函数。其主要作用是从用户提供的密码和一些额外的参数中生成出更强大的密钥。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;密钥派生函数的原理&lt;/strong&gt;
+：密钥派生函数通常采用密码学哈希函数来实现。常见的密钥派生函数有PBKDF2、bcrypt、scrypt等。这些函数通常会使用盐值（salt）和迭代次数来增加生成密钥的难度，从而提高安全性。密钥派生函数的设计目的是为了抵抗暴力破解、字典攻击等密码破解手段，确保生成的密钥足够安全。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;通过对称加密、哈希函数和密钥派生函数的基础理解，我们可以更好地理解密码学中的关键概念和技术，为后续学习和应用更复杂的密码学算法打下基础。&lt;/p&gt;</description></item><item><title>PBKDF2算法：保障密码安全的利器</title><link>https://blog.cmdragon.cn/posts/03e3aee6939ae26895392b8ccf581d31/</link><pubDate>Thu, 14 Mar 2024 16:40:05 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/03e3aee6939ae26895392b8ccf581d31/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_03_14 16_41_49.png" title="2024_03_14 16_41_49.png" alt="2024_03_14 16_41_49.png"/&gt;
+&lt;h3 id="pbkdf2算法起源"&gt;PBKDF2算法起源：&lt;/h3&gt;
+&lt;p&gt;PBKDF2（Password-Based Key Derivation Function
+2）算法是一种基于密码的密钥派生函数，最初由RSA实验室的密码学家提出，用于从密码中生成密钥。PBKDF2算法的设计目的是增加破解密码的难度，提高密码的安全性。&lt;/p&gt;</description></item><item><title>PBKDF2算法：保护密码安全的重要工具</title><link>https://blog.cmdragon.cn/posts/1326f0b7ec6e8dcd0a579c31835210b4/</link><pubDate>Tue, 30 Jan 2024 17:50:00 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/1326f0b7ec6e8dcd0a579c31835210b4/</guid><description>&lt;img alt="2024_01_30 16_29_52.png" src="https://blog.cmdragon.cn/images/2024_01_30 16_29_52.png" title="2024_01_30 16_29_52.png"/&gt;
+&lt;p&gt;摘要：在当今的数字世界中，密码安全是至关重要的。为了保护用户密码免受未经授权的访问和破解，Password-Based Key Derivation Function 2 (PBKDF2)算法成为了一种重要的工具。本文将介绍PBKDF2算法的优缺点，以及它如何解决密码存储和验证中的一些问题。我们还将提供一个使用Java编写的完整示例，以帮助读者深入了解PBKDF2算法的实际应用。&lt;/p&gt;</description></item></channel></rss>

@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>图片Base64 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/%E5%9B%BE%E7%89%87Base64/</link><description>Recent content in 图片Base64 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sun, 03 Mar 2024 19:39:27 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/%E5%9B%BE%E7%89%87Base64/index.xml" rel="self" type="application/rss+xml"/><item><title>探索图片与Base64编码的优势与局限性</title><link>https://blog.cmdragon.cn/posts/1e59739185bd86e2f23130f48e246411/</link><pubDate>Sun, 03 Mar 2024 19:39:27 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/1e59739185bd86e2f23130f48e246411/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_03_03 19_42_35.png" title="2024_03_03 19_42_35.png" alt="2024_03_03 19_42_35.png"/>
-&lt;h2 id="一图片和base64编码的关系">一、图片和Base64编码的关系：&lt;/h2>
-&lt;ol>
-&lt;li>图片是一种常见的媒体文件格式，可以通过URL进行访问和加载。&lt;/li>
-&lt;li>Base64编码是一种将二进制数据转换为ASCII字符的编码方式，可以将图片数据转换为字符串形式。&lt;/li>
-&lt;/ol>
-&lt;p>&lt;a href="https://cmdragon.cn/img2base64">图片Base64相互转换 | 一个覆盖广泛主题工具的高效在线平台(cmdragon.cn)&lt;/a>&lt;/p></description></item><item><title>图片Base64编码解码的优缺点及应用场景分析</title><link>https://blog.cmdragon.cn/posts/94cc1c4835f2d079438156f2934a1432/</link><pubDate>Sat, 24 Feb 2024 14:24:37 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/94cc1c4835f2d079438156f2934a1432/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_02_24 14_15_09.png" title="2024_02_24 14_15_09.png" alt="2024_02_24 14_15_09.png"/>
-&lt;blockquote>
-&lt;p>随着互联网的迅猛发展，图片在网页和移动应用中的使用越来越广泛。而图片的传输和加载往往是网页性能的瓶颈之一。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>图片Base64 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/%E5%9B%BE%E7%89%87Base64/</link><description>Recent content in 图片Base64 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sun, 03 Mar 2024 19:39:27 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/%E5%9B%BE%E7%89%87Base64/index.xml" rel="self" type="application/rss+xml"/><item><title>探索图片与Base64编码的优势与局限性</title><link>https://blog.cmdragon.cn/posts/1e59739185bd86e2f23130f48e246411/</link><pubDate>Sun, 03 Mar 2024 19:39:27 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/1e59739185bd86e2f23130f48e246411/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_03_03 19_42_35.png" title="2024_03_03 19_42_35.png" alt="2024_03_03 19_42_35.png"/&gt;
+&lt;h2 id="一图片和base64编码的关系"&gt;一、图片和Base64编码的关系：&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;图片是一种常见的媒体文件格式，可以通过URL进行访问和加载。&lt;/li&gt;
+&lt;li&gt;Base64编码是一种将二进制数据转换为ASCII字符的编码方式，可以将图片数据转换为字符串形式。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href="https://cmdragon.cn/img2base64"&gt;图片Base64相互转换 | 一个覆盖广泛主题工具的高效在线平台(cmdragon.cn)&lt;/a&gt;&lt;/p&gt;</description></item><item><title>图片Base64编码解码的优缺点及应用场景分析</title><link>https://blog.cmdragon.cn/posts/94cc1c4835f2d079438156f2934a1432/</link><pubDate>Sat, 24 Feb 2024 14:24:37 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/94cc1c4835f2d079438156f2934a1432/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_02_24 14_15_09.png" title="2024_02_24 14_15_09.png" alt="2024_02_24 14_15_09.png"/&gt;
+&lt;blockquote&gt;
+&lt;p&gt;随着互联网的迅猛发展，图片在网页和移动应用中的使用越来越广泛。而图片的传输和加载往往是网页性能的瓶颈之一。
 为了解决这一问题，图片Base64编码与解码技术应运而生。本文将介绍图片Base64相互转换的优缺点，
-以及它可以解决的问题和适用的方面，并提供完整的JavaScript示例。&lt;/p></description></item><item><title>图片与Base64编码相互转换、优势分析和技术实现</title><link>https://blog.cmdragon.cn/posts/d150e0ea9224b6a35898d3ef97c8690a/</link><pubDate>Tue, 30 Jan 2024 21:50:00 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/d150e0ea9224b6a35898d3ef97c8690a/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_02_03 18_05_08.png" title="2024_02_03 18_05_08.png" alt="2024_02_03 18_05_08.png"/>
-&lt;blockquote>
-&lt;p>在Web开发中，图片与Base64编码的相互转换是一个非常实用的技能。图片 Base64编码是将图片文件转换为字符串格式，以便于在网络上传输和存储。本文将详细介绍图片与Base64编码的转换方法，以及图片Base64编码的优势。&lt;/p></description></item><item><title>图片Base64相互转换</title><link>https://blog.cmdragon.cn/posts/8ed2db503bcd88af26019d67bbf58ab9/</link><pubDate>Tue, 30 Jan 2024 20:50:00 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/8ed2db503bcd88af26019d67bbf58ab9/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_02_03 18_03_00.png" title="2024_02_03 18_03_00.png" alt="2024_02_03 18_03_00.png"/>
-&lt;h2 id="一简介">一、简介&lt;/h2>
-&lt;p>Base64编码是一种广泛应用于网络传输和数据存储的编码方式。在实际应用中，我们将图片转换为Base64编码，可以大大减少数据量，便于传输和存储。本文将详细介绍图片Base64编码的相互转换方法及其原理。&lt;/p></description></item></channel></rss>
+以及它可以解决的问题和适用的方面，并提供完整的JavaScript示例。&lt;/p&gt;</description></item><item><title>图片与Base64编码相互转换、优势分析和技术实现</title><link>https://blog.cmdragon.cn/posts/d150e0ea9224b6a35898d3ef97c8690a/</link><pubDate>Tue, 30 Jan 2024 21:50:00 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/d150e0ea9224b6a35898d3ef97c8690a/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_02_03 18_05_08.png" title="2024_02_03 18_05_08.png" alt="2024_02_03 18_05_08.png"/&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在Web开发中，图片与Base64编码的相互转换是一个非常实用的技能。图片 Base64编码是将图片文件转换为字符串格式，以便于在网络上传输和存储。本文将详细介绍图片与Base64编码的转换方法，以及图片Base64编码的优势。&lt;/p&gt;</description></item><item><title>图片Base64相互转换</title><link>https://blog.cmdragon.cn/posts/8ed2db503bcd88af26019d67bbf58ab9/</link><pubDate>Tue, 30 Jan 2024 20:50:00 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/8ed2db503bcd88af26019d67bbf58ab9/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_02_03 18_03_00.png" title="2024_02_03 18_03_00.png" alt="2024_02_03 18_03_00.png"/&gt;
+&lt;h2 id="一简介"&gt;一、简介&lt;/h2&gt;
+&lt;p&gt;Base64编码是一种广泛应用于网络传输和数据存储的编码方式。在实际应用中，我们将图片转换为Base64编码，可以大大减少数据量，便于传输和存储。本文将详细介绍图片Base64编码的相互转换方法及其原理。&lt;/p&gt;</description></item></channel></rss>

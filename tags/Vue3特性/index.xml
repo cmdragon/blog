@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vue3特性 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/Vue3%E7%89%B9%E6%80%A7/</link><description>Recent content in Vue3特性 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Fri, 24 May 2024 16:31:13 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/Vue3%E7%89%B9%E6%80%A7/index.xml" rel="self" type="application/rss+xml"/><item><title>Vue 3 组件基础与模板语法详解</title><link>https://blog.cmdragon.cn/posts/f1d2e045fea28aefaad4d6732b7a05e7/</link><pubDate>Fri, 24 May 2024 16:31:13 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/f1d2e045fea28aefaad4d6732b7a05e7/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_24 16_35_34.png" title="2024_05_24 16_35_34.png" alt="2024_05_24 16_35_34.png"/>
-&lt;h2 id="vue-3-简介">Vue 3 简介&lt;/h2>
-&lt;p>&lt;strong>1. Vue 3 的新特性&lt;/strong>&lt;/p>
-&lt;p>Vue 3引入了许多新的特性，以提高框架的性能和可维护性。下面是一些主要的新特性：&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Composition API&lt;/strong>：这是Vue 3中最大的变化之一，它提供了一种更灵活的方式来组织和重用组件的逻辑。&lt;/li>
-&lt;li>&lt;strong>Teleport&lt;/strong>：这是一个新的API，允许我们在组件树中将元素“传送”到其他位置。&lt;/li>
-&lt;li>&lt;strong>Suspense&lt;/strong>：这是一个新的API，允许我们在组件树中等待异步数据加载。&lt;/li>
-&lt;li>&lt;strong>Fragment&lt;/strong>：这是一个新的内置组件，允许我们在组件中渲染多个根节点。&lt;/li>
-&lt;li>&lt;strong>v-memo&lt;/strong>：这是一个新的指令，允许我们在渲染过程中缓存组件的输出。&lt;/li>
-&lt;li>&lt;strong>更快的渲染速度&lt;/strong>：Vue 3中的渲染器已经重写，提供了更快的渲染速度。&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>2. 安装与配置&lt;/strong>&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vue3特性 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/Vue3%E7%89%B9%E6%80%A7/</link><description>Recent content in Vue3特性 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Fri, 24 May 2024 16:31:13 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/Vue3%E7%89%B9%E6%80%A7/index.xml" rel="self" type="application/rss+xml"/><item><title>Vue 3 组件基础与模板语法详解</title><link>https://blog.cmdragon.cn/posts/f1d2e045fea28aefaad4d6732b7a05e7/</link><pubDate>Fri, 24 May 2024 16:31:13 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/f1d2e045fea28aefaad4d6732b7a05e7/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_24 16_35_34.png" title="2024_05_24 16_35_34.png" alt="2024_05_24 16_35_34.png"/&gt;
+&lt;h2 id="vue-3-简介"&gt;Vue 3 简介&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;1. Vue 3 的新特性&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Vue 3引入了许多新的特性，以提高框架的性能和可维护性。下面是一些主要的新特性：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Composition API&lt;/strong&gt;：这是Vue 3中最大的变化之一，它提供了一种更灵活的方式来组织和重用组件的逻辑。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Teleport&lt;/strong&gt;：这是一个新的API，允许我们在组件树中将元素“传送”到其他位置。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Suspense&lt;/strong&gt;：这是一个新的API，允许我们在组件树中等待异步数据加载。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fragment&lt;/strong&gt;：这是一个新的内置组件，允许我们在组件中渲染多个根节点。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;v-memo&lt;/strong&gt;：这是一个新的指令，允许我们在渲染过程中缓存组件的输出。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;更快的渲染速度&lt;/strong&gt;：Vue 3中的渲染器已经重写，提供了更快的渲染速度。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;2. 安装与配置&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>

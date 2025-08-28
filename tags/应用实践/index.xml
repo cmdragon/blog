@@ -1,35 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>应用实践 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/%E5%BA%94%E7%94%A8%E5%AE%9E%E8%B7%B5/</link><description>Recent content in 应用实践 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Tue, 23 Apr 2024 20:04:36 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/%E5%BA%94%E7%94%A8%E5%AE%9E%E8%B7%B5/index.xml" rel="self" type="application/rss+xml"/><item><title>深入理解高级加密标准（Advanced Encryption Standard）</title><link>https://blog.cmdragon.cn/posts/d1e54f865ff7846e64123f294982a233/</link><pubDate>Tue, 23 Apr 2024 20:04:36 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/d1e54f865ff7846e64123f294982a233/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_04_23 20_24_08.png" title="2024_04_23 20_24_08.png" alt="2024_04_23 20_24_08.png"/>
-&lt;h3 id="第一章aes概述">第一章：AES概述&lt;/h3>
-&lt;h4 id="aes的历史和背景">AES的历史和背景&lt;/h4>
-&lt;ul>
-&lt;li>**历史：**高级加密标准（Advanced Encryption Standard，AES）是一种对称密钥加密标准，由美国国（Advanced Encryption
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>应用实践 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/%E5%BA%94%E7%94%A8%E5%AE%9E%E8%B7%B5/</link><description>Recent content in 应用实践 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Tue, 23 Apr 2024 20:04:36 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/%E5%BA%94%E7%94%A8%E5%AE%9E%E8%B7%B5/index.xml" rel="self" type="application/rss+xml"/><item><title>深入理解高级加密标准（Advanced Encryption Standard）</title><link>https://blog.cmdragon.cn/posts/d1e54f865ff7846e64123f294982a233/</link><pubDate>Tue, 23 Apr 2024 20:04:36 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/d1e54f865ff7846e64123f294982a233/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_04_23 20_24_08.png" title="2024_04_23 20_24_08.png" alt="2024_04_23 20_24_08.png"/&gt;
+&lt;h3 id="第一章aes概述"&gt;第一章：AES概述&lt;/h3&gt;
+&lt;h4 id="aes的历史和背景"&gt;AES的历史和背景&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;**历史：**高级加密标准（Advanced Encryption Standard，AES）是一种对称密钥加密标准，由美国国（Advanced Encryption
 Standard），家标准与技术研究所（NIST）于2001年发布。AES取代了之前的数据加密标准（Data Encryption
-Standard，DES），成为目前广泛使用的加密算法之一。&lt;/li>
-&lt;li>&lt;strong>背景：即高级加密标准，是一种对称密钥加密算法，是美国国家标准与技术&lt;/strong>
-AES的产生是为了解决DES存在的密钥长度过短、安全性不足等问题，以适应当时互联网和电子商务快速发展的需求。AES研究所（NIST）于2001年正式公布的一种加密标准，用来替经过了严格的密码学分析和评估，成为一种安全可靠的加密算法。&lt;/li>
-&lt;/ul>
-&lt;h4 id="aes的基本原理">AES的基本原理&lt;/h4>
-&lt;ul>
-&lt;li>**对称密钥加密：**AES是一种对称密钥加密算法，即加密和解密使用相同的密钥。这种加密代之前的DES（Data Encryption
-Standard方式效率高，适用于大规模数据的加密和解密操作。&lt;/li>
-&lt;li>**替代网络：**AES使用代换-置换网络（Substitution-Permutation Network，SPN）结构，包括代换层和置换层，通过多轮迭代运算实现加密和解密过程。&lt;/li>
-&lt;li>**轮函数：**AES中的轮函数包括字节替代、行移位、列混淆和轮密钥加法等操作，通过多轮轮函数的迭代实现数据的混淆和扩散，）。DES因为密钥长度短（56位）而逐渐显露出安全性不足的问题增强了加密算法的安全性。&lt;/li>
-&lt;/ul>
-&lt;h4 id="aes的优势和特点">AES的优势和特点&lt;/h4>
-&lt;ul>
-&lt;li>**安全性高：**AES经过了广泛的密码学分析和评估，被，于是NIST通过国际竞赛的形式选择AES的算法作为其替代方案。&lt;/li>
-&lt;/ul>
-&lt;p>AES的算法来自于比利时密码学家Joan Daemen和Vincent Rijmen提出的Rijndael算法，该证明具有很高的安全性，能够抵抗目前已知的攻击方法。&lt;/p></description></item><item><title>深入解析Rivest Cipher 4：理论与实践</title><link>https://blog.cmdragon.cn/posts/3d29411d3fd755e6a8cae4e4cc6f01cd/</link><pubDate>Wed, 17 Apr 2024 20:30:58 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/3d29411d3fd755e6a8cae4e4cc6f01cd/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_04_17 20_34_39.png" title="2024_04_17 20_34_39.png" alt="2024_04_17 20_34_39.png"/>
-&lt;h2 id="第一章引言">&lt;strong>第一章：引言&lt;/strong>&lt;/h2>
-&lt;h3 id="密码学简介">&lt;strong>密码学简介：&lt;/strong>  &lt;/h3>
-&lt;p>密码学是研究如何保护通信和信息安全的学科。它涉及加密算法、解密算法、密钥管理等内容，旨在确保信息在传输和存储过程中不被未经授权的人所获取或篡改。密码学可以分为对称加密和非对称加密两大类，其中对称加密使用相同的密钥进行加密和解密，而非对称加密使用一对密钥，公钥用于加密，私钥用于解密。&lt;/p></description></item><item><title>深入理解RC4加密算法</title><link>https://blog.cmdragon.cn/posts/5d0cda2a9be830d0e767aca0a373b989/</link><pubDate>Tue, 30 Jan 2024 16:39:00 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/5d0cda2a9be830d0e767aca0a373b989/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_02_03 18_47_09.png" title="2024_02_03 18_47_09.png" alt="2024_02_03 18_47_09.png"/>
-&lt;blockquote>
-&lt;p>RC4（Rivest Cipher 4）是一种广泛应用的加密算法，由Ronald L. Rivest于1987年发明。它是一种流密码（stream cipher）算法，适用于对网络通信中的数据进行加密保护。&lt;/p></description></item><item><title>探索中文电码：起源、标准与实践</title><link>https://blog.cmdragon.cn/posts/151bef5e6d8692003fa3cb387b0a9125/</link><pubDate>Tue, 30 Jan 2024 07:50:00 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/151bef5e6d8692003fa3cb387b0a9125/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_02_03 18_15_46.png" title="2024_02_03 18_15_46.png" alt="2024_02_03 18_15_46.png"/>
-&lt;h2 id="一引言">一、引言&lt;/h2>
-&lt;p>中文电码是一种将中文文字转换为计算机可识别和处理的二进制编码。随着信息技术的发展，中文电码在各个领域得到了广泛的应用，如计算机编程、通信、文字处理等。本文将从起源、标准和发展三个方面深入探讨中文电码，以期帮助读者更好地理解和应用这一技术。&lt;/p></description></item><item><title>AES算法在网络安全中的应用：如何守护数据宝藏？</title><link>https://blog.cmdragon.cn/posts/779221ee9bbb78905a5641236524a7c5/</link><pubDate>Mon, 29 Jan 2024 16:50:00 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/779221ee9bbb78905a5641236524a7c5/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_02_03%2015_52_40.png"/>
-&lt;p>摘要：高级加密标准（AES）是美国国家标准与技术研究所（NIST）用于加密电子数据的规范。本文从历史、算法原理、性能优势和应用等方面全面介绍了AES算法，旨在帮助读者更好地理解这一广泛应用的对称加密算法。&lt;/p></description></item><item><title>DES算法的局限性与改进需求</title><link>https://blog.cmdragon.cn/posts/62056fe9a3d8032a7bcf5d71ad4872a6/</link><pubDate>Mon, 22 Jan 2024 16:50:00 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/62056fe9a3d8032a7bcf5d71ad4872a6/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_02_03 16_23_22.png" title="2024_02_03 16_23_22.png" alt="2024_02_03 16_23_22.png"/>
-&lt;h2 id="1-des算法的局限性与改进需求">1. DES算法的局限性与改进需求&lt;/h2>
-&lt;p>DES算法是一种对称加密算法，具有高度的安全性和可靠性。然而，随着计算机技术的发展，DES算法的密钥长度逐渐被攻击者攻破，安全性受到威胁。因此，对DES算法进行改进以提高安全性是必要的。&lt;/p></description></item><item><title>Rabbit加密算法：保护数据隐私的新选择</title><link>https://blog.cmdragon.cn/posts/5f6cbeda551d2e84eda5e1b7427d57b2/</link><pubDate>Mon, 15 Jan 2024 16:50:00 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/5f6cbeda551d2e84eda5e1b7427d57b2/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_01_29 14_38_34.png" alt="2024_01_29 14_38_34.png" title="2024_01_29 14_38_34.png"/>
-&lt;p>摘要：数据安全是当今信息时代的关键问题之一。为了保护敏感数据免受未经授权的访问和窃取，加密算法起到了至关重要的作用。本文将介绍Rabbit加密算法的优缺点，以及它如何解决现代加密中的一些问题。本文还将提供一个使用Java编写的完整示例，以帮助读者深入了解Rabbit加密算法的实际应用。&lt;/p></description></item><item><title>Unicode编码：打破语言壁垒，实现无缝交流</title><link>https://blog.cmdragon.cn/posts/8d75e1d5bd4e4659e6daf59b2970b136/</link><pubDate>Fri, 05 Jan 2024 16:50:00 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/8d75e1d5bd4e4659e6daf59b2970b136/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_02_03 17_26_55.png" title="2024_02_03 17_26_55.png" alt="2024_02_03 17_26_55.png"/>
-&lt;blockquote>
-&lt;p>Unicode编码是一种用于表示文本字符的编码系统，它旨在解决不同字符集之间相互兼容的问题，使各种语言和文化得以在数字世界中无缝交流。本文将从多个方面介绍Unicode编码的概念、原理及其在现实中的应用，为您揭示这个神秘编码背后的故事。&lt;/p></description></item></channel></rss>
+Standard，DES），成为目前广泛使用的加密算法之一。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;背景：即高级加密标准，是一种对称密钥加密算法，是美国国家标准与技术&lt;/strong&gt;
+AES的产生是为了解决DES存在的密钥长度过短、安全性不足等问题，以适应当时互联网和电子商务快速发展的需求。AES研究所（NIST）于2001年正式公布的一种加密标准，用来替经过了严格的密码学分析和评估，成为一种安全可靠的加密算法。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="aes的基本原理"&gt;AES的基本原理&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;**对称密钥加密：**AES是一种对称密钥加密算法，即加密和解密使用相同的密钥。这种加密代之前的DES（Data Encryption
+Standard方式效率高，适用于大规模数据的加密和解密操作。&lt;/li&gt;
+&lt;li&gt;**替代网络：**AES使用代换-置换网络（Substitution-Permutation Network，SPN）结构，包括代换层和置换层，通过多轮迭代运算实现加密和解密过程。&lt;/li&gt;
+&lt;li&gt;**轮函数：**AES中的轮函数包括字节替代、行移位、列混淆和轮密钥加法等操作，通过多轮轮函数的迭代实现数据的混淆和扩散，）。DES因为密钥长度短（56位）而逐渐显露出安全性不足的问题增强了加密算法的安全性。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="aes的优势和特点"&gt;AES的优势和特点&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;**安全性高：**AES经过了广泛的密码学分析和评估，被，于是NIST通过国际竞赛的形式选择AES的算法作为其替代方案。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;AES的算法来自于比利时密码学家Joan Daemen和Vincent Rijmen提出的Rijndael算法，该证明具有很高的安全性，能够抵抗目前已知的攻击方法。&lt;/p&gt;</description></item><item><title>深入解析Rivest Cipher 4：理论与实践</title><link>https://blog.cmdragon.cn/posts/3d29411d3fd755e6a8cae4e4cc6f01cd/</link><pubDate>Wed, 17 Apr 2024 20:30:58 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/3d29411d3fd755e6a8cae4e4cc6f01cd/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_04_17 20_34_39.png" title="2024_04_17 20_34_39.png" alt="2024_04_17 20_34_39.png"/&gt;
+&lt;h2 id="第一章引言"&gt;&lt;strong&gt;第一章：引言&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id="密码学简介"&gt;&lt;strong&gt;密码学简介：&lt;/strong&gt;  &lt;/h3&gt;
+&lt;p&gt;密码学是研究如何保护通信和信息安全的学科。它涉及加密算法、解密算法、密钥管理等内容，旨在确保信息在传输和存储过程中不被未经授权的人所获取或篡改。密码学可以分为对称加密和非对称加密两大类，其中对称加密使用相同的密钥进行加密和解密，而非对称加密使用一对密钥，公钥用于加密，私钥用于解密。&lt;/p&gt;</description></item><item><title>深入理解RC4加密算法</title><link>https://blog.cmdragon.cn/posts/5d0cda2a9be830d0e767aca0a373b989/</link><pubDate>Tue, 30 Jan 2024 16:39:00 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/5d0cda2a9be830d0e767aca0a373b989/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_02_03 18_47_09.png" title="2024_02_03 18_47_09.png" alt="2024_02_03 18_47_09.png"/&gt;
+&lt;blockquote&gt;
+&lt;p&gt;RC4（Rivest Cipher 4）是一种广泛应用的加密算法，由Ronald L. Rivest于1987年发明。它是一种流密码（stream cipher）算法，适用于对网络通信中的数据进行加密保护。&lt;/p&gt;</description></item><item><title>探索中文电码：起源、标准与实践</title><link>https://blog.cmdragon.cn/posts/151bef5e6d8692003fa3cb387b0a9125/</link><pubDate>Tue, 30 Jan 2024 07:50:00 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/151bef5e6d8692003fa3cb387b0a9125/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_02_03 18_15_46.png" title="2024_02_03 18_15_46.png" alt="2024_02_03 18_15_46.png"/&gt;
+&lt;h2 id="一引言"&gt;一、引言&lt;/h2&gt;
+&lt;p&gt;中文电码是一种将中文文字转换为计算机可识别和处理的二进制编码。随着信息技术的发展，中文电码在各个领域得到了广泛的应用，如计算机编程、通信、文字处理等。本文将从起源、标准和发展三个方面深入探讨中文电码，以期帮助读者更好地理解和应用这一技术。&lt;/p&gt;</description></item><item><title>AES算法在网络安全中的应用：如何守护数据宝藏？</title><link>https://blog.cmdragon.cn/posts/779221ee9bbb78905a5641236524a7c5/</link><pubDate>Mon, 29 Jan 2024 16:50:00 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/779221ee9bbb78905a5641236524a7c5/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_02_03%2015_52_40.png"/&gt;
+&lt;p&gt;摘要：高级加密标准（AES）是美国国家标准与技术研究所（NIST）用于加密电子数据的规范。本文从历史、算法原理、性能优势和应用等方面全面介绍了AES算法，旨在帮助读者更好地理解这一广泛应用的对称加密算法。&lt;/p&gt;</description></item><item><title>DES算法的局限性与改进需求</title><link>https://blog.cmdragon.cn/posts/62056fe9a3d8032a7bcf5d71ad4872a6/</link><pubDate>Mon, 22 Jan 2024 16:50:00 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/62056fe9a3d8032a7bcf5d71ad4872a6/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_02_03 16_23_22.png" title="2024_02_03 16_23_22.png" alt="2024_02_03 16_23_22.png"/&gt;
+&lt;h2 id="1-des算法的局限性与改进需求"&gt;1. DES算法的局限性与改进需求&lt;/h2&gt;
+&lt;p&gt;DES算法是一种对称加密算法，具有高度的安全性和可靠性。然而，随着计算机技术的发展，DES算法的密钥长度逐渐被攻击者攻破，安全性受到威胁。因此，对DES算法进行改进以提高安全性是必要的。&lt;/p&gt;</description></item><item><title>Rabbit加密算法：保护数据隐私的新选择</title><link>https://blog.cmdragon.cn/posts/5f6cbeda551d2e84eda5e1b7427d57b2/</link><pubDate>Mon, 15 Jan 2024 16:50:00 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/5f6cbeda551d2e84eda5e1b7427d57b2/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_01_29 14_38_34.png" alt="2024_01_29 14_38_34.png" title="2024_01_29 14_38_34.png"/&gt;
+&lt;p&gt;摘要：数据安全是当今信息时代的关键问题之一。为了保护敏感数据免受未经授权的访问和窃取，加密算法起到了至关重要的作用。本文将介绍Rabbit加密算法的优缺点，以及它如何解决现代加密中的一些问题。本文还将提供一个使用Java编写的完整示例，以帮助读者深入了解Rabbit加密算法的实际应用。&lt;/p&gt;</description></item><item><title>Unicode编码：打破语言壁垒，实现无缝交流</title><link>https://blog.cmdragon.cn/posts/8d75e1d5bd4e4659e6daf59b2970b136/</link><pubDate>Fri, 05 Jan 2024 16:50:00 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/8d75e1d5bd4e4659e6daf59b2970b136/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_02_03 17_26_55.png" title="2024_02_03 17_26_55.png" alt="2024_02_03 17_26_55.png"/&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Unicode编码是一种用于表示文本字符的编码系统，它旨在解决不同字符集之间相互兼容的问题，使各种语言和文化得以在数字世界中无缝交流。本文将从多个方面介绍Unicode编码的概念、原理及其在现实中的应用，为您揭示这个神秘编码背后的故事。&lt;/p&gt;</description></item></channel></rss>

@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>通信原理 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/%E9%80%9A%E4%BF%A1%E5%8E%9F%E7%90%86/</link><description>Recent content in 通信原理 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Mon, 27 May 2024 18:42:38 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/%E9%80%9A%E4%BF%A1%E5%8E%9F%E7%90%86/index.xml" rel="self" type="application/rss+xml"/><item><title>Vue 组件生命周期：探索钩子</title><link>https://blog.cmdragon.cn/posts/08a25c29ceed14c92c89beb55563e922/</link><pubDate>Mon, 27 May 2024 18:42:38 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/08a25c29ceed14c92c89beb55563e922/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_27 18_48_19.png" title="2024_05_27 18_48_19.png" alt="2024_05_27 18_48_19.png"/>
-&lt;h2 id="第-1-章介绍与背景">第 1 章：介绍与背景&lt;/h2>
-&lt;p>1.1 什么是 Vue 组件生命周期？&lt;/p>
-&lt;p>Vue 组件生命周期是指 Vue 组件从创建、运行到销毁的整个过程，共分为 8 个阶段：&lt;/p>
-&lt;ol>
-&lt;li>创建前（beforeCreate）&lt;/li>
-&lt;li>创建后（created）&lt;/li>
-&lt;li>载入前（beforeMount）&lt;/li>
-&lt;li>载入后（mounted）&lt;/li>
-&lt;li>更新前（beforeUpdate）&lt;/li>
-&lt;li>更新后（updated）&lt;/li>
-&lt;li>销毁前（beforeDestroy）&lt;/li>
-&lt;li>销毁后（destroyed）&lt;/li>
-&lt;/ol>
-&lt;p>在每个阶段，Vue 框架都提供了特定的钩子函数，开发人员可以在这些函数中编写自定义的代码，从而实现对组件生命周期的控制和管理。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>通信原理 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/%E9%80%9A%E4%BF%A1%E5%8E%9F%E7%90%86/</link><description>Recent content in 通信原理 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Mon, 27 May 2024 18:42:38 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/%E9%80%9A%E4%BF%A1%E5%8E%9F%E7%90%86/index.xml" rel="self" type="application/rss+xml"/><item><title>Vue 组件生命周期：探索钩子</title><link>https://blog.cmdragon.cn/posts/08a25c29ceed14c92c89beb55563e922/</link><pubDate>Mon, 27 May 2024 18:42:38 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/08a25c29ceed14c92c89beb55563e922/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_27 18_48_19.png" title="2024_05_27 18_48_19.png" alt="2024_05_27 18_48_19.png"/&gt;
+&lt;h2 id="第-1-章介绍与背景"&gt;第 1 章：介绍与背景&lt;/h2&gt;
+&lt;p&gt;1.1 什么是 Vue 组件生命周期？&lt;/p&gt;
+&lt;p&gt;Vue 组件生命周期是指 Vue 组件从创建、运行到销毁的整个过程，共分为 8 个阶段：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;创建前（beforeCreate）&lt;/li&gt;
+&lt;li&gt;创建后（created）&lt;/li&gt;
+&lt;li&gt;载入前（beforeMount）&lt;/li&gt;
+&lt;li&gt;载入后（mounted）&lt;/li&gt;
+&lt;li&gt;更新前（beforeUpdate）&lt;/li&gt;
+&lt;li&gt;更新后（updated）&lt;/li&gt;
+&lt;li&gt;销毁前（beforeDestroy）&lt;/li&gt;
+&lt;li&gt;销毁后（destroyed）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;在每个阶段，Vue 框架都提供了特定的钩子函数，开发人员可以在这些函数中编写自定义的代码，从而实现对组件生命周期的控制和管理。&lt;/p&gt;</description></item></channel></rss>

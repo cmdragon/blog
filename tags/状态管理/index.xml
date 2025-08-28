@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>状态管理 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/</link><description>Recent content in 状态管理 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Thu, 10 Oct 2024 00:18:53 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/index.xml" rel="self" type="application/rss+xml"/><item><title>Nuxt.js 应用中的 page：transition：finish 钩子详解</title><link>https://blog.cmdragon.cn/posts/b19fb081d695b4867066656e73740093/</link><pubDate>Thu, 10 Oct 2024 00:18:53 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/b19fb081d695b4867066656e73740093/</guid><description>page:transition:finish 是 Nuxt.js 中的一个事件钩子，专门用于处理页面过渡效果结束后的逻辑。这一钩子在页面过渡的 onAfterLeave 事件之后被调用，允许开发者在过渡完成后执行一些后续操作。</description></item><item><title>使用 reloadNuxtApp 强制刷新 Nuxt 应用</title><link>https://blog.cmdragon.cn/posts/dd6eb94bd83eb2c9c46034b5b41ce2ea/</link><pubDate>Thu, 22 Aug 2024 00:18:53 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/dd6eb94bd83eb2c9c46034b5b41ce2ea/</guid><description>reloadNuxtApp 是一个强大的工具，用于在 Nuxt 3 应用中强制刷新页面。通过不同的选项，你可以控制刷新行为、指定路径、保存状态等。</description></item><item><title>使用 clearError 清除已处理的错误</title><link>https://blog.cmdragon.cn/posts/c7681141b499276ec9613c76b8bdb688/</link><pubDate>Mon, 05 Aug 2024 00:18:53 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/c7681141b499276ec9613c76b8bdb688/</guid><description>摘要：“文章介绍了clearError函数的作用与用法，用于清除已处理的错误并可实现页面重定向，提升用户体验。通过示例展示了在表单提交场景中如何应用此函数进行错误处理和状态管理。”</description></item><item><title>使用 useState 管理响应式状态</title><link>https://blog.cmdragon.cn/posts/760deff1b835b737dc6396ad0e4cc8d4/</link><pubDate>Thu, 01 Aug 2024 00:18:53 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/760deff1b835b737dc6396ad0e4cc8d4/</guid><description>摘要：本文详细介绍了在Nuxt3框架中使用useState进行响应式状态管理的方法，包括其基本概念、优势、使用方法、共享状态实现以及性能优化技巧。useState支持服务器端渲染（SSR），可创建响应式状态并在组件间共享，通过具体示例展示了其基本用法、如何在多个组件间共享状态以及使用shallowRef提升性能。</description></item><item><title>掌握 Nuxt 3 中的状态管理：实践指南</title><link>https://blog.cmdragon.cn/posts/ad69660187283f1e8c3089b30d86704e/</link><pubDate>Sat, 22 Jun 2024 00:18:53 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/ad69660187283f1e8c3089b30d86704e/</guid><description>摘要：该文指南详述了Nuxt 3的概况与安装，聚焦于在Nuxt 3框架下运用Vuex进行高效的状态管理，涵盖基础配置、模块化实践至高阶策略，助力开发者构建高性能前后端分离应用。</description></item><item><title>Vue 3深度探索：自定义渲染器与服务端渲染</title><link>https://blog.cmdragon.cn/posts/5adb3882a18a58ed05595ef333198dbc/</link><pubDate>Fri, 14 Jun 2024 00:18:53 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/5adb3882a18a58ed05595ef333198dbc/</guid><description>这篇文章介绍了如何在Vue框架中实现自定义渲染器以增强组件功能，探讨了虚拟DOM的工作原理，以及如何通过SSR和服务端预取数据优化首屏加载速度。同时，讲解了同构应用的开发方式与状态管理技巧，助力构建高性能前端应用。</description></item><item><title>Vue TypeScript 实战：掌握静态类型编程</title><link>https://blog.cmdragon.cn/posts/5fd5f7ddeea4d0fcae77f0c558181bc2/</link><pubDate>Mon, 10 Jun 2024 00:18:53 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/5fd5f7ddeea4d0fcae77f0c558181bc2/</guid><description>这篇文章介绍了如何在TypeScript环境下为Vue.js应用搭建项目结构，包括初始化配置、创建Vue组件、实现状态管理利用Vuex、配置路由以及性能优化的方法，旨在提升开发效率与应用性能。</description></item><item><title>Vuex 4与状态管理实战指南</title><link>https://blog.cmdragon.cn/posts/d0021a87e1b3ff948b990434dae7df80/</link><pubDate>Thu, 06 Jun 2024 00:18:53 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/d0021a87e1b3ff948b990434dae7df80/</guid><description>这篇文章介绍了使用Vuex进行Vue应用状态管理的最佳实践，包括为何需要状态管理，Vuex的核心概念如store、actions、mutations和getters，以及如何处理异步操作和模块化组织状态。通过例子展示了如何动态注册模块，以实现可复用和可扩展的状态管理解决方案。</description></item><item><title>Vue.js条件渲染与列表渲染指南</title><link>https://blog.cmdragon.cn/posts/468d237217761452b4c846ad37042ca1/</link><pubDate>Sun, 26 May 2024 20:11:49 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/468d237217761452b4c846ad37042ca1/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_26 20_22_57.png" title="2024_05_26 20_22_57.png" alt="2024_05_26 20_22_57.png"/>
-&lt;h2 id="第1章vuejs基础与环境设置">&lt;strong>第1章：Vue.js基础与环境设置&lt;/strong>&lt;/h2>
-&lt;h3 id="11-vuejs简介">&lt;strong>1.1 Vue.js简介&lt;/strong>&lt;/h3>
-&lt;p>Vue.js (读音：/vjuː/，类似于 &amp;ldquo;view&amp;rdquo;) 是一套用于构建用户界面的渐进式JavaScript框架。与其他大型框架不同的是，Vue.js
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>状态管理 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/</link><description>Recent content in 状态管理 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Thu, 10 Oct 2024 00:18:53 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/index.xml" rel="self" type="application/rss+xml"/><item><title>Nuxt.js 应用中的 page：transition：finish 钩子详解</title><link>https://blog.cmdragon.cn/posts/b19fb081d695b4867066656e73740093/</link><pubDate>Thu, 10 Oct 2024 00:18:53 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/b19fb081d695b4867066656e73740093/</guid><description>page:transition:finish 是 Nuxt.js 中的一个事件钩子，专门用于处理页面过渡效果结束后的逻辑。这一钩子在页面过渡的 onAfterLeave 事件之后被调用，允许开发者在过渡完成后执行一些后续操作。</description></item><item><title>使用 reloadNuxtApp 强制刷新 Nuxt 应用</title><link>https://blog.cmdragon.cn/posts/dd6eb94bd83eb2c9c46034b5b41ce2ea/</link><pubDate>Thu, 22 Aug 2024 00:18:53 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/dd6eb94bd83eb2c9c46034b5b41ce2ea/</guid><description>reloadNuxtApp 是一个强大的工具，用于在 Nuxt 3 应用中强制刷新页面。通过不同的选项，你可以控制刷新行为、指定路径、保存状态等。</description></item><item><title>使用 clearError 清除已处理的错误</title><link>https://blog.cmdragon.cn/posts/c7681141b499276ec9613c76b8bdb688/</link><pubDate>Mon, 05 Aug 2024 00:18:53 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/c7681141b499276ec9613c76b8bdb688/</guid><description>摘要：“文章介绍了clearError函数的作用与用法，用于清除已处理的错误并可实现页面重定向，提升用户体验。通过示例展示了在表单提交场景中如何应用此函数进行错误处理和状态管理。”</description></item><item><title>使用 useState 管理响应式状态</title><link>https://blog.cmdragon.cn/posts/760deff1b835b737dc6396ad0e4cc8d4/</link><pubDate>Thu, 01 Aug 2024 00:18:53 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/760deff1b835b737dc6396ad0e4cc8d4/</guid><description>摘要：本文详细介绍了在Nuxt3框架中使用useState进行响应式状态管理的方法，包括其基本概念、优势、使用方法、共享状态实现以及性能优化技巧。useState支持服务器端渲染（SSR），可创建响应式状态并在组件间共享，通过具体示例展示了其基本用法、如何在多个组件间共享状态以及使用shallowRef提升性能。</description></item><item><title>掌握 Nuxt 3 中的状态管理：实践指南</title><link>https://blog.cmdragon.cn/posts/ad69660187283f1e8c3089b30d86704e/</link><pubDate>Sat, 22 Jun 2024 00:18:53 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/ad69660187283f1e8c3089b30d86704e/</guid><description>摘要：该文指南详述了Nuxt 3的概况与安装，聚焦于在Nuxt 3框架下运用Vuex进行高效的状态管理，涵盖基础配置、模块化实践至高阶策略，助力开发者构建高性能前后端分离应用。</description></item><item><title>Vue 3深度探索：自定义渲染器与服务端渲染</title><link>https://blog.cmdragon.cn/posts/5adb3882a18a58ed05595ef333198dbc/</link><pubDate>Fri, 14 Jun 2024 00:18:53 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/5adb3882a18a58ed05595ef333198dbc/</guid><description>这篇文章介绍了如何在Vue框架中实现自定义渲染器以增强组件功能，探讨了虚拟DOM的工作原理，以及如何通过SSR和服务端预取数据优化首屏加载速度。同时，讲解了同构应用的开发方式与状态管理技巧，助力构建高性能前端应用。</description></item><item><title>Vue TypeScript 实战：掌握静态类型编程</title><link>https://blog.cmdragon.cn/posts/5fd5f7ddeea4d0fcae77f0c558181bc2/</link><pubDate>Mon, 10 Jun 2024 00:18:53 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/5fd5f7ddeea4d0fcae77f0c558181bc2/</guid><description>这篇文章介绍了如何在TypeScript环境下为Vue.js应用搭建项目结构，包括初始化配置、创建Vue组件、实现状态管理利用Vuex、配置路由以及性能优化的方法，旨在提升开发效率与应用性能。</description></item><item><title>Vuex 4与状态管理实战指南</title><link>https://blog.cmdragon.cn/posts/d0021a87e1b3ff948b990434dae7df80/</link><pubDate>Thu, 06 Jun 2024 00:18:53 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/d0021a87e1b3ff948b990434dae7df80/</guid><description>这篇文章介绍了使用Vuex进行Vue应用状态管理的最佳实践，包括为何需要状态管理，Vuex的核心概念如store、actions、mutations和getters，以及如何处理异步操作和模块化组织状态。通过例子展示了如何动态注册模块，以实现可复用和可扩展的状态管理解决方案。</description></item><item><title>Vue.js条件渲染与列表渲染指南</title><link>https://blog.cmdragon.cn/posts/468d237217761452b4c846ad37042ca1/</link><pubDate>Sun, 26 May 2024 20:11:49 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/468d237217761452b4c846ad37042ca1/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_26 20_22_57.png" title="2024_05_26 20_22_57.png" alt="2024_05_26 20_22_57.png"/&gt;
+&lt;h2 id="第1章vuejs基础与环境设置"&gt;&lt;strong&gt;第1章：Vue.js基础与环境设置&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id="11-vuejs简介"&gt;&lt;strong&gt;1.1 Vue.js简介&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Vue.js (读音：/vjuː/，类似于 &amp;ldquo;view&amp;rdquo;) 是一套用于构建用户界面的渐进式JavaScript框架。与其他大型框架不同的是，Vue.js
 被设计为可以自底向上逐层应用。这意味着，你可以在一个大型的单页应用中或者可复用的组件库中使用 Vue，同时也可以将 Vue
-用于简单的页面级别的交互。&lt;/p></description></item><item><title>nuxt开发</title><link>https://blog.cmdragon.cn/posts/1b603ec387c047de7e0eb7f961ae4b2c/</link><pubDate>Thu, 23 May 2024 19:37:34 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/1b603ec387c047de7e0eb7f961ae4b2c/</guid><description>&lt;h2 id="创建nuxtjs项目">创建Nuxt.js项目&lt;/h2>
-&lt;h3 id="步骤-1-安装-nodejs-和-npm">步骤 1: 安装 Node.js 和 NPM&lt;/h3>
-&lt;p>确保你的计算机上安装了 Node.js 和 NPM。你可以从 &lt;a href="https://nodejs.org/">Node.js 官网&lt;/a> 下载并安装。&lt;/p>
-&lt;h3 id="步骤-2-创建-nuxtjs-项目">步骤 2: 创建 Nuxt.js 项目&lt;/h3>
-&lt;p>打开命令行工具，运行以下命令来创建一个新的 Nuxt.js 项目：&lt;/p>
+用于简单的页面级别的交互。&lt;/p&gt;</description></item><item><title>nuxt开发</title><link>https://blog.cmdragon.cn/posts/1b603ec387c047de7e0eb7f961ae4b2c/</link><pubDate>Thu, 23 May 2024 19:37:34 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/1b603ec387c047de7e0eb7f961ae4b2c/</guid><description>&lt;h2 id="创建nuxtjs项目"&gt;创建Nuxt.js项目&lt;/h2&gt;
+&lt;h3 id="步骤-1-安装-nodejs-和-npm"&gt;步骤 1: 安装 Node.js 和 NPM&lt;/h3&gt;
+&lt;p&gt;确保你的计算机上安装了 Node.js 和 NPM。你可以从 &lt;a href="https://nodejs.org/"&gt;Node.js 官网&lt;/a&gt; 下载并安装。&lt;/p&gt;
+&lt;h3 id="步骤-2-创建-nuxtjs-项目"&gt;步骤 2: 创建 Nuxt.js 项目&lt;/h3&gt;
+&lt;p&gt;打开命令行工具，运行以下命令来创建一个新的 Nuxt.js 项目：&lt;/p&gt;
 
 
 
@@ -23,13 +23,13 @@
 
 
 
- &lt;div class="highlight-wrapper">
- &lt;div class="highlight">
- &lt;pre class="chroma">&lt;code class="language-" data-lang="">npx nuxi@latest init &amp;lt;project-name&amp;gt;&lt;/code>&lt;/pre>
- &lt;/div>
- &lt;/div>
+ &lt;div class="highlight-wrapper"&gt;
+ &lt;div class="highlight"&gt;
+ &lt;pre class="chroma"&gt;&lt;code class="language-" data-lang=""&gt;npx nuxi@latest init &amp;lt;project-name&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
 
- &lt;script>
+ &lt;script&gt;
  function copyCodeToClipboard(button) {
  const pre = button.parentElement.parentElement.querySelector('pre');
  const code = pre.textContent;
@@ -56,9 +56,9 @@
  }
  );
  }
- &lt;/script>
+ &lt;/script&gt;
  
- &lt;style>
+ &lt;style&gt;
  .highlight-wrapper {
  position: relative;
  margin: 1.5rem 0;
@@ -107,13 +107,13 @@
  background-color: rgba(160, 174, 192, 0.2);
  color: #e2e8f0;
  }
- &lt;/style>
- &lt;p>在这个过程中，你可以选择服务器框架、UI框架等。按照提示完成项目的基本配置。&lt;/p></description></item><item><title>Vue 3入门指南</title><link>https://blog.cmdragon.cn/posts/ab6d0d2bfb031bcf85fa63e9706be9e3/</link><pubDate>Thu, 23 May 2024 19:37:34 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/ab6d0d2bfb031bcf85fa63e9706be9e3/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_23 19_46_00.png" title="2024_05_23 19_46_00.png" alt="2024_05_23 19_46_00.png"/>
-&lt;h2 id="第1章vue-3简介">&lt;strong>第1章：Vue 3简介&lt;/strong>&lt;/h2>
-&lt;h3 id="11-vuejs的历史与发展">&lt;strong>1.1 Vue.js的历史与发展&lt;/strong>&lt;/h3>
-&lt;p>Vue.js由前谷歌工程师尤雨溪（Evan
-You）在2014年发布。它的设计目标是提供一个轻量级、渐进式的JavaScript框架，用于构建用户界面。Vue的核心库专注于视图层，易于上手，同时也便于与第三方库或既有项目整合。随着时间的推移，Vue.js因其简洁的API、灵活的组件系统和高效的性能而受到开发者的广泛欢迎。&lt;/p></description></item><item><title>Django与前端框架协作开发实战：高效构建现代Web应用</title><link>https://blog.cmdragon.cn/posts/9df3c2f23696d525e532c8f2e1f84cb6/</link><pubDate>Wed, 22 May 2024 20:07:47 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/9df3c2f23696d525e532c8f2e1f84cb6/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_22 20_14_41.png" title="2024_05_22 20_14_41.png" alt="2024_05_22 20_14_41.png"/>
-&lt;h2 id="第1章简介">&lt;strong>第1章：简介&lt;/strong>&lt;/h2>
-&lt;h3 id="11-django简介">&lt;strong>1.1 Django简介&lt;/strong>&lt;/h3>
-&lt;p>Django是一个高级的Python
-Web框架，它鼓励快速开发和干净、实用的设计。由经验丰富的开发者构建，它解决了Web开发中的许多麻烦，因此你可以专注于编写应用而无需重新发明轮子。Django遵循MTV（模型-模板-视图）设计模式，它类似于MVC（模型-视图-控制器），但略有不同。&lt;/p></description></item></channel></rss>
+ &lt;/style&gt;
+ &lt;p&gt;在这个过程中，你可以选择服务器框架、UI框架等。按照提示完成项目的基本配置。&lt;/p&gt;</description></item><item><title>Vue 3入门指南</title><link>https://blog.cmdragon.cn/posts/ab6d0d2bfb031bcf85fa63e9706be9e3/</link><pubDate>Thu, 23 May 2024 19:37:34 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/ab6d0d2bfb031bcf85fa63e9706be9e3/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_23 19_46_00.png" title="2024_05_23 19_46_00.png" alt="2024_05_23 19_46_00.png"/&gt;
+&lt;h2 id="第1章vue-3简介"&gt;&lt;strong&gt;第1章：Vue 3简介&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id="11-vuejs的历史与发展"&gt;&lt;strong&gt;1.1 Vue.js的历史与发展&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Vue.js由前谷歌工程师尤雨溪（Evan
+You）在2014年发布。它的设计目标是提供一个轻量级、渐进式的JavaScript框架，用于构建用户界面。Vue的核心库专注于视图层，易于上手，同时也便于与第三方库或既有项目整合。随着时间的推移，Vue.js因其简洁的API、灵活的组件系统和高效的性能而受到开发者的广泛欢迎。&lt;/p&gt;</description></item><item><title>Django与前端框架协作开发实战：高效构建现代Web应用</title><link>https://blog.cmdragon.cn/posts/9df3c2f23696d525e532c8f2e1f84cb6/</link><pubDate>Wed, 22 May 2024 20:07:47 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/9df3c2f23696d525e532c8f2e1f84cb6/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_05_22 20_14_41.png" title="2024_05_22 20_14_41.png" alt="2024_05_22 20_14_41.png"/&gt;
+&lt;h2 id="第1章简介"&gt;&lt;strong&gt;第1章：简介&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id="11-django简介"&gt;&lt;strong&gt;1.1 Django简介&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Django是一个高级的Python
+Web框架，它鼓励快速开发和干净、实用的设计。由经验丰富的开发者构建，它解决了Web开发中的许多麻烦，因此你可以专注于编写应用而无需重新发明轮子。Django遵循MTV（模型-模板-视图）设计模式，它类似于MVC（模型-视图-控制器），但略有不同。&lt;/p&gt;</description></item></channel></rss>

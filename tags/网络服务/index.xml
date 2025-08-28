@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>网络服务 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/%E7%BD%91%E7%BB%9C%E6%9C%8D%E5%8A%A1/</link><description>Recent content in 网络服务 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Fri, 26 Apr 2024 12:14:47 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/%E7%BD%91%E7%BB%9C%E6%9C%8D%E5%8A%A1/index.xml" rel="self" type="application/rss+xml"/><item><title>多进程编程：原理、技术与应用</title><link>https://blog.cmdragon.cn/posts/acb62ae2b56d9c6ac77eafbca169b7a0/</link><pubDate>Fri, 26 Apr 2024 12:14:47 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/acb62ae2b56d9c6ac77eafbca169b7a0/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_04_26 12_21_48.png" title="2024_04_26 12_21_48.png" alt="2024_04_26 12_21_48.png"/>
-&lt;h3 id="第一章进程与线程">第一章：进程与线程&lt;/h3>
-&lt;h4 id="进程与线程的概念及区别">进程与线程的概念及区别：&lt;/h4>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>进程&lt;/strong>：进程是操作系统中的一个程序执行实例。每个进程都有自己独立的内存空间，包括代码、数据、堆栈等。进程之间是相互独立的，彼此不会直接影响。进程是系统进行资源分配和调度的基本单位。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>网络服务 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/%E7%BD%91%E7%BB%9C%E6%9C%8D%E5%8A%A1/</link><description>Recent content in 网络服务 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Fri, 26 Apr 2024 12:14:47 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/%E7%BD%91%E7%BB%9C%E6%9C%8D%E5%8A%A1/index.xml" rel="self" type="application/rss+xml"/><item><title>多进程编程：原理、技术与应用</title><link>https://blog.cmdragon.cn/posts/acb62ae2b56d9c6ac77eafbca169b7a0/</link><pubDate>Fri, 26 Apr 2024 12:14:47 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/acb62ae2b56d9c6ac77eafbca169b7a0/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_04_26 12_21_48.png" title="2024_04_26 12_21_48.png" alt="2024_04_26 12_21_48.png"/&gt;
+&lt;h3 id="第一章进程与线程"&gt;第一章：进程与线程&lt;/h3&gt;
+&lt;h4 id="进程与线程的概念及区别"&gt;进程与线程的概念及区别：&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;进程&lt;/strong&gt;：进程是操作系统中的一个程序执行实例。每个进程都有自己独立的内存空间，包括代码、数据、堆栈等。进程之间是相互独立的，彼此不会直接影响。进程是系统进行资源分配和调度的基本单位。&lt;/p&gt;</description></item></channel></rss>

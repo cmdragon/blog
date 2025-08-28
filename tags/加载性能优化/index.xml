@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>加载性能优化 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/%E5%8A%A0%E8%BD%BD%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/</link><description>Recent content in 加载性能优化 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sun, 03 Mar 2024 19:39:27 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/%E5%8A%A0%E8%BD%BD%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/index.xml" rel="self" type="application/rss+xml"/><item><title>探索图片与Base64编码的优势与局限性</title><link>https://blog.cmdragon.cn/posts/1e59739185bd86e2f23130f48e246411/</link><pubDate>Sun, 03 Mar 2024 19:39:27 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/1e59739185bd86e2f23130f48e246411/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_03_03 19_42_35.png" title="2024_03_03 19_42_35.png" alt="2024_03_03 19_42_35.png"/>
-&lt;h2 id="一图片和base64编码的关系">一、图片和Base64编码的关系：&lt;/h2>
-&lt;ol>
-&lt;li>图片是一种常见的媒体文件格式，可以通过URL进行访问和加载。&lt;/li>
-&lt;li>Base64编码是一种将二进制数据转换为ASCII字符的编码方式，可以将图片数据转换为字符串形式。&lt;/li>
-&lt;/ol>
-&lt;p>&lt;a href="https://cmdragon.cn/img2base64">图片Base64相互转换 | 一个覆盖广泛主题工具的高效在线平台(cmdragon.cn)&lt;/a>&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>加载性能优化 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/%E5%8A%A0%E8%BD%BD%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/</link><description>Recent content in 加载性能优化 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sun, 03 Mar 2024 19:39:27 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/%E5%8A%A0%E8%BD%BD%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/index.xml" rel="self" type="application/rss+xml"/><item><title>探索图片与Base64编码的优势与局限性</title><link>https://blog.cmdragon.cn/posts/1e59739185bd86e2f23130f48e246411/</link><pubDate>Sun, 03 Mar 2024 19:39:27 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/1e59739185bd86e2f23130f48e246411/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/2024_03_03 19_42_35.png" title="2024_03_03 19_42_35.png" alt="2024_03_03 19_42_35.png"/&gt;
+&lt;h2 id="一图片和base64编码的关系"&gt;一、图片和Base64编码的关系：&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;图片是一种常见的媒体文件格式，可以通过URL进行访问和加载。&lt;/li&gt;
+&lt;li&gt;Base64编码是一种将二进制数据转换为ASCII字符的编码方式，可以将图片数据转换为字符串形式。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href="https://cmdragon.cn/img2base64"&gt;图片Base64相互转换 | 一个覆盖广泛主题工具的高效在线平台(cmdragon.cn)&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

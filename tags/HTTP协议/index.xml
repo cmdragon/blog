@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HTTP协议 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/HTTP%E5%8D%8F%E8%AE%AE/</link><description>Recent content in HTTP协议 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sat, 05 Jul 2025 17:08:37 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/HTTP%E5%8D%8F%E8%AE%AE/index.xml" rel="self" type="application/rss+xml"/><item><title>WebSocket与HTTP协议究竟有何不同？FastAPI如何让长连接变得如此简单？</title><link>https://blog.cmdragon.cn/posts/903448c85701a6a747fc9a4417e2bdc8/</link><pubDate>Sat, 05 Jul 2025 17:08:37 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/903448c85701a6a747fc9a4417e2bdc8/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/7989a41781759816107c155a4591fc73.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
-&lt;img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
-&lt;p>扫描&lt;a href="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg">二维码&lt;/a>
-关注或者微信搜一搜：&lt;code>编程智域 前端至全栈交流与成长&lt;/code>&lt;/p>
-&lt;p>&lt;a href="https://tools.cmdragon.cn/zh/apps?category=ai_chat">发现1000+提升效率与开发的AI工具和实用程序&lt;/a>：https://tools.cmdragon.cn/&lt;/p>
-&lt;h1 id="第一章websocket协议基础与fastapi定位">第一章：WebSocket协议基础与FastAPI定位&lt;/h1>
-&lt;h2 id="11-websocket与http协议核心差异">1.1 WebSocket与HTTP协议核心差异&lt;/h2>
-&lt;p>通过对比传统HTTP协议与WebSocket协议的核心特性，我们可以从以下维度理解二者的差异：&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HTTP协议 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/HTTP%E5%8D%8F%E8%AE%AE/</link><description>Recent content in HTTP协议 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sat, 05 Jul 2025 17:08:37 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/HTTP%E5%8D%8F%E8%AE%AE/index.xml" rel="self" type="application/rss+xml"/><item><title>WebSocket与HTTP协议究竟有何不同？FastAPI如何让长连接变得如此简单？</title><link>https://blog.cmdragon.cn/posts/903448c85701a6a747fc9a4417e2bdc8/</link><pubDate>Sat, 05 Jul 2025 17:08:37 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/903448c85701a6a747fc9a4417e2bdc8/</guid><description>&lt;img src="https://blog.cmdragon.cn/images/7989a41781759816107c155a4591fc73.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/&gt;
+&lt;img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/&gt;
+&lt;p&gt;扫描&lt;a href="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg"&gt;二维码&lt;/a&gt;
+关注或者微信搜一搜：&lt;code&gt;编程智域 前端至全栈交流与成长&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://tools.cmdragon.cn/zh/apps?category=ai_chat"&gt;发现1000+提升效率与开发的AI工具和实用程序&lt;/a&gt;：https://tools.cmdragon.cn/&lt;/p&gt;
+&lt;h1 id="第一章websocket协议基础与fastapi定位"&gt;第一章：WebSocket协议基础与FastAPI定位&lt;/h1&gt;
+&lt;h2 id="11-websocket与http协议核心差异"&gt;1.1 WebSocket与HTTP协议核心差异&lt;/h2&gt;
+&lt;p&gt;通过对比传统HTTP协议与WebSocket协议的核心特性，我们可以从以下维度理解二者的差异：&lt;/p&gt;</description></item></channel></rss>
