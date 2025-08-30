@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>测试环境配置 on cmdragon's Blog</title><link>https://blog.cmdragon.cn/tags/%E6%B5%8B%E8%AF%95%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link><description>Recent content in 测试环境配置 on cmdragon's Blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sat, 30 Aug 2025 02:32:06 +0800</lastBuildDate><atom:link href="https://blog.cmdragon.cn/tags/%E6%B5%8B%E8%AF%95%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/index.xml" rel="self" type="application/rss+xml"/><item><title>FastAPI测试环境配置的秘诀，你真的掌握了吗？</title><link>https://blog.cmdragon.cn/posts/6f9e71e8313db6de8c1431877a70b67e/</link><pubDate>Sat, 30 Aug 2025 02:32:06 +0800</pubDate><guid>https://blog.cmdragon.cn/posts/6f9e71e8313db6de8c1431877a70b67e/</guid><description>&lt;img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/&gt;
+&lt;p&gt;扫描&lt;a href="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg"&gt;二维码&lt;/a&gt;
+关注或者微信搜一搜：&lt;code&gt;编程智域 前端至全栈交流与成长&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://tools.cmdragon.cn/zh/apps?category=ai_chat"&gt;发现1000+提升效率与开发的AI工具和实用程序&lt;/a&gt;：https://tools.cmdragon.cn/&lt;/p&gt;
+&lt;h2 id="1-fastapi-测试环境配置与基础框架搭建"&gt;1. FastAPI 测试环境配置与基础框架搭建&lt;/h2&gt;
+&lt;h3 id="11-测试环境配置要点"&gt;1.1 测试环境配置要点&lt;/h3&gt;
+&lt;p&gt;在 FastAPI 项目中配置测试环境需关注：&lt;/p&gt;</description></item></channel></rss>
