@@ -7,7 +7,7 @@ author: cmdragon
 cover: /images/xw_20250722211328.png
 summary: 揭秘专业级密码加密工具！自适应成本因子+盐值防护，彻底阻断暴力破解攻击。立即体验工业级安全防护！
 categories:
-  - 开发者工具
+  - tweets
 tags:
   - Bcrypt加密
   - 密码安全
