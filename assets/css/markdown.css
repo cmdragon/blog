@@ -315,6 +315,9 @@
   text-decoration: none;
   border-bottom: 1px dashed #1e40af;
   transition: color 0.2s, border-color 0.2s;
+  word-break: break-all;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .article-content a:hover {
