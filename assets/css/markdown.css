@@ -115,6 +115,7 @@
 .article-content p {
   margin-top: 1rem;
   margin-bottom: 1rem;
+  word-break: break-all;
 }
 
 /* 强调和加粗 */
@@ -232,12 +233,13 @@
 
 /* 表格样式 */
 .article-content table {
+  display: block;
   width: 100%;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   border-collapse: separate;
   border-spacing: 0;
-  overflow: hidden;
+  overflow: auto;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
@@ -481,6 +483,7 @@
   padding: 0.125rem 0.25rem;
   border-radius: 0.25rem;
   white-space: pre-wrap;
+  word-break: break-word;
 }
 
 .dark .article-content code:not([class*="language-"]) {
