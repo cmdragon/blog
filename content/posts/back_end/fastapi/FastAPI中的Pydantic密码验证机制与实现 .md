@@ -2,7 +2,7 @@
 url: /posts/a72a86da313f399c29b36ec08f75361d/
 title: FastAPI中的Pydantic密码验证机制与实现
 date: 2025-03-31T00:04:51+08:00
-lastmod: 2025-03-31T00:04:51+08:00
+lastmod: 2025-09-26T07:52:14+08:00
 author: cmdragon
 
 summary:
@@ -32,8 +32,6 @@ tags:
 [探索数千个预构建的 AI 应用，开启你的下一个伟大创意](https://tools.cmdragon.cn/zh/apps?category=ai_chat)
 
 
-
-# 一、FastAPI 密码验证核心原理
 
 ## 1.1 Pydantic 验证机制
 在FastAPI框架中，数据验证的核心由Pydantic模型驱动。当我们定义`PasswordStr`类型时，实际上是在创建一个具备自我验证能力的智能数据类型。其工作原理可分为三个层次：

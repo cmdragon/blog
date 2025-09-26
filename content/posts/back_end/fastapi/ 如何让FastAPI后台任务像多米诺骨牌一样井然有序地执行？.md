@@ -2,7 +2,7 @@
 url: /posts/7693d3430a6256c2abefc1e4aba21a4a/
 title: 如何让FastAPI后台任务像多米诺骨牌一样井然有序地执行？
 date: 2025-08-03T11:12:44+08:00
-lastmod: 2025-08-03T11:12:44+08:00
+lastmod: 2025-09-26T07:52:14+08:00
 author: cmdragon
 
 summary:
@@ -32,7 +32,6 @@ tags:
 
 [发现1000+提升效率与开发的AI工具和实用程序](https://tools.cmdragon.cn/zh/apps?category=ai_chat)：https://tools.cmdragon.cn/
 
-# FastAPI后台任务依赖管理
 
 ## 一、BackgroundTasks基础回顾
 

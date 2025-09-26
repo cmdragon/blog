@@ -2,7 +2,7 @@
 url: /posts/e4f0dd2a60b455bdcd55a1de472d67ee/
 title: FastAPI权限校验漏洞防护，你真的做对了吗？
 date: 2025-06-25T09:01:42+08:00
-lastmod: 2025-06-25T09:01:42+08:00
+lastmod: 2025-09-26T07:52:14+08:00
 cover: https://cataas.com/cat/YA1QUpUi6h4BRuYs?position=center&width=500&height=500
 author: cmdragon
 
@@ -33,7 +33,6 @@ tags:
 
 [发现1000+提升效率与开发的AI工具和实用程序](https://tools.cmdragon.cn/zh/apps?category=ai_chat)：https://tools.cmdragon.cn/
 
-# 第一章：FastAPI权限校验安全漏洞防护最佳实践
 
 ## 1.1 权限校验的重要性与核心原理
 

@@ -2,7 +2,7 @@
 url: /posts/223ca940339eef3108d0c0c630db7de1/
 title: 密码哈希：Bcrypt的魔法与盐值的秘密
 date: 2025-06-01T16:41:37+08:00
-lastmod: 2025-06-01T16:41:37+08:00
+lastmod: 2025-09-26T07:52:14+08:00
 author: cmdragon
 
 summary:
@@ -31,8 +31,6 @@ tags:
 关注或者微信搜一搜：`编程智域 前端至全栈交流与成长`
 
 [探索数千个预构建的 AI 应用，开启你的下一个伟大创意](https://tools.cmdragon.cn/zh/apps?category=ai_chat)：https://tools.cmdragon.cn/
-
-# 第五章：密码哈希安全实践
 
 ## 为什么需要密码哈希化？
 

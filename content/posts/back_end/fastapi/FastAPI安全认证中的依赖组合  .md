@@ -2,7 +2,7 @@
 url: /posts/116bd5f3dfe8c9fdee45a81e7fe75181/
 title: FastAPI安全认证中的依赖组合
 date: 2025-04-12T00:44:08+08:00
-lastmod: 2025-04-12T00:44:08+08:00
+lastmod: 2025-09-26T07:52:14+08:00
 author: cmdragon
 
 summary:
@@ -30,8 +30,6 @@ tags:
 关注或者微信搜一搜：`编程智域 前端至全栈交流与成长`
 
 [探索数千个预构建的 AI 应用，开启你的下一个伟大创意](https://tools.cmdragon.cn/zh/apps?category=ai_chat)
-
-# FastAPI安全认证场景下的依赖组合实践
 
 ## 一、FastAPI依赖注入基础回顾
 

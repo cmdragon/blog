@@ -2,7 +2,7 @@
 url: /posts/0df867e01706fcb9c2e16ea07671a9e4/
 title: FastAPI数据库集成与事务管理
 date: 2025-04-18T00:15:34+08:00
-lastmod: 2025-04-18T00:15:34+08:00
+lastmod: 2025-09-26T07:52:14+08:00
 author: cmdragon
 
 summary:
@@ -30,8 +30,6 @@ tags:
 扫描[二维码](https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg)关注或者微信搜一搜：`编程智域 前端至全栈交流与成长`
 
 [探索数千个预构建的 AI 应用，开启你的下一个伟大创意](https://tools.cmdragon.cn/zh/apps?category=ai_chat)
-
-# FastAPI数据库集成与事务管理完全指南
 
 ## 1. 环境准备与基础配置
 

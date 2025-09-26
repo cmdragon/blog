@@ -2,7 +2,7 @@
 url: /posts/0bbb4a455ef36bf6f81ac97189586fda/
 title: 如何用三层防护体系打造坚不可摧的 API 安全堡垒？
 date: 2025-07-03T18:55:04+08:00
-lastmod: 2025-07-03T18:55:04+08:00
+lastmod: 2025-09-26T07:52:14+08:00
 author: cmdragon
 
 summary:
@@ -31,8 +31,6 @@ tags:
 关注或者微信搜一搜：`编程智域 前端至全栈交流与成长`
 
 [发现1000+提升效率与开发的AI工具和实用程序](https://tools.cmdragon.cn/zh/apps?category=ai_chat)：https://tools.cmdragon.cn/
-
-# FastAPI 安全与认证综合实战
 
 通过三层防护体系实现API安全：
 

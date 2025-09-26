@@ -2,7 +2,7 @@
 url: /posts/d878b5dbef959058b8098551c70594f8/
 title: 如何用 FastAPI 和 RBAC 打造坚不可摧的安全堡垒？
 date: 2025-06-27T04:55:19+08:00
-lastmod: 2025-06-27T04:55:19+08:00
+lastmod: 2025-09-26T07:52:14+08:00
 author: cmdragon
 
 summary:
@@ -32,7 +32,6 @@ tags:
 
 [发现1000+提升效率与开发的AI工具和实用程序](https://tools.cmdragon.cn/zh/apps?category=ai_chat)：https://tools.cmdragon.cn/
 
-# 一、FastAPI 安全认证与 RBAC 系统原理
 
 ## 1.1 RBAC 基础概念
 
