@@ -2,7 +2,7 @@
 url: /posts/06a7744b22307c94c8cabf0a26c4133d/
 title: FastAPI数据库连接池配置与监控
 date: 2025-04-28T00:13:02+08:00
-lastmod: 2025-04-28T00:13:02+08:00
+lastmod: 2025-09-26T07:52:14+08:00
 author: cmdragon
 
 summary:
@@ -30,8 +30,6 @@ tags:
 扫描[二维码](https://static.cmdragon.cn/blog/images/cmdragon_cn.png)关注或者微信搜一搜：`编程智域 前端至全栈交流与成长`
 
 [探索数千个预构建的 AI 应用，开启你的下一个伟大创意](https://tools.cmdragon.cn/zh/apps?category=ai_chat)：https://tools.cmdragon.cn/
-
-# FastAPI数据库连接池配置与监控实战
 
 ## 1. 数据库连接池基础原理
 

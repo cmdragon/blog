@@ -2,7 +2,7 @@
 url: /posts/96b6ede65030daa4613ab92da1d739a6/
 title: FastAPI权限配置：你的系统真的安全吗？
 date: 2025-06-26T07:35:35+08:00
-lastmod: 2025-06-26T07:35:35+08:00
+lastmod: 2025-09-26T07:52:14+08:00
 author: cmdragon
 
 summary:
@@ -31,8 +31,6 @@ tags:
 关注或者微信搜一搜：`编程智域 前端至全栈交流与成长`
 
 [发现1000+提升效率与开发的AI工具和实用程序](https://tools.cmdragon.cn/zh/apps?category=ai_chat)：https://tools.cmdragon.cn/
-
-# 第一章：FastAPI生产环境权限配置基础
 
 ## 1.1 权限管理系统核心要素
 

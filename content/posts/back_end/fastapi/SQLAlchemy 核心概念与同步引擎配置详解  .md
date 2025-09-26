@@ -2,7 +2,7 @@
 url: /posts/de9dea9606a04d21ae60cbc315397580/
 title: SQLAlchemy 核心概念与同步引擎配置详解
 date: 2025-04-14T00:28:46+08:00
-lastmod: 2025-04-14T00:28:46+08:00
+lastmod: 2025-09-26T07:52:14+08:00
 author: cmdragon
 
 summary:
@@ -32,7 +32,6 @@ tags:
 
 [探索数千个预构建的 AI 应用，开启你的下一个伟大创意](https://tools.cmdragon.cn/zh/apps?category=ai_chat)
 
-# 1. SQLAlchemy 核心概念与同步引擎配置
 
 ## 1.1 ORM 基础原理
 
