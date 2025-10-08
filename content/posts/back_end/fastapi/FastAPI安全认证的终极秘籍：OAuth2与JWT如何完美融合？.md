@@ -32,7 +32,6 @@ tags:
 
 [发现1000+提升效率与开发的AI工具和实用程序](https://tools.cmdragon.cn/zh/apps?category=ai_chat)：https://tools.cmdragon.cn/
 
-# FastAPI安全与认证实战指南（二）
 
 ## 一、OAuth2协议核心模式解析
 
