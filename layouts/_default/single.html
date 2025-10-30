@@ -47,9 +47,50 @@
             </header>
             
             <!-- 文章内容 -->
-            <div class="article-content prose dark:prose-invert lg:prose-lg max-w-none mb-8 leading-relaxed">
+            <div class="article-content prose dark:prose-invert lg:prose-lg max-w-none mb-8 leading-relaxed" id="article-content">
                 {{ .Content }}
             </div>
+            
+            <!-- 自动插入文章内嵌广告的脚本 -->
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const articleContent = document.getElementById('article-content');
+                    const paragraphs = articleContent.querySelectorAll('p, h2, h3, h4');
+                    
+                    // 如果文章段落数量足够多，在中间位置插入广告
+                    if (paragraphs.length > 3) {
+                        const middleIndex = Math.floor(paragraphs.length / 2);
+                        const targetElement = paragraphs[middleIndex];
+                        
+                        // 创建广告容器
+                        const adContainer = document.createElement('div');
+                        adContainer.className = 'my-8 p-4 bg-gray-50 dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-700';
+                        adContainer.innerHTML = `
+                            <div class="text-xs text-gray-500 dark:text-gray-400 mb-3 text-center">广告</div>
+                            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2874982874195135"
+                                 crossorigin="anonymous"><\/script>
+                            <ins class="adsbygoogle"
+                                 style="display:block; text-align:center;"
+                                 data-ad-layout="in-article"
+                                 data-ad-format="fluid"
+                                 data-ad-client="ca-pub-2874982874195135"
+                                 data-ad-slot="9953320756"></ins>
+                        `;
+                        
+                        // 在目标元素后插入广告
+                        targetElement.parentNode.insertBefore(adContainer, targetElement.nextSibling);
+                        
+                        // 延迟执行广告脚本
+                        setTimeout(function() {
+                            try {
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            } catch (e) {
+                                console.error('AdSense error:', e);
+                            }
+                        }, 100);
+                    }
+                });
+            </script>
             
             <!-- 文章底部标签 -->
             {{ with .Params.tags }}
@@ -179,6 +220,23 @@
                 <div id="toc-content" class="toc text-sm text-gray-700 dark:text-gray-300 flex-grow overflow-y-auto">
                     {{ .TableOfContents }}
                 </div>
+            </div>
+            
+            <!-- 展示广告 -->
+            <div class="lg:sticky lg:top-[calc(100vh-320px)] bg-white dark:bg-gray-800 rounded-xl shadow-md p-5 mb-8 border border-gray-100 dark:border-gray-700">
+                <div class="text-xs text-gray-500 dark:text-gray-400 mb-3 text-center">广告位</div>
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2874982874195135"
+                     crossorigin="anonymous"></script>
+                <!-- 展示广告 -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-2874982874195135"
+                     data-ad-slot="6984392540"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </div>
             
             <!-- 移动端遮罩层 -->
