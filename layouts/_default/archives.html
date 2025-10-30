@@ -10,6 +10,7 @@
     
     <div class="bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 rounded-xl shadow-md p-6 border border-gray-100 dark:border-gray-700 transition-all duration-300 hover:shadow-lg">
         {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+        {{ $globalIndex := 0 }}
         
         <!-- 按年份分组 -->
         {{ range $pages.GroupByDate "2006" }}
@@ -23,17 +24,54 @@
                 </h2>
                 
                 <ul class="space-y-4 pl-4 border-l-2 border-gradient-to-b from-blue-500 to-indigo-600 ml-3">
-                    {{ range .Pages }}
+                    {{ range $index, $page := .Pages }}
                         <li class="border-b border-gray-100 dark:border-gray-700 pb-4 last:border-0 last:pb-0 transition-all duration-300 hover:translate-x-1">
-                            <a href="{{ .Permalink }}" class="group flex items-start hover:text-primary">
-                                <span class="bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 px-3 py-1 rounded-full text-sm mr-4 transition-colors group-hover:bg-blue-100 group-hover:text-blue-800 dark:group-hover:bg-blue-900/50 dark:group-hover:text-blue-300">{{ .Date.Format "01-02" }}</span>
-                                <span class="font-medium group-hover:text-primary transition-colors">{{ .Title }}</span>
+                            <a href="{{ $page.Permalink }}" class="group flex items-start hover:text-primary">
+                                <span class="bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 px-3 py-1 rounded-full text-sm mr-4 transition-colors group-hover:bg-blue-100 group-hover:text-blue-800 dark:group-hover:bg-blue-900/50 dark:group-hover:text-blue-300">{{ $page.Date.Format "01-02" }}</span>
+                                <span class="font-medium group-hover:text-primary transition-colors">{{ $page.Title }}</span>
                             </a>
                         </li>
+                        
+                        <!-- 每10篇文章后插入纯文字流广告 -->
+                        {{ $globalIndex = add $globalIndex 1 }}
+                        {{ if and (gt $globalIndex 0) (eq (mod $globalIndex 10) 0) }}
+                        <li class="my-6 border-0">
+                            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700 p-4 -ml-4">
+                                <div class="text-xs text-gray-500 dark:text-gray-400 mb-2 text-center">广告位</div>
+                                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2874982874195135"
+                                     crossorigin="anonymous"></script>
+                                <ins class="adsbygoogle"
+                                     style="display:block"
+                                     data-ad-format="fluid"
+                                     data-ad-layout-key="-hl+a-w-1e+66"
+                                     data-ad-client="ca-pub-2874982874195135"
+                                     data-ad-slot="9906069356"></ins>
+                                <script>
+                                     (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                            </div>
+                        </li>
+                        {{ end }}
                     {{ end }}
                 </ul>
             </div>
         {{ end }}
+    </div>
+    
+    <!-- 纯文字流广告 -->
+    <div class="mt-8 bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden border border-gray-100 dark:border-gray-700 p-6">
+        <div class="text-xs text-gray-500 dark:text-gray-400 mb-3 text-center">广告位</div>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2874982874195135"
+             crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-format="fluid"
+             data-ad-layout-key="-hl+a-w-1e+66"
+             data-ad-client="ca-pub-2874982874195135"
+             data-ad-slot="9906069356"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
     </div>
 </div>
 

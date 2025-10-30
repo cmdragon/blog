@@ -56,24 +56,24 @@
         </div>
     {{ else }}
         <div class="space-y-6">
-            {{ range .Paginator.Pages }}
+            {{ range $index, $page := .Paginator.Pages }}
                 <article class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 dark:border-gray-700">
                     <div class="flex flex-col md:flex-row">
-                        {{ if .Params.featured_image }}
+                        {{ if $page.Params.featured_image }}
                             <div class="md:w-1/3 lg:w-1/4 md:max-w-xs">
-                                <a href="{{ .Permalink }}" class="block h-full overflow-hidden" aria-label="查看文章: {{ .Title }}">
-                                    <img src="{{ .Params.featured_image }}" alt="{{ .Title }}" class="w-full h-full object-cover object-center transform transition-transform duration-500 hover:scale-105" loading="lazy" />
+                                <a href="{{ $page.Permalink }}" class="block h-full overflow-hidden" aria-label="查看文章: {{ $page.Title }}">
+                                    <img src="{{ $page.Params.featured_image }}" alt="{{ $page.Title }}" class="w-full h-full object-cover object-center transform transition-transform duration-500 hover:scale-105" loading="lazy" />
                                 </a>
                             </div>
                         {{ end }}
-                        <div class="flex-1 p-6 {{ if not .Params.featured_image }}md:border-l-4 md:border-blue-500 dark:md:border-blue-700{{ end }}">
+                        <div class="flex-1 p-6 {{ if not $page.Params.featured_image }}md:border-l-4 md:border-blue-500 dark:md:border-blue-700{{ end }}">
                             <div class="flex flex-wrap items-center text-sm text-gray-500 dark:text-gray-400 mb-3 gap-3">
                                 <span class="flex items-center">
                                     <iconify-icon icon="mdi:calendar" class="mr-1" width="16" height="16" aria-hidden="true"></iconify-icon>
-                                    {{ .Date.Format "2006-01-02" }}
+                                    {{ $page.Date.Format "2006-01-02" }}
                                 </span>
                                 
-                                {{ with .Params.categories }}
+                                {{ with $page.Params.categories }}
                                     <span class="flex items-center">
                                         <iconify-icon icon="mdi:folder" class="mr-1" width="16" height="16" aria-hidden="true"></iconify-icon>
                                         {{ range $index, $category := . }}
@@ -85,7 +85,7 @@
                                     </span>
                                 {{ end }}
                                 
-                                {{ with .Params.tags }}
+                                {{ with $page.Params.tags }}
                                     <span class="flex items-center">
                                         <iconify-icon icon="mdi:tag" class="mr-1" width="16" height="16" aria-hidden="true"></iconify-icon>
                                         {{ range $index, $tag := . }}
@@ -97,42 +97,60 @@
                                     </span>
                                 {{ end }}
                                 
-                                {{ if .ReadingTime }}
+                                {{ if $page.ReadingTime }}
                                     <span class="flex items-center">
                                         <iconify-icon icon="mdi:clock-outline" class="mr-1" width="16" height="16" aria-hidden="true"></iconify-icon>
-                                        {{ .ReadingTime }} 分钟阅读
+                                        {{ $page.ReadingTime }} 分钟阅读
                                     </span>
                                 {{ end }}
                             </div>
                             
                             <h2 class="text-xl lg:text-2xl font-bold mb-3">
-                                <a href="{{ .Permalink }}" class="text-gray-900 dark:text-white hover:text-blue-700 dark:hover:text-blue-400 transition-colors duration-200">
-                                    {{ .Title }}
+                                <a href="{{ $page.Permalink }}" class="text-gray-900 dark:text-white hover:text-blue-700 dark:hover:text-blue-400 transition-colors duration-200">
+                                    {{ $page.Title }}
                                 </a>
                             </h2>
                             
-                            {{ with .Summary }}
+                            {{ with $page.Summary }}
                                 <div class="text-gray-700 dark:text-gray-300 mb-4 line-clamp-3">
                                     {{ . | plainify | truncate 180 }}
                                 </div>
                             {{ end }}
                             
                             <div class="flex items-center justify-between mt-4">
-                                <a href="{{ .Permalink }}" class="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium transition-colors" aria-label="阅读更多: {{ .Title }}">
+                                <a href="{{ $page.Permalink }}" class="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium transition-colors" aria-label="阅读更多: {{ $page.Title }}">
                                     阅读更多
                                     <iconify-icon icon="mdi:arrow-right" class="ml-1 transition-transform group-hover:translate-x-1" width="18" height="18" aria-hidden="true"></iconify-icon>
                                 </a>
                                 
-                                {{ if .Params.author }}
+                                {{ if $page.Params.author }}
                                     <span class="text-sm text-gray-500 dark:text-gray-400 flex items-center">
                                         <iconify-icon icon="mdi:account" class="mr-1" width="16" height="16" aria-hidden="true"></iconify-icon>
-                                        {{ .Params.author }}
+                                        {{ $page.Params.author }}
                                     </span>
                                 {{ end }}
                             </div>
                         </div>
                     </div>
                 </article>
+                
+                <!-- 信息流广告 - 每3篇文章后显示 -->
+                {{ if and (gt $index 0) (eq (mod (add $index 1) 3) 0) }}
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden border border-gray-100 dark:border-gray-700 p-4">
+                    <div class="text-xs text-gray-500 dark:text-gray-400 mb-2 text-center">广告位</div>
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2874982874195135"
+                         crossorigin="anonymous"></script>
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-format="fluid"
+                         data-ad-layout-key="-f9+4w+7x-eg+3a"
+                         data-ad-client="ca-pub-2874982874195135"
+                         data-ad-slot="3807564867"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                {{ end }}
             {{ end }}
         </div>
     
