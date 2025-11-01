@@ -7,7 +7,7 @@ author: cmdragon
 cover: /images/95f95c601c8f4b66b59eef45fa6ed401~tplv-5jbd59dj06-image.png
 
 summary:
-  `v-model`是Vue中简化表单输入的语法糖，自动同步输入值与组件状态。它根据输入类型适配DOM属性和事件：文本/多行文本用`value`和`input`，复选框/单选框用`checked`和`change`，选择器用`value`和`change`。`v-model`支持修饰符如`.lazy`（延迟同步）、`.number`（转为数字）、`.trim`（去除首尾空格）。动态值绑定可通过`v-bind`实现，如复选框的`true-value`和`false-value`，单选框的动态值，选择器的对象值。常见问题包括iOS选择器无法选中第一个选项、IME输入不更新等，均有相应解决方案。
+  v-model是Vue中简化表单输入的语法糖，自动同步输入值与组件状态。它根据输入类型适配DOM属性和事件：文本/多行文本用`value`和`input`，复选框/单选框用`checked`和`change`，选择器用`value`和`change`。`v-model`支持修饰符如`.lazy`（延迟同步）、`.number`（转为数字）、`.trim`（去除首尾空格）。动态值绑定可通过`v-bind`实现，如复选框的`true-value`和`false-value`，单选框的动态值，选择器的对象值。常见问题包括iOS选择器无法选中第一个选项、IME输入不更新等，均有相应解决方案。
 
 categories:
   - vue
