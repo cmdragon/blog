@@ -340,9 +340,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // 搜索引擎URL模板
     const searchEngines = {
-        google: 'https://www.google.com/search?q=site:blog.cmdragon.cn+{query}',
-        bing: 'https://www.bing.com/search?q=site:blog.cmdragon.cn+{query}',
-        baidu: 'https://www.baidu.com/s?wd=site:blog.cmdragon.cn+{query}'
+        google: 'https://www.google.com/search?q={query}&q1=site:blog.cmdragon.cn',
+        bing: 'https://www.bing.com/search?q={query}&q1=site:blog.cmdragon.cn',
+        baidu: 'https://www.baidu.com/s?wd={query}&q1=site:blog.cmdragon.cn'
     };
     
     // 执行搜索引擎搜索
