@@ -1,5 +1,5 @@
 ---
-url: /posts/a453a875e784bbb98f84a81a587310cd/
+url: /zh-tw/posts/a453a875e784bbb98f84a81a587310cd/
 title: 告別 PPT 製作耗時難題！pptist ai 快速生成 免費在線工具 5 步零基礎秒出專業匯報，免費無門檻在線編輯
 date: 2025-11-25T15:05:51+08:00
 lastmod: 2025-11-25T15:05:51+08:00
