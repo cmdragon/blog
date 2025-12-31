@@ -32,25 +32,21 @@ tags:
 
 [发现1000+提升效率与开发的AI工具和实用程序](https://tools.cmdragon.cn/zh/apps?category=ai_chat)：https://tools.cmdragon.cn/
 
-### v-for 遍历数组：最基础的列表渲染
 
-列表渲染的核心是**遍历数据生成DOM**，`v-for`最常见的用法是遍历数组。它的语法是`item in items`（或`item of items`
-，更贴近JS迭代器语法），其中`items`是源数据数组，`item`是当前元素的别名。
+### v-for 遍历数组：最基础的列表渲染  
+列表渲染的核心是**遍历数据生成DOM**，`v-for`最常见的用法是遍历数组。它的语法是`item in items`（或`item of items`，更贴近JS迭代器语法），其中`items`是源数据数组，`item`是当前元素的别名。  
 
-#### 基础用法：遍历数组元素
-
-比如我们有一个待办项数组，用`v-for`渲染成列表：
-
+#### 基础用法：遍历数组元素  
+比如我们有一个待办项数组，用`v-for`渲染成列表：  
 ```vue
 <!-- Composition API -->
 <script setup>
-  import {ref} from 'vue'
-
-  const todos = ref([
-    {id: 1, text: '学习Vue3'},
-    {id: 2, text: '写博客'},
-    {id: 3, text: '陪猫玩'}
-  ])
+import { ref } from 'vue'
+const todos = ref([
+  { id: 1, text: '学习Vue3' },
+  { id: 2, text: '写博客' },
+  { id: 3, text: '陪猫玩' }
+])
 </script>
 
 <template>
@@ -61,28 +57,25 @@ tags:
 
 <!-- Options API -->
 <script>
-  export default {
-    data() {
-      return {
-        todos: [
-          {id: 1, text: '学习Vue3'},
-          {id: 2, text: '写博客'},
-          {id: 3, text: '陪猫玩'}
-        ]
-      }
+export default {
+  data() {
+    return {
+      todos: [
+        { id: 1, text: '学习Vue3' },
+        { id: 2, text: '写博客' },
+        { id: 3, text: '陪猫玩' }
+      ]
     }
   }
+}
 </script>
 ```  
-
 渲染结果会是三个`<li>`标签，分别显示待办内容。
 
-#### 带索引的遍历：跟踪元素位置
 
-如果需要知道当前元素的索引，可以加上第二个参数`index`：
-
+#### 带索引的遍历：跟踪元素位置  
+如果需要知道当前元素的索引，可以加上第二个参数`index`：  
 ```vue
-
 <template>
   <ul>
     <li v-for="(todo, index) in todos">
@@ -91,15 +84,12 @@ tags:
   </ul>
 </template>
 ```  
-
 此时`index`会依次取`0`、`1`、`2`，配合`+1`就能生成“1. 学习Vue3”这样的序号。
 
-#### 解构赋值：简化代码
 
-如果数组元素是对象，还可以用**解构赋值**直接取出需要的属性，让模板更简洁：
-
+#### 解构赋值：简化代码  
+如果数组元素是对象，还可以用**解构赋值**直接取出需要的属性，让模板更简洁：  
 ```vue
-
 <template>
   <!-- 直接解构出text属性 -->
   <li v-for="{ text } in todos">{{ text }}</li>
@@ -108,30 +98,25 @@ tags:
 </template>
 ```  
 
-### v-for 遍历对象：处理键值对集合
 
-除了数组，`v-for`还能遍历**对象的属性**。语法是`value in object`，但通常我们会加上`key`（属性名）和`index`（索引）：
+### v-for 遍历对象：处理键值对集合  
+除了数组，`v-for`还能遍历**对象的属性**。语法是`value in object`，但通常我们会加上`key`（属性名）和`index`（索引）：  
 
-#### 遍历对象的三个参数
+#### 遍历对象的三个参数  
+`v-for`遍历对象时，参数顺序是：  
+1. `value`：对象属性的值  
+2. `key`：对象属性的名称  
+3. `index`：属性的索引（从0开始）  
 
-`v-for`遍历对象时，参数顺序是：
-
-1. `value`：对象属性的值
-2. `key`：对象属性的名称
-3. `index`：属性的索引（从0开始）
-
-比如遍历一个文章信息对象：
-
+比如遍历一个文章信息对象：  
 ```vue
-
 <script setup>
-  import {reactive} from 'vue'
-
-  const article = reactive({
-    title: 'Vue3 v-for 教程',
-    author: '张三',
-    date: '2024-05-20'
-  })
+import { reactive } from 'vue'
+const article = reactive({
+  title: 'Vue3 v-for 教程',
+  author: '张三',
+  date: '2024-05-20'
+})
 </script>
 
 <template>
@@ -142,33 +127,26 @@ tags:
   </ul>
 </template>
 ```  
+渲染结果：  
+1. title: Vue3 v-for 教程  
+2. author: 张三  
+3. date: 2024-05-20  
 
-渲染结果：
 
-1. title: Vue3 v-for 教程
-2. author: 张三
-3. date: 2024-05-20
-
-### v-for 遍历范围：重复渲染固定次数
-
-如果需要**重复渲染某个元素N次**，可以用`v-for`遍历一个整数范围。比如生成1到10的数字：
-
+### v-for 遍历范围：重复渲染固定次数  
+如果需要**重复渲染某个元素N次**，可以用`v-for`遍历一个整数范围。比如生成1到10的数字：  
 ```vue
-
 <template>
   <span v-for="n in 10">{{ n }} </span> <!-- 输出1 2 3 ... 10 -->
 </template>
 ```  
-
 注意：范围的起始值是**1**，不是0。
 
-### v-for 与 <template> 配合：渲染多个元素块
 
-有时候我们需要用`v-for`渲染**一组元素**（比如“内容+分隔线”），但不想让这些元素被额外的DOM节点包裹。这时可以用`<template>`
-标签包裹`v-for`，它不会生成实际的DOM元素：
+### v-for 与 template 配合：渲染多个元素块  
+有时候我们需要用`v-for`渲染**一组元素**（比如“内容+分隔线”），但不想让这些元素被额外的DOM节点包裹。这时可以用`<template>`标签包裹`v-for`，它不会生成实际的DOM元素：  
 
 ```vue
-
 <template>
   <ul>
     <template v-for="todo in todos" :key="todo.id">
@@ -178,15 +156,13 @@ tags:
   </ul>
 </template>
 ```  
-
 这样渲染后，每个待办项后面都会跟一个分隔线，且不会多出多余的父节点。
 
-### v-for 与 v-if 共存：避免优先级陷阱
 
-**重点注意**：当`v-for`和`v-if`写在**同一个元素**上时，`v-if`的优先级更高！这意味着`v-if`的条件无法访问`v-for`的变量，会直接报错。
+### v-for 与 v-if 共存：避免优先级陷阱  
+**重点注意**：当`v-for`和`v-if`写在**同一个元素**上时，`v-if`的优先级更高！这意味着`v-if`的条件无法访问`v-for`的变量，会直接报错。  
 
-比如下面的代码会抛出“Property 'todo' is not defined”：
-
+比如下面的代码会抛出“Property 'todo' is not defined”：  
 ```vue
 <!-- 错误写法！ -->
 <li v-for="todo in todos" v-if="!todo.done">
@@ -194,10 +170,9 @@ tags:
 </li>
 ```  
 
-#### 正确的做法：将v-for放在<template>上
 
-要解决这个问题，需要把`v-for`移到`<template>`标签上，让`v-if`能访问到`v-for`的变量：
-
+#### 正确的做法：将v-for放在template上  
+要解决这个问题，需要把`v-for`移到`<template>`标签上，让`v-if`能访问到`v-for`的变量：  
 ```vue
 <!-- 正确写法 -->
 <template v-for="todo in todos" :key="todo.id">
@@ -205,17 +180,15 @@ tags:
 </template>
 ```  
 
-### 用 key 维护列表状态：避免“就地更新”的坑
 
-Vue默认使用**“就地更新”策略**渲染列表：当数据顺序变化时，Vue不会重新排序DOM元素，而是直接修改元素的内容。这在大多数情况下很高效，但如果列表项包含
-**状态（比如表单输入）**或**子组件**，会导致状态混乱。
+### 用 key 维护列表状态：避免“就地更新”的坑  
+Vue默认使用**“就地更新”策略**渲染列表：当数据顺序变化时，Vue不会重新排序DOM元素，而是直接修改元素的内容。这在大多数情况下很高效，但如果列表项包含**状态（比如表单输入）**或**子组件**，会导致状态混乱。  
 
-#### 什么是 key？
 
-`key`是Vue用来**跟踪节点身份**的特殊属性，它必须是**唯一的字符串或数字**（不能用对象）。比如用`todo.id`作为key：
+#### 什么是 key？  
+`key`是Vue用来**跟踪节点身份**的特殊属性，它必须是**唯一的字符串或数字**（不能用对象）。比如用`todo.id`作为key：  
 
 ```vue
-
 <template>
   <li v-for="todo in todos" :key="todo.id">
     {{ todo.text }}
@@ -224,24 +197,22 @@ Vue默认使用**“就地更新”策略**渲染列表：当数据顺序变化�
 </template>
 ```  
 
-#### 为什么需要 key？
 
-假设我们有一个列表：`[A, B, C]`，对应的输入框分别输入了“备注A”“备注B”“备注C”。如果我们删除B，没有key的情况下：
+#### 为什么需要 key？  
+假设我们有一个列表：`[A, B, C]`，对应的输入框分别输入了“备注A”“备注B”“备注C”。如果我们删除B，没有key的情况下：  
+- Vue会把C的内容改成B（因为就地更新），导致输入框的“备注C”变成“备注B”，状态混乱。  
 
-- Vue会把C的内容改成B（因为就地更新），导致输入框的“备注C”变成“备注B”，状态混乱。
+而有了key后，Vue会**正确删除B对应的DOM节点**，保留A和C的状态，避免错误。  
 
-而有了key后，Vue会**正确删除B对应的DOM节点**，保留A和C的状态，避免错误。
 
-### v-for 渲染组件：传递数据要“明确”
+### v-for 渲染组件：传递数据要“明确”  
+当用`v-for`渲染组件时，**不能依赖Vue自动注入数据**（会让组件耦合度太高），必须通过`props`明确传递数据：  
 
-当用`v-for`渲染组件时，**不能依赖Vue自动注入数据**（会让组件耦合度太高），必须通过`props`明确传递数据：
-
-#### 示例：渲染Todo组件列表
-
+#### 示例：渲染Todo组件列表  
 ```vue
 <!-- TodoItem.vue（子组件） -->
 <script setup>
-  defineProps(['item', 'index']) // 接收父组件传递的item和index
+defineProps(['item', 'index']) // 接收父组件传递的item和index
 </script>
 
 <template>
@@ -252,100 +223,91 @@ Vue默认使用**“就地更新”策略**渲染列表：当数据顺序变化�
 ```vue
 <!-- 父组件 -->
 <script setup>
-  import TodoItem from './TodoItem.vue'
-  import {ref} from 'vue'
-
-  const todos = ref([/* ... */])
+import TodoItem from './TodoItem.vue'
+import { ref } from 'vue'
+const todos = ref([/* ... */])
 </script>
 
 <template>
   <ul>
-    <TodoItem
-        v-for="(todo, index) in todos"
-        :key="todo.id"
-        :item="todo"  <!-- 传递item -->
-    :index="index"  <!-- 传递index -->
+    <TodoItem 
+      v-for="(todo, index) in todos" 
+      :key="todo.id" 
+      :item="todo"  <!-- 传递item -->
+      :index="index"  <!-- 传递index -->
     />
   </ul>
 </template>
 ```  
 
-### 数组变化检测：Vue 如何响应数据更新
 
-Vue能自动检测数组的变化，但需要注意** mutation 方法**和**非 mutation 方法**的区别：
+### 数组变化检测：Vue 如何响应数据更新  
+Vue能自动检测数组的变化，但需要注意** mutation 方法**和**非 mutation 方法**的区别：  
 
-#### 1. mutation 方法（直接修改原数组）
 
-以下方法会**修改原数组**，Vue能直接检测到变化：
+#### 1.  mutation 方法（直接修改原数组）  
+以下方法会**修改原数组**，Vue能直接检测到变化：  
+- `push()`：添加元素到末尾  
+- `pop()`：删除末尾元素  
+- `shift()`：删除第一个元素  
+- `unshift()`：添加元素到开头  
+- `splice()`：删除/插入/替换元素  
+- `sort()`：排序  
+- `reverse()`：反转  
 
-- `push()`：添加元素到末尾
-- `pop()`：删除末尾元素
-- `shift()`：删除第一个元素
-- `unshift()`：添加元素到开头
-- `splice()`：删除/插入/替换元素
-- `sort()`：排序
-- `reverse()`：反转
-
-示例：
-
+示例：  
 ```vue
-
 <script setup>
-  const todos = ref([/* ... */])
-  // 添加一个待办项
-  todos.value.push({id: 4, text: '买咖啡'})
+const todos = ref([/* ... */])
+// 添加一个待办项
+todos.value.push({ id: 4, text: '买咖啡' })
 </script>
 ```  
 
-#### 2. 非 mutation 方法（返回新数组）
 
-以下方法会**返回新数组**，需要**替换原数组**才能触发更新：
+#### 2. 非 mutation 方法（返回新数组）  
+以下方法会**返回新数组**，需要**替换原数组**才能触发更新：  
+- `filter()`：过滤数组  
+- `concat()`：合并数组  
+- `slice()`：截取数组  
 
-- `filter()`：过滤数组
-- `concat()`：合并数组
-- `slice()`：截取数组
-
-示例：
-
+示例：  
 ```vue
-
 <script setup>
-  const todos = ref([/* ... */])
-  // 过滤出未完成的待办项（替换原数组）
-  todos.value = todos.value.filter(todo => !todo.done)
+const todos = ref([/* ... */])
+// 过滤出未完成的待办项（替换原数组）
+todos.value = todos.value.filter(todo => !todo.done)
 </script>
 ```  
 
-### 课后 Quiz：巩固知识点
 
+### 课后 Quiz：巩固知识点  
 1. **问题**：v-for遍历对象时，三个参数的顺序是什么？  
-   **答案**：`(value, key, index)`。第一个参数是属性值，第二个是属性名，第三个是索引。
+   **答案**：`(value, key, index)`。第一个参数是属性值，第二个是属性名，第三个是索引。  
 
 2. **问题**：为什么给v-for列表项加`key`很重要？  
-   **答案**：`key`让Vue能跟踪节点身份，避免“就地更新”导致的状态混乱。比如当列表项包含输入框时，`key`能保证输入状态不随数据顺序变化而错乱。
+   **答案**：`key`让Vue能跟踪节点身份，避免“就地更新”导致的状态混乱。比如当列表项包含输入框时，`key`能保证输入状态不随数据顺序变化而错乱。  
 
-### 常见报错及解决方法
 
-#### 1. 报错：Property 'todo' is not defined
+### 常见报错及解决方法  
+#### 1. 报错：Property 'todo' is not defined  
+- **原因**：`v-for`和`v-if`写在同一个元素上，`v-if`优先级更高，无法访问`v-for`的变量。  
+- **解决**：将`v-for`移到`<template>`标签上。  
 
-- **原因**：`v-for`和`v-if`写在同一个元素上，`v-if`优先级更高，无法访问`v-for`的变量。
-- **解决**：将`v-for`移到`<template>`标签上。
 
-#### 2. 报错：Expected a string or number for key, got object
+#### 2. 报错：Expected a string or number for key, got object  
+- **原因**：`key`用了对象（比如`:key="todo"`），而`key`必须是字符串或数字。  
+- **解决**：改用对象的唯一属性（比如`todo.id`）作为`key`。  
 
-- **原因**：`key`用了对象（比如`:key="todo"`），而`key`必须是字符串或数字。
-- **解决**：改用对象的唯一属性（比如`todo.id`）作为`key`。
 
-#### 3. 数组修改后视图不更新
+#### 3. 数组修改后视图不更新  
+- **原因**：用了非mutation方法（比如`filter`）但没替换原数组。  
+- **解决**：将原数组赋值为新数组，比如`items.value = items.value.filter(...)`。  
 
-- **原因**：用了非mutation方法（比如`filter`）但没替换原数组。
-- **解决**：将原数组赋值为新数组，比如`items.value = items.value.filter(...)`。
 
 参考链接：https://vuejs.org/guide/essentials/list.html
 
-余下文章内容请点击跳转至 个人博客页面 或者 扫描[二维码](https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg)
-关注或者微信搜一搜：`编程智域 前端至全栈交流与成长`
-，阅读完整的文章：[Vue3中v-for与v-if为何不能直接共存于同一元素？](https://blog.cmdragon.cn/posts/138b13c5341f6a1fa9015400433a3611/)
+余下文章内容请点击跳转至 个人博客页面 或者 扫描[二维码](https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg)关注或者微信搜一搜：`编程智域 前端至全栈交流与成长`，阅读完整的文章：[Vue3中v-for与v-if为何不能直接共存于同一元素？](https://blog.cmdragon.cn/posts/138b13c5341f6a1fa9015400433a3611/)
 
 
 
@@ -353,7 +315,7 @@ Vue能自动检测数组的变化，但需要注意** mutation 方法**和**非 
 <summary>往期文章归档</summary>
 
 - [Vue3中v-if与v-show的本质区别及动态组件状态保持的关键策略是什么？](https://blog.cmdragon.cn/posts/0242a94dc552b93a1bc335ac4fc33db5/)
-- [Vue3中v-show如何通过CSS修改display属性控制条件显示？与v-if的应用场景该如何区分？](https://blog.cmdragon.cn/posts/97c66a18ae0e9b57c6a69b8b3a41ddf6/)
+ - [Vue3中v-show如何通过CSS修改display属性控制条件显示？与v-if的应用场景该如何区分？](https://blog.cmdragon.cn/posts/97c66a18ae0e9b57c6a69b8b3a41ddf6/)
 - [Vue3条件渲染中v-if系列指令如何合理使用与规避错误？](https://blog.cmdragon.cn/posts/8a1ddfac64b25062ac56403e4c1201d2/)
 - [Vue3动态样式控制：ref、reactive、watch与computed的应用场景与区别是什么？](https://blog.cmdragon.cn/posts/218c3a59282c3b757447ee08a01937bb/)
 - [Vue3中动态样式数组的后项覆盖规则如何与计算属性结合实现复杂状态样式管理？](https://blog.cmdragon.cn/posts/1bab953e41f66ac53de099fa9fe76483/)
