@@ -394,10 +394,10 @@ const totalPages = computed(() =>
 
 ```mermaid
 graph TD
-A[原始数据(rawUsers)] --> B[搜索过滤(filteredUsers)]
-B --> C[排序处理(sortedUsers)]
-C --> D[分页切片(pagedUsers)]
-D --> E[渲染到页面(v-for)]
+    A[原始数据 rawUsers] --> B[搜索过滤 filteredUsers]
+    B --> C[排序处理 sortedUsers]
+    C --> D[分页切片 pagedUsers]
+    D --> E[渲染到页面 v-for]
 ```
 
 ### 课后Quiz：为什么排序时要复制数组？
