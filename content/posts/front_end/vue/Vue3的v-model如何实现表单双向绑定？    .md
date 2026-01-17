@@ -60,8 +60,8 @@ function updateUsername(e) {
 
 ```mermaid
 graph TD
-A[用户修改视图（输入/点击）] --> B[触发对应事件（input/change）]
-B --> C[更新数据（如username = 输入内容）]
+A[用户修改视图 输入/点击] --> B[触发对应事件 input/change]
+B --> C[更新数据如username 输入内容]
 C --> D[Vue响应式系统检测到数据变化]
 D --> E[自动更新视图显示]
 ```  
