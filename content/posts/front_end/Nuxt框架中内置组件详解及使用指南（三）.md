@@ -21,7 +21,7 @@ tags:
   - 自定义
 ---
 
-<img src="/images/2024_07_08 16_33_38.png" title="2024_07_08 16_33_38.png" alt="2024_07_08 16_33_38.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_07_08 16_33_38.png" title="2024_07_08 16_33_38.png" alt="2024_07_08 16_33_38.png"/>
 
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

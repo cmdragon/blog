@@ -4,7 +4,7 @@ title: Vue3动态样式管理：如何混合class/style绑定、穿透scoped并�
 date: 2025-12-18T10:51:13+08:00
 lastmod: 2025-12-18T10:51:13+08:00
 author: cmdragon
-cover: /images/generated_image_f79e7b10-8dd2-45c2-b2d9-33185e7b4761.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_f79e7b10-8dd2-45c2-b2d9-33185e7b4761.png
 
 summary:
   Vue 3中class与style绑定支持混合使用，可结合静态、动态类名及动态内联样式。组件通过props传递样式参数，用emit同步状态。Scoped样式需用::v-deep穿透修改子组件动态类名，频繁切换样式对象时用computed缓存优化性能。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_f79e7b10-8dd2-45c2-b2d9-33185e7b4761.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_f79e7b10-8dd2-45c2-b2d9-33185e7b4761.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

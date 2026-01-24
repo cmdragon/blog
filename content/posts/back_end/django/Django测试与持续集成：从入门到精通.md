@@ -16,7 +16,7 @@ tags:
   - 迭代
 ---
 
-<img src="/images/2024_05_18 16_43_35.png" title="2024_05_18 16_43_35.png" alt="2024_05_18 16_43_35.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_18 16_43_35.png" title="2024_05_18 16_43_35.png" alt="2024_05_18 16_43_35.png"/>
 
 ## 第1章：Django测试基础
 

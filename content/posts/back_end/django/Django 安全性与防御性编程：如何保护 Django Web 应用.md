@@ -16,7 +16,7 @@ tags:
   - Session
 ---
 
-<img src="/images/2024_05_13 20_31_47.png" title="2024_05_13 20_31_47.png" alt="2024_05_13 20_31_47.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_13 20_31_47.png" title="2024_05_13 20_31_47.png" alt="2024_05_13 20_31_47.png"/>
 
 ## 跨站请求伪造（CSRF）
 

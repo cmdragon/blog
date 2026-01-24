@@ -4,7 +4,7 @@ title: 小米GetApps商店发现机器学习驱动广告欺诈恶意软件 数�
 date: 2026-01-23T08:53:34+08:00
 lastmod: 2026-01-23T08:53:34+08:00
 author: cmdragon
-cover: /images/generated_image_9eb0b3d7-3e0e-4ab6-bce2-11862f421d47.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_9eb0b3d7-3e0e-4ab6-bce2-11862f421d47.png
 
 summary:
   2026年1月22日，Dr.Web警示小米海外应用商店GetApps发现多款搭载新型Android恶意程序的应用，其借助机器学习（TensorFlow.js）技术实施广告欺诈，伪装成普通游戏，部分通过版本更新植入恶意模块，累计影响数万次下载。该软件通过第三方及社交平台传播，危害设备资源，建议用户自查并谨慎更新，勿从非官方渠道下载APK。
@@ -24,7 +24,7 @@ tags:
 ---
 
 
-<img src="/images/generated_image_9eb0b3d7-3e0e-4ab6-bce2-11862f421d47.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_9eb0b3d7-3e0e-4ab6-bce2-11862f421d47.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 # 小米海外应用商店GetApps遭机器学习驱动恶意软件入侵，数万用户面临广告欺诈威胁
 

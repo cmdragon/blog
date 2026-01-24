@@ -4,7 +4,7 @@ title: CMDragon IPTV 频道探索器：免费在线，畅享全球直播精彩
 date: 2025-07-02T08:37:03+08:00
 lastmod: 2025-07-02T08:37:03+08:00
 author: cmdragon
-cover: /images/xw_20250702190714.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250702190714.png
 
 summary:
   还在为寻找和管理IPTV频道而烦恼吗？CMDragon IPTV频道探索器助你一臂之力！这款免费在线工具，让你轻松发现、测试和管理全球IPTV直播资源，告别繁琐，畅享精彩。

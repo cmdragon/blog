@@ -4,7 +4,7 @@ title: Vue3中Watch与watchEffect的核心差异及适用场景是什么？
 date: 2026-01-23T05:32:24+08:00
 lastmod: 2026-01-23T05:32:24+08:00
 author: cmdragon
-cover: /images/generated_image_b9784feb-965b-4475-8ef1-36486ae71503.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_b9784feb-965b-4475-8ef1-36486ae71503.png
 
 summary:
   Vue3侦听器（watch）用于响应式状态变化时执行副作用，支持单个ref、响应式对象、getter或数组等数据源。深层侦听器（deep:true）监听嵌套变化，即时回调（immediate：true）初始执行，一次性侦听器（once： true）仅触发一次。watchEffect自动追踪依赖并立即执行，需注意副作用清理（onCleanup）及手动停止。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_b9784feb-965b-4475-8ef1-36486ae71503.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_b9784feb-965b-4475-8ef1-36486ae71503.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

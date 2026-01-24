@@ -4,7 +4,7 @@ title: PostgreSQL 查询慢？是不是忘了优化 GROUP BY、ORDER BY 和窗�
 date: 2025-10-12T07:13:23+08:00
 lastmod: 2025-10-12T07:13:23+08:00
 author: cmdragon
-cover: /images/849998198ab34b5d8e5f1e8d6009a78b~tplv-5jbd59dj06-aigc.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/849998198ab34b5d8e5f1e8d6009a78b~tplv-5jbd59dj06-aigc.png
 
 summary:
   GROUP BY用于分组聚合，将相同值的行归为一组并计算聚合函数。PostgreSQL支持功能依赖优化，若`GROUP BY`列为主键或唯一约束，其他依赖列无需加入`GROUP BY`。`GROUPING SETS`、`CUBE`、`ROLLUP`可一次性生成多组聚合，提升效率。`HAVING`用于过滤分组结果，`WHERE`过滤原始行。`ORDER BY`性能依赖索引，Top-N查询可使用Top-N Heapsort优化。窗口函数在`GROUP BY`后执行，`PARTITION BY`和`ORDER BY`的索引可提升性能。`work_mem`控制排序内存，超出则触发外部排序。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/849998198ab34b5d8e5f1e8d6009a78b~tplv-5jbd59dj06-aigc.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/849998198ab34b5d8e5f1e8d6009a78b~tplv-5jbd59dj06-aigc.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

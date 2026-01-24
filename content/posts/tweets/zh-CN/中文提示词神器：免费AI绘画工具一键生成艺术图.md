@@ -4,7 +4,7 @@ title: 中文提示词神器：免费AI绘画工具一键生成艺术图
 date: 2025-06-28T08:37:03+08:00
 lastmod: 2025-07-02T08:37:03+08:00
 author: cmdragon
-cover: /images/xw_20250702201851.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250702201851.png
 
 summary:
   还在为AI绘图工具的语言障碍和付费门槛烦恼？推荐超强本地化免费AI绘画神器！支持中文提示词输入，文生图、图生图、提示词优化、高清放大一应俱全，无需科学上网，打开即用，释放你的创意无限可能！

@@ -4,7 +4,7 @@ title: PostgreSQL索引选B-Tree还是GiST？“瑞士军刀”和“多面手�
 date: 2025-10-08T01:54:08+08:00
 lastmod: 2025-10-08T01:54:08+08:00
 author: cmdragon
-cover: /images/dde6dfba68f34bfa98aa160bcf409d53~tplv-5jbd59dj06-aigc.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/dde6dfba68f34bfa98aa160bcf409d53~tplv-5jbd59dj06-aigc.png
 
 summary:
   索引是PostgreSQL中优化查询性能的核心工具，本质是表数据的“快速查找目录”，减少磁盘IO次数。B-Tree是默认索引类型，适用于等值查询、范围查询和排序，结构为自平衡树，查询时间稳定。GiST是高级索引类型，支持复杂数据类型和查询场景，如空间数据查询和全文搜索。选择索引时需结合查询需求、数据类型和维护成本，B-Tree适合常规查询，GiST适合复杂查询。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/dde6dfba68f34bfa98aa160bcf409d53~tplv-5jbd59dj06-aigc.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/dde6dfba68f34bfa98aa160bcf409d53~tplv-5jbd59dj06-aigc.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

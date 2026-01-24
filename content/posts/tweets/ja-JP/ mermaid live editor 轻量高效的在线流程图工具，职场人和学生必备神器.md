@@ -4,7 +4,7 @@ title: mermaid live editor：軽量で高効率なオンラインフローチャ
 date: 2025-11-23T10:16:32+08:00
 lastmod: 2025-11-23T10:16:32+08:00
 author: cmdragon
-cover: /images/xw_20251123195835.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20251123195835.png
 
 summary:
   mermaid live editorは、インストール不要・文法駆動型・リアルタイムプレビューを特徴とする軽量なオンラインフローチャートツールです。フローチャートや時系列図など全シーンに対応。左側でコード編集、右側でリアルタイムプレビューが可能。文法テンプレートで素早く習得でき、画像やMarkdownへのエクスポートもサポート。ビジネスのプロジェクト管理・学習の知識整理・コード文書の接続に最適です。

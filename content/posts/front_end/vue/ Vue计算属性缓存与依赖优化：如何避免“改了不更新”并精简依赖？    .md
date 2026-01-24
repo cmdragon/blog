@@ -4,7 +4,7 @@ title: Vue计算属性缓存与依赖优化：如何避免“改了不更新”�
 date: 2025-12-05T04:05:21+08:00
 lastmod: 2025-12-05T04:05:21+08:00
 author: cmdragon
-cover: /images/b59204d62b584cefbbffaa5e58c54b52~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/b59204d62b584cefbbffaa5e58c54b52~tplv-5jbd59dj06-image.png
 
 summary:
   计算属性基于响应式依赖缓存，依赖变化才重新计算。缓存失效因：依赖非响应式数据、解构响应式对象丢失响应式、需主动触发未设依赖开关。优化方法：拆分大计算属性为小颗粒，精简依赖（取具体属性、删除无关依赖），通过toRef等保持响应式，避免冗余计算提升性能。
@@ -24,7 +24,7 @@ tags:
 
 ---
 
-<img src="/images/b59204d62b584cefbbffaa5e58c54b52~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/b59204d62b584cefbbffaa5e58c54b52~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

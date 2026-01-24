@@ -4,7 +4,7 @@ title: 想让PostgreSQL查询快到飞起？分区表、物化视图、并行查
 date: 2025-10-23T03:20:31+08:00
 lastmod: 2025-10-23T03:20:31+08:00
 author: cmdragon
-cover: /images/6a97d0f496c04e52b3a94f1423c822a8~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/6a97d0f496c04e52b3a94f1423c822a8~tplv-5jbd59dj06-image.png
 
 summary:
   分区表通过将大表拆分为小表，优化查询性能、数据维护和存储分层。PostgreSQL支持范围、列表和哈希分区。声明式分区步骤包括创建分区表、分区、索引及验证数据路由。分区维护涉及添加、删除和detach分区。分区剪枝自动跳过无关分区，提升查询效率。物化视图通过存储查询结果加速查询，需手动刷新。并行查询利用多CPU加速大表扫描、聚合和连接，但需函数并行安全。常见报错包括无匹配分区、并发刷新需唯一索引及并行查询未生效。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/6a97d0f496c04e52b3a94f1423c822a8~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/6a97d0f496c04e52b3a94f1423c822a8~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

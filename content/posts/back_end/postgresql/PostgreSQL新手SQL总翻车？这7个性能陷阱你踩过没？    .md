@@ -4,7 +4,7 @@ title: PostgreSQL新手SQL总翻车？这7个性能陷阱你踩过没？
 date: 2025-10-09T04:57:43+08:00
 lastmod: 2025-10-09T04:57:43+08:00
 author: cmdragon
-cover: /images/fa4aa5361aef4c398414efdd5231b858~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/fa4aa5361aef4c398414efdd5231b858~tplv-5jbd59dj06-image.png
 
 summary:
   PostgreSQL查询执行流程包括词法分析、语法分析、查询重写、查询规划器和执行器，其中查询规划器根据统计信息选择成本最低的执行计划。常见性能陷阱包括忽略索引导致全表扫描、函数/表达式导致索引失效、隐式类型转换破坏索引、复合索引顺序错误、不必要的`SELECT *`、JOIN操作笛卡尔积与顺序错误，以及CTE的“优化围栏”问题。通过`EXPLAIN ANALYZE`可诊断性能问题，避免这些陷阱可显著提升查询效率。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/fa4aa5361aef4c398414efdd5231b858~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/fa4aa5361aef4c398414efdd5231b858~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

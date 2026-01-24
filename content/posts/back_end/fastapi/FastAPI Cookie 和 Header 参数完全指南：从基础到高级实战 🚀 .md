@@ -21,7 +21,7 @@ tags:
   - 安全性
 ---
 
-<img src="/images/2025_03_09 18_00_28.png" title="2025_03_09 18_00_28.png" alt="2025_03_09 18_00_28.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2025_03_09 18_00_28.png" title="2025_03_09 18_00_28.png" alt="2025_03_09 18_00_28.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

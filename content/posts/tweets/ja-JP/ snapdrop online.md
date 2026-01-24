@@ -4,7 +4,7 @@ title: snapdrop online（点対点（P2P）ファイル転送ツール）
 date: 2025-12-12T20:05:38+08:00
 lastmod: 2025-12-12T20:05:38+08:00
 author: cmdragon
-cover: /images/pyksc_00001_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/pyksc_00001_.png
 
 summary:
   snapdrop onlineは、登録不要・設定不要・インストール不要の点対点（P2P）ファイル転送ツールです。ブラウザで直接アクセスすれば使用可能で、画像、動画、PDF、リンクを瞬時に共有できます。同一ネットワーク上のデバイスであれば自動で認識し、ファイルを選択して受け入れを確認するだけで転送完了。緊急時のファイル転送や集会での共有など、セキュリティと高効率を実現しています。

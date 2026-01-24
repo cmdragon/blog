@@ -4,7 +4,7 @@ title: Rabbit Encrypt：轻量级加密工具，守护你的数据安全
 date: 2025-07-03T08:37:03+08:00
 lastmod: 2025-07-03T08:37:03+08:00
 author: cmdragon
-cover: /images/xw_20250703154459.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250703154459.png
 
 summary:
   Rabbit Encrypt 是基于 Rabbit 流密码算法的在线加密工具，支持文本/文件加密解密。无需安装，零学习成本，通过客户端加密确保数据永不外泄，是隐私保护的终极解决方案。

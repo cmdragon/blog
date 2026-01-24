@@ -4,7 +4,7 @@ title: 如何用Git Hook和CI流水线为FastAPI项目保驾护航？
 date: 2025-09-14T00:12:42+08:00
 lastmod: 2025-09-14T00:12:42+08:00
 author: cmdragon
-cover: /images/e659b7d8b2374c58a2d66ffb0d2fa001~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/e659b7d8b2374c58a2d66ffb0d2fa001~tplv-5jbd59dj06-image.png
 
 summary:
   持续集成（CI）在FastAPI项目中通过频繁合并代码和自动验证，确保代码变更不会破坏接口功能、模型验证或代码风格。Git Hook作为本地代码质量的第一道防线，通过pre-commit钩子在提交前拦截无效代码。GitHub Actions用于构建CI流水线，自动化测试和构建Docker镜像。两者结合，本地快速反馈，全局统一验证，最大化保障代码质量。
@@ -24,7 +24,7 @@ tags:
 ---
 
 
-<img src="/images/e659b7d8b2374c58a2d66ffb0d2fa001~tplv-5jbd59dj06-image.png" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/e659b7d8b2374c58a2d66ffb0d2fa001~tplv-5jbd59dj06-image.png" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

@@ -4,7 +4,7 @@ title: 如何用FastAPI玩转多模块测试与异步任务，让代码不再“
 date: 2025-09-10T06:22:28+08:00
 lastmod: 2025-09-10T06:22:28+08:00
 author: cmdragon
-cover: /images/xw_20250910110109.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250910110109.png
 
 summary:
   FastAPI框架在多模块集成测试中，通过`pytest`的`fixture`创建临时数据库，确保测试数据隔离，并使用`unittest.mock`模拟外部依赖，验证模块间交互。异步任务通过`BackgroundTasks`处理，定时任务则借助`APScheduler`实现，测试时手动触发任务以验证逻辑。常见报错如`422 Validation Error`和`503 ServiceError`，可通过检查请求字段类型和服务连接解决。运行环境需Python 3.10+，依赖库包括`fastapi`、`pytest`等。

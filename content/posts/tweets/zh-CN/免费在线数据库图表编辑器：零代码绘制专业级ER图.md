@@ -4,7 +4,7 @@ title: 免费在线数据库图表编辑器：零代码绘制专业级ER图
 date: 2025-07-02T08:37:03+08:00
 lastmod: 2025-07-02T08:37:03+08:00
 author: cmdragon
-cover: /images/xw_20250702202337.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250702202337.png
 
 summary: 无需安装任何软件，直接在浏览器中创建精美的数据库关系图！支持实体关系建模、SQL导出、团队协作，让数据库设计效率提升200%。
 

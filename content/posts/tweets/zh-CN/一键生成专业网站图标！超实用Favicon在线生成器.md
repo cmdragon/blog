@@ -4,7 +4,7 @@ title: 一键生成专业网站图标！超实用Favicon在线生成器
 date: 2025-06-28T08:37:03+08:00
 lastmod: 2025-07-02T08:37:03+08:00
 author: cmdragon
-cover: /images/xw_20250702200440.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250702200440.png
 
 summary:
   推荐一款完全免费的Favicon在线生成神器，支持多格式导出、实时预览和自适应尺寸生成，无需设计基础3步创建专业级网站图标，提升品牌辨识度！

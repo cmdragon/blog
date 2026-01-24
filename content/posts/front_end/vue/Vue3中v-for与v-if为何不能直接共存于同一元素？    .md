@@ -4,7 +4,7 @@ title: Vue3中v-for与v-if为何不能直接共存于同一元素？
 date: 2025-12-31T11:08:38+08:00
 lastmod: 2025-12-31T11:08:38+08:00
 author: cmdragon
-cover: /images/generated_image_aa46ce2d-2900-409d-b5ff-b0b5c247ebd9.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_aa46ce2d-2900-409d-b5ff-b0b5c247ebd9.png
 
 summary:
   Vue中v-for可遍历数组和对象。数组遍历支持基础用法、索引、对象解构；对象遍历可获取value、key、index，三参数顺序为value、key、index。v-for与v-if共存需放<template>，用key维护列表状态避免“就地更新”。数组mutation方法（push等）可直接检测更新，非mutation方法（filter等）需替换原数组。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_aa46ce2d-2900-409d-b5ff-b0b5c247ebd9.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_aa46ce2d-2900-409d-b5ff-b0b5c247ebd9.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

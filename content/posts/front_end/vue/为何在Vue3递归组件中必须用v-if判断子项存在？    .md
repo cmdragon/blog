@@ -4,7 +4,7 @@ title: 为何在Vue3递归组件中必须用v-if判断子项存在？
 date: 2026-01-03T07:23:57+08:00
 lastmod: 2026-01-03T07:23:57+08:00
 author: cmdragon
-cover: /images/generated_image_2ac6422a-cc98-4a97-9837-207a11cc5e72.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_2ac6422a-cc98-4a97-9837-207a11cc5e72.png
 
 summary:
   Vue3列表渲染核心v-for，语法为item in items，key需唯一稳定；多层嵌套列表用v-for结合v-if判断子项；动态层级数据（如无限嵌套）用递归组件（自我调用）；注意key唯一性、响应式更新及空列表判断，递归需加终止条件避免栈溢出。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_2ac6422a-cc98-4a97-9837-207a11cc5e72.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_2ac6422a-cc98-4a97-9837-207a11cc5e72.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

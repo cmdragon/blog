@@ -4,7 +4,7 @@ title: jsoncrack-JSON 중첩 구조 해소를 위한 시각화 도구로 개발�
 date: 2025-11-24T05:43:29+08:00
 lastmod: 2025-11-24T05:43:29+08:00
 author: cmdragon
-cover: /images/xw_20251125164203.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20251125164203.png
 
 summary:
   jsoncrack은 복잡한 JSON 텍스트 분석 효율성을 개선하는 고도의 시각화 도구입니다. 로컬 파일, 텍스트 복사, 온라인 URL导入 지원으로 탐색 트리와 시각화 캔버스를 통해 데이터를 해석하고, 편집 및 내보내기(이미지, 텍스트, 링크 공유) 기능 제공. 장점 시각화 효율성, 직관적 인터랙션, 다중 시나리오 대응, 실시간 동기화로 데이터 처리 효율 향상.

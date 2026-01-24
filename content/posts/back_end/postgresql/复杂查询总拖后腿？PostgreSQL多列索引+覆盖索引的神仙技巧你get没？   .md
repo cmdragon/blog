@@ -4,7 +4,7 @@ title: 复杂查询总拖后腿？PostgreSQL多列索引+覆盖索引的神仙�
 date: 2025-10-19T06:46:34+08:00
 lastmod: 2025-10-19T06:46:34+08:00
 author: cmdragon
-cover: /images/05592ca3758149de81de3acc5f44d04c~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/05592ca3758149de81de3acc5f44d04c~tplv-5jbd59dj06-image.png
 
 summary:
   多列索引在PostgreSQL中用于优化包含多列条件的查询，支持B-tree、GiST、GIN和BRIN四种索引类型。B-tree索引遵循左前缀原则，适合等值或等值+范围查询；GiST索引首列选择性影响效率，适合空间数据；GIN索引无左前缀限制，适合多值类型查询；BRIN索引适合大表范围查询。覆盖索引通过`INCLUDE`子句包含查询所需列，避免回表，提升查询效率。最佳实践包括优先使用`INCLUDE`、避免冗余列和注意可见性映射。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/05592ca3758149de81de3acc5f44d04c~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/05592ca3758149de81de3acc5f44d04c~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

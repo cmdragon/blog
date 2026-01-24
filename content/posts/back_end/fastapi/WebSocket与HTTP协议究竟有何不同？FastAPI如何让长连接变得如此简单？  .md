@@ -22,7 +22,7 @@ tags:
 
 ---
 
-<img src="/images/7989a41781759816107c155a4591fc73.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/7989a41781759816107c155a4591fc73.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

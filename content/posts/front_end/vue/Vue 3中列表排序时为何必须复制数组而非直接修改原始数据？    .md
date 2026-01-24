@@ -4,7 +4,7 @@ title: Vue 3中列表排序时为何必须复制数组而非直接修改原始�
 date: 2026-01-07T04:00:37+08:00
 lastmod: 2026-01-07T04:00:37+08:00
 author: cmdragon
-cover: /images/generated_image_445d0843-3ca1-4a8b-8e21-864dd5d4c3f4.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_445d0843-3ca1-4a8b-8e21-864dd5d4c3f4.png
 
 summary:
   本文介绍Vue 3列表渲染整合搜索、排序、分页的实现。通过v-model双向绑定搜索词，computed依赖缓存过滤数据；用sortKey和sortOrder管理排序状态，复制数组避免篡改原始数据实现排序；计算当前页数据切片，渲染分页列表，并处理搜索、排序、分页联动。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_445d0843-3ca1-4a8b-8e21-864dd5d4c3f4.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_445d0843-3ca1-4a8b-8e21-864dd5d4c3f4.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

@@ -16,7 +16,7 @@ tags:
   - 浏览器缓存
 ---
 
-<img src="/images/2024_05_20 20_18_55.png" title="2024_05_20 20_18_55.png" alt="2024_05_20 20_18_55.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_20 20_18_55.png" title="2024_05_20 20_18_55.png" alt="2024_05_20 20_18_55.png"/>
 
 
 ## **第一章：Django性能优化概述**

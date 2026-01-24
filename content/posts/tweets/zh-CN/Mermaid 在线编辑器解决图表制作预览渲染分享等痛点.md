@@ -4,7 +4,7 @@ title: Mermaid在线编辑器解决图表制作预览渲染分享等痛点
 date: 2025-10-08T02:21:14+08:00
 lastmod: 2025-10-08T02:21:14+08:00
 author: cmdragon
-cover: /images/b374cd2590ac436fa20ac0bf483d0d29~tplv-5jbd59dj06-aigc.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/b374cd2590ac436fa20ac0bf483d0d29~tplv-5jbd59dj06-aigc.png
 
 summary:
   Mermaid在线编辑器解决了传统Mermaid代码编写中的诸多痛点，提供实时同步预览、多图表类型支持、便捷导出与分享功能。用户可在线编辑流程图、序列图、甘特图等，无需等待加载，代码修改即时生效。支持SVG/PNG导出和协作链接生成，极大提升效率。适用于产品经理、运营、程序员和学生等多种场景，智能代码提示、多主题切换和自动保存功能进一步优化使用体验。

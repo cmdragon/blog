@@ -21,7 +21,7 @@ tags:
   - 用户
 ---
 
-<img src="/images/2024_12_05 14_50_43.png" title="2024_12_05 14_50_43.png" alt="2024_12_05 14_50_43.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_12_05 14_50_43.png" title="2024_12_05 14_50_43.png" alt="2024_12_05 14_50_43.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

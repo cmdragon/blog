@@ -4,7 +4,7 @@ title: 全链路追踪如何让FastAPI微服务架构的每个请求都无所遁
 date: 2025-08-28T23:40:47+08:00
 lastmod: 2025-08-28T23:40:47+08:00
 author: cmdragon
-cover: /images/xw_20250829094505.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250829094505.png
 
 summary:
   全链路追踪是现代微服务架构中监控系统行为的核心技术，通过为每个用户请求分配唯一ID（Trace ID）并记录关键信息。核心概念包括Trace、Span和Context Propagation。FastAPI实现方案采用OpenTelemetry、Jaeger和Prometheus，通过初始化追踪配置、集成FastAPI应用和手动添加自定义Span来实现。实战案例展示了电商订单追踪的场景模拟和问题诊断。最佳实践包括关键数据采集、采样策略配置和跨服务追踪传递。常见报错解决方案涉及TracerProvider未设置、上下文传播失败和Jaeger UI无数据显示等问题。

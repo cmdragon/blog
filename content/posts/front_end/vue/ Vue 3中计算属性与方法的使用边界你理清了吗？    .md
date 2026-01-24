@@ -4,7 +4,7 @@ title: Vue 3中计算属性与方法的使用边界你理清了吗？
 date: 2025-11-18T08:14:30+08:00
 lastmod: 2025-11-18T08:14:30+08:00
 author: cmdragon
-cover: /images/8976c17d2859400ab16220f738da7226~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/8976c17d2859400ab16220f738da7226~tplv-5jbd59dj06-image.png
 
 summary:
   Vue 3中的计算属性和方法在处理逻辑时有显著差异。计算属性基于响应式依赖进行缓存，仅在依赖变化时重新计算，适合处理依赖响应式数据的衍生值，如过滤列表或格式化日期。方法则每次调用都会重新执行，适用于事件处理或异步操作。计算属性在依赖稳定时性能更优，避免重复计算；而方法在频繁调用时可能导致性能问题。选择时应根据是否需要缓存结果来决定使用计算属性还是方法。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/8976c17d2859400ab16220f738da7226~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/8976c17d2859400ab16220f738da7226~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

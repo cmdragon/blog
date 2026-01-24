@@ -4,7 +4,7 @@ title: Vue3计算属性的缓存机制与Options/Composition API用法你都了�
 date: 2025-11-16T07:29:58+08:00
 lastmod: 2025-11-16T07:29:58+08:00
 author: cmdragon
-cover: /images/74057a1e940e4e8cae9a816209b7330c~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/74057a1e940e4e8cae9a816209b7330c~tplv-5jbd59dj06-image.png
 
 summary:
   Vue 3中的计算属性（Computed Property）依赖响应式数据动态计算，具有缓存机制，仅在依赖变化时重新计算。Options API通过`computed`字段定义计算属性，支持函数式和`getter/setter`形式。Composition API使用`computed`函数，适合复杂组件逻辑，支持`getter/setter`。两者核心区别在于语法形式和逻辑组织方式，Composition API更灵活，适合逻辑复用。计算属性常用于生成衍生值，如过滤列表或格式化数据。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/74057a1e940e4e8cae9a816209b7330c~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/74057a1e940e4e8cae9a816209b7330c~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

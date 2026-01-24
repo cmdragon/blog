@@ -4,7 +4,7 @@ title: jsoncrack - Lo strumento visuale per risolvere i problemi delle strutture
 date: 2025-11-24T05:43:29+08:00
 lastmod: 2025-11-24T05:43:29+08:00
 author: cmdragon
-cover: /images/xw_20251125164203.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20251125164203.png
 
 summary:
   jsoncrack è uno strumento visuale per l'analisi efficiente dei JSON, risolvendo il problema dell'analisi lenta di testi JSON complessi. Supporta l'importazione da file locali, testo incollato e URL online, analizzando i dati tramite un albero di navigazione e una tela di visualizzazione interattiva, con funzionalità di modifica, esportazione (immagini, testo, condivisione tramite link). Vantaggi efficienza visiva, interazione intuitiva, adattabilità a molteplici scenari, sincronizzazione in tempo reale, miglioramento dell'efficienza nel trattamento dati.

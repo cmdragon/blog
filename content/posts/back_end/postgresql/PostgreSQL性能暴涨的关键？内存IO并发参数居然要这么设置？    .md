@@ -4,7 +4,7 @@ title: PostgreSQL性能暴涨的关键？内存IO并发参数居然要这么设�
 date: 2025-10-14T00:18:21+08:00
 lastmod: 2025-10-14T00:18:21+08:00
 author: cmdragon
-cover: /images/d56e39d1af3e47e2994b0970d54794c7~tplv-5jbd59dj06-aigc.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/d56e39d1af3e47e2994b0970d54794c7~tplv-5jbd59dj06-aigc.png
 
 summary:
   PostgreSQL性能调优涉及内存、IO和并发参数的合理配置。内存调优中，`shared_buffers`建议设置为系统内存的25%，`work_mem`和`maintenance_work_mem`分别用于查询和维护操作的内存上限。IO调优通过背景写入器和异步IO参数减少磁盘访问延迟。并发调优则通过`max_worker_processes`和`max_parallel_workers_per_gather`提升并行处理能力。合理配置这些参数能显著提升数据库性能，减少磁盘IO和内存竞争。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/d56e39d1af3e47e2994b0970d54794c7~tplv-5jbd59dj06-aigc.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/d56e39d1af3e47e2994b0970d54794c7~tplv-5jbd59dj06-aigc.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

@@ -4,7 +4,7 @@ title: 免费在线图片转ICO神器：一键生成专业网站与应用图标
 date: 2025-06-28T08:37:03+08:00
 lastmod: 2025-07-02T08:37:03+08:00
 author: cmdragon
-cover: /images/xw_20250702202054.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250702202054.png
 
 summary: 无需安装软件！通过浏览器即可将PNG/JPG等图片转换为多尺寸ICO图标，完美适配网站favicon和Windows应用程序，支持透明背景与批量尺寸生成。
 

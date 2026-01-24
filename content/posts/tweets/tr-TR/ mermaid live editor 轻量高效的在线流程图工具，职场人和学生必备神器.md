@@ -4,7 +4,7 @@ title: mermaid live editor Hafif ve Verimli Çevrimiçi Akış Şeması Aracı, 
 date: 2025-11-23T10:16:32+08:00
 lastmod: 2025-11-23T10:16:32+08:00
 author: cmdragon
-cover: /images/xw_20251123195835.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20251123195835.png
 
 summary:
   mermaid live editor, yüklemesiz ve hafif bir çevrimiçi akış şeması aracıdır. Sentaks odaklıdır, gerçek zamanlı öngörü sağlar. Akış şemaları, zaman çizelgeleri gibi tüm senaryoları destekler. Sol tarafta kod düzenleyici, sağ tarafta gerçek zamanlı öngörü gösterilir. Sentaks şablonları ile hızlı başlangıç mümkündür. Resim veya Markdown formatında dışa aktarılabilir. İş dünyasında proje yönetimi, öğrenme sürecinde bilgi düzenlemesi ve kod belgeleri ile uyumlu olarak kullanılır.

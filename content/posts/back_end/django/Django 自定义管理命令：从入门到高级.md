@@ -16,7 +16,7 @@ tags:
   - 自定义管理
 ---
 
-<img src="/images/2024_05_16 18_43_11.png" title="2024_05_16 18_43_11.png" alt="2024_05_16 18_43_11.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_16 18_43_11.png" title="2024_05_16 18_43_11.png" alt="2024_05_16 18_43_11.png"/>
 
 ## **第 1 章 简介**
 

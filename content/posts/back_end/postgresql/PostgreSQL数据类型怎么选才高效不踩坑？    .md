@@ -4,7 +4,7 @@ title: PostgreSQL数据类型怎么选才高效不踩坑？
 date: 2025-09-27T01:23:27+08:00    
 lastmod: 2025-09-27T01:23:27+08:00    
 author:  cmdragon      
-cover: /images/47ac5c3328274a08b6b4c8df8ecb8965~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/47ac5c3328274a08b6b4c8df8ecb8965~tplv-5jbd59dj06-image.png
 
 summary:  
   PostgreSQL 提供丰富的原生数据类型，涵盖数值、字符、日期、几何、网络等多个场景。数值类型包括整数、串行、浮点和精确数值，选择时需权衡范围、精度和存储成本。字符类型有固定长度、可变长度和无长度限制的选项，适用于不同文本存储需求。日期/时间类型支持时区处理，推荐使用`timestamptz`确保跨时区一致性。此外，PostgreSQL 还支持布尔、二进制、几何、网络、JSON 和 UUID 等类型，满足多样化数据存储需求。合理选择数据类型能提升存储效率、避免数据错误并优化查询性能。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/47ac5c3328274a08b6b4c8df8ecb8965~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/47ac5c3328274a08b6b4c8df8ecb8965~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

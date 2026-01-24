@@ -4,7 +4,7 @@ title: Recomendação de PS Online Gratuito Funcionalidades Completa + Tutorial 
 date: 2025-12-08T06:55:19+08:00
 lastmod: 2025-12-08T06:55:19+08:00
 author: cmdragon
-cover: /images/oyemf_00010_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/oyemf_00010_.png
 
 summary:
   Em 2025, as ferramentas de edição de imagem online gratuitas estão em alta. Recomendamos a ferramenta (https://tools.cmdragon.cn/zh/apps/photoshop-online), com funcionalidades abrangentes (edição básica até assistência de IA), totalmente gratuita e sem restrições (não requer registo ou login), interface intuitiva semelhante ao Photoshop clássico, com biblioteca de tutoriais e salvamento automático na nuvem. Ideal para estudantes e criadores, atendendo eficientemente às necessidades diárias de edição e design.

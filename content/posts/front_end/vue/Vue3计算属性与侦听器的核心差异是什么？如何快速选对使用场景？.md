@@ -4,7 +4,7 @@ title: Vue3计算属性与侦听器的核心差异是什么？如何快速选对
 date: 2025-11-19T00:16:25+08:00
 lastmod: 2025-11-19T00:16:25+08:00
 author: cmdragon
-cover: /images/43babac6b1694cb6a249bd46f9e42c7b~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/43babac6b1694cb6a249bd46f9e42c7b~tplv-5jbd59dj06-image.png
 
 summary:
   Vue3中，计算属性（Computed）用于生成衍生值并缓存结果，适合处理字符串拼接、数值计算等场景，依赖变化时自动更新。侦听器（Watch/WatchEffect）用于执行副作用操作，如异步请求、DOM修改等，`watch`精准控制触发时机，`watchEffect`自动追踪依赖并立即执行。两者核心区别在于计算属性生成衍生值且有缓存，侦听器执行副作用且无缓存。选择策略：需要衍生值用计算属性，需要副作用用侦听器。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/43babac6b1694cb6a249bd46f9e42c7b~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/43babac6b1694cb6a249bd46f9e42c7b~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

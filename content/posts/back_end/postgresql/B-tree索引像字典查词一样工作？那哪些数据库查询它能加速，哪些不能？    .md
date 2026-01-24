@@ -4,7 +4,7 @@ title: B-tree索引像字典查词一样工作？那哪些数据库查询它能�
 date: 2025-10-17T08:06:28+08:00
 lastmod: 2025-10-17T08:06:28+08:00
 author: cmdragon
-cover: /images/52b0ab4f3f7c428d9965585393bacd1b~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/52b0ab4f3f7c428d9965585393bacd1b~tplv-5jbd59dj06-image.png
 
 summary:
   B-tree索引是PostgreSQL默认的索引类型，通过分层结构（根节点、分支节点、叶子节点）快速定位数据，时间复杂度为O(log n)。它支持比较操作符（如`=`、`>`）、范围查询（如`BETWEEN`）、空值判断（如`IS NULL`）以及锚定开头的模式匹配（如`LIKE 'foo%'`）。适用场景包括加速“等于”查询（如用户登录）、范围查询（如订单统计）和空值查询（如查找未激活用户）。不适用于结尾模糊匹配（如`LIKE '%phone'`）、非排序类操作（如`!=`）和低基数列（如性别）。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/52b0ab4f3f7c428d9965585393bacd1b~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/52b0ab4f3f7c428d9965585393bacd1b~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

@@ -21,7 +21,7 @@ tags:
   - 企业级Schema设计
 ---
 
-<img src="/images/03_28 14_46_45.png" title="03_28 14_46_45.png" alt="03_28 14_46_45.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/03_28 14_46_45.png" title="03_28 14_46_45.png" alt="03_28 14_46_45.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

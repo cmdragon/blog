@@ -4,7 +4,7 @@ title: PostgreSQL全表扫描慢到崩溃？建索引+改查询+更统计信息�
 date: 2025-10-20T03:15:06+08:00
 lastmod: 2025-10-20T03:15:06+08:00
 author: cmdragon
-cover: /images/85378aa2dd324c30baec694854257732~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/85378aa2dd324c30baec694854257732~tplv-5jbd59dj06-image.png
 
 summary:
   全表扫描在PostgreSQL中会逐行读取表数据，适用于小表，但对大表会导致性能问题。查询规划器通过生成候选计划、计算代价并选择最优执行计划来优化查询。避免全表扫描的核心是为关键列创建索引，如WHERE子句、JOIN条件和排序/分组列。查询语句应避免前缀通配符、列函数和隐式类型转换，使用显式JOIN。统计信息的准确性对规划器决策至关重要，可通过ANALYZE命令手动更新或调整autovacuum参数自动更新。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/85378aa2dd324c30baec694854257732~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/85378aa2dd324c30baec694854257732~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

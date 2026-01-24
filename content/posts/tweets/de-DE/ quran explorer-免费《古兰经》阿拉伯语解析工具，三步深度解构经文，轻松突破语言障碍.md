@@ -4,7 +4,7 @@ title: Quran Explorer – Kostenloses arabisch-grammatische Analysetool für den
 date: 2025-12-03T06:57:49+08:00
 lastmod: 2025-12-03T06:57:49+08:00
 author: cmdragon
-cover: /images/25eec91a215f4ac497b69f3dc7b5a04c~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/25eec91a215f4ac497b69f3dc7b5a04c~tplv-5jbd59dj06-image.png
 
 summary:
   Quran Explorer ist ein kostenloses arabisch-grammatisches Analysetool für den Koran, speziell entwickelt, um die sprachlichen Hürden für Nicht-Muttersprachler beim Lernen der Textstellen zu überwinden. Es bietet tiefgehende Textanalyse (inklusive Vokabeln, Grammatik, Kontext), mehrsprachige Kontraste, Audiounterstützung und Notizfunktion. Nutzer können durch die drei Schritte „Textstelle lokalisieren, Analyse erhalten, Ergebnisse speichern“ kostenlos loslegen und so barrierefreies Lernen ermöglichen.

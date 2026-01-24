@@ -4,7 +4,7 @@ title: 只给表子集建索引？用函数结果建索引？PostgreSQL这俩操
 date: 2025-10-18T02:13:12+08:00
 lastmod: 2025-10-18T02:13:12+08:00
 author: cmdragon
-cover: /images/e211b2119c9d43aaafefee6e23e774c1~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/e211b2119c9d43aaafefee6e23e774c1~tplv-5jbd59dj06-image.png
 
 summary:
   部分索引是建立在表子集上的索引，通过条件表达式定义，仅包含满足条件的行。其优势在于体积小、维护成本低、查询匹配精准。典型应用包括排除常见值、优化高频查询、实现部分唯一约束及修正错误查询计划。表达式索引则基于函数或标量表达式的结果，预存常用计算逻辑，加快查询速度，适用于查询频率远高于更新频率的场景。两者均能显著提升数据库性能，但需注意避免滥用部分索引替代分区表。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/e211b2119c9d43aaafefee6e23e774c1~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/e211b2119c9d43aaafefee6e23e774c1~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

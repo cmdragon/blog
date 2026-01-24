@@ -4,7 +4,7 @@ title: mermaid live editor Ferramenta online leve e eficiente para fluxogramas, 
 date: 2025-11-23T10:16:32+08:00
 lastmod: 2025-11-23T10:16:32+08:00
 author: cmdragon
-cover: /images/xw_20251123195835.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20251123195835.png
 
 summary:
   O mermaid live editor é uma ferramenta online leve para fluxogramas, sem necessidade de instalação, baseada em sintaxe e com visualização em tempo real. Suporta fluxogramas, diagramas de sequência e outros cenários completos. Ao editar código à esquerda e visualizar resultados em tempo real à direita, é possível começar rapidamente com modelos de sintaxe. Permite exportar imagens ou Markdown, sendo ideal para gestão de projetos profissionais, organização de conhecimento acadêmico e integração com documentação de código.

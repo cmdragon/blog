@@ -4,7 +4,7 @@ title: 腾讯DMCA投诉下架微信聊天记录导出工具 技术圈争议用�
 date: 2026-01-22T17:28:54+08:00
 lastmod: 2026-01-22T17:28:54+08:00
 author: cmdragon
-cover: /images/generated_image_0422a8a9-ad1f-4265-a904-16c97e6ce575.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_0422a8a9-ad1f-4265-a904-16c97e6ce575.png
 
 summary:
   腾讯对GitHub多款微信聊天记录导出工具发起DMCA投诉使其下架，指控含绕过技术保护、逆向工程、隐私风险及称“用户访问自身数据为未授权访问”引发争议。GitHub据DMCA快速下架，开发者维权难；用户质疑官方备份功能局限，腾讯过往多次强化生态管控，第三方工具合规化成唯一出路。
@@ -24,7 +24,7 @@ tags:
 ---
 
 
-<img src="/images/generated_image_0422a8a9-ad1f-4265-a904-16c97e6ce575.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_0422a8a9-ad1f-4265-a904-16c97e6ce575.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 # 腾讯通过DMCA投诉下架多款微信聊天记录导出工具 技术圈引发数据访问权争议
 

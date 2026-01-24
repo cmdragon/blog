@@ -4,7 +4,7 @@ title: Vue虚拟滚动如何将列表DOM数量从万级降至十位数？
 date: 2026-01-06T10:23:43+08:00
 lastmod: 2026-01-06T10:23:43+08:00
 author: cmdragon
-cover: /images/generated_image_a14c55ba-4eb4-4659-944f-a2f73c843a70.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_a14c55ba-4eb4-4659-944f-a2f73c843a70.png
 
 summary:
   大规模列表用v-for渲染时，过多DOM节点致页面初始化慢、滚动卡顿等性能问题。优化方案：虚拟滚动（如vue-virtual-scroller的RecycleScroller）通过计算可视区域项数，仅渲染少量DOM（如item-size设50px，10000条数据仅渲染10条）；v-memo缓存模板片段，依赖数组参数控制是否更新，结合v-for减少重复渲染。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_a14c55ba-4eb4-4659-944f-a2f73c843a70.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_a14c55ba-4eb4-4659-944f-a2f73c843a70.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

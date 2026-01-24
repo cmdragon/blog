@@ -4,7 +4,7 @@ title: FastAPI秒杀库存总变负数？Redis分布式锁能帮你守住底线�
 date: 2025-09-17T03:43:34+08:00
 lastmod: 2025-09-17T03:43:34+08:00
 author: cmdragon
-cover: /images/2e41703a0e314d5183094f5ee9ba9cad~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/2e41703a0e314d5183094f5ee9ba9cad~tplv-5jbd59dj06-image.png
 
 summary:
   分布式锁在FastAPI中用于解决多实例并发访问共享资源时的数据一致性问题。其核心原理包括互斥性、安全性、可用性和容错性，常用Redis分布式锁实现。Redlock算法通过多节点投票确保锁的可靠性。FastAPI中通过aioredis实现异步分布式锁，支持锁的获取、释放和续约。测试策略覆盖单实例、多实例并发及锁超时等场景，确保锁的正确性和稳定性。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/2e41703a0e314d5183094f5ee9ba9cad~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2e41703a0e314d5183094f5ee9ba9cad~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

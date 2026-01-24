@@ -4,7 +4,7 @@ title: Vue3中拆分条件分支组件时，v-if与v-show的选择如何影响�
 date: 2025-12-29T05:32:03+08:00
 lastmod: 2025-12-29T05:32:03+08:00
 author: cmdragon
-cover: /images/generated_image_a8423174-52ef-47c8-ac78-15c509f56a44.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_a8423174-52ef-47c8-ac78-15c509f56a44.png
 
 summary:
   Vue3条件渲染核心是`v-if`系列指令，`v-if`真实销毁/创建组件，`v-show`仅切换CSS控制显示/隐藏；复杂分支需拆分组件，父组件控制条件渲染，子组件（如`UserProfile`和`GuestLogin`）处理具体内容，通过`props`传数据、`emit`发事件通信，提升可读性与复用性。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_a8423174-52ef-47c8-ac78-15c509f56a44.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_a8423174-52ef-47c8-ac78-15c509f56a44.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

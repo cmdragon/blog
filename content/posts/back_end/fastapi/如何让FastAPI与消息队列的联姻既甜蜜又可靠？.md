@@ -4,7 +4,7 @@ title: 如何让FastAPI与消息队列的联姻既甜蜜又可靠？
 date: 2025-08-23T05:07:15+08:00
 lastmod: 2025-08-23T05:07:15+08:00
 author: cmdragon
-cover: /images/xw_20250823094119.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250823094119.png
 
 summary:
   消息队列与FastAPI集成在分布式系统中用于解耦服务，通过异步特性支持消息事务和幂等性保障。消息事务确保数据库操作与消息发送的原子性，避免数据不一致。幂等性设计通过唯一ID和Redis校验防止消息重复处理。关键解决方案包括事务型消息、幂等令牌和全局唯一ID。常见报错如422和503，可通过校验模型、重试机制和连接池解决。依赖库包括FastAPI、SQLAlchemy、Redis和Pika。

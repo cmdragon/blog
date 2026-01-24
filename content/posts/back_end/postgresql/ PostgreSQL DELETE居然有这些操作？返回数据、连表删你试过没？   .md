@@ -4,7 +4,7 @@ title: PostgreSQL DELETE居然有这些操作？返回数据、连表删你试�
 date: 2025-09-24T01:49:02+08:00
 lastmod: 2025-09-24T01:49:02+08:00
 author: cmdragon
-cover: /images/061dcd35000f49bd90b456f49a2ca121~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/061dcd35000f49bd90b456f49a2ca121~tplv-5jbd59dj06-image.png
 
 summary:
   PostgreSQL的`DELETE`语句用于从表中删除满足条件的行，核心逻辑通过`WHERE`条件筛选。若无`WHERE`，将删除所有行。`USING`子句可连接其他表进行关联删除，`RETURNING`子句可返回被删除的行。`WHERE CURRENT OF`用于删除游标当前指向的行。批量删除可通过`WITH`子查询模拟`LIMIT`。清空表时，`TRUNCATE`比`DELETE`更快，但不触发触发器。常见报错包括权限不足、语法错误等，需根据具体原因解决。
@@ -24,7 +24,7 @@ tags:
 
 ---
 
-<img src="/images/061dcd35000f49bd90b456f49a2ca121~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/061dcd35000f49bd90b456f49a2ca121~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

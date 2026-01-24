@@ -4,7 +4,7 @@ title: snapdrop online
 date: 2025-12-12T20:05:38+08:00
 lastmod: 2025-12-12T20:05:38+08:00
 author: cmdragon
-cover: /images/pyksc_00001_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/pyksc_00001_.png
 
 summary:
   Snapdrop online是开源點對點傳輸工具，無需註冊、設定或安裝，瀏覽器直接訪問即可使用，支援即時共享圖片、影片、PDF及連結。設備同網自動辨識，選擇內容並確認接收即可完成傳輸，適用於緊急文件傳輸、聚會分享等場景，安全高效。

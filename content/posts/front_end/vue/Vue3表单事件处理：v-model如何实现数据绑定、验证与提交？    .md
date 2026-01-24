@@ -4,7 +4,7 @@ title: Vue3表单事件处理：v-model如何实现数据绑定、验证与提�
 date: 2026-01-13T20:14:03+08:00
 lastmod: 2026-01-13T20:14:03+08:00
 author: cmdragon
-cover: /images/generated_image_d6672da0-3b9c-4e21-a367-0e63938c5f64.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_d6672da0-3b9c-4e21-a367-0e63938c5f64.png
 
 summary:
   Vue3表单事件处理中，v-model实现输入框双向绑定，配合.lazy延迟更新、.number转为数字、.trim去除空格修饰符定制行为。表单提交用@submit.prevent阻止默认刷新，结合验证逻辑确保数据合法。单选框绑定单个值，复选框组绑定数组、单个绑定布尔值，支持change事件监听。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_d6672da0-3b9c-4e21-a367-0e63938c5f64.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_d6672da0-3b9c-4e21-a367-0e63938c5f64.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

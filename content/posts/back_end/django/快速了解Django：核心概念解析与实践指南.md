@@ -16,7 +16,7 @@ tags:
   - 登录装饰器
 ---
 
-<img src="/images/2024_05_01 20_39_00.png" title="2024_05_01 20_39_00.png" alt="2024_05_01 20_39_00.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_01 20_39_00.png" title="2024_05_01 20_39_00.png" alt="2024_05_01 20_39_00.png"/>
 
 ## 第一章：**Django简介**
 

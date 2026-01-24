@@ -4,7 +4,7 @@ title: Vue条件渲染中v-if与v-show如何抉择？重复渲染问题又该如
 date: 2025-12-25T08:55:18+08:00
 lastmod: 2025-12-25T08:55:18+08:00
 author: cmdragon
-cover: /images/generated_image_cfd2b6cf-50b8-42fc-810f-3725ef5d8985.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_cfd2b6cf-50b8-42fc-810f-3725ef5d8985.png
 
 summary:
   Vue条件渲染中，v-if与v-show核心区别在DOM销毁（v-if销毁，v-show仅切换display）。重复渲染因条件表达式复杂、子组件无必要更新、节点复用状态残留。优化：用key贴标识，按切换频率选指令，复杂条件抽计算属性，Teleport隔离组件，KeepAlive缓存组件，拆分响应式依赖。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_cfd2b6cf-50b8-42fc-810f-3725ef5d8985.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_cfd2b6cf-50b8-42fc-810f-3725ef5d8985.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

@@ -4,7 +4,7 @@ title: Vue3列表渲染中，如何用数组方法与计算属性优化v-for的�
 date: 2026-01-02T03:27:34+08:00
 lastmod: 2026-01-02T03:27:34+08:00
 author: cmdragon
-cover: /images/generated_image_e11bf1eb-2a98-424a-b696-fffd8f7d206f.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_e11bf1eb-2a98-424a-b696-fffd8f7d206f.png
 
 summary:
   Vue3列表渲染核心是`v-for`指令，需指定唯一`key`并使用响应式数组。结合计算属性（computed）与数组方法（filter、map等）可高效处理数据过滤/转换，避免模板逻辑复杂和性能问题。需注意数组操作导致的视图更新及key的正确使用，确保列表渲染稳定。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_e11bf1eb-2a98-424a-b696-fffd8f7d206f.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_e11bf1eb-2a98-424a-b696-fffd8f7d206f.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

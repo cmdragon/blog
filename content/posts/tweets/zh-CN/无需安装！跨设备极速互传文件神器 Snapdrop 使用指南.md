@@ -4,7 +4,7 @@ title: 无需安装！跨设备极速互传文件神器 Snapdrop 使用指南
 date: 2025-07-05T08:37:03+08:00
 lastmod: 2025-07-05T08:37:03+08:00
 author: cmdragon
-cover: /images/xw_20250705201528.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250705201528.png
 
 summary:
   揭秘 Snapdrop 这款无注册免安装的跨平台文件传输神器，通过 WebRTC 技术实现设备间秒级互传，支持 Windows/Mac/Android/iOS

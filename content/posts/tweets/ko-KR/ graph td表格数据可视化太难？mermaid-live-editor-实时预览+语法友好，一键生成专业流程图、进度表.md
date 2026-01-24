@@ -4,7 +4,7 @@ title: 표 데이터 시각화가 어렵나요? mermaid-live-editor로 실시간
 date: 2025-12-06T10:55:55+08:00
 lastmod: 2025-12-06T10:55:55+08:00
 author: cmdragon
-cover: /images/xjpvh_00004_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xjpvh_00004_.png
 
 summary:
   기존 표 데이터를 차트로 변환할 때 수동 조작 복잡성, 형식 호환성 저하, 실시간 반영 불가 등의 한계가 있습니다. mermaid-live-editor는 graph td 문법을 지원하여 실시간으로 프로세스 차트를 생성하고 미리 볼 수 있으며, 드래그로 스타일 조정 및 PNG/SVG 등 다양한 형식으로 내보내기 가능합니다. 프로젝트 관리, 기술 문서 등 다양한 분야에 적합합니다.

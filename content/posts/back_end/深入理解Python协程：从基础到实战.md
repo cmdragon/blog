@@ -16,9 +16,9 @@ tags:
   - 网络爬虫
 ---
 
-<img src="/images/2024_04_27 17_03_18.png" title="2024_04_27 17_03_18.png" alt="2024_04_27 17_03_18.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_04_27 17_03_18.png" title="2024_04_27 17_03_18.png" alt="2024_04_27 17_03_18.png"/>
 
-<img src="/images/2024_04_27 17_05_32.png" title="2024_04_27 17_05_32.png" alt="2024_04_27 17_05_32.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_04_27 17_05_32.png" title="2024_04_27 17_05_32.png" alt="2024_04_27 17_05_32.png"/>
 
 ## **第1章：协程基础**
 

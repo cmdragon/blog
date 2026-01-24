@@ -4,7 +4,7 @@ title: jsoncrack – Baigti JSON įterpimo sudėtingumą, vizualusis analizės �
 date: 2025-11-24T05:43:29+08:00
 lastmod: 2025-11-24T05:43:29+08:00
 author: cmdragon
-cover: /images/xw_20251125164203.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20251125164203.png
 
 summary:
   jsoncrack yra efektyvus JSON analizės vizualizavimo įrankis, išspręsdamas sunkiai suprantamų JSON tekstų analizės efektyvumo problemą. Palaiko vietinius failus, tekstą įklijuoti, bei internetinį URL importą. Per navigacijos medį ir vizualųjį lentės vaizdą analizuoja duomenis, leidžia redaguoti, eksportuoti (vaizdus, tekstą, nuorodų bendrinimą). Privalumai vizualus efektyvumas, intuityvus sąveika, daugiaskaiti scenarijai, realus sinchronizavimas, padidinant duomenų apdorojimo greitį.

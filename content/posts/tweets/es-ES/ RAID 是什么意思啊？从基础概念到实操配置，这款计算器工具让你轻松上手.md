@@ -4,7 +4,7 @@ title: ¿Qué significa RAID? De los conceptos básicos a la configuración prá
 date: 2025-12-09T03:50:29+08:00
 lastmod: 2025-12-09T03:50:29+08:00
 author: cmdragon
-cover: /images/ukcgc_00003_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/ukcgc_00003_.png
 
 summary:
   RAID (matriz de discos) combina múltiples discos para garantizar seguridad de datos, ampliar capacidad o mejorar rendimiento. Los diferentes niveles producen resultados muy distintos. Los principiantes deben definir sus necesidades, calcular capacidad y rendimiento, y seleccionar el software adecuado. Se recomienda una calculadora de almacenamiento RAID introduce parámetros para generar informes de configuración, ayudando a los principiantes a dominar rápidamente la selección de capacidad y nivel, evitando errores en la configuración.

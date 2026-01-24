@@ -4,7 +4,7 @@ title: Vue3中如何在调用事件处理函数时同时传递自定义参数和
 date: 2026-01-11T07:35:26+08:00
 lastmod: 2026-01-11T07:35:26+08:00
 author: cmdragon
-cover: /images/generated_image_4c9ae29f-bb0b-4006-9f87-38c7464c464e.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_4c9ae29f-bb0b-4006-9f87-38c7464c464e.png
 
 summary:
   Vue3中事件处理函数传参，多用内联调用（如@click="say('参数')"）传递自定义参数。需原生事件时用$event或箭头函数（如@click="warn('消息', $event)"或(e)=>warn('消息',e)），参数顺序需自定义在前、事件在后。可通过解构简化事件对象操作。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_4c9ae29f-bb0b-4006-9f87-38c7464c464e.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_4c9ae29f-bb0b-4006-9f87-38c7464c464e.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

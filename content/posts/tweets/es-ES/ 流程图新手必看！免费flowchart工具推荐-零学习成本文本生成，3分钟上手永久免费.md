@@ -4,7 +4,7 @@ title: ¡Principiantes, ¡esto es para ti! Herramienta gratuita para diagramas d
 date: 2025-11-30T15:08:04+08:00
 lastmod: 2025-11-30T15:08:04+08:00
 author: cmdragon
-cover: /images/rzuvj_00005_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/rzuvj_00005_.png
 
 summary:
   Los principiantes suelen enfrentar problemas con herramientas complejas o de pago al crear diagramas de flujo. Se recomienda una herramienta gratuita para diagramas de flujo basada en la sintaxis Mermaid. Con descripciones de texto, genera gráficos sin necesidad de registro, ¡de forma permanente gratuita! Ideal para planificación diaria, colaboración en proyectos y otros escenarios, ayudando a principiantes a estructurar flujos sin barreras.

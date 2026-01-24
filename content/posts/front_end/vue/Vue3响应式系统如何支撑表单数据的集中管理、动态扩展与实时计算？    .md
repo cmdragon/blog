@@ -4,7 +4,7 @@ title: Vue3响应式系统如何支撑表单数据的集中管理、动态扩展
 date: 2026-01-19T05:10:51+08:00
 lastmod: 2026-01-19T05:10:51+08:00
 author: cmdragon
-cover: /images/generated_image_440950dc-3626-44da-996d-7e532e036a06.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_440950dc-3626-44da-996d-7e532e036a06.png
 
 summary:
   Vue3表单处理技巧包括：①集中管理用reactive定义响应式表单对象，对比ref适用场景；②动态表单用响应式数组存储项，通过v-for渲染，结合数组方法实现增删；③即时计算用computed追踪依赖，如购物车总价实时更新，需用v-model.number确保数字计算正确。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_440950dc-3626-44da-996d-7e532e036a06.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_440950dc-3626-44da-996d-7e532e036a06.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

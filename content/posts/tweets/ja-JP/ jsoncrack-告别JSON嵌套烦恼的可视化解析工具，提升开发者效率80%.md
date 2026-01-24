@@ -4,7 +4,7 @@ title: jsoncrack—JSONのネスト構造を可視化し、開発効率を80％�
 date: 2025-11-24T05:43:29+08:00
 lastmod: 2025-11-24T05:43:29+08:00
 author: cmdragon
-cover: /images/xw_20251125164203.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20251125164203.png
 
 summary:
   jsoncrackは効率的なJSON解析可視化ツールで、複雑なJSONテキストの分析効率を改善します。ローカルファイル、テキスト貼り付け、オンラインURLのインポートをサポートし、ナビゲーションツリーと可視化キャンバスでデータを解析。編集・エクスポート（画像・テキスト・リンク共有）が可能。特徴：可視化による効率化、直感的な操作性、多様なシーン対応、リアルタイム同期でデータ処理効率を向上。

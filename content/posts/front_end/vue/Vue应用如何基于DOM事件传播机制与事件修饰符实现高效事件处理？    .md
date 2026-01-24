@@ -4,7 +4,7 @@ title: Vue应用如何基于DOM事件传播机制与事件修饰符实现高效�
 date: 2026-01-13T03:47:58+08:00
 lastmod: 2026-01-13T03:47:58+08:00
 author: cmdragon
-cover: /images/generated_image_9ab7a0bf-e952-4dc9-a097-717bce023d2c.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_9ab7a0bf-e952-4dc9-a097-717bce023d2c.png
 
 summary:
   DOM事件传播分捕获、目标、冒泡三阶段，Vue默认在冒泡阶段处理事件。利用冒泡机制实现事件委托优化性能，将监听器绑在父元素。事件修饰符（如.stop、.prevent等）可简化处理，支持叠加使用，文中还涉及常见修饰符组合场景及报错处理方法。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_9ab7a0bf-e952-4dc9-a097-717bce023d2c.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_9ab7a0bf-e952-4dc9-a097-717bce023d2c.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

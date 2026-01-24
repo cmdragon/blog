@@ -4,7 +4,7 @@ title: RAID 是什么意思啊？从基础概念到实操配置，这款计算�
 date: 2025-12-09T03:50:29+08:00
 lastmod: 2025-12-09T03:50:29+08:00
 author: cmdragon
-cover: /images/ukcgc_00003_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/ukcgc_00003_.png
 
 summary:
   RAID（磁盘阵列）通过多硬盘组合实现数据安全、容量扩展或性能提升，不同级别效果差异大。新手配置需明确需求、计算容量性能、选对软件。推荐RAID存储计算器，输入参数生成配置报告，助新手快速掌握容量与级别选择，避免配置错误。

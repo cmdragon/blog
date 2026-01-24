@@ -4,7 +4,7 @@ title: Vue3中v-if与v-for直接混用为何会报错？计算属性如何解决
 date: 2026-01-04T04:05:15+08:00
 lastmod: 2026-01-04T04:05:15+08:00
 author: cmdragon
-cover: /images/generated_image_97a4fb2b-afa1-4b86-a768-923f70656b6f.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_97a4fb2b-afa1-4b86-a768-923f70656b6f.png
 
 summary:
   Vue3中v-if与v-for同元素时v-if优先级更高，导致v-if无法访问v-for循环变量，引发错误。最佳实践是用计算属性先过滤数据，再通过v-for循环渲染过滤结果，计算属性可缓存结果、优化性能并使逻辑更清晰。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_97a4fb2b-afa1-4b86-a768-923f70656b6f.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_97a4fb2b-afa1-4b86-a768-923f70656b6f.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

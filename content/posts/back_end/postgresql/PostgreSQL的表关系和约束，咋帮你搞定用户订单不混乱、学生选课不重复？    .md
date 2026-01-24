@@ -4,7 +4,7 @@ title: PostgreSQL的表关系和约束，咋帮你搞定用户订单不混乱、
 date: 2025-09-29T05:53:53+08:00
 lastmod: 2025-09-29T05:53:53+08:00
 author: cmdragon
-cover: /images/52b713decd504b21b534db5ffa7c4560~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/52b713decd504b21b534db5ffa7c4560~tplv-5jbd59dj06-image.png
 
 summary:
   在数据库设计中，表关系是连接不同表的关键，旨在避免数据冗余和保证数据一致性。PostgreSQL支持三种表关系：一对一、一对多和多对多。一对一关系通过外键同时作为主键实现；一对多关系通过从表的外键指向主表的主键实现；多对多关系通过中间表包含两个外键实现。此外，约束（如主键、外键、唯一、非空和检查约束）确保数据的完整性和一致性。外键的`ON DELETE CASCADE`和`ON DELETE RESTRICT`分别用于自动删除关联行或阻止主表行删除。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/52b713decd504b21b534db5ffa7c4560~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/52b713decd504b21b534db5ffa7c4560~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

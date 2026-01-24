@@ -21,7 +21,7 @@ tags:
   - 编程实践
 ---
 
-<img src="/images/2025_01_05 14_25_11.png" title="2025_01_05 14_25_11.png" alt="2025_01_05 14_25_11.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2025_01_05 14_25_11.png" title="2025_01_05 14_25_11.png" alt="2025_01_05 14_25_11.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

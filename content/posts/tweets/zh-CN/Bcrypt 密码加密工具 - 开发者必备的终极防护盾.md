@@ -4,7 +4,7 @@ title: Bcrypt密码加密工具 - 开发者必备的终极防护盾
 date: 2025-07-22T08:37:03+08:00
 lastmod: 2025-07-22T08:37:03+08:00
 author: cmdragon
-cover: /images/xw_20250722211328.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250722211328.png
 summary: 揭秘专业级密码加密工具！自适应成本因子+盐值防护，彻底阻断暴力破解攻击。立即体验工业级安全防护！
 categories:
   - tweets

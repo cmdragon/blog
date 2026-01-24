@@ -4,7 +4,7 @@ title: PostgreSQL 17安装总翻车？Windows/macOS/Linux避坑指南帮你搞�
 date: 2025-09-21T06:42:48+08:00
 lastmod: 2025-09-21T06:42:48+08:00
 author: cmdragon
-cover: /images/4e6b913334804b5c9214d179eac5b015~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/4e6b913334804b5c9214d179eac5b015~tplv-5jbd59dj06-image.png
 
 summary:
   PostgreSQL 17安装前需确认系统满足硬件、软件和权限要求，建议选择稳定版。Windows系统通过官方安装包安装，macOS推荐使用Homebrew，Linux系统通过包管理器安装。安装后需配置环境变量和服务管理，确保`psql`等命令全局可用。验证安装时，可通过创建测试数据库和表来确认数据库正常运行。常见报错包括角色不存在、连接被拒绝和密码认证失败，需根据具体原因进行修复。
@@ -24,7 +24,7 @@ tags:
 
 ---
 
-<img src="/images/4e6b913334804b5c9214d179eac5b015~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/4e6b913334804b5c9214d179eac5b015~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

@@ -4,7 +4,7 @@ title: 为什么TDD能让你的FastAPI开发飞起来？
 date: 2025-09-12T01:47:01+08:00
 lastmod: 2025-09-12T01:47:01+08:00
 author: cmdragon
-cover: /images/4b9f354d7e634f868f6e429b139ba441~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/4b9f354d7e634f868f6e429b139ba441~tplv-5jbd59dj06-image.png
 
 summary:
   TDD（测试驱动开发）是一种先写测试再写代码的开发模式，遵循“红-绿-重构”循环。在FastAPI中使用TDD有助于接口契约优先、防止回归错误、加速开发和生成文档。通过创建测试环境、编写测试文件和实现业务代码，可以逐步验证功能。例如，用户注册接口需验证邮箱格式、密码强度和重复邮箱，返回201状态码及用户ID。TDD流程包括编写失败测试、实现通过代码、测试变绿和重构优化，最终通过pytest运行测试验证功能。

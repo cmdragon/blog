@@ -4,7 +4,7 @@ title: O que significa RAID? Da concepção básica à configuração prática, 
 date: 2025-12-09T03:50:29+08:00
 lastmod: 2025-12-09T03:50:29+08:00
 author: cmdragon
-cover: /images/ukcgc_00003_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/ukcgc_00003_.png
 
 summary:
   RAID (Array de Discos Independentes) combina múltiplos discos para garantir segurança de dados, expandir capacidade ou melhorar desempenho. Diferentes níveis apresentam resultados distintos. Novatos devem definir necessidades, calcular capacidade/desempenho e escolher software adequado. Recomendamos a calculadora de armazenamento RAID, que gera relatórios de configuração ao inserir parâmetros, ajudando iniciantes a dominar rapidamente a escolha de nível e capacidade, evitando erros de configuração.

@@ -4,7 +4,7 @@ title: Mermaid Live Editor Strumento online leggero ed efficiente per diagrammi,
 date: 2025-11-23T10:16:32+08:00
 lastmod: 2025-11-23T10:16:32+08:00
 author: cmdragon
-cover: /images/xw_20251123195835.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20251123195835.png
 
 summary:
   Mermaid Live Editor è uno strumento online leggero per diagrammi, senza bisogno di installazione, basato su sintassi testuale con anteprima in tempo reale. Supporta tutti i tipi di diagrammi flussi, sequenze, Gantt, stati e mappe mentali. Nella sua interfaccia, a sinistra si scrive il codice, a destra si visualizza l'anteprima in tempo reale. Grazie ai modelli di sintassi, è possibile iniziare rapidamente. Supporta l'esportazione in immagini o Markdown, ideale per la gestione progetti aziendali, la strutturazione delle conoscenze studiastiche e l'integrazione con documentazione tecnica.

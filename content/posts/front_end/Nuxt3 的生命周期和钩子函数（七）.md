@@ -21,7 +21,7 @@ tags:
   - 错误处理
 ---
 
-<img src="/images/2024_07_01 19_16_34.png" title="2024_07_01 19_16_34.png" alt="2024_07_01 19_16_34.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_07_01 19_16_34.png" title="2024_07_01 19_16_34.png" alt="2024_07_01 19_16_34.png"/>
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 扫码关注或者微信搜一搜：`编程智域 前端至全栈交流与成长`

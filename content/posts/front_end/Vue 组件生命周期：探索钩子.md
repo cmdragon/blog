@@ -17,7 +17,7 @@ tags:
 ---
 
 
-<img src="/images/2024_05_27 18_48_19.png" title="2024_05_27 18_48_19.png" alt="2024_05_27 18_48_19.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_27 18_48_19.png" title="2024_05_27 18_48_19.png" alt="2024_05_27 18_48_19.png"/>
 
 
 ## 第 1 章：介绍与背景

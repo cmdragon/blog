@@ -4,7 +4,7 @@ title: توصية بأداة PS مجانية عبر الإنترنت وظائف 
 date: 2025-12-08T06:55:19+08:00
 lastmod: 2025-12-08T06:55:19+08:00
 author: cmdragon
-cover: /images/oyemf_00010_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/oyemf_00010_.png
 
 summary:
   توصية بأداة PS مجانية عبر الإنترنت وظائف شاملة + دليل تعليمي، ابدأ في 3 دقائق

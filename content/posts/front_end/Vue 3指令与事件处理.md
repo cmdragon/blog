@@ -16,7 +16,7 @@ tags:
   - 性能优化
 ---
 
-<img src="/images/2024_05_25 19_04_01.png" title="2024_05_25 19_04_01.png" alt="2024_05_25 19_04_01.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_25 19_04_01.png" title="2024_05_25 19_04_01.png" alt="2024_05_25 19_04_01.png"/>
 
 ## **第1章 Vue 3基础**
 

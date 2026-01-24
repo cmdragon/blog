@@ -4,7 +4,7 @@ title: Vue3的v-model如何实现表单双向绑定？
 date: 2026-01-17T04:38:41+08:00
 lastmod: 2026-01-17T04:38:41+08:00
 author: cmdragon
-cover: /images/generated_image_bb5e18c9-6c44-4f06-9d1d-5d6a71d73512.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_bb5e18c9-6c44-4f06-9d1d-5d6a71d73512.png
 
 summary:
   Vue3表单输入绑定通过v-model实现“数据-视图”双向同步，v-model是“value绑定+input事件”的语法糖，支持文本输入框、textarea、复选框、单选按钮、下拉框等表单元素。依赖Vue响应式系统（ref/reactive），数据变化自动更新视图，可便捷管理完整表单（如注册表单）的字段同步。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_bb5e18c9-6c44-4f06-9d1d-5d6a71d73512.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_bb5e18c9-6c44-4f06-9d1d-5d6a71d73512.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

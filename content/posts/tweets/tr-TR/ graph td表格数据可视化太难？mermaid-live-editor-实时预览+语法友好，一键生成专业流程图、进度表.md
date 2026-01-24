@@ -4,7 +4,7 @@ title: graph td tablo verilerini görselleştirmek çok zor mu? mermaid-live-edi
 date: 2025-12-06T10:55:55+08:00
 lastmod: 2025-12-06T10:55:55+08:00
 author: cmdragon
-cover: /images/xjpvh_00004_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xjpvh_00004_.png
 
 summary:
   Geleneksel tablo verilerini grafiklere dönüştürme, el ile işlemler, format uyumluluğu düşük ve gerçek zamanlılık eksikliği gibi sınırlamalara sahiptir. mermaid-live-editor, graph td sentaksını destekler ve akış şemasını gerçek zamanlı olarak oluşturup önizleyebilir, sürükleyip bırakarak stilleri ayarlayabilir ve PNG/SVG gibi çoklu formatlarda dışa aktarım yapabilir. Bu, proje yönetimi ve teknik belgeler gibi senaryolarda idealdir.

@@ -4,7 +4,7 @@ title: 如何在FastAPI中玩转“时光倒流”的数据库事务回滚测试
 date: 2025-09-09T04:07:19+08:00
 lastmod: 2025-09-09T04:07:19+08:00
 author: cmdragon
-cover: /images/uJAPxolpA-Xw7k2fVKqr2.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/uJAPxolpA-Xw7k2fVKqr2.png
 
 summary:
   在 FastAPI 项目中，集成测试通过事务回滚机制确保测试环境的干净性。使用 `pytest`、`SQLAlchemy` 和 `FastAPI TestClient` 组合，实现数据库事务的嵌套控制，测试中的所有数据库操作在用例结束时自动回滚。通过 `begin_nested()` 创建保存点，确保每个测试用例在独立的事务中执行，避免数据污染。测试案例模拟用户注册和资料修改，验证数据库写入和接口请求的正确性。常见问题如 `IntegrityError` 和连接未释放，通过检查事务回滚机制和显式关闭连接解决。

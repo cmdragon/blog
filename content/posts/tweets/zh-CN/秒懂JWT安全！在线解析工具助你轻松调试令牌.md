@@ -4,7 +4,7 @@ title: 秒懂JWT安全！在线解析工具助你轻松调试令牌
 date: 2025-07-22T08:37:03+08:00
 lastmod: 2025-07-22T08:37:03+08:00
 author: cmdragon
-cover: /images/xw_20250722212051.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250722212051.png
 
 summary: 开发者必备！无需代码的JWT在线解析神器，实时解码令牌结构、验证签名有效性、检测过期时间，让API调试与安全审计效率翻倍
 

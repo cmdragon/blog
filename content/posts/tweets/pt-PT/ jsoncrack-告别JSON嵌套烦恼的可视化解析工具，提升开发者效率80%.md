@@ -4,7 +4,7 @@ title: jsoncrack – Diga adeus aos problemas de aninhamento JSON com uma ferram
 date: 2025-11-24T05:43:29+08:00  
 lastmod: 2025-11-24T05:43:29+08:00  
 author: cmdragon  
-cover: /images/xw_20251125164203.png  
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20251125164203.png  
 
 summary:  
     O jsoncrack é uma eficiente ferramenta de visualização de análise JSON, resolvendo a baixa eficiência na análise de textos JSON complexos. Suporta importação de ficheiros locais, colagem de texto e URL online. Através de uma árvore de navegação e um quadro de visualização, analisa dados de forma editável, exportável (imagem, texto, partilha de link). Vantagens visualização eficiente, interação intuitiva, adaptação a múltiplos cenários, sincronização em tempo real, melhorando a eficiência no processamento de dados.  

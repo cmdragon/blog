@@ -4,7 +4,7 @@ title: GFW核心供应商及中科院MESA实验室超600GB资料泄漏 审查技
 date: 2025-09-18T01:08:16+08:00
 lastmod: 2025-09-18T01:08:16+08:00
 author: cmdragon
-cover: /images/ba1c9c34af22496f9f007dfdee6f2065~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/ba1c9c34af22496f9f007dfdee6f2065~tplv-5jbd59dj06-image.png
 
 summary:
   中国“防火长城”（GFW）核心供应商积至（海南）信息技术有限公司及中科院信息工程研究所MESA实验室的超600GB内部资料泄漏，首次彻底曝光了GFW的底层架构与全球输出网络。泄漏内容包括核心技术文档、源代码、商业合同及海外客户通信记录，揭示了GFW不仅具备深度流量检测与内容篡改能力，还通过“天狗安全网关”和“哪吒”系统实现用户追踪与主动攻击。此外，积至已为缅甸、巴基斯坦等至少5国搭建本地化审查系统，并将技术输出与科研机构深度绑定，形成“科研-商业-政府”闭环。此次事件暴露了GFW的全球影响与供应链安全风险。

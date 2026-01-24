@@ -4,7 +4,7 @@ title: 发现二次元美学宝藏 - Waifu Gallery在线动漫角色画廊
 date: 2025-06-30T08:37:03+08:00
 lastmod: 2025-07-02T08:37:03+08:00
 author: cmdragon
-cover: /images/anime-image-20250702-202649.jpg
+cover: https://api2.cmdragon.cn/upload/cmder/images/anime-image-20250702-202649.jpg
 
 summary:
   Waifu Gallery是CMDragon工具集旗下的动漫角色画廊应用，提供海量高质量动漫角色图片浏览、收藏与分享功能，支持多种筛选方式和分辨率下载，是二次元爱好者的视觉盛宴。

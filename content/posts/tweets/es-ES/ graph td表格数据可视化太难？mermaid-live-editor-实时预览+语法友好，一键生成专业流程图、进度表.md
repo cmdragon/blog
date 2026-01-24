@@ -4,7 +4,7 @@ title: ¿Visualizar datos de tablas en gráficos es demasiado complicado? mermai
 date: 2025-12-06T10:55:55+08:00
 lastmod: 2025-12-06T10:55:55+08:00
 author: cmdragon
-cover: /images/xjpvh_00004_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xjpvh_00004_.png
 
 summary:
   La conversión tradicional de tablas a gráficos presenta limitaciones como operaciones manuales complejas, baja compatibilidad de formato y falta de actualización en tiempo real. mermaid-live-editor admite la sintaxis `graph td`, generando gráficos de flujo en tiempo real con vista previa, permitiendo ajustar estilos mediante arrastre y exportar en múltiples formatos (PNG/SVG), ideal para gestión de proyectos y documentos técnicos.

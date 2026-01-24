@@ -4,7 +4,7 @@ title: 快速入门Vue模板引用：从收DOM“快递”到调子组件方法�
 date: 2025-11-03T02:55:45+08:00
 lastmod: 2025-11-03T02:55:45+08:00
 author: cmdragon
-cover: /images/45615ca51f7b4d1788b190a511393b92~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/45615ca51f7b4d1788b190a511393b92~tplv-5jbd59dj06-image.png
 
 summary:
   Vue中的模板引用（Template Refs）用于在声明式编程中直接操作DOM或访问子组件实例。通过`ref`属性标记元素或组件，并在`setup`中使用同名响应式变量访问。子组件需通过`defineExpose`暴露内部方法或属性供父组件调用。操作DOM时，应在`onMounted`或`nextTick`中确保DOM已渲染。常见应用包括自动聚焦输入框、集成第三方库和动态获取元素尺寸。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/45615ca51f7b4d1788b190a511393b92~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/45615ca51f7b4d1788b190a511393b92~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

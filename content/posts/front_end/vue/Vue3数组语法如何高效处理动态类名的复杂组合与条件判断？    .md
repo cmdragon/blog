@@ -4,7 +4,7 @@ title: Vue3数组语法如何高效处理动态类名的复杂组合与条件判
 date: 2025-12-15T05:50:00+08:00
 lastmod: 2025-12-15T05:50:00+08:00
 author: cmdragon
-cover: /images/generated_image_bfec8c69-e89a-4fec-b856-2adf19f7f11b.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_bfec8c69-e89a-4fec-b856-2adf19f7f11b.png
 
 summary:
   Vue3数组语法用于动态类名组合，含基础使用（静态/动态/条件表达式，用undefined优化空值）、嵌套对象语法处理复杂场景、结合v-for实现列表项独立样式，附带常见错误及解决方案。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_bfec8c69-e89a-4fec-b856-2adf19f7f11b.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_bfec8c69-e89a-4fec-b856-2adf19f7f11b.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

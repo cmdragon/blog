@@ -4,7 +4,7 @@ title: M3U8線上播放器哪個好？推薦這款免費無廣告工具：流暢
 date: 2026-01-12T17:47:50+08:00
 lastmod: 2026-01-12T17:47:50+08:00
 author: cmdragon
-cover: /images/generated_image_c6517511-046a-4a0d-9716-8b5e55418098.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_c6517511-046a-4a0d-9716-8b5e55418098.png
 
 summary:
   針對使用者對無廣告、流暢播放M3U8影片的需求，推薦一款專業線上播放器。它以無廣告、播放流暢為核心優勢，支援倍速調節、縮放等高階控制，具備智慧播放清單管理，可切換多畫質並自動適配網路。支援HLS直播與M3U8隨選播放，無需安裝用戶端，瀏覽器直接使用。使用簡單，三步即可播放，點擊連結體驗。

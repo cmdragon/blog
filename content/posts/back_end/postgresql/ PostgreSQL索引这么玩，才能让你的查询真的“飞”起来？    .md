@@ -4,7 +4,7 @@ title: PostgreSQL索引这么玩，才能让你的查询真的“飞”起来？
 date: 2025-09-30T09:01:26+08:00
 lastmod: 2025-09-30T09:01:26+08:00
 author: cmdragon
-cover: /images/cfb4fb2b0e2d496d8d23ac078ceb2a52~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/cfb4fb2b0e2d496d8d23ac078ceb2a52~tplv-5jbd59dj06-image.png
 
 summary:
   PostgreSQL索引是提升查询效率的关键工具，类似于书籍目录，帮助快速定位数据。常用索引类型包括B-Tree（默认，适用于等值、范围查询和排序）、Hash（仅等值查询）、GIN（多值类型如数组和JSONB）和BRIN（超大型表）。多列索引需注意列顺序，唯一索引确保数据唯一性，部分索引仅对特定条件数据有效。覆盖索引支持仅索引扫描，避免访问表堆数据。使用EXPLAIN命令检查索引使用情况，确保查询优化。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/cfb4fb2b0e2d496d8d23ac078ceb2a52~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/cfb4fb2b0e2d496d8d23ac078ceb2a52~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

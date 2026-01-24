@@ -4,7 +4,7 @@ title: RAID nedir? Temel kavramlardan uygulamalı yapılandırmaya kadar, bu hes
 date: 2025-12-09T03:50:29+08:00
 lastmod: 2025-12-09T03:50:29+08:00
 author: cmdragon
-cover: /images/ukcgc_00003_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/ukcgc_00003_.png
 
 summary:
   RAID (disk matrisi), birden fazla sabit disk kullanarak veri güvenliği, kapasite genişletme veya performans artışı sağlar. Farklı seviyelerin etkileri büyük ölçüde değişir. Yeni başlayanlar için yapılandırma yaparken ihtiyaçları netleştirilmeli, kapasite performans hesaplanmalı ve uygun yazılım seçilmelidir. RAID depolama hesaplayıcısı önerilir; parametreleri girerek yapılandırma raporu üretebilir, yeni başlayanların kapasite ve seviye seçimi konusunda hızlıca yetişmesini sağlar, yapılandırma hatalarını önler.

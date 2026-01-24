@@ -4,7 +4,7 @@ title: 免费在线 Torrent 种子分析工具 - 深度解析 BT 文件内容与
 date: 2025-07-07T08:37:03+08:00
 lastmod: 2025-07-07T08:37:03+08:00
 author: cmdragon
-cover: /images/xw_20250707235108.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250707235108.png
 
 summary:
   无需安装软件！通过浏览器直接解析 Torrent 种子文件，实时查看文件结构、Tracker 服务器、分块信息及种子健康度，帮助您安全下载资源。

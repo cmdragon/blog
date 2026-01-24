@@ -4,7 +4,7 @@ title: quran explorer - Ücretsiz Kur'an Arapça Çözümleme Aracı, 3 Adımda 
 date: 2025-12-03T06:57:49+08:00
 lastmod: 2025-12-03T06:57:49+08:00
 author: cmdragon
-cover: /images/25eec91a215f4ac497b69f3dc7b5a04c~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/25eec91a215f4ac497b69f3dc7b5a04c~tplv-5jbd59dj06-image.png
 
 summary:
   quran explorer, ana dili Arapça olmayanlar için Kur'an metinlerinin dil engellerini aşmak amacıyla tasarlanmış ücretsiz bir Arapça çözümleme aracıdır. Kelime, dilbilgisi ve bağlam analizi gibi derin metin çözümlemesi, çoklu dil karşılaştırma, ses desteği ve not alma fonksiyonlarını sunar. Kullanıcılar metni konumlandırarak, çözümlemeyi alarak ve kaydederek paylaşarak ücretsiz olarak kullanabilir; bu da öğrenmeyi sıfır engelli hale getirir.

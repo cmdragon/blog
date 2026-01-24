@@ -4,7 +4,7 @@ title: 想解锁PostgreSQL查询从基础到进阶的核心知识点？你都get
 date: 2025-09-26T07:52:14+08:00
 lastmod: 2025-09-26T07:52:14+08:00
 author: cmdragon
-cover: /images/3552e561f45d41fb81a7d8631cc28e8e~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/3552e561f45d41fb81a7d8631cc28e8e~tplv-5jbd59dj06-image.png
 
 summary:
   PostgreSQL查询的核心操作包括`SELECT`、`WHERE`、`ORDER BY`、`LIMIT`、`JOIN`、聚合函数和子查询。`SELECT`用于从表中提取数据，`WHERE`用于过滤条件，`ORDER BY`用于排序，`LIMIT`和`OFFSET`用于分页。`JOIN`用于关联多个表，聚合函数如`COUNT`、`SUM`等用于数据计算，`GROUP BY`用于分组统计，`HAVING`用于过滤分组结果。子查询用于嵌套查询逻辑。常见报错包括语法错误、数据类型不匹配和表名错误，需注意SQL执行顺序和数据类型一致性。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/3552e561f45d41fb81a7d8631cc28e8e~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/3552e561f45d41fb81a7d8631cc28e8e~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

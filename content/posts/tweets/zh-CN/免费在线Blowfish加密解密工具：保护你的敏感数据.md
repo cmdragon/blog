@@ -4,7 +4,7 @@ title: 免费在线Blowfish加密解密工具：保护你的敏感数据
 date: 2025-07-03T08:37:03+08:00
 lastmod: 2025-07-03T08:37:03+08:00
 author: cmdragon
-cover: /images/xw_20250703152811.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250703152811.png
 
 summary:
   探索CMDragon的Blowfish加密工具！这个免费在线工具支持64位分组加密、可变密钥长度(32-448位)、ECB/CBC多种模式，实时加密解密文本数据，无需安装即可保护你的敏感信息。

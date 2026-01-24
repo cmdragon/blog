@@ -4,7 +4,7 @@ title: PostgreSQL查不动？分区表+覆盖索引+物化视图的优化魔法�
 date: 2025-10-25T05:38:49+08:00
 lastmod: 2025-10-25T05:38:49+08:00
 author: cmdragon
-cover: /images/2a4b756e442d4f81a9c1e73df77a9cce~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/2a4b756e442d4f81a9c1e73df77a9cce~tplv-5jbd59dj06-image.png
 
 summary:
   大数据量查询优化中，分区表和索引策略是关键。分区表通过将大表拆分为多个物理子表，减少IO，适用于时间序列、类别化和均匀分布数据。索引优化中，覆盖索引和部分索引能显著提升查询效率。报表查询优化可通过物化视图预计算结果和并行查询加速复杂聚合。混合负载优化需通过资源管理和`pg_stat_statements`定位慢查询，隔离OLTP与OLAP资源，确保系统性能平衡。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/2a4b756e442d4f81a9c1e73df77a9cce~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2a4b756e442d4f81a9c1e73df77a9cce~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

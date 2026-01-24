@@ -4,7 +4,7 @@ title: v-if与v-show如何选择？响应式条件渲染的联动机制是什么
 date: 2025-12-23T08:27:25+08:00
 lastmod: 2025-12-23T08:27:25+08:00
 author: cmdragon
-cover: /images/generated_image_063ccb41-243d-4f10-855d-ff253f3c78cb.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_063ccb41-243d-4f10-855d-ff253f3c78cb.png
 
 summary:
   Vue条件渲染核心指令：v-if（创建/销毁DOM）、v-else-if/v-else（多条件分支）、v-show（切换display），前者用于条件不常变场景，后者适用于频繁切换。响应式数据用ref/reactive创建，依赖变化触发DOM更新，复杂条件用计算属性优化，常见错误如v-else未紧跟需避免。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_063ccb41-243d-4f10-855d-ff253f3c78cb.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_063ccb41-243d-4f10-855d-ff253f3c78cb.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

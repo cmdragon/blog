@@ -4,7 +4,7 @@ title: PPT制作の時間泥棒を卒業！pptist AIが無料オンラインで5
 date: 2025-11-25T15:05:51+08:00
 lastmod: 2025-11-25T15:05:51+08:00
 author: cmdragon
-cover: /images/8ad8312df194452ab5085bfa85d05248~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/8ad8312df194452ab5085bfa85d05248~tplv-5jbd59dj06-image.png
 
 summary:
   伝統的なPPT作成は時間がかかり、デザインが難しい（特に締切が近い時）。pptist AIはAI技術と無料オンラインサービスを組み合わせ、この課題を解決します。テーマのキーワードを入力するだけで、AIがPPTの構造・レイアウト・素材を自動生成。登録不要で完全無料、マルチデバイス対応のリアルタイム編集が可能。豊富なテンプレートを用意し、配色・フォントの変更や素材のマッチングが可能。5ステップで要望から出力まで完了し、新入社員・学生・締切に追われる人・コンテンツクリエイターが、スピーディかつプロフェッショナルなPPTを作成できます。

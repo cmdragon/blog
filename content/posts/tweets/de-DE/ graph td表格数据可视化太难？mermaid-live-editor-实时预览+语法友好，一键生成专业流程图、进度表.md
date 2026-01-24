@@ -4,7 +4,7 @@ title: Tabellendaten visualisieren zu schwierig? Mermaid Live Editor – Echtzei
 date: 2025-12-06T10:55:55+08:00
 lastmod: 2025-12-06T10:55:55+08:00
 author: cmdragon
-cover: /images/xjpvh_00004_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xjpvh_00004_.png
 
 summary:
   Traditionelle Tabellen müssen manuell in Diagramme umgewandelt werden, was zu komplexen Schritten, geringer Formatkompatibilität und mangelnder Echtzeitfähigkeit führt. Der Mermaid Live Editor unterstützt die `graph td`-Syntax und generiert sofort visuelle Flussdiagramme mit Echtzeitvorschau. Er ermöglicht das Verschieben zur Stilanpassung und den Export in mehrere Formate (PNG/SVG), ideal für Projektmanagement und technische Dokumentation.

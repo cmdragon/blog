@@ -22,7 +22,7 @@ tags:
   - 日志记录
 ---
 
-<img src="/images/2024_10_13 13_28_33.png" title="2024_10_13 13_28_33.png" alt="2024_10_13 13_28_33.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_10_13 13_28_33.png" title="2024_10_13 13_28_33.png" alt="2024_10_13 13_28_33.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

@@ -4,7 +4,7 @@ title: Wat betekent RAID? Van basisconcepten tot praktische configuratie – dez
 date: 2025-12-09T03:50:29+08:00
 lastmod: 2025-12-09T03:50:29+08:00
 author: cmdragon
-cover: /images/ukcgc_00003_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/ukcgc_00003_.png
 
 summary:
   RAID (schijfarray) verbindt meerdere harde schijven om gegevensveiligheid, capaciteitsuitbreiding of prestatieverbetering te bereiken. Verschillende niveaus hebben verschillende effecten. Beginners moeten eerst hun behoeften duidelijk maken, capaciteit en prestaties berekenen, en de juiste software kiezen. We raden een RAID-opslagcalculator aan vul parameters in om een configuratierapport te genereren, zodat beginners snel de juiste keuze maken voor capaciteit en niveau, en fouten bij configuratie voorkomen.

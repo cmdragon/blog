@@ -4,7 +4,7 @@ title: 一键生成完美社交分享卡片！Open Graph元标签生成器使用
 date: 2025-07-02T08:37:03+08:00  
 lastmod: 2025-07-02T08:37:03+08:00
 author: cmdragon  
-cover: /images/xw_20250702201305.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250702201305.png
 
 summary:  
   深度解析Open Graph元标签的SEO价值，手把手教你使用CMDragon的免费工具快速生成高质量社交媒体分享卡片，提升链接点击率300%！  

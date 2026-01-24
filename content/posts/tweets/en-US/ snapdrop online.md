@@ -4,7 +4,7 @@ title: snapdrop online
 date: 2025-12-12T20:05:38+08:00
 lastmod: 2025-12-12T20:05:38+08:00
 author: cmdragon
-cover: /images/pyksc_00001_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/pyksc_00001_.png
 
 summary:
     Snapdrop online is an open-source peer-to-peer transfer tool that doesn't require registration, setup, or installation; it can be used directly by accessing it through a browser. It supports instant sharing of images, videos, PDFs, and links, and devices automatically identify each other on the same network. It's suitable for urgent file transfers, group sharing, etc., and is safe and efficient.

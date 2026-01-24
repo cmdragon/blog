@@ -4,7 +4,7 @@ title: jsoncrack - JSON iç içe yapısından kurtulun, görselleştirilmiş ana
 date: 2025-11-24T05:43:29+08:00
 lastmod: 2025-11-24T05:43:29+08:00
 author: cmdragon
-cover: /images/xw_20251125164203.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20251125164203.png
 
 summary:
   jsoncrack, karmaşık JSON metin analizi verimsizliğini çözen etkili görselleştirilmiş JSON çözümleme aracıdır. Yerel dosya, metin yapıştırma ve çevrimiçi URL içe aktarma desteği sunar. Gezinme ağacı ve görselleştirme panosu ile veriyi çözümler, düzenlenebilir, dışa aktarılabilir (resim, metin, bağlantı paylaşımı). Avantajları Görselleştirme verimliliği, etkileşimli arayüz, çoklu senaryo uyumluluğu, gerçek zamanlı senkronizasyon, veri işleme verimliliğini artırır.

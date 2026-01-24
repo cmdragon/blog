@@ -4,7 +4,7 @@ title: Quran Explorer - Strumento gratuito di analisi araba del Corano, decodifi
 date: 2025-12-03T06:57:49+08:00
 lastmod: 2025-12-03T06:57:49+08:00
 author: cmdragon
-cover: /images/25eec91a215f4ac497b69f3dc7b5a04c~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/25eec91a215f4ac497b69f3dc7b5a04c~tplv-5jbd59dj06-image.png
 
 summary:
   Quran Explorer è uno strumento gratuito di analisi araba del Corano, progettato per risolvere le barriere linguistiche nell'apprendimento dei testi sacri da parte di non madrelingua. Supporta l'analisi approfondita dei testi (vocabulary, grammatica, contesto), il confronto multilingua, l'audio ausiliario e la funzione di note, consentendo a ogni utente di utilizzarlo gratuitamente in tre semplici passaggi individuare il testo, ottenere l'analisi e salvare/condividere, per facilitare un apprendimento accessibile a tutti.

@@ -4,7 +4,7 @@ title: jsoncrack Vaarwel met geneste JSON-structuren, een visuele parser die de 
 date: 2025-11-24T05:43:29+08:00
 lastmod: 2025-11-24T05:43:29+08:00
 author: cmdragon
-cover: /images/xw_20251125164203.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20251125164203.png
 
 summary:
   jsoncrack is een efficiënte visuele JSON-parser die het moeilijke analyseren van complexe JSON-tekst oplost. Ondersteunt lokale bestanden, tekstplakken en online URL-import. Door middel van een navigatieboom en visualisatiecanvas worden gegevens geïnterpreteerd, met bewerkbare, exporteerbare (afbeeldingen, tekst, linkdeling) functies. Voordelen visuele efficiëntie, intuïtieve interactie, meerdere scenario's, real-time synchronisatie, en hogere gegevensverwerkingssnelheid.

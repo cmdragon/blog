@@ -16,7 +16,7 @@ tags:
   - 最佳实践
 ---
 
-<img src="/images/2024_05_06 20_52_18.png" title="2024_05_06 20_52_18.png" alt="2024_05_06 20_52_18.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_06 20_52_18.png" title="2024_05_06 20_52_18.png" alt="2024_05_06 20_52_18.png"/>
 
 ## 引言：
 

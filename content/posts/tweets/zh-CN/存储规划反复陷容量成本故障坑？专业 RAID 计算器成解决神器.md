@@ -4,7 +4,7 @@ title: 存储规划反复陷容量成本故障坑？专业RAID计算器成解决
 date: 2025-11-01T11:24:27+08:00
 lastmod: 2025-11-01T11:24:27+08:00
 author: cmdragon
-cover: /images/da37a9441d894ee192f390c65069e3d8~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/da37a9441d894ee192f390c65069e3d8~tplv-5jbd59dj06-image.png
 
 summary:
   RAID 计算器是一款专业存储规划工具，支持7种RAID级别，提供容量、成本、性能的精准计算。内置5大场景化模板，如数据库、视频存储等，帮助用户快速选择合适方案。工具还具备风险预警功能，分析RAID重建时间和故障概率，支持多配置对比和智能推荐，可视化展示磁盘阵列效果。无论是IT运维还是中小企业存储规划，都能节省时间、规避风险、控制成本。体验地址：https://tools.cmdragon.cn/zh/apps/raid-calculator。

@@ -4,7 +4,7 @@ title: FastAPI的死信队列处理机制：为何你的消息系统需要它？
 date: 2025-08-21T04:33:54+08:00
 lastmod: 2025-08-21T04:33:54+08:00
 author: cmdragon
-cover: /images/xw_20250821104805.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250821104805.png
 
 summary:
   死信队列（DLQ）用于处理消息系统中的失败消息，确保主业务流程不被阻塞。FastAPI结合RabbitMQ实现死信队列，通过配置死信交换机和队列，处理消息拒收、TTL过期、队列满和重试耗尽等场景。使用Pydantic验证消息格式，确保数据有效性。FastAPI消费者服务处理消息时，若失败则触发死信路由，消息最终进入死信队列。实现包括队列初始化、消息验证、异常处理和死信路由，确保系统健壮性。

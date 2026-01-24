@@ -4,7 +4,7 @@ title: 转账不翻车、并发不干扰，PostgreSQL的ACID特性到底有啥�
 date: 2025-10-04T04:57:25+08:00
 lastmod: 2025-10-04T04:57:25+08:00
 author: cmdragon
-cover: /images/cb91fc57e9f54d70a3caec4aaa43e329~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/cb91fc57e9f54d70a3caec4aaa43e329~tplv-5jbd59dj06-image.png
 
 summary:
   ACID是数据库事务的四个核心特性，包括原子性、一致性、隔离性和持久性。原子性确保事务要么完全执行，要么完全不执行；一致性保证事务执行前后数据库处于合法状态；隔离性确保并发事务互不干扰；持久性保证事务提交后修改永久保存。PostgreSQL通过事务日志、MVCC和锁机制等技术实现ACID特性，确保数据可靠性和一致性。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/cb91fc57e9f54d70a3caec4aaa43e329~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/cb91fc57e9f54d70a3caec4aaa43e329~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

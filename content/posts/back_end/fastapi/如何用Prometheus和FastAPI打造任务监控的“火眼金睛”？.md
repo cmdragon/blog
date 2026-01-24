@@ -4,7 +4,7 @@ title: 如何用Prometheus和FastAPI打造任务监控的“火眼金睛”？
 date: 2025-08-19T05:51:06+08:00
 lastmod: 2025-08-19T05:51:06+08:00
 author: cmdragon
-cover: /images/xw_20250819142258.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250819142258.png
 
 summary:
   FastAPI 提供了强大的工具来监控后台任务、异步任务和定时任务的性能。通过 Prometheus 收集关键指标，如任务执行时长、吞吐量、错误率和资源利用率，评估系统健康状况。使用 `Summary` 和 `Counter` 定义监控指标，并通过 `/metrics` 端点暴露数据。Grafana 仪表板可视化任务延迟、错误率和资源利用率。在电商订单处理系统中，监控支付处理、库存更新等环节的性能瓶颈，优化整体流程。

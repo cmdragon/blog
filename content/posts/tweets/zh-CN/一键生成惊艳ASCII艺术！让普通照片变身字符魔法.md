@@ -4,7 +4,7 @@ title: 一键生成惊艳ASCII艺术！让普通照片变身字符魔法
 date: 2025-07-22T08:37:03+08:00
 lastmod: 2025-07-22T08:37:03+08:00
 author: cmdragon
-cover: /images/xw_20250722213418.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250722213418.png
 summary: 无需设计基础！上传图片即可秒变ASCII字符艺术，支持自定义参数调节与彩色输出，创意表达从未如此简单。
 categories:
   - tweets

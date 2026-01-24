@@ -4,7 +4,7 @@ title: quran explorer - 無料のコーランアラビア語解析ツール、3�
 date: 2025-12-03T06:57:49+08:00
 lastmod: 2025-12-03T06:57:49+08:00
 author: cmdragon
-cover: /images/25eec91a215f4ac497b69f3dc7b5a04c~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/25eec91a215f4ac497b69f3dc7b5a04c~tplv-5jbd59dj06-image.png
 
 summary:
   quran explorerは、非アラビア語話者向けに設計された無料のコーランアラビア語解析ツールです。単語・文法・背景を含む深層解析、多言語対照、音声補助、ノート機能を備え、経文の位置指定・解析取得・保存共有の3ステップで無料で利用可能。言語障壁を克服し、誰もが学びやすい仕組みを実現しています。

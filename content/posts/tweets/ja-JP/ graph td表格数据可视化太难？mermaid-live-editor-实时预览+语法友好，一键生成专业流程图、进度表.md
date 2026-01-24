@@ -4,7 +4,7 @@ title: 表形式のデータをグラフに可視化するのは難しい？merm
 date: 2025-12-06T10:55:55+08:00
 lastmod: 2025-12-06T10:55:55+08:00
 author: cmdragon
-cover: /images/xjpvh_00004_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xjpvh_00004_.png
 
 summary:
   従来のテーブルデータをグラフに変換する際、手動操作の煩雑さ・フォーマット互換性の低さ・リアルタイム性の不足といった課題があります。mermaid-live-editorはgraph td構文をサポートし、リアルタイムでフローチャートを生成・プレビュー可能。ノードのドラッグアンドドロップによるスタイル調整やPNG/SVGなど複数形式でのエクスポートが可能で、プロジェクト管理や技術文書など幅広く活用できます。

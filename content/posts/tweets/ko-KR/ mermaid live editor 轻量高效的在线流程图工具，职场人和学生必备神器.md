@@ -4,7 +4,7 @@ title: mermaid live editor 가볍고 효율적인 온라인 프로세스 차트 
 date: 2025-11-23T10:16:32+08:00  
 lastmod: 2025-11-23T10:16:32+08:00  
 author: cmdragon  
-cover: /images/xw_20251123195835.png  
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20251123195835.png  
 
 summary:  
     mermaid live editor는 설치 불필요, 문법 기반, 실시간 미리보기 기능을 갖춘 가볍고 효율적인 온라인 프로세스 차트 도구입니다. 흐름도, 시퀀스 다이어그램 등 모든 시나리오를 지원하며, 왼쪽 코드 편집 창에서 작성하면 오른쪽에서 즉시 미리보기 가능합니다. 문법 템플릿으로 빠르게 시작 가능하며, 이미지 또는 Markdown으로 내보내어 직장 프로젝트 관리, 학습 지식 정리, 코드 문서 연결에 최적화되었습니다.  

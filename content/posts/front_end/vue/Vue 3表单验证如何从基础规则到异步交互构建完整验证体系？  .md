@@ -4,7 +4,7 @@ title: Vue 3表单验证如何从基础规则到异步交互构建完整验证�
 date: 2026-01-20T05:06:22+08:00
 lastmod: 2026-01-20T05:06:22+08:00
 author: cmdragon
-cover: /images/generated_image_e3a65f0b-37c4-4e29-b6b5-bb86dc49d20d.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_e3a65f0b-37c4-4e29-b6b5-bb86dc49d20d.png
 
 summary:
   Vue 3表单验证通过响应式数据与验证规则实现，基础验证含必填、长度限制，用validateField/validateForm方法处理字段和整体验证；支持异步验证（如检查用户名唯一性），借助async/await管理，同时控制加载状态避免重复提交；错误提示需实时反馈、明确指向、语气友好。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_e3a65f0b-37c4-4e29-b6b5-bb86dc49d20d.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_e3a65f0b-37c4-4e29-b6b5-bb86dc49d20d.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

@@ -4,7 +4,7 @@ title: 如何在API高并发中玩转资源隔离与限流策略？
 date: 2025-08-27T23:26:45+08:00
 lastmod: 2025-08-27T23:26:45+08:00
 author: cmdragon
-cover: /images/xw_20250828085040.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250828085040.png
 
 summary:
   资源隔离是保障API稳定性的核心，通过路由隔离和依赖隔离实现关键业务与非关键业务的分离，避免资源耗尽。限流策略包括令牌桶算法和滑动窗口算法，控制请求速率以保护系统。FastAPI中通过slowapi库实现限流，支持路由级动态限流和分布式限流。分布式限流基于Redis，确保多实例环境下的全局限流。电商支付系统案例展示了核心接口使用独立数据库连接池，日志查询使用公共资源。熔断策略通过CircuitBreaker模式实现自动熔断，应对连续超时问题。

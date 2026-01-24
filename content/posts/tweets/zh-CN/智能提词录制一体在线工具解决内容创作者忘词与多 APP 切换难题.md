@@ -4,7 +4,7 @@ title: 智能提词录制一体在线工具解决内容创作者忘词与多APP�
 date: 2025-09-21T03:33:53+08:00
 lastmod: 2025-09-21T03:33:53+08:00
 author: cmdragon
-cover: /images/42a4378a8af94d728a83db3f25df33a3~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/42a4378a8af94d728a83db3f25df33a3~tplv-5jbd59dj06-image.png
 
 summary:
   「智能提词器」是一款专为内容创作者、演讲者和博主设计的在线工具，集提词与录制功能于一体，简化创作流程。其核心亮点包括智能语音跟读，帮助用户流畅表达；录音、录屏和摄像头预览功能，实现彩排与录制一步完成；可调节滚动速度和文本大小，适配不同语速和阅读习惯；字符计数和计时器功能，精准控制内容时长。全屏模式和快捷键操作提升使用便捷性，适用于口播、演讲和教程录制，助力高效专业的内容创作。

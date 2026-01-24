@@ -4,7 +4,7 @@ title: 想知道数据库怎么给查询“算成本选路线”？EXPLAIN能帮
 date: 2025-10-07T06:47:24+08:00
 lastmod: 2025-10-07T06:47:24+08:00
 author: cmdragon
-cover: /images/6b105d4f619e46a1aa9d34b4352d29ba~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/6b105d4f619e46a1aa9d34b4352d29ba~tplv-5jbd59dj06-image.png
 
 summary:
   EXPLAIN工具用于展示PostgreSQL查询优化器的执行计划，帮助理解查询的执行方式和优化路径。`EXPLAIN`仅生成估计计划，而`EXPLAIN ANALYZE`会执行查询并提供实际数据。查询计划以树状结构呈现，包含节点类型（如`Seq Scan`、`Index Scan`）和关键列（如`Cost`、`Rows`）。`Cost`是优化器的相对成本，基于I/O和CPU成本计算。通过分析计划，可以优化查询，如添加索引、选择合适的Join类型或避免不必要的排序。
@@ -24,7 +24,7 @@ tags:
 
 ---
 
-<img src="/images/6b105d4f619e46a1aa9d34b4352d29ba~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/6b105d4f619e46a1aa9d34b4352d29ba~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

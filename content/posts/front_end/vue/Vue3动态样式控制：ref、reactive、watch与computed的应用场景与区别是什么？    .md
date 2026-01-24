@@ -4,7 +4,7 @@ title: Vue3动态样式控制：ref、reactive、watch与computed的应用场景
 date: 2025-12-19T04:54:59+08:00
 lastmod: 2025-12-19T04:54:59+08:00
 author: cmdragon
-cover: /images/generated_image_84188769-98f0-44ed-a6a8-a183825c3e69.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_84188769-98f0-44ed-a6a8-a183825c3e69.png
 
 summary:
   Vue3动态样式开发通过响应式数据（ref/reactive）、watch（监听滚动/输入等变化）、computed（计算复合样式并缓存）及生命周期（onMounted初始化、onUnmounted清理）实现。ref管理简单样式，reactive封装复杂对象，watch触发样式动态调整，computed高效计算多数据依赖样式，生命周期确保DOM操作安全和资源清理。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_84188769-98f0-44ed-a6a8-a183825c3e69.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_84188769-98f0-44ed-a6a8-a183825c3e69.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

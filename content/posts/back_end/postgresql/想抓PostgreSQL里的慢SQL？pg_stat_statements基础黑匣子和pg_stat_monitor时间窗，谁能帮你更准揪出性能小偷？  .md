@@ -4,7 +4,7 @@ title: 想抓PostgreSQL里的慢SQL？pg_stat_statements基础黑匣子和pg_sta
 date: 2025-10-16T02:00:15+08:00
 lastmod: 2025-10-16T02:00:15+08:00
 author: cmdragon
-cover: /images/781d5d3d0c6e4f4c99c71fecc18478c9~tplv-5jbd59dj06-aigc.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/781d5d3d0c6e4f4c99c71fecc18478c9~tplv-5jbd59dj06-aigc.png
 
 summary:
   pg_stat_statements是PostgreSQL的核心性能监控模块，用于跟踪SQL语句的计划与执行统计信息，帮助定位性能瓶颈。通过修改配置文件并重启数据库，可以启用该模块。核心配置参数包括跟踪SQL的最大数量、跟踪范围等。`pg_stat_statements`视图提供SQL的详细统计信息，如执行次数、总执行时间、缓存命中率等。`pg_stat_monitor`是增强版模块，支持按时间窗口统计和响应时间直方图，适合持续监控。结合这两个模块，可以持续优化数据库性能，通过定位瓶颈SQL、分析执行计划、优化索引等步骤提升效率。
@@ -24,7 +24,7 @@ tags:
 
 ---
 
-<img src="/images/781d5d3d0c6e4f4c99c71fecc18478c9~tplv-5jbd59dj06-aigc.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/781d5d3d0c6e4f4c99c71fecc18478c9~tplv-5jbd59dj06-aigc.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

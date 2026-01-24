@@ -4,7 +4,7 @@ title: graph td表格数据可视化太难？mermaid-live-editor-实时预览+�
 date: 2025-12-06T10:55:55+08:00
 lastmod: 2025-12-06T10:55:55+08:00
 author: cmdragon
-cover: /images/xjpvh_00004_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xjpvh_00004_.png
 
 summary:
   传统表格转图表存在手动操作复杂、格式兼容性低、实时性不足等局限。mermaid-live-editor支持graph td语法，可实时生成流程图并预览，支持拖拽调整样式和多格式导出（PNG/SVG），适用于项目管理、技术文档等场景。

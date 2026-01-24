@@ -4,7 +4,7 @@ title: 测试覆盖率不够高？这些技巧让你的FastAPI测试无懈可击
 date: 2025-09-02T01:49:10+08:00
 lastmod: 2025-09-02T01:49:10+08:00
 author: cmdragon
-cover: /images/xw_20250902090355.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250902090355.png
 
 summary:
   FastAPI通过TestClient工具支持单元测试，模拟HTTP请求直接调用路由处理器，验证响应状态码和数据结构。Pydantic模型确保响应数据的结构和类型符合预期，验证失败时返回422错误。测试覆盖率可通过pytest-cov工具统计，依赖项使用unittest.mock模拟。测试金字塔模型建议单元测试占70-80%，集成测试占15-20%，端到端测试占5-10%。常见错误如422、401和500，可通过检查响应模型、注入认证token和启用详细日志进行调试。

@@ -21,7 +21,7 @@ tags:
    - 部署
 ---
 
-<img src="/images/2024_10_21 13_46_04.png" title="2024_10_21 13_46_04.png" alt="2024_10_21 13_46_04.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_10_21 13_46_04.png" title="2024_10_21 13_46_04.png" alt="2024_10_21 13_46_04.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

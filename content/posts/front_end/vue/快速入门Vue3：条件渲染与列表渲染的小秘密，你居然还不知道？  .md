@@ -4,7 +4,7 @@ title: 快速入门Vue3：条件渲染与列表渲染的小秘密，你居然还
 date: 2025-10-31T00:01:29+08:00
 lastmod: 2025-10-31T00:01:29+08:00
 author: cmdragon
-cover: /images/40680a4ca1404cc9ba5819ef69ae21b7~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/40680a4ca1404cc9ba5819ef69ae21b7~tplv-5jbd59dj06-image.png
 
 summary:
   Vue中的条件渲染通过`v-if`和`v-show`实现，`v-if`根据条件销毁或重建DOM，适合不频繁切换的场景；`v-show`通过CSS控制显隐，适合频繁切换的场景。列表渲染使用`v-for`遍历数组或对象，`key`属性确保节点正确复用，避免使用索引作为`key`。`v-for`与`v-if`不应同时使用，建议通过`computed`属性过滤数据后再渲染。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/40680a4ca1404cc9ba5819ef69ae21b7~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/40680a4ca1404cc9ba5819ef69ae21b7~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

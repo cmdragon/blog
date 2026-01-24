@@ -4,7 +4,7 @@ title: 给接口加新字段又不搞崩老客户端？FastAPI的多版本API靠
 date: 2025-09-19T03:01:03+08:00
 lastmod: 2025-09-19T03:01:03+08:00
 author: cmdragon
-cover: /images/22136ffc59b14a5b9b97e3835465c7b7~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/22136ffc59b14a5b9b97e3835465c7b7~tplv-5jbd59dj06-image.png
 
 summary:
   多版本API的核心在于解决快速迭代中的向后兼容问题，避免老客户端因接口修改而崩溃。FastAPI通过路由隔离机制实现多版本API，利用`APIRouter`和`prefix`将不同版本的接口逻辑封装为独立模块。具体实现中，通过继承Pydantic模型减少重复代码并保持兼容性。测试策略包括单元测试和兼容性测试，确保各版本接口独立工作且跨版本交互无误。常见报错如422验证错误和路由冲突，可通过检查字段定义和路由前缀解决。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/22136ffc59b14a5b9b97e3835465c7b7~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/22136ffc59b14a5b9b97e3835465c7b7~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

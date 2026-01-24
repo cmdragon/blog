@@ -4,7 +4,7 @@ title: 流量突增要搞崩FastAPI？熔断测试是怎么防系统雪崩的？
 date: 2025-09-18T04:06:18+08:00
 lastmod: 2025-09-18T04:06:18+08:00
 author: cmdragon
-cover: /images/d919a308ede64b158ae9b9579812f64a~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/d919a308ede64b158ae9b9579812f64a~tplv-5jbd59dj06-image.png
 
 summary:
   熔断机制是系统自我保护的关键，能在API面临流量突增或下游服务故障时快速切断异常请求，防止雪崩效应。熔断器通过三状态转换逻辑（闭合、打开、半开）管理请求转发策略。在FastAPI中，pybreaker库支持熔断实现，通过配置失败阈值、重置时间等参数，结合Locust模拟流量突增，验证熔断效果。合理配置和监控熔断器状态，可有效预防误触发，确保系统稳定运行。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/d919a308ede64b158ae9b9579812f64a~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/d919a308ede64b158ae9b9579812f64a~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

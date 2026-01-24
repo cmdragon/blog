@@ -4,7 +4,7 @@ title: 免费IP批量查询神器：一键解析海量IP归属地与地理位置
 date: 2025-07-08T08:37:03+08:00
 lastmod: 2025-07-08T08:37:03+08:00
 author: cmdragon
-cover: /images/xw_20250708151826.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250708151826.png
 
 summary: 推荐高效免费的IP批量查询工具，支持同时解析数百个IP的归属地、ISP提供商、经纬度坐标等核心数据，无需安装即开即用，网络安全与数据分析必备利器。
 

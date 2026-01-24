@@ -4,7 +4,7 @@ title: Vue3中v-model在表单元素双向绑定中的场景差异与绑定策�
 date: 2026-01-18T07:38:21+08:00
 lastmod: 2026-01-18T07:38:21+08:00
 author: cmdragon
-cover: /images/generated_image_d15240cc-a1ad-4628-a123-811bf06231ba.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_d15240cc-a1ad-4628-a123-811bf06231ba.png
 
 summary:
   Vue3中v-model实现表单双向绑定，基础通过value与input事件完成；支持多行文本、复选框（多绑定数组）、单选（name分组）、下拉多选（multiple属性）；提供.lazy（延迟更新）、.number（转数字）、.trim（去空格）修饰符优化输入。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_d15240cc-a1ad-4628-a123-811bf06231ba.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_d15240cc-a1ad-4628-a123-811bf06231ba.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

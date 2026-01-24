@@ -4,7 +4,7 @@ title: 告别PPT制作耗时难题！pptist  ai快速生成 免费在线工具 5
 date: 2025-11-25T15:05:51+08:00
 lastmod: 2025-11-25T15:05:51+08:00
 author: cmdragon
-cover: /images/8ad8312df194452ab5085bfa85d05248~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/8ad8312df194452ab5085bfa85d05248~tplv-5jbd59dj06-image.png
 
 summary:
   传统PPT制作耗时久、设计难（尤其是紧急赶稿时），pptist ai快速生成工具通过AI技术与免费在线服务结合解决痛点：输入主题关键词，AI自动生成PPT框架、排版和素材；无需注册，免费无门槛，支持多设备在线实时编辑；提供海量模板，可换配色字体、匹配素材。5步即可完成从需求到导出，适合职场新人、学生、赶稿党及内容创作者快速高效制作PPT。

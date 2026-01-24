@@ -4,7 +4,7 @@ title: PostgreSQL里的PL/pgSQL到底是啥？能让SQL从“说目标”变“�
 date: 2025-10-02T09:01:23+08:00
 lastmod: 2025-10-02T09:01:23+08:00
 author: cmdragon
-cover: /images/077edb46078d4bcdac95b88720e8afd1~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/077edb46078d4bcdac95b88720e8afd1~tplv-5jbd59dj06-image.png
 
 summary:
   PL/pgSQL 是 PostgreSQL 的过程化 SQL 语言，结合了 SQL 的声明式语法和过程式控制结构，用于编写复杂的数据库逻辑。其基本结构包括函数和过程，支持变量声明、参数传递、动态 SQL、条件判断、循环以及错误处理。通过 PL/pgSQL，用户可以实现计算、批量操作、事务控制等功能。函数通过 `SELECT` 调用，过程通过 `CALL` 调用，且过程支持显式事务控制。动态 SQL 需使用 `EXECUTE` 和 `USING` 避免 SQL 注入。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/077edb46078d4bcdac95b88720e8afd1~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/077edb46078d4bcdac95b88720e8afd1~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

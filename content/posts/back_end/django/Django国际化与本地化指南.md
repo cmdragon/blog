@@ -16,7 +16,7 @@ tags:
   - 性能优化
 ---
 
-<img src="/images/2024_05_12 16_54_10.png" title="2024_05_12 16_54_10.png" alt="2024_05_12 16_54_10.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_12 16_54_10.png" title="2024_05_12 16_54_10.png" alt="2024_05_12 16_54_10.png"/>
 
 ## 引言
 

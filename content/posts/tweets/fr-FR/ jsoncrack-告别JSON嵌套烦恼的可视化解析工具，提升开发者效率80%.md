@@ -4,7 +4,7 @@ title: jsoncrack - Oubliez les difficultés de l'analyse JSON imbriqué avec cet
 date: 2025-11-24T05:43:29+08:00
 lastmod: 2025-11-24T05:43:29+08:00
 author: cmdragon
-cover: /images/xw_20251125164203.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20251125164203.png
 
 summary:
   jsoncrack est un outil de visualisation efficace pour analyser les données JSON, résolvant les problèmes d'efficacité liés à l'analyse de textes JSON complexes. Prend en charge l'importation de fichiers locaux, de texte collé ou d'URL en ligne. Grâce à l'arbre de navigation et au canevas visuel, il permet d'analyser les données, de les éditer et de les exporter (images, texte, partage de lien). Avantages  visualisation efficace, interface intuitive, adaptabilité à plusieurs scénarios, mise à jour en temps réel, améliorant ainsi l'efficacité du traitement des données.

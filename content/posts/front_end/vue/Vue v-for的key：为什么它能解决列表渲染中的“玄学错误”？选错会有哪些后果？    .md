@@ -4,7 +4,7 @@ title: Vue v-for的key：为什么它能解决列表渲染中的“玄学错误�
 date: 2026-01-01T03:26:11+08:00
 lastmod: 2026-01-01T03:26:11+08:00
 author: cmdragon
-cover: /images/generated_image_c3632efd-a638-4cd3-bcaa-9f648108f334.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_c3632efd-a638-4cd3-bcaa-9f648108f334.png
 
 summary:
   Vue列表渲染v-for中，key给DOM节点唯一稳定标识，助Diff算法高效更新，避免表单输入错位等问题。key优先选后端id，避免用index（列表变化时不稳定）、随机值（重创建节点）。错误用index或随机值会引发更新问题，正确用id可保障高效稳定。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_c3632efd-a638-4cd3-bcaa-9f648108f334.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_c3632efd-a638-4cd3-bcaa-9f648108f334.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

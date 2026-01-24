@@ -4,7 +4,7 @@ title: 文本OCR工具：快速识别图片中的文字
 date: 2025-07-05T08:37:03+08:00
 lastmod: 2025-07-05T08:37:03+08:00
 author: cmdragon
-cover: /images/xw_20250705203634.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250705203634.png
 
 summary:
   免费在线OCR工具，支持多语言识别，精准提取图片/PDF中的文字内容，无需安装软件，3秒完成图文转换。

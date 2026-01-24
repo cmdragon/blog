@@ -4,7 +4,7 @@ title: Für Einsteiger Empfehlung für kostenlose Flowchart-Tools – Textgeneri
 date: 2025-11-30T15:08:04+08:00  
 lastmod: 2025-11-30T15:08:04+08:00  
 author: cmdragon  
-cover: /images/rzuvj_00005_.png  
+cover: https://api2.cmdragon.cn/upload/cmder/images/rzuvj_00005_.png  
 
 summary:  
     Einsteiger bei der Erstellung von Flussdiagrammen stoßen häufig auf komplexe Tools oder kostenpflichtige Lösungen. Dieser Artikel empfiehlt ein kostenloses Flowchart-Tool, das auf Mermaid-Syntax basiert. Mit einfachen Textbeschreibungen werden Diagramme generiert – ohne Registrierung, dauerhaft kostenlos und ideal für tägliche Planung oder Projektzusammenarbeit.  

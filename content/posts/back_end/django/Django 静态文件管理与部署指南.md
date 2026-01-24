@@ -16,7 +16,7 @@ tags:
   - SecStatic
 ---
 
-<img src="/images/2024_05_10 17_44_56.png" title="2024_05_10 17_44_56.png" alt="2024_05_10 17_44_56.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_10 17_44_56.png" title="2024_05_10 17_44_56.png" alt="2024_05_10 17_44_56.png"/>
 
 ## **第一章：介绍**
 

@@ -4,7 +4,7 @@ title: 想让PostgreSQL快到飞起？先找健康密码还是先换引擎？
 date: 2025-10-24T08:56:38+08:00
 lastmod: 2025-10-24T08:56:38+08:00
 author: cmdragon
-cover: /images/ebbc6843119c4665940ba907fce34259~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/ebbc6843119c4665940ba907fce34259~tplv-5jbd59dj06-image.png
 
 summary:
   PostgreSQL性能调优的核心在于性能监控和配置参数调整。性能监控聚焦资源使用、查询性能和系统状态，利用pg_stat_activity、pg_stat_user_tables和pg_stat_statements等工具识别瓶颈。配置参数调优包括调整shared_buffers、work_mem、maintenance_work_mem、effective_cache_size和Checkpoint相关参数，以优化内存使用和IO性能。通过闭环流程持续监控和调优，确保数据库高效运行。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/ebbc6843119c4665940ba907fce34259~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/ebbc6843119c4665940ba907fce34259~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

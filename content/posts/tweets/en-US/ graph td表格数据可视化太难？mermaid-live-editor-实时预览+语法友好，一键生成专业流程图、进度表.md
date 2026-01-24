@@ -4,7 +4,7 @@ title: Struggling with Graph TD Table Data Visualization? Mermaid Live Editor Of
 date: 2025-12-06T10:55:55+08:00
 lastmod: 2025-12-06T10:55:55+08:00
 author: cmdragon
-cover: /images/xjpvh_00004_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xjpvh_00004_.png
 
 summary:
   Traditional table-to-chart conversion suffers from complex manual operations, poor format compatibility, and insufficient real-time feedback. Mermaid Live Editor supports Graph TD syntax, enabling real-time flowchart generation and preview, drag-and-drop styling adjustments, and multi-format export (PNG/SVG), ideal for project management and technical documentation.

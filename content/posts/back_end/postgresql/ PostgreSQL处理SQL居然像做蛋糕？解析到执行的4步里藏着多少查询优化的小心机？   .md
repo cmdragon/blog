@@ -4,7 +4,7 @@ title: PostgreSQL处理SQL居然像做蛋糕？解析到执行的4步里藏着�
 date: 2025-10-06T02:30:02+08:00
 lastmod: 2025-10-06T02:30:02+08:00
 author: cmdragon
-cover: /images/7908ea0678714e43833653cbfdef40a0~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/7908ea0678714e43833653cbfdef40a0~tplv-5jbd59dj06-image.png
 
 summary:
   PostgreSQL处理SQL查询的过程分为解析、重写、规划和执行四个阶段。解析阶段将SQL字符串转换为解析树，重写阶段处理视图和规则，规划阶段选择最优执行计划，执行阶段按计划执行查询。代价模型通过计算IO和CPU成本来优化查询，统计信息影响成本计算的准确性。使用索引、选择合适的连接方式和提前过滤数据是优化查询的关键。定期更新统计信息和合理使用索引可避免性能下降。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/7908ea0678714e43833653cbfdef40a0~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/7908ea0678714e43833653cbfdef40a0~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

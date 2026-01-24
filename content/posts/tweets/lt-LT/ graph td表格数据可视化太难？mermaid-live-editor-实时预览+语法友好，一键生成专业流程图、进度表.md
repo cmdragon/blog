@@ -4,7 +4,7 @@ title: Grafikas TD lentelės duomenų vizualizacija pernelyg sudėtinga? Mermaid
 date: 2025-12-06T10:55:55+08:00
 lastmod: 2025-12-06T10:55:55+08:00
 author: cmdragon
-cover: /images/xjpvh_00004_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xjpvh_00004_.png
 
 summary:
   Tradicinė lentelės duomenų konvertavimo į diagramą metodika yra sudėtinga, netinkama formatų atitikimui ir neveikia realiuoju laiku. Mermaid Live Editor palaiko grafiką TD sintaksę, leidžiantį realiuoju laiku generuoti procesų diagramas ir peržiūrėti, palaiko tempimo perstumimą stilių, bei daugiaformatį eksportą (PNG/SVG), tinkamas projektų valdymui, techniniams dokumentams ir kt.

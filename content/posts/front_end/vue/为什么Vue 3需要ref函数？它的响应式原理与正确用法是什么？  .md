@@ -4,7 +4,7 @@ title: 为什么Vue 3需要ref函数？它的响应式原理与正确用法是�
 date: 2025-11-07T06:13:27+08:00    
 lastmod: 2025-11-07T06:13:27+08:00    
 author:  cmdragon   
-cover: /images/307d6ccbe07e4cd99781fcc16b312831~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/307d6ccbe07e4cd99781fcc16b312831~tplv-5jbd59dj06-image.png
 
 summary:  
   ref函数是Vue 3中用于处理基本类型数据响应式的工具，通过将基本类型包装成Ref对象，使其具备响应式特性。在JavaScript代码中，必须通过`.value`访问或修改值，而在模板中会自动解包，无需`.value`。`ref`还可用于对象类型，Vue会将其自动转换为`reactive`代理。其核心原理是通过`getter`和`setter`实现依赖收集与更新触发。常见应用场景包括计数器、表单绑定和动态样式切换。常见报错多因未正确使用`.value`或直接替换Ref对象。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/307d6ccbe07e4cd99781fcc16b312831~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/307d6ccbe07e4cd99781fcc16b312831~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

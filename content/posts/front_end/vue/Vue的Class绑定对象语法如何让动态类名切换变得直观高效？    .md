@@ -4,7 +4,7 @@ title: Vue的Class绑定对象语法如何让动态类名切换变得直观高�
 date: 2025-12-14T08:10:27+08:00
 lastmod: 2025-12-14T08:10:27+08:00
 author: cmdragon
-cover: /images/exbix_00026_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/exbix_00026_.png
 
 summary:
   Vue的Class绑定对象语法（:class）通过对象键值对动态控制类名，键为类名、值为布尔值/表达式决定类是否生效。可同时使用静态类与动态类，支持reactive定义响应式类对象、computed处理复杂逻辑。适用于按钮激活、Tabs高亮、输入验证等场景，数据变化时类名自动更新，避免手动拼接类名。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/exbix_00026_.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/exbix_00026_.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

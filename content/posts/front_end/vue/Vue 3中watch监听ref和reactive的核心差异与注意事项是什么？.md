@@ -4,7 +4,7 @@ title: Vue 3中watch监听ref和reactive的核心差异与注意事项是什么�
 date: 2026-01-24T07:14:24+08:00
 lastmod: 2026-01-24T07:14:24+08:00
 author: cmdragon
-cover: /images/generated_image_64e72fda-59bc-4a44-b305-3c95aeecf169.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_64e72fda-59bc-4a44-b305-3c95aeecf169.png
 
 summary:
   Vue 3侦听器用于响应式数据变化时执行副作用，支持监听ref和reactive。监听ref可直接传入，reactive默认深度监听整个对象，单个属性需用getter函数。注意：reactive属性不能直接监听，须以函数返回，且对象新旧值引用相同。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_64e72fda-59bc-4a44-b305-3c95aeecf169.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_64e72fda-59bc-4a44-b305-3c95aeecf169.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

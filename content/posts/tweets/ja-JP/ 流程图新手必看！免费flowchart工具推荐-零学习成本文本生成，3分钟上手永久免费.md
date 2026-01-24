@@ -4,7 +4,7 @@ title: フローチャート初心者必見！無料のフローチャートツ�
 date: 2025-11-30T15:08:04+08:00
 lastmod: 2025-11-30T15:08:04+08:00
 author: cmdragon
-cover: /images/rzuvj_00005_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/rzuvj_00005_.png
 
 summary:
   フローチャートの初心者は、ツールの複雑さや有料化に悩むことがよくあります。Mermaid構文をベースにした無料のフローチャートツールをご紹介。テキスト記述でグラフィックを生成でき、登録不要で永久無料。日常計画やプロジェクト協働など幅広いシーンで、初心者でもゼロコストでプロセスを整理できます。
