@@ -4,7 +4,7 @@ title: PostgreSQL的“仓库-房间-货架”游戏，你能建出电商数据�
 date: 2025-09-22T01:57:04+08:00
 lastmod: 2025-09-22T01:57:04+08:00
 author: cmdragon
-cover: /images/60a04ac23c33499abe77f64ad417e7b9~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/60a04ac23c33499abe77f64ad417e7b9~tplv-5jbd59dj06-image.png
 
 summary:
   PostgreSQL 采用“集群-数据库-模式-表”的层级结构管理数据。数据库集群包含多个独立的数据库，每个数据库内通过模式组织表、视图等对象，表则存储具体数据。创建数据库可通过命令行工具`createdb`或SQL语句`CREATE DATABASE`，支持设置所有者、字符编码等参数。创建表需定义列名、数据类型和约束，如主键、外键、非空等，确保数据完整性。通过插入和查询数据，可验证表结构和约束的有效性。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/60a04ac23c33499abe77f64ad417e7b9~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/60a04ac23c33499abe77f64ad417e7b9~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

@@ -4,7 +4,7 @@ title: Kas yra RAID? Nuo pagrindų iki praktinės konfigūracijos – šis skai�
 date: 2025-12-09T03:50:29+08:00
 lastmod: 2025-12-09T03:50:29+08:00
 author: cmdragon
-cover: /images/ukcgc_00003_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/ukcgc_00003_.png
 
 summary:
   RAID (diskų masyvas) naudoja kelių diskų sąjungą, kad užtikrintų duomenų saugumą, plėstrą arba našumą. Skirtingos lygio savybės labai skiriasi. Pradedantiesiems konfigūruojant RAID reikia aiškiai nustatyti poreikius, apskaičiuoti talpą ir našumą, bei pasirinkti tinkamą programinę įrangą. Rekomenduojama RAID saugyklos skaičiuoklė, kuri įvedus parametrus generuoja konfigūracijos ataskaitą, padedanti pradedančiųjų greitai suprasti talpos ir lygio pasirinkimą, išvengdama klaidingos konfigūracijos.

@@ -21,7 +21,7 @@ tags:
   - 请求处理
 ---
 
-<img src="/images/2024_10_12 13_44_23.png" title="2024_10_12 13_44_23.png" alt="2024_10_12 13_44_23.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_10_12 13_44_23.png" title="2024_10_12 13_44_23.png" alt="2024_10_12 13_44_23.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

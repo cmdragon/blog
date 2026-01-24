@@ -4,7 +4,7 @@ title: 为什么你的单元测试需要Mock数据库才能飞起来？
 date: 2025-09-05T05:57:12+08:00
 lastmod: 2025-09-05T05:57:12+08:00
 author: cmdragon
-cover: /images/xw_20250905090430.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250905090430.png
 
 summary:
   FastAPI 的依赖注入系统通过自动解析和管理组件依赖，提升了代码的可测试性和可维护性。Mock 对象在测试中用于替代真实依赖，如数据库连接，以避免数据污染、提高执行效率并模拟各种响应。FastAPI 的依赖系统通过 `Depends()` 声明依赖，支持动态替换，便于测试时使用 Mock 对象。通过 `unittest.mock.patch` 和 `app.dependency_overrides` 可实现函数和生成器依赖的模拟，结合 Pydantic 模型确保 Mock 数据符合接口契约。分层 Mock 策略和自动化 Fixture 管理进一步优化了测试流程。

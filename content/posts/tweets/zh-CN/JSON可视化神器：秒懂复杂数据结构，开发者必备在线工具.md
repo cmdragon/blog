@@ -4,7 +4,7 @@ title: JSON可视化神器：秒懂复杂数据结构，开发者必备在线工
 date: 2025-07-02T08:37:03+08:00
 lastmod: 2025-07-02T08:37:03+08:00
 author: cmdragon
-cover: /images/xw_20250702191332.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250702191332.png
 
 summary:
   专为开发者打造的免费JSON可视化工具，支持实时解析、树状图展示和语法验证。无需安装即可将杂乱JSON转化为清晰数据结构，提升开发调试效率300%。

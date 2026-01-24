@@ -4,7 +4,7 @@ title: Vue3响应式系统的底层原理与实践要点你真的懂吗？
 date: 2025-11-05T06:20:17+08:00
 lastmod: 2025-11-05T06:20:17+08:00
 author: cmdragon
-cover: /images/3bb948c6339644d88d47987e442ff9d6~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/3bb948c6339644d88d47987e442ff9d6~tplv-5jbd59dj06-image.png
 
 summary:
   Vue的响应式系统通过跟踪JavaScript状态的变化，自动更新依赖该状态的UI或逻辑。核心机制基于Proxy，解决了Vue2中Object.defineProperty的局限，支持对象新增/删除属性和数组索引/长度变化的跟踪。响应式数据通过`ref`和`reactive`创建，`ref`适用于基本类型和对象，需通过`.value`访问；`reactive`适用于对象/数组，直接访问属性。响应式系统还支持`computed`和`watch`，分别用于计算属性和监听数据变化。嵌套对象和数组的变化也能被深度跟踪，确保UI的自动更新。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/3bb948c6339644d88d47987e442ff9d6~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/3bb948c6339644d88d47987e442ff9d6~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

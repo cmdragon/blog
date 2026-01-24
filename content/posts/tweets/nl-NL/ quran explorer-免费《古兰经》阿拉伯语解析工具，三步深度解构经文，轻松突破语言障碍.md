@@ -4,7 +4,7 @@ title: Quran Explorer - Gratis tool voor Arabische analyse van het Koran, met dr
 date: 2025-12-03T06:57:49+08:00
 lastmod: 2025-12-03T06:57:49+08:00
 author: cmdragon
-cover: /images/25eec91a215f4ac497b69f3dc7b5a04c~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/25eec91a215f4ac497b69f3dc7b5a04c~tplv-5jbd59dj06-image.png
 
 summary:
   Quran Explorer is een gratis tool voor de Arabische analyse van het Koran, speciaal ontwikkeld om taalbarrières voor niet-moedertaalsprekers te overwinnen. De tool ondersteunt diepe tekstverheldering (met woordbetekenis, grammatica en achtergrond), meertalige vergelijking, audiosupport en notitiefunctie. Gebruikers kunnen met drie eenvoudige stappen gratis gebruik maken tekst lokaliseren, analyse verkrijgen en delen opslaan, waardoor het leren van het Koran voor iedereen toegankelijk wordt.

@@ -21,7 +21,7 @@ tags:
   - 数据建模
 ---
 
-<img src="/images/2025_02_19 16_02_39.png" title="2025_02_19 16_02_39.png" alt="2025_02_19 16_02_39.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2025_02_19 16_02_39.png" title="2025_02_19 16_02_39.png" alt="2025_02_19 16_02_39.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

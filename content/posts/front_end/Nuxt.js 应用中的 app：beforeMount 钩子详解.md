@@ -21,7 +21,7 @@ tags:
   - 应用优化
 ---
 
-<img src="/images/2024_10_04 11_21_30.png" title="2024_10_04 11_21_30.png" alt="2024_10_04 11_21_30.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_10_04 11_21_30.png" title="2024_10_04 11_21_30.png" alt="2024_10_04 11_21_30.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

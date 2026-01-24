@@ -4,7 +4,7 @@ title: 快速入门Vue3事件处理的挑战题：v-on、修饰符、自定义�
 date: 2025-10-30T09:09:07+08:00
 lastmod: 2025-10-30T09:09:07+08:00
 author: cmdragon
-cover: /images/37076889659047936.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/37076889659047936.png
 
 summary:
   Vue3 中的 `v-on` 指令用于处理 DOM 事件，支持内联表达式和方法处理器。事件修饰符如 `.stop` 和 `.prevent` 简化了事件流控制和默认行为阻止。按键修饰符如 `.enter` 和系统修饰符如 `.ctrl` 用于处理键盘和组合键事件。自定义事件通过 `$emit` 实现子组件向父组件传递数据，`defineEmits` 可验证事件参数。常见报错包括 `$event` 未定义、事件名大小写不匹配和修饰符拼写错误。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/37076889659047936.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/37076889659047936.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

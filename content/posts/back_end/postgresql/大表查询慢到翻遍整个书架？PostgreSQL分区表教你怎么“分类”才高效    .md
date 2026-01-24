@@ -4,7 +4,7 @@ title: 大表查询慢到翻遍整个书架？PostgreSQL分区表教你怎么“
 date: 2025-10-13T03:29:44+08:00
 lastmod: 2025-10-13T03:29:44+08:00
 author: cmdragon
-cover: /images/ade3054cba0c47409871c87bb7050a08~tplv-5jbd59dj06-aigc.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/ade3054cba0c47409871c87bb7050a08~tplv-5jbd59dj06-aigc.png
 
 summary:
   分区表通过将逻辑上的大表拆分为物理上的小表，提升数据库性能。PostgreSQL支持范围分区、列表分区和哈希分区三种方式，分别适用于按连续区间、枚举值和哈希值拆分数据的场景。分区表的核心优势包括查询加速、批量操作高效、冷数据存储优化和索引性能提升。声明式分区是推荐实现方式，通过创建分区表、分区和索引，结合分区剪枝优化查询性能。维护分区表时，可添加、删除或修改分区，并可通过子分区进一步优化。最佳实践包括选择合适的分区键、控制分区数量、考虑扩展性、避免跨分区操作和谨慎使用默认分区。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/ade3054cba0c47409871c87bb7050a08~tplv-5jbd59dj06-aigc.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/ade3054cba0c47409871c87bb7050a08~tplv-5jbd59dj06-aigc.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

@@ -4,7 +4,7 @@ title: Vue浅响应式如何解决深层响应式的性能问题？适用场景�
 date: 2025-11-14T01:59:18+08:00
 lastmod: 2025-11-14T01:59:18+08:00
 author: cmdragon
-cover: /images/f33ee20a8a074464a43a598f7e4e03fe~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/f33ee20a8a074464a43a598f7e4e03fe~tplv-5jbd59dj06-image.png
 
 summary:
   Vue 的响应式系统默认是深层响应式的，但深层代理可能带来性能开销。浅响应式（Shallow Reactivity）通过 `shallowReactive` 和 `shallowRef` 仅跟踪顶层属性的变化，避免递归代理嵌套对象。`shallowReactive` 只响应顶层属性的修改，而 `shallowRef` 仅跟踪 `.value` 的替换操作。浅响应式适用于处理大型对象或外部管理的状态，以减少响应式开销。通过浅响应式，Vue 可以更高效地管理状态，避免不必要的性能损耗。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/f33ee20a8a074464a43a598f7e4e03fe~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/f33ee20a8a074464a43a598f7e4e03fe~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

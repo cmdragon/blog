@@ -4,7 +4,7 @@ title: FastAPI如何巧妙驾驭混合云任务调度，让异步魔力尽情释
 date: 2025-08-26T03:58:29+08:00
 lastmod: 2025-08-26T03:58:29+08:00
 author: cmdragon
-cover: /images/xw_20250826090808.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250826090808.png
 
 summary:
   FastAPI框架利用其异步特性，结合Celery和Redis，构建了混合云任务调度方案，适用于高并发场景。方案通过Pydantic模型验证任务请求，智能路由任务至公有云或私有云节点，并实时跟踪任务状态。代码示例展示了任务提交、路由决策和状态查询的实现，特别适用于视频转码等计算密集型任务。系统自动将高负荷任务分配至公有云，普通任务则在本地处理，确保资源高效利用。

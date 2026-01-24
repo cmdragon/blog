@@ -4,7 +4,7 @@ title: 流程图新手必看！免费flowchart工具推荐-零学习成本文本
 date: 2025-11-30T15:08:04+08:00
 lastmod: 2025-11-30T15:08:04+08:00
 author: cmdragon
-cover: /images/rzuvj_00005_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/rzuvj_00005_.png
 
 summary:
   新手绘制流程图常面临工具复杂或付费难题，推荐免费的flowchart工具。它基于mermaid语法，文本描述即可生成图形，无需注册，永久免费，适配日常计划、项目协作等场景，助新手零门槛梳理流程。

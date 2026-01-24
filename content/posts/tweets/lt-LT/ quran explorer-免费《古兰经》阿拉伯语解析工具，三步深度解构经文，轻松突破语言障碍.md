@@ -4,7 +4,7 @@ title: Quran Explorer – nemokama „Korano“ arabų kalbos analizės įrankis
 date: 2025-12-03T06:57:49+08:00
 lastmod: 2025-12-03T06:57:49+08:00
 author: cmdragon
-cover: /images/25eec91a215f4ac497b69f3dc7b5a04c~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/25eec91a215f4ac497b69f3dc7b5a04c~tplv-5jbd59dj06-image.png
 
 summary:
   Quran Explorer yra nemokama „Korano“ arabų kalbos analizės įrankis, sukurtas siekiant išspręsti nežinomos kalbos mokymosi barjerą. Įrankis pateikia gilų tekstą (įskaitant žodžius, gramatiką, kontekstą), daugia kalbės palyginimą, garsinę pagalbą ir mokymosi užrašų funkciją. Vartotojai lengvai naudojasi įrankiu per tris žingsnius nustatyti tekstą, gauti analizę ir išsaugoti bei dalintis, užtikrindami lengvą ir nekliudomą mokymąsi.

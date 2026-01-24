@@ -20,7 +20,7 @@ tags:
   - 动态路由
 ---
 
-<img src="/images/2024_06_07 18_24_06.png" title="2024_06_07 18_24_06.png" alt="2024_06_07 18_24_06.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_06_07 18_24_06.png" title="2024_06_07 18_24_06.png" alt="2024_06_07 18_24_06.png"/>
 
 
 ## **第1章 Vue Router简介**

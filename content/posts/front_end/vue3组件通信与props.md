@@ -16,7 +16,7 @@ tags:
   - 单向数据流
 ---
 
-<img src="/images/2024_05_31 21_06_03.png" title="2024_05_31 21_06_03.png" alt="2024_05_31 21_06_03.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_31 21_06_03.png" title="2024_05_31 21_06_03.png" alt="2024_05_31 21_06_03.png"/>
 
 ## Vue 3 组件基础
 

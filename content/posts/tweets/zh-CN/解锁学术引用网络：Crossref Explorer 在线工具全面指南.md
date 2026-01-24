@@ -4,7 +4,7 @@ title: 解锁学术引用网络：Crossref Explorer 在线工具全面指南
 date: 2025-07-03T08:37:03+08:00
 lastmod: 2025-07-03T08:37:03+08:00
 author: cmdragon
-cover: /images/xw_20250703161359.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250703161359.png
 
 summary:
   深度解析学术文献引用关系的免费神器！通过DOI一键追踪引用链，可视化文献网络，支持批量查询与数据导出，助力研究效率飞跃提升。

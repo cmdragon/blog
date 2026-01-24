@@ -4,7 +4,7 @@ title: 免费在线CSV转换神器：一键转Excel/JSON/XML
 date: 2025-07-03T08:37:03+08:00
 lastmod: 2025-07-03T08:37:03+08:00
 author: cmdragon
-cover: /images/xw_20250703155112.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250703155112.png
 
 summary:
   CMDragon推出的专业级CSV在线转换工具，支持CSV与Excel/JSON/XML等17+格式互转，无需安装软件，浏览器直接处理100MB大文件，数据转换效率提升300%

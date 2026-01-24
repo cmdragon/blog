@@ -4,7 +4,7 @@ title: Protocol Buffer 工具箱：高效处理Proto文件的在线神器
 date: 2025-07-02T08:37:03+08:00
 lastmod: 2025-07-02T08:37:03+08:00
 author: cmdragon
-cover: /images/xw_20250702194018.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250702194018.png
 
 summary: 
   专为开发者打造的Protocol Buffer全能工具箱！支持Proto与JSON互转、Message解析、文件生成、语法检查等核心功能，无需安装任何软件，浏览器中免费高效处理Proto文件。

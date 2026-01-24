@@ -4,7 +4,7 @@ title: Vue3计算属性如何通过缓存特性优化表单验证与数据过滤
 date: 2025-12-07T08:17:47+08:00
 lastmod: 2025-12-07T08:17:47+08:00
 author: cmdragon
-cover: /images/macbg_00005_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/macbg_00005_.png
 
 summary:
   Vue3计算属性可解决表单验证和动态数据过滤需求。表单验证中，用computed缓存结果检查用户名、密码等合法性，控制提交按钮状态；动态数据过滤时，实时过滤商品列表，仅依赖数据变化时重算。还可抽取验证逻辑复用，提升代码复用性与性能。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/macbg_00005_.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/macbg_00005_.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

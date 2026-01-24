@@ -4,7 +4,7 @@ title: Grafico da tabella TD troppo difficile? Mermaid Live Editor anteprima in 
 date: 2025-12-06T10:55:55+08:00
 lastmod: 2025-12-06T10:55:55+08:00
 author: cmdragon
-cover: /images/xjpvh_00004_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xjpvh_00004_.png
 
 summary:
   Convertire le tabelle in grafici tradizionalmente richiede operazioni manuali complesse, presenta bassa compatibilità dei formati e scarsa reattività. Mermaid Live Editor supporta la sintassi `graph TD`, generando diagrammi di flusso in tempo reale con anteprima immediata, permettendo di trascinare per modificare lo stile e esportare in diversi formati (PNG/SVG), ideale per gestione progetti e documentazione tecnica.

@@ -21,7 +21,7 @@ tags:
   - 服务端渲染
 ---
 
-<img src="/images/2024_07_12 15_51_07.png" title="2024_07_12 15_51_07.png" alt="2024_07_12 15_51_07.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_07_12 15_51_07.png" title="2024_07_12 15_51_07.png" alt="2024_07_12 15_51_07.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

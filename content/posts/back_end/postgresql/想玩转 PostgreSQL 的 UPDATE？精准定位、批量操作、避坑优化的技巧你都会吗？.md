@@ -4,7 +4,7 @@ title: PostgreSQL UPDATE语句怎么玩？从改邮箱到批量更新的避坑�
 date: 2025-09-25T01:03:40+08:00
 lastmod: 2025-09-25T01:03:40+08:00
 author: cmdragon
-cover: /images/4d9200bf46c148008a63805ace2db034~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/4d9200bf46c148008a63805ace2db034~tplv-5jbd59dj06-image.png
 
 summary:
   PostgreSQL的`UPDATE`语句用于修改数据库中的已有数据，通过`SET`子句定义新值，`WHERE`子句精准定位行，`FROM`子句关联其他表，`RETURNING`子句返回修改结果。高级用法包括分批更新减少锁冲突、使用`WITH`子句分步处理复杂逻辑、结合游标逐行修改。实践案例展示了电商订单状态更新的具体实现，常见报错如语法错误、唯一约束冲突等也提供了解决方案。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/4d9200bf46c148008a63805ace2db034~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/4d9200bf46c148008a63805ace2db034~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

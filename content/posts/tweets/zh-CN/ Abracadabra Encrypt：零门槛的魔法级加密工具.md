@@ -4,7 +4,7 @@ title: Abracadabra Encrypt：零门槛的魔法级加密工具
 date: 2025-07-08T08:37:03+08:00
 lastmod: 2025-07-08T08:37:03+08:00
 author: cmdragon
-cover: /images/xw_20250708164005.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250708164005.png
 
 summary: 无需技术背景！Abracadabra Encrypt提供一键式文本加密/解密，支持AES-256、Base64等主流算法，实时预览加密效果，保障您的数据隐私安全。
 

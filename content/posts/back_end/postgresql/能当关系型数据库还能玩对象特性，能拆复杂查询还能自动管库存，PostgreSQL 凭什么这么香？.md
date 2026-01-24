@@ -4,7 +4,7 @@ title: 能当关系型数据库还能玩对象特性，能拆复杂查询还能�
 date: 2025-09-20T06:58:38+08:00
 lastmod: 2025-09-20T06:58:38+08:00
 author: cmdragon
-cover: /images/f68692acb80048e2ba9030bc6fea2186~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/f68692acb80048e2ba9030bc6fea2186~tplv-5jbd59dj06-image.png
 
 summary:
   PostgreSQL是一种对象-关系型数据库（ORDBMS），结合了关系型数据库的结构化特性和对象型数据库的灵活性，支持自定义数据类型和方法。它起源于1986年的POSTGRES项目，1996年开源后成为全球流行的数据库之一。PostgreSQL的核心特性包括复杂查询、事务完整性、MVCC（多版本并发控制）、外键和触发器，能够高效处理高并发和复杂数据操作。此外，PostgreSQL具有强大的可扩展性，支持自定义数据类型、函数和索引，满足多样化需求。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/f68692acb80048e2ba9030bc6fea2186~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/f68692acb80048e2ba9030bc6fea2186~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

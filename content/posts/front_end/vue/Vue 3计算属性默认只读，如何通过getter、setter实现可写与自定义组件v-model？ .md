@@ -4,7 +4,7 @@ title: Vue 3计算属性默认只读，如何通过getter/setter实现可写与�
 date: 2025-11-20T06:07:57+08:00
 lastmod: 2025-11-20T06:07:57+08:00
 author: cmdragon
-cover: /images/c0a44397126b498e87ce9e0ea131947e~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/c0a44397126b498e87ce9e0ea131947e~tplv-5jbd59dj06-image.png
 
 summary:
   Vue 3 中的计算属性默认是只读的，用于封装依赖数据的计算逻辑并自动响应变化。通过添加 `setter`，计算属性可以从只读变为可写，允许通过修改计算属性来同步更新依赖数据。计算属性的 `getter/setter` 还可用于简化自定义组件的 `v-model` 实现，通过 `getter` 读取 `props`，`setter` 触发更新事件，完成双向绑定。常见错误包括尝试修改只读计算属性、`setter` 导致无限循环以及 `v-model` 未正确更新父组件数据。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/c0a44397126b498e87ce9e0ea131947e~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/c0a44397126b498e87ce9e0ea131947e~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

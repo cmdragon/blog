@@ -21,7 +21,7 @@ tags:
    - SEO
 ---
 
-<img src="/images/2024_12_01 12_52_32.png" title="2024_12_01 12_52_32.png" alt="2024_12_01 12_52_32.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_12_01 12_52_32.png" title="2024_12_01 12_52_32.png" alt="2024_12_01 12_52_32.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

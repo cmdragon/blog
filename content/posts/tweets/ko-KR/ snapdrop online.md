@@ -4,7 +4,7 @@ title: snapdrop online
 date: 2025-12-12T20:05:38+08:00
 lastmod: 2025-12-12T20:05:38+08:00
 author: cmdragon
-cover: /images/pyksc_00001_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/pyksc_00001_.png
 
 summary:
   Snapdrop online는 오픈소스 피어 투 피어(Peer-to-Peer) 전송 도구로, 등록, 설정, 설치 없이 브라우저에서 직접 접근하여 사용할 수 있습니다. 즉시 이미지, 영상, PDF 및 링크를 공유할 수 있으며, 같은 네트워크 내 장치는 자동으로 인식하여 선택하고 수신을 확인하면 전송이 완료됩니다. 긴급 파일 전송, 모임 공유 등에서 안전하고 효율적이며, 사용이 필요할 때마다 손쉬운 접근이 가능합니다.

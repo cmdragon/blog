@@ -4,7 +4,7 @@ title: 如何在FastAPI中巧妙实现延迟队列，让任务乖乖等待？
 date: 2025-08-22T14:32:13+08:00
 lastmod: 2025-08-22T14:32:13+08:00
 author: cmdragon
-cover: /images/xw_20250822213237.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250822213237.png
 
 summary:
   消息队列是分布式系统中实现异步通信的核心组件，延迟队列则允许在指定时间后投递消息，适用于定时任务和失败重试等场景。FastAPI中推荐使用Redis或RabbitMQ作为消息中间件，结合Celery或arq实现延迟队列。Redis通过Sorted Set和arq实现全异步延迟队列，RabbitMQ则利用死信队列实现延迟投递。实际应用包括电商订单超时、会议提醒、重试机制和定时报告等。常见问题如422验证错误和连接拒绝错误，需检查数据格式和连接参数。

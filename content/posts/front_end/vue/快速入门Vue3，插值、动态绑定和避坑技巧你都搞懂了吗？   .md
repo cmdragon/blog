@@ -4,7 +4,7 @@ title: 快速入门Vue3，插值、动态绑定和避坑技巧你都搞懂了吗
 date: 2025-10-29T12:03:42+08:00
 lastmod: 2025-10-29T12:03:42+08:00
 author: cmdragon
-cover: /images/1d219c3370d94335aacf2e9bc721e5fc~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/1d219c3370d94335aacf2e9bc721e5fc~tplv-5jbd59dj06-image.png
 
 summary:
   Vue3的模板语法基于HTML，允许通过插值和指令将响应式数据与DOM绑定，实现数据变化时页面自动更新。核心流程包括模板解析为AST，编译为渲染函数，生成虚拟DOM并更新真实DOM。文本插值使用`{{ }}`，支持简单表达式，自动转义HTML；`v-html`指令可渲染原始HTML，但存在XSS风险。`v-bind`用于动态绑定HTML属性，缩写为`:`，支持动态属性名和对象语法，常用于动态切换`class`和`style`。所有绑定属性均为响应式，数据变化时自动更新。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/1d219c3370d94335aacf2e9bc721e5fc~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/1d219c3370d94335aacf2e9bc721e5fc~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

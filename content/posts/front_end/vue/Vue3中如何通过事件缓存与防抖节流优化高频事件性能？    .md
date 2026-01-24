@@ -4,7 +4,7 @@ title: Vue3中如何通过事件缓存与防抖节流优化高频事件性能？
 date: 2026-01-16T10:09:30+08:00
 lastmod: 2026-01-16T10:09:30+08:00
 author: cmdragon
-cover: /images/generated_image_9b7dd8d0-971d-4872-9f4f-5adbce54d226.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_9b7dd8d0-971d-4872-9f4f-5adbce54d226.png
 
 summary:
   Vue3事件处理性能优化：v-on方法引用复用函数避免重复创建；高频事件用Lodash防抖（等待后执行，如搜索）或节流（固定间隔，如滚动）优化；支持动态绑定与事件修饰符（.stop等），手动绑定需onUnmounted解绑；优先事件委托减少监听器，提升性能。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_9b7dd8d0-971d-4872-9f4f-5adbce54d226.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_9b7dd8d0-971d-4872-9f4f-5adbce54d226.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

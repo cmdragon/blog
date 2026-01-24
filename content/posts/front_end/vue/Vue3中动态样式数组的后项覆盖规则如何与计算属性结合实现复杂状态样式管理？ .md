@@ -4,7 +4,7 @@ title: Vue3中动态样式数组的后项覆盖规则如何与计算属性结合
 date: 2025-12-17T12:10:12+08:00
 lastmod: 2025-12-17T12:10:12+08:00
 author: cmdragon
-cover: /images/generated_image_01ecf107-77c0-4a2a-929f-06fcf0e9e206.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_01ecf107-77c0-4a2a-929f-06fcf0e9e206.png
 
 summary:
   Vue3样式绑定包含数组语法(后项覆盖前项)、计算属性(处理多状态样式)、动态内联样式(与数据联动)三大技巧。数组合并规则清晰，计算属性抽离复杂逻辑，动态样式通过响应式数据联动更新。需注意驼峰命名、非响应式对象不更新等问题，以提升样式组合灵活性与可维护性。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_01ecf107-77c0-4a2a-929f-06fcf0e9e206.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_01ecf107-77c0-4a2a-929f-06fcf0e9e206.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

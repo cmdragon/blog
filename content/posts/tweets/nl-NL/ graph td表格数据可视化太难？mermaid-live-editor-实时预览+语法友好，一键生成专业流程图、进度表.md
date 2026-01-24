@@ -4,7 +4,7 @@ title: Grafieken uit tabellen visualiseren? Mermaid-live-editor ondersteunt grap
 date: 2025-12-06T10:55:55+08:00  
 lastmod: 2025-12-06T10:55:55+08:00  
 author: cmdragon  
-cover: /images/xjpvh_00004_.png  
+cover: https://api2.cmdragon.cn/upload/cmder/images/xjpvh_00004_.png  
 
 summary:  
     Traditionele tabellen omzetten naar grafieken vereist veel handmatige werkzaamheden, heeft beperkte compatibiliteit met formaten en biedt geen realtime updates. Mermaid-live-editor ondersteunt de `graph td`-syntax, genereert stroomdiagrammen direct en toont realtime voorbeelden. Het ondersteunt sleepen om stijl aan te passen en export naar meerdere formaten (PNG/SVG), geschikt voor projectbeheer en technische documentatie.  

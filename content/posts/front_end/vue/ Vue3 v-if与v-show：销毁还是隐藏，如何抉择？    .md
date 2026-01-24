@@ -4,7 +4,7 @@ title: Vue3 v-if与v-show：销毁还是隐藏，如何抉择？
 date: 2025-12-24T03:41:20+08:00
 lastmod: 2025-12-24T03:41:20+08:00
 author: cmdragon
-cover: /images/generated_image_c74a9e79-f190-4db1-89f8-3d07d3f044ed.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_c74a9e79-f190-4db1-89f8-3d07d3f044ed.png
 
 summary:
   Vue3中v-if与v-show是条件渲染核心指令。v-if控制组件存在（条件假时销毁，真时创建），v-show控制显示（修改display样式，组件始终存在）。v-if切换成本高（初始化快），v-show切换成本低（初始化高）。频繁切换或需保留状态用v-show，极少变化用v-if。注意v-show不与v-else搭配，v-if/v-for共存需先过滤数组。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_c74a9e79-f190-4db1-89f8-3d07d3f044ed.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_c74a9e79-f190-4db1-89f8-3d07d3f044ed.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

@@ -16,7 +16,7 @@ tags:
   - 安全实践
 ---
 
-<img src="/images/2024_05_11 18_37_29.png" title="2024_05_11 18_37_29.png" alt="2024_05_11 18_37_29.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_11 18_37_29.png" title="2024_05_11 18_37_29.png" alt="2024_05_11 18_37_29.png"/>
 
 **引言**
 

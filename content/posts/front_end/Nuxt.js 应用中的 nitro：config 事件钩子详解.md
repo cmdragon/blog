@@ -21,7 +21,7 @@ tags:
    - 生命周期
 ---
 
-<img src="/images/2024_11_02 15_32_47.png" title="2024_11_02 15_32_47.png" alt="2024_11_02 15_32_47.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_11_02 15_32_47.png" title="2024_11_02 15_32_47.png" alt="2024_11_02 15_32_47.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

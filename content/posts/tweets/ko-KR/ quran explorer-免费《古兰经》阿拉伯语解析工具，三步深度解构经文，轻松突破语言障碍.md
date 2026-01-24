@@ -4,7 +4,7 @@ title: quran explorer - 무료 코란 아라비아어 해석 도구, 3단계로 
 date: 2025-12-03T06:57:49+08:00
 lastmod: 2025-12-03T06:57:49+08:00
 author: cmdragon
-cover: /images/25eec91a215f4ac497b69f3dc7b5a04c~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/25eec91a215f4ac497b69f3dc7b5a04c~tplv-5jbd59dj06-image.png
 
 summary:
   quran explorer는 비모국어 학습자가 코란 아라비아어 경문의 언어 장벽을 극복할 수 있도록 설계된 무료 해석 도구입니다. 단어, 문법, 배경을 포함한 심층 해석, 다국어 대조, 음성 보조, 노트 기능을 지원하며, 경문 위치 지정, 해석 얻기, 저장 및 공유 3단계로 무료로 사용 가능하여 입문 장벽을 낮춥니다.

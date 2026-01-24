@@ -4,7 +4,7 @@ title: Snapdrop-Anleitung Dateien nahtlos zwischen Smartphone und Computer über
 date: 2025-11-22T14:41:18+08:00
 lastmod: 2025-11-22T14:41:18+08:00
 author: cmdragon
-cover: /images/6fd6463271834f2c905d01c5349000c2~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/6fd6463271834f2c905d01c5349000c2~tplv-5jbd59dj06-image.png
 
 summary:
   Snapdrop ist ein clientloses Werkzeug zur Dateiübertragung zwischen Geräten, das Probleme wie langsame Bluetooth-Übertragungen, Dateigrößenbeschränkungen und das Verwenden von Datenkabeln löst. Basierend auf einer Webanwendung erkennt es automatisch Geräte im selben lokalen Netzwerk (LAN), überträgt Dateien direkt zwischen Geräten ohne Cloud-Speicherung, ist sicher, effizient und unterstützt verschiedene Dateiformate. Die Bedienung ist einfach Beide Geräte müssen im selben WLAN sein, die Website besuchen, auf das Gerät klicken und die Datei übertragen. Der Empfänger bestätigt die Speicherung. Nach Abschluss bleibt keine Datei gespeichert.

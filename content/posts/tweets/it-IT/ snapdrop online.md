@@ -4,7 +4,7 @@ title: snapdrop online
 date: 2025-12-12T20:05:38+08:00
 lastmod: 2025-12-12T20:05:38+08:00
 author: cmdragon
-cover: /images/pyksc_00001_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/pyksc_00001_.png
 
 summary:
   Snapdrop online è uno strumento open source di trasferimento P2P, che non richiede registrazione, configurazione o installazione basta accedere tramite browser per condividere immediatamente immagini, video, PDF e link. I dispositivi sulla stessa rete vengono rilevati automaticamente, selezionare il contenuto e confermare la ricezione completa il trasferimento. Ideale per trasferimenti di file urgenti, condivisioni in occasioni sociali e scenari in cui è richiesta una soluzione sicura ed efficiente.

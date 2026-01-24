@@ -21,7 +21,7 @@ tags:
 ---
 
 
-<img src="/images/2024_06_10 13_33_24.png" title="2024_06_10 13_33_24.png" alt="2024_06_10 13_33_24.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_06_10 13_33_24.png" title="2024_06_10 13_33_24.png" alt="2024_06_10 13_33_24.png"/>
 
 
 ### 第一章：Vue与TypeScript简介

@@ -4,7 +4,7 @@ title: Was bedeutet RAID? Von Grundlagen bis zur praktischen Konfiguration – d
 date: 2025-12-09T03:50:29+08:00
 lastmod: 2025-12-09T03:50:29+08:00
 author: cmdragon
-cover: /images/ukcgc_00003_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/ukcgc_00003_.png
 
 summary:
   RAID (Festplattenspeicherarray) ermöglicht durch Kombination mehrerer Festplatten Datensicherheit, Kapazitätsausweitung oder Leistungssteigerung. Die Effekte unterscheiden sich je nach Stufe. Für Anfänger ist es entscheidend, Anforderungen zu klären, Kapazität und Leistung zu berechnen und die richtige Software auszuwählen. Wir empfehlen einen spezialisierten RAID-Speicherrechner, der Konfigurationsberichte basierend auf Eingabewerten erstellt und Anfängern dabei hilft, Kapazität und Stufe präzise auszuwählen – ohne Konfigurationsfehler.

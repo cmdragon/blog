@@ -4,7 +4,7 @@ title: Vue3中如何从臃肿的模板条件逻辑升级为可维护的优雅渲
 date: 2025-12-27T18:09:23+08:00
 lastmod: 2025-12-27T18:09:23+08:00
 author: cmdragon
-cover: /images/generated_image_8663e6c0-a5e5-44cc-a229-686bcfe08d2f.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_8663e6c0-a5e5-44cc-a229-686bcfe08d2f.png
 
 summary:
   Vue3复杂条件渲染处理，基础指令含v - if（销毁重建）、v - show（CSS隐藏）及v - if包裹多元素。复杂条件推荐计算属性封装逻辑、工具函数复用、组件拆分或动态组件。常见问题：v - else需紧跟v - if/else - if，v - show不用于template，频繁切换用v - show。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_8663e6c0-a5e5-44cc-a229-686bcfe08d2f.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_8663e6c0-a5e5-44cc-a229-686bcfe08d2f.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

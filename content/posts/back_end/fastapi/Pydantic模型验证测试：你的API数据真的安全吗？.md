@@ -4,7 +4,7 @@ title: Pydantic模型验证测试：你的API数据真的安全吗？
 date: 2025-09-03T23:46:18+08:00
 lastmod: 2025-09-03T23:46:18+08:00
 author: cmdragon
-cover: /images/xw_20250904090013.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250904090013.png
 
 summary:
   Pydantic在FastAPI中用于数据验证和序列化，通过Python类型注解自动解析请求体并执行验证规则，确保代码简洁安全。验证测试至关重要，可防止无效数据进入业务逻辑层，避免安全漏洞和API错误。测试环境需使用最新库版本，模型定义包括邮箱、密码和年龄的验证规则。测试脚本涵盖有效数据、边界条件和错误场景的验证。与FastAPI集成测试确保API端点验证正确。最佳实践包括覆盖所有字段、测试边界值和验证错误消息的明确性。

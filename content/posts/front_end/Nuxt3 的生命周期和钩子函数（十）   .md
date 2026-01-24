@@ -21,7 +21,7 @@ tags:
   - 插件定制
 ---
 
-<img src="/images/2024_07_04 18_18_53.png" title="2024_07_04 18_18_53.png" alt="2024_07_04 18_18_53.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_07_04 18_18_53.png" title="2024_07_04 18_18_53.png" alt="2024_07_04 18_18_53.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

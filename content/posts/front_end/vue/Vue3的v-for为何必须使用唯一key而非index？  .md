@@ -4,7 +4,7 @@ title: Vue3的v-for为何必须使用唯一key而非index？
 date: 2026-01-05T05:58:27+08:00
 lastmod: 2026-01-05T05:58:27+08:00
 author: cmdragon
-cover: /images/generated_image_d169ec50-f593-4ee3-931b-c05cfe0643a9.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_d169ec50-f593-4ee3-931b-c05cfe0643a9.png
 
 summary:
   Vue3数据绑定依赖响应式系统，通过插值、v-bind实现双向绑定，基于Proxy代理监听数据变化。列表渲染用v-for遍历数组/对象，key优化性能。实战结合Axios与onMounted获取后端数据并渲染，处理加载状态；进阶含数组方法动态更新及性能优化。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_d169ec50-f593-4ee3-931b-c05cfe0643a9.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_d169ec50-f593-4ee3-931b-c05cfe0643a9.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

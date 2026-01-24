@@ -4,7 +4,7 @@ title: Vue 3中reactive函数如何通过Proxy实现响应式？使用时要避�
 date: 2025-11-06T08:05:07+08:00    
 lastmod: 2025-11-06T08:05:07+08:00    
 author:  cmdragon      
-cover: /images/c473afe37e1849b48a223ab7aa3625bd~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/c473afe37e1849b48a223ab7aa3625bd~tplv-5jbd59dj06-image.png
 
 summary:  
   Vue 3中的`reactive`函数用于创建响应式对象，自动追踪属性变化并触发视图更新。它基于ES6 Proxy实现，通过拦截对象操作来收集依赖和触发更新。`reactive`适用于管理复杂对象状态，如表单和购物车，但不能处理原始类型，需使用`ref`。解构`reactive`对象会失去响应式，需用`toRefs`或`toRef`转换。直接替换`reactive`对象会导致失去响应式，应修改属性或使用`Object.assign`。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/c473afe37e1849b48a223ab7aa3625bd~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/c473afe37e1849b48a223ab7aa3625bd~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

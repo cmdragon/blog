@@ -4,7 +4,7 @@ title: Quran Explorer – Free Arabic Quran Analysis Tool, Three-Step Deep Decon
 date: 2025-12-03T06:57:49+08:00
 lastmod: 2025-12-03T06:57:49+08:00
 author: cmdragon
-cover: /images/25eec91a215f4ac497b69f3dc7b5a04c~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/25eec91a215f4ac497b69f3dc7b5a04c~tplv-5jbd59dj06-image.png
 
 summary:
   Quran Explorer is a free Arabic Quran analysis tool designed to overcome language barriers for non-native learners. It offers deep verse analysis (including vocabulary, grammar, and historical context), multi-language comparison, audio assistance, and note-taking features. Users can access it in three simple steps locate verses, obtain analysis, and save/share—enabling barrier-free learning.

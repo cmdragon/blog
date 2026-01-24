@@ -4,7 +4,7 @@ title: Guia essencial para iniciantes! Recomendação de ferramentas gratuitas d
 date: 2025-11-30T15:08:04+08:00
 lastmod: 2025-11-30T15:08:04+08:00
 author: cmdragon
-cover: /images/rzuvj_00005_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/rzuvj_00005_.png
 
 summary:
   Iniciantes em desenho de fluxogramas frequentemente enfrentam dificuldades com ferramentas complexas ou de pagamento. Recomendamos uma ferramenta gratuita de fluxograma baseada na sintaxe Mermaid basta descrever o processo em texto para gerar o gráfico, sem necessidade de registo, totalmente gratuita e adaptável a cenários cotidianos como planejamento e colaboração em projetos, permitindo que iniciantes organizem processos sem barreiras.

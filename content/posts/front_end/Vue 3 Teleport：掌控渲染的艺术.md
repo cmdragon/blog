@@ -20,7 +20,7 @@ tags:
   - 测试
 ---
 
-<img src="/images/2024_06_05 20_03_26.png" title="2024_06_05 20_03_26.png" alt="2024_06_05 20_03_26.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_06_05 20_03_26.png" title="2024_06_05 20_03_26.png" alt="2024_06_05 20_03_26.png"/>
 
 ## 第一章：Vue 3 Teleport概述
 

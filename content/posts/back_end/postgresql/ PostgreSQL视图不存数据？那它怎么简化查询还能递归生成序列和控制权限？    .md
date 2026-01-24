@@ -4,7 +4,7 @@ title: PostgreSQL视图不存数据？那它怎么简化查询还能递归生成
 date: 2025-10-01T06:30:56+08:00
 lastmod: 2025-10-01T06:30:56+08:00
 author: cmdragon
-cover: /images/d7debf4a6a784dd6a4eba17af1c2a803~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/d7debf4a6a784dd6a4eba17af1c2a803~tplv-5jbd59dj06-image.png
 
 summary:
   PostgreSQL视图是基于SQL查询结果的虚拟表，不存储数据，仅保存查询逻辑。视图简化复杂查询、限制数据访问、隔离schema变化。创建视图使用`CREATE VIEW`语句，支持`OR REPLACE`替换已有视图、`TEMPORARY`创建临时视图、`RECURSIVE`递归视图。视图可指定列名、设置`WITH`选项（如`security_barrier`）、`CHECK OPTION`确保更新行可见。可更新视图需满足特定条件，否则通过`INSTEAD OF`触发器实现更新。递归视图处理层级结构或序列生成。视图权限默认基于视图所有者，`security_invoker`以调用者权限访问基础表，`security_barrier`防止信息泄露。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/d7debf4a6a784dd6a4eba17af1c2a803~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/d7debf4a6a784dd6a4eba17af1c2a803~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

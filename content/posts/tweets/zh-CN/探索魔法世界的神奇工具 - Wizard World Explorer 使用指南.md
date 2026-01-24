@@ -4,7 +4,7 @@ title: 探索魔法世界的神奇工具 - Wizard World Explorer 使用指南
 date: 2025-06-30T08:37:03+08:00
 lastmod: 2025-07-02T08:37:03+08:00
 author: cmdragon
-cover: /images/xw_20250702203416.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250702203416.png
 
 summary:
   Wizard World Explorer 是CMDragon推出的魔法世界主题交互式探索工具，集成了角色生成、魔法咒语翻译、学院分院测试等趣味功能，为哈利波特粉丝和奇幻爱好者提供沉浸式的魔法体验。

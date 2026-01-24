@@ -21,7 +21,7 @@ tags:
   - SQL优化
 ---
 
-<img src="/images/2025_01_11 00_26_54.png" title="2025_01_11 00_26_54.png" alt="2025_01_11 00_26_54.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2025_01_11 00_26_54.png" title="2025_01_11 00_26_54.png" alt="2025_01_11 00_26_54.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

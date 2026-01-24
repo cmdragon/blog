@@ -4,7 +4,7 @@ title: PostgreSQL备份不是复制文件？物理vs逻辑咋选？误删还能�
 date: 2025-10-05T04:41:45+08:00
 lastmod: 2025-10-05T04:41:45+08:00
 author: cmdragon
-cover: /images/e5f85f7295db4e70ac6d8b4e85a6e41d~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/e5f85f7295db4e70ac6d8b4e85a6e41d~tplv-5jbd59dj06-image.png
 
 summary:
   PostgreSQL的备份与恢复是数据安全的关键，分为物理备份和逻辑备份。物理备份通过`pg_basebackup`直接复制数据文件，适合全量备份和快速恢复；逻辑备份使用`pg_dump`和`pg_dumpall`导出数据的逻辑结构，适合跨版本迁移和部分数据恢复。恢复时，逻辑备份通过`psql`或`pg_restore`还原，物理备份则通过替换数据目录和应用WAL日志完成。时间点恢复（PITR）允许精准还原到任意时刻，需开启WAL日志归档。常见报错包括用户权限、连接配置和文件格式问题，需根据具体情况进行调整。
@@ -24,7 +24,7 @@ tags:
 
 ---
 
-<img src="/images/e5f85f7295db4e70ac6d8b4e85a6e41d~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/e5f85f7295db4e70ac6d8b4e85a6e41d~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

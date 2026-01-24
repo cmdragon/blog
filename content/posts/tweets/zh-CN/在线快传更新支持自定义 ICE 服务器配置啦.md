@@ -4,7 +4,7 @@ title: 在线快传更新支持自定义ICE服务器配置啦
 date: 2025-09-17T04:30:48+08:00
 lastmod: 2025-09-17T04:30:48+08:00
 author: cmdragon
-cover: /images/5b230614633b4d638b553192f64b1ed1~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/5b230614633b4d638b553192f64b1ed1~tplv-5jbd59dj06-image.png
 
 summary:
   「在线快传」更新，新增自定义ICE服务器配置功能，支持添加STUN/TURN服务器，显著提升文件传输效率。无论是公司内网、跨运营商还是弱网环境，都能实现快速稳定的点对点连接。无需下载或登录，打开网页扫码即可使用，手机电脑无缝传输，比微信更快。体验丝滑传输，解决传文件慢的烦恼。

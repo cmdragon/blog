@@ -4,7 +4,7 @@ title: mermaid live editor A Lightweight, Efficient Online Flowchart Tool Essent
 date: 2025-11-23T10:16:32+08:00  
 lastmod: 2025-11-23T10:16:32+08:00  
 author: cmdragon  
-cover: /images/xw_20251123195835.png  
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20251123195835.png  
 
 summary:  
   mermaid live editor is a lightweight, online flowchart tool requiring no installation, featuring grammar-driven design and real-time previews. It supports full-scenario diagrams including flowcharts, sequence diagrams, and more. Users edit code on the left and view live previews on the right, leveraging grammar templates for quick mastery. Export as images or Markdown for workplace project management, knowledge organization, and code documentation integration.  

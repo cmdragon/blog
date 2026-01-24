@@ -4,7 +4,7 @@ title: Vue3中如何优雅实现支持多绑定变量和修饰符的双向绑定
 date: 2026-01-21T03:58:21+08:00
 lastmod: 2026-01-21T03:58:21+08:00
 author: cmdragon
-cover: /images/generated_image_41ea0870-bd11-466c-8df4-2ad6b1308647.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_41ea0870-bd11-466c-8df4-2ad6b1308647.png
 
 summary:
   本文介绍Vue3自定义表单组件开发，包括双向绑定（3.4+用defineModel宏，低版本手动props/emit实现）、基础组件（Input/Select不同实现）、复合组件（带验证输入框、日期选择器封装），及组件库设计原则（可配置化、插槽、样式定制等）。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_41ea0870-bd11-466c-8df4-2ad6b1308647.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_41ea0870-bd11-466c-8df4-2ad6b1308647.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

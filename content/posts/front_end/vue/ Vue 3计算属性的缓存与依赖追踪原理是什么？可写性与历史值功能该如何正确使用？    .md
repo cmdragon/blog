@@ -4,7 +4,7 @@ title: Vue 3计算属性的缓存与依赖追踪原理是什么？可写性与�
 date: 2025-11-17T01:54:23+08:00
 lastmod: 2025-11-17T01:54:23+08:00
 author: cmdragon
-cover: /images/c167733c27c742208a585967b880fefd~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/c167733c27c742208a585967b880fefd~tplv-5jbd59dj06-image.png
 
 summary:
   计算属性是Vue 3中用于派生响应式值的核心工具，通过`computed()`函数创建，接收一个getter函数返回派生值。计算属性具有缓存机制，只有当依赖的响应式数据变化时才会重新计算，否则直接返回缓存值，提升性能。与方法的区别在于，计算属性有缓存，而方法每次调用都会重新执行。计算属性还可以通过添加setter实现双向绑定。最佳实践包括避免在getter中执行副作用操作，以及不修改计算属性的返回值。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/c167733c27c742208a585967b880fefd~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/c167733c27c742208a585967b880fefd~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

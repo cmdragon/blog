@@ -4,7 +4,7 @@ title: Beginners deze gratis flowchart-tool moet je kennen! Geen leercurve, teks
 date: 2025-11-30T15:08:04+08:00  
 lastmod: 2025-11-30T15:08:04+08:00  
 author: cmdragon  
-cover: /images/rzuvj_00005_.png  
+cover: https://api2.cmdragon.cn/upload/cmder/images/rzuvj_00005_.png  
 
 summary:  
     Beginners hebben vaak moeite met complexe tools of betaalde oplossingen voor het maken van stroomdiagrammen. We raden een gratis flowchart-tool aan die gebaseerd is op Mermaid-gebruik typ gewoon tekst om grafieken te genereren, zonder registratie, altijd gratis en geschikt voor dagelijks plannen en projectcoördinatie.  

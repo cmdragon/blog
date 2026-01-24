@@ -4,7 +4,7 @@ title: Vue 3响应式系统的底层机制：Proxy如何实现依赖追踪与自
 date: 2025-11-13T06:25:15+08:00
 lastmod: 2025-11-13T06:25:15+08:00
 author: cmdragon
-cover: /images/f889b20e537a47d1afc2b52af80bf60b~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/f889b20e537a47d1afc2b52af80bf60b~tplv-5jbd59dj06-image.png
 
 summary:
   Vue 3的响应式系统基于ES6的Proxy和Reflect实现，解决了Vue 2中Object.defineProperty的局限性，如无法监听数组变化和新增属性。Proxy通过拦截对象的`get`和`set`操作，自动追踪依赖并触发更新。Vue使用`reactive`函数创建响应式对象，并通过`track`和`trigger`函数管理依赖关系。`ref`用于处理基本类型，`toRefs`和`toRef`则用于保持解构后的响应式。Proxy天然支持数组操作，无需重写数组方法。Vue还提供了调试工具如`onRenderTracked`和`onRenderTriggered`，帮助开发者调试响应式行为。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/f889b20e537a47d1afc2b52af80bf60b~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/f889b20e537a47d1afc2b52af80bf60b~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

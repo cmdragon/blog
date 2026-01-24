@@ -4,7 +4,7 @@ title: 从捕获到冒泡：Vue事件修饰符如何重塑事件执行顺序？
 date: 2026-01-10T06:58:15+08:00
 lastmod: 2026-01-10T06:58:15+08:00
 author: cmdragon
-cover: /images/generated_image_527d5f3a-836e-4150-ba8d-86197a81175f.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_527d5f3a-836e-4150-ba8d-86197a81175f.png
 
 summary:
   DOM事件流分捕获、目标、冒泡三阶段，Vue默认冒泡阶段触发事件。事件修饰符改变这一行为：.stop（阻止冒泡）、.prevent（阻止默认行为）、.capture（捕获阶段触发）、.passive（优化滚动性能）、.once（只触发一次）。修饰符可串联，如.click.stop.prevent。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_527d5f3a-836e-4150-ba8d-86197a81175f.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_527d5f3a-836e-4150-ba8d-86197a81175f.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

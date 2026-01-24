@@ -21,7 +21,7 @@ tags:
    - 应用开发
 ---
 
-<img src="/images/2024_09_28 09_53_15.png" title="2024_09_28 09_53_15.png" alt="2024_09_28 09_53_15.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_09_28 09_53_15.png" title="2024_09_28 09_53_15.png" alt="2024_09_28 09_53_15.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

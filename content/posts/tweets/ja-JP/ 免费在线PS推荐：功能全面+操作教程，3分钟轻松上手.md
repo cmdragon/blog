@@ -4,7 +4,7 @@ title: 2025年おすすめ無料オンラインPSツール：機能充実＆操�
 date: 2025-12-08T06:55:19+08:00
 lastmod: 2025-12-08T06:55:19+08:00
 author: cmdragon
-cover: /images/oyemf_00010_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/oyemf_00010_.png
 
 summary:
   2025年、無料オンラインPSツールが注目を集めています。おすすめツール（https://tools.cmdragon.cn/zh/apps/photoshop-online）は、基礎編集からAI補助機能まで網羅し、完全無料（登録不要）で操作性もクラシックPSに準じ、ガイド付き。クラウド自動保存対応で、学生やクリエイター向けに日常の編集・デザインを効率化します。

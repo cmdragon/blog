@@ -4,7 +4,7 @@ title: Guia de Utilização do Snapdrop Transfira Ficheiros Sem Fio Entre Telem�
 date: 2025-11-22T14:41:18+08:00  
 lastmod: 2025-11-22T14:41:18+08:00  
 author: cmdragon  
-cover: /images/6fd6463271834f2c905d01c5349000c2~tplv-5jbd59dj06-image.png  
+cover: https://api2.cmdragon.cn/upload/cmder/images/6fd6463271834f2c905d01c5349000c2~tplv-5jbd59dj06-image.png  
 
 summary:  
     Snapdrop é uma ferramenta de transferência de ficheiros entre dispositivos sem necessidade de instalar clientes, resolvendo problemas como velocidade lenta do Bluetooth, limitações de tamanho e a complexidade de cabos. Baseado em interface web, descobre automaticamente dispositivos na mesma rede local, transfere ficheiros diretamente entre dispositivos locais sem armazenamento em nuvem, é seguro, eficiente e suporta vários formatos. Operação simples ambos os dispositivos acessam o site na mesma rede WiFi, clicam no dispositivo para enviar ficheiros e confirmam o salvamento. Após a transferência, não há resíduos.  

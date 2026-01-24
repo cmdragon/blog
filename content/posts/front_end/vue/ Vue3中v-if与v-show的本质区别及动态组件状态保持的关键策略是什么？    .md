@@ -4,7 +4,7 @@ title: Vue3中v-if与v-show的本质区别及动态组件状态保持的关键�
 date: 2025-12-30T07:36:47+08:00
 lastmod: 2025-12-30T07:36:47+08:00
 author: cmdragon
-cover: /images/generated_image_2930d342-eca8-46ad-8007-9b03b3748f01.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_2930d342-eca8-46ad-8007-9b03b3748f01.png
 
 summary:
   Vue3条件渲染中，v-if通过DOM销毁/重建实现，切换成本高但初始渲染低，适用于低频场景（如权限控制）；v-show通过CSS控制显示，切换成本低但初始渲染高，适用于高频场景（如Tab切换）。动态组件用<component :is>切换，结合v-if可实现Tabs等动态内容，<KeepAlive>可缓存组件状态，避免切换时丢失数据。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_2930d342-eca8-46ad-8007-9b03b3748f01.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_2930d342-eca8-46ad-8007-9b03b3748f01.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

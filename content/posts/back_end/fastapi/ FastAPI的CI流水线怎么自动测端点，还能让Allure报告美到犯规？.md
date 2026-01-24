@@ -4,7 +4,7 @@ title: FastAPI的CI流水线怎么自动测端点，还能让Allure报告美到�
 date: 2025-09-16T01:32:40+08:00
 lastmod: 2025-09-16T01:32:40+08:00
 author: cmdragon
-cover: /images/ef10204d56ff47b1b5db99188b0f088b~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/ef10204d56ff47b1b5db99188b0f088b~tplv-5jbd59dj06-image.png
 
 summary:
   持续集成（CI）是一种软件开发实践，开发人员频繁提交代码，CI工具自动触发构建和测试流程，以尽早发现错误。FastAPI项目通过CI保证类型安全、避免端点失效和一致性验证。GitHub Actions是常用的CI工具，通过Workflow、Job和Step定义CI流程。FastAPI的CI流水线包括代码拉取、Python环境设置、依赖安装、测试和Docker镜像构建。Allure测试报告框架生成可视化报告，支持结构化展示和跨平台兼容，与FastAPI的Pytest测试结合，通过Allure装饰器标记测试用例，生成并查看报告。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/ef10204d56ff47b1b5db99188b0f088b~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/ef10204d56ff47b1b5db99188b0f088b~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

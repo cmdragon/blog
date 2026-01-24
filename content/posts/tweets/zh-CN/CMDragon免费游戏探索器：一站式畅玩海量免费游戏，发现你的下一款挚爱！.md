@@ -4,7 +4,7 @@ title: CMDragon免费游戏探索器：一站式畅玩海量免费游戏，发�
 date: 2025-07-02T08:37:03+08:00
 lastmod: 2025-07-02T08:37:03+08:00
 author: cmdragon
-cover: /images/xw_20250702191039.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250702191039.png
 
 summary:
   厌倦了寻找免费游戏却总是大海捞针？CMDragon免费游戏探索器为你带来一站式解决方案！轻松发现海量高品质免费游戏，从休闲益智到硬核竞技，应有尽有。告别繁琐搜索，即刻开启你的游戏新旅程，畅享无限乐趣，无需任何花费！

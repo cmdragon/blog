@@ -4,7 +4,7 @@ title: 解放前端生产力！可视化CSS网格布局生成器上线
 date: 2025-07-02T08:37:03+08:00
 lastmod: 2025-07-02T08:37:03+08:00
 author: cmdragon
-cover: /images/xw_20250702175352.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250702175352.png
 
 summary: 
   无需编写复杂代码，通过拖拽即可创建响应式CSS网格布局！CMDragon全新可视化工具支持实时预览、多设备适配，自动生成完美跨浏览器代码，前端开发效率提升300%。

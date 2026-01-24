@@ -4,7 +4,7 @@ title: 苹果iPhone 17引入MIE技术：芯片级内存完整性强制抵御零�
 date: 2025-09-15T01:30:46+08:00
 lastmod: 2025-09-15T01:30:46+08:00
 author: cmdragon
-cover: /images/0155975a9f3f40c3ba6e548666a2ebe4~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/0155975a9f3f40c3ba6e548666a2ebe4~tplv-5jbd59dj06-image.png
 
 summary:
   苹果公司推出的iPhone 17系列引入了Memory Integrity Enforcement（MIE）技术，通过芯片级内存完整性验证，有效对抗零点击间谍软件威胁。MIE技术依托与Arm联合开发的增强型内存标记扩展（EMTE），为内存分配唯一标记，确保访问合法性，防止恶意代码渗透。苹果的垂直整合模式使MIE在芯片、系统和应用层面高效协同，第三方应用如微信、Telegram等也已接入MIE。尽管技术先进，MIE仅支持新机型，旧款设备用户面临安全风险。苹果此举标志着智能手机行业从性能竞赛转向安全竞赛，底层安全设计成为核心竞争力。

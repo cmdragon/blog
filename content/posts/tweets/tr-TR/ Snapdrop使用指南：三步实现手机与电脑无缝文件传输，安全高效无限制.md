@@ -4,7 +4,7 @@ title: Snapdrop Kullanım Kılavuzu Telefon ve Bilgisayar Arasında Süreksiz Do
 date: 2025-11-22T14:41:18+08:00
 lastmod: 2025-11-22T14:41:18+08:00
 author: cmdragon
-cover: /images/6fd6463271834f2c905d01c5349000c2~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/6fd6463271834f2c905d01c5349000c2~tplv-5jbd59dj06-image.png
 
 summary:
   snapdrop, istemci kurulumu gerektirmeyen çapraz cihaz dosya aktarım aracıdır. Bluetooth hızı yılan kadar yavaş, WeChat/QQ üzerinden dosya gönderirken boyut sınırlamaları, USB kablosu kullanmanın karmaşası gibi sorunları çözer. Web tabanlı olarak çalışır, aynı yerel ağda otomatik olarak cihazları keşfederek, bulut depolama olmadan yerel olarak aktarım yapar. Güvenli, verimli ve çoklu dosya biçimi desteği sunar. Kullanımı basit Aynı WiFi'de iki cihaz resmi sitesini ziyaret eder, cihazları seçip dosya gönderir, alıcı onaylar ve aktarım tamamlandıktan sonra hiçbir kalıntı bırakmaz.

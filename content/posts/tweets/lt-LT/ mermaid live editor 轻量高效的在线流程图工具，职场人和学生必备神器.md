@@ -4,7 +4,7 @@ title: mermaid live editor – lengvas ir efektyvus internetinis srauto diagram�
 date: 2025-11-23T10:16:32+08:00
 lastmod: 2025-11-23T10:16:32+08:00
 author: cmdragon
-cover: /images/xw_20251123195835.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20251123195835.png
 
 summary:
   mermaid live editor yra lengvas internetinis srauto diagramų įrankis, kuris nežada instaliavimo, veikia sintaksės valdomai, su realaus laiko peržiūra. Palaiko srauto diagramas, sekos diagramas ir kitus visų scenarijų tipus. Naudojant, kairėje įvedate kodą, dešinėje matote realaus laiko peržiūrą, galite greitai pradėti naudoti naudodami sintaksės šablonus, palaiko eksportą į paveikslėlius arba Markdown. Tinka darbui projektų valdymui, mokymosi žinių struktūravimui ir kodo dokumentacijos integracijai.

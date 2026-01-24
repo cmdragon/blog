@@ -4,7 +4,7 @@ title: What Does RAID Mean? From Basic Concepts to Hands-On Configuration This C
 date: 2025-12-09T03:50:29+08:00
 lastmod: 2025-12-09T03:50:29+08:00
 author: cmdragon
-cover: /images/ukcgc_00003_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/ukcgc_00003_.png
 
 summary:
   RAID (Redundant Array of Independent Disks) combines multiple hard drives to enhance data security, expand capacity, or improve performance. Different RAID levels yield significantly varied results. Beginners need to clarify requirements, calculate capacity and performance, and select the right software. Recommended a RAID storage calculator that generates configuration reports based on input parameters, helping newcomers quickly master capacity and level selection while avoiding configuration errors.

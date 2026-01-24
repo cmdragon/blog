@@ -4,7 +4,7 @@ title: Mermaid Live Editor Lichte en efficiënte online tool voor stroomdiagramm
 date: 2025-11-23T10:16:32+08:00
 lastmod: 2025-11-23T10:16:32+08:00
 author: cmdragon
-cover: /images/xw_20251123195835.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20251123195835.png
 
 summary:
   Mermaid Live Editor is een lichte online tool voor stroomdiagrammen, zonder installatie nodig, syntaxisgebaseerd en met directe voorbeeldweergave. Ondersteunt volledig alle scenario's, waaronder stroomdiagrammen, sequentiediagrammen en meer. Gebruik links code bewerken, rechts directe voorbeeldweergave. Gebruik syntaxis sjablonen om snel te beginnen, ondersteunt export naar afbeeldingen of Markdown. Ideaal voor projectbeheer op het werk, kennisstructurering tijdens het studeren en documentatie in code.

@@ -4,7 +4,7 @@ title: Vue 3组合式API中ref与reactive的核心响应式差异及使用最佳
 date: 2025-11-12T06:00:47+08:00
 lastmod: 2025-11-12T06:00:47+08:00
 author: cmdragon
-cover: /images/43242a92560c46959ded6fa224bf9eff~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/43242a92560c46959ded6fa224bf9eff~tplv-5jbd59dj06-image.png
 
 summary:
   Vue 3的组合式API中，`ref()`和`reactive()`是创建响应式数据的核心工具。`ref()`可包裹任意值类型，通过`.value`访问，模板中自动解包；`reactive()`仅支持对象/数组，直接访问属性，但替换整个对象会丢失响应式。`ref()`更灵活，推荐优先使用，避免`reactive()`的解构和替换陷阱。`toRefs()`可将`reactive()`对象的属性转为`ref()`，保持响应式。浅响应式工具如`shallowRef()`和`shallowReactive()`适用于优化大型对象性能。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/43242a92560c46959ded6fa224bf9eff~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/43242a92560c46959ded6fa224bf9eff~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

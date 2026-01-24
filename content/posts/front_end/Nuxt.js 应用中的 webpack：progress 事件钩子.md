@@ -21,7 +21,7 @@ tags:
   - UI
 ---
 
-<img src="/images/2024_11_27 14_14_09.png" title="2024_11_27 14_14_09.png" alt="2024_11_27 14_14_09.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_11_27 14_14_09.png" title="2024_11_27 14_14_09.png" alt="2024_11_27 14_14_09.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

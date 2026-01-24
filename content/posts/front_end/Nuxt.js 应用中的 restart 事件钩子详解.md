@@ -21,7 +21,7 @@ tags:
   - 开发技巧
 ---
 
-<img src="/images/2024_10_14 13_43_00.png" title="2024_10_14 13_43_00.png" alt="2024_10_14 13_43_00.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_10_14 13_43_00.png" title="2024_10_14 13_43_00.png" alt="2024_10_14 13_43_00.png"/>
 
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

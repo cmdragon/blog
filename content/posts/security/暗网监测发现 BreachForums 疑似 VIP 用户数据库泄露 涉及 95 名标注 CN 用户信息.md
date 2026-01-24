@@ -4,7 +4,7 @@ title: 暗网监测发现BreachForums疑似VIP用户数据库泄露 涉及95名�
 date: 2026-01-21T08:56:47+08:00
 lastmod: 2026-01-21T08:56:47+08:00
 author: cmdragon
-cover: /images/generated_image_ca308b16-cd4a-4a56-a56e-8402148b8ea3.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_ca308b16-cd4a-4a56-a56e-8402148b8ea3.png
 
 summary:
   2026年1月17日，暗网监测发现BreachForums疑似VIP用户数据库泄露，含11国约1200名（95名标CN）用户信息，涉及16项数据，含明文密码或致撞库风险。CN用户在线分化，发帖“二八分布”，部分账号或被入侵。登录IP超50%来自美国，标CN与实际IP不符，数据疑似二次筛选。专家提示，暗网风险高，CN用户需更换密码、防范异常登录。
@@ -24,7 +24,7 @@ tags:
 ---
 
 
-<img src="/images/generated_image_ca308b16-cd4a-4a56-a56e-8402148b8ea3.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_ca308b16-cd4a-4a56-a56e-8402148b8ea3.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 
 # 暗网监测发现BreachForums疑似VIP用户数据库泄露 涉及95名标注为CN的用户

@@ -16,7 +16,7 @@ tags:
   - Python并发库
 ---
 
-<img src="/images/2024_04_29 20_53_37.png" title="2024_04_29 20_53_37.png" alt="2024_04_29 20_53_37.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_04_29 20_53_37.png" title="2024_04_29 20_53_37.png" alt="2024_04_29 20_53_37.png"/>
 
 ## **引言**
 

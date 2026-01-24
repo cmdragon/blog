@@ -4,7 +4,7 @@ title: PostgreSQL选Join策略有啥小九九？Nested Loop/Merge/Hash谁是它�
 date: 2025-10-10T03:10:41+08:00
 lastmod: 2025-10-10T03:10:41+08:00
 author: cmdragon
-cover: /images/49f3259a2b6e4a3dafa445bad5fc0ded~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/49f3259a2b6e4a3dafa445bad5fc0ded~tplv-5jbd59dj06-image.png
 
 summary:
   PostgreSQL中的连接查询（JOIN）通过查询优化器选择成本最低的执行策略，主要包含三种Join策略：Nested Loop Join、Merge Join和Hash Join。Nested Loop Join适用于小表或内层表有索引的场景；Merge Join适合两个表Join键都有有序索引的情况；Hash Join则用于大表与小表的连接，通过构建Hash表加速查询。优化器还会根据表大小和索引情况选择Join顺序，优先减少中间结果的大小。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/49f3259a2b6e4a3dafa445bad5fc0ded~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/49f3259a2b6e4a3dafa445bad5fc0ded~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

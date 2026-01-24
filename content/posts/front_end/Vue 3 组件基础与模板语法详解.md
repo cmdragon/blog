@@ -16,7 +16,7 @@ tags:
   - 模板语法
 ---
 
-<img src="/images/2024_05_24 16_35_34.png" title="2024_05_24 16_35_34.png" alt="2024_05_24 16_35_34.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_24 16_35_34.png" title="2024_05_24 16_35_34.png" alt="2024_05_24 16_35_34.png"/>
 
 
 ## Vue 3 简介

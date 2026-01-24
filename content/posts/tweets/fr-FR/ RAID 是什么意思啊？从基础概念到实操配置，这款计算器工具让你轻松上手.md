@@ -4,7 +4,7 @@ title: Qu'est-ce que RAID ? De la théorie à la configuration pratique, cet out
 date: 2025-12-09T03:50:29+08:00
 lastmod: 2025-12-09T03:50:29+08:00
 author: cmdragon
-cover: /images/ukcgc_00003_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/ukcgc_00003_.png
 
 summary:
   RAID (matrice de disques) permet d'assurer la sécurité des données, d'élargir la capacité ou d'améliorer les performances grâce à l'association de plusieurs disques. Les différents niveaux offrent des résultats très variés. Un débutant doit clarifier ses besoins, calculer la capacité et les performances, et choisir un logiciel adapté. Nous recommandons un calculateur RAID, qui génère un rapport de configuration après saisie des paramètres, aidant les débutants à maîtriser rapidement le choix de la capacité et du niveau, évitant les erreurs de configuration.

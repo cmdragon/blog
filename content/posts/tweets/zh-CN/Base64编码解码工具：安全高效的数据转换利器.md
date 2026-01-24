@@ -4,7 +4,7 @@ title: Base64编码解码工具：安全高效的数据转换利器
 date: 2025-07-08T08:37:03+08:00
 lastmod: 2025-07-08T08:37:03+08:00
 author: cmdragon
-cover: /images/xw_20250708162958.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250708162958.png
 
 summary: 一键实现文本、文件、图片的Base64编码/解码操作，支持URL安全模式与批量处理，开发者必备的数据安全传输解决方案。
 

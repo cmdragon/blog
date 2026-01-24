@@ -4,7 +4,7 @@ title: 银行转账不白扣钱、电商下单不超卖，PostgreSQL事务的诀
 date: 2025-10-03T02:02:14+08:00
 lastmod: 2025-10-03T02:02:14+08:00
 author: cmdragon
-cover: /images/40025327bd594a968ab73d2889949482~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/40025327bd594a968ab73d2889949482~tplv-5jbd59dj06-image.png
 
 summary:
   事务是数据库中不可分割的工作单元，确保多个SQL操作要么全部成功，要么全部回滚。事务的可靠性由ACID四大特性保障：原子性、一致性、隔离性和持久性。PostgreSQL通过BEGIN、COMMIT和ROLLBACK语句控制事务生命周期，并支持四种隔离级别（读未提交、读已提交、可重复读和串行化）来解决并发冲突。保存点允许事务部分回滚，适用于复杂操作和批量处理。事务管理在电商下单等场景中尤为重要，确保多个操作要么全部成功，要么全部回滚。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/40025327bd594a968ab73d2889949482~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/40025327bd594a968ab73d2889949482~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

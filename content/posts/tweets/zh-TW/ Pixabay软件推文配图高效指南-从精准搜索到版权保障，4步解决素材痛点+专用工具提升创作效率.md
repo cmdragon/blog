@@ -4,7 +4,7 @@ title: Pixabay 軟體推文配圖高效指南-從精準搜索到版權保障，4
 date: 2025-11-23T15:29:42+08:00
 lastmod: 2025-11-23T15:29:42+08:00
 author: cmdragon
-cover: /images/xw_20251123214149.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20251123214149.png
 
 summary:
     Pixabay 協助軟體推文解決素材風格不符、搜索低效、版權風險等痛點，需錨定產品特性與目標受眾明確素材方向；透過關鍵字優化、高畫質/免版稅篩選、反向搜索精準找素材；再進行文案呼應、色調統一創意適配；借助工具提升效率，規避版權風險，增強傳播力。

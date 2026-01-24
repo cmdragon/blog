@@ -22,7 +22,7 @@ tags:
   - 代码效率
 ---
 
-<img src="/images/2024_09_14 14_01_09.png" title="2024_09_14 14_01_09.png" alt="2024_09_14 14_01_09.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_09_14 14_01_09.png" title="2024_09_14 14_01_09.png" alt="2024_09_14 14_01_09.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

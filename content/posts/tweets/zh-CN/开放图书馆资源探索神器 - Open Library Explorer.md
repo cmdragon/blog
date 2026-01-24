@@ -5,7 +5,7 @@ title: 开放图书馆资源探索神器 - Open Library Explorer
 date: 2025-07-03T08:37:03+08:00  
 lastmod: 2025-07-03T08:37:03+08:00  
 author: cmdragon  
-cover: /images/xw_20250703170814.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250703170814.png
 
 summary:  
   无需注册，免费探索全球开放图书馆资源！Open Library Explorer 支持一键检索电子书、学术论文、古籍文献，提供在线阅读/下载、高级筛选和个性化收藏功能，助你高效获取知识宝藏。  

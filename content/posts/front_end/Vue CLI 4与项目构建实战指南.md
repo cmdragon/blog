@@ -21,7 +21,7 @@ tags:
 ---
 
 
-<img src="/images/2024_06_09 01_13_22.png" title="2024_06_09 01_13_22.png" alt="2024_06_09 01_13_22.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_06_09 01_13_22.png" title="2024_06_09 01_13_22.png" alt="2024_06_09 01_13_22.png"/>
 
 
 ### 第一部分：Vue CLI 4入门

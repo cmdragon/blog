@@ -4,7 +4,7 @@ title: 为什么Vue 3的计算属性能解决模板臃肿、性能优化和双�
 date: 2025-11-09T07:04:22+08:00
 lastmod: 2025-11-09T07:04:22+08:00
 author: cmdragon
-cover: /images/7154a68f242348718aea62198c272e52~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/7154a68f242348718aea62198c272e52~tplv-5jbd59dj06-image.png
 
 summary:
   计算属性（Computed）是Vue 3中用于派生状态的核心API，能够将复杂逻辑从模板中抽离，提升代码简洁性和可维护性。计算属性通过缓存机制优化性能，仅在依赖的响应式数据变化时重新计算，而方法则每次调用都会执行。可写计算属性允许通过getter和setter实现双向同步，Vue 3.4+还支持获取计算属性的之前值，用于保留历史状态。使用时应保持getter无副作用，避免直接修改计算属性值。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/7154a68f242348718aea62198c272e52~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/7154a68f242348718aea62198c272e52~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

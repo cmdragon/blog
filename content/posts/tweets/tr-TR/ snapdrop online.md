@@ -4,7 +4,7 @@ title: Snapdrop Online
 date: 2025-12-12T20:05:38+08:00
 lastmod: 2025-12-12T20:05:38+08:00
 author: cmdragon
-cover: /images/pyksc_00001_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/pyksc_00001_.png
 
 summary:
   Snapdrop Online, açık kaynaklı uçtan uca dosya aktarım aracıdır. Kayıt, kurulum veya yükleme gerektirmez, tarayıcı üzerinden doğrudan erişimle kullanılır. Görsel, video, PDF ve bağlantıları anında paylaşmanıza olanak tanır. Aynı ağdaki cihazlar otomatik olarak algılanır, içerik seçip alıcı onayladığında aktarım tamamlanır. Acil dosya aktarımı, toplantıda paylaşım gibi senaryolarda güvenli ve verimli kullanılır.

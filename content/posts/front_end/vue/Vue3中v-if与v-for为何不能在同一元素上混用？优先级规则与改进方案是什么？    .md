@@ -4,7 +4,7 @@ title: Vue3中v-if与v-for为何不能在同一元素上混用？优先级规则
 date: 2025-12-26T07:53:10+08:00
 lastmod: 2025-12-26T07:53:10+08:00
 author: cmdragon
-cover: /images/generated_image_d1e25a8f-59f9-47a5-ab99-4ffe80a11cf4.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_d1e25a8f-59f9-47a5-ab99-4ffe80a11cf4.png
 
 summary:
   Vue3中v-if与v-for结合时，v-if优先级高于v-for，同元素混用会导致每个项都执行条件判断，引发性能与逻辑问题。改进方案：用computed过滤数据后循环（适用于条件依赖循环项），或把v-if移至父元素（适用于条件不依赖循环项）。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_d1e25a8f-59f9-47a5-ab99-4ffe80a11cf4.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_d1e25a8f-59f9-47a5-ab99-4ffe80a11cf4.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

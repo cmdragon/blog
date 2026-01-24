@@ -4,7 +4,7 @@ title: Vue 3模板如何通过编译三阶段实现从声明式语法到高效�
 date: 2025-11-04T08:02:04+08:00
 lastmod: 2025-11-04T08:02:04+08:00
 author: cmdragon
-cover: /images/1bc49dcbd6ea4a8f8949c42c6634e6a9~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/1bc49dcbd6ea4a8f8949c42c6634e6a9~tplv-5jbd59dj06-image.png
 
 summary:
   Vue 3的模板编译分为解析、转换和生成三个阶段，将声明式模板转换为命令式渲染函数。解析阶段将模板字符串转换为抽象语法树（AST），转换阶段优化AST并处理指令逻辑，生成阶段将AST转换为可执行的渲染函数。编译优化策略包括静态提升、Patch Flags和Tree-shaking支持，减少渲染次数和提升diff效率。实践中的优化技巧包括使用`v-once`缓存静态内容、减少动态绑定范围以及避免“过度响应式”。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/1bc49dcbd6ea4a8f8949c42c6634e6a9~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/1bc49dcbd6ea4a8f8949c42c6634e6a9~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

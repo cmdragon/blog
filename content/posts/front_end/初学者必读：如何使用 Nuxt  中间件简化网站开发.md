@@ -21,7 +21,7 @@ tags:
   - 集成技巧
 ---
 
-<img src="/images/2024_06_24 13_55_41.png" title="2024_06_24 13_55_41.png" alt="2024_06_24 13_55_41.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_06_24 13_55_41.png" title="2024_06_24 13_55_41.png" alt="2024_06_24 13_55_41.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

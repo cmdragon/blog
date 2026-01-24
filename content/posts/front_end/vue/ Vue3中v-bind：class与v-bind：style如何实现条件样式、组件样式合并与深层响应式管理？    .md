@@ -4,7 +4,7 @@ title: Vue3中v-bind:class与v-bind:style如何实现条件样式、组件样式
 date: 2025-12-12T05:31:22+08:00
 lastmod: 2025-12-12T05:31:22+08:00
 author: cmdragon
-cover: /images/budbo_00028_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/budbo_00028_.png
 
 summary:
   Vue3提供`v-bind:class`和`v-bind:style`实现动态样式。`class`支持字符串、对象、数组语法，可混合静态/动态类名，组件类名自动合并；`style`以对象/数组形式绑定，属性名支持驼峰式或短横线式。Vue3通过Proxy实现深层响应式，无需额外操作即可更新样式。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/budbo_00028_.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/budbo_00028_.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

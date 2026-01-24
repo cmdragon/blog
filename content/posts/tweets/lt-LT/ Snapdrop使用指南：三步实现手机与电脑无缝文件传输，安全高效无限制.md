@@ -4,7 +4,7 @@ title: Snapdrop naudojimo vadovas 3 žingsniai, kad lengvai perduotumėte failus
 date: 2025-11-22T14:41:18+08:00
 lastmod: 2025-11-22T14:41:18+08:00
 author: cmdragon
-cover: /images/6fd6463271834f2c905d01c5349000c2~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/6fd6463271834f2c905d01c5349000c2~tplv-5jbd59dj06-image.png
 
 summary:
   Snapdrop yra įrankis failų perdavimui tarp įrenginių be kliento programos įdiegimo, išspręsdamas problemą su lėtu Bluetooth, failų dydžio ribojimais ir duomenų laidų naudojimu. Remiantis naršyklės versija, įrenginiai automatiškai aptinkami vienoje lokaliame tinkle, failai perduodami tiesiogiai tarp įrenginių, be debesų saugyklos, saugiai ir efektyviai, palaikant įvairius failų formatus. Veikimas paprastas abu įrenginiai, esant vienai WiFi tinklo, apsilankant oficialioje svetainėje, spustelėjus įrenginį, siųsdami failą, gavėjas patvirtina išsaugojimą, po perdavimo failų likutis nebelieka.

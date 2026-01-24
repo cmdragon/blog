@@ -4,7 +4,7 @@ title: Guida all'uso di Snapdrop Trasferisci file tra smartphone e computer in t
 date: 2025-11-22T14:41:18+08:00
 lastmod: 2025-11-22T14:41:18+08:00
 author: cmdragon
-cover: /images/6fd6463271834f2c905d01c5349000c2~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/6fd6463271834f2c905d01c5349000c2~tplv-5jbd59dj06-image.png
 
 summary:
   Snapdrop è uno strumento di trasferimento file tra dispositivi senza bisogno di installare client, risolvendo problemi come la lentezza del Bluetooth, i limiti di dimensione e la complicazione dei cavi dati. Basato su una piattaforma web, rileva automaticamente i dispositivi nella stessa rete locale, trasferisce i file direttamente in locale senza archiviazione su cloud, offrendo una soluzione sicura, efficiente e supportante diversi formati. Operazione semplice entrambi i dispositivi collegati alla stessa rete WiFi visitano il sito web, cliccano sul dispositivo per trasferire i file, il destinatario conferma il salvataggio, e dopo il trasferimento non rimangono residui.

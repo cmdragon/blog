@@ -4,7 +4,7 @@ title: PostgreSQL里的子查询和CTE居然在性能上“掐架”？到底该
 date: 2025-10-11T03:57:23+08:00
 lastmod: 2025-10-11T03:57:23+08:00
 author: cmdragon
-cover: /images/8c3069cb55c74af788a202a3242e5639~tplv-5jbd59dj06-aigc.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/8c3069cb55c74af788a202a3242e5639~tplv-5jbd59dj06-aigc.png
 
 summary:
   子查询和CTE（公共表表达式）是SQL中处理复杂查询的两种常用方法。子查询嵌套在其他查询中，分为非相关子查询（独立执行）和相关子查询（依赖外部查询）。CTE通过`WITH`子句定义，生成临时结果集，支持物化（默认生成临时表）和递归查询。CTE的优势在于多次引用时避免重复计算，但会增加I/O开销；子查询则通过优化器融合，利用索引提高性能。递归查询是CTE的独占场景，而子查询在简单逻辑和小结果集过滤时更具优势。PostgreSQL 12+支持`NOT MATERIALIZED`选项，减少CTE的物化开销。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/8c3069cb55c74af788a202a3242e5639~tplv-5jbd59dj06-aigc.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/8c3069cb55c74af788a202a3242e5639~tplv-5jbd59dj06-aigc.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

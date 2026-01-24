@@ -4,7 +4,7 @@ title: jsoncrack-告别JSON嵌套烦恼的可视化解析工具，提升开发�
 date: 2025-11-24T05:43:29+08:00
 lastmod: 2025-11-24T05:43:29+08:00
 author: cmdragon
-cover: /images/xw_20251125164203.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20251125164203.png
 
 summary:
   jsoncrack是高效JSON解析可视化工具，解决复杂JSON文本分析效率低问题。支持本地文件、文本粘贴、在线URL导入，通过导航树与可视化画布解析数据，可编辑、导出（图片、文本、链接分享）。优势：可视化高效、交互直观、多场景适配、实时同步，提升数据处理效率。

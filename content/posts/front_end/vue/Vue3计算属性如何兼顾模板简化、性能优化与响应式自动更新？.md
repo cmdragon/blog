@@ -4,7 +4,7 @@ title: Vue3计算属性如何兼顾模板简化、性能优化与响应式自动
 date: 2025-11-15T05:16:03+08:00
 lastmod: 2025-11-15T05:16:03+08:00
 author: cmdragon
-cover: /images/274de17503664028be5526f53bc13700~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/274de17503664028be5526f53bc13700~tplv-5jbd59dj06-image.png
 
 summary:
   Vue3中的计算属性是基于响应式数据自动计算并缓存结果的属性，主要用于简化模板逻辑、提升性能和自动追踪依赖更新。计算属性与方法的区别在于缓存机制，计算属性在依赖不变时返回缓存结果，而方法每次调用都重新执行逻辑。计算属性的应用场景包括复杂数据转换、组合多个响应式数据和避免重复计算。通过计算属性，可以实现如Todo List过滤功能等复杂逻辑，确保代码简洁高效。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/274de17503664028be5526f53bc13700~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/274de17503664028be5526f53bc13700~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

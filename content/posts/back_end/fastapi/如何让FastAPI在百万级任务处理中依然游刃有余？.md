@@ -4,7 +4,7 @@ title: 如何让FastAPI在百万级任务处理中依然游刃有余？
 date: 2025-08-24T06:28:21+08:00
 lastmod: 2025-08-24T06:28:21+08:00
 author: cmdragon
-cover: /images/xw_20250824105435.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250824105435.png
 
 summary:
   FastAPI 通过异步 I/O 模型和任务队列解耦实现高并发任务处理，支持每秒超过 10 万请求。核心架构包括请求接收、消息队列、Worker 集群和数据库存储。异步任务处理通过 BackgroundTasks 和 Celery 实现，支持水平扩展和资源隔离。性能优化策略包括 Kubernetes Pod 扩展、Celery 多节点和 RabbitMQ 集群。任务持久化通过消息队列和 Celery 的 acks_late 参数确保。常见报错如连接重置和任务超时，可通过心跳检测和超时设置解决。

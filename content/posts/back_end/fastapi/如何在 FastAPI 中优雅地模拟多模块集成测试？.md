@@ -4,7 +4,7 @@ title: 如何在FastAPI中优雅地模拟多模块集成测试？
 date: 2025-09-08T05:37:45+08:00
 lastmod: 2025-09-08T05:37:45+08:00
 author: cmdragon
-cover: /images/xw_20250908091040.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250908091040.png
 
 summary:
   FastAPI 集成测试通过 `pytest`、`httpx` 和 `asyncio` 工具链模拟多模块交互，重点测试认证、数据库和外部服务。使用 `unittest.mock` 替换外部依赖，`pytest-asyncio` 管理异步事务回滚。测试模型涵盖认证、用户服务和支付模块的协同验证。实战案例展示了订单支付链路的测试流程，通过 `fixture` 隔离第三方支付服务，复用 `TestClient` 维护请求上下文。认证测试中，采用动态 Token 生成策略，避免硬编码风险，并通过 `AuthContext` 类管理认证流水线。

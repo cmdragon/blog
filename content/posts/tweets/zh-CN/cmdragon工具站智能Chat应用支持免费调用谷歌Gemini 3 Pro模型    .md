@@ -4,7 +4,7 @@ title: cmdragon工具站智能Chat应用支持免费调用谷歌Gemini 3 Pro模�
 date: 2025-11-19T18:35:24+08:00
 lastmod: 2025-11-19T18:35:24+08:00
 author: cmdragon
-cover: /images/xw_20251119222903.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20251119222903.png
 
 summary:
   cmdragon工具站的「智能Chat应用」现已支持免费调用Gemini 3 Pro模型。作为谷歌最新发布的强大模型，Gemini 3 Pro在多个领域表现卓越：数学解题能力显著提升，代码编写效率大幅提高，长任务处理准确率翻倍。无论是程序员查BUG、学生解高数，还是长期项目规划，Gemini 3 Pro都能胜任。使用该工具无需科学上网或充会员，直接访问即可。免费体验谷歌顶级模型，机会难得。

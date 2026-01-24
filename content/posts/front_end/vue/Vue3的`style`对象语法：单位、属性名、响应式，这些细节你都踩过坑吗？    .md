@@ -4,7 +4,7 @@ title: Vue3的`:style`对象语法：单位、属性名、响应式，这些细�
 date: 2025-12-15T17:45:28+08:00
 lastmod: 2025-12-15T17:45:28+08:00
 author: cmdragon
-cover: /images/generated_image_73269423-1386-4f80-bf48-97452b75c6da.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_73269423-1386-4f80-bf48-97452b75c6da.png
 
 summary:
   Vue3的`:style`对象语法可声明式关联响应式数据与样式，键支持驼峰（如`fontSize`）或短横线（如`'font-size'`，需引号），值需手动加单位（除0外）。数据变化时样式自动更新，如动态进度条宽度和颜色随进度变化，解决原生JS操作DOM的繁琐问题。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_73269423-1386-4f80-bf48-97452b75c6da.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_73269423-1386-4f80-bf48-97452b75c6da.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

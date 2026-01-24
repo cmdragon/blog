@@ -4,7 +4,7 @@ title: PostgreSQL的“时光机”MVCC和锁机制是怎么搞定高并发的�
 date: 2025-10-15T08:15:14+08:00
 lastmod: 2025-10-15T08:15:14+08:00
 author: cmdragon
-cover: /images/25a48a2f118a4643912a960451640eb4~tplv-5jbd59dj06-aigc.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/25a48a2f118a4643912a960451640eb4~tplv-5jbd59dj06-aigc.png
 
 summary:
   MVCC（多版本并发控制）是PostgreSQL实现高并发的核心机制，通过为每个事务提供数据快照，解决读-写冲突，实现无锁并发。PostgreSQL的锁机制包括表级锁、行级锁等，行级锁粒度小，并发高。锁等待和死锁是常见问题，死锁由循环等待引起。优化实践包括减少事务长度、合理选择锁级别、使用乐观锁、统一资源顺序、利用NOWAIT和SKIP LOCKED避免等待，以及监控锁状态。通过优化事务处理顺序和缩短锁持有时间，可以有效避免锁等待和死锁。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/25a48a2f118a4643912a960451640eb4~tplv-5jbd59dj06-aigc.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/25a48a2f118a4643912a960451640eb4~tplv-5jbd59dj06-aigc.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

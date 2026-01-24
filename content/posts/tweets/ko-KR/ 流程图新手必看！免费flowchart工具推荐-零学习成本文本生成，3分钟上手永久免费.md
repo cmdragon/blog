@@ -4,7 +4,7 @@ title: 프로세스 차트 초보자 필독! 무료 flowchart 도구 추천 - �
 date: 2025-11-30T15:08:04+08:00
 lastmod: 2025-11-30T15:08:04+08:00
 author: cmdragon
-cover: /images/rzuvj_00005_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/rzuvj_00005_.png
 
 summary:
   초보자가 프로세스 차트를 그릴 때 도구가 복잡하거나 유료인 문제가 흔합니다. 무료 flowchart 도구를 추천합니다. 이 도구는 mermaid 문법 기반으로, 텍스트 설명만으로도 그래픽을 생성 가능하며, 등록 없이 영구 무료로 사용할 수 있습니다. 일상 계획, 프로젝트 협업 등 다양한 상황에서 초보자도 쉽게 프로세스를 정리할 수 있습니다.

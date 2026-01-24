@@ -4,7 +4,7 @@ title: 解锁免费电子书宝库：Gutenberg Explorer 使用指南
 date: 2025-07-03T08:37:03+08:00
 lastmod: 2025-07-03T08:37:03+08:00
 author: cmdragon
-cover: /images/xw_20250703165905.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250703165905.png
 
 summary:
   Gutenberg Explorer 是访问全球最大免费电子书库的神器！本指南详细介绍如何通过这个在线工具高效搜索、筛选和下载古腾堡计划的6万+公共领域电子书。无论您需要文学经典、学术著作还是历史文献，都能轻松获取EPUB/PDF/Kindle格式资源。无需注册，即刻开启您的免费数字阅读之旅。

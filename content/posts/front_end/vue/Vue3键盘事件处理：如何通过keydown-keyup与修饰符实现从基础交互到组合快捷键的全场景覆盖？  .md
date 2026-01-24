@@ -4,7 +4,7 @@ title: Vue3键盘事件处理：如何通过keydown/keyup与修饰符实现从�
 date: 2026-01-12T04:24:03+08:00
 lastmod: 2026-01-12T04:24:03+08:00
 author: cmdragon
-cover: /images/generated_image_ea3a943c-c1cc-4f3c-8d33-171e74def472.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_ea3a943c-c1cc-4f3c-8d33-171e74def472.png
 
 summary:
   Vue3键盘事件处理包含keydown（按下触发，长按连续触发）与keyup（松开触发，单次触发），前者适实时搜索等场景，后者用于提交表单。常用按键修饰符（如.enter、.tab）替代keyCode，组合快捷键（Ctrl+S、Shift+Enter）通过修饰符实现，代码简洁，可通过prevent等修饰符阻止默认行为，解决按键不生效、组合快捷键不触发等问题。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_ea3a943c-c1cc-4f3c-8d33-171e74def472.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_ea3a943c-c1cc-4f3c-8d33-171e74def472.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

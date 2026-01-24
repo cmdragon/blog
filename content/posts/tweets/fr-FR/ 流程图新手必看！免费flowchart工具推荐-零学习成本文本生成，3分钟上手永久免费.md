@@ -4,7 +4,7 @@ title: Pour les débutants  les outils gratuits de diagrammes de flux à essayer
 date: 2025-11-30T15:08:04+08:00
 lastmod: 2025-11-30T15:08:04+08:00
 author: cmdragon
-cover: /images/rzuvj_00005_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/rzuvj_00005_.png
 
 summary:
   Les débutants en création de diagrammes de flux rencontrent souvent des difficultés avec des outils trop complexes ou payants. Voici une recommandation d'outil gratuit de diagrammes de flux. Basé sur la syntaxe Mermaid, il génère des graphiques à partir de descriptions textuelles, sans inscription, gratuit à vie, adapté aux plans quotidiens, à la collaboration de projet et autres scénarios, permettant aux débutants de structurer leurs processus sans barrière d'entrée.

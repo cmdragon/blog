@@ -4,7 +4,7 @@ title: Vue 3中watch侦听器的正确使用姿势你掌握了吗？深度监听
 date: 2025-11-10T01:48:00+08:00
 lastmod: 2025-11-10T01:48:00+08:00
 author: cmdragon
-cover: /images/e69b2e3bc4a645ac8e4ac7602cd0591d~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/e69b2e3bc4a645ac8e4ac7602cd0591d~tplv-5jbd59dj06-image.png
 
 summary:
   Vue 3中的侦听器（`watch`）用于响应式跟踪数据源变化，允许在数据改变时执行自定义副作用。通过`ref`或`reactive`创建响应式数据，`watch`可以监听单个或多个数据源的变化，并通过回调函数处理新旧值。高级选项如`deep`和`immediate`支持深度监听和立即执行。`watchEffect`则自动跟踪依赖，适合无需旧值的场景。侦听器常用于网络请求、表单验证等场景，需注意常见报错如旧值相同、深度监听不生效等。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/e69b2e3bc4a645ac8e4ac7602cd0591d~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/e69b2e3bc4a645ac8e4ac7602cd0591d~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

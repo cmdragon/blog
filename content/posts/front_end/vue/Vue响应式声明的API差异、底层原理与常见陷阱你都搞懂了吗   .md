@@ -4,7 +4,7 @@ title: Vue响应式声明的API差异、底层原理与常见陷阱你都搞懂�
 date: 2025-11-08T06:25:19+08:00
 lastmod: 2025-11-08T06:25:19+08:00
 author: cmdragon
-cover: /images/ebee77ea9207422cbcfd2bb08e4436b2~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/ebee77ea9207422cbcfd2bb08e4436b2~tplv-5jbd59dj06-image.png
 
 summary:
   Options API和Composition API是Vue 3中声明和操作响应式数据的两种方式。Options API通过`data`选项声明响应式状态，Vue 3使用Proxy实现响应式，需通过`this`访问代理对象。Composition API推荐使用`ref`和`reactive`，`ref`用于包裹基本类型或对象，需通过`.value`访问，`reactive`用于对象类型，直接操作属性。`nextTick`用于等待DOM更新完成。`reactive`对象不能直接替换引用，解构会丢失响应式，需用`toRefs`转换。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/ebee77ea9207422cbcfd2bb08e4436b2~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/ebee77ea9207422cbcfd2bb08e4436b2~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

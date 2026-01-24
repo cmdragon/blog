@@ -4,7 +4,7 @@ title: PostgreSQL查询的筛子、排序、聚合、分组？你会用它们搞
 date: 2025-09-28T07:29:38+08:00
 lastmod: 2025-09-28T07:29:38+08:00
 author: cmdragon
-cover: /images/8bf13a56606e453495d69043b2c8fbf3~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/8bf13a56606e453495d69043b2c8fbf3~tplv-5jbd59dj06-image.png
 
 summary:
   PostgreSQL中的WHERE子句用于精准筛选数据，支持基本比较与逻辑运算，以及IN、BETWEEN、LIKE、IS NULL等谓词处理复杂场景。ORDER BY子句用于按指定规则排序结果，支持单列、多列及计算列排序。聚合函数如COUNT、SUM、AVG等用于提炼关键信息，GROUP BY与HAVING用于分组分析，WHERE过滤行，HAVING过滤分组结果。综合实践展示了如何组合过滤、排序与聚合，常见报错及解决方法也提供了实用指导。
@@ -24,7 +24,7 @@ tags:
 
 ---
 
-<img src="/images/8bf13a56606e453495d69043b2c8fbf3~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/8bf13a56606e453495d69043b2c8fbf3~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

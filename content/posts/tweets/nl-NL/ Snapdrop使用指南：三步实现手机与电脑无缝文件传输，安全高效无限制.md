@@ -4,7 +4,7 @@ title: Snapdrop Gebruiksgids Drie Stappen voor Naadloze Bestandsverzending tusse
 date: 2025-11-22T14:41:18+08:00
 lastmod: 2025-11-22T14:41:18+08:00
 author: cmdragon
-cover: /images/6fd6463271834f2c905d01c5349000c2~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/6fd6463271834f2c905d01c5349000c2~tplv-5jbd59dj06-image.png
 
 summary:
   Snapdrop is een bestandsverzendtool tussen apparaten zonder client-installatie, die problemen zoals trage Bluetooth, bestandsgroottebeperkingen en onhandige kabels oplost. Gebaseerd op een webinterface, detecteert het automatisch apparaten in hetzelfde lokale netwerk, verzendt lokaal zonder cloudopslag, veilig en efficiënt, en ondersteunt meerdere bestandsformaten. Gebruik is eenvoudig beide apparaten openen dezelfde WiFi, bezoeken de website, klikken op het apparaat om bestanden te verzenden, ontvangende partij bevestigt opslag. Na afloop blijft er geen restant over.

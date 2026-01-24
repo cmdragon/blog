@@ -16,7 +16,7 @@ tags:
    - 实战案例
 ---
 
-<img src="/images/2024_05_30 16_02_10.png" title="2024_05_30 16_02_10.png" alt="2024_05_30 16_02_10.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_30 16_02_10.png" title="2024_05_30 16_02_10.png" alt="2024_05_30 16_02_10.png"/>
 
 ## 前言
 

@@ -4,7 +4,7 @@ title: FastAPI如何用契约测试确保API的「菜单」与「菜品」一致
 date: 2025-09-13T02:46:54+08:00
 lastmod: 2025-09-13T02:46:54+08:00
 author: cmdragon
-cover: /images/00cc0cbe48764dca8dbd3329f4830190~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/00cc0cbe48764dca8dbd3329f4830190~tplv-5jbd59dj06-image.png
 
 summary:
   契约测试是验证API提供者与消费者交互一致性的方法，核心在于定义API请求格式、响应结构等规则的「契约」。FastAPI通过类型注解、Pydantic模型和路径操作自动生成OpenAPI规范，作为契约源，确保代码与文档一致。Schemathesis工具加载OpenAPI规范，生成测试用例验证API行为。实践步骤包括编写API代码、契约测试代码，运行测试并集成CI流程，确保每次提交自动验证契约一致性，减少协作成本，提前发现问题，明确责任边界。

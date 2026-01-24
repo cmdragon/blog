@@ -4,7 +4,7 @@ title: FastAPI测试环境配置的秘诀，你真的掌握了吗？
 date: 2025-08-30T02:32:06+08:00
 lastmod: 2025-08-30T02:32:06+08:00
 author: cmdragon
-cover: /images/0.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/0.png
 
 summary:
   FastAPI 测试环境配置需关注隔离性、依赖管理和环境变量，使用 `TestClient` 和 `pytest` 处理异步代码。测试客户端通过 `conftest.py` 初始化，确保模块内复用。测试框架采用分层结构，分为单元、集成和 E2E 测试，文件命名遵循 `test_<模块名>_<功能>.py` 规范。通用 Fixture 在 `conftest.py` 中定义，确保测试数据隔离。测试案例包括用户注册接口和参数化测试，验证数据格式和业务逻辑。常见报错如 `422 Unprocessable Entity` 和 `RuntimeError: Event loop is closed`，可通过 Pydantic 模型校验和 `pytest-asyncio` 解决。

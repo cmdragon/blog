@@ -4,7 +4,7 @@ title: 如何用GitHub Actions为FastAPI项目打造自动化测试流水线？
 date: 2025-09-15T05:16:10+08:00
 lastmod: 2025-09-15T05:16:10+08:00
 author: cmdragon
-cover: /images/39a0174d51ff42ff95c2c74d9886e2d0~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/39a0174d51ff42ff95c2c74d9886e2d0~tplv-5jbd59dj06-image.png
 
 summary:
   持续集成（CI）是一种自动化开发实践，通过自动运行测试和代码检查来验证代码变更的正确性。GitHub Actions 是 GitHub 的自动化工具，用于实现 CI/CD 流程，核心概念包括工作流、事件、作业、步骤和动作。FastAPI 项目通过标准化的项目结构和 pytest 测试用例，结合 GitHub Actions 搭建自动化测试流水线，确保代码质量和兼容性。流水线通过 Push 或 PR 触发，自动安装依赖、运行测试和检查代码风格，帮助开发者提前发现问题，提升开发效率。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/39a0174d51ff42ff95c2c74d9886e2d0~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/39a0174d51ff42ff95c2c74d9886e2d0~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

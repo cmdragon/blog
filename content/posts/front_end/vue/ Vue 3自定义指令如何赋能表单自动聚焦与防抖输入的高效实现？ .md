@@ -4,7 +4,7 @@ title: Vue 3自定义指令如何赋能表单自动聚焦与防抖输入的高�
 date: 2026-01-22T04:49:27+08:00
 lastmod: 2026-01-22T04:49:27+08:00
 author: cmdragon
-cover: /images/generated_image_96ab9d38-4dc9-416d-a9a4-8f2ef64168ac.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_96ab9d38-4dc9-416d-a9a4-8f2ef64168ac.png
 
 summary:
   文章围绕Vue 3表单处理，涵盖自定义指令（自动聚焦v-focus、防抖v-debounce）、表单提交优化（防重复提交、状态管理）、动态表单渲染（条件显示、字段类型动态渲染）及常见问题解决。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_96ab9d38-4dc9-416d-a9a4-8f2ef64168ac.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_96ab9d38-4dc9-416d-a9a4-8f2ef64168ac.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

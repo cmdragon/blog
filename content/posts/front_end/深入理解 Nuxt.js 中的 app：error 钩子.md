@@ -21,7 +21,7 @@ tags:
   - 用户体验
 ---
 
-<img src="/images/2024_09_27 10_37_45.png" title="2024_09_27 10_37_45.png" alt="2024_09_27 10_37_45.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_09_27 10_37_45.png" title="2024_09_27 10_37_45.png" alt="2024_09_27 10_37_45.png"/>
 
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

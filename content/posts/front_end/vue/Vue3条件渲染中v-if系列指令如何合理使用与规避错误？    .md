@@ -4,7 +4,7 @@ title: Vue3条件渲染中v-if系列指令如何合理使用与规避错误？
 date: 2025-12-20T10:13:42+08:00
 lastmod: 2025-12-20T10:13:42+08:00
 author: cmdragon
-cover: /images/generated_image_633c1df8-b807-4617-a62d-011752890bb4.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_633c1df8-b807-4617-a62d-011752890bb4.png
 
 summary:
   Vue3条件渲染通过v-if、v-else、v-else-if基于响应式数据控制DOM：v-if销毁/重建元素，v-else补充默认分支，v-else-if处理多分支。需注意v-else/v-else-if必须紧跟对应指令，多分支条件需按严格程度排序。与v-show（CSS控制隐藏）不同，v-if适合条件少变场景，v-show适合频繁切换场景。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_633c1df8-b807-4617-a62d-011752890bb4.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_633c1df8-b807-4617-a62d-011752890bb4.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

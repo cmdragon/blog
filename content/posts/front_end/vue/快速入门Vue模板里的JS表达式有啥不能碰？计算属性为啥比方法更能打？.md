@@ -4,7 +4,7 @@ title: 快速入门Vue模板里的JS表达式有啥不能碰？计算属性为�
 date: 2025-11-02T05:04:25+08:00
 lastmod: 2025-11-02T05:04:25+08:00
 author: cmdragon
-cover: /images/b5307cf4608e4f7991eecea059a7d8c6~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/b5307cf4608e4f7991eecea059a7d8c6~tplv-5jbd59dj06-image.png
 
 summary:
   Vue 3模板中通过Mustache插值或指令属性嵌入JavaScript表达式，实现动态计算。模板表达式必须是单条JavaScript语句，适用于文本插值和指令属性值，但需避免副作用和流程控制语句。计算属性（computed）用于封装复杂逻辑，具备缓存性和响应性，优于methods的频繁调用。可写计算属性通过getter和setter实现双向绑定，Vue 3.4+还支持访问上一次计算结果。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/b5307cf4608e4f7991eecea059a7d8c6~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/b5307cf4608e4f7991eecea059a7d8c6~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

@@ -4,7 +4,7 @@ title: 为什么你的FastAPI测试覆盖率总是低得让人想哭？
 date: 2025-09-01T03:56:38+08:00
 lastmod: 2025-09-01T03:56:38+08:00
 author: cmdragon
-cover: /images/xw_20250901090908.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250901090908.png
 
 summary:
   FastAPI 开发中，测试环境和基础框架的搭建至关重要。使用 `pipenv` 或 `poetry` 管理虚拟环境和依赖，项目结构包括应用入口、API 路由、数据模型、数据库连接和配置文件。核心框架代码涉及 SQLAlchemy 配置、Pydantic 配置管理和 FastAPI 入口。测试覆盖率检测工具配置包括 `pytest`、`coverage.py` 和 `pytest-cov`，编写测试用例并生成覆盖率报告。优化策略包括分支覆盖率测试、异步任务覆盖率和目标覆盖率报告，确保代码质量和可维护性。

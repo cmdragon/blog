@@ -4,7 +4,7 @@ title: 快速入门Vue3的v-指令：数据和DOM的“翻译官”到底有多�
 date: 2025-10-30T04:06:38+08:00
 lastmod: 2025-10-30T04:06:38+08:00
 author: cmdragon
-cover: /images/c2f8a35b3a8d4975883f676fc3662b51~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/c2f8a35b3a8d4975883f676fc3662b51~tplv-5jbd59dj06-image.png
 
 summary:
   Vue 3中的指令是带有`v-`前缀的特殊属性，用于将数据与DOM元素绑定。`v-bind`用于动态绑定属性，如`src`、`class`等，支持简写语法`:`。`v-on`用于监听事件，如`click`，简写为`@`，支持事件修饰符如`.prevent`。`v-if`根据条件销毁或重建DOM，`v-show`通过修改`display`属性控制显示。`v-for`用于循环渲染，需使用唯一`key`。常见报错包括未定义变量或事件处理函数，需确保变量和函数正确定义。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/c2f8a35b3a8d4975883f676fc3662b51~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/c2f8a35b3a8d4975883f676fc3662b51~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

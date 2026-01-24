@@ -16,7 +16,7 @@ tags:
   - Web组件
 ---
 
-<img src="/images/2024_05_17 18_10_17.png" title="2024_05_17 18_10_17.png" alt="2024_05_17 18_10_17.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_17 18_10_17.png" title="2024_05_17 18_10_17.png" alt="2024_05_17 18_10_17.png"/>
 
 ### Django模板系统基础
 

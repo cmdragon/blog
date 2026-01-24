@@ -21,7 +21,7 @@ tags:
   - 数据结构
 ---
 
-<img src="/images/2025_01_25 23_40_41.png" title="2025_01_25 23_40_41.png" alt="2025_01_25 23_40_41.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2025_01_25 23_40_41.png" title="2025_01_25 23_40_41.png" alt="2025_01_25 23_40_41.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

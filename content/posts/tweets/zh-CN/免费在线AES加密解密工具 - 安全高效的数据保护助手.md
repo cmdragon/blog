@@ -4,7 +4,7 @@ title: 免费在线AES加密解密工具 - 安全高效的数据保护助手
 date: 2025-07-03T08:37:03+08:00
 lastmod: 2025-07-03T08:37:03+08:00
 author: cmdragon
-cover: /images/xw_20250703151354.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250703151354.png
 
 summary:
   CMDragon推出的免费在线AES加密工具，支持128/192/256位密钥强度，提供CBC/ECB/GCM等多种加密模式，无需安装即可实现文本/文件的快速加密解密，是开发者、安全工程师和隐私保护者的必备利器。

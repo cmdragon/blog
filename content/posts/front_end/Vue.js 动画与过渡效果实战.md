@@ -18,7 +18,7 @@ tags:
    - 钩子
 ---
 
-<img src="/images/2024_06_04 19_02_32.png" title="2024_06_04 19_02_32.png" alt="2024_06_04 19_02_32.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_06_04 19_02_32.png" title="2024_06_04 19_02_32.png" alt="2024_06_04 19_02_32.png"/>
 
 ### 第一部分：基础知识
 

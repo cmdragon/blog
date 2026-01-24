@@ -4,7 +4,7 @@ title: PostgreSQL连接的那些弯弯绕：笛卡尔积、外连接和LATERAL�
 date: 2025-10-22T09:24:06+08:00
 lastmod: 2025-10-22T09:24:06+08:00
 author: cmdragon
-cover: /images/76dae7f9ab96430dada788ce415b2c25~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/76dae7f9ab96430dada788ce415b2c25~tplv-5jbd59dj06-image.png
 
 summary:
   PostgreSQL支持多种连接类型，包括交叉连接（CROSS JOIN）、内连接（INNER JOIN）和外连接（LEFT/RIGHT/FULL OUTER JOIN）。交叉连接生成笛卡尔积，内连接仅保留匹配行，外连接保留未匹配行并用NULL填充。USING和NATURAL JOIN可简化连接条件。连接顺序影响性能，建议优先连接小结果集的表。LATERAL子查询允许动态引用前面表的列。PostgreSQL根据表大小、索引和连接条件自动选择连接算法，如嵌套循环、哈希连接和排序合并连接。优化技巧包括避免不必要的外连接、提前过滤数据和避免笛卡尔积。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/76dae7f9ab96430dada788ce415b2c25~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/76dae7f9ab96430dada788ce415b2c25~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

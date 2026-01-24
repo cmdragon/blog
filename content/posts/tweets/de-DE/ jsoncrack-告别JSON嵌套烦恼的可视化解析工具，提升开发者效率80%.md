@@ -4,7 +4,7 @@ title: jsoncrack – Die visuelle Lösung für verschachtelte JSON-Strukturen, d
 date: 2025-11-24T05:43:29+08:00
 lastmod: 2025-11-24T05:43:29+08:00
 author: cmdragon
-cover: /images/xw_20251125164203.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20251125164203.png
 
 summary:
   jsoncrack ist ein effizientes visuelles JSON-Analysis-Tool, das die ineffiziente Analyse komplexer JSON-Texte löst. Unterstützt lokale Dateien, Texteinspielung und Online-URL-Import. Durch Navigationsbaum und visuelle Zeichenfläche wird die Datenstruktur analysiert, editierbar und exportierbar (Bild, Text, Link-Teilen). Vorteile visuelle Effizienz, intuitive Interaktion, mehrfach einsetzbar, Echtzeit-Synchronisation zur Steigerung der Datenverarbeitungsleistung.

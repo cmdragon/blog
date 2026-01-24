@@ -4,7 +4,7 @@ title: Vue3 Composition API中，如何通过响应式状态与computed组合实
 date: 2025-12-27T10:04:59+08:00
 lastmod: 2025-12-27T10:04:59+08:00
 author: cmdragon
-cover: /images/generated_image_8b35b18f-0f53-41f7-b726-ee407e6f16eb.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_8b35b18f-0f53-41f7-b726-ee407e6f16eb.png
 
 summary:
   Vue3 Composition API条件渲染核心为响应式状态与模板指令配合。v-if控制DOM创建/销毁，v-show仅隐藏；多条件用computed封装；动态组件结合component:is实现切换；列表渲染用computed过滤+状态驱动样式。v-if与v-for同用时需注意优先级，可通过computed或调整结构解决。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_8b35b18f-0f53-41f7-b726-ee407e6f16eb.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_8b35b18f-0f53-41f7-b726-ee407e6f16eb.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

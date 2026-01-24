@@ -4,7 +4,7 @@ title: Vue3响应式系统中，对象新增属性、数组改索引、原始值
 date: 2025-11-11T07:54:39+08:00
 lastmod: 2025-11-11T07:54:39+08:00
 author: cmdragon
-cover: /images/92658990fb79478a986f693dcfa6ec08~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/92658990fb79478a986f693dcfa6ec08~tplv-5jbd59dj06-image.png
 
 summary:
   Vue3的响应式系统基于Proxy实现，跟踪对象属性的读取和修改操作，但存在局限性。对于对象，新增或删除属性无法自动触发响应，可通过`set`/`delete`函数、扩展运算符或初始定义所有属性解决。对于数组，直接修改索引或长度早期版本不响应，推荐使用数组变异方法或`set`函数。`reactive`无法代理原始值，需使用`ref`。实践中，购物车功能通过`ref`包裹数组、`computed`计算总价及使用数组变异方法实现响应式更新。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/92658990fb79478a986f693dcfa6ec08~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/92658990fb79478a986f693dcfa6ec08~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

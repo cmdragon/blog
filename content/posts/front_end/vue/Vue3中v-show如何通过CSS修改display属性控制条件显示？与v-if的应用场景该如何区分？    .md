@@ -4,7 +4,7 @@ title: Vue3中v-show如何通过CSS修改display属性控制条件显示？与v-
 date: 2025-12-21T05:42:29+08:00
 lastmod: 2025-12-21T05:42:29+08:00
 author: cmdragon
-cover: /images/generated_image_dcbf48b5-5bed-474a-b1c3-88891b71f0b5.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_dcbf48b5-5bed-474a-b1c3-88891b71f0b5.png
 
 summary:
   Vue3的v-show通过修改CSS的display属性切换元素显示状态，元素始终存在于DOM中。与v-if（销毁/重建DOM）不同，v-show切换成本低，适合频繁显示/隐藏的场景（如导航菜单、Tab切换、弹窗）。不适用于很少切换的场景（如权限判断）。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_dcbf48b5-5bed-474a-b1c3-88891b71f0b5.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_dcbf48b5-5bed-474a-b1c3-88891b71f0b5.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

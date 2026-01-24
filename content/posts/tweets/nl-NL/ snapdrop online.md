@@ -4,7 +4,7 @@ title: snapdrop online
 date: 2025-12-12T20:05:38+08:00
 lastmod: 2025-12-12T20:05:38+08:00
 author: cmdragon
-cover: /images/pyksc_00001_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/pyksc_00001_.png
 
 summary:
     Snapdrop online is een open-source peer-to-peer transfertool die zonder registratie, instellingen of installatie via een browser direct te gebruiken is. Het ondersteunt het onmiddellijk delen van afbeeldingen, video’s, PDF’s en links. Apparaten herkennen elkaar automatisch op hetzelfde netwerk, je selecteert de inhoud en bevestigt de ontvangst, ideaal voor het snelle overbrengen van bestanden, het delen tijdens bijeenkomsten, etc. Het is veilig en efficiënt.

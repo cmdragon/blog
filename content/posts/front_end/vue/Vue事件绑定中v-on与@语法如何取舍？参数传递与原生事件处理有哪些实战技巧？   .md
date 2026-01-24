@@ -4,7 +4,7 @@ title: Vue事件绑定中v-on与@语法如何取舍？参数传递与原生事�
 date: 2026-01-08T09:08:16+08:00
 lastmod: 2026-01-08T09:08:16+08:00
 author: cmdragon
-cover: /images/generated_image_7a8b9ccd-0582-45b7-aec3-73af12f88c38.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_7a8b9ccd-0582-45b7-aec3-73af12f88c38.png
 
 summary:
   Vue事件绑定支持v-on与@简写，涵盖按钮点击、输入、表单提交等常用事件。处理函数分内联（简单逻辑）和方法（复用），可传自定义参数，需用$event获取原生事件。常见错误包括函数未定义、未传$event、修饰符拼写错误。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_7a8b9ccd-0582-45b7-aec3-73af12f88c38.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_7a8b9ccd-0582-45b7-aec3-73af12f88c38.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

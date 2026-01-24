@@ -4,7 +4,7 @@ title: Vue事件处理：内联还是方法事件处理器，该如何抉择？
 date: 2026-01-09T07:14:59+08:00
 lastmod: 2026-01-09T07:14:59+08:00
 author: cmdragon
-cover: /images/generated_image_2a1cc350-c3f5-42e9-ab97-3cf06f397718.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_2a1cc350-c3f5-42e9-ab97-3cf06f397718.png
 
 summary:
   Vue事件处理分内联和方法处理器。内联模板写简单逻辑（如count++），需事件对象显传$event，不可复用；方法藏逻辑到函数，适合复杂/复用场景，可传参和事件对象。核心区别：逻辑位置、复杂度、复用性。场景：内联简单切换，方法复杂/复用。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_2a1cc350-c3f5-42e9-ab97-3cf06f397718.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_2a1cc350-c3f5-42e9-ab97-3cf06f397718.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

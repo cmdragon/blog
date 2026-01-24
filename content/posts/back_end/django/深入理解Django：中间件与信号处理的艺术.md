@@ -16,7 +16,7 @@ tags:
   - 多语言
 ---
 
-<img src="/images/2024_05_09 18_45_49.png" title="2024_05_09 18_45_49.png" alt="2024_05_09 18_45_49.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_09 18_45_49.png" title="2024_05_09 18_45_49.png" alt="2024_05_09 18_45_49.png"/>
 
 ## **引言**
 

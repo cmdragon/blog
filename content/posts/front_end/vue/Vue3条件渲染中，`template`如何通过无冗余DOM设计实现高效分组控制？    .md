@@ -4,7 +4,7 @@ title: Vue3条件渲染中，`<template>`如何通过无冗余DOM设计实现高
 date: 2025-12-22T03:30:46+08:00
 lastmod: 2025-12-22T03:30:46+08:00
 author: cmdragon
-cover: /images/generated_image_4ff4d154-2f13-4e3b-aa78-74268523710d.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_4ff4d154-2f13-4e3b-aa78-74268523710d.png
 
 summary:
   Vue3条件渲染可通过<template>分组控制元素，配合v-if/v-else-if/v-else实现，避免冗余DOM节点。响应式数据（ref/reactive）驱动状态切换，如登录状态、角色权限。优势是保持DOM简洁。注意v-else-if需紧跟v-if/else-if，且template仅支持v-if系列，v-show不可用。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_4ff4d154-2f13-4e3b-aa78-74268523710d.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_4ff4d154-2f13-4e3b-aa78-74268523710d.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

@@ -4,7 +4,7 @@ title: Vue3跨组件通信中，全局事件总线与provide/inject该如何正�
 date: 2026-01-15T05:05:24+08:00
 lastmod: 2026-01-15T05:05:24+08:00
 author: cmdragon
-cover: /images/generated_image_867e7740-7267-4a3e-affe-f896f9e9b5a2.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_867e7740-7267-4a3e-affe-f896f9e9b5a2.png
 
 summary:
   Vue3跨组件通信方案：①全局事件总线用mitt实现“订阅-发布”，创建共享实例，发布用emit，订阅用on，销毁时off防内存泄漏；②provide/inject支持跨层级通信，祖先用provide提供数据/方法，后代用inject获取；③子父通信用defineEmits定义事件，emit发射，父组件@监听事件。
@@ -23,7 +23,7 @@ tags:
 
 ---
 
-<img src="/images/generated_image_867e7740-7267-4a3e-affe-f896f9e9b5a2.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_867e7740-7267-4a3e-affe-f896f9e9b5a2.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

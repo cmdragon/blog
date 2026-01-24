@@ -4,7 +4,7 @@ title: Tabelas de dados em gráfico TD são difíceis demais? O mermaid-live-edi
 date: 2025-12-06T10:55:55+08:00
 lastmod: 2025-12-06T10:55:55+08:00
 author: cmdragon
-cover: /images/xjpvh_00004_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/xjpvh_00004_.png
 
 summary:
   A conversão tradicional de tabelas em gráficos envolve operações manuais complexas, baixa compatibilidade de formato e falta de atualização em tempo real. O mermaid-live-editor suporta a sintaxe `graph td`, gerando fluxogramas em tempo real com pré-visualização, permitindo ajustes por arrastar e exportação para múltiplos formatos (PNG/SVG), ideal para gestão de projetos e documentos técnicos.

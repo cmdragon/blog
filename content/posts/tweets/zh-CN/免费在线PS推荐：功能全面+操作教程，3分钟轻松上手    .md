@@ -4,7 +4,7 @@ title: 免费在线PS推荐：功能全面+操作教程，3分钟轻松上手
 date: 2025-12-08T06:55:19+08:00
 lastmod: 2025-12-08T06:55:19+08:00
 author: cmdragon
-cover: /images/oyemf_00010_.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/oyemf_00010_.png
 
 summary:
   2025年免费在线PS工具受青睐，推荐工具（https://tools.cmdragon.cn/zh/apps/photoshop-online）功能全面（基础修图到AI辅助）、完全免费无门槛（无需注册登录即可用），操作贴近经典PS易上手，配教程库，支持云端自动保存，适合学生、创作者，高效满足日常修图与设计需求。

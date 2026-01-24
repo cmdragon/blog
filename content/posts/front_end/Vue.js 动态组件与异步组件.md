@@ -15,7 +15,7 @@ tags:
    - 工具生态
 ---
 
-<img src="/images/2024_06_02 21_12_15.png" title="2024_06_02 21_12_15.png" alt="2024_06_02 21_12_15.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2024_06_02 21_12_15.png" title="2024_06_02 21_12_15.png" alt="2024_06_02 21_12_15.png"/>
 
 ## 第1章 Vue.js 简介
 

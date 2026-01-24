@@ -4,7 +4,7 @@ title: 如何在FastAPI中巧妙隔离依赖项，让单元测试不再头疼？
 date: 2025-09-03T06:10:25+08:00
 lastmod: 2025-09-03T06:10:25+08:00
 author: cmdragon
-cover: /images/70676419-4825-49d5-90ad-9dcdcaefc1f7.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/70676419-4825-49d5-90ad-9dcdcaefc1f7.png
 
 summary:
   FastAPI单元测试是确保应用质量的关键，尤其依赖注入系统的隔离测试至关重要。通过依赖注入机制，FastAPI能自动解析函数参数并执行依赖函数，将返回值注入路由处理函数。测试时，可使用`dependency_overrides`替换依赖项，模拟不同场景。单元测试应占据最大比重，避免外部服务不可用导致的测试失败。测试技巧包括模拟依赖返回、依赖项层级隔离和异步依赖处理。实战案例展示了用户认证测试的具体实现，确保权限验证逻辑正确。

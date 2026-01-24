@@ -4,7 +4,7 @@ title: PostgreSQL插入数据还在逐条敲？批量、冲突处理、返回自
 date: 2025-09-23T07:42:26+08:00
 lastmod: 2025-09-23T07:42:26+08:00
 author: cmdragon
-cover: /images/9ffe8a26458e4a38b0397d27b7f7af66~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/9ffe8a26458e4a38b0397d27b7f7af66~tplv-5jbd59dj06-image.png
 
 summary:
   PostgreSQL的INSERT语句用于向表中插入新行，其基本结构包括目标表、插入列、插入源和冲突处理等部分。基础操作涵盖单条和多条数据插入，支持默认值和部分列插入。进阶用法包括使用WITH子句预处理数据、处理唯一约束冲突的ON CONFLICT子句，以及通过RETURNING子句返回插入结果。常见报错如唯一约束冲突和语法错误，可通过检查数据、使用ON CONFLICT或核对语法解决。
@@ -24,7 +24,7 @@ tags:
 
 ---
 
-<img src="/images/9ffe8a26458e4a38b0397d27b7f7af66~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/9ffe8a26458e4a38b0397d27b7f7af66~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

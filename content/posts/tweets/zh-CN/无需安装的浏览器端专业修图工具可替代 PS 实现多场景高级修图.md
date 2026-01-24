@@ -4,7 +4,7 @@ title: 无需安装的浏览器端专业修图工具可替代PS实现多场景�
 date: 2025-11-01T10:19:52+08:00
 lastmod: 2025-11-01T10:19:52+08:00
 author: cmdragon
-cover: /images/34eb9edf8d3c470da4350baafb97905b~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/34eb9edf8d3c470da4350baafb97905b~tplv-5jbd59dj06-image.png
 
 summary:
   这款在线PS神器将专业修图功能搬到了浏览器中，无需安装即可使用，支持电脑和手机操作。具备多图层编辑、40+滤镜、钢笔工具、克隆图章和内容感知填充等专业功能，满足修自拍、做海报、电商主图和制作表情包等多种需求。支持多种格式导出，并保留照片EXIF信息，适合设计爱好者和摄影师使用。访问网址即可体验浏览器中的「专业修图室」。
