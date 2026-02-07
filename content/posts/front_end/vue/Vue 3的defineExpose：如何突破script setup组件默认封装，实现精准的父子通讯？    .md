@@ -346,7 +346,7 @@ yarn add vue@latest
 
 余下文章内容请点击跳转至 个人博客页面 或者 扫描[二维码](https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg)
 关注或者微信搜一搜：`编程智域 前端至全栈交流与成长`
-，阅读完整的文章：[Vue 3的defineExpose：如何突破<script setup>组件默认封装，实现精准的父子通讯？](https://blog.cmdragon.cn/posts/202ae0f4acde7128e0e31baf63732fb5/)
+，阅读完整的文章：[Vue 3的defineExpose：如何突破script setup组件默认封装，实现精准的父子通讯？](https://blog.cmdragon.cn/posts/202ae0f4acde7128e0e31baf63732fb5/)
 
 
 
