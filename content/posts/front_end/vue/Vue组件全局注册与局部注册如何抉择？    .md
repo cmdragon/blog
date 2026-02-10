@@ -212,14 +212,14 @@ app.component('UserAvatar', UserAvatar)
 ```mermaid
 flowchart TD
     A[Vue应用启动] --> B{选择注册方式}
-    B -->|全局注册| C[使用app.component()注册]
+    B -->|全局注册| C[使用app.component注册]
     C --> D[组件被添加到应用全局组件库]
     D --> E[所有组件模板中可直接使用]
     
     B -->|局部注册| F[在组件内部导入]
-    F --> G[在<script setup>中直接使用 或 在components选项中注册]
+    F --> G[在script setup中直接使用 或 在components选项中注册]
     G --> H[仅当前组件模板中可使用]
-    H --> I[子组件无法直接访问，需重新注册]
+    H --> I[子组件无法直接访问需重新注册]
 ```
 
 ## 五、课后Quiz：巩固你的知识
