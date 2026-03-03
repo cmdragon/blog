@@ -7,7 +7,7 @@ author: cmdragon
 cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_47e7fe6f-8a7e-4eeb-80bf-b25598173567.png
 
 summary:
-  Vue 3局部组件注册限定使用范围于父组件内，优势包括Tree-Shaking支持、依赖清晰、避免命名冲突。方法有二：<script setup>导入即能使用，选项式API需在components中注册。适用于大型项目、复用性低或性能优化场景，可减少打包体积，避免全局污染。
+  Vue 3局部组件注册限定使用范围于父组件内，优势包括Tree-Shaking支持、依赖清晰、避免命名冲突。方法有二：script setup导入即能使用，选项式API需在components中注册。适用于大型项目、复用性低或性能优化场景，可减少打包体积，避免全局污染。
 
 categories:
   - vue
