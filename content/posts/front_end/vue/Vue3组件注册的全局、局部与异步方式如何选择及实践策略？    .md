@@ -7,7 +7,7 @@ author: cmdragon
 cover: https://api2.cmdragon.cn/upload/cmder/images/generated_image_f390c779-0ec2-4ddd-8162-5807437d4902.png
 
 summary:
-  Vue3组件注册核心是让框架识别组件，分为全局、局部、异步注册及内置组件。全局通过app.component()注册，适通用基础组件但增加体积；局部在组件内注册（options API用components，<script setup>导入即注册），推荐业务组件，利于代码组织；异步用defineAsyncComponent实现懒加载，提升性能；内置组件如Teleport等无需注册。
+  Vue3组件注册核心是让框架识别组件，分为全局、局部、异步注册及内置组件。全局通过app.component()注册，适通用基础组件但增加体积；局部在组件内注册（options API用components，script setup导入即注册），推荐业务组件，利于代码组织；异步用defineAsyncComponent实现懒加载，提升性能；内置组件如Teleport等无需注册。
 
 categories:
   - vue
