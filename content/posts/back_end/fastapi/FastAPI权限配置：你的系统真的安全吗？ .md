@@ -160,7 +160,6 @@ async def add_role_permission(
 
 ---
 
-# 第二章：权限验证实践案例
 
 ## 2.1 文件下载权限控制
 

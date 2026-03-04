@@ -32,7 +32,6 @@ tags:
 
 [探索数千个预构建的 AI 应用，开启你的下一个伟大创意](https://tools.cmdragon.cn/zh/apps?category=ai_chat)：https://tools.cmdragon.cn/
 
-# 第一章：FastAPI数据库迁移核心原理与Alembic集成实战
 
 ## 1.1 Alembic工具链工作原理剖析
 

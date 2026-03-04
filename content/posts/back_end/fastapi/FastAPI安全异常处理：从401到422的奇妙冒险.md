@@ -32,7 +32,6 @@ tags:
 
 [探索数千个预构建的 AI 应用，开启你的下一个伟大创意](https://tools.cmdragon.cn/zh/apps?category=ai_chat)：https://tools.cmdragon.cn/
 
-# 第一章：FastAPI安全异常处理核心原理与实践
 
 （注：根据用户要求，章节编号从"第一章"开始，不使用"深入"等词汇）
 
