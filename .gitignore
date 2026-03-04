@@ -30,4 +30,5 @@ Thumbs.db
 .env.*
 
 # 本地开发服务器文件
-.netlify/ 
+.netlify/
+.trae
