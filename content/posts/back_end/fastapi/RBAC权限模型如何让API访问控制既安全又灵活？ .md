@@ -32,7 +32,6 @@ tags:
 
 [发现1000+提升效率与开发的AI工具和实用程序](https://tools.cmdragon.cn/zh/apps?category=ai_chat)：https://tools.cmdragon.cn/
 
-# 第四章：访问控制体系
 
 ## 1. RBAC 权限模型设计
 

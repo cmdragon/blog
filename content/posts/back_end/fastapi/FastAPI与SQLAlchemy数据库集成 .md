@@ -31,7 +31,6 @@ tags:
 
 [探索数千个预构建的 AI 应用，开启你的下一个伟大创意](https://tools.cmdragon.cn/zh/apps?category=ai_chat)
 
-# 1. FastAPI与SQLAlchemy同步数据库集成实战
 
 ## 1.1 项目初始化与依赖安装
 

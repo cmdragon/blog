@@ -32,7 +32,6 @@ tags:
 
 [探索数千个预构建的 AI 应用，开启你的下一个伟大创意](https://tools.cmdragon.cn/zh/apps?category=ai_chat)：https://tools.cmdragon.cn/
 
-# 1. 角色模型设计与数据库关系映射实现
 
 （使用FastAPI+Tortoise-ORM完整实现方案）
 

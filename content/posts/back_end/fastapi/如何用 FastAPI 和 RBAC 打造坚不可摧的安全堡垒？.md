@@ -64,7 +64,6 @@ passlib[bcrypt] == 1.7
 pip install fastapi uvicorn python-jose[cryptography] passlib[bcrypt]
 ```
 
-# 二、电商平台 RBAC 系统实现
 
 ## 2.1 数据模型定义
 
@@ -152,7 +151,6 @@ async def delete_order(
     return OrderService.delete_order(order_id)
 ```
 
-# 三、安全防护策略
 
 ## 3.1 敏感数据加密
 
@@ -194,8 +192,6 @@ class RateLimiter:
             raise HTTPException(429, "Too many requests")
         await redis.expire(client_ip, self.seconds)
 ```
-
-# 四、测试与调试
 
 ## 4.1 单元测试示例
 
@@ -253,7 +249,7 @@ def test_admin_access():
 - 在路由处理器前添加权限检查中间件
 - 定期审查角色权限分配
 
-# 课后测验
+## 课后测验
 
 **问题 1：** 为什么要在密码哈希中使用 salt？
 **答案：** Salt 随机值能有效防止彩虹表攻击，即使相同密码也会生成不同的哈希值
@@ -264,7 +260,7 @@ def test_admin_access():
 **问题 3：** JWT 令牌为什么要设置过期时间？
 **答案：** 缩短令牌有效期可以降低令牌泄露风险，建议结合 refresh token 使用
 
-# 版本兼容说明
+## 版本兼容说明
 
 所有代码在以下环境验证通过：
 
