@@ -4,7 +4,7 @@ title: Proto-Dateigenerator - Erstellen Sie standardisierte Protobuf-Dateien mit
 date: 2026-03-29T08:30:00+08:00
 lastmod: 2026-03-29T08:30:00+08:00
 author: cmdragon
-cover: https://api2.cmdragon.cn/upload/cmder/images/proto-file-generator-cover.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/1774776197859.png
 summary:
   Der Proto-Dateigenerator ist ein Online-Tool, das speziell für Entwickler entwickelt wurde und die schnelle Generierung standardisierter Protobuf-Dateistrukturen unterstützt. Bietet Nachrichtendefinitionen, Aufzählungstypen, Service-Schnittstellen auf Knopfdruck, unterstützt Proto2/Proto3-Syntax, automatische Code-Formatierung, Echtzeit-Syntaxprüfung. Backend-Entwickler erstellen schnell RPC-Schnittstellendefinitionen, Frontend-Ingenieure verstehen Datenstrukturen, Full-Stack-Entwickler verwalten API-Spezifikationen einheitlich, steigern Sie die Protobuf-Entwicklungseffizienz aus einer Hand.
 
@@ -22,7 +22,7 @@ tags:
 
 ---
 
-![](https://api2.cmdragon.cn/upload/cmder/images/proto-file-generator-cover.png)
+![](https://api2.cmdragon.cn/upload/cmder/images/1774776197859.png)
 
 🔧 **Verabschieden Sie sich von der mühsamen manuellen Erstellung von Proto-Dateien!** Der „Proto-Dateigenerator" macht das Erstellen von Protobuf-Dateien so einfach!
 

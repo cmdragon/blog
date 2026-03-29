@@ -4,7 +4,7 @@ title: Proto 파일 생성기 - 표준 Protobuf 파일을 원클릭으로 생성
 date: 2026-03-29T08:30:00+08:00
 lastmod: 2026-03-29T08:30:00+08:00
 author: cmdragon
-cover: https://api2.cmdragon.cn/upload/cmder/images/proto-file-generator-cover.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/1774776197859.png
 summary:
   Proto 파일 생성기는 개발자를 위해 특별히 설계된 온라인 도구로, 표준 Protobuf 파일 구조의 신속한 생성을 지원합니다. 메시지 정의, 열거형 타입, 서비스 인터페이스를 원클릭으로 제공, Proto2/Proto3 구문 지원, 코드 자동 포맷팅, 실시간 구문 검사. 백엔드 개발자는 RPC 인터페이스 정의를 신속하게 구축, 프론트엔드 엔지니어는 데이터 구조를 이해, 풀스택 개발자는 API 명세를 통일 관리, 한곳에서 Protobuf 개발 효율성을 향상.
 
@@ -22,7 +22,7 @@ tags:
 
 ---
 
-![](https://api2.cmdragon.cn/upload/cmder/images/proto-file-generator-cover.png)
+![](https://api2.cmdragon.cn/upload/cmder/images/1774776197859.png)
 
 🔧 **Proto 파일 수동 작성의 번거로움을 작별하세요!** 「Proto 파일 생성기」로 Protobuf 파일 생성이 이렇게 간단해집니다!
 

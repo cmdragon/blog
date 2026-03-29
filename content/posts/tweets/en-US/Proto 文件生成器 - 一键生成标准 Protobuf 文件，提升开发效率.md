@@ -4,7 +4,7 @@ title: Proto File Generator - Generate Standard Protobuf Files with One Click, B
 date: 2026-03-29T08:30:00+08:00
 lastmod: 2026-03-29T08:30:00+08:00
 author: cmdragon
-cover: https://api2.cmdragon.cn/upload/cmder/images/proto-file-generator-cover.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/1774776197859.png
 summary:
   Proto File Generator is an online tool designed specifically for developers, supporting rapid generation of standard Protobuf file structures. Provides message definitions, enumeration types, service interfaces with one click, supports Proto2/Proto3 syntax, automatic code formatting, real-time syntax checking. Backend developers quickly build RPC interface definitions, frontend engineers understand data structures, full-stack developers manage API specifications uniformly, boost Protobuf development efficiency in one place.
 
@@ -22,7 +22,7 @@ tags:
 
 ---
 
-![](https://api2.cmdragon.cn/upload/cmder/images/proto-file-generator-cover.png)
+![](https://api2.cmdragon.cn/upload/cmder/images/1774776197859.png)
 
 🔧 **Say goodbye to the hassle of manually writing Proto files!** The "Proto File Generator" makes creating Protobuf files this simple!
 

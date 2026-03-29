@@ -4,7 +4,7 @@ title: 'Proto File Generator: Автоматичне створення стан
 date: 2026-03-29T00:00:00.000Z
 lastmod: 2026-03-29T00:00:00.000Z
 author: 前端工具侠
-cover: https://api2.cmdragon.cn/upload/cmder/images/proto-file-generator-cover.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/1774776197859.png
 summary: |
   🚀 Потужний онлайн-інструмент для створення Proto файлів, підтримує Proto2/Proto3, налаштовувані шаблони, ідеально підходить для розробки RPC/gRPC!
 categories:

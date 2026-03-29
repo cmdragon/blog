@@ -4,7 +4,7 @@ title: Générateur de Fichiers Proto - Générez des Fichiers Protobuf Standard
 date: 2026-03-29T08:30:00+08:00
 lastmod: 2026-03-29T08:30:00+08:00
 author: cmdragon
-cover: https://api2.cmdragon.cn/upload/cmder/images/proto-file-generator-cover.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/1774776197859.png
 summary:
   Le Générateur de Fichiers Proto est un outil en ligne conçu spécifiquement pour les développeurs, prend en charge la génération rapide de structures de fichiers Protobuf standard. Fournit définitions de messages, types d'énumération, interfaces de service en un clic, prend en charge la syntaxe Proto2/Proto3, formatage automatique du code, vérification de syntaxe en temps réel. Les développeurs backend construisent rapidement des définitions d'interfaces RPC, les ingénieurs frontend comprennent les structures de données, les développeurs full-stack gèrent uniformément les spécifications d'API, boostez l'efficacité de développement Protobuf en un seul endroit.
 
@@ -22,7 +22,7 @@ tags:
 
 ---
 
-![](https://api2.cmdragon.cn/upload/cmder/images/proto-file-generator-cover.png)
+![](https://api2.cmdragon.cn/upload/cmder/images/1774776197859.png)
 
 🔧 **Dites adieu aux tracas de l'écriture manuelle de fichiers Proto !** Le « Générateur de Fichiers Proto » rend la création de fichiers Protobuf si simple !
 

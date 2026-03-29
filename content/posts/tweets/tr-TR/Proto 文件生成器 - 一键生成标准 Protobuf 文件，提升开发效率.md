@@ -4,7 +4,7 @@ title: 'Proto File Generator: Standart Protobuf dosyalarının otomatik oluştur
 date: 2026-03-29T00:00:00.000Z
 lastmod: 2026-03-29T00:00:00.000Z
 author: 前端工具侠
-cover: https://api2.cmdragon.cn/upload/cmder/images/proto-file-generator-cover.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/1774776197859.png
 summary: |
   🚀 Güçlü bir çevrimiçi Proto dosya oluşturma aracı, Proto2/Proto3'ü destekler, özel şablonlar, RPC/gRPC geliştirme için mükemmel!
 categories:
