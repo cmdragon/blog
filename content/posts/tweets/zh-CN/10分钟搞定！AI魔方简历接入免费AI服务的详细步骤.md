@@ -1,5 +1,5 @@
 ---
-url: /posts/07755af00a1779ac0ab6cb087ff3epfl/
+url: /zh/posts/07755af00a1779ac0ab6cb087ff3epfl/
 title: 10分钟搞定！AI魔方简历接入免费AI服务的详细步骤
 date: 2026-03-29T07:40:34+08:00
 lastmod: 2026-03-29T07:40:34+08:00

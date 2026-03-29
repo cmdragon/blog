@@ -1,5 +1,5 @@
----
-url: /pt/posts/fa0f26042a7c13693b5635f3f738429b/  
+﻿---
+url: /pt-pt/posts/fa0f26042a7c13693b5635f3f738429b/  
 title: jsoncrack – Diga adeus aos problemas de aninhamento JSON com uma ferramenta visual de análise eficiente, aumentando a produtividade dos desenvolvedores em 80%  
 date: 2025-11-24T05:43:29+08:00  
 lastmod: 2025-11-24T05:43:29+08:00  

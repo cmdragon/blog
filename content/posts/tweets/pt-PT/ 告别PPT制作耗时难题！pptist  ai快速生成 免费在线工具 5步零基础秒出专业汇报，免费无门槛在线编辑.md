@@ -1,5 +1,5 @@
----
-url: /pt/posts/a453a875e784bbb98f84a81a587310cd/
+﻿---
+url: /pt-pt/posts/a453a875e784bbb98f84a81a587310cd/
 title: Diga adeus aos problemas de tempo na criação de apresentações PPT! O pptist AI gera rapidamente apresentações profissionais gratuitamente, em 5 passos simples, sem conhecimento técnico
 date: 2025-11-25T15:05:51+08:00
 lastmod: 2025-11-25T15:05:51+08:00
