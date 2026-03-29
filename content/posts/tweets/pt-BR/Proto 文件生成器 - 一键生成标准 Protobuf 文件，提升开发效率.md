@@ -1,5 +1,5 @@
----
-url: /pt/posts/07755af00a1779ac0ab6cb087ff3eb00/
+﻿---
+url: /pt-BR/posts/07755af00a1779ac0ab6cb087ff3eb00/
 title: 'Proto File Generator: Geração automática de arquivos Protobuf padrão, melhore a eficiência de desenvolvimento'
 date: 2026-03-29T00:00:00.000Z
 lastmod: 2026-03-29T00:00:00.000Z

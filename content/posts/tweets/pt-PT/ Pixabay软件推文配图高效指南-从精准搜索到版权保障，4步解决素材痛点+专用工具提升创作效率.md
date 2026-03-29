@@ -1,5 +1,5 @@
----
-url: /pt/posts/5c534ccbad68b2b62fc1b23031304b75/  
+﻿---
+url: /pt-pt/posts/5c534ccbad68b2b62fc1b23031304b75/  
 title: Guia Eficiente para Imagens em Publicações de Software com Pixabay – 4 Passos para Resolver Dificuldades com Materiais + Ferramentas Especializadas para Aumentar a Produtividade  
 date: 2025-11-23T15:29:42+08:00  
 lastmod: 2025-11-23T15:29:42+08:00  

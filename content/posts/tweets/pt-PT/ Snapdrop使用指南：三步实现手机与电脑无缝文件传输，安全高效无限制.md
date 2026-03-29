@@ -1,5 +1,5 @@
----  
-url: /pt/posts/ff09bf3567c37a0a1450ba925ff96b84/  
+﻿---  
+url: /pt-pt/posts/ff09bf3567c37a0a1450ba925ff96b84/  
 title: Guia de Utilização do Snapdrop Transfira Ficheiros Sem Fio Entre Telemóvel e Computador em 3 Passos, Seguro e Eficiente  
 date: 2025-11-22T14:41:18+08:00  
 lastmod: 2025-11-22T14:41:18+08:00  
