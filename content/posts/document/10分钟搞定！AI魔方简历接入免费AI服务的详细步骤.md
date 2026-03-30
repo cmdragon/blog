@@ -10,7 +10,7 @@ summary:
   本教程将引导您在 AI 魔方简历中配置免费的 AI 服务，如 OpenRouter。
 
 categories:
-  - tweets
+  - 帮助文档
 
 tags:
   - AI 魔方简历

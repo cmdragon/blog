@@ -10,33 +10,33 @@
 {{ $extraClass := default "" .extraClass }}
 {{ $showLabel := default false .showLabel }}
 
-{{ with site.Data.site.social_links }}
+{{ $socialLinks := site.Data.site.social_links }}
 <div class="flex {{ if $showLabel }}flex-col gap-3{{ else }}space-x-3{{ end }} {{ $extraClass }}">
-  {{ range . }}
-    {{ if eq .key "wechat" }}
+  {{ range $key, $value := $socialLinks }}
+    {{ $icon := $value.icon }}
+    {{ if eq $key "wechat" }}
       <!-- 微信特殊处理：显示二维码弹窗 -->
       <button 
         class="wechat-btn text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-300 bg-gray-100 dark:bg-gray-700 p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600"
-        aria-label="{{ .label }}"
+        aria-label="{{ $value.label }}"
         tabindex="0">
-        <iconify-icon icon="{{ .icon }}" width="18" height="18"></iconify-icon>
+        <iconify-icon {{ printf "icon=%q" $icon | safeHTMLAttr }} width="18" height="18"></iconify-icon>
         {{ if $showLabel }}
-          <span class="text-sm">{{ .name }}</span>
+          <span class="text-sm">{{ $value.name }}</span>
         {{ end }}
       </button>
-    {{ else if .url }}
+    {{ else if $value.url }}
       <a 
-        href="{{ .url }}"
+        href="{{ $value.url }}"
         class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-300 bg-gray-100 dark:bg-gray-700 p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600"
-        aria-label="{{ .label }}"
+        aria-label="{{ $value.label }}"
         tabindex="0"
-        {{ if or (strings.HasPrefix .url "http") (strings.HasPrefix .url "mailto:") }}target="_blank" rel="noopener noreferrer"{{ end }}>
-        <iconify-icon icon="{{ .icon }}" width="18" height="18"></iconify-icon>
+        {{ if or (strings.HasPrefix $value.url "http") (strings.HasPrefix $value.url "mailto:") }}target="_blank" rel="noopener noreferrer"{{ end }}>
+        <iconify-icon {{ printf "icon=%q" $icon | safeHTMLAttr }} width="18" height="18"></iconify-icon>
         {{ if $showLabel }}
-          <span class="text-sm">{{ .name }}</span>
+          <span class="text-sm">{{ $value.name }}</span>
         {{ end }}
       </a>
     {{ end }}
   {{ end }}
 </div>
-{{ end }}

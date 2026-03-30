@@ -28,11 +28,11 @@ social_links:
 quick_links:
   - name: "高清影视库"
     url: "https://movie.cmdragon.cn/"
-    icon: "mdi:movie"
+    icon: "mdi:movie-search-outline"
     
   - name: "精选漫画阅读"
-    url: "https://comic.cmdragon.cn/"
-    icon: "mdi:book-open-page-variant"
+    url: "https://manga.cmdragon.cn/"
+    icon: "mdi:comic-thought-bubble-outline"
     
   - name: "实用在线工具"
     url: "https://tools.cmdragon.cn/zh"
