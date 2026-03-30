@@ -1,4 +1,4 @@
-# Hugo默认输出目录
+# Hugo 默认输出目录
 /public/
 /node_modules/
 build.bat
@@ -6,6 +6,8 @@ build.bat
 /assets/jsconfig.json
 hugo_stats.json
 /scripts/
+# 但保留搜索索引分割脚本
+!/scripts/split_search_index.py
 
 # Hugo的缓存目录
 /.hugo_build.lock

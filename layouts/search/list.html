@@ -114,6 +114,13 @@
   </article>
 </template>
 
+<!-- 搜索配置 - 注入正确的索引路径 -->
+<script>
+  window.searchConfig = {
+    indexPath: '{{ "search-index/index.json" | relURL }}'
+  };
+</script>
+
 {{ $searchJS := resources.Get "js/search.js" | resources.Minify | resources.Fingerprint "sha512" }}
 <script src="{{ $searchJS.RelPermalink }}" integrity="{{ $searchJS.Data.Integrity }}" defer></script>
 
