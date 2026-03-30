@@ -1,5 +1,5 @@
 ﻿---
-url: /pt-pt/posts/cf9fbfaf3dcc1b5ada8161a06dda097d/
+url: /pt-PT/posts/cf9fbfaf3dcc1b5ada8161a06dda097d/
 title: Recomendação de PS Online Gratuito Funcionalidades Completa + Tutorial Prático, Domine em 3 Minutos
 date: 2025-12-08T06:55:19+08:00
 lastmod: 2025-12-08T06:55:19+08:00

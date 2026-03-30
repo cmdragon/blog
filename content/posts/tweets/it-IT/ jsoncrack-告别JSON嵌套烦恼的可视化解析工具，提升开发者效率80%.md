@@ -1,5 +1,5 @@
 ---
-url: /it/posts/fa0f26042a7c13693b5635f3f738429b/
+url: /it-IT/posts/fa0f26042a7c13693b5635f3f738429b/
 title: jsoncrack - Lo strumento visuale per risolvere i problemi delle strutture JSON annidate, aumentando l'efficienza degli sviluppatori del 80%
 date: 2025-11-24T05:43:29+08:00
 lastmod: 2025-11-24T05:43:29+08:00

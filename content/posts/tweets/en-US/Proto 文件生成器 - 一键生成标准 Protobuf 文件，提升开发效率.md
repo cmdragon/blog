@@ -1,5 +1,5 @@
 ---
-url: /en/posts/07755af00a1779ac0ab6cb087ff3eb00/
+url: /en-US/posts/07755af00a1779ac0ab6cb087ff3eb00/
 title: Proto File Generator - Generate Standard Protobuf Files with One Click, Boost Development Efficiency
 date: 2026-03-29T08:30:00+08:00
 lastmod: 2026-03-29T08:30:00+08:00

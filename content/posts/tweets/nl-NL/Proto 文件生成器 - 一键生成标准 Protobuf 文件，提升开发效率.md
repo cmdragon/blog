@@ -1,5 +1,5 @@
 ---
-url: /nl/posts/07755af00a1779ac0ab6cb087ff3eb00/
+url: /nl-NL/posts/07755af00a1779ac0ab6cb087ff3eb00/
 title: 'Proto File Generator: Automatisch genereren van standaard Protobuf-bestanden, verbeter ontwikkelingsefficiëntie'
 date: 2026-03-29T00:00:00.000Z
 lastmod: 2026-03-29T00:00:00.000Z
@@ -8,7 +8,7 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/1774776197859.png
 summary: |
   🚀 Een krachtige online tool voor het genereren van Proto-bestanden, ondersteunt Proto2/Proto3, aangepaste sjablonen, perfect voor RPC/gRPC-ontwikkeling!
 categories:
-  - Hulpmiddelen
+  - tweets
 tags:
   - Protobuf
   - Bestandsenerator

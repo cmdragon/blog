@@ -1,5 +1,5 @@
 ---
-url: /es/posts/747a97573bf7d430033a808e441737fb/  
+url: /es-ES/posts/747a97573bf7d430033a808e441737fb/  
 title: Editor en línea ligero y eficiente mermaid live editor, herramienta indispensable para profesionales y estudiantes  
 date: 2025-11-23T10:16:32+08:00  
 lastmod: 2025-11-23T10:16:32+08:00  
@@ -9,8 +9,8 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20251123195835.png
 summary:  
     mermaid live editor es una herramienta en línea ligera para diagramas de flujo, sin necesidad de instalación, basada en sintaxis y con vista previa en tiempo real. Soporta todo tipo de escenarios diagramas de flujo, diagramas de secuencia, etc. Al usarlo, edita el código en el panel izquierdo y visualiza los resultados en tiempo real en el panel derecho. Utiliza plantillas de sintaxis para aprender rápidamente, y exporta imágenes o código Markdown. Ideal para gestión de proyectos profesionales, organización de conocimientos en estudios o integración con documentación de código.  
 
-categories:  
-  - tweets  
+categories:
+  - tweets
 
 tags:  
   - mermaid live editor  

@@ -1,5 +1,5 @@
 ---
-url: /tr/posts/07755af00a1779ac0ab6cb087ff3eaff/
+url: /tr-TR/posts/07755af00a1779ac0ab6cb087ff3eaff/
 title: Çok Yollu Canlı Yayın Toplayıcı HLS Protokolünü Destekliyor, Çok Ekranlı Canlı İzleme Deneyiminde Yeni Bir Sayfa Açıyor
 date: 2026-03-29T07:40:34+08:00
 lastmod: 2026-03-29T07:40:34+08:00

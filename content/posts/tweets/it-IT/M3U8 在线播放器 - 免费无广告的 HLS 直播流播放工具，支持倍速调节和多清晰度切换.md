@@ -1,5 +1,5 @@
 ---
-url: /it/posts/07755af00a1779ac0ab6cb087ff3eb04/
+url: /it-IT/posts/07755af00a1779ac0ab6cb087ff3eb04/
 title: Lettore M3U8 Online - Strumento di Riproduzione Livestream HLS Gratuito senza Pubblicità con Controllo Velocità e Cambio Qualità
 date: 2026-03-29T11:00:00+08:00
 lastmod: 2026-03-29T11:00:00+08:00
@@ -8,7 +8,7 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/1a85864f62f94469a825379a6d5b
 summary: |
   🎬 Lettore M3U8/HLS online professionale e gratuito, supporta livestream e file video locali! Con controllo velocità di riproduzione, cambio qualità multiplo, modalità schermo intero e altro, senza pubblicità, nessuna installazione richiesta, usa direttamente nel browser!
 categories:
-  - Strumenti
+  - tweets
 tags:
   - Lettore M3U8
   - Riproduzione HLS

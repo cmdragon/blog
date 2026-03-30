@@ -1,5 +1,5 @@
 ---
-url: /nl/posts/ff09bf3567c37a0a1450ba925ff96b84/
+url: /nl-NL/posts/ff09bf3567c37a0a1450ba925ff96b84/
 title: Snapdrop Gebruiksgids Drie Stappen voor Naadloze Bestandsverzending tussen Telefoon en Computer, Veilig en Efficiënt
 date: 2025-11-22T14:41:18+08:00
 lastmod: 2025-11-22T14:41:18+08:00

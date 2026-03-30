@@ -1,5 +1,5 @@
 ---
-url: /ja/posts/07755af00a1779ac0ab6cb087ff3eb04/
+url: /ja-JP/posts/07755af00a1779ac0ab6cb087ff3eb04/
 title: M3U8 オンラインプレーヤー - 広告無料の HLS ライブストリーミング再生ツール、速度調整と画質切り替え対応
 date: 2026-03-29T11:00:00+08:00
 lastmod: 2026-03-29T11:00:00+08:00
@@ -8,7 +8,7 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/1a85864f62f94469a825379a6d5b
 summary: |
   🎬 無料のプロフェッショナル M3U8/HLS オンラインプレーヤー、ライブストリーミングとローカル動画ファイルに対応！再生速度制御、複数画質切り替え、全画面モードなど、広告なし、インストール不要、ブラウザで直接使用！
 categories:
-  - ツール
+  - tweets
 tags:
   - M3U8 プレーヤー
   - HLS 再生

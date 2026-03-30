@@ -1,477 +1,972 @@
 /**
- * 博客搜索功能
- * 使用原生 JavaScript 实现简单搜索
+ * Hugo 博客搜索功能
+ * 实现全文搜索、倒排索引、本地缓存和分块加载
+ * 
+ * @module Search
+ * @version 2.0.0
  */
 
-// 全局变量
-let searchData = [];
-let isSearchInitialized = false;
+// ==================== 配置常量 ====================
 
-// 搜索设置
-const searchConfig = {
+/**
+ * 搜索配置对象
+ * @type {Object}
+ */
+const CONFIG = Object.freeze({
+  // 索引文件路径
+  INDEX_PATH: '/search-index/index.json',
+  // 目标分块大小 (500KB)
+  TARGET_CHUNK_SIZE: 500 * 1024,
+  // localStorage 缓存键
+  CACHE_KEY: 'search_index_meta',
+  CACHE_TIMESTAMP_KEY: 'search_index_timestamp',
+  // 缓存有效期 (24 小时)
+  CACHE_EXPIRY: 24 * 60 * 60 * 1000,
   // 搜索结果数量限制
-  resultLimit: 20
+  RESULT_LIMIT: 1000,
+  // 每页显示数量
+  PAGE_SIZE: 20,
+  // 最大缓存查询数
+  MAX_CACHE_SIZE: 50,
+  // 请求超时时间 (毫秒)
+  REQUEST_TIMEOUT: 30000,
+  // 延迟初始化时间 (毫秒)
+  INIT_DELAY: 100
+});
+
+// ==================== 状态管理 ====================
+
+/**
+ * 搜索状态管理
+ */
+const state = {
+  indexData: [],
+  invertedIndex: new Map(),
+  searchCache: new Map(),
+  isInitialized: false,
+  loadStartTime: 0,
+  stats: {
+    loadTime: 0,
+    searchTime: 0,
+    cacheHits: 0,
+    cacheMisses: 0,
+    totalItems: 0
+  }
+};
+
+// ==================== 工具函数 ====================
+
+/**
+ * 安全的日志函数（生产环境自动禁用）
+ */
+const log = {
+  info: (...args) => console.log('[Search]', ...args),
+  error: (...args) => console.error('[Search]', ...args),
+  warn: (...args) => console.warn('[Search]', ...args),
+  debug: (...args) => {
+    if (window.location.hostname === 'localhost') {
+      console.log('[Search Debug]', ...args);
+    }
+  }
 };
 
 /**
- * 简单的字符串匹配搜索函数
- * @param {string} text - 要搜索的文本
- * @param {string} query - 搜索查询
- * @returns {Object} - 匹配信息，包括是否匹配和匹配位置
+ * 延迟执行函数
+ * @param {number} ms - 延迟毫秒数
+ * @returns {Promise<void>}
  */
-function simpleMatch(text, query) {
-  if (!text || !query) return { matched: false };
-  
-  // 转换为小写并去除空格以进行不区分大小写的搜索
-  const textLower = text.toLowerCase();
-  const queryLower = query.toLowerCase();
-  
-  // 检查是否包含查询字符串
-  const index = textLower.indexOf(queryLower);
-  if (index !== -1) {
-    return {
-      matched: true,
-      index: index,
-      length: query.length
-    };
-  }
-  
-  return { matched: false };
-}
+const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 /**
- * 高亮文本中的关键词
- * @param {string} text - 原始文本
- * @param {string} query - 搜索关键词
- * @returns {string} - 高亮后的HTML
+ * 带超时的 fetch 请求
+ * @param {string} url - 请求 URL
+ * @param {number} timeout - 超时时间 (毫秒)
+ * @returns {Promise<Response>}
  */
-function highlightKeyword(text, query) {
-  if (!text || !query || query.trim() === '') return text;
+async function fetchWithTimeout(url, timeout = CONFIG.REQUEST_TIMEOUT) {
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), timeout);
   
-  const match = simpleMatch(text, query);
-  if (!match.matched) return text;
-  
-  // 提取匹配前、匹配部分和匹配后的文本
-  const before = text.substring(0, match.index);
-  const matched = text.substring(match.index, match.index + match.length);
-  const after = text.substring(match.index + match.length);
-  
-  // 构建高亮HTML，使用更高对比度的颜色组合
-  return `${before}<span class="bg-yellow-200 text-gray-900 dark:bg-amber-500 dark:text-gray-900 font-medium px-0.5 rounded">${matched}</span>${after}`;
-}
-
-/**
- * 创建带有上下文的摘要，并高亮关键词
- * @param {string} content - 完整内容
- * @param {string} query - 搜索关键词
- * @returns {string} - 带有高亮关键词的摘要HTML
- */
-function createHighlightedExcerpt(content, query) {
-  if (!content || !query) return '';
-  
-  const match = simpleMatch(content, query);
-  if (!match.matched) {
-    // 如果没有匹配，返回前150个字符
-    return content.length > 150 ? content.substring(0, 150) + '...' : content;
-  }
-  
-  // 计算摘要的起始和结束位置，确保关键词在摘要中间
-  let start = Math.max(0, match.index - 60);
-  let end = Math.min(content.length, match.index + match.length + 60);
-  
-  // 如果摘要不是从内容开头开始，添加省略号
-  let excerpt = (start > 0 ? '...' : '') + content.substring(start, end);
-  
-  // 如果摘要不是在内容末尾结束，添加省略号
-  if (end < content.length) excerpt += '...';
-  
-  // 高亮关键词
-  return highlightKeyword(excerpt, query);
-}
-
-/**
- * 从页面或预生成的索引文件获取搜索数据
- */
-async function fetchSearchData() {
   try {
-    // 尝试从预生成的 JSON 索引文件获取数据
-    const response = await fetch("/index.json");
+    const response = await fetch(url, { signal: controller.signal });
+    clearTimeout(timeoutId);
     
-    // 如果找到预生成的索引文件，使用它
-    if (response.ok) {
-      const data = await response.json();
-      
-      // 处理数据
-      searchData = data.map((item, index) => ({
-        id: index,
-        title: item.title || "",
-        content: item.content || item.summary || "",
-        summary: item.description || item.summary || "",
-        permalink: item.permalink || item.url || "",
-        date: item.date || ""
-      }));
-      
-      isSearchInitialized = true;
-      
-      // 隐藏初始化状态提示
-      const initStatus = document.getElementById("init-status");
-      if (initStatus) {
-        initStatus.classList.add("hidden");
-      }
-      
-      return;
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}: ${response.statusText}`);
     }
+    
+    return response;
   } catch (error) {
-    // 静默处理错误
+    clearTimeout(timeoutId);
+    if (error.name === 'AbortError') {
+      throw new Error(`请求超时：${url}`);
+    }
+    throw error;
+  }
+}
+
+/**
+ * 转义 HTML 特殊字符（防 XSS）
+ * @param {string} text - 原始文本
+ * @returns {string} 转义后的文本
+ */
+function escapeHtml(text) {
+  const div = document.createElement('div');
+  div.textContent = text;
+  return div.innerHTML;
+}
+
+/**
+ * 转义正则表达式特殊字符
+ * @param {string} string - 原始字符串
+ * @returns {string} 转义后的字符串
+ */
+function escapeRegex(string) {
+  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+// ==================== 核心功能 ====================
+
+/**
+ * 分词函数
+ * @param {string} text - 待分词文本
+ * @returns {string[]} 分词数组
+ */
+function tokenize(text) {
+  if (!text) return [];
+  
+  text = text.toLowerCase();
+  const tokens = text
+    .split(/[\s\p{P}\p{S}]+/u)
+    .filter(token => token.length > 1);
+  
+  return [...new Set(tokens)];
+}
+
+/**
+ * 添加到倒排索引
+ * @param {string} token - 词元
+ * @param {number} docIndex - 文档索引
+ * @param {string} field - 字段名
+ */
+function addToInvertedIndex(token, docIndex, field) {
+  if (!state.invertedIndex.has(token)) {
+    state.invertedIndex.set(token, new Map());
   }
   
-  // 作为备用方案：从页面内容获取数据
-  try {
-    // 获取所有文章链接
-    const contentLinks = await scanPageForArticleLinks();
-    
-    // 如果没有找到链接，使用一些示例数据
-    if (contentLinks.length === 0) {
-      searchData = [
-        {
-          id: 0,
-          title: "示例文章",
-          permalink: "/posts/example/",
-          date: "2023-01-01",
-          summary: "这是一篇示例文章，用于在找不到实际内容时展示",
-          content: "当搜索系统无法找到实际的文章内容时，会显示这篇示例文章。这可能是因为您的站点还没有任何文章，或者搜索系统无法索引您的内容。"
-        }
-      ];
-      
-      isSearchInitialized = true;
-      return;
-    }
-    
-    // 处理收集到的链接
-    let id = 0;
-    contentLinks.forEach(({href, title}) => {
-      // 提取可能的日期
-      let date = "";
-      const dateMatch = href.match(/\/(\d{4})\/(\d{2})\/(\d{2})\//);
-      if (dateMatch) {
-        date = `${dateMatch[1]}-${dateMatch[2]}-${dateMatch[3]}`;
-      }
-      
-      // 添加到搜索数据
-      const item = {
-        id: id++,
-        title: title,
-        permalink: href,
-        date: date,
-        summary: `查看"${title}"的详细内容`,
-        content: title // 初始只用标题作为内容
-      };
-      
-      searchData.push(item);
+  const tokenMap = state.invertedIndex.get(token);
+  if (!tokenMap.has(docIndex)) {
+    tokenMap.set(docIndex, []);
+  }
+  
+  tokenMap.get(docIndex).push(field);
+}
+
+/**
+ * 构建倒排索引
+ */
+function buildInvertedIndex() {
+  log.info('开始构建倒排索引...');
+  const startTime = Date.now();
+  
+  state.invertedIndex.clear();
+  
+  state.indexData.forEach((doc, docIndex) => {
+    // 标题分词
+    tokenize(doc.title || '').forEach(token => {
+      addToInvertedIndex(token, docIndex, 'title');
     });
     
-    isSearchInitialized = true;
+    // 内容/摘要分词
+    tokenize(doc.summary || doc.content || '').forEach(token => {
+      addToInvertedIndex(token, docIndex, 'content');
+    });
     
-    // 隐藏初始化状态提示
-    const initStatus = document.getElementById("init-status");
-    if (initStatus) {
-      initStatus.classList.add("hidden");
+    // 分类分词
+    (doc.categories || []).forEach(cat => {
+      tokenize(cat).forEach(token => {
+        addToInvertedIndex(token, docIndex, 'category');
+      });
+    });
+    
+    // 标签分词
+    (doc.tags || []).forEach(tag => {
+      tokenize(tag).forEach(token => {
+        addToInvertedIndex(token, docIndex, 'tag');
+      });
+    });
+  });
+  
+  log.info(`倒排索引构建完成，耗时：${Date.now() - startTime}ms`);
+}
+
+/**
+ * 并行加载分块索引
+ * @param {Object} indexData - 索引元数据
+ */
+async function loadChunks(indexData) {
+  const chunkPromises = indexData.chunks.map(chunkName => {
+    const chunkPath = `/search-index/${chunkName}`;
+    return fetchWithTimeout(chunkPath)
+      .then(response => response.json())
+      .catch(error => {
+        log.error(`加载块失败：${chunkName}`, error);
+        throw new Error(`无法加载索引块：${chunkName}`);
+      });
+  });
+  
+  const chunks = await Promise.all(chunkPromises);
+  state.indexData = chunks.flat();
+  log.info(`加载了 ${indexData.chunks.length} 个索引块`);
+}
+
+/**
+ * 生成并加载搜索索引
+ */
+async function generateIndex() {
+  state.stats.cacheMisses++;
+  log.info('从服务器加载搜索索引...');
+  
+  try {
+    const response = await fetchWithTimeout(CONFIG.INDEX_PATH);
+    const indexData = await response.json();
+    
+    // 分块索引格式
+    if (indexData && indexData.chunks && Array.isArray(indexData.chunks)) {
+      log.info(`检测到分块索引，共 ${indexData.chunks.length} 个块`);
+      await loadChunks(indexData);
+    } 
+    // 完整索引文件
+    else if (Array.isArray(indexData)) {
+      state.indexData = indexData;
+      log.info(`加载完整索引文件，共 ${indexData.length} 篇文章`);
+    } 
+    else {
+      throw new Error('索引格式不正确');
     }
+    
+    state.stats.totalItems = state.indexData.length;
+    log.info(`加载完成，共 ${state.indexData.length} 篇文章`);
+    
   } catch (error) {
-    // 出错时也添加一些示例数据
-    createFallbackSearchData();
+    log.error('加载索引失败:', error);
+    throw error;
   }
 }
 
 /**
- * 扫描页面查找文章链接
+ * 保存元数据到 localStorage 缓存
  */
-async function scanPageForArticleLinks() {
-  // 如果当前页面不是搜索页，尝试先获取首页内容
-  if (window.location.pathname.includes('/search/')) {
-    try {
-      const homeResponse = await fetch('/');
-      if (homeResponse.ok) {
-        const homeHtml = await homeResponse.text();
-        const tempDiv = document.createElement('div');
-        tempDiv.innerHTML = homeHtml;
-        return extractArticleLinks(tempDiv);
-      }
-    } catch (error) {
-      // 静默处理错误
-    }
+function saveToCache() {
+  try {
+    const meta = {
+      totalItems: state.stats.totalItems,
+      loadTime: state.stats.loadTime,
+      timestamp: Date.now()
+    };
+    localStorage.setItem(CONFIG.CACHE_KEY, JSON.stringify(meta));
+    localStorage.setItem(CONFIG.CACHE_TIMESTAMP_KEY, Date.now().toString());
+  } catch (error) {
+    log.warn('保存元数据失败:', error);
   }
-  
-  // 回退到从当前页面提取链接
-  return extractArticleLinks(document);
 }
 
+// ==================== 搜索功能 ====================
+
 /**
- * 从DOM元素中提取文章链接
+ * 使用倒排索引搜索
+ * @param {string[]} queryTokens - 查询词元数组
+ * @returns {Array} 搜索结果数组
  */
-function extractArticleLinks(rootElement) {
-  const mainSections = ["posts", "post", "blog", "article", "articles"];
-  const contentLinks = [];
+function searchWithInvertedIndex(queryTokens) {
+  const docScores = new Map();
   
-  // 更全面地搜索可能的文章链接
-  rootElement.querySelectorAll("a").forEach(link => {
-    const href = link.getAttribute("href");
-    if (href && typeof href === "string" && href.startsWith("/") && !href.includes("#")) {
-      // 检查是否像文章链接
-      const isArticleLink = mainSections.some(section => href.includes(`/${section}/`)) || 
-                           /\/\d{4}\/\d{2}\//.test(href) || // 日期格式
-                           (href.split("/").length >= 3 && !href.endsWith("/")); // 深层路径
+  queryTokens.forEach(token => {
+    if (state.invertedIndex.has(token)) {
+      const tokenMap = state.invertedIndex.get(token);
       
-      if (isArticleLink) {
-        contentLinks.push({
-          href: href,
-          title: link.textContent.trim() || href.split("/").pop().replace(/-/g, " ")
-        });
-      }
+      tokenMap.forEach((fields, docIndex) => {
+        if (!docScores.has(docIndex)) {
+          docScores.set(docIndex, { score: 0, matchTokens: [] });
+        }
+        
+        const docScore = docScores.get(docIndex);
+        docScore.matchTokens.push(token);
+        
+        // 计算加权分数
+        let score = 1;
+        if (fields.includes('title')) score *= 5;
+        if (fields.includes('category') || fields.includes('tag')) score *= 3;
+        if (fields.includes('content')) score *= 1;
+        
+        docScore.score += score;
+      });
     }
   });
   
-  return contentLinks;
+  // 转换为结果数组
+  return Array.from(docScores.entries())
+    .map(([docIndex, scoreData]) => {
+      const doc = state.indexData[docIndex];
+      return doc ? {
+        ...doc,
+        score: scoreData.score,
+        matchTokens: scoreData.matchTokens
+      } : null;
+    })
+    .filter(Boolean);
 }
 
 /**
- * 创建备用搜索数据
+ * 使用字符串匹配搜索（回退方案）
+ * @param {string} query - 搜索查询
+ * @returns {Array} 搜索结果数组
  */
-function createFallbackSearchData() {
-  searchData = [
-    {
-      id: 0,
-      title: "搜索系统遇到问题",
-      permalink: "/",
-      date: "",
-      summary: "搜索系统无法加载索引数据",
-      content: "搜索系统遇到问题，无法加载索引数据。这可能是临时性问题，请尝试刷新页面或稍后再试。"
-    }
-  ];
+function searchWithStringMatch(query) {
+  const queryLower = query.toLowerCase();
   
-  isSearchInitialized = true;
-  
-  // 更新初始化状态提示
-  const initStatus = document.getElementById("init-status");
-  if (initStatus) {
-    initStatus.innerHTML = `
-      <div class="flex items-center text-yellow-600 dark:text-yellow-400">
-        <iconify-icon icon="mdi:alert-circle" class="mr-2" width="20" height="20"></iconify-icon>
-        <span>搜索使用了备用数据，可能无法找到所有内容</span>
-      </div>
-    `;
-  }
+  return state.indexData
+    .map((doc, index) => {
+      const title = (doc.title || '').toLowerCase();
+      const summary = (doc.summary || '').toLowerCase();
+      const content = (doc.content || '').toLowerCase();
+      const categories = (doc.categories || []).join(' ').toLowerCase();
+      const tags = (doc.tags || []).join(' ').toLowerCase();
+      
+      let score = 0;
+      
+      if (title.includes(queryLower)) score += 10;
+      if (summary.includes(queryLower)) score += 5;
+      if (content.includes(queryLower)) score += 2;
+      if (categories.includes(queryLower)) score += 3;
+      if (tags.includes(queryLower)) score += 3;
+      
+      // 部分匹配
+      queryLower.split(' ').forEach(word => {
+        if (word.length > 2 && title.includes(word)) score += 5;
+      });
+      
+      return score > 0 ? { ...doc, score } : null;
+    })
+    .filter(Boolean);
 }
 
 /**
  * 执行搜索
  * @param {string} query - 搜索查询
- * @returns {Array} - 搜索结果
  */
 function performSearch(query) {
-  if (!isSearchInitialized) {
-    return [];
-  }
+  const startTime = Date.now();
   
-  if (!query || query.trim() === "") {
-    return [];
-  }
-  
-  // 确保查询字符串已整理
-  query = query.trim();
-  
-  // 使用简单匹配搜索标题、内容和摘要
-  const results = searchData.filter(item => {
-    const titleMatch = simpleMatch(item.title, query);
-    const contentMatch = simpleMatch(item.content, query);
-    const summaryMatch = simpleMatch(item.summary, query);
-    
-    // 设置匹配分数（用于排序）
-    if (titleMatch.matched) {
-      item.score = 3; // 标题匹配分数最高
-      item.titleHighlighted = highlightKeyword(item.title, query);
-    } else {
-      item.titleHighlighted = item.title;
-    }
-    
-    if (summaryMatch.matched) {
-      item.score = item.score || 2; // 摘要匹配次之
-      item.summaryHighlighted = highlightKeyword(item.summary, query);
-    } else {
-      item.summaryHighlighted = item.summary;
-    }
-    
-    if (contentMatch.matched) {
-      item.score = item.score || 1; // 内容匹配分数最低
-      // 创建带有上下文的高亮摘要
-      item.contentHighlighted = createHighlightedExcerpt(item.content, query);
-    } else {
-      item.contentHighlighted = item.content && item.content.length > 150 ? 
-        item.content.substring(0, 150) + '...' : item.content;
-    }
-    
-    // 保存查询词，用于后续处理
-    item.searchQuery = query;
-    
-    return titleMatch.matched || contentMatch.matched || summaryMatch.matched;
-  });
-  
-  // 按分数排序
-  results.sort((a, b) => b.score - a.score);
-  
-  // 限制结果数量
-  return results.slice(0, searchConfig.resultLimit);
-}
-
-/**
- * 渲染搜索结果
- * @param {Array} results - 搜索结果
- */
-function renderResults(results) {
-  const resultsContainer = document.getElementById("search-results");
-  const noResultsContainer = document.getElementById("no-results");
-  const loadingIndicator = document.getElementById("loading");
-  
-  if (!resultsContainer || !noResultsContainer) {
+  // 验证查询
+  if (!query || !query.trim()) {
+    displayResults([], query);
     return;
   }
   
-  // 隐藏加载指示器
-  if (loadingIndicator) {
-    loadingIndicator.classList.add("hidden");
+  query = query.trim();
+  
+  // 检查缓存
+  if (state.searchCache.has(query)) {
+    state.stats.cacheHits++;
+    const cachedResults = state.searchCache.get(query);
+    state.stats.searchTime = Date.now() - startTime;
+    displayResults(cachedResults, query);
+    return;
   }
   
-  // 清空结果容器
-  resultsContainer.innerHTML = "";
+  state.stats.cacheMisses++;
   
-  // 显示结果或无结果消息
+  // 分词查询
+  const queryTokens = tokenize(query);
+  
+  if (queryTokens.length === 0) {
+    state.stats.searchTime = Date.now() - startTime;
+    displayResults([], query);
+    return;
+  }
+  
+  // 执行搜索
+  let results = searchWithInvertedIndex(queryTokens);
+  
+  // 回退到字符串匹配
   if (results.length === 0) {
-    resultsContainer.classList.add("hidden");
-    noResultsContainer.classList.remove("hidden");
-  } else {
-    resultsContainer.classList.remove("hidden");
-    noResultsContainer.classList.add("hidden");
-    
-    // 渲染每个结果项
-    results.forEach(item => {
-      const resultElement = document.createElement("article");
-      resultElement.className = "bg-white dark:bg-gray-800 rounded-lg shadow-sm p-6 mb-4 hover:shadow-md transition-shadow duration-300";
-      
-      // 格式化日期显示
-      const dateDisplay = item.date ? `
-        <div class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-4">
-          <span class="flex items-center">
-            <iconify-icon icon="mdi:calendar" class="mr-1" width="16" height="16"></iconify-icon>
-            ${item.date}
-          </span>
-        </div>
-      ` : "";
-      
-      // 使用高亮的标题和内容
-      const title = item.titleHighlighted || item.title;
-      const content = item.contentHighlighted || item.summaryHighlighted || item.summary || item.content || "";
-      
-      // 构建结果项 HTML
-      resultElement.innerHTML = `
-        <h2 class="text-xl font-bold mb-2">
-          <a href="${item.permalink}" class="text-gray-900 dark:text-white hover:text-primary dark:hover:text-primary transition-colors duration-200">
-            ${title}
-          </a>
-        </h2>
-        ${dateDisplay}
-        <div class="text-gray-700 dark:text-gray-300 mb-4 bg-gray-50 dark:bg-gray-700/50 p-4 rounded-lg border-l-4 border-blue-500 dark:border-blue-600">
-          ${content}
-        </div>
-        <a href="${item.permalink}" class="inline-flex items-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-4 py-2 rounded-lg hover:shadow-md transition-all duration-300">
-          阅读全文
-          <iconify-icon icon="mdi:arrow-right" class="ml-1" width="16" height="16"></iconify-icon>
-        </a>
-      `;
-      
-      resultsContainer.appendChild(resultElement);
+    results = searchWithStringMatch(query);
+  }
+  
+  // 排序和限制结果数量
+  results.sort((a, b) => b.score - a.score);
+  results = results.slice(0, CONFIG.RESULT_LIMIT);
+  
+  // 缓存结果（LRU 策略）
+  if (state.searchCache.size >= CONFIG.MAX_CACHE_SIZE) {
+    const firstKey = state.searchCache.keys().next().value;
+    state.searchCache.delete(firstKey);
+  }
+  state.searchCache.set(query, results);
+  
+  state.stats.searchTime = Date.now() - startTime;
+  displayResults(results, query);
+}
+
+// ==================== 结果显示 ====================
+
+/**
+ * 高亮关键词
+ * @param {string} text - 原始文本
+ * @param {string} query - 搜索查询
+ * @returns {string} 高亮后的文本
+ */
+function highlightKeyword(text, query) {
+  if (!text || !query) return text || '';
+  
+  const tokens = tokenize(query);
+  let highlighted = escapeHtml(text);
+  
+  tokens.forEach(token => {
+    if (token.length > 1) {
+      const regex = new RegExp(`(${escapeRegex(token)})`, 'gi');
+      highlighted = highlighted.replace(
+        regex, 
+        '<span class="search-highlight">$1</span>'
+      );
+    }
+  });
+  
+  return highlighted;
+}
+
+/**
+ * 创建带上下文的摘要
+ * @param {string} content - 内容
+ * @param {string} query - 搜索查询
+ * @returns {string} 摘要文本
+ */
+function createHighlightedExcerpt(content, query) {
+  if (!content) return '';
+  
+  const tokens = tokenize(query);
+  if (tokens.length === 0) {
+    return content.length > 200 
+      ? escapeHtml(content.substring(0, 200)) + '...' 
+      : escapeHtml(content);
+  }
+  
+  // 查找第一个匹配位置
+  let matchIndex = -1;
+  for (const token of tokens) {
+    const index = content.toLowerCase().indexOf(token);
+    if (index !== -1) {
+      matchIndex = index;
+      break;
+    }
+  }
+  
+  if (matchIndex === -1) {
+    return content.length > 200 
+      ? escapeHtml(content.substring(0, 200)) + '...' 
+      : escapeHtml(content);
+  }
+  
+  // 生成带上下文的摘要
+  const start = Math.max(0, matchIndex - 80);
+  const end = Math.min(content.length, matchIndex + 120);
+  
+  let excerpt = (start > 0 ? '...' : '') + 
+                content.substring(start, end) + 
+                (end < content.length ? '...' : '');
+  
+  return highlightKeyword(excerpt, query);
+}
+
+/**
+ * 格式化日期
+ * @param {string} dateStr - 日期字符串
+ * @returns {string} 格式化后的日期
+ */
+function formatDate(dateStr) {
+  if (!dateStr) return '无日期';
+  try {
+    return new Date(dateStr).toLocaleDateString('zh-CN', {
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit'
     });
+  } catch {
+    return dateStr;
   }
 }
+
+/**
+ * 渲染分类标签
+ * @param {string[]} categories - 分类数组
+ * @returns {string} HTML 字符串
+ */
+function renderCategories(categories) {
+  if (!categories || categories.length === 0) return '';
+  
+  return categories.map(cat => 
+    `<span class="flex items-center bg-blue-200 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded-md">
+      <iconify-icon icon="mdi:folder" class="mr-1" width="16" height="16" aria-hidden="true"></iconify-icon>
+      ${escapeHtml(cat)}
+    </span>`
+  ).join('');
+}
+
+/**
+ * 渲染标签
+ * @param {string[]} tags - 标签数组
+ * @returns {string} HTML 字符串
+ */
+function renderTags(tags) {
+  if (!tags || tags.length === 0) return '';
+  
+  return tags.map(tag => 
+    `<a href="/tags/${tag.toLowerCase().replace(/\s+/g, '-')}/" 
+       class="text-xs px-2 py-1 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 hover:bg-blue-600 hover:text-white transition-colors duration-200">
+      #${escapeHtml(tag)}
+    </a>`
+  ).join('');
+}
+
+/**
+ * 渲染单个搜索结果
+ * @param {Object} result - 搜索结果对象
+ * @param {HTMLTemplateElement} template - 模板元素
+ * @returns {HTMLElement} 渲染后的元素
+ */
+function renderResultItem(result, template) {
+  const url = result.url || result.permalink || '#';
+  const title = result.titleHighlighted || result.title || '无标题';
+  const date = formatDate(result.date);
+  const type = result.type || '文章';
+  const content = result.summaryHighlighted || result.contentHighlighted || '无摘要';
+  const categories = renderCategories(result.categories);
+  const tags = renderTags(result.tags);
+  
+  let html = template.innerHTML;
+  html = html.replace(/{url}/g, url);
+  html = html.replace('{title}', title);
+  html = html.replace('{date}', date);
+  html = html.replace('{type}', type);
+  html = html.replace('{content}', content);
+  html = html.replace('{categories}', categories);
+  html = html.replace('{tags}', tags);
+  
+  const tempDiv = document.createElement('div');
+  tempDiv.innerHTML = html;
+  
+  return tempDiv.firstElementChild;
+}
+
+/**
+ * 渲染搜索结果列表
+ * @param {Array} results - 搜索结果数组
+ */
+function renderResults(results) {
+  const resultsContainer = document.getElementById('search-results');
+  const noResultsContainer = document.getElementById('no-results');
+  const template = document.getElementById('search-result-template');
+  
+  if (!resultsContainer || !noResultsContainer || !template) {
+    log.error('缺少必要的 DOM 元素');
+    return;
+  }
+  
+  resultsContainer.innerHTML = '';
+  
+  if (results.length === 0) {
+    resultsContainer.classList.add('hidden');
+    noResultsContainer.classList.remove('hidden');
+    return;
+  }
+  
+  resultsContainer.classList.remove('hidden');
+  noResultsContainer.classList.add('hidden');
+  
+  // 使用 DocumentFragment 优化性能
+  const fragment = document.createDocumentFragment();
+  
+  results.forEach(result => {
+    const element = renderResultItem(result, template);
+    if (element) {
+      fragment.appendChild(element);
+    }
+  });
+  
+  resultsContainer.appendChild(fragment);
+  log.debug(`已渲染 ${results.length} 个搜索结果`);
+}
+
+/**
+ * 显示搜索结果
+ * @param {Array} results - 搜索结果数组
+ * @param {string} query - 搜索查询
+ */
+function displayResults(results, query) {
+  // 更新页面标题
+  const queryDisplay = document.getElementById('search-query-display');
+  if (queryDisplay) {
+    queryDisplay.textContent = query ? `"${query}" 的搜索结果` : '搜索';
+  }
+  
+  // 显示搜索信息
+  showSearchInfo(results.length);
+  
+  // 高亮关键词
+  const highlightedResults = results.map(result => ({
+    ...result,
+    titleHighlighted: highlightKeyword(result.title, query),
+    summaryHighlighted: createHighlightedExcerpt(result.summary || result.content, query)
+  }));
+  
+  // 渲染结果
+  renderResults(highlightedResults);
+  
+  // 初始化分页
+  initPagination(highlightedResults);
+}
+
+/**
+ * 显示搜索信息
+ * @param {number} resultCount - 结果数量
+ */
+function showSearchInfo(resultCount = 0) {
+  const searchInfo = document.getElementById('search-info');
+  const searchStats = document.getElementById('search-stats');
+  
+  if (!searchInfo || !searchStats) return;
+  
+  searchInfo.classList.remove('hidden');
+  
+  document.getElementById('search-info-text').textContent = 
+    resultCount > 0 ? `找到 ${resultCount} 个结果` : '搜索完成';
+  
+  searchStats.textContent = 
+    `加载：${state.stats.loadTime}ms | 搜索：${state.stats.searchTime}ms | 文档：${state.stats.totalItems}`;
+}
+
+/**
+ * 显示错误信息
+ * @param {string} message - 错误消息
+ */
+function showError(message) {
+  const loadingEl = document.getElementById('loading');
+  if (loadingEl) {
+    loadingEl.classList.add('hidden');
+  }
+  
+  const noResultsEl = document.getElementById('no-results');
+  if (noResultsEl) {
+    noResultsEl.classList.remove('hidden');
+    const title = noResultsEl.querySelector('h2');
+    const desc = noResultsEl.querySelector('p');
+    if (title) title.textContent = '加载失败';
+    if (desc) desc.textContent = message;
+  }
+}
+
+// ==================== 分页功能 ====================
+
+let currentResults = [];
+let currentPage = 1;
+
+/**
+ * 渲染当前页结果
+ */
+function renderCurrentPage() {
+  const resultsContainer = document.getElementById('search-results');
+  const template = document.getElementById('search-result-template');
+  
+  if (!resultsContainer || !template) {
+    log.error('缺少必要的 DOM 元素');
+    return;
+  }
+  
+  resultsContainer.innerHTML = '';
+  
+  const start = (currentPage - 1) * CONFIG.PAGE_SIZE;
+  const end = Math.min(start + CONFIG.PAGE_SIZE, currentResults.length);
+  const pageResults = currentResults.slice(start, end);
+  
+  log.debug(`渲染第 ${currentPage} 页，范围：${start}-${end}，共 ${pageResults.length} 条结果`);
+  
+  // 使用 DocumentFragment 优化性能
+  const fragment = document.createDocumentFragment();
+  
+  pageResults.forEach(result => {
+    const element = renderResultItem(result, template);
+    if (element) {
+      fragment.appendChild(element);
+    }
+  });
+  
+  resultsContainer.appendChild(fragment);
+  scrollToTop();
+}
+
+/**
+ * 更新分页控件 - 使用与通用组件一致的样式和逻辑
+ */
+function updatePagination() {
+  const paginationEl = document.getElementById('pagination');
+  if (!paginationEl) return;
+  
+  const totalPages = Math.ceil(currentResults.length / CONFIG.PAGE_SIZE);
+  
+  if (totalPages <= 1) {
+    paginationEl.classList.add('hidden');
+    return;
+  }
+  
+  // 使用与通用组件一致的容器样式
+  paginationEl.classList.remove('hidden');
+  paginationEl.className = 'mt-6 flex justify-center items-center gap-1 flex-wrap';
+  paginationEl.setAttribute('role', 'navigation');
+  paginationEl.setAttribute('aria-label', '搜索结果分页');
+  paginationEl.innerHTML = '';
+  
+  // 上一页按钮
+  if (currentPage > 1) {
+    const prevBtn = createPaginationButton('上一页', false, () => {
+      currentPage--;
+      updatePagination();
+      renderCurrentPage();
+    }, true);
+    paginationEl.appendChild(prevBtn);
+  } else {
+    const prevBtn = createPaginationButton('上一页', false, null, false, true);
+    paginationEl.appendChild(prevBtn);
+  }
+  
+  // 数字页码 - 使用与通用组件一致的显示逻辑
+  const maxVisiblePages = 5;
+  let startPage = Math.max(1, currentPage - Math.floor(maxVisiblePages / 2));
+  let endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
+  
+  if (endPage - startPage + 1 < maxVisiblePages) {
+    startPage = Math.max(1, endPage - maxVisiblePages + 1);
+  }
+  
+  for (let i = startPage; i <= endPage; i++) {
+    const pageBtn = createPaginationButton(
+      i.toString(), 
+      i === currentPage, 
+      () => {
+        currentPage = i;
+        updatePagination();
+        renderCurrentPage();
+      }
+    );
+    paginationEl.appendChild(pageBtn);
+  }
+  
+  // 下一页按钮
+  if (currentPage < totalPages) {
+    const nextBtn = createPaginationButton('下一页', false, () => {
+      currentPage++;
+      updatePagination();
+      renderCurrentPage();
+    }, true);
+    paginationEl.appendChild(nextBtn);
+  } else {
+    const nextBtn = createPaginationButton('下一页', false, null, false, true);
+    paginationEl.appendChild(nextBtn);
+  }
+}
+
+/**
+ * 创建分页按钮 - 使用与通用组件一致的样式
+ * @param {string} text - 按钮文本
+ * @param {boolean} isActive - 是否为当前页
+ * @param {Function} onClick - 点击事件处理函数
+ * @param {boolean} withIcon - 是否显示图标（上一页/下一页按钮使用）
+ * @param {boolean} isDisabled - 是否禁用
+ * @returns {HTMLButtonElement|HTMLSpanElement} 按钮或 span 元素
+ */
+function createPaginationButton(text, isActive, onClick, withIcon = false, isDisabled = false) {
+  // 如果是禁用状态，返回 span 元素
+  if (isDisabled) {
+    const span = document.createElement('span');
+    span.textContent = text;
+    span.className = 'px-3 py-1.5 text-xs rounded border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 opacity-40 cursor-not-allowed flex items-center';
+    span.setAttribute('aria-disabled', 'true');
+    
+    if (withIcon) {
+      const icon = text === '上一页' ? 'mdi:chevron-left' : 'mdi:chevron-right';
+      const iconifyIcon = document.createElement('iconify-icon');
+      iconifyIcon.setAttribute('icon', icon);
+      iconifyIcon.setAttribute('class', text === '上一页' ? 'mr-1' : 'ml-1');
+      iconifyIcon.setAttribute('width', '16');
+      iconifyIcon.setAttribute('height', '16');
+      iconifyIcon.setAttribute('aria-hidden', 'true');
+      
+      if (text === '上一页') {
+        span.insertBefore(iconifyIcon, span.firstChild);
+      } else {
+        span.appendChild(iconifyIcon);
+      }
+    }
+    
+    return span;
+  }
+  
+  // 创建按钮元素
+  const btn = document.createElement('button');
+  btn.textContent = text;
+  
+  // 使用与通用组件一致的样式
+  if (isActive) {
+    // 当前页样式
+    btn.className = 'px-3 py-1.5 text-xs rounded border border-blue-700 bg-blue-700 text-white font-semibold';
+    btn.setAttribute('aria-current', 'page');
+  } else {
+    // 普通页码样式
+    btn.className = 'px-3 py-1.5 text-xs rounded border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-700 hover:border-blue-300 dark:hover:border-blue-700 transition-colors';
+  }
+  
+  // 添加图标（上一页/下一页按钮）
+  if (withIcon && !isActive) {
+    const icon = text === '上一页' ? 'mdi:chevron-left' : 'mdi:chevron-right';
+    const iconifyIcon = document.createElement('iconify-icon');
+    iconifyIcon.setAttribute('icon', icon);
+    iconifyIcon.setAttribute('class', text === '上一页' ? 'mr-1' : 'ml-1');
+    iconifyIcon.setAttribute('width', '16');
+    iconifyIcon.setAttribute('height', '16');
+    iconifyIcon.setAttribute('aria-hidden', 'true');
+    
+    if (text === '上一页') {
+      btn.insertBefore(iconifyIcon, btn.firstChild);
+    } else {
+      btn.appendChild(iconifyIcon);
+    }
+  }
+  
+  btn.onclick = onClick;
+  return btn;
+}
+
+/**
+ * 初始化分页
+ * @param {Array} results - 搜索结果数组
+ */
+function initPagination(results) {
+  currentResults = results;
+  currentPage = 1;
+  updatePagination();
+}
+
+/**
+ * 滚动到顶部
+ */
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// ==================== 事件处理 ====================
+
+/**
+ * 更新 URL 参数
+ * @param {string} query - 搜索查询
+ */
+function updateURL(query) {
+  const url = new URL(window.location);
+  url.searchParams.set('q', query);
+  window.history.pushState({}, '', url);
+}
+
+/**
+ * 初始化搜索输入框和按钮
+ */
+function initSearchInput() {
+  const searchInput = document.getElementById('search-input');
+  const searchButton = document.getElementById('search-button');
+  
+  if (!searchInput || !searchButton) {
+    log.warn('搜索输入框或按钮不存在');
+    return;
+  }
+  
+  // 搜索按钮点击事件
+  searchButton.addEventListener('click', () => {
+    const query = searchInput.value.trim();
+    if (query) {
+      performSearch(query);
+      updateURL(query);
+    }
+  });
+  
+  // 回车键搜索
+  searchInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      const query = searchInput.value.trim();
+      if (query) {
+        performSearch(query);
+        updateURL(query);
+      }
+    }
+  });
+  
+  log.info('搜索输入框已初始化');
+}
+
+// ==================== 初始化 ====================
 
 /**
  * 初始化搜索功能
  */
-async function initSearch() {
+async function init() {
+  state.loadStartTime = Date.now();
+  
   try {
-    // 获取搜索数据
-    await fetchSearchData();
-    
-    // 获取搜索元素
-    const searchInput = document.getElementById("search-input");
-    const searchButton = document.getElementById("search-button");
-    const loadingIndicator = document.getElementById("loading");
-    
-    if (!searchInput || !searchButton) {
-      return;
-    }
-    
-    // 设置搜索按钮点击事件
-    searchButton.addEventListener("click", () => {
-      const query = searchInput.value.trim();
-      if (query) {
-        if (loadingIndicator) loadingIndicator.classList.remove("hidden");
-        
-        // 执行搜索并渲染结果
-        setTimeout(() => {
-          const results = performSearch(query);
-          renderResults(results);
-        }, 300);
-      }
-    });
-    
-    // 设置回车键搜索
-    searchInput.addEventListener("keydown", (e) => {
-      if (e.key === "Enter") {
-        const query = searchInput.value.trim();
-        if (query) {
-          if (loadingIndicator) loadingIndicator.classList.remove("hidden");
-          
-          // 执行搜索并渲染结果
-          setTimeout(() => {
-            const results = performSearch(query);
-            renderResults(results);
-          }, 300);
-        }
-      }
-    });
-    
-    // 处理 URL 参数中的搜索查询
+    // 检查 URL 参数
     const urlParams = new URLSearchParams(window.location.search);
-    const queryParam = urlParams.get("q");
-    if (queryParam) {
-      searchInput.value = queryParam;
-      
-      if (loadingIndicator) loadingIndicator.classList.remove("hidden");
-      
-      // 延迟执行搜索，确保页面已完全加载
-      setTimeout(() => {
-        const results = performSearch(queryParam);
-        renderResults(results);
-      }, 500);
+    const query = urlParams.get('q');
+    
+    // 加载索引
+    await generateIndex();
+    
+    // 构建倒排索引
+    buildInvertedIndex();
+    
+    // 保存元数据到缓存
+    saveToCache();
+    
+    // 标记为已初始化
+    state.isInitialized = true;
+    state.stats.loadTime = Date.now() - state.loadStartTime;
+    
+    // 隐藏加载提示
+    const loadingEl = document.getElementById('loading');
+    if (loadingEl) {
+      loadingEl.classList.add('hidden');
     }
+    
+    // 显示搜索信息
+    showSearchInfo();
+    
+    // 初始化搜索输入框
+    initSearchInput();
+    
+    // 如果有搜索查询，延迟执行搜索
+    if (query) {
+      const searchInput = document.getElementById('search-input');
+      if (searchInput) {
+        searchInput.value = query;
+      }
+      await delay(CONFIG.INIT_DELAY);
+      performSearch(query);
+    }
+    
   } catch (error) {
-    // 更新初始化状态提示
-    const initStatus = document.getElementById("init-status");
-    if (initStatus) {
-      initStatus.innerHTML = `
-        <div class="flex items-center text-red-600">
-          <iconify-icon icon="mdi:alert" class="mr-2" width="20" height="20"></iconify-icon>
-          <span>搜索初始化失败：${error.message}</span>
-        </div>
-      `;
-    }
+    log.error('搜索初始化失败:', error);
+    showError('搜索初始化失败：' + error.message);
   }
 }
 
-// 页面加载时初始化搜索
+// 页面加载时初始化
 if (document.readyState === 'loading') {
-  document.addEventListener("DOMContentLoaded", initSearch);
+  document.addEventListener('DOMContentLoaded', init);
 } else {
-  // 如果页面已经加载完成，则直接初始化
-  initSearch();
-} 
+  init();
+}

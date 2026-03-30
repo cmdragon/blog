@@ -1,0 +1,174 @@
+{{- /* 
+分页通用组件
+参数:
+  - paginator: Hugo Paginator 对象
+  - position: 位置 (top/bottom/both)
+  - showNumbers: 是否显示数字页码 (默认 true)
+  - showPrevNext: 是否显示上一页/下一页 (默认 true)
+  - showJump: 是否显示跳转输入框 (默认 false)
+*/ -}}
+
+{{ $paginator := .paginator }}
+{{ $showNumbers := default true .showNumbers }}
+{{ $showPrevNext := default true .showPrevNext }}
+{{ $showJump := default false .showJump }}
+
+{{ if or $paginator.HasPrev $paginator.HasNext }}
+<nav class="mt-6 flex justify-center items-center gap-1 flex-wrap" role="navigation" aria-label="分页导航">
+  {{- /* 上一页 */ -}}
+  {{ if $showPrevNext }}
+    {{ if $paginator.HasPrev }}
+      <a href="{{ $paginator.Prev.URL }}" 
+         class="px-3 py-1.5 text-xs rounded border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-700 hover:border-blue-300 dark:hover:border-blue-700 transition-colors flex items-center"
+         aria-label="上一页"
+         tabindex="0">
+        <iconify-icon icon="mdi:chevron-left" class="mr-1" width="16" height="16" aria-hidden="true"></iconify-icon>
+        上一页
+      </a>
+    {{ else }}
+      <span class="px-3 py-1.5 text-xs rounded border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 opacity-40 cursor-not-allowed flex items-center" aria-disabled="true">
+        <iconify-icon icon="mdi:chevron-left" class="mr-1" width="16" height="16" aria-hidden="true"></iconify-icon>
+        上一页
+      </span>
+    {{ end }}
+  {{ end }}
+  
+  {{- /* 数字页码 */ -}}
+  {{ if $showNumbers }}
+    {{ $pag := $paginator }}
+    {{ $total := $pag.TotalPages }}
+    {{ $current := $pag.PageNumber }}
+    
+    {{ range $pag.Pagers }}
+      {{ $pageNum := .PageNumber }}
+      
+      {{- /* 显示逻辑：第一页、最后一页、当前页附近 */ -}}
+      {{ if or (eq $pageNum 1) (eq $pageNum $total) (and (ge $pageNum (sub $current 1)) (le $pageNum (add $current 1))) }}
+        {{ if eq $pageNum $current }}
+          <span class="px-3 py-1.5 text-xs rounded border border-blue-700 bg-blue-700 text-white font-semibold"
+                aria-label="第 {{ $pageNum }} 页"
+                aria-current="page">
+            {{ $pageNum }}
+          </span>
+        {{ else }}
+          <a href="{{ .URL }}" 
+             class="px-3 py-1.5 text-xs rounded border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-700 hover:border-blue-300 dark:hover:border-blue-700 transition-colors"
+             aria-label="第 {{ $pageNum }} 页"
+             tabindex="0">
+            {{ $pageNum }}
+          </a>
+        {{ end }}
+      {{ else if or (eq $pageNum (add $current 2)) (eq $pageNum (sub $current 2)) }}
+        <span class="px-3 py-1.5 text-xs rounded border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 cursor-default">...</span>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  
+  {{- /* 下一页 */ -}}
+  {{ if $showPrevNext }}
+    {{ if $paginator.HasNext }}
+      <a href="{{ $paginator.Next.URL }}" 
+         class="px-3 py-1.5 text-xs rounded border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-700 hover:border-blue-300 dark:hover:border-blue-700 transition-colors flex items-center"
+         aria-label="下一页"
+         tabindex="0">
+        下一页
+        <iconify-icon icon="mdi:chevron-right" class="ml-1" width="16" height="16" aria-hidden="true"></iconify-icon>
+      </a>
+    {{ else }}
+      <span class="px-3 py-1.5 text-xs rounded border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 opacity-40 cursor-not-allowed flex items-center" aria-disabled="true">
+        下一页
+        <iconify-icon icon="mdi:chevron-right" class="ml-1" width="16" height="16" aria-hidden="true"></iconify-icon>
+      </span>
+    {{ end }}
+  {{ end }}
+  
+  {{- /* 跳转输入框 */ -}}
+  {{ if $showJump }}
+    {{ $pag := $paginator }}
+    {{ $total := $pag.TotalPages }}
+    <div class="flex items-center gap-1 ml-2">
+      <span class="text-xs text-gray-600 dark:text-gray-400">跳至</span>
+      <input type="number" 
+             id="page-jump-{{ $pag.PageNumber }}"
+             min="1" 
+             max="{{ $total }}"
+             class="w-16 px-2 py-1.5 text-xs rounded border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+             placeholder="{{ $total }}"
+             aria-label="页码跳转">
+      <button onclick="jumpToPage('page-jump-{{ $pag.PageNumber }}', '{{ $pag.PageNumber }}', {{ $total }})"
+              class="px-3 py-1.5 text-xs rounded border border-blue-700 bg-blue-700 text-white hover:bg-blue-800 transition-colors"
+              aria-label="确认跳转">
+        跳转
+      </button>
+    </div>
+  {{ end }}
+</nav>
+
+{{ if $showJump }}
+<script>
+function jumpToPage(inputId, currentPage, totalPages) {
+  const input = document.getElementById(inputId);
+  const pageNum = parseInt(input.value);
+  
+  if (isNaN(pageNum) || pageNum < 1 || pageNum > totalPages) {
+    input.classList.add('border-red-500', 'ring-2', 'ring-red-200');
+    setTimeout(() => {
+      input.classList.remove('border-red-500', 'ring-2', 'ring-red-200');
+    }, 2000);
+    input.focus();
+    input.select();
+    return;
+  }
+  
+  // 构建目标 URL - 使用 Hugo 的分页格式
+  const currentPath = window.location.pathname;
+  let basePath;
+  
+  // 移除现有的分页路径
+  if (currentPath.match(/\/page\/\d+\/$/)) {
+    basePath = currentPath.replace(/\/page\/\d+\/$/, '/');
+  } else if (currentPath.match(/\/page\/\d+$/)) {
+    basePath = currentPath.replace(/\/page\/\d+$/, '/');
+  } else {
+    basePath = currentPath;
+  }
+  
+  // 确保 basePath 以 / 结尾
+  if (!basePath.endsWith('/')) {
+    basePath += '/';
+  }
+  
+  // 构建目标 URL
+  let targetUrl;
+  if (pageNum === 1) {
+    // 第一页直接到基础路径
+    targetUrl = basePath;
+  } else {
+    // 其他页使用 /page/{pageNum}/ 格式
+    targetUrl = basePath.replace(/\/$/, '') + '/page/' + pageNum + '/';
+  }
+  
+  // 保留查询参数
+  if (window.location.search) {
+    targetUrl += window.location.search;
+  }
+  
+  // 跳转到目标页面
+  window.location.href = targetUrl;
+}
+
+// 支持回车键跳转
+document.addEventListener('DOMContentLoaded', function() {
+  const jumpInputs = document.querySelectorAll('[id^="page-jump-"]');
+  jumpInputs.forEach(input => {
+    input.addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        const totalPages = parseInt(this.max);
+        jumpToPage(this.id, this.value, totalPages);
+      }
+    });
+  });
+});
+</script>
+{{ end }}
+{{ end }}

@@ -1,5 +1,5 @@
 ---
-url: /ja/posts/07755af00a1779ac0ab6cb087ff3eb00/
+url: /ja-JP/posts/07755af00a1779ac0ab6cb087ff3eb00/
 title: Proto ファイルジェネレーター - 標準 Protobuf ファイルをワンクリックで生成、開発効率を向上
 date: 2026-03-29T08:30:00+08:00
 lastmod: 2026-03-29T08:30:00+08:00

@@ -8,8 +8,7 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250722205654.png
 summary: 还在为无法提取GIF中的关键帧烦恼？这款免费在线工具3秒拆解动画，精准提取每一帧，支持PNG/JPEG/WebP多格式导出，设计师和运营人的效率救星！
 
 categories:
-
-   - tweets
+  - tweets
 
 tags:
 

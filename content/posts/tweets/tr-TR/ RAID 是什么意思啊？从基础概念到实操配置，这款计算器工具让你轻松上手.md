@@ -1,5 +1,5 @@
 ---
-url: /tr/posts/434552ebcdbd2984e886062543058346/
+url: /tr-TR/posts/434552ebcdbd2984e886062543058346/
 title: RAID nedir? Temel kavramlardan uygulamalı yapılandırmaya kadar, bu hesaplayıcı aracıyla kolayca başlayın
 date: 2025-12-09T03:50:29+08:00
 lastmod: 2025-12-09T03:50:29+08:00

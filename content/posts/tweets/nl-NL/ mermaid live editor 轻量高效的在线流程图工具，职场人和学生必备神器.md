@@ -1,5 +1,5 @@
 ---
-url: /nl/posts/747a97573bf7d430033a808e441737fb/
+url: /nl-NL/posts/747a97573bf7d430033a808e441737fb/
 title: Mermaid Live Editor Lichte en efficiënte online tool voor stroomdiagrammen, onmisbaar voor professionals en studenten
 date: 2025-11-23T10:16:32+08:00
 lastmod: 2025-11-23T10:16:32+08:00

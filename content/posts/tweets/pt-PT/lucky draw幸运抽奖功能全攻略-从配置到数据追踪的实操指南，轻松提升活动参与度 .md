@@ -1,5 +1,5 @@
 ---
-url: /pt-pt/posts/789a8a96d0b29c756c16823940badd90/
+url: /pt-PT/posts/789a8a96d0b29c756c16823940badd90/
 title: Guia Completo do lucky draw Sorteio de Prémios - Do Configuração ao Rastreio de Dados, Guia Prático para Aumentar a Participação em Eventos
 date: 2026-02-13T01:53:29+08:00
 lastmod: 2026-02-13T01:53:29+08:00

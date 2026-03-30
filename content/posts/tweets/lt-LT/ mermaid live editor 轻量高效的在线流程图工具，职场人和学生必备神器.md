@@ -1,5 +1,5 @@
 ---
-url: /lt/posts/747a97573bf7d430033a808e441737fb/
+url: /lt-LT/posts/747a97573bf7d430033a808e441737fb/
 title: mermaid live editor – lengvas ir efektyvus internetinis srauto diagramų įrankis, būtinas darbuotojams ir moksleiviams
 date: 2025-11-23T10:16:32+08:00
 lastmod: 2025-11-23T10:16:32+08:00

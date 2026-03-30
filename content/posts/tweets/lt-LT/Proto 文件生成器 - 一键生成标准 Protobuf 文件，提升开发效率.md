@@ -1,5 +1,5 @@
 ---
-url: /lt/posts/07755af00a1779ac0ab6cb087ff3eb00/
+url: /lt-LT/posts/07755af00a1779ac0ab6cb087ff3eb00/
 title: 'Proto File Generator: Automatinis standartinių Protobuf failų kūrimas, pagerinkite kūrimo efektyvumą'
 date: 2026-03-29T00:00:00.000Z
 lastmod: 2026-03-29T00:00:00.000Z
@@ -8,7 +8,7 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/1774776197859.png
 summary: |
   🚀 Galingas internetinis Proto failų kūrimo įrankis, palaiko Proto2/Proto3, tinkintus šablonus, puikiai tinka RPC/gRPC kūrimui!
 categories:
-  - Įrankiai
+  - tweets
 tags:
   - Protobuf
   - Failų generatorius

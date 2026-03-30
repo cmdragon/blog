@@ -1,5 +1,5 @@
 ---
-url: /ar/posts/07755af00a1779ac0ab6cb087ff3eb00/
+url: /ar-SA/posts/07755af00a1779ac0ab6cb087ff3eb00/
 title: مولد ملفات Proto - أنشئ ملفات Protobuf قياسية بنقرة واحدة، عزز كفاءة التطوير
 date: 2026-03-29T08:30:00+08:00
 lastmod: 2026-03-29T08:30:00+08:00

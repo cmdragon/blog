@@ -1,5 +1,5 @@
 ---
-url: /es/posts/1965dc6fabd8ba00aa03ad0dc132ae8f/
+url: /es-ES/posts/1965dc6fabd8ba00aa03ad0dc132ae8f/
 title: Quran Explorer Herramienta gratuita de análisis árabe del Corán, desglose profundo en tres pasos para superar barreras lingüísticas
 date: 2025-12-03T06:57:49+08:00
 lastmod: 2025-12-03T06:57:49+08:00

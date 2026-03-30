@@ -1,5 +1,5 @@
 ---
-url: /de/posts/a453a875e784bbb98f84a81a587310cd/  
+url: /de-DE/posts/a453a875e784bbb98f84a81a587310cd/  
 title: Verabschieden Sie sich von zeitraubender PPT-Erstellung! pptist AI generiert schnell, kostenloses Online-Tool – 5 Schritte für Anfänger Professielle Präsentationen in Sekundenschnelle, kostenlos und ohne Barrieren  
 date: 2025-11-25T15:05:51+08:00  
 lastmod: 2025-11-25T15:05:51+08:00  
@@ -9,8 +9,8 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/8ad8312df194452ab5085bfa85d0
 summary:  
     Traditionelle PPT-Erstellung ist zeitaufwendig und schwer gestaltbar (besonders bei dringenden Fristen). Das Tool **pptist AI** löst dieses Problem durch KI-Technologie und kostenlosen Online-Service Geben Sie Schlüsselwörter ein, und die KI generiert automatisch den PPT-Aufbau, Layout und Materialien. Keine Registrierung erforderlich, vollkommen kostenlos und ohne Barrieren. Unterstützt mehrgeräteübergreifende Echtzeit-Editierung und bietet eine umfangreiche Vorlagenbibliothek mit anpassbaren Farb- und Schriftarten sowie passenden Materialien. In 5 Schritten erstellen Sie von der Anforderung bis zum Export professionelle Präsentationen – ideal für Berufsanfänger, Studierende, Eil-Präsentationen und Content-Ersteller.  
 
-categories:  
-  - tweets  
+categories:
+  - tweets
 
 tags:  
   - pptist  

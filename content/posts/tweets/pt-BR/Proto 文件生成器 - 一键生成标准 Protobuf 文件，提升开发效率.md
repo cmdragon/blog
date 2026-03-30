@@ -8,7 +8,7 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/1774776197859.png
 summary: |
   🚀 Uma poderosa ferramenta online de geração de arquivos Proto, suporta Proto2/Proto3, modelos personalizados, perfeito para desenvolvimento RPC/gRPC!
 categories:
-  - Ferramentas
+  - tweets
 tags:
   - Protobuf
   - Gerador de arquivos

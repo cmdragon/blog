@@ -1,0 +1,19 @@
+{{- /* 
+Twitter Cards 元数据
+*/ -}}
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}">
+<meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ if .IsPage }}{{ .Summary | plainify }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
+
+{{- /* 封面图片 */ -}}
+{{ with .Params.cover }}
+<meta name="twitter:image" content="{{ . | absURL }}">
+{{ else }}
+<meta name="twitter:image" content="{{ "/images/logo/social-card.png" | absURL }}">
+{{ end }}
+
+{{- /* Twitter 用户名 */ -}}
+{{ with .Site.Params.seo.twitterHandle }}
+<meta name="twitter:site" content="@{{ . }}">
+{{ end }}

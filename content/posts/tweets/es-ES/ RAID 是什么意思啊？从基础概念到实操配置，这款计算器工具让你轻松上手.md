@@ -1,5 +1,5 @@
 ---
-url: /es/posts/434552ebcdbd2984e886062543058346/
+url: /es-ES/posts/434552ebcdbd2984e886062543058346/
 title: ¿Qué significa RAID? De los conceptos básicos a la configuración práctica esta herramienta calculadora te ayuda a empezar
 date: 2025-12-09T03:50:29+08:00
 lastmod: 2025-12-09T03:50:29+08:00

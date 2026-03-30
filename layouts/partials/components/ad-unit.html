@@ -1,0 +1,44 @@
+{{- /* 
+广告位组件
+参数:
+  - slot: 广告位 ID
+  - format: 广告格式 (默认 auto)
+  - layout: 广告布局 key
+  - extraClass: 额外的 CSS 类名
+  - showLabel: 是否显示"广告位"标签 (默认 true)
+*/ -}}
+
+{{ $slot := default "6984392540" .slot }}
+{{ $format := default "auto" .format }}
+{{ $layout := default "" .layout }}
+{{ $extraClass := default "" .extraClass }}
+{{ $showLabel := default true .showLabel }}
+
+<div class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden border border-gray-100 dark:border-gray-700 p-4 my-4 {{ $extraClass }}">
+  {{ if $showLabel }}
+    <div class="text-xs text-gray-500 dark:text-gray-400 mb-2 text-center">广告位</div>
+  {{ end }}
+  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2874982874195135"
+       crossorigin="anonymous"></script>
+  
+  {{ if $layout }}
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="fluid"
+         data-ad-layout-key="{{ $layout }}"
+         data-ad-client="ca-pub-2874982874195135"
+         data-ad-slot="{{ $slot }}"></ins>
+  {{ else }}
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="{{ $format }}"
+         data-ad-client="ca-pub-2874982874195135"
+         data-ad-slot="{{ $slot }}"
+         data-ad-full-width-responsive="true"></ins>
+  {{ end }}
+  
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>

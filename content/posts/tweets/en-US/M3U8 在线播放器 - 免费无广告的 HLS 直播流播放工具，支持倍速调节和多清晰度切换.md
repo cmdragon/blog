@@ -1,5 +1,5 @@
 ---
-url: /en/posts/07755af00a1779ac0ab6cb087ff3eb04/
+url: /en-US/posts/07755af00a1779ac0ab6cb087ff3eb04/
 title: M3U8 Online Player - Free Ad-Free HLS Livestream Player with Speed Control and Quality Switching
 date: 2026-03-29T11:00:00+08:00
 lastmod: 2026-03-29T11:00:00+08:00
@@ -8,7 +8,7 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/1a85864f62f94469a825379a6d5b
 summary: |
   🎬 Free professional M3U8/HLS online player, supports livestream and local video files! With playback speed control, multi-quality switching, fullscreen mode and more, ad-free, no installation required, use directly in browser!
 categories:
-  - Tools
+  - tweets
 tags:
   - M3U8 Player
   - HLS Playback

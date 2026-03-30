@@ -1,5 +1,5 @@
 ---
-url: /ko/posts/ff09bf3567c37a0a1450ba925ff96b84/
+url: /ko-KR/posts/ff09bf3567c37a0a1450ba925ff96b84/
 title: Snapdrop 사용 가이드 3단계로 스마트폰과 컴퓨터 간 파일 무제한 전송, 안전하고 효율적
 date: 2025-11-22T14:41:18+08:00
 lastmod: 2025-11-22T14:41:18+08:00

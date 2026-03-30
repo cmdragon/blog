@@ -1,5 +1,5 @@
 ---
-url: /lt/posts/07755af00a1779ac0ab6cb087ff3eb04/
+url: /lt-LT/posts/07755af00a1779ac0ab6cb087ff3eb04/
 title: M3U8 Internetinis Grotuvas - Nemokamas HLS Tiesioginio Transliavimo Grojimo Įrankis be Reklamos su Greičio Valdymu ir Kokybės Keitimu
 date: 2026-03-29T11:00:00+08:00
 lastmod: 2026-03-29T11:00:00+08:00
@@ -8,7 +8,7 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/1a85864f62f94469a825379a6d5b
 summary: |
   🎬 Nemokamas profesionalus M3U8/HLS internetinis grotuvas, palaiko tiesiogines transliacijas ir vietinius vaizdo failus! Su atkūrimo greičio valdymu, daugiapakopiu kokybės keitimu, viso ekrano režimu ir daugiau, be reklamos, nereikia diegti, naudokite tiesiai naršyklėje!
 categories:
-  - Įrankiai
+  - tweets
 tags:
   - M3U8 Grotuvas
   - HLS Atkūrimas

@@ -1,5 +1,5 @@
 ---
-url: /zh-cn/posts/07755af00a1779ac0ab6cb087ff3eb00/
+url: /zh-CN/posts/07755af00a1779ac0ab6cb087ff3eb00/
 title: Proto 文件生成器 - 一键生成标准 Protobuf 文件，提升开发效率
 date: 2026-03-29T08:30:00+08:00
 lastmod: 2026-03-29T08:30:00+08:00

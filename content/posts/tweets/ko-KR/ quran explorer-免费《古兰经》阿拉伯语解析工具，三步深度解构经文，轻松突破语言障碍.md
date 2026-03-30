@@ -1,5 +1,5 @@
 ---
-url: /ko/posts/1965dc6fabd8ba00aa03ad0dc132ae8f/
+url: /ko-KR/posts/1965dc6fabd8ba00aa03ad0dc132ae8f/
 title: quran explorer - 무료 코란 아라비아어 해석 도구, 3단계로 심층 분석으로 언어 장벽 극복
 date: 2025-12-03T06:57:49+08:00
 lastmod: 2025-12-03T06:57:49+08:00

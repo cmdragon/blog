@@ -1,5 +1,5 @@
 ---
-url: /ko/posts/07755af00a1779ac0ab6cb087ff3eaff/
+url: /ko-KR/posts/07755af00a1779ac0ab6cb087ff3eaff/
 title: 멀티스트림 라이브 애그리게이터 HLS 프로토콜 지원, 멀티스크린 라이브 모니터링 새로운 체험 시작
 date: 2026-03-29T07:40:34+08:00
 lastmod: 2026-03-29T07:40:34+08:00

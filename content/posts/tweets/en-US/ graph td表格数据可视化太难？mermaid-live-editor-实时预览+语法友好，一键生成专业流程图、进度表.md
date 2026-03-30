@@ -1,5 +1,5 @@
 ---
-url: /en/posts/4e39beda336567fcc19d7569bcec9c9e/
+url: /en-US/posts/4e39beda336567fcc19d7569bcec9c9e/
 title: Struggling with Graph TD Table Data Visualization? Mermaid Live Editor Offers Real-Time Preview + User-Friendly Syntax for Professional Flowcharts/Progress Charts
 date: 2025-12-06T10:55:55+08:00
 lastmod: 2025-12-06T10:55:55+08:00

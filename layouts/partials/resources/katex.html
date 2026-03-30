@@ -1,0 +1,56 @@
+{{- /* 
+KaTeX 数学公式支持 - 使用 CDN 回退机制
+*/ -}}
+
+<script>
+  (function() {
+    const loadKaTeX = async () => {
+      try {
+        const cdn = await window.CDNHelper?.detect() || 'unpkg';
+        
+        let katexUrl, katexAutoRenderUrl;
+        if (cdn === 'unpkg') {
+          katexUrl = 'https://unpkg.com/katex@0.16.8/dist/katex.js';
+          katexAutoRenderUrl = 'https://unpkg.com/katex@0.16.8/dist/contrib/auto-render.js';
+        } else {
+          katexUrl = 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.js';
+          katexAutoRenderUrl = 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/contrib/auto-render.js';
+        }
+        
+        // 加载 KaTeX CSS
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = cdn === 'unpkg' 
+          ? 'https://unpkg.com/katex@0.16.8/dist/katex.min.css'
+          : 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.css';
+        document.head.appendChild(link);
+        
+        // 加载 KaTeX JS
+        await Promise.all([
+          new Promise((resolve, reject) => {
+            const script = document.createElement('script');
+            script.src = katexUrl;
+            script.defer = true;
+            script.onload = resolve;
+            script.onerror = reject;
+            document.head.appendChild(script);
+          }),
+          new Promise((resolve, reject) => {
+            const script = document.createElement('script');
+            script.src = katexAutoRenderUrl;
+            script.defer = true;
+            script.onload = resolve;
+            script.onerror = reject;
+            document.head.appendChild(script);
+          })
+        ]);
+        
+        console.log('[KaTeX] Loaded successfully from', cdn);
+      } catch (e) {
+        console.error('[KaTeX] Failed to load:', e);
+      }
+    };
+    
+    loadKaTeX();
+  })();
+</script>

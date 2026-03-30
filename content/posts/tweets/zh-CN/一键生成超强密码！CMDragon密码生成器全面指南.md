@@ -8,8 +8,7 @@ author: cmdragon
 summary: 揭秘CMDragon密码生成器的核心功能与使用技巧，教你创建黑客难以破解的高强度密码，全方位守护数字资产安全。支持自定义字符类型、长度和特殊符号，满足各类账户安全需求。
 
 categories:
-
-- tweets
+  - tweets
 
 tags:
 

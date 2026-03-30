@@ -1,5 +1,5 @@
 ---
-url: /it/posts/cf9fbfaf3dcc1b5ada8161a06dda097d/
+url: /it-IT/posts/cf9fbfaf3dcc1b5ada8161a06dda097d/
 title: Raccomandazione di PS online gratuito funzionalità complete + tutorial, imparare in 3 minuti
 date: 2025-12-08T06:55:19+08:00
 lastmod: 2025-12-08T06:55:19+08:00

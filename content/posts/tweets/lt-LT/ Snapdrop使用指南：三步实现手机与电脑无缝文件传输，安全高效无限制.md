@@ -1,5 +1,5 @@
 ---
-url: /lt/posts/ff09bf3567c37a0a1450ba925ff96b84/
+url: /lt-LT/posts/ff09bf3567c37a0a1450ba925ff96b84/
 title: Snapdrop naudojimo vadovas 3 žingsniai, kad lengvai perduotumėte failus tarp mobilaus įrenginio ir kompiuterio, saugiai ir efektyviai
 date: 2025-11-22T14:41:18+08:00
 lastmod: 2025-11-22T14:41:18+08:00

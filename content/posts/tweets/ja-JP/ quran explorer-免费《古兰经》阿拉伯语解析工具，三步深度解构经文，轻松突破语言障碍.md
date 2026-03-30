@@ -1,5 +1,5 @@
 ---
-url: /ja/posts/1965dc6fabd8ba00aa03ad0dc132ae8f/
+url: /ja-JP/posts/1965dc6fabd8ba00aa03ad0dc132ae8f/
 title: quran explorer - 無料のコーランアラビア語解析ツール、3ステップで深層構造を解明し、言語障壁を突破
 date: 2025-12-03T06:57:49+08:00
 lastmod: 2025-12-03T06:57:49+08:00

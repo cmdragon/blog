@@ -1,15 +1,29 @@
-[
-  {{- $pages := where .Site.RegularPages "Type" "not in" (slice "page") -}}
-  {{- range $index, $page := $pages -}}
-  {{- if $index -}},{{- end }}
-  {
-    "title": {{ $page.Title | jsonify }},
-    "date": {{ $page.Date.Format "2006-01-02" | jsonify }},
-    "permalink": {{ $page.RelPermalink | jsonify }},
-    "summary": {{ with $page.Description }}{{ . | plainify | jsonify }}{{ else }}{{ $page.Summary | plainify | jsonify }}{{ end }},
-    "content": {{ $page.Plain | jsonify }},
-    "categories": [{{ range $tindex, $tag := $page.Params.categories }}{{ if $tindex }}, {{ end }}{{ $tag | jsonify }}{{ end }}],
-    "tags": [{{ range $tindex, $tag := $page.Params.tags }}{{ if $tindex }}, {{ end }}{{ $tag | jsonify }}{{ end }}]
-  }
+{{- $.Scratch.Add "searchIndex" slice -}}
+{{- range where .Site.Pages "Kind" "page" -}}
+  {{- if and (ne .Type "taxonomy") (ne .Type "taxonomyTerm") -}}
+    {{- $content := .Plain -}}
+    {{- $summary := .Summary | plainify -}}
+    {{- $description := "" -}}
+    {{- if .Params.description -}}
+      {{- $description = .Params.description | plainify -}}
+    {{- end -}}
+    {{- $releaseDate := "" -}}
+    {{- if .Params.releaseDate -}}
+      {{- $releaseDate = .Params.releaseDate -}}
+    {{- end -}}
+    {{- $.Scratch.Add "searchIndex" (dict
+      "title" .Title
+      "type" .Type
+      "date" (.Date.Format "2006-01-02")
+      "releaseDate" $releaseDate
+      "summary" $summary
+      "description" $description
+      "content" $content
+      "url" .RelPermalink
+      "permalink" .Permalink
+      "categories" .Params.categories
+      "tags" .Params.tags
+    ) -}}
   {{- end -}}
-] 
+{{- end -}}
+{{- $.Scratch.Get "searchIndex" | jsonify -}}

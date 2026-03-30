@@ -1,5 +1,5 @@
 ---
-url: /fr/posts/07755af00a1779ac0ab6cb087ff3eb00/
+url: /fr-FR/posts/07755af00a1779ac0ab6cb087ff3eb00/
 title: Générateur de Fichiers Proto - Générez des Fichiers Protobuf Standard en Un Clic, Boostez l'Efficacité de Développement
 date: 2026-03-29T08:30:00+08:00
 lastmod: 2026-03-29T08:30:00+08:00

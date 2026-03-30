@@ -1,5 +1,5 @@
 ---
-url: /es/posts/07755af00a1779ac0ab6cb087ff3eb04/
+url: /es-ES/posts/07755af00a1779ac0ab6cb087ff3eb04/
 title: Reproductor M3U8 en Línea - Herramienta Gratuita de Reproducción de Transmisión en Vivo HLS sin Anuncios con Control de Velocidad y Cambio de Calidad
 date: 2026-03-29T11:00:00+08:00
 lastmod: 2026-03-29T11:00:00+08:00
@@ -8,7 +8,7 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/1a85864f62f94469a825379a6d5b
 summary: |
   🎬 Reproductor M3U8/HLS en línea profesional y gratuito, ¡admite transmisión en vivo y archivos de video locales! Con control de velocidad de reproducción, cambio de calidad múltiple, modo de pantalla completa y más, sin anuncios, sin instalación requerida, ¡úsalo directamente en el navegador!
 categories:
-  - Herramientas
+  - tweets
 tags:
   - Reproductor M3U8
   - Reproducción HLS

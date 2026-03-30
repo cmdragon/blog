@@ -9,8 +9,8 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/25eec91a215f4ac497b69f3dc7b5
 summary:  
     O Quran Explorer é uma ferramenta gratuita de análise em árabe do Alcorão, concebida para resolver barreiras linguísticas no estudo de versos por não falantes nativos. Oferece análise aprofundada (vocabulário, gramática, contexto), comparação multilíngue, suporte com áudio e funcionalidade de anotações. Com apenas três passos – localizar versos, obter análise e salvar/compartilhar – usuários podem usar gratuitamente, facilitando o acesso ao aprendizado sem barreiras.  
 
-categories:  
-  - tweets  
+categories:
+  - tweets
 
 tags:  
   - Análise árabe do Alcorão  

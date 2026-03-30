@@ -1,5 +1,5 @@
 ---
-url: /ko/posts/07755af00a1779ac0ab6cb087ff3eb00/
+url: /ko-KR/posts/07755af00a1779ac0ab6cb087ff3eb00/
 title: Proto 파일 생성기 - 표준 Protobuf 파일을 원클릭으로 생성, 개발 효율성 향상
 date: 2026-03-29T08:30:00+08:00
 lastmod: 2026-03-29T08:30:00+08:00

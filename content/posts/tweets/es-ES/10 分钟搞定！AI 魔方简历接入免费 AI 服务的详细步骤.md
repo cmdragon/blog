@@ -1,5 +1,5 @@
 ---
-url: /es/posts/07755af00a1779ac0ab6cb087ff3epfl/
+url: /es-ES/posts/07755af00a1779ac0ab6cb087ff3epfl/
 title: ¡Listo en 10 minutos! Pasos detallados para conectar AI Magic Resume a servicios de IA gratuitos
 date: 2026-03-29T07:40:34+08:00
 lastmod: 2026-03-29T07:40:34+08:00

@@ -1,5 +1,5 @@
 ---
-url: /fr/posts/fa0f26042a7c13693b5635f3f738429b/
+url: /fr-FR/posts/fa0f26042a7c13693b5635f3f738429b/
 title: jsoncrack - Oubliez les difficultés de l'analyse JSON imbriqué avec cet outil de visualisation intuitif, augmentant l'efficacité des développeurs de 80 %
 date: 2025-11-24T05:43:29+08:00
 lastmod: 2025-11-24T05:43:29+08:00

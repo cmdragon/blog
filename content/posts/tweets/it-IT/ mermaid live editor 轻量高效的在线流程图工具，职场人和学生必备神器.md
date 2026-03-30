@@ -1,5 +1,5 @@
 ---
-url: /it/posts/747a97573bf7d430033a808e441737fb/
+url: /it-IT/posts/747a97573bf7d430033a808e441737fb/
 title: Mermaid Live Editor Strumento online leggero ed efficiente per diagrammi, indispensabile per professionisti e studenti
 date: 2025-11-23T10:16:32+08:00
 lastmod: 2025-11-23T10:16:32+08:00

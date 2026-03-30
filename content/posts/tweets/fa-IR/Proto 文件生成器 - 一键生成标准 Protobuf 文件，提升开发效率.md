@@ -1,5 +1,5 @@
 ---
-url: /fa/posts/07755af00a1779ac0ab6cb087ff3eb00/
+url: /fa-IR/posts/07755af00a1779ac0ab6cb087ff3eb00/
 title: 'Proto File Generator: تولید خودکار فایل‌های استاندارد Protobuf، بهبود کارایی توسعه'
 date: 2026-03-29T00:00:00.000Z
 lastmod: 2026-03-29T00:00:00.000Z
@@ -8,7 +8,7 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/1774776197859.png
 summary: |
   🚀 یک ابزار آنلاین قدرتمند تولید فایل Proto، پشتیبانی از Proto2/Proto3، قالب‌های سفارشی، عالی برای توسعه RPC/gRPC!
 categories:
-  - ابزارها
+  - tweets
 tags:
   - Protobuf
   - تولیدکننده فایل

@@ -1,5 +1,5 @@
 ---
-url: /es/posts/ff09bf3567c37a0a1450ba925ff96b84/  
+url: /es-ES/posts/ff09bf3567c37a0a1450ba925ff96b84/  
 title: Guía de uso de Snapdrop Transfiere archivos entre teléfono y ordenador en tres pasos, sin interrupciones, seguro y eficiente  
 date: 2025-11-22T14:41:18+08:00  
 lastmod: 2025-11-22T14:41:18+08:00  
@@ -9,8 +9,8 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/6fd6463271834f2c905d01c53490
 summary:  
     Snapdrop es una herramienta de transferencia de archivos entre dispositivos sin necesidad de instalar clientes, resolviendo problemas como la lentitud de Bluetooth, límites de tamaño de archivo y la complicación de usar cables. Basado en una interfaz web, detecta automáticamente dispositivos en la misma red local, transfiere archivos de forma local sin almacenamiento en la nube, es seguro y eficiente, y admite múltiples formatos. Su funcionamiento es sencillo ambos dispositivos acceden al sitio web en la misma red WiFi, hacen clic en el dispositivo para enviar archivos y confirman el guardado. Tras la transferencia, no queda ningún residuo.  
 
-categories:  
-  - tweets  
+categories:
+  - tweets
 
 tags:  
   - Snapdrop  

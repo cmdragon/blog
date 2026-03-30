@@ -1,0 +1,54 @@
+{{- /* 
+文章分享组件
+显示社交媒体分享按钮
+*/ -}}
+
+<div class="border-t border-gray-200 dark:border-gray-700 pt-6 mt-8">
+  <h2 class="text-lg font-medium mb-4 flex items-center">
+    <div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-1.5 rounded text-white mr-2">
+      <iconify-icon icon="mdi:share-variant" width="16" height="16"></iconify-icon>
+    </div>
+    分享
+  </h2>
+  <div class="flex flex-wrap gap-3">
+    <!-- Twitter -->
+    <a href="https://twitter.com/intent/tweet?url={{ .Permalink | absURL }}&text={{ .Title }}" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="bg-gradient-to-r from-[#1DA1F2] to-[#0a6da6] text-white px-4 py-2 rounded-lg hover:shadow-md transition-all duration-300"
+       aria-label="分享到 Twitter" 
+       tabindex="0">
+      <iconify-icon icon="mdi:twitter" width="20" height="20"></iconify-icon>
+    </a>
+    
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink | absURL }}" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="bg-gradient-to-r from-[#1877F2] to-[#0a4fad] text-white px-4 py-2 rounded-lg hover:shadow-md transition-all duration-300"
+       aria-label="分享到 Facebook" 
+       tabindex="0">
+      <iconify-icon icon="mdi:facebook" width="20" height="20"></iconify-icon>
+    </a>
+    
+    <!-- 微博 -->
+    <a href="https://service.weibo.com/share/share.php?url={{ .Permalink | absURL }}&title={{ .Title }}" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="bg-gradient-to-r from-[#E6162D] to-[#ad0f21] text-white px-4 py-2 rounded-lg hover:shadow-md transition-all duration-300"
+       aria-label="分享到微博" 
+       tabindex="0">
+      <iconify-icon icon="mdi:sina-weibo" width="20" height="20"></iconify-icon>
+    </a>
+    
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink | absURL }}" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="bg-gradient-to-r from-[#0A66C2] to-[#07508f] text-white px-4 py-2 rounded-lg hover:shadow-md transition-all duration-300"
+       aria-label="分享到 LinkedIn" 
+       tabindex="0">
+      <iconify-icon icon="mdi:linkedin" width="20" height="20"></iconify-icon>
+    </a>
+  </div>
+</div>

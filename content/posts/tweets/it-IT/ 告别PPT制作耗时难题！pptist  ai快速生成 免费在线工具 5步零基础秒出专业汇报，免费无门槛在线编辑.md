@@ -1,5 +1,5 @@
 ---
-url: /it/posts/a453a875e784bbb98f84a81a587310cd/
+url: /it-IT/posts/a453a875e784bbb98f84a81a587310cd/
 title: Addio ai problemi di tempo nella creazione di PPT! pptist AI genera rapidamente presentazioni gratuite online, 5 semplici passi per una presentazione professionale senza esperienza, modifica online gratuita e senza registrazione
 date: 2025-11-25T15:05:51+08:00
 lastmod: 2025-11-25T15:05:51+08:00

@@ -1,5 +1,5 @@
 ---
-url: /ko/posts/4e39beda336567fcc19d7569bcec9c9e/
+url: /ko-KR/posts/4e39beda336567fcc19d7569bcec9c9e/
 title: 표 데이터 시각화가 어렵나요? mermaid-live-editor로 실시간 미리보기 + 문법 친화적, 한 번 클릭으로 전문 프로세스 차트/진척도표 생성
 date: 2025-12-06T10:55:55+08:00
 lastmod: 2025-12-06T10:55:55+08:00

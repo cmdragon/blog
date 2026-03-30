@@ -1,5 +1,5 @@
 ---
-url: /ko/posts/fa0f26042a7c13693b5635f3f738429b/
+url: /ko-KR/posts/fa0f26042a7c13693b5635f3f738429b/
 title: jsoncrack-JSON 중첩 구조 해소를 위한 시각화 도구로 개발자 생산성 80% 향상
 date: 2025-11-24T05:43:29+08:00
 lastmod: 2025-11-24T05:43:29+08:00

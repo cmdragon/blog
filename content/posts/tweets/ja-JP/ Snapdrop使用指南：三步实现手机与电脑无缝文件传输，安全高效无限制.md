@@ -1,5 +1,5 @@
 ---
-url: /ja/posts/ff09bf3567c37a0a1450ba925ff96b84/
+url: /ja-JP/posts/ff09bf3567c37a0a1450ba925ff96b84/
 title: Snapdrop使用ガイド：3ステップでスマホとパソコン間のファイルをスムーズに転送、安全で制限なし
 date: 2025-11-22T14:41:18+08:00
 lastmod: 2025-11-22T14:41:18+08:00

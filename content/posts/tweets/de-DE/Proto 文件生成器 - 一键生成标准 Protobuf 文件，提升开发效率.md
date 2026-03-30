@@ -1,5 +1,5 @@
 ---
-url: /de/posts/07755af00a1779ac0ab6cb087ff3eb00/
+url: /de-DE/posts/07755af00a1779ac0ab6cb087ff3eb00/
 title: Proto-Dateigenerator - Erstellen Sie standardisierte Protobuf-Dateien mit einem Klick, steigern Sie die Entwicklungseffizienz
 date: 2026-03-29T08:30:00+08:00
 lastmod: 2026-03-29T08:30:00+08:00

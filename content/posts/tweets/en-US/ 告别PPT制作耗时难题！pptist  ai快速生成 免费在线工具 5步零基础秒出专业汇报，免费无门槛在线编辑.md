@@ -1,5 +1,5 @@
 ---
-url: /en/posts/a453a875e784bbb98f84a81a587310cd/
+url: /en-US/posts/a453a875e784bbb98f84a81a587310cd/
 title: Say Goodbye to Time-Consuming PPT Creation! pptist AI Generates Professionally in Minutes, Free Online Tool for 5-Step Zero-Experience Presentations
 date: 2025-11-25T15:05:51+08:00
 lastmod: 2025-11-25T15:05:51+08:00

@@ -1,5 +1,5 @@
 ---
-url: /ja/posts/4e39beda336567fcc19d7569bcec9c9e/
+url: /ja-JP/posts/4e39beda336567fcc19d7569bcec9c9e/
 title: 表形式のデータをグラフに可視化するのは難しい？mermaid-live-editorでリアルタイムプレビュー＋構文に優しい、ワンクリックでプロフェッショナルなフローチャート／進捗表を生成
 date: 2025-12-06T10:55:55+08:00
 lastmod: 2025-12-06T10:55:55+08:00

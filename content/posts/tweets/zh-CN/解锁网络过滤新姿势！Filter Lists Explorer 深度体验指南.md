@@ -10,8 +10,7 @@ summary:
    支持实时对比主流规则库，一键导入浏览器，打造纯净网络体验。
 
 categories:
-
-   - tweets
+  - tweets
 
 tags:
 

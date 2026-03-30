@@ -1,5 +1,5 @@
 ---
-url: /de/posts/4e39beda336567fcc19d7569bcec9c9e/
+url: /de-DE/posts/4e39beda336567fcc19d7569bcec9c9e/
 title: Tabellendaten visualisieren zu schwierig? Mermaid Live Editor – Echtzeitvorschau + benutzerfreundliche Syntax, ein Klick für professionelle Flussdiagramme/Progress-Tabellen
 date: 2025-12-06T10:55:55+08:00
 lastmod: 2025-12-06T10:55:55+08:00

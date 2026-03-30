@@ -1,0 +1,112 @@
+{{- /* 
+文章卡片通用组件 - 基于首页列表样式
+参数:
+  - page: 页面对象
+  - showCover: 是否显示封面图 (默认 true)
+  - showSummary: 是否显示摘要 (默认 true)
+  - showTags: 是否显示标签 (默认 true)
+  - showReadMore: 是否显示"阅读更多"按钮 (默认 true)
+  - adAfter: 每 N 篇文章后显示广告 (0 表示不显示)
+  - adIndex: 当前文章索引 (从 0 开始)
+*/ -}}
+
+{{ $page := .page }}
+{{ $showCover := default true .showCover }}
+{{ $showSummary := default true .showSummary }}
+{{ $showTags := default true .showTags }}
+{{ $showReadMore := default true .showReadMore }}
+{{ $adAfter := default 3 .adAfter }}
+{{ $adIndex := default 0 .adIndex }}
+
+{{ $hasImage := false }}
+{{ with $page.Params.cover }}
+  {{ $hasImage = true }}
+{{ end }}
+
+<article class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-700 flex flex-col md:flex-row md:max-h-[320px]">
+  {{- /* 封面图 */ -}}
+  {{ if and $showCover $hasImage }}
+  <div class="md:w-1/4 h-40 sm:h-48 md:h-auto overflow-hidden flex-shrink-0">
+    <img src="{{ $page.Params.cover }}" alt="{{ $page.Title }}" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+  </div>
+  {{ end }}
+  
+  <div class="{{ if and $showCover $hasImage }}md:w-3/4{{ end }} p-4 md:p-6 overflow-hidden flex flex-col">
+    <!-- 标题 -->
+    <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-3 line-clamp-2">
+      <a href="{{ $page.Permalink }}" class="text-gray-900 dark:text-white hover:text-blue-700 dark:hover:text-blue-300 transition-colors duration-200">
+        {{ $page.Title }}
+      </a>
+    </h3>
+    
+    <!-- 日期和分类 -->
+    <div class="flex flex-wrap items-center text-sm text-gray-600 dark:text-gray-300 mb-2 md:mb-3 gap-2">
+      <span class="flex items-center bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded-md">
+        <iconify-icon icon="mdi:calendar" class="mr-1" width="16" height="16" aria-hidden="true"></iconify-icon>
+        {{ $page.Date.Format "2006-01-02" }}
+      </span>
+      
+      {{ with $page.Params.categories }}
+        <span class="flex items-center bg-blue-200 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded-md">
+          <iconify-icon icon="mdi:folder" class="mr-1" width="16" height="16" aria-hidden="true"></iconify-icon>
+          {{ range $index, $category := . }}
+            {{ if $index }}, {{ end }}
+            <a href="{{ "/categories/" | relLangURL }}{{ $category | urlize }}" class="hover:text-blue-700 dark:hover:text-blue-300">
+              {{ $category }}
+            </a>
+          {{ end }}
+        </span>
+      {{ end }}
+    </div>
+    
+    <!-- 摘要 -->
+    {{ if and $showSummary $page.Summary }}
+    <div class="text-gray-800 dark:text-gray-200 mb-3 line-clamp-2 md:line-clamp-3 text-sm md:text-base flex-grow">
+      {{ $page.Summary | plainify | truncate 120 }}
+    </div>
+    {{ end }}
+    
+    <!-- 标签 -->
+    {{ if and $showTags $page.Params.tags }}
+    <div class="flex flex-wrap gap-2 mb-3 mt-auto">
+      {{ range first 3 $page.Params.tags }}
+        <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" 
+           class="text-xs px-2 py-1 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 hover:bg-blue-600 hover:text-white transition-colors duration-200">
+          #{{ . }}
+        </a>
+      {{ end }}
+      {{ if gt (len $page.Params.tags) 3 }}
+        <span class="text-xs px-2 py-1 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200">
+          +{{ sub (len $page.Params.tags) 3 }}
+        </span>
+      {{ end }}
+    </div>
+    {{ end }}
+    
+    <!-- 阅读更多 -->
+    {{ if $showReadMore }}
+    <a href="{{ $page.Permalink }}" class="inline-flex items-center text-blue-800 dark:text-blue-200 px-3 py-1.5 rounded-lg transition-colors duration-200 font-medium text-sm w-fit">
+      阅读更多
+      <iconify-icon icon="mdi:arrow-right" class="ml-1" width="16" height="16" aria-hidden="true"></iconify-icon>
+    </a>
+    {{ end }}
+  </div>
+</article>
+
+{{- /* 广告位 - 每 N 篇文章后显示 */ -}}
+{{ if and (gt $adAfter 0) (gt $adIndex 0) (eq (mod (add $adIndex 1) $adAfter) 0) }}
+<div class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden border border-gray-100 dark:border-gray-700 p-4 my-4">
+  <div class="text-xs text-gray-500 dark:text-gray-400 mb-2 text-center">广告位</div>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2874982874195135"
+       crossorigin="anonymous"></script>
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-format="fluid"
+       data-ad-layout-key="-f9+4w+7x-eg+3a"
+       data-ad-client="ca-pub-2874982874195135"
+       data-ad-slot="3807564867"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+{{ end }}

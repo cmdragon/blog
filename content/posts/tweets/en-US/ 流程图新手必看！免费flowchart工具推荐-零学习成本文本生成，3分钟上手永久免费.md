@@ -1,5 +1,5 @@
 ---
-url: /en/posts/ed40415a58cc641eab9609637ded76c2/  
+url: /en-US/posts/ed40415a58cc641eab9609637ded76c2/  
 title: Must-Read for Flowchart Beginners! Top Free Flowchart Tools Recommended – Zero Learning Curve, Text-to-Diagram in 3 Minutes, Permanently Free  
 date: 2025-11-30T15:08:04+08:00  
 lastmod: 2025-11-30T15:08:04+08:00  
@@ -9,8 +9,8 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/rzuvj_00005_.png
 summary:  
     Newcomers often struggle with complex tools or paid subscriptions when drawing flowcharts. This article recommends a free flowchart tool based on Mermaid syntax. Simply describe your process in text to generate diagrams instantly—no registration required, permanently free, and ideal for daily planning, project collaboration, and more. Perfect for beginners to effortlessly map out workflows.  
 
-categories:  
-  - tweets  
+categories:
+  - tweets
 
 tags:  
   - Flowchart Tools  

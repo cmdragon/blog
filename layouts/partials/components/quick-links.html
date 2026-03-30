@@ -1,0 +1,38 @@
+{{- /* 
+快速链接组件
+参数:
+  - context: 页面上下文
+  - limit: 显示数量限制 (默认不限制)
+  - showIcon: 是否显示图标 (默认 true)
+*/ -}}
+
+{{ $context := .context }}
+{{ $limit := default 0 .limit }}
+{{ $showIcon := default true .showIcon }}
+
+{{ with site.Data.site.quick_links }}
+<ul class="space-y-2">
+  {{ range $index, $link := . }}
+    {{ if or (eq $limit 0) (lt $index $limit) }}
+      <li>
+        <a 
+          href="{{ $link.url }}" 
+          class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-300 flex items-center"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="{{ $link.name }}">
+          {{ if $showIcon }}
+            <iconify-icon 
+              icon="{{ $link.icon | default "mdi:link-variant" }}" 
+              class="mr-2 text-primary" 
+              width="16" 
+              height="16">
+            </iconify-icon>
+          {{ end }}
+          {{ $link.name }}
+        </a>
+      </li>
+    {{ end }}
+  {{ end }}
+</ul>
+{{ end }}

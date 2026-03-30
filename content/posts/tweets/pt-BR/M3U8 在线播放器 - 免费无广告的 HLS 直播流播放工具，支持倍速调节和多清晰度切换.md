@@ -8,7 +8,7 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/1a85864f62f94469a825379a6d5b
 summary: |
   🎬 Player M3U8/HLS online profissional e gratuito, suporta transmissão ao vivo e arquivos de vídeo locais! Com controle de velocidade de reprodução, troca de qualidade múltipla, modo tela cheia e mais, sem anúncios, nenhuma instalação necessária, use diretamente no navegador!
 categories:
-  - Ferramentas
+  - tweets
 tags:
   - Player M3U8
   - Reprodução HLS

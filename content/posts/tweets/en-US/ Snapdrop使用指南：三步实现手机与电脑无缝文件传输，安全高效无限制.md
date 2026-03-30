@@ -1,5 +1,5 @@
 ---
-url: /en/posts/ff09bf3567c37a0a1450ba925ff96b84/  
+url: /en-US/posts/ff09bf3567c37a0a1450ba925ff96b84/  
 title: Snapdrop Guide Transfer Files Between Phone and Computer Seamlessly in Three Steps – Secure, Efficient, and Unrestricted  
 date: 2025-11-22T14:41:18+08:00  
 lastmod: 2025-11-22T14:41:18+08:00  
@@ -9,8 +9,8 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/6fd6463271834f2c905d01c53490
 summary:  
     Snapdrop is a cross-device file transfer tool that requires no client installation, solving issues like slow Bluetooth transfers, file size limits on apps, and cumbersome cable connections. Built on a web interface, it automatically detects devices on the same local network, transfers files locally without cloud storage, ensuring security, efficiency, and support for multiple file formats. Simple operation both devices access the official site via the same Wi-Fi, click to send files, confirm save on the receiver, and leave no residual files after transfer.  
 
-categories:  
-  - tweets  
+categories:
+  - tweets
 
 tags:  
   - Snapdrop  

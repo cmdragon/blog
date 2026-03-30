@@ -1,5 +1,5 @@
 ---
-url: /es/posts/07755af00a1779ac0ab6cb087ff3eb00/
+url: /es-ES/posts/07755af00a1779ac0ab6cb087ff3eb00/
 title: Generador de Archivos Proto - Genera Archivos Protobuf Estándar con Un Clic, Impulsa la Eficiencia de Desarrollo
 date: 2026-03-29T08:30:00+08:00
 lastmod: 2026-03-29T08:30:00+08:00

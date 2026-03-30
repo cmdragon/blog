@@ -1,5 +1,5 @@
 ---
-url: /nl/posts/07755af00a1779ac0ab6cb087ff3eb04/
+url: /nl-NL/posts/07755af00a1779ac0ab6cb087ff3eb04/
 title: M3U8 Online Speler - Gratis HLS Livestream Weergavetool zonder Reclame met Snelheidsregeling en Kwaliteitswisseling
 date: 2026-03-29T11:00:00+08:00
 lastmod: 2026-03-29T11:00:00+08:00
@@ -8,7 +8,7 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/1a85864f62f94469a825379a6d5b
 summary: |
   🎬 Gratis professionele M3U8/HLS online speler, ondersteunt livestreams en lokale videobestanden! Met weergavesnelheidsregeling, meervoudige kwaliteitswisseling, volledige schermmodus en meer, zonder reclame, geen installatie vereist,直接使用 in browser!
 categories:
-  - Tools
+  - tweets
 tags:
   - M3U8 Speler
   - HLS Weergave

@@ -1,5 +1,5 @@
 ---
-url: /vi/posts/07755af00a1779ac0ab6cb087ff3eaff/
+url: /vi-VN/posts/07755af00a1779ac0ab6cb087ff3eaff/
 title: Bộ Tổng Hợp Phát Trực Tiếp Đa Luồng Hỗ Trợ Giao Thức HLS, Mở Đầu Trải Nghiệm Giám Sát Phát Trực Tiếp Đa Màn Hình Mới
 date: 2026-03-29T07:40:34+08:00
 lastmod: 2026-03-29T07:40:34+08:00

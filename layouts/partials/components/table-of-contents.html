@@ -1,0 +1,55 @@
+{{- /* 
+文章目录组件
+显示文章目录，支持移动端和桌面端
+*/ -}}
+
+<!-- 移动端悬浮按钮 -->
+<button id="mobile-toc-toggle" class="z-50 fixed bottom-4 right-4 z-20 lg:hidden bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+  <iconify-icon icon="mdi:table-of-contents" width="24" height="24"></iconify-icon>
+</button>
+
+<!-- 目录容器 -->
+<div id="toc-container" class="lg:sticky lg:top-24 bg-white dark:bg-gray-800 rounded-xl shadow-md p-5 mb-8 transition-all duration-300 border border-gray-100 dark:border-gray-700
+     fixed inset-y-0 right-0 w-72 z-40 lg:z-20 transform translate-x-full lg:transform-none lg:w-auto
+     lg:overflow-visible flex flex-col">
+  <div class="toc-header flex justify-between items-center pb-3 border-b border-gray-100 dark:border-gray-700 lg:mb-4">
+    <h2 class="text-lg font-medium flex items-center">
+      <div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-1.5 rounded text-white mr-2">
+        <iconify-icon icon="mdi:table-of-contents" width="16" height="16"></iconify-icon>
+      </div>
+      目录
+    </h2>
+    <div class="flex items-center">
+      <button id="toc-toggle" class="text-gray-500 hover:text-blue-700 dark:hover:text-blue-300 transition-colors p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full" aria-label="滚动到底部/顶部">
+        <iconify-icon id="toc-icon" icon="mdi:arrow-down" width="20" height="20"></iconify-icon>
+      </button>
+      <!-- 移动端关闭按钮 -->
+      <button id="toc-close" class="ml-1 lg:hidden text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full">
+        <iconify-icon icon="mdi:close" width="20" height="20"></iconify-icon>
+      </button>
+    </div>
+  </div>
+  <div id="toc-content" class="toc text-sm text-gray-700 dark:text-gray-300 flex-grow overflow-y-auto">
+    {{ .TableOfContents }}
+  </div>
+</div>
+
+<!-- 移动端遮罩层 -->
+<div id="toc-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-30 hidden lg:hidden backdrop-blur-sm"></div>
+
+<!-- 广告位 (可选) -->
+<div class="lg:sticky lg:top-[calc(100vh-320px)] bg-white dark:bg-gray-800 rounded-xl shadow-md p-5 mb-8 border border-gray-100 dark:border-gray-700">
+  <div class="text-xs text-gray-500 dark:text-gray-400 mb-3 text-center">广告位</div>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2874982874195135"
+       crossorigin="anonymous"></script>
+  <!-- 展示广告 -->
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-2874982874195135"
+       data-ad-slot="6984392540"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>

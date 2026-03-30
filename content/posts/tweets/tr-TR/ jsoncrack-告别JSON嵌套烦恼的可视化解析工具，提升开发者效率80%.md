@@ -1,5 +1,5 @@
 ---
-url: /tr/posts/fa0f26042a7c13693b5635f3f738429b/
+url: /tr-TR/posts/fa0f26042a7c13693b5635f3f738429b/
 title: jsoncrack - JSON iç içe yapısından kurtulun, görselleştirilmiş analiz aracı ile geliştirici verimliliğini %80 artırın
 date: 2025-11-24T05:43:29+08:00
 lastmod: 2025-11-24T05:43:29+08:00

@@ -1,5 +1,5 @@
 ---
-url: /ko/posts/ed40415a58cc641eab9609637ded76c2/
+url: /ko-KR/posts/ed40415a58cc641eab9609637ded76c2/
 title: 프로세스 차트 초보자 필독! 무료 flowchart 도구 추천 - 학습 비용 0원, 3분 만에 사용 가능, 영구 무료
 date: 2025-11-30T15:08:04+08:00
 lastmod: 2025-11-30T15:08:04+08:00

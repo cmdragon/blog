@@ -10,8 +10,7 @@ summary:
    本文详细介绍CMDragon平台提供的免费SVG优化工具，解析其六大核心功能与操作指南，帮助开发者轻松实现矢量图形文件瘦身与性能提升。
 
 categories:
-
-- tweets
+  - tweets
 
 tags:
 

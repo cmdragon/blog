@@ -1,5 +1,5 @@
 ---
-url: /en/posts/fa0f26042a7c13693b5635f3f738429b/  
+url: /en-US/posts/fa0f26042a7c13693b5635f3f738429b/  
 title: jsoncrack – Banish the Hassle of Nested JSON with Visual Parsing, Boosting Developer Efficiency by 80%  
 date: 2025-11-24T05:43:29+08:00  
 lastmod: 2025-11-24T05:43:29+08:00  
@@ -9,8 +9,8 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20251125164203.png
 summary:  
   jsoncrack is an efficient visual JSON parsing tool designed to solve low-efficiency challenges in analyzing complex JSON text. It supports local file import, text pasting, and online URL parsing. Through a navigation tree and visualization canvas, it analyzes data, enabling editing, and exporting (images, text, or shareable links). Key advantages visual efficiency, intuitive interaction, multi-scenario adaptability, and real-time synchronization – significantly accelerating data processing.  
 
-categories:  
-  - tweets  
+categories:
+  - tweets
 
 tags:  
   - jsoncrack  

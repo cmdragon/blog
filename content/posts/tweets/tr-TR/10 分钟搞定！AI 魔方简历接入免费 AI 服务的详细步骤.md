@@ -1,5 +1,5 @@
 ---
-url: /tr/posts/07755af00a1779ac0ab6cb087ff3epfl/
+url: /tr-TR/posts/07755af00a1779ac0ab6cb087ff3epfl/
 title: 10 Dakikada Tamamlandı! AI Magic Resume'i ücretsiz AI hizmetlerine bağlamak için ayrıntılı adımlar
 date: 2026-03-29T07:40:34+08:00
 lastmod: 2026-03-29T07:40:34+08:00

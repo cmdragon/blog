@@ -1,5 +1,5 @@
 ---
-url: /pt-pt/posts/07755af00a1779ac0ab6cb087ff3epfl/
+url: /pt-PT/posts/07755af00a1779ac0ab6cb087ff3epfl/
 title: Concluído em 10 minutos! Passos detalhados para ligar o AI Magic Resume a serviços de IA gratuitos
 date: 2026-03-29T07:40:34+08:00
 lastmod: 2026-03-29T07:40:34+08:00

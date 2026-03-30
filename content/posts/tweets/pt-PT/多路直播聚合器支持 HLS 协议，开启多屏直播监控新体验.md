@@ -1,5 +1,5 @@
 ---
-url: /pt-pt/posts/07755af00a1779ac0ab6cb087ff3eaff/
+url: /pt-PT/posts/07755af00a1779ac0ab6cb087ff3eaff/
 title: Agregador de Transmissões Ao Vivo Multi-Fluxo Suporta Protocolo HLS, Iniciando Nova Experiência de Monitorização de Transmissões em Múltiplos Ecrãs
 date: 2026-03-29T07:40:34+08:00
 lastmod: 2026-03-29T07:40:34+08:00

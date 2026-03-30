@@ -1,5 +1,5 @@
 ---
-url: /zh-tw/posts/07755af00a1779ac0ab6cb087ff3eb04/
+url: /zh-TW/posts/07755af00a1779ac0ab6cb087ff3eb04/
 title: M3U8 線上播放器 - 免費無廣告的 HLS 直播流播放工具，支援倍速調節和多清晰度切換
 date: 2026-03-29T11:00:00+08:00
 lastmod: 2026-03-29T11:00:00+08:00
@@ -8,7 +8,7 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/1a85864f62f94469a825379a6d5b
 summary: |
   🎬 免費專業的 M3U8/HLS 線上播放器，支援直播流和本地檔案播放！具備倍速調節、多清晰度切換、全螢幕播放等功能，無廣告無需安裝，瀏覽器直接使用！
 categories:
-  - 工具
+  - tweets
 tags:
   - M3U8 播放器
   - HLS 播放

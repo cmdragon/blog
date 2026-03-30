@@ -1,5 +1,5 @@
 ﻿---
-url: /pt-pt/posts/07755af00a1779ac0ab6cb087ff3eb01/
+url: /pt-PT/posts/07755af00a1779ac0ab6cb087ff3eb01/
 title: 'Proto File Generator: Geração automática de ficheiros Protobuf padrão, melhore a eficiência de desenvolvimento'
 date: 2026-03-29T00:00:00.000Z
 lastmod: 2026-03-29T00:00:00.000Z
@@ -8,7 +8,7 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/1774776197859.png
 summary: |
   🚀 Uma poderosa ferramenta online de geração de ficheiros Proto, suporta Proto2/Proto3, modelos personalizados, perfeito para desenvolvimento RPC/gRPC!
 categories:
-  - Ferramentas
+  - tweets
 tags:
   - Protobuf
   - Gerador de ficheiros

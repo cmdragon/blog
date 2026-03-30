@@ -1,5 +1,5 @@
 ---
-url: /de/posts/fa0f26042a7c13693b5635f3f738429b/
+url: /de-DE/posts/fa0f26042a7c13693b5635f3f738429b/
 title: jsoncrack – Die visuelle Lösung für verschachtelte JSON-Strukturen, die die Entwicklereffizienz um 80 % steigert
 date: 2025-11-24T05:43:29+08:00
 lastmod: 2025-11-24T05:43:29+08:00

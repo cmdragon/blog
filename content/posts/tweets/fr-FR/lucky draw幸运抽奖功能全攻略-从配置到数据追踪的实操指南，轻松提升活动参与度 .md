@@ -10,7 +10,7 @@ summary:
   lucky draw est un outil de tirage au sort professionnel, avec des fonctionnalités essentielles incluant le contrôle personnalisé des poids, un tableau de bord de statistiques en temps réel, l'adaptation à plusieurs scénarios (diffusion en direct, événements d'entreprise, marketing, etc.), l'importation par lots Excel et la prise en charge multilingue, répondant aux besoins des événements internationaux. Applicable aux scénarios tels que l'interaction en direct, les activités d'entreprise, les promotions marketing, les opérations couvrent la création d'activité, la configuration des règles, le lancement du tirage et l'exportation des résultats, permettant un tirage au sort efficace et contrôlable.
 
 categories:
-  - Tweets
+  - tweets
 
 tags:
   - lucky draw

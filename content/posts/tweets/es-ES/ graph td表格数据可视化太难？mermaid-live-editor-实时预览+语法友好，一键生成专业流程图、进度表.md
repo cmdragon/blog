@@ -1,5 +1,5 @@
 ---
-url: /es/posts/4e39beda336567fcc19d7569bcec9c9e/
+url: /es-ES/posts/4e39beda336567fcc19d7569bcec9c9e/
 title: ¿Visualizar datos de tablas en gráficos es demasiado complicado? mermaid-live-editor vista previa en tiempo real + sintaxis amigable, genera gráficos profesionales con un clic
 date: 2025-12-06T10:55:55+08:00
 lastmod: 2025-12-06T10:55:55+08:00

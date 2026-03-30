@@ -1,5 +1,5 @@
 ---
-url: /pt-pt/posts/8936bee8569776e963da3bcb4023b072/
+url: /pt-PT/posts/8936bee8569776e963da3bcb4023b072/
 title: Qual é o melhor leitor online de M3U8? Recomendamos esta ferramenta gratuita sem anúncios reprodução fluida de streams HLS/ficheiros locais, com suporte para controlo de velocidade + mudança de qualidade, diretamente no navegador!
 date: 2026-01-12T17:47:50+08:00
 lastmod: 2026-01-12T17:47:50+08:00

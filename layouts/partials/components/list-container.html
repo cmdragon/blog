@@ -1,0 +1,94 @@
+{{- /* 
+列表容器通用组件
+参数:
+  - title: 页面标题
+  - description: 页面描述
+  - icon: 图标名称 (默认 mdi:text)
+  - pages: 页面列表
+  - paginator: Paginator 对象
+  - showAds: 是否显示广告 (默认 true)
+  - adInterval: 广告间隔 (默认 3)
+*/ -}}
+
+{{ $title := .title }}
+{{ $description := .description }}
+{{ $icon := default "mdi:text" .icon }}
+{{ $pages := .pages }}
+{{ $paginator := .paginator }}
+{{ $showAds := default true .showAds }}
+{{ $adInterval := default 3 .adInterval }}
+
+{{- /* 确定使用哪个页面列表 */ -}}
+{{ $pageList := $pages }}
+{{ if and (not $pages) $paginator }}
+  {{ $pageList = $paginator.Pages }}
+{{ end }}
+
+<div class="container mx-auto px-4 sm:px-6 py-6">
+  <!-- 头部 -->
+  {{ if $title }}
+  <header class="mb-6" role="banner">
+    <div class="flex items-center justify-between mb-4">
+      <h1 class="text-2xl font-bold text-blue-700 dark:text-blue-400">{{ $title }}</h1>
+      {{ if $paginator }}
+      <span class="text-sm text-gray-500 dark:text-gray-400">
+        共 {{ $paginator.TotalPages }} 页，{{ len $pageList }} 篇文章
+      </span>
+      {{ else }}
+      <span class="text-sm text-gray-500 dark:text-gray-400">
+        共 {{ len $pageList }} 篇文章
+      </span>
+      {{ end }}
+    </div>
+    {{ with $description }}
+    <p class="text-sm text-gray-600 dark:text-gray-400 flex items-center">
+      <iconify-icon icon="{{ $icon }}" class="mr-2" width="16" height="16" aria-hidden="true"></iconify-icon>
+      {{ . }}
+    </p>
+    {{ end }}
+  </header>
+  {{ end }}
+  
+  <!-- 文章列表 -->
+  <div class="space-y-8">
+    {{ range $index, $page := $pageList }}
+      {{- /* 计算广告间隔 */ -}}
+      {{ $adAfterVal := 0 }}
+      {{ if $showAds }}
+        {{ $adAfterVal = $adInterval }}
+      {{ end }}
+      
+      {{- /* 使用文章卡片组件 */ -}}
+      {{ partial "components/article-card.html" (dict 
+        "page" $page 
+        "showCover" true
+        "showSummary" true
+        "showTags" true
+        "showReadMore" true
+        "adAfter" $adAfterVal
+        "adIndex" $index
+      ) }}
+    {{ else }}
+      <!-- 空状态 -->
+      <div class="text-center py-16 bg-white dark:bg-gray-800 rounded-xl shadow-md" role="status">
+        <div class="inline-flex items-center justify-center p-4 bg-blue-50 dark:bg-blue-900/20 rounded-full mb-4">
+          <iconify-icon icon="mdi:information" class="text-blue-500" width="32" height="32" aria-hidden="true"></iconify-icon>
+        </div>
+        <h3 class="text-lg font-medium text-gray-900 dark:text-gray-100 mb-2">暂无内容</h3>
+        <p class="text-gray-600 dark:text-gray-400">
+          该分类下暂时没有文章。
+        </p>
+      </div>
+    {{ end }}
+  </div>
+  
+  <!-- 分页 -->
+  {{ if $paginator }}
+    {{ partial "components/pagination.html" (dict 
+      "paginator" $paginator
+      "showNumbers" true
+      "showPrevNext" true
+      "showJump" true
+    ) }}
+  {{ end }}
+</div>

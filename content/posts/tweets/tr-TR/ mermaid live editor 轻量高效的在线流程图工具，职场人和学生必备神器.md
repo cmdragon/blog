@@ -1,5 +1,5 @@
 ---
-url: /tr/posts/747a97573bf7d430033a808e441737fb/
+url: /tr-TR/posts/747a97573bf7d430033a808e441737fb/
 title: mermaid live editor Hafif ve Verimli Çevrimiçi Akış Şeması Aracı, İş Dünyası ve Öğrenciler İçin Gereklilik
 date: 2025-11-23T10:16:32+08:00
 lastmod: 2025-11-23T10:16:32+08:00

@@ -1,5 +1,5 @@
 ---
-url: /tr/posts/a453a875e784bbb98f84a81a587310cd/
+url: /tr-TR/posts/a453a875e784bbb98f84a81a587310cd/
 title: PPT Yapım Süreçlerinden Vazgeçin! pptist AI Hızlı Oluştur, Ücretsiz Çevrimiçi Araç, 5 Adımda Temel Bilgisi Olmayanlar İçin Profesyonel Sunum Hazırlama, Ücretsiz ve Kısıtlama Yok Çevrimiçi Düzenleme
 date: 2025-11-25T15:05:51+08:00
 lastmod: 2025-11-25T15:05:51+08:00

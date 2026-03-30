@@ -1,5 +1,5 @@
 ---
-url: /ko/posts/07755af00a1779ac0ab6cb087ff3eb04/
+url: /ko-KR/posts/07755af00a1779ac0ab6cb087ff3eb04/
 title: M3U8 온라인 플레이어 - 광고 없는 무료 HLS 라이브스트리밍 재생 도구, 속도 조절 및 화질 전환 지원
 date: 2026-03-29T11:00:00+08:00
 lastmod: 2026-03-29T11:00:00+08:00
@@ -8,7 +8,7 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/1a85864f62f94469a825379a6d5b
 summary: |
   🎬 무료 전문 M3U8/HLS 온라인 플레이어, 라이브스트리밍 및 로컬 동영상 파일 지원! 재생 속도 제어, 다중 화질 전환, 전체 화면 모드 등, 광고 없음, 설치 불필요, 브라우저에서 직접 사용!
 categories:
-  - 도구
+  - tweets
 tags:
   - M3U8 플레이어
   - HLS 재생

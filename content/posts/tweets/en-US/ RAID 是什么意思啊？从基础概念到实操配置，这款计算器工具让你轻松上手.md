@@ -1,5 +1,5 @@
 ---
-url: /en/posts/434552ebcdbd2984e886062543058346/
+url: /en-US/posts/434552ebcdbd2984e886062543058346/
 title: What Does RAID Mean? From Basic Concepts to Hands-On Configuration This Calculator Tool Makes It Easy
 date: 2025-12-09T03:50:29+08:00
 lastmod: 2025-12-09T03:50:29+08:00
