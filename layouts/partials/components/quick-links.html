@@ -10,10 +10,11 @@
 {{ $limit := default 0 .limit }}
 {{ $showIcon := default true .showIcon }}
 
-{{ with site.Data.site.quick_links }}
+{{ $quickLinks := site.Data.site.quick_links }}
 <ul class="space-y-2">
-  {{ range $index, $link := . }}
+  {{ range $index, $link := $quickLinks }}
     {{ if or (eq $limit 0) (lt $index $limit) }}
+      {{ $icon := $link.icon | default "mdi:link-variant" }}
       <li>
         <a 
           href="{{ $link.url }}" 
@@ -23,7 +24,7 @@
           aria-label="{{ $link.name }}">
           {{ if $showIcon }}
             <iconify-icon 
-              icon="{{ $link.icon | default "mdi:link-variant" }}" 
+              {{ printf "icon=%q" $icon | safeHTMLAttr }}
               class="mr-2 text-primary" 
               width="16" 
               height="16">
@@ -35,4 +36,3 @@
     {{ end }}
   {{ end }}
 </ul>
-{{ end }}
