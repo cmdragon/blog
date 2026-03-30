@@ -9,30 +9,39 @@
 // ==================== 配置常量 ====================
 
 /**
- * 搜索配置对象
- * @type {Object}
+ * 获取搜索配置
+ * 优先使用 HTML 模板注入的配置，否则使用默认值
+ * @returns {Object} 配置对象
  */
-const CONFIG = Object.freeze({
-  // 索引文件路径
-  INDEX_PATH: '/search-index/index.json',
-  // 目标分块大小 (500KB)
-  TARGET_CHUNK_SIZE: 500 * 1024,
-  // localStorage 缓存键
-  CACHE_KEY: 'search_index_meta',
-  CACHE_TIMESTAMP_KEY: 'search_index_timestamp',
-  // 缓存有效期 (24 小时)
-  CACHE_EXPIRY: 24 * 60 * 60 * 1000,
-  // 搜索结果数量限制
-  RESULT_LIMIT: 1000,
-  // 每页显示数量
-  PAGE_SIZE: 20,
-  // 最大缓存查询数
-  MAX_CACHE_SIZE: 50,
-  // 请求超时时间 (毫秒)
-  REQUEST_TIMEOUT: 30000,
-  // 延迟初始化时间 (毫秒)
-  INIT_DELAY: 100
-});
+function getSearchConfig() {
+  // 检查是否有 HTML 模板注入的配置
+  const injectedConfig = window.searchConfig || {};
+  
+  return Object.freeze({
+    // 索引文件路径 - 支持从 HTML 注入
+    INDEX_PATH: injectedConfig.indexPath || '/search-index/index.json',
+    // 目标分块大小 (500KB)
+    TARGET_CHUNK_SIZE: 500 * 1024,
+    // localStorage 缓存键
+    CACHE_KEY: 'search_index_meta',
+    CACHE_TIMESTAMP_KEY: 'search_index_timestamp',
+    // 缓存有效期 (24 小时)
+    CACHE_EXPIRY: 24 * 60 * 60 * 1000,
+    // 搜索结果数量限制
+    RESULT_LIMIT: 1000,
+    // 每页显示数量
+    PAGE_SIZE: 20,
+    // 最大缓存查询数
+    MAX_CACHE_SIZE: 50,
+    // 请求超时时间 (毫秒)
+    REQUEST_TIMEOUT: 30000,
+    // 延迟初始化时间 (毫秒)
+    INIT_DELAY: 100
+  });
+}
+
+// 初始化配置
+const CONFIG = getSearchConfig();
 
 // ==================== 状态管理 ====================
 

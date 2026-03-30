@@ -79,7 +79,7 @@ jobs:
       - name: Split Search Index
         run: |
           echo "正在分割搜索索引..."
-          python3 scripts/split_search_index.py
+          python3 scripts/split_search_index.py || exit 1
           echo "搜索索引分割完成"
           ls -la public/search-index/
       
