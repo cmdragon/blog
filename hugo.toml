@@ -132,8 +132,10 @@ enableEmoji = true
 # 输出格式配置
 # ===========================================
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS"]
   section = ["HTML", "RSS"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
   page = ["HTML"]
 
 [outputFormats]
