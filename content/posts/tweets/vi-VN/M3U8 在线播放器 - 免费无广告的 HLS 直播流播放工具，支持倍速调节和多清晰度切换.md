@@ -1,5 +1,5 @@
 ---
-url: /vi/posts/07755af00a1779ac0ab6cb087ff3eb04/
+url: /vi-VN/posts/07755af00a1779ac0ab6cb087ff3eb04/
 title: Trình Phát M3U8 Trực Tuyến - Công Cụ Phát Trực Tiếp HLS Miễn Phí Không Quảng Cáo với Điều Khiển Tốc Độ và Chuyển Đổi Chất Lượng
 date: 2026-03-29T11:00:00+08:00
 lastmod: 2026-03-29T11:00:00+08:00
@@ -8,7 +8,7 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/1a85864f62f94469a825379a6d5b
 summary: |
   🎬 Trình phát M3U8/HLS trực tuyến chuyên nghiệp miễn phí, hỗ trợ phát trực tiếp và tệp video cục bộ! Với điều khiển tốc độ phát, chuyển đổi chất lượng đa dạng, chế độ toàn màn hình và hơn thế, không quảng cáo, không cần cài đặt, sử dụng trực tiếp trong trình duyệt!
 categories:
-  - Công Cụ
+  - tweets
 tags:
   - Trình Phát M3U8
   - Phát HLS

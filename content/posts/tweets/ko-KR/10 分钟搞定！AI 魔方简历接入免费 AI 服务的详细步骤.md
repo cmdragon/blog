@@ -1,5 +1,5 @@
 ---
-url: /ko/posts/07755af00a1779ac0ab6cb087ff3epfl/
+url: /ko-KR/posts/07755af00a1779ac0ab6cb087ff3epfl/
 title: 10 분 만에 완료! AI 매직 이력서에 무료 AI 서비스 연결하는 상세 단계
 date: 2026-03-29T07:40:34+08:00
 lastmod: 2026-03-29T07:40:34+08:00

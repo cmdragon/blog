@@ -1,5 +1,5 @@
 ---
-url: /it/posts/a453a875e784bbb98f84a81a587310cd/
+url: /ja-JP/posts/a453a875e784bbb98f84a81a587310cd/
 title: PPT制作の時間泥棒を卒業！pptist AIが無料オンラインで5ステップでプロ仕様のプレゼン資料を即生成
 date: 2025-11-25T15:05:51+08:00
 lastmod: 2025-11-25T15:05:51+08:00

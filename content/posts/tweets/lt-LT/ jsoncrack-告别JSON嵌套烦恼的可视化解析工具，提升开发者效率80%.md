@@ -1,5 +1,5 @@
 ---
-url: /lt/posts/fa0f26042a7c13693b5635f3f738429b/
+url: /lt-LT/posts/fa0f26042a7c13693b5635f3f738429b/
 title: jsoncrack – Baigti JSON įterpimo sudėtingumą, vizualusis analizės įrankis, padidinant plėtojų produktyvumą 80%
 date: 2025-11-24T05:43:29+08:00
 lastmod: 2025-11-24T05:43:29+08:00

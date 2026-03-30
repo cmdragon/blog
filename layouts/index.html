@@ -243,157 +243,26 @@
         <div class="space-y-8">
             {{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
             {{ range $index, $page := $paginator.Pages }}
-                            <article class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-700 flex flex-col md:flex-row md:max-h-[320px]">
-                                <!-- 文章缩略图 -->
-                                {{ $hasImage := false }}
-                                {{ with $page.Params.cover }}
-                                    {{ $hasImage = true }}
-                                    <div class="md:w-2/5 h-40 sm:h-48 md:h-auto overflow-hidden flex-shrink-0">
-                                        <img src="{{ . }}" alt="{{ $page.Title }}" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
-                                    </div>
-                                {{ end }}
-                                
-                                <div class="{{ if $hasImage }}md:w-3/5{{ end }} p-4 md:p-6 overflow-hidden flex flex-col">
-                                    <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-3 line-clamp-2">
-                            <a href="{{ $page.Permalink }}" class="text-gray-900 dark:text-white hover:text-blue-700 dark:hover:text-blue-300 transition-colors duration-200">
-                                {{ $page.Title }}
-                            </a>
-                        </h3>
-                        
-                                    <!-- 日期和分类标签 -->
-                                    <div class="flex flex-wrap items-center text-sm text-gray-600 dark:text-gray-300 mb-2 md:mb-3 gap-2">
-                                        <span class="flex items-center bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded-md">
-                                            <iconify-icon icon="mdi:calendar" class="mr-1" width="16" height="16"></iconify-icon>
-                                            {{ $page.Date.Format "2006-01-02" }}
-                                        </span>
-                                        
-                                        {{ with $page.Params.categories }}
-                                            <span class="flex items-center bg-blue-200 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded-md">
-                                                <iconify-icon icon="mdi:folder" class="mr-1" width="16" height="16"></iconify-icon>
-                                                {{ range $index, $category := . }}
-                                                    {{ if $index }}, {{ end }}
-                                                    <a href="{{ "/categories/" | relLangURL }}{{ $category | urlize }}" class="hover:text-blue-700 dark:hover:text-blue-300">
-                                                        {{ $category }}
-                                                    </a>
-                                                {{ end }}
-                                            </span>
-                                        {{ end }}
-                                    </div>
-                                    
-                                    {{ with $page.Summary }}
-                                        <div class="text-gray-800 dark:text-gray-200 mb-3 line-clamp-2 md:line-clamp-3 text-sm md:text-base flex-grow">
-                                            {{ . | truncate 120 }}
-                                        </div>
-                                    {{ end }}
-                                    
-                                    <div class="flex flex-wrap gap-2 mb-3 mt-auto">
-                                        {{ range first 3 $page.Params.tags }}
-                                            <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" 
-                                               class="text-xs px-2 py-1 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 hover:bg-primary hover:text-white transition-colors duration-200">
-                                                #{{ . }}
-                                            </a>
-                                        {{ end }}
-                                        {{ if gt (len $page.Params.tags) 3 }}
-                                            <span class="text-xs px-2 py-1 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200">
-                                                +{{ sub (len $page.Params.tags) 3 }}
-                                            </span>
-                                        {{ end }}
-                                    </div>
-                                    
-                                    <a href="{{ $page.Permalink }}" class="inline-flex items-center text-blue-800 dark:text-blue-200 px-3 py-1.5 rounded-lg transition-colors duration-200 font-medium text-sm">
-                            阅读更多
-                            <iconify-icon icon="mdi:arrow-right" class="ml-1" width="16" height="16"></iconify-icon>
-                        </a>
-                    </div>
-                </article>
-                
-                <!-- 谷歌信息流广告 - 每3篇文章后显示 -->
-                {{ if and (gt $index 0) (eq (mod (add $index 1) 3) 0) }}
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden border border-gray-100 dark:border-gray-700 p-4">
-                    <div class="text-xs text-gray-500 dark:text-gray-400 mb-2 text-center">广告位</div>
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2874982874195135"
-                         crossorigin="anonymous"></script>
-                    <ins class="adsbygoogle"
-                         style="display:block"
-                         data-ad-format="fluid"
-                         data-ad-layout-key="-f9+4w+7x-eg+3a"
-                         data-ad-client="ca-pub-2874982874195135"
-                         data-ad-slot="3807564867"></ins>
-                    <script>
-                         (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
-                {{ end }}
+                {{- /* 使用通用文章卡片组件 */ -}}
+                {{ partial "components/article-card.html" (dict 
+                    "page" $page
+                    "showCover" true
+                    "showSummary" true
+                    "showTags" true
+                    "adAfter" 3
+                    "adIndex" $index
+                ) }}
             {{ end }}
         </div>
         
-                    <!-- 分页 - 改进样式 -->
+                    <!-- 分页 - 使用通用组件 -->
                     <div class="mt-10">
-                        {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
-                            <nav class="flex justify-center">
-                                <ul class="flex items-center space-x-2">
-                                    <!-- 上一页 -->
-                                    {{ if .Paginator.HasPrev }}
-                                        <li>
-                                            <a href="{{ .Paginator.Prev.URL }}" class="flex items-center px-4 py-2 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 rounded-md border border-gray-200 dark:border-gray-700 hover:bg-blue-600 hover:text-white transition-colors duration-200" aria-label="上一页" tabindex="0">
-                                                <iconify-icon icon="mdi:chevron-left" class="mr-1" width="16" height="16"></iconify-icon>
-                                                上一页
-                                            </a>
-                                        </li>
-                                    {{ else }}
-                                        <li>
-                                            <span class="flex items-center px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded-md border border-gray-200 dark:border-gray-700 cursor-not-allowed">
-                                                <iconify-icon icon="mdi:chevron-left" class="mr-1" width="16" height="16"></iconify-icon>
-                                                上一页
-                                            </span>
-                                        </li>
-                                    {{ end }}
-                                    
-                                    <!-- 页码 -->
-                                    {{ $pag := .Paginator }}
-                                    {{ $total := $pag.TotalPages }}
-                                    {{ $current := $pag.PageNumber }}
-                                    
-                                    {{ range $pag.Pagers }}
-                                        {{ $pageNum := .PageNumber }}
-                                        <!-- 显示当前页、第一页、最后一页，以及当前页附近的页码 -->
-                                        {{ if or (eq $pageNum 1) (eq $pageNum $total) (and (ge $pageNum (sub $current 1)) (le $pageNum (add $current 1))) }}
-                                            <li>
-                                                <a href="{{ .URL }}" 
-                                                   class="flex items-center justify-center w-10 h-10 {{ if eq $pageNum $current }}bg-blue-600 text-white{{ else }}bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 hover:bg-blue-600 hover:text-white{{ end }} rounded-md border {{ if eq $pageNum $current }}border-blue-600{{ else }}border-gray-200 dark:border-gray-700{{ end }} transition-colors duration-200"
-                                                   aria-label="第 {{ $pageNum }} 页"
-                                                   tabindex="0">
-                                                    {{ $pageNum }}
-                                                </a>
-                                            </li>
-                                        {{ else if or (eq $pageNum (add $current 2)) (eq $pageNum (sub $current 2)) }}
-                                            <li>
-                                                <span class="flex items-center justify-center w-10 h-10 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 rounded-md border border-gray-200 dark:border-gray-700">
-                                                    ...
-                                                </span>
-                                            </li>
-                                        {{ end }}
-                                    {{ end }}
-                                    
-                                    <!-- 下一页 -->
-                                    {{ if .Paginator.HasNext }}
-                                        <li>
-                                            <a href="{{ .Paginator.Next.URL }}" class="flex items-center px-4 py-2 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 rounded-md border border-gray-200 dark:border-gray-700 hover:bg-blue-600 hover:text-white transition-colors duration-200" aria-label="下一页" tabindex="0">
-                                                下一页
-                                                <iconify-icon icon="mdi:chevron-right" class="ml-1" width="16" height="16"></iconify-icon>
-                                            </a>
-                                        </li>
-                                    {{ else }}
-                                        <li>
-                                            <span class="flex items-center px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded-md border border-gray-200 dark:border-gray-700 cursor-not-allowed">
-                                                下一页
-                                                <iconify-icon icon="mdi:chevron-right" class="ml-1" width="16" height="16"></iconify-icon>
-                                            </span>
-                                        </li>
-                                    {{ end }}
-                                </ul>
-                            </nav>
-                        {{ end }}
+                        {{ partial "components/pagination.html" (dict 
+                            "paginator" .Paginator
+                            "showNumbers" true
+                            "showPrevNext" true
+                            "showJump" true
+                        ) }}
                     </div>
     </section>
             </main>

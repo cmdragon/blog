@@ -1,5 +1,5 @@
 ---
-url: /zh-tw/posts/fa0f26042a7c13693b5635f3f738429b/
+url: /zh-TW/posts/fa0f26042a7c13693b5635f3f738429b/
 title: jsoncrack-告別JSON嵌套煩惱的可視化解析工具，提升開發者效率80%
 date: 2025-11-24T05:43:29+08:00
 lastmod: 2025-11-24T05:43:29+08:00

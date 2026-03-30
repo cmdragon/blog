@@ -1,5 +1,5 @@
 ---
-url: /ja/posts/cf9fbfaf3dcc1b5ada8161a06dda097d/
+url: /ja-JP/posts/cf9fbfaf3dcc1b5ada8161a06dda097d/
 title: 2025年おすすめ無料オンラインPSツール：機能充実＆操作ガイドで3分で習得
 date: 2025-12-08T06:55:19+08:00
 lastmod: 2025-12-08T06:55:19+08:00

@@ -1,5 +1,5 @@
 ---
-url: /ru/posts/07755af00a1779ac0ab6cb087ff3epfl/
+url: /ru-RU/posts/07755af00a1779ac0ab6cb087ff3epfl/
 title: Готово за 10 минут! Подробные шаги по подключению AI Magic Resume к бесплатным сервисам ИИ
 date: 2026-03-29T07:40:34+08:00
 lastmod: 2026-03-29T07:40:34+08:00

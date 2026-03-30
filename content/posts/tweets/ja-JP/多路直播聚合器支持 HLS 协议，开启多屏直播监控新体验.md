@@ -1,5 +1,5 @@
 ---
-url: /ja/posts/07755af00a1779ac0ab6cb087ff3eaff/
+url: /ja-JP/posts/07755af00a1779ac0ab6cb087ff3eaff/
 title: マルチストリームライブアグリゲーターが HLS プロトコルをサポート、マルチスクリーンライブ監視の新しい体験を開始
 date: 2026-03-29T07:40:34+08:00
 lastmod: 2026-03-29T07:40:34+08:00

@@ -1,0 +1,78 @@
+{{- /* 
+文章页面资源加载
+包括代码高亮、目录、图片查看器等
+*/ -}}
+
+<!-- 代码高亮 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/bash.min.js"></script>
+
+<!-- 样式表 -->
+{{ $codeHighlightCSS := resources.Get "css/code-highlight.css" | resources.Minify | resources.Fingerprint "sha512" }}
+<link rel="stylesheet" href="{{ $codeHighlightCSS.RelPermalink }}" integrity="{{ $codeHighlightCSS.Data.Integrity }}">
+
+{{ $markdownCSS := resources.Get "css/markdown.css" | resources.Minify | resources.Fingerprint "sha512" }}
+<link rel="stylesheet" href="{{ $markdownCSS.RelPermalink }}" integrity="{{ $markdownCSS.Data.Integrity }}">
+
+{{ $imageViewerCSS := resources.Get "css/image-viewer.css" | resources.Minify | resources.Fingerprint "sha512" }}
+<link rel="stylesheet" href="{{ $imageViewerCSS.RelPermalink }}" integrity="{{ $imageViewerCSS.Data.Integrity }}">
+
+<!-- JavaScript -->
+{{ $codeHighlightJS := resources.Get "js/code-highlight.js" | resources.Minify | resources.Fingerprint "sha512" }}
+<script src="{{ $codeHighlightJS.RelPermalink }}" integrity="{{ $codeHighlightJS.Data.Integrity }}"></script>
+
+{{ $tocJS := resources.Get "js/toc.js" | resources.Minify | resources.Fingerprint "sha512" }}
+<script src="{{ $tocJS.RelPermalink }}" integrity="{{ $tocJS.Data.Integrity }}"></script>
+
+{{ $imageViewerJS := resources.Get "js/image-viewer.js" | resources.Minify | resources.Fingerprint "sha512" }}
+<script src="{{ $imageViewerJS.RelPermalink }}" integrity="{{ $imageViewerJS.Data.Integrity }}"></script>
+
+<!-- 初始化高亮 -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    if (window.hljs) {
+      document.querySelectorAll('pre code').forEach(function(block) {
+        hljs.highlightElement(block);
+      });
+    }
+  });
+</script>
+
+<!-- 目录样式 -->
+<style>
+  #toc-content {
+    max-height: none;
+  }
+  
+  @media (min-width: 1024px) {
+    #toc-content {
+      max-height: none;
+      overflow: visible;
+    }
+    
+    #toc-container {
+      max-height: calc(100vh - 120px);
+      overflow-y: auto;
+    }
+    
+    nav#TableOfContents {
+      overflow: visible;
+    }
+  }
+  
+  @media (max-width: 1023px) {
+    #toc-container {
+      padding-bottom: env(safe-area-inset-bottom, 20px);
+      display: flex;
+      flex-direction: column;
+    }
+    
+    #toc-content {
+      flex: 1;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 20px;
+    }
+  }
+</style>

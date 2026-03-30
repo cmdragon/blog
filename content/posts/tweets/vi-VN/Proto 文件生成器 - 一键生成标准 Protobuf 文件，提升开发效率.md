@@ -1,14 +1,14 @@
 ---
-url: /vi/posts/07755af00a1779ac0ab6cb087ff3eb00/
+url: /vi-VN/posts/07755af00a1779ac0ab6cb087ff3eb00/
 title: 'Proto File Generator: Tự động tạo tệp Protobuf tiêu chuẩn, nâng cao hiệu quả phát triển'
 date: 2026-03-29T00:00:00.000Z
 lastmod: 2026-03-29T00:00:00.000Z
 author: 前端工具侠
-cover: https://api2.cmdragon.cn/upload/cmder/images/proto-file-generator-cover.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/1774776197859.png
 summary: |
   🚀 Công cụ tạo tệp Proto trực tuyến mạnh mẽ, hỗ trợ Proto2/Proto3, mẫu tùy chỉnh, hoàn hảo cho phát triển RPC/gRPC!
 categories:
-  - Công cụ
+  - tweets
 tags:
   - Protobuf
   - Trình tạo tệp

@@ -1,5 +1,5 @@
 ---
-url: /zh-tw/posts/4e39beda336567fcc19d7569bcec9c9e/
+url: /zh-TW/posts/4e39beda336567fcc19d7569bcec9c9e/
 title: graph td 表格數據可視化太難？mermaid-live-editor - 即時預覽 + 語法友好，一鍵生成專業流程圖/進度表
 date: 2025-12-06T10:55:55+08:00
 lastmod: 2025-12-06T10:55:55+08:00

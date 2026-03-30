@@ -1,5 +1,5 @@
 ---
-url: /ja/posts/747a97573bf7d430033a808e441737fb/
+url: /ja-JP/posts/747a97573bf7d430033a808e441737fb/
 title: mermaid live editor：軽量で高効率なオンラインフローチャートツール、ビジネスパーソンと学生の必須ツール
 date: 2025-11-23T10:16:32+08:00
 lastmod: 2025-11-23T10:16:32+08:00

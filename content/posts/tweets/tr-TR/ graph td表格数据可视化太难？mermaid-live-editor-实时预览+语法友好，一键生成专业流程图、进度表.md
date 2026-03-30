@@ -1,5 +1,5 @@
 ---
-url: /tr/posts/4e39beda336567fcc19d7569bcec9c9e/
+url: /tr-TR/posts/4e39beda336567fcc19d7569bcec9c9e/
 title: graph td tablo verilerini görselleştirmek çok zor mu? mermaid-live-editor - Canlı önizleme + sentaks dostu, profesyonel akış şeması/ilerleme tablosu tek tıkla oluşturulur
 date: 2025-12-06T10:55:55+08:00
 lastmod: 2025-12-06T10:55:55+08:00

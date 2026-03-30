@@ -1,5 +1,5 @@
 ---
-url: /tr/posts/07755af00a1779ac0ab6cb087ff3eb04/
+url: /tr-TR/posts/07755af00a1779ac0ab6cb087ff3eb04/
 title: M3U8 Çevrimiçi Oynatıcı - Reklamsız Ücretsiz HLS Canlı Yayın Oynatma Aracı Hız Kontrolü ve Kalite Değiştirme Desteği ile
 date: 2026-03-29T11:00:00+08:00
 lastmod: 2026-03-29T11:00:00+08:00
@@ -8,7 +8,7 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/1a85864f62f94469a825379a6d5b
 summary: |
   🎬 Ücretsiz profesyonel M3U8/HLS çevrimiçi oynatıcı, canlı yayın ve yerel video dosyalarını destekler! Oynatma hızı kontrolü, çoklu kalite değiştirme, tam ekran modu ve daha fazlası ile, reklamsız, kurulum gerekmez, doğrudan tarayıcıda kullanın!
 categories:
-  - Araçlar
+  - tweets
 tags:
   - M3U8 Oynatıcı
   - HLS Oynatma

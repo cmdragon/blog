@@ -1,5 +1,5 @@
 ---
-url: /nl/posts/07755af00a1779ac0ab6cb087ff3eaff/
+url: /nl-NL/posts/07755af00a1779ac0ab6cb087ff3eaff/
 title: Multi-Stream Live Aggregator Ondersteunt HLS-Protocol, Start Nieuwe Multi-Screen Live Monitoring Ervaring
 date: 2026-03-29T07:40:34+08:00
 lastmod: 2026-03-29T07:40:34+08:00

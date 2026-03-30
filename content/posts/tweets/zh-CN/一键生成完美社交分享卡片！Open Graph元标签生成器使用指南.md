@@ -9,8 +9,8 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250702201305.png
 summary:  
   深度解析Open Graph元标签的SEO价值，手把手教你使用CMDragon的免费工具快速生成高质量社交媒体分享卡片，提升链接点击率300%！  
 
-categories:  
-  - tweets  
+categories:
+  - tweets
 
 tags:  
   - 社交媒体优化  

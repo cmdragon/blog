@@ -1,5 +1,5 @@
 ---
-url: /zh-tw/posts/cf9fbfaf3dcc1b5ada8161a06dda097d/
+url: /zh-TW/posts/cf9fbfaf3dcc1b5ada8161a06dda097d/
 title: 免費線上PS推薦：功能全面＋操作教程，3分鐘輕鬆上手
 date: 2025-12-08T06:55:19+08:00
 lastmod: 2025-12-08T06:55:19+08:00

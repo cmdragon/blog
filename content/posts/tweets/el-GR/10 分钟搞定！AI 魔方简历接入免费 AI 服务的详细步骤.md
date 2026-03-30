@@ -1,5 +1,5 @@
 ---
-url: /el/posts/07755af00a1779ac0ab6cb087ff3epfl/
+url: /el-GR/posts/07755af00a1779ac0ab6cb087ff3epfl/
 title: Ολοκληρώστε σε 10 λεπτά! Αναλυτικά βήματα για τη σύνδεση δωρεάν υπηρεσιών AI στο AI Magic Resume
 date: 2026-03-29T07:40:34+08:00
 lastmod: 2026-03-29T07:40:34+08:00

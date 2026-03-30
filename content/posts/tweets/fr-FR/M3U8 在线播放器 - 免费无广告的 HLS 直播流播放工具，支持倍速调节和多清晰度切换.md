@@ -1,5 +1,5 @@
 ---
-url: /fr/posts/07755af00a1779ac0ab6cb087ff3eb04/
+url: /fr-FR/posts/07755af00a1779ac0ab6cb087ff3eb04/
 title: Lecteur M3U8 en Ligne - Outil de Lecture de Flux en Direct HLS Gratuit sans Publicité avec Contrôle de Vitesse et Changement de Qualité
 date: 2026-03-29T11:00:00+08:00
 lastmod: 2026-03-29T11:00:00+08:00
@@ -8,7 +8,7 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/1a85864f62f94469a825379a6d5b
 summary: |
   🎬 Lecteur M3U8/HLS en ligne professionnel et gratuit, prend en charge les flux en direct et les fichiers vidéo locaux ! Avec contrôle de vitesse de lecture, changement de qualité multiple, mode plein écran et plus, sans publicité, aucune installation requise, utilisez directement dans le navigateur !
 categories:
-  - Outils
+  - tweets
 tags:
   - Lecteur M3U8
   - Lecture HLS

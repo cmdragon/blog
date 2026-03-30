@@ -1,10 +1,10 @@
 ---
-url: /es/posts/07755af00a1779ac0ab6cb087ff3eb00/
+url: /es-ES/posts/07755af00a1779ac0ab6cb087ff3eb00/
 title: Generador de Archivos Proto - Genera Archivos Protobuf Estándar con Un Clic, Impulsa la Eficiencia de Desarrollo
 date: 2026-03-29T08:30:00+08:00
 lastmod: 2026-03-29T08:30:00+08:00
 author: cmdragon
-cover: https://api2.cmdragon.cn/upload/cmder/images/proto-file-generator-cover.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/1774776197859.png
 summary:
   El Generador de Archivos Proto es una herramienta en línea diseñada específicamente para desarrolladores, soporta generación rápida de estructuras de archivos Protobuf estándar. Proporciona definiciones de mensajes, tipos de enumeración, interfaces de servicio con un clic, soporta sintaxis Proto2/Proto3, formateo automático de código, verificación de sintaxis en tiempo real. Desarrolladores backend construyen rápidamente definiciones de interfaces RPC, ingenieros frontend entienden estructuras de datos, desarrolladores full-stack gestionan especificaciones de API uniformemente, impulsa la eficiencia de desarrollo Protobuf en un solo lugar.
 
@@ -22,7 +22,7 @@ tags:
 
 ---
 
-![](https://api2.cmdragon.cn/upload/cmder/images/proto-file-generator-cover.png)
+![](https://api2.cmdragon.cn/upload/cmder/images/1774776197859.png)
 
 🔧 **¡Dile adiós a la molestia de escribir archivos Proto manualmente!** El "Generador de Archivos Proto" hace que crear archivos Protobuf sea así de simple!
 

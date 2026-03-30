@@ -1,126 +1,138 @@
 /**
  * 代码块增强功能
  * 提供代码语言显示、复制功能等交互
+ * @module CodeHighlight
  */
 
-document.addEventListener('DOMContentLoaded', function() {
-  // 初始化highlight.js
-  if (window.hljs) {
-    // 移除可能存在的行号元素
-    document.querySelectorAll('.line-numbers-rows, .hljs-ln-numbers, .gutter, .code-line-numbers').forEach(el => {
-      el.remove();
-    });
+(function() {
+  'use strict';
+
+  /**
+   * 检查元素是否为 Mermaid 图表
+   * @param {HTMLElement} element - 待检查元素
+   * @returns {boolean} 是否为 Mermaid 图表
+   */
+  function isMermaid(element) {
+    if (!element) return false;
     
-    // 为所有代码块应用高亮（跳过Mermaid图表）
-    document.querySelectorAll('pre code').forEach(block => {
-      // 检查是否为Mermaid图表
-      const parent = block.parentElement;
-      const isMermaid = block.classList.contains('language-mermaid') || 
-                         block.classList.contains('language-merm') ||
-                         (parent && parent.classList.contains('language-mermaid')) ||
-                         (parent && parent.classList.contains('language-merm')) ||
-                         block.textContent.trim().startsWith('graph ') ||
-                         block.textContent.trim().startsWith('sequenceDiagram') ||
-                         block.textContent.trim().startsWith('gantt') ||
-                         block.textContent.trim().startsWith('classDiagram') ||
-                         block.textContent.trim().startsWith('stateDiagram');
-      
-      if (isMermaid) {
-        return; // 跳过Mermaid图表的高亮处理
-      }
-      
-      try {
-        hljs.highlightElement(block);
-      } catch (e) {
-        // 高亮处理异常
-      }
-    });
+    const classList = element.classList;
+    if (classList.contains('language-mermaid') || classList.contains('language-merm')) {
+      return true;
+    }
+    
+    const parent = element.parentElement;
+    if (parent && (parent.classList.contains('language-mermaid') || parent.classList.contains('language-merm'))) {
+      return true;
+    }
+    
+    const text = element.textContent?.trim() || '';
+    return text.startsWith('graph ') || 
+           text.startsWith('sequenceDiagram') || 
+           text.startsWith('gantt') || 
+           text.startsWith('classDiagram') || 
+           text.startsWith('stateDiagram');
   }
-  
-  // 为所有代码块添加语言标签和复制按钮（Mermaid图表除外）
-  document.querySelectorAll('pre').forEach(function(block) {
-    // 检查是否为Mermaid图表容器
-    const codeElement = block.querySelector('code');
-    const isMermaidContainer = 
-      (codeElement && codeElement.classList.contains('language-mermaid')) ||
-      (codeElement && codeElement.classList.contains('language-merm')) ||
-      block.classList.contains('language-mermaid') ||
-      block.classList.contains('language-merm') ||
-      block.parentElement.classList.contains('mermaid');
-      
-    if (isMermaidContainer) {
-      return; // 跳过Mermaid图表的处理
+
+  /**
+   * 从元素中提取编程语言
+   * @param {HTMLElement} codeElement - 代码元素
+   * @returns {string} 语言名称
+   */
+  function detectLanguage(codeElement) {
+    if (!codeElement) return 'code';
+    
+    const className = codeElement.className;
+    
+    // 尝试从类中提取语言
+    const langMatch = className.match(/language-(\w+)/) || className.match(/lang-(\w+)/);
+    if (langMatch && langMatch[1]) {
+      return langMatch[1];
     }
     
-    // 确保代码块有一个code子元素
+    // 尝试从父元素提取
+    const parent = codeElement.parentElement;
+    if (parent) {
+      const parentLangMatch = parent.className.match(/language-(\w+)/) || parent.className.match(/lang-(\w+)/);
+      if (parentLangMatch && parentLangMatch[1]) {
+        return parentLangMatch[1];
+      }
+    }
+    
+    // 基于内容推断语言
+    const content = codeElement.textContent || '';
+    if (content.includes('def ') && content.includes(':')) {
+      return 'python';
+    }
+    if (content.includes('function') && content.includes('{') && content.includes('}')) {
+      return 'javascript';
+    }
+    if ((content.includes('class') || content.includes('interface')) && content.includes('{') && content.includes('}')) {
+      return 'java';
+    }
+    if (content.includes('git ') || content.includes('cd ') || content.includes('mkdir ') || 
+        content.includes('sudo ') || content.includes('apt ') || content.match(/\$\s*\w+/) ||
+        content.includes('for ') && content.includes('do') && content.includes('done') ||
+        content.includes('if ') && content.includes('then') && (content.includes('fi') || content.includes('else'))) {
+      return 'bash';
+    }
+    
+    return 'code';
+  }
+
+  /**
+   * 安全地高亮代码元素
+   * @param {HTMLElement} element - 代码元素
+   */
+  function highlightElement(element) {
+    if (!element || !window.hljs) return;
+    
+    try {
+      window.hljs.highlightElement(element);
+    } catch (error) {
+      console.warn('[CodeHighlight] 高亮失败:', error);
+    }
+  }
+
+  /**
+   * 为代码块添加语言标签和复制按钮
+   * @param {HTMLElement} preBlock - pre 元素
+   */
+  function setupCodeBlock(preBlock) {
+    if (!preBlock) return;
+    
+    // 跳过 Mermaid 图表
+    if (isMermaid(preBlock) || isMermaid(preBlock.querySelector('code'))) {
+      return;
+    }
+    
+    // 确保有 code 元素
+    let codeElement = preBlock.querySelector('code');
     if (!codeElement) {
-      const newCodeElement = document.createElement('code');
-      newCodeElement.innerHTML = block.innerHTML;
-      block.innerHTML = '';
-      block.appendChild(newCodeElement);
+      codeElement = document.createElement('code');
+      // 使用 textContent 而不是 innerHTML 避免 XSS 风险
+      codeElement.textContent = preBlock.textContent;
+      preBlock.textContent = '';
+      preBlock.appendChild(codeElement);
     }
     
-    // 尝试不同的方式识别语言
-    if (!block.hasAttribute('data-lang')) {
-      const className = codeElement.className;
-      let lang = 'code';
-      
-      // 尝试从类名中提取语言
-      const langMatch = className.match(/language-(\w+)/) || className.match(/lang-(\w+)/);
-      if (langMatch) {
-        lang = langMatch[1];
-      } 
-      // 尝试从父元素类名识别
-      else if (block.className) {
-        const parentLangMatch = block.className.match(/language-(\w+)/) || block.className.match(/lang-(\w+)/);
-        if (parentLangMatch) {
-          lang = parentLangMatch[1];
-        }
-      }
-      
-      // 根据内容特征推断语言
-      if (lang === 'code') {
-        const content = codeElement.textContent;
-        if (content.includes('def ') && content.includes(':')) {
-          lang = 'python';
-        } else if (content.includes('function') && content.includes('{') && content.includes('}')) {
-          lang = 'javascript';
-        } else if ((content.includes('class') || content.includes('interface')) && content.includes('{') && content.includes('}')) {
-          lang = 'java';
-        } else if (content.includes('git ') || content.includes('cd ') || content.includes('mkdir ') || 
-                   content.includes('sudo ') || content.includes('apt ') || content.match(/\$\s*\w+/) ||
-                   content.includes('for ') && content.includes('do') && content.includes('done') ||
-                   content.includes('if ') && content.includes('then') && (content.includes('fi') || content.includes('else'))) {
-          lang = 'bash';
-        }
-      }
-      
-      // 设置语言属性
-      block.setAttribute('data-lang', lang);
-      
-      // 如果code元素没有对应的语言类，添加一个
-      if (!codeElement.classList.contains(`language-${lang}`)) {
-        codeElement.classList.add(`language-${lang}`);
-        
-        // 再次尝试高亮，但跳过Mermaid
-        if (window.hljs && lang !== 'mermaid' && lang !== 'merm') {
-          try {
-            hljs.highlightElement(codeElement);
-          } catch (e) {
-            // 重新高亮失败
-          }
-        }
+    // 提取已有语言（从 class 中）
+    let existingLang = null;
+    const classList = Array.from(codeElement.classList);
+    for (const cls of classList) {
+      if (cls.startsWith('language-') && cls !== 'language-') {
+        existingLang = cls.replace('language-', '');
+        break;
       }
     }
     
-    // 移除旧的复制按钮（如果存在）
-    const oldButton = block.querySelector('.code-copy-btn');
-    if (oldButton) {
-      oldButton.remove();
+    // 设置语言
+    if (!preBlock.hasAttribute('data-lang')) {
+      const lang = existingLang || detectLanguage(codeElement);
+      preBlock.setAttribute('data-lang', lang);
     }
     
-    // 移除旧的操作容器（如果存在）
-    const oldContainer = block.querySelector('.code-actions-container');
+    // 移除旧的复制按钮和容器
+    const oldContainer = preBlock.querySelector('.code-actions-container');
     if (oldContainer) {
       oldContainer.remove();
     }
@@ -130,34 +142,50 @@ document.addEventListener('DOMContentLoaded', function() {
     actionsContainer.className = 'code-actions-container';
     
     // 添加语言标签
-    const lang = block.getAttribute('data-lang');
     const langLabel = document.createElement('span');
     langLabel.className = 'code-lang-label';
-    langLabel.textContent = lang;
+    langLabel.textContent = preBlock.getAttribute('data-lang') || 'code';
     actionsContainer.appendChild(langLabel);
     
     // 创建复制按钮
     const copyButton = document.createElement('button');
     copyButton.className = 'code-copy-btn';
     copyButton.textContent = '复制';
+    copyButton.type = 'button';
     
-    copyButton.addEventListener('click', function() {
-      const code = block.querySelector('code').textContent;
-      
+    copyButton.addEventListener('click', handleCopy.bind(null, preBlock, copyButton));
+    actionsContainer.appendChild(copyButton);
+    
+    // 添加到代码块
+    preBlock.appendChild(actionsContainer);
+  }
+
+  /**
+   * 处理复制操作
+   * @param {HTMLElement} preBlock - pre 元素
+   * @param {HTMLButtonElement} copyButton - 复制按钮
+   */
+  function handleCopy(preBlock, copyButton) {
+    const codeElement = preBlock.querySelector('code');
+    if (!codeElement) return;
+    
+    const code = codeElement.textContent;
+    
+    const setButtonText = (text) => {
+      copyButton.textContent = text;
+      setTimeout(() => {
+        copyButton.textContent = '复制';
+      }, 2000);
+    };
+    
+    // 使用 Clipboard API
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(code)
+        .then(() => setButtonText('已复制!'))
+        .catch(() => setButtonText('复制失败'));
+    } else {
+      // 回退到传统方法
       try {
-        navigator.clipboard.writeText(code).then(function() {
-          copyButton.textContent = '已复制!';
-          setTimeout(function() {
-            copyButton.textContent = '复制';
-          }, 2000);
-        }, function(err) {
-          copyButton.textContent = '复制失败';
-          setTimeout(function() {
-            copyButton.textContent = '复制';
-          }, 2000);
-        });
-      } catch (e) {
-        // 回退到传统复制方法
         const textarea = document.createElement('textarea');
         textarea.value = code;
         textarea.style.position = 'fixed';
@@ -165,145 +193,124 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.appendChild(textarea);
         textarea.select();
         
-        try {
-          document.execCommand('copy');
-          copyButton.textContent = '已复制!';
-        } catch (err) {
-          copyButton.textContent = '复制失败';
-        }
+        const success = document.execCommand('copy');
+        setButtonText(success ? '已复制!' : '复制失败');
         
         document.body.removeChild(textarea);
-        setTimeout(function() {
-          copyButton.textContent = '复制';
-        }, 2000);
+      } catch (error) {
+        setButtonText('复制失败');
+        console.warn('[CodeHighlight] 复制失败:', error);
       }
-    });
-    
-    // 添加复制按钮到容器
-    actionsContainer.appendChild(copyButton);
-    
-    // 将容器添加到代码块
-    block.appendChild(actionsContainer);
-  });
-  
-  // 禁用可能自动添加的行号
+    }
+  }
+
+  /**
+   * 禁用行号功能
+   */
   function disableLineNumbers() {
-    // 移除Hugo或其他库可能添加的行号容器
     document.querySelectorAll('.article-content pre').forEach(pre => {
-      // 如果是Mermaid容器则跳过
-      if (pre.classList.contains('language-mermaid') || 
-          pre.classList.contains('language-merm') ||
-          pre.querySelector('code.language-mermaid') ||
-          pre.querySelector('code.language-merm') ||
-          pre.parentElement.classList.contains('mermaid')) {
+      // 跳过 Mermaid
+      if (isMermaid(pre) || isMermaid(pre.querySelector('code'))) {
         return;
       }
       
       pre.classList.remove('line-numbers');
+      
+      // 移除行号容器
       const lineNumbersContainer = pre.querySelector('.line-numbers-rows');
       if (lineNumbersContainer) {
         lineNumbersContainer.remove();
       }
       
       // 移除表格形式的行号
-      if (pre.querySelector('table.hljs-ln')) {
+      const table = pre.querySelector('table.hljs-ln');
+      if (table) {
         const code = pre.querySelector('code');
-        const table = pre.querySelector('table.hljs-ln');
-        if (code && table) {
-          // 提取纯代码内容
+        if (code) {
           const codeContent = Array.from(table.querySelectorAll('td.hljs-ln-code'))
             .map(td => td.textContent)
             .join('\n');
           
-          // 替换为不带行号的代码
           code.textContent = codeContent;
-          
-          // 重新高亮
-          if (window.hljs) {
-            try {
-              hljs.highlightElement(code);
-            } catch (e) {
-              // 高亮失败
-            }
-          }
+          highlightElement(code);
         }
       }
     });
   }
-  
-  // 尝试禁用行号
-  disableLineNumbers();
-  
-  // 设置代码块标签系统
+
+  /**
+   * 初始化代码标签系统
+   */
   function setupCodeTabs() {
     document.querySelectorAll('.code-tabs').forEach(tabGroup => {
       const tabs = tabGroup.querySelectorAll('.code-tab-item');
       const panes = tabGroup.querySelectorAll('.code-tab-pane');
       
-      // 初始化：激活第一个标签
-      if (tabs.length > 0) {
-        tabs[0].classList.add('active');
+      if (tabs.length === 0 || panes.length === 0) return;
+      
+      // 激活第一个标签
+      tabs[0].classList.add('active');
+      panes[0].classList.add('active');
+      
+      // 高亮第一个代码块
+      const firstCode = panes[0].querySelector('pre code');
+      if (firstCode) {
+        highlightElement(firstCode);
       }
       
-      if (panes.length > 0) {
-        panes[0].classList.add('active');
-        // 确保第一个代码块正确高亮
-        const firstCodeBlock = panes[0].querySelector('pre code');
-        if (firstCodeBlock && window.hljs) {
-          setTimeout(() => {
-            try {
-              hljs.highlightElement(firstCodeBlock);
-            } catch (e) {
-              // 高亮失败
-            }
-          }, 0);
-        }
-      }
-      
-      // 为每个标签添加点击事件
+      // 绑定标签点击事件
       tabs.forEach((tab, index) => {
-        tab.addEventListener('click', () => {
+        tab.addEventListener('click', (e) => {
+          e.preventDefault();
+          
           // 移除所有活动状态
           tabs.forEach(t => t.classList.remove('active'));
           panes.forEach(p => p.classList.remove('active'));
           
-          // 设置当前标签和面板为活动状态
+          // 激活当前标签
           tab.classList.add('active');
+          
           if (panes[index]) {
             panes[index].classList.add('active');
-            
-            // 确保代码高亮
-            const codeBlock = panes[index].querySelector('pre code');
-            if (codeBlock && window.hljs) {
-              setTimeout(() => {
-                try {
-                  hljs.highlightElement(codeBlock);
-                } catch (e) {
-                  // 高亮失败
-                }
-              }, 0);
+            const code = panes[index].querySelector('pre code');
+            if (code) {
+              highlightElement(code);
             }
           }
         });
       });
     });
   }
-  
-  // 设置代码标签系统
-  setupCodeTabs();
-  
-  // 延迟确保所有代码块都正确高亮
-  setTimeout(() => {
-    if (window.hljs) {
-      document.querySelectorAll('pre code:not(.mermaid):not(.language-mermaid):not(.language-merm)').forEach(block => {
-        if (!block.parentElement.classList.contains('mermaid')) {
-          try {
-            hljs.highlightElement(block);
-          } catch (e) {
-            // 高亮失败
-          }
-        }
-      });
+
+  /**
+   * 初始化所有代码块
+   */
+  function initCodeBlocks() {
+    // 移除行号元素
+    document.querySelectorAll('.line-numbers-rows, .hljs-ln-numbers, .gutter, .code-line-numbers')
+      .forEach(el => el.remove());
+    
+    // 为所有 pre 块添加语言标签和复制按钮（这也会处理高亮）
+    document.querySelectorAll('pre').forEach(setupCodeBlock);
+    
+    // 禁用行号
+    disableLineNumbers();
+    
+    // 初始化标签系统
+    setupCodeTabs();
+  }
+
+  /**
+   * 页面加载完成后的初始化
+   */
+  function init() {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initCodeBlocks);
+    } else {
+      initCodeBlocks();
     }
-  }, 500);
-}); 
+  }
+
+  // 启动初始化
+  init();
+})();

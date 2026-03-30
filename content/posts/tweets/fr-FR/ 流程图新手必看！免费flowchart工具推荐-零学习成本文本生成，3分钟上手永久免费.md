@@ -1,5 +1,5 @@
 ---
-url: /fr/posts/ed40415a58cc641eab9609637ded76c2/
+url: /fr-FR/posts/ed40415a58cc641eab9609637ded76c2/
 title: Pour les débutants  les outils gratuits de diagrammes de flux à essayer dès maintenant ! Génération texte → graphique, 3 minutes pour maîtriser, gratuit à vie
 date: 2025-11-30T15:08:04+08:00
 lastmod: 2025-11-30T15:08:04+08:00

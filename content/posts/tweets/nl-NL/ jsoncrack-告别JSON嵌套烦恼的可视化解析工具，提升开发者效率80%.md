@@ -1,5 +1,5 @@
 ---
-url: /nl/posts/fa0f26042a7c13693b5635f3f738429b/
+url: /nl-NL/posts/fa0f26042a7c13693b5635f3f738429b/
 title: jsoncrack Vaarwel met geneste JSON-structuren, een visuele parser die de efficiëntie van ontwikkelaars met 80% verhoogt
 date: 2025-11-24T05:43:29+08:00
 lastmod: 2025-11-24T05:43:29+08:00

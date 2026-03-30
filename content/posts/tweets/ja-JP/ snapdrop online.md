@@ -1,5 +1,5 @@
 ---
-url: /ja/posts/83f41c2dcb5ca82f53afa9f93616945e/
+url: /ja-JP/posts/83f41c2dcb5ca82f53afa9f93616945e/
 title: snapdrop online（点対点（P2P）ファイル転送ツール）
 date: 2025-12-12T20:05:38+08:00
 lastmod: 2025-12-12T20:05:38+08:00

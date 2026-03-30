@@ -1,5 +1,5 @@
 ---
-url: /lt/posts/ed40415a58cc641eab9609637ded76c2/
+url: /lt-LT/posts/ed40415a58cc641eab9609637ded76c2/
 title: Pradedantiesiems būtina žinoti! Nemokami flowchart įrankiai – tekstas generuoja diagramas, 3 minutes išmoksite visam laikui nemokamai
 date: 2025-11-30T15:08:04+08:00
 lastmod: 2025-11-30T15:08:04+08:00

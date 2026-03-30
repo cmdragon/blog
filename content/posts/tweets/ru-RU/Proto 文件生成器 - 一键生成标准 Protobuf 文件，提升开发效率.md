@@ -1,10 +1,10 @@
 ---
-url: /ru/posts/07755af00a1779ac0ab6cb087ff3eb00/
+url: /ru-RU/posts/07755af00a1779ac0ab6cb087ff3eb00/
 title: Генератор Proto-файлов - Генерируйте стандартные Protobuf файлы одним кликом, повышайте эффективность разработки
 date: 2026-03-29T08:30:00+08:00
 lastmod: 2026-03-29T08:30:00+08:00
 author: cmdragon
-cover: https://api2.cmdragon.cn/upload/cmder/images/proto-file-generator-cover.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/1774776197859.png
 summary:
   Генератор Proto-файлов - это онлайн-инструмент, специально разработанный для разработчиков, поддерживает быструю генерацию стандартных структур Protobuf файлов. Предоставляет определения сообщений, типы перечислений, интерфейсы сервисов в один клик, поддерживает синтаксис Proto2/Proto3, автоматическое форматирование кода, проверку синтаксиса в реальном времени. Backend-разработчики быстро строят определения RPC интерфейсов, frontend-инженеры понимают структуры данных, fullstack-разработчики единообразно управляют спецификациями API, повышайте эффективность разработки Protobuf в одном месте.
 
@@ -22,7 +22,7 @@ tags:
 
 ---
 
-![](https://api2.cmdragon.cn/upload/cmder/images/proto-file-generator-cover.png)
+![](https://api2.cmdragon.cn/upload/cmder/images/1774776197859.png)
 
 🔧 **Забудьте о хлопотах ручного написания Proto-файлов!** «Генератор Proto-файлов» делает создание Protobuf файлов таким простым!
 

@@ -1,5 +1,5 @@
 ---
-url: /fr/posts/07755af00a1779ac0ab6cb087ff3eaff/
+url: /fr-FR/posts/07755af00a1779ac0ab6cb087ff3eaff/
 title: L'Agrégateur de Flux Live Multi-Support Prend en Charge le Protocole HLS, Ouvre une Nouvelle Expérience de Surveillance Live Multi-Écran
 date: 2026-03-29T07:40:34+08:00
 lastmod: 2026-03-29T07:40:34+08:00

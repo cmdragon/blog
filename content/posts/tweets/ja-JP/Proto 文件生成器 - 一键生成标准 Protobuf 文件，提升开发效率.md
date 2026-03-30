@@ -1,10 +1,10 @@
 ---
-url: /ja/posts/07755af00a1779ac0ab6cb087ff3eb00/
+url: /ja-JP/posts/07755af00a1779ac0ab6cb087ff3eb00/
 title: Proto ファイルジェネレーター - 標準 Protobuf ファイルをワンクリックで生成、開発効率を向上
 date: 2026-03-29T08:30:00+08:00
 lastmod: 2026-03-29T08:30:00+08:00
 author: cmdragon
-cover: https://api2.cmdragon.cn/upload/cmder/images/proto-file-generator-cover.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/1774776197859.png
 summary:
   Proto ファイルジェネレーターは開発者向けに特別に設計されたオンラインツールで、標準 Protobuf ファイル構造の迅速な生成をサポート。メッセージ定義、列挙型、サービスインターフェースをワンクリックで提供、Proto2/Proto3 構文をサポート、コードの自動フォーマット、リアルタイム構文チェック。バックエンド開発者は RPC インターフェース定義を迅速に構築、フロントエンドエンジニアはデータ構造を理解、フルスタック開発者は API 仕様を統一管理、一箇所で Protobuf 開発効率を向上。
 
@@ -22,7 +22,7 @@ tags:
 
 ---
 
-![](https://api2.cmdragon.cn/upload/cmder/images/proto-file-generator-cover.png)
+![](https://api2.cmdragon.cn/upload/cmder/images/1774776197859.png)
 
 🔧 **Proto ファイルの手動作成の手間から解放！** 「Proto ファイルジェネレーター」で Protobuf ファイル作成がこんなに簡単に！
 

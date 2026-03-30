@@ -1,5 +1,5 @@
 ---
-url: /vi/posts/07755af00a1779ac0ab6cb087ff3epfl/
+url: /vi-VN/posts/07755af00a1779ac0ab6cb087ff3epfl/
 title: Hoàn thành trong 10 phút! Các bước chi tiết để kết nối AI Magic Resume với các dịch vụ AI miễn phí
 date: 2026-03-29T07:40:34+08:00
 lastmod: 2026-03-29T07:40:34+08:00

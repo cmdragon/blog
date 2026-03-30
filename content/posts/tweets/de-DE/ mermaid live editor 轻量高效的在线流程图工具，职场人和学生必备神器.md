@@ -1,5 +1,5 @@
 ---
-url: /de/posts/747a97573bf7d430033a808e441737fb/
+url: /de-DE/posts/747a97573bf7d430033a808e441737fb/
 title: Mermaid Live Editor – Leichtgewichtiges und effizientes Online-Tool für Flussdiagramme, unverzichtbar für Berufstätige und Studierende
 date: 2025-11-23T10:16:32+08:00
 lastmod: 2025-11-23T10:16:32+08:00

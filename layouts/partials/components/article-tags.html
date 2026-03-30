@@ -1,0 +1,25 @@
+{{- /* 
+文章标签组件
+显示文章底部的标签列表
+*/ -}}
+
+{{ with .Params.tags }}
+  <div class="border-t border-gray-200 dark:border-gray-700 pt-6 mt-8">
+    <h2 class="text-lg font-medium mb-4 flex items-center">
+      <div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-1.5 rounded text-white mr-2">
+        <iconify-icon icon="mdi:tag-multiple" width="16" height="16"></iconify-icon>
+      </div>
+      标签
+    </h2>
+    <div class="flex flex-wrap gap-2">
+      {{ range . }}
+        <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" 
+           class="bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 px-3 py-1.5 rounded-full text-sm hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 dark:hover:text-white transition-colors duration-200"
+           aria-label="标签：{{ . }}"
+           tabindex="0">
+          <iconify-icon icon="mdi:tag" class="mr-1" inline></iconify-icon>{{ . }}
+        </a>
+      {{ end }}
+    </div>
+  </div>
+{{ end }}

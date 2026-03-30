@@ -1,5 +1,5 @@
 ---
-url: /lt/posts/a453a875e784bbb98f84a81a587310cd/
+url: /lt-LT/posts/a453a875e784bbb98f84a81a587310cd/
 title: Atsisveikinkite su ilgu PPT kūrimu! pptist AI greitai generuoja nemokamą internetinį įrankį – 5 žingsniai, net pradedant iš nulio, sukurti profesionalų pristatymą
 date: 2025-11-25T15:05:51+08:00
 lastmod: 2025-11-25T15:05:51+08:00

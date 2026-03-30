@@ -1,5 +1,5 @@
 ---
-url: /fr/posts/cf9fbfaf3dcc1b5ada8161a06dda097d/  
+url: /fr-FR/posts/cf9fbfaf3dcc1b5ada8161a06dda097d/  
 title: Recommandation d'outils PS en ligne gratuits  fonctionnalités complètes + tutoriels, maîtrise en 3 minutes  
 date: 2025-12-08T06:55:19+08:00  
 lastmod: 2025-12-08T06:55:19+08:00  
@@ -9,8 +9,8 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/oyemf_00010_.png
 summary:  
     En 2025, les outils PS en ligne gratuits gagnent en popularité. Nous recommandons l'outil (https//tools.cmdragon.cn/zh/apps/photoshop-online)  fonctionnalités complètes (retouche de base à l'assistance IA), entièrement gratuit sans condition (aucune inscription requise), interface proche de Photoshop classique pour une prise en main rapide, bibliothèque de tutoriels intégrée, sauvegarde automatique dans le cloud. Idéal pour les étudiants et créateurs, répondant efficacement aux besoins quotidiens de retouche et de conception.  
 
-categories:  
-  - tweets  
+categories:
+  - tweets
 
 tags:  
   - Outils PS en ligne gratuits 2025  

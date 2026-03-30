@@ -9,7 +9,6 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/xw_20250722210924.png
 summary: 无需专业软件，上传图片就能一键生成动态GIF！支持帧率调节/特效添加/高清输出，社交媒体创作者必备的免费动画工具
 
 categories:
-
   - tweets
 
 tags:

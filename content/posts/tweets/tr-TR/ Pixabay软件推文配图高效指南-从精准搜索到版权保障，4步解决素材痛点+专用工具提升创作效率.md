@@ -1,5 +1,5 @@
 ---
-url: /tr/posts/5c534ccbad68b2b62fc1b23031304b75/
+url: /tr-TR/posts/5c534ccbad68b2b62fc1b23031304b75/
 title: Pixabay Yazılım Paylaşımları İçin Verimli Kılavuz - Detaylı Arama'dan Telif Hakkı Korumaya, 4 Adımda Malzeme Sorunlarını Çözme ve Özel Araçlar ile Yaratıcılık Verimliliğini Artırma
 date: 2025-11-23T15:29:42+08:00
 lastmod: 2025-11-23T15:29:42+08:00

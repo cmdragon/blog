@@ -1,14 +1,14 @@
 ---
-url: /zh-tw/posts/07755af00a1779ac0ab6cb087ff3eb00/
+url: /zh-TW/posts/07755af00a1779ac0ab6cb087ff3eb00/
 title: 'Proto 檔案產生器：一鍵產生標準 Protobuf 檔案，提升開發效率'
 date: 2026-03-29T00:00:00.000Z
 lastmod: 2026-03-29T00:00:00.000Z
 author: 前端工具俠
-cover: https://api2.cmdragon.cn/upload/cmder/images/proto-file-generator-cover.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/1774776197859.png
 summary: |
   🚀 強大的線上 Proto 檔案產生工具，支援 Proto2/Proto3，自訂範本，完美服務 RPC/gRPC 開發！
 categories:
-  - 工具
+  - tweets
 tags:
   - Protobuf
   - 檔案產生器

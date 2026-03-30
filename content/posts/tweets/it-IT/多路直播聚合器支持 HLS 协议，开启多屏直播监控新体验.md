@@ -1,5 +1,5 @@
 ---
-url: /it/posts/07755af00a1779ac0ab6cb087ff3eaff/
+url: /it-IT/posts/07755af00a1779ac0ab6cb087ff3eaff/
 title: L'Aggregatore di Trasmissioni Live Multi-Flusso Supporta il Protocollo HLS, Apre una Nuova Esperienza di Monitoraggio Live Multi-Schermo
 date: 2026-03-29T07:40:34+08:00
 lastmod: 2026-03-29T07:40:34+08:00

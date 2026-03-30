@@ -1,5 +1,5 @@
 ---
-url: /ja/posts/fa0f26042a7c13693b5635f3f738429b/
+url: /ja-JP/posts/fa0f26042a7c13693b5635f3f738429b/
 title: jsoncrack—JSONのネスト構造を可視化し、開発効率を80％向上させるツール
 date: 2025-11-24T05:43:29+08:00
 lastmod: 2025-11-24T05:43:29+08:00

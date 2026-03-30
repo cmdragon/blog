@@ -1,14 +1,14 @@
 ---
-url: /uk/posts/07755af00a1779ac0ab6cb087ff3eb00/
+url: /uk-UA/posts/07755af00a1779ac0ab6cb087ff3eb00/
 title: 'Proto File Generator: Автоматичне створення стандартних файлів Protobuf, підвищте ефективність розробки'
 date: 2026-03-29T00:00:00.000Z
 lastmod: 2026-03-29T00:00:00.000Z
 author: 前端工具侠
-cover: https://api2.cmdragon.cn/upload/cmder/images/proto-file-generator-cover.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/1774776197859.png
 summary: |
   🚀 Потужний онлайн-інструмент для створення Proto файлів, підтримує Proto2/Proto3, налаштовувані шаблони, ідеально підходить для розробки RPC/gRPC!
 categories:
-  - Інструменти
+  - tweets
 tags:
   - Protobuf
   - Генератор файлів

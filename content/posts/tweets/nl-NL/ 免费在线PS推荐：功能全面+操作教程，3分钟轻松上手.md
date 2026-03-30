@@ -1,5 +1,5 @@
 ---
-url: /nl/posts/cf9fbfaf3dcc1b5ada8161a06dda097d/
+url: /nl-NL/posts/cf9fbfaf3dcc1b5ada8161a06dda097d/
 title: Gratis online Photoshop aanbevelingen Volledige functionaliteit + handleiding, binnen 3 minuten onder de knie
 date: 2025-12-08T06:55:19+08:00
 lastmod: 2025-12-08T06:55:19+08:00

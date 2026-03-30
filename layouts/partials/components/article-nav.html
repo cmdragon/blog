@@ -1,0 +1,38 @@
+{{- /* 
+文章导航组件
+显示上一篇/下一篇文章
+*/ -}}
+
+<nav class="border-t border-gray-200 dark:border-gray-700 pt-6 mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+  {{ with .PrevInSection }}
+    <div class="bg-gray-100 dark:bg-gray-700 p-4 rounded-xl transition-all hover:shadow-md duration-300">
+      <span class="block text-sm text-gray-600 dark:text-gray-300 mb-2 flex items-center">
+        <iconify-icon icon="mdi:arrow-left" class="mr-2" width="16" height="16"></iconify-icon>上一篇
+      </span>
+      <a href="{{ .Permalink }}" 
+         class="font-medium text-blue-700 dark:text-blue-300 hover:text-blue-800 dark:hover:text-blue-200 block" 
+         aria-label="上一篇：{{ .Title }}" 
+         tabindex="0">
+        {{ .Title }}
+      </a>
+    </div>
+  {{ else }}
+    <div></div>
+  {{ end }}
+  
+  {{ with .NextInSection }}
+    <div class="bg-gray-100 dark:bg-gray-700 p-4 rounded-xl md:text-right transition-all hover:shadow-md duration-300">
+      <span class="block text-sm text-gray-600 dark:text-gray-300 mb-2 flex items-center md:justify-end">
+        下一篇<iconify-icon icon="mdi:arrow-right" class="ml-2" width="16" height="16"></iconify-icon>
+      </span>
+      <a href="{{ .Permalink }}" 
+         class="font-medium text-blue-700 dark:text-blue-300 hover:text-blue-800 dark:hover:text-blue-200 block" 
+         aria-label="下一篇：{{ .Title }}" 
+         tabindex="0">
+        {{ .Title }}
+      </a>
+    </div>
+  {{ else }}
+    <div></div>
+  {{ end }}
+</nav>

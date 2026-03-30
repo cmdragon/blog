@@ -1,5 +1,5 @@
 ---
-url: /en/posts/07755af00a1779ac0ab6cb087ff3eaff/
+url: /en-US/posts/07755af00a1779ac0ab6cb087ff3eaff/
 title: Multi-Stream Live Aggregator Supports HLS Protocol, Opening New Multi-Screen Live Monitoring Experience
 date: 2026-03-29T07:40:34+08:00
 lastmod: 2026-03-29T07:40:34+08:00

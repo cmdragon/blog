@@ -1,0 +1,37 @@
+{{- /* 
+导航菜单组件
+参数:
+  - menuName: 菜单名称 (默认 main)
+  - isMobile: 是否为移动端 (默认 false)
+*/ -}}
+
+{{ $menuName := default "main" .menuName }}
+{{ $isMobile := default false .isMobile }}
+{{ $currentPage := .context }}
+
+{{ range index site.Menus $menuName }}
+  {{ if $isMobile }}
+    <!-- 移动端菜单项 -->
+    <a href="{{ .URL }}" 
+       class="block px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 {{ if $currentPage.IsMenuCurrent $menuName . }}text-white bg-gradient-to-r from-blue-500 to-indigo-600 shadow-md{{ else }}text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600{{ end }}"
+       aria-label="{{ .Name }}"
+       tabindex="0">
+      <div class="flex items-center">
+        <iconify-icon icon="mdi:chevron-right" class="mr-2" width="18" height="18"></iconify-icon>
+        {{ .Name }}
+      </div>
+    </a>
+  {{ else }}
+    <!-- 桌面端菜单项 -->
+    <a href="{{ .URL }}" 
+       class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 relative overflow-hidden group {{ if $currentPage.IsMenuCurrent $menuName . }}text-white bg-gradient-to-r from-blue-500 to-indigo-600 shadow-md{{ else }}text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700{{ end }}"
+       aria-label="{{ .Name }}"
+       tabindex="0">
+      <span class="relative z-10">{{ .Name }}</span>
+      {{ if not ($currentPage.IsMenuCurrent $menuName .) }}
+        <span class="absolute bottom-0 left-0 w-full h-0 bg-gradient-to-r from-blue-500 to-indigo-600 transition-all duration-300 group-hover:h-full opacity-80 -z-0"></span>
+        <span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+      {{ end }}
+    </a>
+  {{ end }}
+{{ end }}

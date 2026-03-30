@@ -1,5 +1,5 @@
 ---
-url: /fr/posts/ff09bf3567c37a0a1450ba925ff96b84/
+url: /fr-FR/posts/ff09bf3567c37a0a1450ba925ff96b84/
 title: Guide d'utilisation de Snapdrop  Transfert de fichiers sans heurt entre téléphone et ordinateur en trois étapes, sécurisé et efficace
 date: 2025-11-22T14:41:18+08:00
 lastmod: 2025-11-22T14:41:18+08:00

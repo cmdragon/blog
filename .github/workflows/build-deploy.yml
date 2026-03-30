@@ -75,7 +75,15 @@ jobs:
             cp assets/css/tailwind.min.css public/css/
           fi
       
-      # 部署到public分支
+      # 分割搜索索引
+      - name: Split Search Index
+        run: |
+          echo "正在分割搜索索引..."
+          python3 scripts/split_search_index.py
+          echo "搜索索引分割完成"
+          ls -la public/search-index/
+      
+      # 部署到 public 分支
       - name: Deploy to public branch
         uses: JamesIves/github-pages-deploy-action@v4
         with:

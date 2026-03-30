@@ -1,5 +1,5 @@
 ---
-url: /de/posts/07755af00a1779ac0ab6cb087ff3eb04/
+url: /de-DE/posts/07755af00a1779ac0ab6cb087ff3eb04/
 title: M3U8 Online-Player - Kostenloses HLS-Livestream-Wiedergabetool ohne Werbung mit Geschwindigkeitsregelung und Qualitätswechsel
 date: 2026-03-29T11:00:00+08:00
 lastmod: 2026-03-29T11:00:00+08:00
@@ -8,7 +8,7 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/1a85864f62f94469a825379a6d5b
 summary: |
   🎬 Kostenloser professioneller M3U8/HLS-Online-Player, unterstützt Livestreams und lokale Videodateien! Mit Wiedergabegeschwindigkeitsregelung, Qualitätswechsel, Vollbildmodus und mehr, werbefrei, keine Installation erforderlich, direkt im Browser verwenden!
 categories:
-  - Werkzeuge
+  - tweets
 tags:
   - M3U8-Player
   - HLS-Wiedergabe

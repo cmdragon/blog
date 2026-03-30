@@ -1,5 +1,5 @@
 ---
-url: /de/posts/434552ebcdbd2984e886062543058346/
+url: /de-DE/posts/434552ebcdbd2984e886062543058346/
 title: Was bedeutet RAID? Von Grundlagen bis zur praktischen Konfiguration – dieser Rechner hilft Ihnen bei der Einrichtung
 date: 2025-12-09T03:50:29+08:00
 lastmod: 2025-12-09T03:50:29+08:00

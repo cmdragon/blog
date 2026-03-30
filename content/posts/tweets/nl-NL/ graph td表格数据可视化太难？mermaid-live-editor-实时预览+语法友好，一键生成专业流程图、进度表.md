@@ -1,5 +1,5 @@
 ---
-url: /nl/posts/4e39beda336567fcc19d7569bcec9c9e/  
+url: /nl-NL/posts/4e39beda336567fcc19d7569bcec9c9e/  
 title: Grafieken uit tabellen visualiseren? Mermaid-live-editor ondersteunt graph td, realtime preview en eenvoudige syntax voor professionele stroomdiagrammen/voortgangslijsten  
 date: 2025-12-06T10:55:55+08:00  
 lastmod: 2025-12-06T10:55:55+08:00  
@@ -9,8 +9,8 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/xjpvh_00004_.png
 summary:  
     Traditionele tabellen omzetten naar grafieken vereist veel handmatige werkzaamheden, heeft beperkte compatibiliteit met formaten en biedt geen realtime updates. Mermaid-live-editor ondersteunt de `graph td`-syntax, genereert stroomdiagrammen direct en toont realtime voorbeelden. Het ondersteunt sleepen om stijl aan te passen en export naar meerdere formaten (PNG/SVG), geschikt voor projectbeheer en technische documentatie.  
 
-categories:  
-  - tweets  
+categories:
+  - tweets
 
 tags:  
   - Datavisualisatie  

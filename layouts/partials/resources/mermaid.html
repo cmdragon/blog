@@ -1,0 +1,107 @@
+{{- /* 
+Mermaid 图表支持 - 使用 CDN 回退机制
+*/ -}}
+
+<script>
+  (function() {
+    const loadMermaid = async () => {
+      try {
+        const cdn = await window.CDNHelper?.detect() || 'unpkg';
+        const cdnBase = window.CDNHelper?.getBase(cdn) || 'https://unpkg.com';
+        
+        let mermaidUrl;
+        if (cdn === 'unpkg') {
+          mermaidUrl = 'https://unpkg.com/mermaid@10.3.0/dist/mermaid.min.js';
+        } else {
+          mermaidUrl = 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.3.0/mermaid.min.js';
+        }
+        
+        await new Promise((resolve, reject) => {
+          const script = document.createElement('script');
+          script.src = mermaidUrl;
+          script.onload = resolve;
+          script.onerror = reject;
+          document.head.appendChild(script);
+        });
+        
+        if (typeof mermaid !== 'undefined') {
+          window.mermaid = mermaid;
+          
+          const isDarkMode = document.documentElement.classList.contains('dark') || 
+                            window.matchMedia('(prefers-color-scheme: dark)').matches;
+          
+          window.mermaid.initialize({
+            startOnLoad: true,
+            theme: isDarkMode ? 'dark' : 'default',
+            securityLevel: 'loose',
+            flowchart: { curve: 'basis', htmlLabels: true },
+            sequence: { mirrorActors: false, wrap: true },
+            themeVariables: {
+              primaryColor: '#3b82f6',
+              primaryTextColor: '#ffffff',
+              primaryBorderColor: isDarkMode ? '#60a5fa' : '#2563eb',
+              lineColor: isDarkMode ? '#94a3b8' : '#4b5563',
+              secondaryColor: isDarkMode ? '#1e293b' : '#f0f9ff',
+              tertiaryColor: isDarkMode ? '#334155' : '#f3f4f6'
+            }
+          });
+          
+          document.addEventListener('DOMContentLoaded', function() {
+            try {
+              if (typeof window.mermaid.init === 'function') {
+                window.mermaid.init(undefined, document.querySelectorAll('.mermaid'));
+              }
+            } catch (e) {
+              // 渲染失败，稍后会重试
+            }
+          });
+        }
+      } catch (e) {
+        console.error('[Mermaid] Failed to load:', e);
+      }
+    };
+    
+    loadMermaid();
+  })();
+</script>
+
+<style>
+  .mermaid {
+    margin: 2rem auto;
+    text-align: center;
+    overflow: visible;
+    width: auto;
+    max-width: 100%;
+    background-color: #f9fafb;
+    padding: 1.5rem 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    display: block;
+  }
+  
+  .dark .mermaid {
+    background-color: #1e293b;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  }
+  
+  .mermaid svg {
+    display: block !important;
+    max-width: 100%;
+    width: auto !important;
+    height: auto !important;
+    font-size: 14px;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    .mermaid {
+      max-width: 98%;
+      padding: 0.8rem 0.3rem;
+      margin: 1.2rem auto;
+    }
+    
+    .mermaid svg {
+      font-size: 12px;
+    }
+  }
+</style>

@@ -1,0 +1,42 @@
+{{- /* 
+社交链接组件
+参数:
+  - context: 页面上下文
+  - extraClass: 额外的 CSS 类名
+  - showLabel: 是否显示标签 (默认 false)
+*/ -}}
+
+{{ $context := .context }}
+{{ $extraClass := default "" .extraClass }}
+{{ $showLabel := default false .showLabel }}
+
+{{ with site.Data.site.social_links }}
+<div class="flex {{ if $showLabel }}flex-col gap-3{{ else }}space-x-3{{ end }} {{ $extraClass }}">
+  {{ range . }}
+    {{ if eq .key "wechat" }}
+      <!-- 微信特殊处理：显示二维码弹窗 -->
+      <button 
+        class="wechat-btn text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-300 bg-gray-100 dark:bg-gray-700 p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600"
+        aria-label="{{ .label }}"
+        tabindex="0">
+        <iconify-icon icon="{{ .icon }}" width="18" height="18"></iconify-icon>
+        {{ if $showLabel }}
+          <span class="text-sm">{{ .name }}</span>
+        {{ end }}
+      </button>
+    {{ else if .url }}
+      <a 
+        href="{{ .url }}"
+        class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-300 bg-gray-100 dark:bg-gray-700 p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600"
+        aria-label="{{ .label }}"
+        tabindex="0"
+        {{ if or (strings.HasPrefix .url "http") (strings.HasPrefix .url "mailto:") }}target="_blank" rel="noopener noreferrer"{{ end }}>
+        <iconify-icon icon="{{ .icon }}" width="18" height="18"></iconify-icon>
+        {{ if $showLabel }}
+          <span class="text-sm">{{ .name }}</span>
+        {{ end }}
+      </a>
+    {{ end }}
+  {{ end }}
+</div>
+{{ end }}

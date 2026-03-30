@@ -1,5 +1,5 @@
 ---
-url: /de/posts/ff09bf3567c37a0a1450ba925ff96b84/
+url: /de-DE/posts/ff09bf3567c37a0a1450ba925ff96b84/
 title: Snapdrop-Anleitung Dateien nahtlos zwischen Smartphone und Computer übertragen – sicher, effizient und ohne Einschränkungen
 date: 2025-11-22T14:41:18+08:00
 lastmod: 2025-11-22T14:41:18+08:00

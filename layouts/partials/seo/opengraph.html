@@ -1,0 +1,35 @@
+{{- /* 
+Open Graph 协议元数据
+*/ -}}
+
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}">
+<meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ if .IsPage }}{{ .Summary | plainify }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+
+{{- /* 封面图片 */ -}}
+{{ with .Params.cover }}
+<meta property="og:image" content="{{ . | absURL }}">
+{{ else }}
+<meta property="og:image" content="{{ "/images/logo/social-card.png" | absURL }}">
+{{ end }}
+
+<meta property="og:site_name" content="{{ .Site.Title }}">
+
+{{- /* 文章元数据 */ -}}
+{{ if .IsPage }}
+<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+{{ with .Lastmod }}
+<meta property="article:modified_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">
+{{ end }}
+{{ with .Params.categories }}
+{{ range . }}
+<meta property="article:section" content="{{ . }}">
+{{ end }}
+{{ end }}
+{{ with .Params.tags }}
+{{ range . }}
+<meta property="article:tag" content="{{ . }}">
+{{ end }}
+{{ end }}
+{{ end }}

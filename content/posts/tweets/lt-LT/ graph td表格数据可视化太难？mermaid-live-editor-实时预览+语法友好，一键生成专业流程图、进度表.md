@@ -1,5 +1,5 @@
 ---
-url: /lt/posts/4e39beda336567fcc19d7569bcec9c9e/
+url: /lt-LT/posts/4e39beda336567fcc19d7569bcec9c9e/
 title: Grafikas TD lentelės duomenų vizualizacija pernelyg sudėtinga? Mermaid Live Editor – realiame laike peržiūra + lengvai suprantama sintaksė, vienu mygtuku sukurti profesionalią procesų diagramą/arba pažangos lentelę
 date: 2025-12-06T10:55:55+08:00
 lastmod: 2025-12-06T10:55:55+08:00

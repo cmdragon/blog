@@ -1,5 +1,5 @@
 ---
-url: /nl/posts/1965dc6fabd8ba00aa03ad0dc132ae8f/
+url: /nl-NL/posts/1965dc6fabd8ba00aa03ad0dc132ae8f/
 title: Quran Explorer - Gratis tool voor Arabische analyse van het Koran, met drie stappen voor diepe tekstverheldering en overwinnings van taalbarrières
 date: 2025-12-03T06:57:49+08:00
 lastmod: 2025-12-03T06:57:49+08:00

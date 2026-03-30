@@ -1,5 +1,5 @@
 ---
-url: /uk/posts/07755af00a1779ac0ab6cb087ff3epfl/
+url: /uk-UA/posts/07755af00a1779ac0ab6cb087ff3epfl/
 title: Готово за 10 хвилин! Детальні кроки підключення AI Magic Resume до безкоштовних сервісів ШІ
 date: 2026-03-29T07:40:34+08:00
 lastmod: 2026-03-29T07:40:34+08:00

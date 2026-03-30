@@ -1,5 +1,5 @@
 ---
-url: /fr/posts/4e39beda336567fcc19d7569bcec9c9e/  
+url: /fr-FR/posts/4e39beda336567fcc19d7569bcec9c9e/  
 title: Transformer les données de tableaux en visualisations complexes ? Mermaid Live Editor offre une prévisualisation en temps réel et une syntaxe intuitive, générant instantanément des diagrammes professionnels  
 date: 2025-12-06T10:55:55+08:00  
 lastmod: 2025-12-06T10:55:55+08:00  
@@ -9,8 +9,8 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/xjpvh_00004_.png
 summary:  
     Les méthodes traditionnelles de conversion de tableaux en graphiques souffrent de complexité manuelle, de faible compatibilité des formats et d'une absence de réactivité. Mermaid Live Editor prend en charge la syntaxe `graph td`, générant en temps réel des diagrammes de flux avec prévisualisation, ajustement par glisser-déposer des styles et export dans plusieurs formats (PNG/SVG), idéal pour la gestion de projets et les documents techniques.  
 
-categories:  
-  - tweets  
+categories:
+  - tweets
 
 tags:  
   - Visualisation de données  

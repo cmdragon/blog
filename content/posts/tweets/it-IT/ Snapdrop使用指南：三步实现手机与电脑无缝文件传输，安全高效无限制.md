@@ -1,5 +1,5 @@
 ---
-url: /it/posts/ff09bf3567c37a0a1450ba925ff96b84/
+url: /it-IT/posts/ff09bf3567c37a0a1450ba925ff96b84/
 title: Guida all'uso di Snapdrop Trasferisci file tra smartphone e computer in tre semplici passaggi, sicuro ed efficiente senza limitazioni
 date: 2025-11-22T14:41:18+08:00
 lastmod: 2025-11-22T14:41:18+08:00

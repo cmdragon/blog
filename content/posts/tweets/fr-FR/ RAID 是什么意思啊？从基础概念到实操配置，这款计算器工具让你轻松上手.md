@@ -1,5 +1,5 @@
 ---
-url: /fr/posts/434552ebcdbd2984e886062543058346/
+url: /fr-FR/posts/434552ebcdbd2984e886062543058346/
 title: Qu'est-ce que RAID ? De la théorie à la configuration pratique, cet outil de calcul vous aide à maîtriser facilement
 date: 2025-12-09T03:50:29+08:00
 lastmod: 2025-12-09T03:50:29+08:00

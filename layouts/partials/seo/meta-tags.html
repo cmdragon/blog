@@ -1,0 +1,34 @@
+{{- /* 
+SEO 元数据组件
+自动根据页面类型生成完整的 SEO 元数据
+*/ -}}
+
+<!-- 基础元数据 -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ if .IsPage }}{{ .Summary | plainify }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
+
+<!-- 增强 SEO 元标签 -->
+<meta name="author" content="{{ .Site.Params.author }}">
+<meta name="robots" content="{{ if .Params.noindex }}noindex, nofollow{{ else }}index, follow{{ end }}">
+
+<!-- 规范链接 -->
+<link rel="canonical" href="{{ .Permalink }}">
+
+<!-- 替代语言链接 -->
+{{ if .IsTranslated }}
+{{ range .Translations }}
+<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+{{ end }}
+<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+{{ end }}
+
+<!-- Open Graph 协议 -->
+{{ partial "seo/opengraph.html" . }}
+
+<!-- Twitter 卡片 -->
+{{ partial "seo/twitter-cards.html" . }}
+
+<!-- JSON-LD 结构化数据 -->
+{{ partial "seo/json-ld.html" . }}

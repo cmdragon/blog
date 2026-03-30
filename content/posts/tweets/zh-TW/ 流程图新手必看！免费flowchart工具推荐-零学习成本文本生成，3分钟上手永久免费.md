@@ -1,5 +1,5 @@
 ---
-url: /zh-tw/posts/ed40415a58cc641eab9609637ded76c2/
+url: /zh-TW/posts/ed40415a58cc641eab9609637ded76c2/
 title: 流程圖新手必看！免費 flowchart 工具推薦-零學習成本文本生成，3 分鐘上手永久免費
 date: 2025-11-30T15:08:04+08:00
 lastmod: 2025-11-30T15:08:04+08:00

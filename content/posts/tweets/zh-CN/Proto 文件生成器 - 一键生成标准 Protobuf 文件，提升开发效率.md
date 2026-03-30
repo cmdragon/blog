@@ -1,10 +1,10 @@
 ---
-url: /zh-cn/posts/07755af00a1779ac0ab6cb087ff3eb00/
+url: /zh-CN/posts/07755af00a1779ac0ab6cb087ff3eb00/
 title: Proto 文件生成器 - 一键生成标准 Protobuf 文件，提升开发效率
 date: 2026-03-29T08:30:00+08:00
 lastmod: 2026-03-29T08:30:00+08:00
 author: cmdragon
-cover: https://api2.cmdragon.cn/upload/cmder/images/proto-file-generator-cover.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/1774776197859.png
 summary:
   Proto 文件生成器是一款专为开发者设计的在线工具，支持快速生成标准 Protobuf 文件结构。提供消息定义、枚举类型、服务接口一键生成，支持 Proto2/Proto3 语法，自动格式化代码，实时语法检查。后端开发人员快速搭建 RPC 接口定义，前端工程师理解数据结构，全栈开发者统一管理 API 规范，一站式提升 Protobuf 开发效率。
 
@@ -22,7 +22,7 @@ tags:
 
 ---
 
-![](https://api2.cmdragon.cn/upload/cmder/images/proto-file-generator-cover.png)
+![](https://api2.cmdragon.cn/upload/cmder/images/1774776197859.png)
 
 🔧 **告别手动编写 Proto 文件的繁琐！** 「Proto 文件生成器」让 Protobuf 文件创建变得如此简单！
 

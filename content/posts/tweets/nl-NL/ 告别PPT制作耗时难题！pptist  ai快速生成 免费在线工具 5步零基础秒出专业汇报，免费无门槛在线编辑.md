@@ -1,5 +1,5 @@
 ---
-url: /nl/posts/a453a875e784bbb98f84a81a587310cd/
+url: /nl-NL/posts/a453a875e784bbb98f84a81a587310cd/
 title: Afslaan van de tijdintensieve PPT-maken! pptist AI-snel genereren, gratis online tool – 5 stappen, geen ervaring nodig, professionele presentatie in een oogwenk
 date: 2025-11-25T15:05:51+08:00
 lastmod: 2025-11-25T15:05:51+08:00

@@ -1,10 +1,10 @@
 ---
-url: /ar/posts/07755af00a1779ac0ab6cb087ff3eb00/
+url: /ar-SA/posts/07755af00a1779ac0ab6cb087ff3eb00/
 title: مولد ملفات Proto - أنشئ ملفات Protobuf قياسية بنقرة واحدة، عزز كفاءة التطوير
 date: 2026-03-29T08:30:00+08:00
 lastmod: 2026-03-29T08:30:00+08:00
 author: cmdragon
-cover: https://api2.cmdragon.cn/upload/cmder/images/proto-file-generator-cover.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/1774776197859.png
 summary:
   مولد ملفات Proto هو أداة عبر الإنترنت مصممة خصيصًا للمطورين، تدعم الإنشاء السريع لهيكل ملفات Protobuf القياسية. يوفر تعريفات الرسائل، أنواع التعداد، واجهات الخدمات بنقرة واحدة، يدعم صياغة Proto2/Proto3، تنسيق الكود تلقائيًا، فحص الصياغة في الوقت الفعلي. مطورو الواجهة الخلفية يبنون بسرعة تعريفات واجهات RPC، مهندسو الواجهة الأمامية يفهمون هياكل البيانات، المطورون الشاملون يديرون مواصفات API بشكل موحد، عزز كفاءة تطوير Protobuf في مكان واحد.
 
@@ -22,7 +22,7 @@ tags:
 
 ---
 
-![](https://api2.cmdragon.cn/upload/cmder/images/proto-file-generator-cover.png)
+![](https://api2.cmdragon.cn/upload/cmder/images/1774776197859.png)
 
 🔧 **ودع تعقيد الكتابة اليدوية لملفات Proto!** «مولد ملفات Proto» يجعل إنشاء ملفات Protobuf بهذه البساطة!
 

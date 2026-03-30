@@ -1,5 +1,5 @@
 ---
-url: /zh-cn/posts/07755af00a1779ac0ab6cb087ff3eaff/
+url: /zh-CN/posts/07755af00a1779ac0ab6cb087ff3eaff/
 title: 多路直播聚合器支持 HLS 协议，开启多屏直播监控新体验
 date: 2026-03-29T07:40:34+08:00
 lastmod: 2026-03-29T07:40:34+08:00

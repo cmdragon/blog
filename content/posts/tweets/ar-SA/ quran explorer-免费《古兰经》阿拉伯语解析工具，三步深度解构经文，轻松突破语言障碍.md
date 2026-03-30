@@ -1,5 +1,5 @@
 ---
-url: /ar/posts/1965dc6fabd8ba00aa03ad0dc132ae8f/
+url: /ar-SA/posts/1965dc6fabd8ba00aa03ad0dc132ae8f/
 title: quran explorer - أداة مجانية لتحليل القرآن الكريم بالعربية، تحليل متعمق لآيات القرآن في ثلاث خطوات، تجاوز عوائق اللغة بسهولة
 date: 2025-12-03T06:57:49+08:00
 lastmod: 2025-12-03T06:57:49+08:00

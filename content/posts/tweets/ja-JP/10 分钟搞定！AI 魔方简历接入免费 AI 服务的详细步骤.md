@@ -1,5 +1,5 @@
 ---
-url: /ja/posts/07755af00a1779ac0ab6cb087ff3epfl/
+url: /ja-JP/posts/07755af00a1779ac0ab6cb087ff3epfl/
 title: 10 分で完了！AI マジックレジュメに無料 AI サービスを接続する詳細手順
 date: 2026-03-29T07:40:34+08:00
 lastmod: 2026-03-29T07:40:34+08:00

@@ -1,5 +1,5 @@
 ---
-url: /zh-tw/posts/747a97573bf7d430033a808e441737fb/
+url: /zh-TW/posts/747a97573bf7d430033a808e441737fb/
 title: mermaid live editor 輕量高效的在線流程圖工具，職場人和學生必備神器
 date: 2025-11-23T10:16:32+08:00
 lastmod: 2025-11-23T10:16:32+08:00

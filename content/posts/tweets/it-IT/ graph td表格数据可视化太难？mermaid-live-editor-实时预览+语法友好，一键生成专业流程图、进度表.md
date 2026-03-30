@@ -1,5 +1,5 @@
 ---
-url: /it/posts/4e39beda336567fcc19d7569bcec9c9e/
+url: /it-IT/posts/4e39beda336567fcc19d7569bcec9c9e/
 title: Grafico da tabella TD troppo difficile? Mermaid Live Editor anteprima in tempo reale + sintassi amichevole, genera istantaneamente diagrammi di flusso/progetti professionali
 date: 2025-12-06T10:55:55+08:00
 lastmod: 2025-12-06T10:55:55+08:00

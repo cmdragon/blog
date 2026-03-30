@@ -1,3 +1,6 @@
+# ===========================================
+# Hugo 基础配置
+# ===========================================
 baseURL = 'https://blog.cmdragon.cn/'
 languageCode = 'zh-cn'
 title = "cmdragon's Blog"
@@ -6,31 +9,9 @@ enableRobotsTXT = true
 disablePathToLower = true
 enableEmoji = true
 
-# SEO相关配置
-[sitemap]
-  changefreq = "daily"
-  priority = 0.5
-  filename = "sitemap.xml"
-
-# 分页配置
-[pagination]
-  pagerSize = 6
-
-# 输出格式配置
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
-  section = ["HTML", "RSS"]
-  page = ["HTML"]
-
-[outputFormats]
-  [outputFormats.JSON]
-    mediaType = "application/json"
-    baseName = "index"
-    isPlainText = true
-  [outputFormats.RSS]
-    mediaType = "application/rss+xml"
-    baseName = "index"
-
+# ===========================================
+# 站点参数
+# ===========================================
 [params]
   author = "cmdragon"
   description = "cmdragon's Blog 是一个专注于编程和技术分享的个性化网站，旨在为编程爱好者、学习者和从业者提供全面的前端开发、后端开发以及全栈开发学习资源。"
@@ -39,30 +20,32 @@ enableEmoji = true
   licenseURL = "/license/"
   copyRightYear = "2023"
   
+  # SEO 相关
   [params.seo]
-    # 默认图像(用于社交媒体分享)
     defaultImage = "/images/logo/social-card.png"
-    # Twitter用户名(不含@)
-    twitterHandle = "cmdragon_cn"  # 如果有推特账号请填写
-    
+    twitterHandle = "cmdragon_cn"
+  
   # 社交链接
   [params.social]
     github = "https://github.com/cmdragon"
     email = "support@cmdragon.cn"
-    
+  
   # 评论系统
   [params.comments]
     enable = false
     [params.comments.giscus]
       repo = "username/repo-name"
-      repoId = "填写你的仓库ID"
+      repoId = "填写你的仓库 ID"
       category = "Announcements"
-      categoryId = "填写你的分类ID"
+      categoryId = "填写你的分类 ID"
   
   # 搜索设置
   [params.search]
     enable = true
-    
+
+# ===========================================
+# 菜单配置
+# ===========================================
 [menu]
   [[menu.main]]
     identifier = "home"
@@ -89,15 +72,21 @@ enableEmoji = true
     name = "友链"
     url = "/friends/"
     weight = 5
-    
+
+# ===========================================
+# 分类法配置
+# ===========================================
 [taxonomies]
   category = "categories"
   tag = "tags"
-  
-# Markdown渲染和代码高亮配置
+
+# ===========================================
+# Markdown 渲染配置
+# ===========================================
 [markup]
   defaultMarkdownHandler = "goldmark"
   
+  # Goldmark Markdown 处理器
   [markup.goldmark]
     [markup.goldmark.extensions]
       definitionList = true
@@ -108,41 +97,72 @@ enableEmoji = true
       taskList = true
       typographer = true
     
+    # 解析器配置
     [markup.goldmark.parser]
       autoHeadingID = true
       autoHeadingIDType = "github"
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
       
+    # 渲染器配置
     [markup.goldmark.renderer]
       hardWraps = false
-      unsafe = true  # 允许在Markdown中使用HTML
+      unsafe = true
       xhtml = false
-      
-    [markup.goldmark.parser.attribute]
-      block = true  # 允许块级元素的属性
-      title = true  # 允许标题属性
-      
+  
+  # 代码高亮配置
   [markup.highlight]
     codeFences = true
     guessSyntax = true
     lineNoStart = 1
-    lineNos = false   # 禁用行号显示
-    lineNumbersInTable = false  # 禁用表格中的行号
+    lineNos = false
+    lineNumbersInTable = false
     noClasses = false
     style = "dracula"
     tabWidth = 4
   
+  # 目录配置
   [markup.tableOfContents]
     endLevel = 4
     ordered = false
     startLevel = 2
-    
-  # 配置自定义渲染钩子
-  [markup.render-hooks]
-    [markup.render-hooks.codeblock]
-      # 这里不需要特别配置，我们将使用自定义HTML模板覆盖处理
 
-# 启用功能
+# ===========================================
+# 输出格式配置
+# ===========================================
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+  page = ["HTML"]
+
+[outputFormats]
+  [outputFormats.JSON]
+    mediaType = "application/json"
+    baseName = "index"
+    isPlainText = true
+  [outputFormats.RSS]
+    mediaType = "application/rss+xml"
+    baseName = "index"
+
+# ===========================================
+# 分页配置
+# ===========================================
+[pagination]
+  pagerSize = 6
+
+# ===========================================
+# 安全配置
+# ===========================================
 [security.funcs]
   getenv = ["^HUGO_"]
   getJSON = ['^https?://']
   getCSV = ['^https?://']
+
+# ===========================================
+# Sitemap 配置
+# ===========================================
+[sitemap]
+  changefreq = "daily"
+  priority = 0.5
+  filename = "sitemap.xml"

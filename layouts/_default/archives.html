@@ -1,85 +1,44 @@
 {{ define "main" }}
-<div class="container mx-auto px-4 sm:px-6 relative">
-    <header class="mb-8">
-        <h1 class="text-3xl font-bold mb-3 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-indigo-600">归档</h1>
-        <div class="text-gray-600 dark:text-gray-400 flex items-center">
-            <iconify-icon icon="mdi:archive-outline" class="mr-2" width="20" height="20"></iconify-icon>
-            所有文章按时间归档
+<div class="container mx-auto px-4 sm:px-6 py-6">
+    <header class="mb-6" role="banner">
+        <div class="flex items-center justify-between mb-4">
+            <h1 class="text-2xl font-bold text-blue-700 dark:text-blue-400">归档</h1>
+            <span class="text-sm text-gray-500 dark:text-gray-400">
+                共 {{ len site.RegularPages }} 篇文章
+            </span>
         </div>
+        <p class="text-sm text-gray-600 dark:text-gray-400 flex items-center">
+            <iconify-icon icon="mdi:archive-outline" class="mr-2" width="16" height="16" aria-hidden="true"></iconify-icon>
+            所有文章按时间归档
+        </p>
     </header>
     
-    <div class="bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 rounded-xl shadow-md p-6 border border-gray-100 dark:border-gray-700 transition-all duration-300 hover:shadow-lg">
+    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 border border-gray-200 dark:border-gray-700">
         {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
-        {{ $globalIndex := 0 }}
         
         <!-- 按年份分组 -->
         {{ range $pages.GroupByDate "2006" }}
-            <div class="mb-10 last:mb-0">
-                <h2 class="text-2xl font-bold mb-6 flex items-center">
-                    <div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-2 rounded-lg text-white mr-3 shadow-md">
-                        <iconify-icon icon="mdi:calendar-month" width="24" height="24"></iconify-icon>
+            <div class="mb-8 last:mb-0">
+                <h2 class="text-xl font-bold mb-4 flex items-center">
+                    <div class="bg-blue-100 dark:bg-blue-900/30 p-2 rounded-lg text-blue-700 dark:text-blue-300 mr-3">
+                        <iconify-icon icon="mdi:calendar-month" width="20" height="20"></iconify-icon>
                     </div>
                     {{ .Key }}
-                    <span class="ml-2 text-sm font-normal bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-300 px-3 py-1 rounded-full">{{ len .Pages }} 篇</span>
+                    <span class="ml-2 text-sm font-normal bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded">{{ len .Pages }} 篇</span>
                 </h2>
                 
-                <ul class="space-y-4 pl-4 border-l-2 border-gradient-to-b from-blue-500 to-indigo-600 ml-3">
-                    {{ range $index, $page := .Pages }}
-                        <li class="border-b border-gray-100 dark:border-gray-700 pb-4 last:border-0 last:pb-0 transition-all duration-300 hover:translate-x-1">
-                            <a href="{{ $page.Permalink }}" class="group flex items-start hover:text-primary">
-                                <span class="bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 px-3 py-1 rounded-full text-sm mr-4 transition-colors group-hover:bg-blue-100 group-hover:text-blue-800 dark:group-hover:bg-blue-900/50 dark:group-hover:text-blue-300">{{ $page.Date.Format "01-02" }}</span>
-                                <span class="font-medium group-hover:text-primary transition-colors">{{ $page.Title }}</span>
+                <ul class="space-y-2 pl-3 border-l-2 border-blue-200 dark:border-blue-800 ml-2">
+                    {{ range .Pages }}
+                        <li class="border-b border-gray-100 dark:border-gray-700 pb-2 last:border-0">
+                            <a href="{{ .Permalink }}" class="group flex items-center hover:text-blue-700 dark:hover:text-blue-400 transition-colors">
+                                <span class="bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 px-2 py-0.5 rounded text-xs mr-3">{{ .Date.Format "01-02" }}</span>
+                                <span class="font-medium">{{ .Title }}</span>
                             </a>
                         </li>
-                        
-                        <!-- 每10篇文章后插入纯文字流广告 -->
-                        {{ $globalIndex = add $globalIndex 1 }}
-                        {{ if and (gt $globalIndex 0) (eq (mod $globalIndex 10) 0) }}
-                        <li class="my-6 border-0">
-                            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700 p-4 -ml-4">
-                                <div class="text-xs text-gray-500 dark:text-gray-400 mb-2 text-center">广告位</div>
-                                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2874982874195135"
-                                     crossorigin="anonymous"></script>
-                                <div id="container-765d5a842abc46878512aa69bcb17212"></div>
-                                <ins class="adsbygoogle"
-                                     style="display:block"
-                                     data-ad-format="fluid"
-                                     data-ad-layout-key="-hl+a-w-1e+66"
-                                     data-ad-client="ca-pub-2874982874195135"
-                                     data-ad-slot="9906069356"></ins>
-                                <script>
-                                     (adsbygoogle = window.adsbygoogle || []).push({});
-                                </script>
-                            </div>
-                        </li>
-                        {{ end }}
                     {{ end }}
                 </ul>
             </div>
         {{ end }}
     </div>
-    
-    <!-- 纯文字流广告 -->
-    <div class="mt-8 bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden border border-gray-100 dark:border-gray-700 p-6">
-        <div class="text-xs text-gray-500 dark:text-gray-400 mb-3 text-center">广告位</div>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2874982874195135"
-             crossorigin="anonymous"></script>
-        <div id="container-765d5a842abc46878512aa69bcb17212"></div>
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-format="fluid"
-             data-ad-layout-key="-hl+a-w-1e+66"
-             data-ad-client="ca-pub-2874982874195135"
-             data-ad-slot="9906069356"></ins>
-        <script>
-             (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-    </div>
 </div>
-
-<style>
-.border-gradient-to-b {
-    border-image: linear-gradient(to bottom, #3b82f6, #4f46e5) 1;
-}
-</style>
-{{ end }} 
+{{ end }}

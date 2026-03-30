@@ -1,5 +1,5 @@
 ---
-url: /tr/posts/ff09bf3567c37a0a1450ba925ff96b84/
+url: /tr-TR/posts/ff09bf3567c37a0a1450ba925ff96b84/
 title: Snapdrop Kullanım Kılavuzu Telefon ve Bilgisayar Arasında Süreksiz Dosya Aktarımı, Güvenli ve Sınırsız
 date: 2025-11-22T14:41:18+08:00
 lastmod: 2025-11-22T14:41:18+08:00

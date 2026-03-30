@@ -1,5 +1,5 @@
 ---
-url: /pt-pt/posts/07755af00a1779ac0ab6cb087ff3eb04/
+url: /pt-PT/posts/07755af00a1779ac0ab6cb087ff3eb04/
 title: Player M3U8 Online - Ferramenta de Reprodução de Transmissão em Direto HLS Gratuita sem Anúncios com Controlo de Velocidade e Troca de Qualidade
 date: 2026-03-29T11:00:00+08:00
 lastmod: 2026-03-29T11:00:00+08:00
@@ -8,7 +8,7 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/1a85864f62f94469a825379a6d5b
 summary: |
   🎬 Player M3U8/HLS online profissional e gratuito, suporta transmissão em direto e arquivos de vídeo locais! Com controlo de velocidade de reprodução, troca de qualidade múltipla, modo de ecrã inteiro e mais, sem anúncios, nenhuma instalação necessária, use diretamente no navegador!
 categories:
-  - Ferramentas
+  - tweets
 tags:
   - Player M3U8
   - Reprodução HLS

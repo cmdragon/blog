@@ -1,5 +1,5 @@
 ---
-url: /lt/posts/07755af00a1779ac0ab6cb087ff3epfl/
+url: /lt-LT/posts/07755af00a1779ac0ab6cb087ff3epfl/
 title: Atlikta per 10 minučių! Išsamūs veiksmai, kaip prijungti AI Magic Resume prie nemokamų AI paslaugų
 date: 2026-03-29T07:40:34+08:00
 lastmod: 2026-03-29T07:40:34+08:00

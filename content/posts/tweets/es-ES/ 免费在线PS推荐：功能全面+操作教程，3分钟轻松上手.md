@@ -1,5 +1,5 @@
 ---
-url: /es/posts/cf9fbfaf3dcc1b5ada8161a06dda097d/
+url: /es-ES/posts/cf9fbfaf3dcc1b5ada8161a06dda097d/
 title: Recomendación de PS en línea gratuito Funcionalidades completas + tutoriales, ¡manejo en 3 minutos!
 date: 2025-12-08T06:55:19+08:00
 lastmod: 2025-12-08T06:55:19+08:00

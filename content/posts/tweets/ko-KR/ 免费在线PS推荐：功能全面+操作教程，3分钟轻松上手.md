@@ -1,5 +1,5 @@
 ---
-url: /ko/posts/cf9fbfaf3dcc1b5ada8161a06dda097d/
+url: /ko-KR/posts/cf9fbfaf3dcc1b5ada8161a06dda097d/
 title: 무료 온라인 PS 추천 기능 완비 + 사용 가이드, 3분 만에 쉽게 시작
 date: 2025-12-08T06:55:19+08:00
 lastmod: 2025-12-08T06:55:19+08:00

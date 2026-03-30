@@ -1,5 +1,5 @@
 ---
-url: /zh-tw/posts/83f41c2dcb5ca82f53afa9f93616945e/
+url: /zh-TW/posts/83f41c2dcb5ca82f53afa9f93616945e/
 title: snapdrop online
 date: 2025-12-12T20:05:38+08:00
 lastmod: 2025-12-12T20:05:38+08:00
