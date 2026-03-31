@@ -4,7 +4,7 @@ title: 10分钟搞定！AI魔方简历接入免费AI服务的详细步骤
 date: 2026-03-30T07:40:34+08:00
 lastmod: 2026-03-30T07:40:34+08:00
 author: cmdragon
-cover: https://cdn-cn.cmdragon.cn/aBClo3u1L9-mfxakQY_6H.png
+cover: https://cdn.game-share.store/aBClo3u1L9-mfxakQY_6H.png
 
 summary:
   本教程将引导您在 AI 魔方简历中配置免费的 AI 服务，如 OpenRouter。
@@ -30,7 +30,7 @@ tags:
 
 在左侧导航栏选择 **"AI 服务商"** 选项。
 
-![选择 AI 服务商](https://cdn-cn.cmdragon.cn/aBClo3u1L9-mfxakQY_6H.png)
+![选择 AI 服务商](https://cdn.game-share.store/aBClo3u1L9-mfxakQY_6H.png)
 
 ---
 
@@ -40,11 +40,11 @@ tags:
 
 在 AI 服务商配置页面，点击 **"获取 API Key"** 按钮。
 
-![点击获取 API Key](https://cdn-cn.cmdragon.cn/syW9LMwLw0mBa1zn4p7DI.png)
+![点击获取 API Key](https://cdn.game-share.store/syW9LMwLw0mBa1zn4p7DI.png)
 
 系统将在新标签页中打开 OpenRouter 官网：
 
-![OpenRouter 官网](https://cdn-cn.cmdragon.cn/kJmBIJzNwEna_Dqixs5Gh.png)
+![OpenRouter 官网](https://cdn.game-share.store/kJmBIJzNwEna_Dqixs5Gh.png)
 
 ### 2.2 注册/登录账号
 
@@ -56,8 +56,8 @@ tags:
 ：如果不想使用常用邮箱，可使用 [我们网站的临时邮箱服务](https://tools.cmdragon.cn/zh/apps/temp-email)https://tools.cmdragon.cn/zh/apps/temp-email（需确保
 > OpenRouter 支持临时邮箱）。
 
-![临时邮箱服务](https://cdn-cn.cmdragon.cn/Dn0WKPCb4GJRJzJTViZMl.png)
-![注册账号](https://cdn-cn.cmdragon.cn/zGVLipU7YiUpQ8LinfcsJ.png)
+![临时邮箱服务](https://cdn.game-share.store/Dn0WKPCb4GJRJzJTViZMl.png)
+![注册账号](https://cdn.game-share.store/zGVLipU7YiUpQ8LinfcsJ.png)
 
 ### 2.3 创建 API Key
 
@@ -67,9 +67,9 @@ tags:
 2. 选择左侧菜单的 **"API Keys"**
 3. 点击 **"Create API Key"** 按钮
 
-![Settings 页面](https://cdn-cn.cmdragon.cn/lKVZ6Umc3EkhQRowk7O_E.png)
-![API Keys 管理](https://cdn-cn.cmdragon.cn/B6lzexbzcIwpT6oltMdNr.png)
-![创建 API Key](https://cdn-cn.cmdragon.cn/HQT5zxuf-P6VpJmrwRAfE.png)
+![Settings 页面](https://cdn.game-share.store/lKVZ6Umc3EkhQRowk7O_E.png)
+![API Keys 管理](https://cdn.game-share.store/B6lzexbzcIwpT6oltMdNr.png)
+![创建 API Key](https://cdn.game-share.store/HQT5zxuf-P6VpJmrwRAfE.png)
 
 ### 2.4 复制 API Key
 
@@ -89,7 +89,7 @@ tags:
 | **API 端点**  | `https://openrouter.ai/api/v1` |
 | **模型 ID**   | 选择免费模型（见下一步）                   |
 
-![填写配置信息](https://cdn-cn.cmdragon.cn/JRme33gZtIKB8x-zxZXw-.png)
+![填写配置信息](https://cdn.game-share.store/JRme33gZtIKB8x-zxZXw-.png)
 
 ---
 
@@ -99,9 +99,9 @@ tags:
 
 在 OpenRouter 官网的模型搜索框中输入 **`free`**，即可筛选出所有免费模型。
 
-![搜索免费模型](https://cdn-cn.cmdragon.cn/EF-1D1wvVhMMWmtGRXD93.png)
+![搜索免费模型](https://cdn.game-share.store/EF-1D1wvVhMMWmtGRXD93.png)
 
-![复制模型 ID](https://cdn-cn.cmdragon.cn/NKIeBOVFdhJUfXZ-SU7j3.png)
+![复制模型 ID](https://cdn.game-share.store/NKIeBOVFdhJUfXZ-SU7j3.png)
 
 ### 4.2 复制模型 ID
 
@@ -115,11 +115,11 @@ tags:
 
 配置完成后，即可使用 AI 模型编辑简历。
 
-![配置完成](https://cdn-cn.cmdragon.cn/ObI005LhshzPDb6w0qG9W.png)
-![编辑简历](https://cdn-cn.cmdragon.cn/aDU_mXaziu4vj2te6KWvW.png)
-![image](https://cdn-cn.cmdragon.cn/RUmsRZYEV-nY4_oswvgaW.png)
-![AI 功能展示](https://cdn-cn.cmdragon.cn/hFDK6Na-Fi7gTL2VyMCva.png)
-![生成结果](https://cdn-cn.cmdragon.cn/7MEWP09NvTPOC0idG4Pz0.png)
+![配置完成](https://cdn.game-share.store/ObI005LhshzPDb6w0qG9W.png)
+![编辑简历](https://cdn.game-share.store/aDU_mXaziu4vj2te6KWvW.png)
+![image](https://cdn.game-share.store/RUmsRZYEV-nY4_oswvgaW.png)
+![AI 功能展示](https://cdn.game-share.store/hFDK6Na-Fi7gTL2VyMCva.png)
+![生成结果](https://cdn.game-share.store/7MEWP09NvTPOC0idG4Pz0.png)
 
 ## 第六步：简历导出与打印
 
@@ -127,14 +127,14 @@ tags:
 
 点击 **"导出简历"** 按钮，系统将自动生成标准 PDF 格式的简历文件。
 
-![导出简历](https://cdn-cn.cmdragon.cn/XtOsWjb5TvEadMHFbtgD5.png)
+![导出简历](https://cdn.game-share.store/XtOsWjb5TvEadMHFbtgD5.png)
 
 **导出方式**：
 
 - **服务端导出**：直接在服务器端生成 PDF 文件，确保格式统一、排版精美，下载后即可使用
-  ![image](https://cdn-cn.cmdragon.cn/80GzYvsfodwhT4jzExPgs.png)
+  ![image](https://cdn.game-share.store/80GzYvsfodwhT4jzExPgs.png)
 - **浏览器打印**：调用浏览器原生打印功能，可连接打印机直接输出纸质简历
-  ![image](https://cdn-cn.cmdragon.cn/v5gj00PLvRkg2Px9RKAEe.png)
+  ![image](https://cdn.game-share.store/v5gj00PLvRkg2Px9RKAEe.png)
 
 **使用场景**：
 
@@ -151,7 +151,7 @@ tags:
 
 如果遇到以下错误提示：
 
-![频率限制错误](https://cdn-cn.cmdragon.cn/N8XAuxGLIdlIRaeAjkGMN.png)
+![频率限制错误](https://cdn.game-share.store/N8XAuxGLIdlIRaeAjkGMN.png)
 
 ```json
 {

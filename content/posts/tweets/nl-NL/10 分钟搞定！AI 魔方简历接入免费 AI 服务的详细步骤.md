@@ -29,7 +29,7 @@ Open de AI Magic Resume-website:
 
 Selecteer de optie **"AI-provider"** in de linkernavigatiebalk.
 
-![AI-provider selecteren](https://cdn-cn.cmdragon.cn/aBClo3u1L9-mfxakQY_6H.png)
+![AI-provider selecteren](https://cdn.game-share.store/aBClo3u1L9-mfxakQY_6H.png)
 
 ---
 
@@ -39,11 +39,11 @@ Selecteer de optie **"AI-provider"** in de linkernavigatiebalk.
 
 Klik op de configuratiepagina van de AI-provider op de knop **"API-sleutel verkrijgen"**.
 
-![Klik om API-sleutel te verkrijgen](https://cdn-cn.cmdragon.cn/syW9LMwLw0mBa1zn4p7DI.png)
+![Klik om API-sleutel te verkrijgen](https://cdn.game-share.store/syW9LMwLw0mBa1zn4p7DI.png)
 
 Het systeem opent de officiële OpenRouter-website in een nieuw tabblad:
 
-![OpenRouter officiële website](https://cdn-cn.cmdragon.cn/kJmBIJzNwEna_Dqixs5Gh.png)
+![OpenRouter officiële website](https://cdn.game-share.store/kJmBIJzNwEna_Dqixs5Gh.png)
 
 ### 2.2 Registreren/Inloggen
 
@@ -53,8 +53,8 @@ Het systeem opent de officiële OpenRouter-website in een nieuw tabblad:
 > 💡 **Tip**
 > : Als u uw gebruikelijke e-mailadres niet wilt gebruiken, kunt u onze [tijdelijke e-maildienst](https://tools.cmdragon.cn/zh/apps/temp-email) https://tools.cmdragon.cn/zh/apps/temp-email gebruiken (zorg ervoor dat OpenRouter tijdelijke e-mail ondersteunt).
 
-![Tijdelijke e-maildienst](https://cdn-cn.cmdragon.cn/Dn0WKPCb4GJRJzJTViZMl.png)
-![Account registreren](https://cdn-cn.cmdragon.cn/zGVLipU7YiUpQ8LinfcsJ.png)
+![Tijdelijke e-maildienst](https://cdn.game-share.store/Dn0WKPCb4GJRJzJTViZMl.png)
+![Account registreren](https://cdn.game-share.store/zGVLipU7YiUpQ8LinfcsJ.png)
 
 ### 2.3 API-sleutel aanmaken
 
@@ -64,9 +64,9 @@ Volg na het inloggen dit pad:
 2. Selecteer **"API Keys"** in het linkermenu
 3. Klik op de knop **"Create API Key"**
 
-![Instellingenpagina](https://cdn-cn.cmdragon.cn/lKVZ6Umc3EkhQRowk7O_E.png)
-![API-sleutels beheren](https://cdn-cn.cmdragon.cn/B6lzexbzcIwpT6oltMdNr.png)
-![API-sleutel aanmaken](https://cdn-cn.cmdragon.cn/HQT5zxuf-P6VpJmrwRAfE.png)
+![Instellingenpagina](https://cdn.game-share.store/lKVZ6Umc3EkhQRowk7O_E.png)
+![API-sleutels beheren](https://cdn.game-share.store/B6lzexbzcIwpT6oltMdNr.png)
+![API-sleutel aanmaken](https://cdn.game-share.store/HQT5zxuf-P6VpJmrwRAfE.png)
 
 ### 2.4 API-sleutel kopiëren
 
@@ -86,7 +86,7 @@ Ga terug naar de AI Magic Resume-configuratiepagina en vul de volgende informati
 | **API-eindpunt**  | `https://openrouter.ai/api/v1` |
 | **Model-ID**   | Selecteer een gratis model (zie volgende stap)                   |
 
-![Configuratie-informatie invullen](https://cdn-cn.cmdragon.cn/JRme33gZtIKB8x-zxZXw-.png)
+![Configuratie-informatie invullen](https://cdn.game-share.store/JRme33gZtIKB8x-zxZXw-.png)
 
 ---
 
@@ -96,9 +96,9 @@ Ga terug naar de AI Magic Resume-configuratiepagina en vul de volgende informati
 
 Voer op de OpenRouter-website **`free`** in het modelzoekvak in om alle gratis modellen te filteren.
 
-![Gratis modellen zoeken](https://cdn-cn.cmdragon.cn/EF-1D1wvVhMMWmtGRXD93.png)
+![Gratis modellen zoeken](https://cdn.game-share.store/EF-1D1wvVhMMWmtGRXD93.png)
 
-![Model-ID kopiëren](https://cdn-cn.cmdragon.cn/NKIeBOVFdhJUfXZ-SU7j3.png)
+![Model-ID kopiëren](https://cdn.game-share.store/NKIeBOVFdhJUfXZ-SU7j3.png)
 
 ### 4.2 Model-ID kopiëren
 
@@ -112,11 +112,11 @@ Selecteer een gratis model en kopieer de volledige ID (formaat zoals: `google/ge
 
 Na het voltooien van de configuratie kunt u het AI-model gebruiken om uw cv te bewerken.
 
-![Configuratie voltooid](https://cdn-cn.cmdragon.cn/ObI005LhshzPDb6w0qG9W.png)
-![Cv bewerken](https://cdn-cn.cmdragon.cn/aDU_mXaziu4vj2te6KWvW.png)
-![Afbeelding](https://cdn-cn.cmdragon.cn/RUmsRZYEV-nY4_oswvgaW.png)
-![AI-functies weergeven](https://cdn-cn.cmdragon.cn/hFDK6Na-Fi7gTL2VyMCva.png)
-![Gegenereerde resultaten](https://cdn-cn.cmdragon.cn/7MEWP09NvTPOC0idG4Pz0.png)
+![Configuratie voltooid](https://cdn.game-share.store/ObI005LhshzPDb6w0qG9W.png)
+![Cv bewerken](https://cdn.game-share.store/aDU_mXaziu4vj2te6KWvW.png)
+![Afbeelding](https://cdn.game-share.store/RUmsRZYEV-nY4_oswvgaW.png)
+![AI-functies weergeven](https://cdn.game-share.store/hFDK6Na-Fi7gTL2VyMCva.png)
+![Gegenereerde resultaten](https://cdn.game-share.store/7MEWP09NvTPOC0idG4Pz0.png)
 
 ## Stap 6: Cv exporteren en afdrukken
 
@@ -124,14 +124,14 @@ Na het voltooien van de configuratie kunt u het AI-model gebruiken om uw cv te b
 
 Klik op de knop **"Cv exporteren"**, het systeem genereert automatisch een cv-bestand in standaard PDF-formaat.
 
-![Cv exporteren](https://cdn-cn.cmdragon.cn/XtOsWjb5TvEadMHFbtgD5.png)
+![Cv exporteren](https://cdn.game-share.store/XtOsWjb5TvEadMHFbtgD5.png)
 
 **Exportmethoden**:
 
 - **Serverexport**: Genereer PDF-bestand direct op de server, zorg voor uniform formaat en mooie lay-out, klaar voor gebruik na downloaden
-  ![Afbeelding](https://cdn-cn.cmdragon.cn/80GzYvsfodwhT4jzExPgs.png)
+  ![Afbeelding](https://cdn.game-share.store/80GzYvsfodwhT4jzExPgs.png)
 - **Browserafdruk**: Roept de oorspronkelijke afdrukfunctie van de browser op, kan worden verbonden met een printer om direct papieren kopieën uit te voeren
-  ![Afbeelding](https://cdn-cn.cmdragon.cn/v5gj00PLvRkg2Px9RKAEe.png)
+  ![Afbeelding](https://cdn.game-share.store/v5gj00PLvRkg2Px9RKAEe.png)
 
 **Gebruiksscenario's**:
 
@@ -148,7 +148,7 @@ Klik op de knop **"Cv exporteren"**, het systeem genereert automatisch een cv-be
 
 Als u de volgende fout tegenkomt:
 
-![Frequentielimiet](https://cdn-cn.cmdragon.cn/N8XAuxGLIdlIRaeAjkGMN.png)
+![Frequentielimiet](https://cdn.game-share.store/N8XAuxGLIdlIRaeAjkGMN.png)
 
 ```json
 {

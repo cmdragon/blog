@@ -29,7 +29,7 @@ tags:
 
 Виберіть опцію **"Постачальник ШІ"** в лівій панелі навігації.
 
-![Вибрати постачальника ШІ](https://cdn-cn.cmdragon.cn/aBClo3u1L9-mfxakQY_6H.png)
+![Вибрати постачальника ШІ](https://cdn.game-share.store/aBClo3u1L9-mfxakQY_6H.png)
 
 ---
 
@@ -39,11 +39,11 @@ tags:
 
 На сторінці налаштування постачальника ШІ натисніть кнопку **"Отримати API-ключ"**.
 
-![Натисніть, щоб отримати API-ключ](https://cdn-cn.cmdragon.cn/syW9LMwLw0mBa1zn4p7DI.png)
+![Натисніть, щоб отримати API-ключ](https://cdn.game-share.store/syW9LMwLw0mBa1zn4p7DI.png)
 
 Система відкриє офіційний веб-сайт OpenRouter у новій вкладці:
 
-![Офіційний веб-сайт OpenRouter](https://cdn-cn.cmdragon.cn/kJmBIJzNwEna_Dqixs5Gh.png)
+![Офіційний веб-сайт OpenRouter](https://cdn.game-share.store/kJmBIJzNwEna_Dqixs5Gh.png)
 
 ### 2.2 Реєстрація/Вхід
 
@@ -53,8 +53,8 @@ tags:
 > 💡 **Порада**
 > : Якщо ви не хочете використовувати свою звичайну електронну пошту, ви можете скористатися нашим [сервісом тимчасової електронної пошти](https://tools.cmdragon.cn/zh/apps/temp-email) https://tools.cmdragon.cn/zh/apps/temp-email (переконайтеся, що OpenRouter підтримує тимчасову електронну пошту).
 
-![Сервіс тимчасової електронної пошти](https://cdn-cn.cmdragon.cn/Dn0WKPCb4GJRJzJTViZMl.png)
-![Зареєструвати обліковий запис](https://cdn-cn.cmdragon.cn/zGVLipU7YiUpQ8LinfcsJ.png)
+![Сервіс тимчасової електронної пошти](https://cdn.game-share.store/Dn0WKPCb4GJRJzJTViZMl.png)
+![Зареєструвати обліковий запис](https://cdn.game-share.store/zGVLipU7YiUpQ8LinfcsJ.png)
 
 ### 2.3 Створити API-ключ
 
@@ -64,9 +64,9 @@ tags:
 2. Виберіть **"API Keys"** у лівому меню
 3. Натисніть кнопку **"Create API Key"**
 
-![Сторінка налаштувань](https://cdn-cn.cmdragon.cn/lKVZ6Umc3EkhQRowk7O_E.png)
-![Управління API-ключами](https://cdn-cn.cmdragon.cn/B6lzexbzcIwpT6oltMdNr.png)
-![Створити API-ключ](https://cdn-cn.cmdragon.cn/HQT5zxuf-P6VpJmrwRAfE.png)
+![Сторінка налаштувань](https://cdn.game-share.store/lKVZ6Umc3EkhQRowk7O_E.png)
+![Управління API-ключами](https://cdn.game-share.store/B6lzexbzcIwpT6oltMdNr.png)
+![Створити API-ключ](https://cdn.game-share.store/HQT5zxuf-P6VpJmrwRAfE.png)
 
 ### 2.4 Копіювати API-ключ
 
@@ -86,7 +86,7 @@ tags:
 | **Кінцева точка API**  | `https://openrouter.ai/api/v1` |
 | **ID моделі**   | Виберіть безкоштовну модель (див. наступний крок)                   |
 
-![Заповнити інформацію про налаштування](https://cdn-cn.cmdragon.cn/JRme33gZtIKB8x-zxZXw-.png)
+![Заповнити інформацію про налаштування](https://cdn.game-share.store/JRme33gZtIKB8x-zxZXw-.png)
 
 ---
 
@@ -96,9 +96,9 @@ tags:
 
 На веб-сайті OpenRouter введіть **`free`** у полі пошуку моделей, щоб відфільтрувати всі безкоштовні моделі.
 
-![Пошук безкоштовних моделей](https://cdn-cn.cmdragon.cn/EF-1D1wvVhMMWmtGRXD93.png)
+![Пошук безкоштовних моделей](https://cdn.game-share.store/EF-1D1wvVhMMWmtGRXD93.png)
 
-![Копіювати ID моделі](https://cdn-cn.cmdragon.cn/NKIeBOVFdhJUfXZ-SU7j3.png)
+![Копіювати ID моделі](https://cdn.game-share.store/NKIeBOVFdhJUfXZ-SU7j3.png)
 
 ### 4.2 Копіювати ID моделі
 
@@ -112,11 +112,11 @@ tags:
 
 Після завершення налаштування ви можете використовувати модель ШІ для редагування свого резюме.
 
-![Налаштування завершено](https://cdn-cn.cmdragon.cn/ObI005LhshzPDb6w0qG9W.png)
-![Редагувати резюме](https://cdn-cn.cmdragon.cn/aDU_mXaziu4vj2te6KWvW.png)
-![Зображення](https://cdn-cn.cmdragon.cn/RUmsRZYEV-nY4_oswvgaW.png)
-![Відображення функцій ШІ](https://cdn-cn.cmdragon.cn/hFDK6Na-Fi7gTL2VyMCva.png)
-![Згенеровані результати](https://cdn-cn.cmdragon.cn/7MEWP09NvTPOC0idG4Pz0.png)
+![Налаштування завершено](https://cdn.game-share.store/ObI005LhshzPDb6w0qG9W.png)
+![Редагувати резюме](https://cdn.game-share.store/aDU_mXaziu4vj2te6KWvW.png)
+![Зображення](https://cdn.game-share.store/RUmsRZYEV-nY4_oswvgaW.png)
+![Відображення функцій ШІ](https://cdn.game-share.store/hFDK6Na-Fi7gTL2VyMCva.png)
+![Згенеровані результати](https://cdn.game-share.store/7MEWP09NvTPOC0idG4Pz0.png)
 
 ## Крок 6: Експорт та друк резюме
 
@@ -124,14 +124,14 @@ tags:
 
 Натисніть кнопку **"Експортувати резюме"**, система автоматично створить файл резюме у стандартному форматі PDF.
 
-![Експортувати резюме](https://cdn-cn.cmdragon.cn/XtOsWjb5TvEadMHFbtgD5.png)
+![Експортувати резюме](https://cdn.game-share.store/XtOsWjb5TvEadMHFbtgD5.png)
 
 **Способи експорту**:
 
 - **Експорт з сервера**: Створення PDF-файлу безпосередньо на сервері, забезпечення уніфікованого формату і гарного макету, готово до використання після завантаження
-  ![Зображення](https://cdn-cn.cmdragon.cn/80GzYvsfodwhT4jzExPgs.png)
+  ![Зображення](https://cdn.game-share.store/80GzYvsfodwhT4jzExPgs.png)
 - **Друк у браузері**: Викликає власну функцію друку браузера, може підключатися до принтера для безпосереднього виводу паперових копій
-  ![Зображення](https://cdn-cn.cmdragon.cn/v5gj00PLvRkg2Px9RKAEe.png)
+  ![Зображення](https://cdn.game-share.store/v5gj00PLvRkg2Px9RKAEe.png)
 
 **Сценарії використання**:
 
@@ -148,7 +148,7 @@ tags:
 
 Якщо ви зіткнулися з наступною помилкою:
 
-![Обмеження частоти](https://cdn-cn.cmdragon.cn/N8XAuxGLIdlIRaeAjkGMN.png)
+![Обмеження частоти](https://cdn.game-share.store/N8XAuxGLIdlIRaeAjkGMN.png)
 
 ```json
 {

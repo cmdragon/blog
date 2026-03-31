@@ -29,7 +29,7 @@ tags:
 
 Wählen Sie in der linken Navigationsleiste die Option **"AI-Anbieter"**.
 
-![AI-Anbieter auswählen](https://cdn-cn.cmdragon.cn/aBClo3u1L9-mfxakQY_6H.png)
+![AI-Anbieter auswählen](https://cdn.game-share.store/aBClo3u1L9-mfxakQY_6H.png)
 
 ---
 
@@ -39,11 +39,11 @@ Wählen Sie in der linken Navigationsleiste die Option **"AI-Anbieter"**.
 
 Klicken Sie auf der Konfigurationsseite des KI-Anbieters auf die Schaltfläche **"API-Schlüssel abrufen"**.
 
-![Klicken, um API-Schlüssel zu erhalten](https://cdn-cn.cmdragon.cn/syW9LMwLw0mBa1zn4p7DI.png)
+![Klicken, um API-Schlüssel zu erhalten](https://cdn.game-share.store/syW9LMwLw0mBa1zn4p7DI.png)
 
 Das System öffnet die offizielle OpenRouter-Website in einem neuen Tab:
 
-![OpenRouter offizielle Website](https://cdn-cn.cmdragon.cn/kJmBIJzNwEna_Dqixs5Gh.png)
+![OpenRouter offizielle Website](https://cdn.game-share.store/kJmBIJzNwEna_Dqixs5Gh.png)
 
 ### 2.2 Registrieren/Anmelden
 
@@ -53,8 +53,8 @@ Das System öffnet die offizielle OpenRouter-Website in einem neuen Tab:
 > 💡 **Tipp**
 > : Wenn Sie Ihre übliche E-Mail-Adresse nicht verwenden möchten, können Sie unseren [ temporären E-Mail-Dienst](https://tools.cmdragon.cn/zh/apps/temp-email) https://tools.cmdragon.cn/zh/apps/temp-email verwenden (stellen Sie sicher, dass OpenRouter temporäre E-Mails unterstützt).
 
-![Temporärer E-Mail-Dienst](https://cdn-cn.cmdragon.cn/Dn0WKPCb4GJRJzJTViZMl.png)
-![Konto registrieren](https://cdn-cn.cmdragon.cn/zGVLipU7YiUpQ8LinfcsJ.png)
+![Temporärer E-Mail-Dienst](https://cdn.game-share.store/Dn0WKPCb4GJRJzJTViZMl.png)
+![Konto registrieren](https://cdn.game-share.store/zGVLipU7YiUpQ8LinfcsJ.png)
 
 ### 2.3 API-Schlüssel erstellen
 
@@ -64,9 +64,9 @@ Melden Sie sich an und folgen Sie diesem Pfad:
 2. Wählen Sie im linken Menü **"API Keys"**
 3. Klicken Sie auf die Schaltfläche **"Create API Key"**
 
-![Einstellungen-Seite](https://cdn-cn.cmdragon.cn/lKVZ6Umc3EkhQRowk7O_E.png)
-![API-Schlüssel verwalten](https://cdn-cn.cmdragon.cn/B6lzexbzcIwpT6oltMdNr.png)
-![API-Schlüssel erstellen](https://cdn-cn.cmdragon.cn/HQT5zxuf-P6VpJmrwRAfE.png)
+![Einstellungen-Seite](https://cdn.game-share.store/lKVZ6Umc3EkhQRowk7O_E.png)
+![API-Schlüssel verwalten](https://cdn.game-share.store/B6lzexbzcIwpT6oltMdNr.png)
+![API-Schlüssel erstellen](https://cdn.game-share.store/HQT5zxuf-P6VpJmrwRAfE.png)
 
 ### 2.4 API-Schlüssel kopieren
 
@@ -86,7 +86,7 @@ Zurück auf der AI Magic Resume-Konfigurationsseite füllen Sie die folgenden In
 | **API-Endpunkt**  | `https://openrouter.ai/api/v1` |
 | **Modell-ID**   | Wählen Sie ein kostenloses Modell (siehe nächster Schritt)                   |
 
-![Konfigurationsinformationen ausfüllen](https://cdn-cn.cmdragon.cn/JRme33gZtIKB8x-zxZXw-.png)
+![Konfigurationsinformationen ausfüllen](https://cdn.game-share.store/JRme33gZtIKB8x-zxZXw-.png)
 
 ---
 
@@ -96,9 +96,9 @@ Zurück auf der AI Magic Resume-Konfigurationsseite füllen Sie die folgenden In
 
 Geben Sie auf der OpenRouter-Website im Modellsuchfeld **`free`** ein, um alle kostenlosen Modelle zu filtern.
 
-![Kostenlose Modelle suchen](https://cdn-cn.cmdragon.cn/EF-1D1wvVhMMWmtGRXD93.png)
+![Kostenlose Modelle suchen](https://cdn.game-share.store/EF-1D1wvVhMMWmtGRXD93.png)
 
-![Modell-ID kopieren](https://cdn-cn.cmdragon.cn/NKIeBOVFdhJUfXZ-SU7j3.png)
+![Modell-ID kopieren](https://cdn.game-share.store/NKIeBOVFdhJUfXZ-SU7j3.png)
 
 ### 4.2 Modell-ID kopieren
 
@@ -112,11 +112,11 @@ Wählen Sie ein beliebiges kostenloses Modell aus und kopieren Sie die vollstän
 
 Nach Abschluss der Konfiguration können Sie das KI-Modell zur Bearbeitung Ihres Lebenslaufs verwenden.
 
-![Konfiguration abgeschlossen](https://cdn-cn.cmdragon.cn/ObI005LhshzPDb6w0qG9W.png)
-![Lebenslauf bearbeiten](https://cdn-cn.cmdragon.cn/aDU_mXaziu4vj2te6KWvW.png)
-![Bild](https://cdn-cn.cmdragon.cn/RUmsRZYEV-nY4_oswvgaW.png)
-![KI-Funktionen anzeigen](https://cdn-cn.cmdragon.cn/hFDK6Na-Fi7gTL2VyMCva.png)
-![Erstellte Ergebnisse](https://cdn-cn.cmdragon.cn/7MEWP09NvTPOC0idG4Pz0.png)
+![Konfiguration abgeschlossen](https://cdn.game-share.store/ObI005LhshzPDb6w0qG9W.png)
+![Lebenslauf bearbeiten](https://cdn.game-share.store/aDU_mXaziu4vj2te6KWvW.png)
+![Bild](https://cdn.game-share.store/RUmsRZYEV-nY4_oswvgaW.png)
+![KI-Funktionen anzeigen](https://cdn.game-share.store/hFDK6Na-Fi7gTL2VyMCva.png)
+![Erstellte Ergebnisse](https://cdn.game-share.store/7MEWP09NvTPOC0idG4Pz0.png)
 
 ## Schritt 6: Lebenslauf exportieren und drucken
 
@@ -124,14 +124,14 @@ Nach Abschluss der Konfiguration können Sie das KI-Modell zur Bearbeitung Ihres
 
 Klicken Sie auf die Schaltfläche **"Lebenslauf exportieren"**, das System erstellt automatisch eine standardmäßige PDF-Lebenslaufdatei.
 
-![Lebenslauf exportieren](https://cdn-cn.cmdragon.cn/XtOsWjb5TvEadMHFbtgD5.png)
+![Lebenslauf exportieren](https://cdn.game-share.store/XtOsWjb5TvEadMHFbtgD5.png)
 
 **Exportmethoden**:
 
 - **Server-Export**: PDF-Datei direkt auf dem Server erstellen, um einheitliches Format und schönes Layout zu gewährleisten, nach dem Download sofort verwendbar
-  ![Bild](https://cdn-cn.cmdragon.cn/80GzYvsfodwhT4jzExPgs.png)
+  ![Bild](https://cdn.game-share.store/80GzYvsfodwhT4jzExPgs.png)
 - **Browser-Druck**: Ruft die native Druckfunktion des Browsers auf, kann an einen Drucker angeschlossen werden, um direkt Papierkopien auszugeben
-  ![Bild](https://cdn-cn.cmdragon.cn/v5gj00PLvRkg2Px9RKAEe.png)
+  ![Bild](https://cdn.game-share.store/v5gj00PLvRkg2Px9RKAEe.png)
 
 **Verwendungsszenarien**:
 
@@ -148,7 +148,7 @@ Klicken Sie auf die Schaltfläche **"Lebenslauf exportieren"**, das System erste
 
 Wenn Sie den folgenden Fehler erhalten:
 
-![Ratenbegrenzung](https://cdn-cn.cmdragon.cn/N8XAuxGLIdlIRaeAjkGMN.png)
+![Ratenbegrenzung](https://cdn.game-share.store/N8XAuxGLIdlIRaeAjkGMN.png)
 
 ```json
 {

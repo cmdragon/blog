@@ -29,7 +29,7 @@ Apri il sito web AI Magic Resume:
 
 Seleziona l'opzione **"Fornitore di IA"** nella barra di navigazione sinistra.
 
-![Seleziona fornitore di IA](https://cdn-cn.cmdragon.cn/aBClo3u1L9-mfxakQY_6H.png)
+![Seleziona fornitore di IA](https://cdn.game-share.store/aBClo3u1L9-mfxakQY_6H.png)
 
 ---
 
@@ -39,11 +39,11 @@ Seleziona l'opzione **"Fornitore di IA"** nella barra di navigazione sinistra.
 
 Nella pagina di configurazione del fornitore di IA, fai clic sul pulsante **"Ottieni chiave API"**.
 
-![Fai clic per ottenere la chiave API](https://cdn-cn.cmdragon.cn/syW9LMwLw0mBa1zn4p7DI.png)
+![Fai clic per ottenere la chiave API](https://cdn.game-share.store/syW9LMwLw0mBa1zn4p7DI.png)
 
 Il sistema aprirà il sito ufficiale OpenRouter in una nuova scheda:
 
-![Sito ufficiale OpenRouter](https://cdn-cn.cmdragon.cn/kJmBIJzNwEna_Dqixs5Gh.png)
+![Sito ufficiale OpenRouter](https://cdn.game-share.store/kJmBIJzNwEna_Dqixs5Gh.png)
 
 ### 2.2 Registrarsi/Accedere
 
@@ -53,8 +53,8 @@ Il sistema aprirà il sito ufficiale OpenRouter in una nuova scheda:
 > 💡 **Suggerimento**
 > : Se non vuoi usare la tua email abituale, puoi usare il nostro [servizio di email temporanea](https://tools.cmdragon.cn/zh/apps/temp-email) https://tools.cmdragon.cn/zh/apps/temp-email (assicurati che OpenRouter supporti le email temporanee).
 
-![Servizio di email temporanea](https://cdn-cn.cmdragon.cn/Dn0WKPCb4GJRJzJTViZMl.png)
-![Registrare un account](https://cdn-cn.cmdragon.cn/zGVLipU7YiUpQ8LinfcsJ.png)
+![Servizio di email temporanea](https://cdn.game-share.store/Dn0WKPCb4GJRJzJTViZMl.png)
+![Registrare un account](https://cdn.game-share.store/zGVLipU7YiUpQ8LinfcsJ.png)
 
 ### 2.3 Creare una chiave API
 
@@ -64,9 +64,9 @@ Dopo aver effettuato l'accesso, segui questo percorso:
 2. Seleziona **"API Keys"** dal menu sinistro
 3. Fai clic sul pulsante **"Create API Key"**
 
-![Pagina delle impostazioni](https://cdn-cn.cmdragon.cn/lKVZ6Umc3EkhQRowk7O_E.png)
-![Gestire le chiavi API](https://cdn-cn.cmdragon.cn/B6lzexbzcIwpT6oltMdNr.png)
-![Creare una chiave API](https://cdn-cn.cmdragon.cn/HQT5zxuf-P6VpJmrwRAfE.png)
+![Pagina delle impostazioni](https://cdn.game-share.store/lKVZ6Umc3EkhQRowk7O_E.png)
+![Gestire le chiavi API](https://cdn.game-share.store/B6lzexbzcIwpT6oltMdNr.png)
+![Creare una chiave API](https://cdn.game-share.store/HQT5zxuf-P6VpJmrwRAfE.png)
 
 ### 2.4 Copiare la chiave API
 
@@ -86,7 +86,7 @@ Torna alla pagina di configurazione di AI Magic Resume e compila le seguenti inf
 | **Endpoint API**  | `https://openrouter.ai/api/v1` |
 | **ID modello**   | Seleziona un modello gratuito (vedi il prossimo passaggio)                   |
 
-![Compilare le informazioni di configurazione](https://cdn-cn.cmdragon.cn/JRme33gZtIKB8x-zxZXw-.png)
+![Compilare le informazioni di configurazione](https://cdn.game-share.store/JRme33gZtIKB8x-zxZXw-.png)
 
 ---
 
@@ -96,9 +96,9 @@ Torna alla pagina di configurazione di AI Magic Resume e compila le seguenti inf
 
 Sul sito web OpenRouter, inserisci **`free`** nella casella di ricerca dei modelli per filtrare tutti i modelli gratuiti.
 
-![Cercare modelli gratuiti](https://cdn-cn.cmdragon.cn/EF-1D1wvVhMMWmtGRXD93.png)
+![Cercare modelli gratuiti](https://cdn.game-share.store/EF-1D1wvVhMMWmtGRXD93.png)
 
-![Copiare l'ID del modello](https://cdn-cn.cmdragon.cn/NKIeBOVFdhJUfXZ-SU7j3.png)
+![Copiare l'ID del modello](https://cdn.game-share.store/NKIeBOVFdhJUfXZ-SU7j3.png)
 
 ### 4.2 Copiare l'ID del modello
 
@@ -112,11 +112,11 @@ Seleziona qualsiasi modello gratuito e copia il suo ID completo (formato come: `
 
 Dopo aver completato la configurazione, puoi usare il modello di IA per modificare il tuo curriculum.
 
-![Configurazione completata](https://cdn-cn.cmdragon.cn/ObI005LhshzPDb6w0qG9W.png)
-![Modificare il curriculum](https://cdn-cn.cmdragon.cn/aDU_mXaziu4vj2te6KWvW.png)
-![Immagine](https://cdn-cn.cmdragon.cn/RUmsRZYEV-nY4_oswvgaW.png)
-![Visualizzazione delle funzionalità di IA](https://cdn-cn.cmdragon.cn/hFDK6Na-Fi7gTL2VyMCva.png)
-![Risultati generati](https://cdn-cn.cmdragon.cn/7MEWP09NvTPOC0idG4Pz0.png)
+![Configurazione completata](https://cdn.game-share.store/ObI005LhshzPDb6w0qG9W.png)
+![Modificare il curriculum](https://cdn.game-share.store/aDU_mXaziu4vj2te6KWvW.png)
+![Immagine](https://cdn.game-share.store/RUmsRZYEV-nY4_oswvgaW.png)
+![Visualizzazione delle funzionalità di IA](https://cdn.game-share.store/hFDK6Na-Fi7gTL2VyMCva.png)
+![Risultati generati](https://cdn.game-share.store/7MEWP09NvTPOC0idG4Pz0.png)
 
 ## Passaggio 6: Esportare e stampare il curriculum
 
@@ -124,14 +124,14 @@ Dopo aver completato la configurazione, puoi usare il modello di IA per modifica
 
 Fai clic sul pulsante **"Esporta curriculum"**, il sistema genererà automaticamente un file di curriculum in formato PDF standard.
 
-![Esportare il curriculum](https://cdn-cn.cmdragon.cn/XtOsWjb5TvEadMHFbtgD5.png)
+![Esportare il curriculum](https://cdn.game-share.store/XtOsWjb5TvEadMHFbtgD5.png)
 
 **Metodi di esportazione**:
 
 - **Esportazione server**: Genera file PDF direttamente sul server, assicurando formato uniforme e layout bellissimo, pronto all'uso dopo il download
-  ![Immagine](https://cdn-cn.cmdragon.cn/80GzYvsfodwhT4jzExPgs.png)
+  ![Immagine](https://cdn.game-share.store/80GzYvsfodwhT4jzExPgs.png)
 - **Stampa browser**: Chiama la funzione di stampa nativa del browser, può collegarsi alla stampante per stampare copie cartacee direttamente
-  ![Immagine](https://cdn-cn.cmdragon.cn/v5gj00PLvRkg2Px9RKAEe.png)
+  ![Immagine](https://cdn.game-share.store/v5gj00PLvRkg2Px9RKAEe.png)
 
 **Scenari di utilizzo**:
 
@@ -148,7 +148,7 @@ Fai clic sul pulsante **"Esporta curriculum"**, il sistema genererà automaticam
 
 Se incontri il seguente errore:
 
-![Limite di frequenza](https://cdn-cn.cmdragon.cn/N8XAuxGLIdlIRaeAjkGMN.png)
+![Limite di frequenza](https://cdn.game-share.store/N8XAuxGLIdlIRaeAjkGMN.png)
 
 ```json
 {

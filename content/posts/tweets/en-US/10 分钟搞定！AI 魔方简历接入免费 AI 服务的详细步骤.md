@@ -29,7 +29,7 @@ Open the AI Magic Resume website:
 
 Select the **"AI Provider"** option in the left navigation bar.
 
-![Select AI Provider](https://cdn-cn.cmdragon.cn/aBClo3u1L9-mfxakQY_6H.png)
+![Select AI Provider](https://cdn.game-share.store/aBClo3u1L9-mfxakQY_6H.png)
 
 ---
 
@@ -39,11 +39,11 @@ Select the **"AI Provider"** option in the left navigation bar.
 
 On the AI provider configuration page, click the **"Get API Key"** button.
 
-![Click to Get API Key](https://cdn-cn.cmdragon.cn/syW9LMwLw0mBa1zn4p7DI.png)
+![Click to Get API Key](https://cdn.game-share.store/syW9LMwLw0mBa1zn4p7DI.png)
 
 The system will open the official OpenRouter website in a new tab:
 
-![OpenRouter Official Website](https://cdn-cn.cmdragon.cn/kJmBIJzNwEna_Dqixs5Gh.png)
+![OpenRouter Official Website](https://cdn.game-share.store/kJmBIJzNwEna_Dqixs5Gh.png)
 
 ### 2.2 Register/Login
 
@@ -53,8 +53,8 @@ The system will open the official OpenRouter website in a new tab:
 > 💡 **Tip**
 > : If you don't want to use your regular email, you can use our [temporary email service](https://tools.cmdragon.cn/zh/apps/temp-email) https://tools.cmdragon.cn/zh/apps/temp-email (make sure OpenRouter supports temporary email).
 
-![Temporary Email Service](https://cdn-cn.cmdragon.cn/Dn0WKPCb4GJRJzJTViZMl.png)
-![Register Account](https://cdn-cn.cmdragon.cn/zGVLipU7YiUpQ8LinfcsJ.png)
+![Temporary Email Service](https://cdn.game-share.store/Dn0WKPCb4GJRJzJTViZMl.png)
+![Register Account](https://cdn.game-share.store/zGVLipU7YiUpQ8LinfcsJ.png)
 
 ### 2.3 Create API Key
 
@@ -64,9 +64,9 @@ After logging in, follow this path:
 2. Select **"API Keys"** from the left menu
 3. Click the **"Create API Key"** button
 
-![Settings Page](https://cdn-cn.cmdragon.cn/lKVZ6Umc3EkhQRowk7O_E.png)
-![Manage API Keys](https://cdn-cn.cmdragon.cn/B6lzexbzcIwpT6oltMdNr.png)
-![Create API Key](https://cdn-cn.cmdragon.cn/HQT5zxuf-P6VpJmrwRAfE.png)
+![Settings Page](https://cdn.game-share.store/lKVZ6Umc3EkhQRowk7O_E.png)
+![Manage API Keys](https://cdn.game-share.store/B6lzexbzcIwpT6oltMdNr.png)
+![Create API Key](https://cdn.game-share.store/HQT5zxuf-P6VpJmrwRAfE.png)
 
 ### 2.4 Copy API Key
 
@@ -86,7 +86,7 @@ Return to the AI Magic Resume configuration page and fill in the following infor
 | **API Endpoint**  | `https://openrouter.ai/api/v1` |
 | **Model ID**   | Select a free model (see next step)                   |
 
-![Fill in Configuration Information](https://cdn-cn.cmdragon.cn/JRme33gZtIKB8x-zxZXw-.png)
+![Fill in Configuration Information](https://cdn.game-share.store/JRme33gZtIKB8x-zxZXw-.png)
 
 ---
 
@@ -96,9 +96,9 @@ Return to the AI Magic Resume configuration page and fill in the following infor
 
 On the OpenRouter website, enter **`free`** in the model search box to filter all free models.
 
-![Search for Free Models](https://cdn-cn.cmdragon.cn/EF-1D1wvVhMMWmtGRXD93.png)
+![Search for Free Models](https://cdn.game-share.store/EF-1D1wvVhMMWmtGRXD93.png)
 
-![Copy Model ID](https://cdn-cn.cmdragon.cn/NKIeBOVFdhJUfXZ-SU7j3.png)
+![Copy Model ID](https://cdn.game-share.store/NKIeBOVFdhJUfXZ-SU7j3.png)
 
 ### 4.2 Copy Model ID
 
@@ -112,11 +112,11 @@ Select any free model and copy its full ID (format like: `google/gemma-3-27b-it:
 
 After configuration is complete, you can use the AI model to edit your resume.
 
-![Configuration Complete](https://cdn-cn.cmdragon.cn/ObI005LhshzPDb6w0qG9W.png)
-![Edit Resume](https://cdn-cn.cmdragon.cn/aDU_mXaziu4vj2te6KWvW.png)
-![Image](https://cdn-cn.cmdragon.cn/RUmsRZYEV-nY4_oswvgaW.png)
-![AI Feature Display](https://cdn-cn.cmdragon.cn/hFDK6Na-Fi7gTL2VyMCva.png)
-![Generated Results](https://cdn-cn.cmdragon.cn/7MEWP09NvTPOC0idG4Pz0.png)
+![Configuration Complete](https://cdn.game-share.store/ObI005LhshzPDb6w0qG9W.png)
+![Edit Resume](https://cdn.game-share.store/aDU_mXaziu4vj2te6KWvW.png)
+![Image](https://cdn.game-share.store/RUmsRZYEV-nY4_oswvgaW.png)
+![AI Feature Display](https://cdn.game-share.store/hFDK6Na-Fi7gTL2VyMCva.png)
+![Generated Results](https://cdn.game-share.store/7MEWP09NvTPOC0idG4Pz0.png)
 
 ## Step 6: Resume Export and Printing
 
@@ -124,14 +124,14 @@ After configuration is complete, you can use the AI model to edit your resume.
 
 Click the **"Export Resume"** button, the system will automatically generate a standard PDF format resume file.
 
-![Export Resume](https://cdn-cn.cmdragon.cn/XtOsWjb5TvEadMHFbtgD5.png)
+![Export Resume](https://cdn.game-share.store/XtOsWjb5TvEadMHFbtgD5.png)
 
 **Export Methods**:
 
 - **Server Export**: Generate PDF file directly on the server, ensuring uniform format and beautiful layout, ready to use after download
-  ![Image](https://cdn-cn.cmdragon.cn/80GzYvsfodwhT4jzExPgs.png)
+  ![Image](https://cdn.game-share.store/80GzYvsfodwhT4jzExPgs.png)
 - **Browser Print**: Call the browser's native print function, can connect to printer to output paper copies directly
-  ![Image](https://cdn-cn.cmdragon.cn/v5gj00PLvRkg2Px9RKAEe.png)
+  ![Image](https://cdn.game-share.store/v5gj00PLvRkg2Px9RKAEe.png)
 
 **Usage Scenarios**:
 
@@ -148,7 +148,7 @@ Click the **"Export Resume"** button, the system will automatically generate a s
 
 If you encounter the following error:
 
-![Rate Limit](https://cdn-cn.cmdragon.cn/N8XAuxGLIdlIRaeAjkGMN.png)
+![Rate Limit](https://cdn.game-share.store/N8XAuxGLIdlIRaeAjkGMN.png)
 
 ```json
 {

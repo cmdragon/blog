@@ -29,7 +29,7 @@ tags:
 
 Επιλέξτε την επιλογή **"Πάροχος AI"** στην αριστερή γραμμή πλοήγησης.
 
-![Επιλογή παρόχου AI](https://cdn-cn.cmdragon.cn/aBClo3u1L9-mfxakQY_6H.png)
+![Επιλογή παρόχου AI](https://cdn.game-share.store/aBClo3u1L9-mfxakQY_6H.png)
 
 ---
 
@@ -39,11 +39,11 @@ tags:
 
 Στη σελίδα διαμόρφωσης του παρόχου AI, κάντε κλικ στο κουμπί **"Λήψη κλειδιού API"**.
 
-![Κάντε κλικ για λήψη κλειδιού API](https://cdn-cn.cmdragon.cn/syW9LMwLw0mBa1zn4p7DI.png)
+![Κάντε κλικ για λήψη κλειδιού API](https://cdn.game-share.store/syW9LMwLw0mBa1zn4p7DI.png)
 
 Το σύστημα θα ανοίξει τον επίσημο ιστότοπο του OpenRouter σε νέα καρτέλα:
 
-![Επίσημος ιστότοπος OpenRouter](https://cdn-cn.cmdragon.cn/kJmBIJzNwEna_Dqixs5Gh.png)
+![Επίσημος ιστότοπος OpenRouter](https://cdn.game-share.store/kJmBIJzNwEna_Dqixs5Gh.png)
 
 ### 2.2 Εγγραφή/Σύνδεση
 
@@ -53,8 +53,8 @@ tags:
 > 💡 **Συμβουλή**
 > : Αν δεν θέλετε να χρησιμοποιήσετε το συνηθισμένο σας email, μπορείτε να χρησιμοποιήσετε την [υπηρεσία προσωρινού email του ιστότοπού μας](https://tools.cmdragon.cn/zh/apps/temp-email) https://tools.cmdragon.cn/zh/apps/temp-email (βεβαιωθείτε ότι το OpenRouter υποστηρίζει προσωρινό email).
 
-![Υπηρεσία προσωρινού email](https://cdn-cn.cmdragon.cn/Dn0WKPCb4GJRJzJTViZMl.png)
-![Εγγραφή λογαριασμού](https://cdn-cn.cmdragon.cn/zGVLipU7YiUpQ8LinfcsJ.png)
+![Υπηρεσία προσωρινού email](https://cdn.game-share.store/Dn0WKPCb4GJRJzJTViZMl.png)
+![Εγγραφή λογαριασμού](https://cdn.game-share.store/zGVLipU7YiUpQ8LinfcsJ.png)
 
 ### 2.3 Δημιουργία κλειδιού API
 
@@ -64,9 +64,9 @@ tags:
 2. Επιλέξτε **"API Keys"** από το αριστερό μενού
 3. Κάντε κλικ στο κουμπί **"Create API Key"**
 
-![Σελίδα ρυθμίσεων](https://cdn-cn.cmdragon.cn/lKVZ6Umc3EkhQRowk7O_E.png)
-![Διαχείριση κλειδιών API](https://cdn-cn.cmdragon.cn/B6lzexbzcIwpT6oltMdNr.png)
-![Δημιουργία κλειδιού API](https://cdn-cn.cmdragon.cn/HQT5zxuf-P6VpJmrwRAfE.png)
+![Σελίδα ρυθμίσεων](https://cdn.game-share.store/lKVZ6Umc3EkhQRowk7O_E.png)
+![Διαχείριση κλειδιών API](https://cdn.game-share.store/B6lzexbzcIwpT6oltMdNr.png)
+![Δημιουργία κλειδιού API](https://cdn.game-share.store/HQT5zxuf-P6VpJmrwRAfE.png)
 
 ### 2.4 Αντιγραφή κλειδιού API
 
@@ -86,7 +86,7 @@ tags:
 | **Σημείο τερματισμού API**  | `https://openrouter.ai/api/v1` |
 | **Αναγνωριστικό μοντέλου**   | Επιλέξτε ένα δωρεάν μοντέλο (δείτε το επόμενο βήμα)                   |
 
-![Συμπλήρωση πληροφοριών διαμόρφωσης](https://cdn-cn.cmdragon.cn/JRme33gZtIKB8x-zxZXw-.png)
+![Συμπλήρωση πληροφοριών διαμόρφωσης](https://cdn.game-share.store/JRme33gZtIKB8x-zxZXw-.png)
 
 ---
 
@@ -96,9 +96,9 @@ tags:
 
 Στον επίσημο ιστότοπο του OpenRouter, πληκτρολογήστε **`free`** στο πλαίσιο αναζήτησης μοντέλων για να φιλτράρετε όλα τα δωρεάν μοντέλα.
 
-![Αναζήτηση δωρεάν μοντέλων](https://cdn-cn.cmdragon.cn/EF-1D1wvVhMMWmtGRXD93.png)
+![Αναζήτηση δωρεάν μοντέλων](https://cdn.game-share.store/EF-1D1wvVhMMWmtGRXD93.png)
 
-![Αντιγραφή αναγνωριστικού μοντέλου](https://cdn-cn.cmdragon.cn/NKIeBOVFdhJUfXZ-SU7j3.png)
+![Αντιγραφή αναγνωριστικού μοντέλου](https://cdn.game-share.store/NKIeBOVFdhJUfXZ-SU7j3.png)
 
 ### 4.2 Αντιγραφή αναγνωριστικού μοντέλου
 
@@ -112,11 +112,11 @@ tags:
 
 Αφού ολοκληρωθεί η διαμόρφωση, μπορείτε να χρησιμοποιήσετε το μοντέλο AI για να επεξεργαστείτε το βιογραφικό σας.
 
-![Ολοκληρώθηκε η διαμόρφωση](https://cdn-cn.cmdragon.cn/ObI005LhshzPDb6w0qG9W.png)
-![Επεξεργασία βιογραφικού](https://cdn-cn.cmdragon.cn/aDU_mXaziu4vj2te6KWvW.png)
-![Εικόνα](https://cdn-cn.cmdragon.cn/RUmsRZYEV-nY4_oswvgaW.png)
-![Εμφάνιση λειτουργιών AI](https://cdn-cn.cmdragon.cn/hFDK6Na-Fi7gTL2VyMCva.png)
-![Δημιουργημένα αποτελέσματα](https://cdn-cn.cmdragon.cn/7MEWP09NvTPOC0idG4Pz0.png)
+![Ολοκληρώθηκε η διαμόρφωση](https://cdn.game-share.store/ObI005LhshzPDb6w0qG9W.png)
+![Επεξεργασία βιογραφικού](https://cdn.game-share.store/aDU_mXaziu4vj2te6KWvW.png)
+![Εικόνα](https://cdn.game-share.store/RUmsRZYEV-nY4_oswvgaW.png)
+![Εμφάνιση λειτουργιών AI](https://cdn.game-share.store/hFDK6Na-Fi7gTL2VyMCva.png)
+![Δημιουργημένα αποτελέσματα](https://cdn.game-share.store/7MEWP09NvTPOC0idG4Pz0.png)
 
 ## Βήμα 6: Εξαγωγή και εκτύπωση βιογραφικού
 
@@ -124,14 +124,14 @@ tags:
 
 Κάντε κλικ στο κουμπί **"Εξαγωγή βιογραφικού"**, το σύστημα θα δημιουργήσει αυτόματα ένα αρχείο βιογραφικού σε τυπική μορφή PDF.
 
-![Εξαγωγή βιογραφικού](https://cdn-cn.cmdragon.cn/XtOsWjb5TvEadMHFbtgD5.png)
+![Εξαγωγή βιογραφικού](https://cdn.game-share.store/XtOsWjb5TvEadMHFbtgD5.png)
 
 **Μέθοδοι εξαγωγής**:
 
 - **Εξαγωγή διακομιστή**: Δημιουργία αρχείου PDF απευθείας στον διακομιστή, διασφαλίζοντας ενιαία μορφή και όμορφη διάταξη, έτοιμο για χρήση μετά τη λήψη
-  ![Εικόνα](https://cdn-cn.cmdragon.cn/80GzYvsfodwhT4jzExPgs.png)
+  ![Εικόνα](https://cdn.game-share.store/80GzYvsfodwhT4jzExPgs.png)
 - **Εκτύπωση προγράμματος περιήγησης**: Καλεί την εγγενή λειτουργία εκτύπωσης του προγράμματος περιήγησης, μπορεί να συνδεθεί με εκτυπωτή για άμεση εκτύπωση χάρτινων αντιγράφων
-  ![Εικόνα](https://cdn-cn.cmdragon.cn/v5gj00PLvRkg2Px9RKAEe.png)
+  ![Εικόνα](https://cdn.game-share.store/v5gj00PLvRkg2Px9RKAEe.png)
 
 **Σενάρια χρήσης**:
 
@@ -148,7 +148,7 @@ tags:
 
 Αν λάβετε το παρακάτω σφάλμα:
 
-![Όριο συχνότητας](https://cdn-cn.cmdragon.cn/N8XAuxGLIdlIRaeAjkGMN.png)
+![Όριο συχνότητας](https://cdn.game-share.store/N8XAuxGLIdlIRaeAjkGMN.png)
 
 ```json
 {
