@@ -29,7 +29,7 @@ Mở trang web AI Magic Resume:
 
 Chọn tùy chọn **"Nhà cung cấp AI"** trong thanh điều hướng bên trái.
 
-![Chọn nhà cung cấp AI](https://cdn-cn.cmdragon.cn/aBClo3u1L9-mfxakQY_6H.png)
+![Chọn nhà cung cấp AI](https://cdn.game-share.store/aBClo3u1L9-mfxakQY_6H.png)
 
 ---
 
@@ -39,11 +39,11 @@ Chọn tùy chọn **"Nhà cung cấp AI"** trong thanh điều hướng bên tr
 
 Trên trang cấu hình nhà cung cấp AI, nhấp vào nút **"Lấy khóa API"**.
 
-![Nhấp để lấy khóa API](https://cdn-cn.cmdragon.cn/syW9LMwLw0mBa1zn4p7DI.png)
+![Nhấp để lấy khóa API](https://cdn.game-share.store/syW9LMwLw0mBa1zn4p7DI.png)
 
 Hệ thống sẽ mở trang web chính thức của OpenRouter trong tab mới:
 
-![Trang web chính thức của OpenRouter](https://cdn-cn.cmdragon.cn/kJmBIJzNwEna_Dqixs5Gh.png)
+![Trang web chính thức của OpenRouter](https://cdn.game-share.store/kJmBIJzNwEna_Dqixs5Gh.png)
 
 ### 2.2 Đăng ký/Đăng nhập
 
@@ -53,8 +53,8 @@ Hệ thống sẽ mở trang web chính thức của OpenRouter trong tab mới:
 > 💡 **Mẹo**
 > : Nếu bạn không muốn sử dụng email thông thường của mình, bạn có thể sử dụng [dịch vụ email tạm thời của chúng tôi](https://tools.cmdragon.cn/zh/apps/temp-email) https://tools.cmdragon.cn/zh/apps/temp-email (đảm bảo rằng OpenRouter hỗ trợ email tạm thời).
 
-![Dịch vụ email tạm thời](https://cdn-cn.cmdragon.cn/Dn0WKPCb4GJRJzJTViZMl.png)
-![Đăng ký tài khoản](https://cdn-cn.cmdragon.cn/zGVLipU7YiUpQ8LinfcsJ.png)
+![Dịch vụ email tạm thời](https://cdn.game-share.store/Dn0WKPCb4GJRJzJTViZMl.png)
+![Đăng ký tài khoản](https://cdn.game-share.store/zGVLipU7YiUpQ8LinfcsJ.png)
 
 ### 2.3 Tạo khóa API
 
@@ -64,9 +64,9 @@ Sau khi đăng nhập, làm theo đường dẫn sau:
 2. Chọn **"API Keys"** từ menu bên trái
 3. Nhấp vào nút **"Create API Key"**
 
-![Trang cài đặt](https://cdn-cn.cmdragon.cn/lKVZ6Umc3EkhQRowk7O_E.png)
-![Quản lý khóa API](https://cdn-cn.cmdragon.cn/B6lzexbzcIwpT6oltMdNr.png)
-![Tạo khóa API](https://cdn-cn.cmdragon.cn/HQT5zxuf-P6VpJmrwRAfE.png)
+![Trang cài đặt](https://cdn.game-share.store/lKVZ6Umc3EkhQRowk7O_E.png)
+![Quản lý khóa API](https://cdn.game-share.store/B6lzexbzcIwpT6oltMdNr.png)
+![Tạo khóa API](https://cdn.game-share.store/HQT5zxuf-P6VpJmrwRAfE.png)
 
 ### 2.4 Sao chép khóa API
 
@@ -86,7 +86,7 @@ Quay lại trang cấu hình AI Magic Resume và điền thông tin sau:
 | **Điểm cuối API**  | `https://openrouter.ai/api/v1` |
 | **ID mô hình**   | Chọn một mô hình miễn phí (xem bước tiếp theo)                   |
 
-![Điền thông tin cấu hình](https://cdn-cn.cmdragon.cn/JRme33gZtIKB8x-zxZXw-.png)
+![Điền thông tin cấu hình](https://cdn.game-share.store/JRme33gZtIKB8x-zxZXw-.png)
 
 ---
 
@@ -96,9 +96,9 @@ Quay lại trang cấu hình AI Magic Resume và điền thông tin sau:
 
 Trên trang web OpenRouter, nhập **`free`** vào hộp tìm kiếm mô hình để lọc tất cả các mô hình miễn phí.
 
-![Tìm kiếm mô hình miễn phí](https://cdn-cn.cmdragon.cn/EF-1D1wvVhMMWmtGRXD93.png)
+![Tìm kiếm mô hình miễn phí](https://cdn.game-share.store/EF-1D1wvVhMMWmtGRXD93.png)
 
-![Sao chép ID mô hình](https://cdn-cn.cmdragon.cn/NKIeBOVFdhJUfXZ-SU7j3.png)
+![Sao chép ID mô hình](https://cdn.game-share.store/NKIeBOVFdhJUfXZ-SU7j3.png)
 
 ### 4.2 Sao chép ID mô hình
 
@@ -112,11 +112,11 @@ Chọn bất kỳ mô hình miễn phí nào và sao chép ID đầy đủ của
 
 Sau khi cấu hình hoàn tất, bạn có thể sử dụng mô hình AI để chỉnh sửa sơ yếu lý lịch của mình.
 
-![Cấu hình hoàn tất](https://cdn-cn.cmdragon.cn/ObI005LhshzPDb6w0qG9W.png)
-![Chỉnh sửa sơ yếu lý lịch](https://cdn-cn.cmdragon.cn/aDU_mXaziu4vj2te6KWvW.png)
-![Hình ảnh](https://cdn-cn.cmdragon.cn/RUmsRZYEV-nY4_oswvgaW.png)
-![Hiển thị tính năng AI](https://cdn-cn.cmdragon.cn/hFDK6Na-Fi7gTL2VyMCva.png)
-![Kết quả được tạo](https://cdn-cn.cmdragon.cn/7MEWP09NvTPOC0idG4Pz0.png)
+![Cấu hình hoàn tất](https://cdn.game-share.store/ObI005LhshzPDb6w0qG9W.png)
+![Chỉnh sửa sơ yếu lý lịch](https://cdn.game-share.store/aDU_mXaziu4vj2te6KWvW.png)
+![Hình ảnh](https://cdn.game-share.store/RUmsRZYEV-nY4_oswvgaW.png)
+![Hiển thị tính năng AI](https://cdn.game-share.store/hFDK6Na-Fi7gTL2VyMCva.png)
+![Kết quả được tạo](https://cdn.game-share.store/7MEWP09NvTPOC0idG4Pz0.png)
 
 ## Bước 6: Xuất và in sơ yếu lý lịch
 
@@ -124,14 +124,14 @@ Sau khi cấu hình hoàn tất, bạn có thể sử dụng mô hình AI để 
 
 Nhấp vào nút **"Xuất sơ yếu lý lịch"**, hệ thống sẽ tự động tạo một tệp sơ yếu lý lịch định dạng PDF tiêu chuẩn.
 
-![Xuất sơ yếu lý lịch](https://cdn-cn.cmdragon.cn/XtOsWjb5TvEadMHFbtgD5.png)
+![Xuất sơ yếu lý lịch](https://cdn.game-share.store/XtOsWjb5TvEadMHFbtgD5.png)
 
 **Phương thức xuất**:
 
 - **Xuất từ máy chủ**: Tạo tệp PDF trực tiếp trên máy chủ, đảm bảo định dạng thống nhất và bố cục đẹp, sẵn sàng sử dụng sau khi tải xuống
-  ![Hình ảnh](https://cdn-cn.cmdragon.cn/80GzYvsfodwhT4jzExPgs.png)
+  ![Hình ảnh](https://cdn.game-share.store/80GzYvsfodwhT4jzExPgs.png)
 - **In từ trình duyệt**: Gọi chức năng in gốc của trình duyệt, có thể kết nối với máy in để xuất bản in trực tiếp
-  ![Hình ảnh](https://cdn-cn.cmdragon.cn/v5gj00PLvRkg2Px9RKAEe.png)
+  ![Hình ảnh](https://cdn.game-share.store/v5gj00PLvRkg2Px9RKAEe.png)
 
 **Kịch bản sử dụng**:
 
@@ -148,7 +148,7 @@ Nhấp vào nút **"Xuất sơ yếu lý lịch"**, hệ thống sẽ tự độ
 
 Nếu bạn gặp lỗi sau:
 
-![Giới hạn tần suất](https://cdn-cn.cmdragon.cn/N8XAuxGLIdlIRaeAjkGMN.png)
+![Giới hạn tần suất](https://cdn.game-share.store/N8XAuxGLIdlIRaeAjkGMN.png)
 
 ```json
 {

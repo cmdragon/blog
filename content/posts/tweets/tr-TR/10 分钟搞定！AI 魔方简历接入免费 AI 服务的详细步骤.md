@@ -29,7 +29,7 @@ AI Magic Resume web sitesini açın:
 
 Sol gezinme çubuğunda **"AI Sağlayıcısı"** seçeneğini seçin.
 
-![AI sağlayıcısını seç](https://cdn-cn.cmdragon.cn/aBClo3u1L9-mfxakQY_6H.png)
+![AI sağlayıcısını seç](https://cdn.game-share.store/aBClo3u1L9-mfxakQY_6H.png)
 
 ---
 
@@ -39,11 +39,11 @@ Sol gezinme çubuğunda **"AI Sağlayıcısı"** seçeneğini seçin.
 
 AI sağlayıcı yapılandırma sayfasında **"API Anahtarını Al"** düğmesini tıklayın.
 
-![API anahtarını almak için tıklayın](https://cdn-cn.cmdragon.cn/syW9LMwLw0mBa1zn4p7DI.png)
+![API anahtarını almak için tıklayın](https://cdn.game-share.store/syW9LMwLw0mBa1zn4p7DI.png)
 
 Sistem yeni bir sekmede resmi OpenRouter web sitesini açacaktır:
 
-![OpenRouter resmi web sitesi](https://cdn-cn.cmdragon.cn/kJmBIJzNwEna_Dqixs5Gh.png)
+![OpenRouter resmi web sitesi](https://cdn.game-share.store/kJmBIJzNwEna_Dqixs5Gh.png)
 
 ### 2.2 Kayıt Ol/Giriş Yap
 
@@ -53,8 +53,8 @@ Sistem yeni bir sekmede resmi OpenRouter web sitesini açacaktır:
 > 💡 **İpucu**
 > : Normal e-postanızı kullanmak istemiyorsanız, [geçici e-posta hizmetimizi](https://tools.cmdragon.cn/zh/apps/temp-email) https://tools.cmdragon.cn/zh/apps/temp-email kullanabilirsiniz (OpenRouter'ın geçici e-postayı desteklediğinden emin olun).
 
-![Geçici e-posta hizmeti](https://cdn-cn.cmdragon.cn/Dn0WKPCb4GJRJzJTViZMl.png)
-![Hesap kaydet](https://cdn-cn.cmdragon.cn/zGVLipU7YiUpQ8LinfcsJ.png)
+![Geçici e-posta hizmeti](https://cdn.game-share.store/Dn0WKPCb4GJRJzJTViZMl.png)
+![Hesap kaydet](https://cdn.game-share.store/zGVLipU7YiUpQ8LinfcsJ.png)
 
 ### 2.3 API Anahtarı Oluştur
 
@@ -64,9 +64,9 @@ Giriş yaptıktan sonra şu yolu izleyin:
 2. Sol menüden **"API Keys"** seçin
 3. **"Create API Key"** düğmesini tıklayın
 
-![Ayarlar sayfası](https://cdn-cn.cmdragon.cn/lKVZ6Umc3EkhQRowk7O_E.png)
-![API anahtarlarını yönet](https://cdn-cn.cmdragon.cn/B6lzexbzcIwpT6oltMdNr.png)
-![API anahtarı oluştur](https://cdn-cn.cmdragon.cn/HQT5zxuf-P6VpJmrwRAfE.png)
+![Ayarlar sayfası](https://cdn.game-share.store/lKVZ6Umc3EkhQRowk7O_E.png)
+![API anahtarlarını yönet](https://cdn.game-share.store/B6lzexbzcIwpT6oltMdNr.png)
+![API anahtarı oluştur](https://cdn.game-share.store/HQT5zxuf-P6VpJmrwRAfE.png)
 
 ### 2.4 API Anahtarını Kopyala
 
@@ -86,7 +86,7 @@ AI Magic Resume yapılandırma sayfasına geri dönün ve aşağıdaki bilgileri
 | **API Uç Noktası**  | `https://openrouter.ai/api/v1` |
 | **Model ID**   | Ücretsiz bir model seçin (bir sonraki adıma bakın)                   |
 
-![Yapılandırma bilgilerini doldur](https://cdn-cn.cmdragon.cn/JRme33gZtIKB8x-zxZXw-.png)
+![Yapılandırma bilgilerini doldur](https://cdn.game-share.store/JRme33gZtIKB8x-zxZXw-.png)
 
 ---
 
@@ -96,9 +96,9 @@ AI Magic Resume yapılandırma sayfasına geri dönün ve aşağıdaki bilgileri
 
 OpenRouter web sitesinde model arama kutusuna **`free`** girerek tüm ücretsiz modelleri filtreleyin.
 
-![Ücretsiz modelleri ara](https://cdn-cn.cmdragon.cn/EF-1D1wvVhMMWmtGRXD93.png)
+![Ücretsiz modelleri ara](https://cdn.game-share.store/EF-1D1wvVhMMWmtGRXD93.png)
 
-![Model ID'yi kopyala](https://cdn-cn.cmdragon.cn/NKIeBOVFdhJUfXZ-SU7j3.png)
+![Model ID'yi kopyala](https://cdn.game-share.store/NKIeBOVFdhJUfXZ-SU7j3.png)
 
 ### 4.2 Model ID'yi Kopyala
 
@@ -112,11 +112,11 @@ Herhangi bir ücretsiz modeli seçin ve tam ID'sini kopyalayın (format: `google
 
 Yapılandırma tamamlandıktan sonra, özgeçmişinizi düzenlemek için AI modelini kullanabilirsiniz.
 
-![Yapılandırma tamamlandı](https://cdn-cn.cmdragon.cn/ObI005LhshzPDb6w0qG9W.png)
-![Özgeçmişi düzenle](https://cdn-cn.cmdragon.cn/aDU_mXaziu4vj2te6KWvW.png)
-![Görüntü](https://cdn-cn.cmdragon.cn/RUmsRZYEV-nY4_oswvgaW.png)
-![AI özelliklerini göster](https://cdn-cn.cmdragon.cn/hFDK6Na-Fi7gTL2VyMCva.png)
-![Oluşturulan sonuçlar](https://cdn-cn.cmdragon.cn/7MEWP09NvTPOC0idG4Pz0.png)
+![Yapılandırma tamamlandı](https://cdn.game-share.store/ObI005LhshzPDb6w0qG9W.png)
+![Özgeçmişi düzenle](https://cdn.game-share.store/aDU_mXaziu4vj2te6KWvW.png)
+![Görüntü](https://cdn.game-share.store/RUmsRZYEV-nY4_oswvgaW.png)
+![AI özelliklerini göster](https://cdn.game-share.store/hFDK6Na-Fi7gTL2VyMCva.png)
+![Oluşturulan sonuçlar](https://cdn.game-share.store/7MEWP09NvTPOC0idG4Pz0.png)
 
 ## Adım 6: Özgeçmişi Dışa Aktar ve Yazdır
 
@@ -124,14 +124,14 @@ Yapılandırma tamamlandıktan sonra, özgeçmişinizi düzenlemek için AI mode
 
 **"Özgeçmişi Dışa Aktar"** düğmesini tıklayın, sistem otomatik olarak standart PDF formatında bir özgeçmiş dosyası oluşturacaktır.
 
-![Özgeçmişi dışa aktar](https://cdn-cn.cmdragon.cn/XtOsWjb5TvEadMHFbtgD5.png)
+![Özgeçmişi dışa aktar](https://cdn.game-share.store/XtOsWjb5TvEadMHFbtgD5.png)
 
 **Dışa aktarma yöntemleri**:
 
 - **Sunucu dışa aktarma**: PDF dosyasını doğrudan sunucuda oluştur, üniform format ve güzel düzen sağlar, indirdikten sonra hemen kullanıma hazır
-  ![Görüntü](https://cdn-cn.cmdragon.cn/80GzYvsfodwhT4jzExPgs.png)
+  ![Görüntü](https://cdn.game-share.store/80GzYvsfodwhT4jzExPgs.png)
 - **Tarayıcı yazdırma**: Tarayıcının yerel yazdırma işlevini çağırır, yazıcıya bağlanarak doğrudan kağıt kopyaları çıkarabilir
-  ![Görüntü](https://cdn-cn.cmdragon.cn/v5gj00PLvRkg2Px9RKAEe.png)
+  ![Görüntü](https://cdn.game-share.store/v5gj00PLvRkg2Px9RKAEe.png)
 
 **Kullanım senaryoları**:
 
@@ -148,7 +148,7 @@ Yapılandırma tamamlandıktan sonra, özgeçmişinizi düzenlemek için AI mode
 
 Aşağıdaki hatayla karşılaşırsanız:
 
-![Hız sınırı](https://cdn-cn.cmdragon.cn/N8XAuxGLIdlIRaeAjkGMN.png)
+![Hız sınırı](https://cdn.game-share.store/N8XAuxGLIdlIRaeAjkGMN.png)
 
 ```json
 {

@@ -29,7 +29,7 @@ tags:
 
 在左側導航欄選擇 **"AI 服務商"** 選項。
 
-![選擇 AI 服務商](https://cdn-cn.cmdragon.cn/aBClo3u1L9-mfxakQY_6H.png)
+![選擇 AI 服務商](https://cdn.game-share.store/aBClo3u1L9-mfxakQY_6H.png)
 
 ---
 
@@ -39,11 +39,11 @@ tags:
 
 在 AI 服務商配置頁面，點擊 **"獲取 API Key"** 按鈕。
 
-![點擊獲取 API Key](https://cdn-cn.cmdragon.cn/syW9LMwLw0mBa1zn4p7DI.png)
+![點擊獲取 API Key](https://cdn.game-share.store/syW9LMwLw0mBa1zn4p7DI.png)
 
 系統將在新標籤頁中打開 OpenRouter 官網：
 
-![OpenRouter 官網](https://cdn-cn.cmdragon.cn/kJmBIJzNwEna_Dqixs5Gh.png)
+![OpenRouter 官網](https://cdn.game-share.store/kJmBIJzNwEna_Dqixs5Gh.png)
 
 ### 2.2 註冊/登錄賬號
 
@@ -53,8 +53,8 @@ tags:
 > 💡 **提示**
 > ：如果不想使用常用郵箱，可使用 [我們網站的臨時郵箱服務](https://tools.cmdragon.cn/zh/apps/temp-email) https://tools.cmdragon.cn/zh/apps/temp-email（需確保 OpenRouter 支持臨時郵箱）。
 
-![臨時郵箱服務](https://cdn-cn.cmdragon.cn/Dn0WKPCb4GJRJzJTViZMl.png)
-![註冊賬號](https://cdn-cn.cmdragon.cn/zGVLipU7YiUpQ8LinfcsJ.png)
+![臨時郵箱服務](https://cdn.game-share.store/Dn0WKPCb4GJRJzJTViZMl.png)
+![註冊賬號](https://cdn.game-share.store/zGVLipU7YiUpQ8LinfcsJ.png)
 
 ### 2.3 創建 API Key
 
@@ -64,9 +64,9 @@ tags:
 2. 選擇左側菜單的 **"API Keys"**
 3. 點擊 **"Create API Key"** 按鈕
 
-![Settings 頁面](https://cdn-cn.cmdragon.cn/lKVZ6Umc3EkhQRowk7O_E.png)
-![API Keys 管理](https://cdn-cn.cmdragon.cn/B6lzexbzcIwpT6oltMdNr.png)
-![創建 API Key](https://cdn-cn.cmdragon.cn/HQT5zxuf-P6VpJmrwRAfE.png)
+![Settings 頁面](https://cdn.game-share.store/lKVZ6Umc3EkhQRowk7O_E.png)
+![API Keys 管理](https://cdn.game-share.store/B6lzexbzcIwpT6oltMdNr.png)
+![創建 API Key](https://cdn.game-share.store/HQT5zxuf-P6VpJmrwRAfE.png)
 
 ### 2.4 複製 API Key
 
@@ -86,7 +86,7 @@ tags:
 | **API 端點**  | `https://openrouter.ai/api/v1` |
 | **模型 ID**   | 選擇免費模型（見下一步）                   |
 
-![填寫配置信息](https://cdn-cn.cmdragon.cn/JRme33gZtIKB8x-zxZXw-.png)
+![填寫配置信息](https://cdn.game-share.store/JRme33gZtIKB8x-zxZXw-.png)
 
 ---
 
@@ -96,9 +96,9 @@ tags:
 
 在 OpenRouter 官網的模型搜索框中輸入 **`free`**，即可篩選出所有免費模型。
 
-![搜索免費模型](https://cdn-cn.cmdragon.cn/EF-1D1wvVhMMWmtGRXD93.png)
+![搜索免費模型](https://cdn.game-share.store/EF-1D1wvVhMMWmtGRXD93.png)
 
-![複製模型 ID](https://cdn-cn.cmdragon.cn/NKIeBOVFdhJUfXZ-SU7j3.png)
+![複製模型 ID](https://cdn.game-share.store/NKIeBOVFdhJUfXZ-SU7j3.png)
 
 ### 4.2 複製模型 ID
 
@@ -112,11 +112,11 @@ tags:
 
 配置完成後，即可使用 AI 模型編輯履歷。
 
-![配置完成](https://cdn-cn.cmdragon.cn/ObI005LhshzPDb6w0qG9W.png)
-![編輯履歷](https://cdn-cn.cmdragon.cn/aDU_mXaziu4vj2te6KWvW.png)
-![圖片](https://cdn-cn.cmdragon.cn/RUmsRZYEV-nY4_oswvgaW.png)
-![AI 功能展示](https://cdn-cn.cmdragon.cn/hFDK6Na-Fi7gTL2VyMCva.png)
-![生成結果](https://cdn-cn.cmdragon.cn/7MEWP09NvTPOC0idG4Pz0.png)
+![配置完成](https://cdn.game-share.store/ObI005LhshzPDb6w0qG9W.png)
+![編輯履歷](https://cdn.game-share.store/aDU_mXaziu4vj2te6KWvW.png)
+![圖片](https://cdn.game-share.store/RUmsRZYEV-nY4_oswvgaW.png)
+![AI 功能展示](https://cdn.game-share.store/hFDK6Na-Fi7gTL2VyMCva.png)
+![生成結果](https://cdn.game-share.store/7MEWP09NvTPOC0idG4Pz0.png)
 
 ## 第六步：履歷導出與打印
 
@@ -124,14 +124,14 @@ tags:
 
 點擊 **"導出履歷"** 按鈕，系統將自動生成標準 PDF 格式的履歷文件。
 
-![導出履歷](https://cdn-cn.cmdragon.cn/XtOsWjb5TvEadMHFbtgD5.png)
+![導出履歷](https://cdn.game-share.store/XtOsWjb5TvEadMHFbtgD5.png)
 
 **導出方式**：
 
 - **服務端導出**：直接在服務器端生成 PDF 文件，確保格式統一、排版精美，下載後即可使用
-  ![圖片](https://cdn-cn.cmdragon.cn/80GzYvsfodwhT4jzExPgs.png)
+  ![圖片](https://cdn.game-share.store/80GzYvsfodwhT4jzExPgs.png)
 - **瀏覽器打印**：調用瀏覽器原生打印功能，可連接打印機直接輸出紙質履歷
-  ![圖片](https://cdn-cn.cmdragon.cn/v5gj00PLvRkg2Px9RKAEe.png)
+  ![圖片](https://cdn.game-share.store/v5gj00PLvRkg2Px9RKAEe.png)
 
 **使用場景**：
 
@@ -148,7 +148,7 @@ tags:
 
 如果遇到以下錯誤提示：
 
-![頻率限制錯誤](https://cdn-cn.cmdragon.cn/N8XAuxGLIdlIRaeAjkGMN.png)
+![頻率限制錯誤](https://cdn.game-share.store/N8XAuxGLIdlIRaeAjkGMN.png)
 
 ```json
 {

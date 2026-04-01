@@ -29,7 +29,7 @@ tags:
 
 گزینه **"ارائه‌دهنده هوش مصنوعی"** را در نوار پیمایش سمت چپ انتخاب کنید.
 
-![انتخاب ارائه‌دهنده هوش مصنوعی](https://cdn-cn.cmdragon.cn/aBClo3u1L9-mfxakQY_6H.png)
+![انتخاب ارائه‌دهنده هوش مصنوعی](https://cdn.game-share.store/aBClo3u1L9-mfxakQY_6H.png)
 
 ---
 
@@ -39,11 +39,11 @@ tags:
 
 در صفحه پیکربندی ارائه‌دهنده هوش مصنوعی، روی دکمه **"دریافت کلید API"** کلیک کنید.
 
-![برای دریافت کلید API کلیک کنید](https://cdn-cn.cmdragon.cn/syW9LMwLw0mBa1zn4p7DI.png)
+![برای دریافت کلید API کلیک کنید](https://cdn.game-share.store/syW9LMwLw0mBa1zn4p7DI.png)
 
 سیستم وب‌سایت رسمی OpenRouter را در یک تب جدید باز می‌کند:
 
-![وب‌سایت رسمی OpenRouter](https://cdn-cn.cmdragon.cn/kJmBIJzNwEna_Dqixs5Gh.png)
+![وب‌سایت رسمی OpenRouter](https://cdn.game-share.store/kJmBIJzNwEna_Dqixs5Gh.png)
 
 ### 2.2 ثبت‌نام/ورود
 
@@ -53,8 +53,8 @@ tags:
 > 💡 **نکته**
 > : اگر نمی‌خواهید از ایمیل معمولی خود استفاده کنید، می‌توانید از [سرویس ایمیل موقت ما](https://tools.cmdragon.cn/zh/apps/temp-email) https://tools.cmdragon.cn/zh/apps/temp-email استفاده کنید (مطمئن شوید که OpenRouter از ایمیل موقت پشتیبانی می‌کند).
 
-![سرویس ایمیل موقت](https://cdn-cn.cmdragon.cn/Dn0WKPCb4GJRJzJTViZMl.png)
-![ثبت‌نام حساب](https://cdn-cn.cmdragon.cn/zGVLipU7YiUpQ8LinfcsJ.png)
+![سرویس ایمیل موقت](https://cdn.game-share.store/Dn0WKPCb4GJRJzJTViZMl.png)
+![ثبت‌نام حساب](https://cdn.game-share.store/zGVLipU7YiUpQ8LinfcsJ.png)
 
 ### 2.3 ایجاد کلید API
 
@@ -64,9 +64,9 @@ tags:
 2. **"API Keys"** را از منوی سمت چپ انتخاب کنید
 3. روی دکمه **"Create API Key"** کلیک کنید
 
-![صفحه تنظیمات](https://cdn-cn.cmdragon.cn/lKVZ6Umc3EkhQRowk7O_E.png)
-![مدیریت کلیدهای API](https://cdn-cn.cmdragon.cn/B6lzexbzcIwpT6oltMdNr.png)
-![ایجاد کلید API](https://cdn-cn.cmdragon.cn/HQT5zxuf-P6VpJmrwRAfE.png)
+![صفحه تنظیمات](https://cdn.game-share.store/lKVZ6Umc3EkhQRowk7O_E.png)
+![مدیریت کلیدهای API](https://cdn.game-share.store/B6lzexbzcIwpT6oltMdNr.png)
+![ایجاد کلید API](https://cdn.game-share.store/HQT5zxuf-P6VpJmrwRAfE.png)
 
 ### 2.4 کپی کردن کلید API
 
@@ -86,7 +86,7 @@ tags:
 | **نقطه پایانی API**  | `https://openrouter.ai/api/v1` |
 | **شناسه مدل**   | یک مدل رایگان انتخاب کنید (مرحله بعد را ببینید)                   |
 
-![پر کردن اطلاعات پیکربندی](https://cdn-cn.cmdragon.cn/JRme33gZtIKB8x-zxZXw-.png)
+![پر کردن اطلاعات پیکربندی](https://cdn.game-share.store/JRme33gZtIKB8x-zxZXw-.png)
 
 ---
 
@@ -96,9 +96,9 @@ tags:
 
 در وب‌سایت OpenRouter، **`free`** را در کادر جستجوی مدل وارد کنید تا تمام مدل‌های رایگان را فیلتر کنید.
 
-![جستجوی مدل‌های رایگان](https://cdn-cn.cmdragon.cn/EF-1D1wvVhMMWmtGRXD93.png)
+![جستجوی مدل‌های رایگان](https://cdn.game-share.store/EF-1D1wvVhMMWmtGRXD93.png)
 
-![کپی کردن شناسه مدل](https://cdn-cn.cmdragon.cn/NKIeBOVFdhJUfXZ-SU7j3.png)
+![کپی کردن شناسه مدل](https://cdn.game-share.store/NKIeBOVFdhJUfXZ-SU7j3.png)
 
 ### 4.2 کپی کردن شناسه مدل
 
@@ -112,11 +112,11 @@ tags:
 
 پس از تکمیل پیکربندی، می‌توانید از مدل هوش مصنوعی برای ویرایش رزومه خود استفاده کنید.
 
-![پیکربندی تکمیل شد](https://cdn-cn.cmdragon.cn/ObI005LhshzPDb6w0qG9W.png)
-![ویرایش رزومه](https://cdn-cn.cmdragon.cn/aDU_mXaziu4vj2te6KWvW.png)
-![تصویر](https://cdn-cn.cmdragon.cn/RUmsRZYEV-nY4_oswvgaW.png)
-![نمایش ویژگی‌های هوش مصنوعی](https://cdn-cn.cmdragon.cn/hFDK6Na-Fi7gTL2VyMCva.png)
-![نتایج تولید شده](https://cdn-cn.cmdragon.cn/7MEWP09NvTPOC0idG4Pz0.png)
+![پیکربندی تکمیل شد](https://cdn.game-share.store/ObI005LhshzPDb6w0qG9W.png)
+![ویرایش رزومه](https://cdn.game-share.store/aDU_mXaziu4vj2te6KWvW.png)
+![تصویر](https://cdn.game-share.store/RUmsRZYEV-nY4_oswvgaW.png)
+![نمایش ویژگی‌های هوش مصنوعی](https://cdn.game-share.store/hFDK6Na-Fi7gTL2VyMCva.png)
+![نتایج تولید شده](https://cdn.game-share.store/7MEWP09NvTPOC0idG4Pz0.png)
 
 ## مرحله 6: صادرات و چاپ رزومه
 
@@ -124,14 +124,14 @@ tags:
 
 روی دکمه **"صادرات رزومه"** کلیک کنید، سیستم به طور خودکار یک فایل رزومه با فرمت PDF استاندارد تولید می‌کند.
 
-![صادرات رزومه](https://cdn-cn.cmdragon.cn/XtOsWjb5TvEadMHFbtgD5.png)
+![صادرات رزومه](https://cdn.game-share.store/XtOsWjb5TvEadMHFbtgD5.png)
 
 **روش‌های صادرات**:
 
 - **صادرات سرور**: تولید فایل PDF مستقیماً روی سرور، اطمینان از فرمت یکسان و چیدمان زیبا، آماده استفاده پس از دانلود
-  ![تصویر](https://cdn-cn.cmdragon.cn/80GzYvsfodwhT4jzExPgs.png)
+  ![تصویر](https://cdn.game-share.store/80GzYvsfodwhT4jzExPgs.png)
 - **چاپ مرورگر**: فراخوانی عملکرد چاپ بومی مرورگر، می‌تواند به چاپگر متصل شود تا مستقیماً کپی‌های کاغذی را خروجی دهد
-  ![تصویر](https://cdn-cn.cmdragon.cn/v5gj00PLvRkg2Px9RKAEe.png)
+  ![تصویر](https://cdn.game-share.store/v5gj00PLvRkg2Px9RKAEe.png)
 
 **سناریوهای استفاده**:
 
@@ -148,7 +148,7 @@ tags:
 
 اگر با خطای زیر مواجه شدید:
 
-![محدودیت نرخ](https://cdn-cn.cmdragon.cn/N8XAuxGLIdlIRaeAjkGMN.png)
+![محدودیت نرخ](https://cdn.game-share.store/N8XAuxGLIdlIRaeAjkGMN.png)
 
 ```json
 {

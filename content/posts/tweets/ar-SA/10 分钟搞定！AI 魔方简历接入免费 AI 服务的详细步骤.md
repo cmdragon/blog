@@ -29,7 +29,7 @@ tags:
 
 اختر خيار **"موفر خدمة الذكاء الاصطناعي"** في شريط التنقل الأيسر.
 
-![اختيار موفر خدمة الذكاء الاصطناعي](https://cdn-cn.cmdragon.cn/aBClo3u1L9-mfxakQY_6H.png)
+![اختيار موفر خدمة الذكاء الاصطناعي](https://cdn.game-share.store/aBClo3u1L9-mfxakQY_6H.png)
 
 ---
 
@@ -39,11 +39,11 @@ tags:
 
 في صفحة تكوين موفر خدمة الذكاء الاصطناعي، انقر على زر **"الحصول على مفتاح API"**.
 
-![انقر للحصول على مفتاح API](https://cdn-cn.cmdragon.cn/syW9LMwLw0mBa1zn4p7DI.png)
+![انقر للحصول على مفتاح API](https://cdn.game-share.store/syW9LMwLw0mBa1zn4p7DI.png)
 
 سيفتح النظام الموقع الرسمي لـ OpenRouter في علامة تبويب جديدة:
 
-![الموقع الرسمي لـ OpenRouter](https://cdn-cn.cmdragon.cn/kJmBIJzNwEna_Dqixs5Gh.png)
+![الموقع الرسمي لـ OpenRouter](https://cdn.game-share.store/kJmBIJzNwEna_Dqixs5Gh.png)
 
 ### 2.2 التسجيل/تسجيل الدخول
 
@@ -53,8 +53,8 @@ tags:
 > 💡 **تلميح**
 > : إذا كنت لا ترغب في استخدام بريدك الإلكتروني المعتاد، يمكنك استخدام [خدمة البريد الإلكتروني المؤقتة لموقعنا](https://tools.cmdragon.cn/zh/apps/temp-email) https://tools.cmdragon.cn/zh/apps/temp-email (تأكد من أن OpenRouter يدعم البريد الإلكتروني المؤقت).
 
-![خدمة البريد الإلكتروني المؤقت](https://cdn-cn.cmdragon.cn/Dn0WKPCb4GJRJzJTViZMl.png)
-![تسجيل حساب](https://cdn-cn.cmdragon.cn/zGVLipU7YiUpQ8LinfcsJ.png)
+![خدمة البريد الإلكتروني المؤقت](https://cdn.game-share.store/Dn0WKPCb4GJRJzJTViZMl.png)
+![تسجيل حساب](https://cdn.game-share.store/zGVLipU7YiUpQ8LinfcsJ.png)
 
 ### 2.3 إنشاء مفتاح API
 
@@ -64,9 +64,9 @@ tags:
 2. اختر **"API Keys"** من القائمة اليسرى
 3. انقر على زر **"Create API Key"**
 
-![صفحة الإعدادات](https://cdn-cn.cmdragon.cn/lKVZ6Umc3EkhQRowk7O_E.png)
-![إدارة مفاتيح API](https://cdn-cn.cmdragon.cn/B6lzexbzcIwpT6oltMdNr.png)
-![إنشاء مفتاح API](https://cdn-cn.cmdragon.cn/HQT5zxuf-P6VpJmrwRAfE.png)
+![صفحة الإعدادات](https://cdn.game-share.store/lKVZ6Umc3EkhQRowk7O_E.png)
+![إدارة مفاتيح API](https://cdn.game-share.store/B6lzexbzcIwpT6oltMdNr.png)
+![إنشاء مفتاح API](https://cdn.game-share.store/HQT5zxuf-P6VpJmrwRAfE.png)
 
 ### 2.4 نسخ مفتاح API
 
@@ -86,7 +86,7 @@ tags:
 | **نقطة نهاية API**  | `https://openrouter.ai/api/v1` |
 | **معرف النموذج**   | اختر نموذجًا مجانيًا (انظر الخطوة التالية)                   |
 
-![ملء معلومات التكوين](https://cdn-cn.cmdragon.cn/JRme33gZtIKB8x-zxZXw-.png)
+![ملء معلومات التكوين](https://cdn.game-share.store/JRme33gZtIKB8x-zxZXw-.png)
 
 ---
 
@@ -96,9 +96,9 @@ tags:
 
 في الموقع الرسمي لـ OpenRouter، أدخل **`free`** في مربع بحث النماذج لتصفية جميع النماذج المجانية.
 
-![البحث عن النماذج المجانية](https://cdn-cn.cmdragon.cn/EF-1D1wvVhMMWmtGRXD93.png)
+![البحث عن النماذج المجانية](https://cdn.game-share.store/EF-1D1wvVhMMWmtGRXD93.png)
 
-![نسخ معرف النموذج](https://cdn-cn.cmdragon.cn/NKIeBOVFdhJUfXZ-SU7j3.png)
+![نسخ معرف النموذج](https://cdn.game-share.store/NKIeBOVFdhJUfXZ-SU7j3.png)
 
 ### 4.2 نسخ معرف النموذج
 
@@ -112,11 +112,11 @@ tags:
 
 بعد اكتمال التكوين، يمكنك استخدام نموذج الذكاء الاصطناعي لتحرير سيرتك الذاتية.
 
-![اكتمل التكوين](https://cdn-cn.cmdragon.cn/ObI005LhshzPDb6w0qG9W.png)
-![تحرير السيرة الذاتية](https://cdn-cn.cmdragon.cn/aDU_mXaziu4vj2te6KWvW.png)
-![صورة](https://cdn-cn.cmdragon.cn/RUmsRZYEV-nY4_oswvgaW.png)
-![عرض ميزات الذكاء الاصطناعي](https://cdn-cn.cmdragon.cn/hFDK6Na-Fi7gTL2VyMCva.png)
-![النتائج المُنشأة](https://cdn-cn.cmdragon.cn/7MEWP09NvTPOC0idG4Pz0.png)
+![اكتمل التكوين](https://cdn.game-share.store/ObI005LhshzPDb6w0qG9W.png)
+![تحرير السيرة الذاتية](https://cdn.game-share.store/aDU_mXaziu4vj2te6KWvW.png)
+![صورة](https://cdn.game-share.store/RUmsRZYEV-nY4_oswvgaW.png)
+![عرض ميزات الذكاء الاصطناعي](https://cdn.game-share.store/hFDK6Na-Fi7gTL2VyMCva.png)
+![النتائج المُنشأة](https://cdn.game-share.store/7MEWP09NvTPOC0idG4Pz0.png)
 
 ## الخطوة السادسة: تصدير وطباعة السيرة الذاتية
 
@@ -124,14 +124,14 @@ tags:
 
 انقر على زر **"تصدير السيرة الذاتية"**، وسيقوم النظام تلقائيًا بإنشاء ملف سيرة ذاتية بصيغة PDF قياسية.
 
-![تصدير السيرة الذاتية](https://cdn-cn.cmdragon.cn/XtOsWjb5TvEadMHFbtgD5.png)
+![تصدير السيرة الذاتية](https://cdn.game-share.store/XtOsWjb5TvEadMHFbtgD5.png)
 
 **طرق التصدير**:
 
 - **التصدير من الخادم**: إنشاء ملف PDF مباشرة على الخادم، لضمان تنسيق موحد وتخطيط رائع، يمكن استخدامه بعد التنزيل
-  ![صورة](https://cdn-cn.cmdragon.cn/80GzYvsfodwhT4jzExPgs.png)
+  ![صورة](https://cdn.game-share.store/80GzYvsfodwhT4jzExPgs.png)
 - **الطباعة عبر المتصفح**: استدعاء وظيفة الطباعة الأصلية للمتصفح، يمكن توصيلها بالطابعة لإخراج نسخ ورقية مباشرة
-  ![صورة](https://cdn-cn.cmdragon.cn/v5gj00PLvRkg2Px9RKAEe.png)
+  ![صورة](https://cdn.game-share.store/v5gj00PLvRkg2Px9RKAEe.png)
 
 **سيناريوهات الاستخدام**:
 
@@ -148,7 +148,7 @@ tags:
 
 إذا واجهت الخطأ التالي:
 
-![قيود المعدل](https://cdn-cn.cmdragon.cn/N8XAuxGLIdlIRaeAjkGMN.png)
+![قيود المعدل](https://cdn.game-share.store/N8XAuxGLIdlIRaeAjkGMN.png)
 
 ```json
 {

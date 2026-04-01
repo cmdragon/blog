@@ -1,5 +1,5 @@
 ---
-url: /posts/1965dc6fabd8ba00aa03ad0dc132ae8f/
+url: /zh-TW/posts/1965dc6fabd8ba00aa03ad0dc132ae8f/
 title: quran explorer——免費《古蘭經》阿拉伯語解析工具，三步深度解析經文，輕鬆突破語言障礙
 date: 2025-12-03T06:57:49+08:00
 lastmod: 2025-12-03T06:57:49+08:00
