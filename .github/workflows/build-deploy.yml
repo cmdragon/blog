@@ -83,6 +83,14 @@ jobs:
           echo "搜索索引分割完成"
           ls -la public/search-index/
       
+      # 分割 Sitemap
+      - name: Split Sitemap
+        run: |
+          echo "正在分割 Sitemap..."
+          python3 scripts/split_sitemap.py || exit 1
+          echo "Sitemap 分割完成"
+          ls -la public/sitemap*.xml
+      
       # 部署到 public 分支
       - name: Deploy to public branch
         uses: JamesIves/github-pages-deploy-action@v4
