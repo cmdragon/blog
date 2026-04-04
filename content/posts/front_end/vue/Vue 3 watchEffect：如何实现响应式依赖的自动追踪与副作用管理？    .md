@@ -32,7 +32,6 @@ tags:
 
 [发现1000+提升效率与开发的AI工具和实用程序](https://tools.cmdragon.cn/zh/apps?category=ai_chat)：https://tools.cmdragon.cn/
 
-# Vue 3 watchEffect 深度解析——自动追踪响应式依赖的便捷API
 
 ## 一、watchEffect 基本概念
 
