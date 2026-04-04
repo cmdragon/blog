@@ -27,8 +27,6 @@ tags:
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_ca308b16-cd4a-4a56-a56e-8402148b8ea3.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 
-# 暗网监测发现BreachForums疑似VIP用户数据库泄露 涉及95名标注为CN的用户
-
 2026年1月17日，安全研究人员通过暗网监测发现一份自称源自BreachForums（简称BF论坛）的SQL数据库文件泄露。该数据库声称包含来自11个国家的约1200名“VIP用户”信息，其中“国家”字段标注为“CN”的用户达95名。由于泄露者未披露VIP用户的评定标准，这批用户的身份真实性目前仍无法核实。
 
 此次泄露的数据涵盖用户ID、用户名、明文密码、等级、在线时长、发帖数量、国家字段及最后登录IP等16项关键信息。安全分析指出，明文密码的泄露将大幅提升撞库攻击与账号关联风险，一旦这些信息被恶意利用，相关用户的其他在线账号安全将面临直接威胁。
