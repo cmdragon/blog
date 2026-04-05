@@ -1,0 +1,6 @@
+# wrangler pages deploy public/ --commit-message "Deploy blog project1" --branch main
+
+name = "blog"
+compatibility_date = "2026-04-04"
+
+pages_build_output_dir = "./public"
