@@ -1,0 +1,854 @@
+<!doctype html><html lang=zh-cn><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Vue 3 组件事件修饰符与按键修饰符的深度应用 - cmdragon's Blog</title><meta name=description content="深入探索 Vue 3 事件修饰符与按键修饰符的高级用法，从基础修饰符到组合键控制，从组件事件到自定义修饰符，全面掌握事件处理的精髓"><meta name=author content="cmdragon"><meta name=robots content="index, follow"><link rel=canonical href=https://blog.cmdragon.cn/posts/vue3-component-event-modifiers-and-key-modifiers/><meta property="og:title" content="Vue 3 组件事件修饰符与按键修饰符的深度应用 - cmdragon's Blog"><meta property="og:description" content="深入探索 Vue 3 事件修饰符与按键修饰符的高级用法，从基础修饰符到组合键控制，从组件事件到自定义修饰符，全面掌握事件处理的精髓"><meta property="og:type" content="article"><meta property="og:url" content="https://blog.cmdragon.cn/posts/vue3-component-event-modifiers-and-key-modifiers/"><meta property="og:image" content="https://api2.cmdragon.cn/upload/cmder/images/e645c9ba8d91406cb0ff409c65584c2a~tplv-5jbd59dj06-image.png"><meta property="og:site_name" content="cmdragon's Blog"><meta property="article:published_time" content="2026-04-04T10:00:00+08:00"><meta property="article:modified_time" content="2026-04-04T10:00:00+08:00"><meta property="article:section" content="vue"><meta property="article:tag" content="基础入门"><meta property="article:tag" content="事件修饰符"><meta property="article:tag" content="按键修饰符"><meta property="article:tag" content="组合键"><meta property="article:tag" content="事件处理"><meta property="article:tag" content="实战技巧"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Vue 3 组件事件修饰符与按键修饰符的深度应用 - cmdragon's Blog"><meta name=twitter:description content="深入探索 Vue 3 事件修饰符与按键修饰符的高级用法，从基础修饰符到组合键控制，从组件事件到自定义修饰符，全面掌握事件处理的精髓"><meta name=twitter:image content="https://api2.cmdragon.cn/upload/cmder/images/e645c9ba8d91406cb0ff409c65584c2a~tplv-5jbd59dj06-image.png"><meta name=twitter:site content="@cmdragon_cn"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Vue 3 组件事件修饰符与按键修饰符的深度应用","datePublished":"2026-04-04T10:00:00\u002b08:00","dateModified":"2026-04-04T10:00:00\u002b08:00","author":{"@type":"Person","name":"cmdragon"},"description":"深入探索 Vue 3 事件修饰符与按键修饰符的高级用法，从基础修饰符到组合键控制，从组件事件到自定义修饰符，全面掌握事件处理的精髓","image":"https:\/\/api2.cmdragon.cn\/upload\/cmder\/images\/e645c9ba8d91406cb0ff409c65584c2a~tplv-5jbd59dj06-image.png","url":"https:\/\/blog.cmdragon.cn\/posts\/vue3-component-event-modifiers-and-key-modifiers\/","publisher":{"@type":"Organization","name":"cmdragon\u0027s Blog","logo":{"@type":"ImageObject","url":"https:\/\/blog.cmdragon.cn\/images\/logo\/small.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/blog.cmdragon.cn\/posts\/vue3-component-event-modifiers-and-key-modifiers\/"},"keywords":"vue","keywords":"基础入门, 事件修饰符, 按键修饰符, 组合键, 事件处理, 实战技巧","wordCount":"6739"}</script><link rel=preconnect href=https://unpkg.com><link rel=preconnect href=https://cdnjs.cloudflare.com><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=preload href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js as=script><script src=/js/cdn-fallback.min.d96e04fe85fe06e55a3d89418467a7d50fe1a61c4e182ccced45e9a3a99ab14ad05f9aa34d7b6d532ed43f7abb8a83a4c9b5045a25c4fce877e2a8b69045359c.js integrity="sha512-2W4E/oX+BuVaPYlBhGen1Q/hphxOGCzM7UXpo6masUrQX5qjTXttUy7UP3q7ioOkybUEWiXE/Oh34qi2kEU1nA=="></script><link rel=icon href=/favicon.ico type=image/x-icon><link rel=apple-touch-icon href=/images/logo/small.png><link rel=icon type=image/png sizes=32x32 href=/images/logo/small.png><link rel=icon type=image/svg+xml href=/images/logo/scalable.svg><meta name=theme-color content="#3B82F6"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2874982874195135" crossorigin=anonymous></script><script async src="https://fundingchoicesmessages.google.com/i/pub-2874982874195135?ers=1"></script><script>(function(){const e=()=>{const e=document.querySelectorAll(".mermaid");e.forEach(e=>{const t=e.textContent.trim();e.setAttribute("data-mermaid-code",t)})};document.readyState==="loading"?document.addEventListener("DOMContentLoaded",e):e();const t=async()=>{try{const t=await window.CDNHelper?.detect()||"unpkg",n=window.CDNHelper?.getBase(t)||"https://unpkg.com";let e;if(t==="unpkg"?e="https://unpkg.com/mermaid@10.3.0/dist/mermaid.min.js":e="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.3.0/mermaid.min.js",await new Promise((t,n)=>{const s=document.createElement("script");s.src=e,s.onload=t,s.onerror=n,document.head.appendChild(s)}),typeof mermaid!="undefined"){window.mermaid=mermaid;const e=document.documentElement.classList.contains("dark")||window.matchMedia("(prefers-color-scheme: dark)").matches;window.mermaid.initialize({startOnLoad:!0,theme:e?"dark":"default",securityLevel:"loose",flowchart:{curve:"basis",htmlLabels:!0},sequence:{mirrorActors:!1,wrap:!0},themeVariables:{primaryColor:"#3b82f6",primaryTextColor:"#ffffff",primaryBorderColor:e?"#60a5fa":"#2563eb",lineColor:e?"#94a3b8":"#4b5563",secondaryColor:e?"#1e293b":"#f0f9ff",tertiaryColor:e?"#334155":"#f3f4f6"}}),document.addEventListener("DOMContentLoaded",function(){try{typeof window.mermaid.init=="function"&&window.mermaid.init(0[0],document.querySelectorAll(".mermaid"))}catch{}})}}catch(e){console.error("[Mermaid] Failed to load:",e)}};t()})()</script><script src=/js/mermaid-viewer.min.cd88888f37483ffbebbd85f1713500322e25bffb897be59ab877f80a1285d1b662bcbaed859e0f0ae05c643cc4b87ddc32f860fe973feefb87ca9073892298e7.js integrity="sha512-zYiIjzdIP/vrvYXxcTUAMi4lv/uJe+WauHf4ChKF0bZivLrthZ4PCuBcZDzEuH3cMvhg/pc/7vuHypBziSKY5w==" defer></script><style>#mermaid-viewer-container{opacity:0;transition:opacity .3s ease;z-index:9999;animation:fadeIn .3s ease forwards}#mermaid-viewer-container.hidden{opacity:0;pointer-events:none;animation:fadeOut .3s ease forwards}.mermaid-viewer-content{position:relative;overflow:auto;scrollbar-width:thin;scrollbar-color:rgba(156,163,175,.5)transparent}.mermaid-viewer-content::-webkit-scrollbar{width:8px;height:8px}.mermaid-viewer-content::-webkit-scrollbar-track{background:0 0}.mermaid-viewer-content::-webkit-scrollbar-thumb{background-color:rgba(156,163,175,.5);border-radius:4px}.mermaid-viewer-content::-webkit-scrollbar-thumb:hover{background-color:rgba(107,114,128,.7)}.mermaid-canvas-container{min-width:100%;min-height:100%;display:flex;align-items:center;justify-content:center}.mermaid-canvas{max-width:90vw;max-height:85vh;transform-origin:center;box-shadow:0 10px 25px -5px rgba(0,0,0,.4);transition:transform .3s ease,opacity .3s ease;cursor:grab;background:0 0}.mermaid-canvas:active{cursor:grabbing}.mermaid-loader{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:48px;height:48px;border:3px solid rgba(255,255,255,.3);border-radius:50%;border-top-color:#fff;animation:spin 1s ease-in-out infinite;z-index:5}@keyframes spin{to{transform:translate(-50%,-50%)rotate(360deg)}}.top-controls-container{transition:opacity .3s ease,transform .3s ease;z-index:100;pointer-events:none}.top-controls-container.controls-hidden{opacity:0;transform:translateY(-20px);pointer-events:none}.top-controls-container>*{pointer-events:auto}#mermaid-title{box-shadow:0 2px 8px rgba(0,0,0,.2);backdrop-filter:blur(8px);opacity:.9;transition:opacity .3s ease,transform .3s ease;max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.top-controls-container.controls-hidden #mermaid-title{opacity:0;transform:translateY(-10px)}.top-right-controls{display:flex;gap:.5rem;background:rgba(31,41,55,.7);backdrop-filter:blur(8px);padding:.5rem;border-radius:9999px;border:1px solid rgba(255,255,255,.1)}.bottom-controls-container{transition:opacity .3s ease,transform .3s ease;z-index:20}.bottom-controls-container.control-bar-hidden{opacity:0;transform:translateY(20px);pointer-events:none}.control-bar{box-shadow:0 4px 15px rgba(0,0,0,.3);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.1);transition:transform .3s ease,opacity .3s ease;opacity:.85;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none;padding:.5rem 1rem}.control-bar::-webkit-scrollbar{display:none}.control-bar:hover{opacity:1}#mermaid-viewer-container button{opacity:.9;transition:all .2s ease;position:relative;overflow:hidden;background:0 0;border:none;color:#fff;padding:.5rem;border-radius:9999px}#mermaid-viewer-container button::after{content:'';position:absolute;top:50%;left:50%;width:5px;height:5px;background:rgba(255,255,255,.7);opacity:0;border-radius:100%;transform:scale(1,1)translate(-50%,-50%);transform-origin:50% 50%}#mermaid-viewer-container button:hover{opacity:1;transform:scale(1.15);background-color:rgba(75,85,99,.6)}#mermaid-viewer-container button:active{transform:scale(.95)}#mermaid-viewer-container button:hover::after{animation:ripple .6s ease-out}@keyframes ripple{0%{opacity:1;transform:scale(0,0)translate(-50%,-50%)}100%{opacity:0;transform:scale(20,20)translate(-50%,-50%)}}#mermaid-viewer-container button:focus-visible{outline:2px solid #60a5fa;outline-offset:2px;opacity:1}#mermaid-zoom-level{font-family:courier new,monospace;font-weight:600;text-shadow:0 1px 2px rgba(0,0,0,.3)}.control-bar .mx-2{transition:opacity .3s ease}.mermaid-hint-icon{z-index:10}.mermaid:hover .mermaid-hint-icon{opacity:1!important}.mermaid-gesture-indicator{opacity:0;z-index:9999;box-shadow:0 4px 12px rgba(0,0,0,.3);backdrop-filter:blur(8px);letter-spacing:.02em}.mermaid-gesture-indicator.fade-in{animation:fadeInUp .5s ease forwards}.mermaid-gesture-indicator.fade-out{animation:fadeOutDown .5s ease forwards}@keyframes fadeIn{from{opacity:0}to{opacity:1}}@keyframes fadeOut{from{opacity:1}to{opacity:0}}@keyframes fadeInUp{from{opacity:0;transform:translate(-50%,20px)}to{opacity:1;transform:translate(-50%,0)}}@keyframes fadeOutDown{from{opacity:1;transform:translate(-50%,0)}to{opacity:0;transform:translate(-50%,20px)}}.dark .mermaid-canvas{filter:brightness(.95);box-shadow:0 10px 25px -5px rgba(0,0,0,.6)}.dark .control-bar{background-color:rgba(17,24,39,.8);border-color:rgba(75,85,99,.2)}.dark #mermaid-viewer-container button:hover{background-color:rgba(55,65,81,.8)}.dark #mermaid-title{background-color:rgba(17,24,39,.8)}.dark .top-right-controls{background-color:rgba(17,24,39,.7)}@media(max-width:768px){.control-bar{padding:.4rem .6rem;gap:.15rem;max-width:95%}#mermaid-viewer-container button{padding:.35rem}#mermaid-viewer-container button iconify-icon{width:18px;height:18px}.mermaid-canvas{max-width:95vw;max-height:80vh}#mermaid-title{max-width:200px;font-size:.75rem;padding:.35rem .7rem}.control-bar .mx-2{margin-left:.15rem;margin-right:.15rem;height:1rem}.top-right-controls{padding:.4rem}}@media(max-width:480px){.control-bar{padding:.3rem .5rem;gap:.1rem;max-width:98%}#mermaid-viewer-container button{padding:.25rem}#mermaid-viewer-container button iconify-icon{width:16px;height:16px}#mermaid-title{max-width:150px;font-size:.7rem;padding:.25rem .5rem}.control-bar .mx-2{margin-left:.1rem;margin-right:.1rem}#mermaid-zoom-level{min-width:50px;font-size:.75rem}}@media(hover:none){.control-bar{opacity:1;transform:translateY(0)!important}#mermaid-viewer-container button{opacity:1}#mermaid-title{opacity:1}.mermaid-hint-icon{display:none}}#mermaid-viewer-container:fullscreen .mermaid-canvas{max-width:95vw;max-height:90vh}#mermaid-viewer-container:fullscreen .control-bar{margin-bottom:1rem}@media print{#mermaid-viewer-container{display:none!important}}</style><style>.mermaid{margin:2rem auto;text-align:center;overflow:visible;width:auto;max-width:100%;background-color:#f9fafb;padding:1.5rem .5rem;border-radius:.5rem;box-shadow:0 2px 4px rgba(0,0,0,5%);display:block}.dark .mermaid{background-color:#1e293b;box-shadow:0 2px 4px rgba(0,0,0,.15)}.mermaid svg{display:block!important;max-width:100%;width:auto!important;height:auto!important;font-size:14px;margin:0 auto}@media(max-width:768px){.mermaid{max-width:98%;padding:.8rem .3rem;margin:1.2rem auto}.mermaid svg{font-size:12px}}</style><script>(function(){const e=async()=>{try{const e=await window.CDNHelper?.detect()||"unpkg";let t,n;e==="unpkg"?(t="https://unpkg.com/katex@0.16.8/dist/katex.js",n="https://unpkg.com/katex@0.16.8/dist/contrib/auto-render.js"):(t="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.js",n="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/contrib/auto-render.js");const s=document.createElement("link");s.rel="stylesheet",s.href=e==="unpkg"?"https://unpkg.com/katex@0.16.8/dist/katex.min.css":"https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.css",document.head.appendChild(s),await Promise.all([new Promise((e,n)=>{const s=document.createElement("script");s.src=t,s.defer=!0,s.onload=e,s.onerror=n,document.head.appendChild(s)}),new Promise((e,t)=>{const s=document.createElement("script");s.src=n,s.defer=!0,s.onload=e,s.onerror=t,document.head.appendChild(s)})]),console.log("[KaTeX] Loaded successfully from",e)}catch(e){console.error("[KaTeX] Failed to load:",e)}};e()})()</script><link rel=stylesheet href=/css/tailwind.min.min.ea68bfc73e0db5d7da38c026c3e4ecd503d4a412698165f9805d05d02f545b3f5b5ea5b60ca83c0813c0a2845aeef8cd8c520d0aac1e9ba80c60419e659711f9.css integrity="sha512-6mi/xz4NtdfaOMAmw+Ts1QPUpBJpgWX5gF0F0C9UWz9bXqW2DKg8CBPAooRa7vjNjFINCqwem6gMYEGeZZcR+Q=="><script src=/js/iconify-icon.min.min.add8401d64cbecc15c47ca85973277daf8c5a940115167a7a6f2a8cff44be757e27dd48f13aaa0470d322179b170a10dbc5908f02f3966901f3d23b53c1edde0.js integrity="sha512-rdhAHWTL7MFcR8qFlzJ32vjFqUARUWenpvKoz/RL51fifdSPE6qgRw0yIXmxcKENvFkI8C85ZpAfPSO1PB7d4A=="></script><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"><link rel=stylesheet href=/css/code-highlight.min.ec690d5f44c0bc50302407e95a0059375527153e46bd5a38ceed951c0c685dabfc65cb5105db63e48a69ea847a6b578104507b3aec7384f448c4ae942b390090.css integrity="sha512-7GkNX0TAvFAwJAfpWgBZN1UnFT5GvVo4zu2VHAxoXav8ZctRBdtj5Ipp6oR6a1eBBFB7OuxzhPRIxK6UKzkAkA=="><link rel=stylesheet href=/css/markdown.min.4721401ceae83b0603d50bb248719ef7b2d064eaba4104198abfc4e6a054363f1f40c58cadd3cd40d1cace04e0df5ee99bbec80b3a9403c7bf65b0b5a35554f7.css integrity="sha512-RyFAHOroOwYD1QuySHGe97LQZOq6QQQZir/E5qBUNj8fQMWMrdPNQNHKzgTg317pm77ICzqUA8e/ZbC1o1VU9w=="><script>!function(e){"use strict";!function(){var i,s=window,o=document,a=e,c="".concat("https:"===o.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=o.createElement("script"),r=o.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",a.d=n,i=function(){s.LA.ids.push(a)},s.LA?s.LA.ids&&i():(s.LA=e,s.LA.ids=[],i()),r.parentNode.insertBefore(n,r)}()}({id:"3IdZIMuyj5mvN0Fz",ck:"3IdZIMuyj5mvN0Fz",autoTrack:!0,hashMode:!0,screenRecord:!0})</script><script type=text/javascript>(function(e,t,n,s,o,i,a){e[n]=e[n]||function(){(e[n].q=e[n].q||[]).push(arguments)},i=t.createElement(s),i.async=1,i.src="https://www.clarity.ms/tag/"+o,a=t.getElementsByTagName(s)[0],a.parentNode.insertBefore(i,a)})(window,document,"clarity","script","t1msljq2dq")</script></head><body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 min-h-screen flex flex-col"><div class="flex-grow flex flex-col"><div id=ad-block-message class="bg-amber-50 dark:bg-amber-900/30 shadow-sm w-full px-4 py-2 border-b border-amber-200 dark:border-amber-800" style=display:none><div class="flex items-center justify-between container md:px-4 sm:px-2 mx-auto"><div class="flex items-center"><svg aria-hidden="true" class="h-4 w-4 text-amber-500 dark:text-amber-400 mr-2" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v2h-2v-2zm0-10h2v8h-2V7z"/></svg><p class="text-sm text-gray-700 dark:text-gray-200">我们检测到您正在使用广告拦截器，将我们的网站添加到白名单中有助于网站的长期维护和运营，感谢您的支持！</p></div></div></div><script src=/js/ad-blocker-detection.min.b685b8e0e9ce1f8fb2811345a36c22a78e937b879bdcfed9ab75065b8ebea135.js></script><header class="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-30 transition-all duration-300 border-b border-gray-100 dark:border-gray-700"><div class="container mx-auto px-4"><div class="flex justify-between items-center h-16"><div class="flex items-center"><a href=https://blog.cmdragon.cn/ class="flex items-center gap-2 text-xl font-bold text-gray-900 dark:text-white group transition-all duration-300" aria-label="cmdragon's Blog 首页" tabindex=0><div class="h-9 w-9 flex items-center justify-center transition-all duration-300 transform group-hover:scale-105"><img src=/images/logo/small.png alt="cmdragon's Blog Logo" class="h-full w-auto"></div><span class="group-hover:text-primary transition-colors duration-300">cmdragon's Blog</span></a></div><nav class="hidden md:flex space-x-1"><a href=/ class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 relative overflow-hidden group text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700" aria-label=首页 tabindex=0><span class="relative z-10">首页</span>
+<span class="absolute bottom-0 left-0 w-full h-0 bg-gradient-to-r from-blue-500 to-indigo-600 transition-all duration-300 group-hover:h-full opacity-80 -z-0"></span>
+<span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+</a><a href=/archives/ class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 relative overflow-hidden group text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700" aria-label=归档 tabindex=0><span class="relative z-10">归档</span>
+<span class="absolute bottom-0 left-0 w-full h-0 bg-gradient-to-r from-blue-500 to-indigo-600 transition-all duration-300 group-hover:h-full opacity-80 -z-0"></span>
+<span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+</a><a href=/categories/ class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 relative overflow-hidden group text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700" aria-label=分类 tabindex=0><span class="relative z-10">分类</span>
+<span class="absolute bottom-0 left-0 w-full h-0 bg-gradient-to-r from-blue-500 to-indigo-600 transition-all duration-300 group-hover:h-full opacity-80 -z-0"></span>
+<span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+</a><a href=/tags/ class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 relative overflow-hidden group text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700" aria-label=标签 tabindex=0><span class="relative z-10">标签</span>
+<span class="absolute bottom-0 left-0 w-full h-0 bg-gradient-to-r from-blue-500 to-indigo-600 transition-all duration-300 group-hover:h-full opacity-80 -z-0"></span>
+<span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+</a><a href=/friends/ class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 relative overflow-hidden group text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700" aria-label=友链 tabindex=0><span class="relative z-10">友链</span>
+<span class="absolute bottom-0 left-0 w-full h-0 bg-gradient-to-r from-blue-500 to-indigo-600 transition-all duration-300 group-hover:h-full opacity-80 -z-0"></span>
+<span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span></a></nav><div class="flex items-center space-x-3"><button class="p-2 rounded-lg hover:bg-blue-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary" aria-label=搜索 tabindex=0 onclick=openSiteSearch()>
+<iconify-icon icon=mdi:magnify width=20 height=20></iconify-icon></button><div class=relative><button id=domain-toggle class="p-2 rounded-lg hover:bg-blue-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary" aria-label=切换域名 tabindex=0>
+<iconify-icon icon=mdi:web width=20 height=20></iconify-icon></button><div id=domain-dropdown class="hidden absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-lg py-1 z-50 border border-gray-200 dark:border-gray-700"><a href=https://blog.cmdragon.cn/posts/vue3-component-event-modifiers-and-key-modifiers/ class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">分流一
+</a><a href=https://blog1.cmdragon.cn/posts/vue3-component-event-modifiers-and-key-modifiers/ class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">分流二</a></div></div><script>document.getElementById("domain-toggle")?.addEventListener("click",function(e){e.stopPropagation();const t=document.getElementById("domain-dropdown");t?.classList.toggle("hidden")}),document.addEventListener("click",function(){const t=document.getElementById("domain-dropdown");t&&!t.classList.contains("hidden")&&t.classList.add("hidden")})</script><button id=theme-toggle class="p-2 rounded-lg hover:bg-blue-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary" aria-label=切换深色模式 tabindex=0>
+<iconify-icon icon=mdi:weather-sunny class=dark:hidden width=20 height=20></iconify-icon><iconify-icon icon=mdi:weather-night class="hidden dark:block" width=20 height=20></iconify-icon></button>
+<button id=mobile-menu-button class="md:hidden p-2 rounded-lg hover:bg-blue-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary" aria-label=打开菜单 tabindex=0>
+<iconify-icon icon=mdi:menu width=20 height=20></iconify-icon></button></div></div><div id=mobile-menu class="md:hidden hidden pb-3"><div class="space-y-2 px-2 pt-2 pb-3 rounded-lg bg-gray-50 dark:bg-gray-700 mt-2 shadow-inner"><a href=/ class="block px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" aria-label=首页 tabindex=0><div class="flex items-center"><iconify-icon icon=mdi:chevron-right class=mr-2 width=18 height=18></iconify-icon>首页</div></a><a href=/archives/ class="block px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" aria-label=归档 tabindex=0><div class="flex items-center"><iconify-icon icon=mdi:chevron-right class=mr-2 width=18 height=18></iconify-icon>归档</div></a><a href=/categories/ class="block px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" aria-label=分类 tabindex=0><div class="flex items-center"><iconify-icon icon=mdi:chevron-right class=mr-2 width=18 height=18></iconify-icon>分类</div></a><a href=/tags/ class="block px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" aria-label=标签 tabindex=0><div class="flex items-center"><iconify-icon icon=mdi:chevron-right class=mr-2 width=18 height=18></iconify-icon>标签</div></a><a href=/friends/ class="block px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" aria-label=友链 tabindex=0><div class="flex items-center"><iconify-icon icon=mdi:chevron-right class=mr-2 width=18 height=18></iconify-icon>友链</div></a></div></div></div></header><script>document.getElementById("mobile-menu-button")?.addEventListener("click",function(){const e=document.getElementById("mobile-menu");e?.classList.toggle("hidden")}),document.getElementById("theme-toggle")?.addEventListener("click",function(){window.SiteUtils?.themeManager?window.SiteUtils.themeManager.toggle():document.documentElement.classList.contains("dark")?(document.documentElement.classList.remove("dark"),localStorage.setItem("color-theme","light")):(document.documentElement.classList.add("dark"),localStorage.setItem("color-theme","dark"))}),window.addEventListener("scroll",function(){const e=document.querySelector("header");window.scrollY>10?e?.classList.add("shadow-lg","bg-white/95","backdrop-blur-sm","dark:bg-gray-800/95"):e?.classList.remove("shadow-lg","bg-white/95","backdrop-blur-sm","dark:bg-gray-800/95")})</script><main class="container mx-auto px-4 py-8 flex-grow"><div class=relative><div class="flex flex-col lg:flex-row lg:gap-8"><article class="w-full lg:w-3/4 bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 lg:p-8 mb-8 border border-gray-100 dark:border-gray-700"><nav class="text-sm text-gray-600 dark:text-gray-400 mb-4" aria-label=面包屑导航><ol class="flex flex-wrap items-center" itemscope itemtype=https://schema.org/BreadcrumbList><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a href=https://blog.cmdragon.cn/ class="hover:text-primary dark:hover:text-primary-light transition-colors" itemprop=item aria-label=首页><span itemprop=name>首页</span>
+</a><meta itemprop=position content="1"></li><li class=mx-2>/</li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a href=https://blog.cmdragon.cn/posts class="hover:text-primary dark:hover:text-primary-light transition-colors" itemprop=item aria-label=Posts><span itemprop=name>Posts</span>
+</a><meta itemprop=position content="2"></li><li class=mx-2>/</li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span class="text-gray-800 dark:text-gray-200" itemprop=name title="Vue 3 组件事件修饰符与按键修饰符的深度应用">Vue 3 组件事件修饰符与按键修饰符的深度应用...</span>
+<meta itemprop=position content="3"></li></ol></nav><header class="mb-8 border-b border-gray-100 dark:border-gray-700 pb-6"><h1 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white leading-tight">Vue 3 组件事件修饰符与按键修饰符的深度应用</h1><div class="flex flex-wrap items-center text-sm text-gray-600 dark:text-gray-300 gap-3"><span class="flex items-center bg-gray-200 dark:bg-gray-700 px-3 py-1.5 rounded-full"><iconify-icon icon=mdi:calendar class=mr-1 width=16 height=16></iconify-icon>2026-04-04
+</span><span class="flex items-center bg-blue-200 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1.5 rounded-full"><iconify-icon icon=mdi:folder class=mr-1 width=16 height=16></iconify-icon><a href=/categories/vue class="hover:text-blue-700 dark:hover:text-blue-300 transition-colors">vue
+</a></span><span class="flex items-center bg-purple-200 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-3 py-1.5 rounded-full"><iconify-icon icon=mdi:clock-outline class=mr-1 width=16 height=16></iconify-icon>34 分钟阅读
+</span><a href=https://creativecommons.org/licenses/by-nc-sa/4.0/deed target=_blank rel="noopener noreferrer" class="flex items-center bg-green-200 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1.5 rounded-full hover:bg-green-300 dark:hover:bg-green-800 transition-colors" aria-label="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 License" tabindex=0><iconify-icon icon=simple-icons:creativecommons width=16 height=16 class=mr-1></iconify-icon><iconify-icon icon=simple-icons:creativecommonsbysa width=16 height=16 class=mr-1></iconify-icon><iconify-icon icon=simple-icons:creativecommonsnc width=16 height=16 class=mr-1></iconify-icon><span>BY-NC-SA 4.0</span></a></div></header><div class="article-content prose dark:prose-invert lg:prose-lg max-w-none mb-8 leading-relaxed" id=article-content><img src=https://api2.cmdragon.cn/upload/cmder/images/e645c9ba8d91406cb0ff409c65584c2a~tplv-5jbd59dj06-image.png title=cover.png alt=cover.png>
+<img src=https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg title=cmdragon_cn.png alt=cmdragon_cn.png><p>扫描 <a href=https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg>二维码</a> 关注或者微信搜一搜：<code>编程智域 前端至全栈交流与成长</code></p><p><a href="https://tools.cmdragon.cn/zh/apps?category=ai_chat">发现 1000+ 提升效率与开发的 AI 工具和实用程序</a>：https://tools.cmdragon.cn/</p><h2 id=1-事件修饰符的核心概念>1. 事件修饰符的核心概念</h2><p>在 Vue 3 中，事件修饰符是处理 DOM 事件的强大工具。它们允许我们以声明式的方式处理常见的事件行为，无需在组件方法中编写冗余代码。</p><h3 id=11-什么是事件修饰符>1.1 什么是事件修饰符？</h3><p>事件修饰符是以点号（<code>.</code>）结尾的指令后缀，用于修改事件监听器的行为。</p><div class=mermaid-container><div class="mermaid flowchart">graph TB
+A["@click 事件"] --> B["基础事件监听"]
+A --> C["@click.stop"]
+A --> D["@click.prevent"]
+A --> E["@click.capture"]
+A --> F["@click.self"]
+A --> G["@click.once"]
+style A fill:#42b883,color:#fff
+style B fill:#35495e,color:#fff
+style C fill:#35495e,color:#fff
+style D fill:#35495e,color:#fff
+style E fill:#35495e,color:#fff
+style F fill:#35495e,color:#fff
+style G fill:#35495e,color:#fff</div></div><style>.mermaid-container{width:100%;overflow:auto;margin:1.5rem 0}.mermaid-container .mermaid{min-width:fit-content}@media screen and (max-width:768px){.mermaid-container{max-width:100%;overflow-x:auto}}</style><h3 id=12-修饰符的执行顺序>1.2 修饰符的执行顺序</h3><p>多个修饰符可以同时使用，Vue 会按照特定顺序处理它们：</p><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>&lt;template&gt;
+  &lt;!-- 修饰符顺序：capture -&gt; once -&gt; stop -&gt; prevent --&gt;
+  &lt;div @click.capture.once.stop=&#34;handleClick&#34;&gt;点击我&lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script setup&gt;
+function handleClick() {
+  console.log(&#34;事件被触发&#34;);
+}
+&lt;/script&gt;</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:initial;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><p><strong>执行顺序规则：</strong></p><div class=mermaid-container><div class="mermaid sequence">sequenceDiagram
+participant Browser as 浏览器
+participant Capture as capture 修饰符
+participant Once as once 修饰符
+participant Stop as stop 修饰符
+participant Prevent as prevent 修饰符
+participant Handler as 事件处理函数
+Browser->>Capture: 1. 捕获阶段拦截
+Capture->>Once: 2. 标记为一次性
+Once->>Stop: 3. 阻止事件冒泡
+Stop->>Prevent: 4. 阻止默认行为
+Prevent->>Handler: 5. 执行处理函数</div></div><style>.mermaid-container{width:100%;overflow:auto;margin:1.5rem 0}.mermaid-container .mermaid{min-width:fit-content}@media screen and (max-width:768px){.mermaid-container{max-width:100%;overflow-x:auto}}</style><h2 id=2-基础事件修饰符详解>2. 基础事件修饰符详解</h2><h3 id=21-stop---阻止事件冒泡>2.1 <code>.stop</code> - 阻止事件冒泡</h3><p>相当于调用 <code>event.stopPropagation()</code></p><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>&lt;template&gt;
+  &lt;div class=&#34;outer&#34; @click=&#34;handleOuterClick&#34;&gt;
+    外层元素
+
+    &lt;div class=&#34;inner&#34; @click.stop=&#34;handleInnerClick&#34;&gt;
+      内层元素（点击我不会触发外层事件）
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script setup&gt;
+function handleOuterClick() {
+  console.log(&#34;外层元素被点击&#34;);
+}
+
+function handleInnerClick() {
+  console.log(&#34;内层元素被点击&#34;);
+}
+&lt;/script&gt;
+
+&lt;style scoped&gt;
+.outer {
+  padding: 2rem;
+  background-color: #42b883;
+  color: #fff;
+}
+
+.inner {
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: #35495e;
+  cursor: pointer;
+}
+&lt;/style&gt;</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:initial;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><p><strong>应用场景：</strong></p><div class=mermaid-container><div class="mermaid flowchart">graph LR
+A[模态框关闭] --> B[点击遮罩关闭，点击内容不关闭]
+C[下拉菜单] --> D[点击菜单项不关闭菜单]
+E[嵌套列表] --> F[展开子项不触发父项]
+style A fill:#42b883,color:#fff
+style B fill:#35495e,color:#fff
+style C fill:#42b883,color:#fff
+style D fill:#35495e,color:#fff
+style E fill:#42b883,color:#fff
+style F fill:#35495e,color:#fff</div></div><style>.mermaid-container{width:100%;overflow:auto;margin:1.5rem 0}.mermaid-container .mermaid{min-width:fit-content}@media screen and (max-width:768px){.mermaid-container{max-width:100%;overflow-x:auto}}</style><h3 id=22-prevent---阻止默认行为>2.2 <code>.prevent</code> - 阻止默认行为</h3><p>相当于调用 <code>event.preventDefault()</code></p><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>&lt;template&gt;
+  &lt;!-- 表单提交不刷新页面 --&gt;
+  &lt;form @submit.prevent=&#34;handleSubmit&#34;&gt;
+    &lt;input v-model=&#34;username&#34; placeholder=&#34;用户名&#34; /&gt;
+    &lt;input v-model=&#34;password&#34; type=&#34;password&#34; placeholder=&#34;密码&#34; /&gt;
+    &lt;button type=&#34;submit&#34;&gt;登录&lt;/button&gt;
+  &lt;/form&gt;
+
+  &lt;!-- 链接不跳转 --&gt;
+  &lt;a href=&#34;https://example.com&#34; @click.prevent=&#34;handleLinkClick&#34;&gt;
+    点击我（不会跳转）
+  &lt;/a&gt;
+
+  &lt;!-- 右键菜单 --&gt;
+  &lt;div @contextmenu.prevent=&#34;handleContextMenu&#34;&gt;
+    右键点击我（显示自定义菜单）
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script setup&gt;
+import { ref } from &#34;vue&#34;;
+
+const username = ref(&#34;&#34;);
+const password = ref(&#34;&#34;);
+
+function handleSubmit() {
+  console.log(&#34;提交登录:&#34;, {
+    username: username.value,
+    password: password.value,
+  });
+  // 使用 AJAX 提交，不刷新页面
+}
+
+function handleLinkClick() {
+  console.log(&#34;链接被点击，但不跳转&#34;);
+}
+
+function handleContextMenu(event) {
+  event.preventDefault();
+  console.log(&#34;显示自定义菜单&#34;, event.clientX, event.clientY);
+}
+&lt;/script&gt;</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:initial;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><h3 id=23-capture---捕获模式监听>2.3 <code>.capture</code> - 捕获模式监听</h3><p>使用捕获模式添加事件监听器，事件从外向内传播时触发。</p><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>&lt;template&gt;
+  &lt;div class=&#34;outer&#34; @click.capture=&#34;handleOuterCapture&#34;&gt;
+    外层（捕获模式）
+
+    &lt;div class=&#34;inner&#34; @click=&#34;handleInnerClick&#34;&gt;内层（冒泡模式）&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script setup&gt;
+function handleOuterCapture() {
+  console.log(&#34;1. 外层捕获阶段触发&#34;);
+}
+
+function handleInnerClick() {
+  console.log(&#34;2. 内层冒泡阶段触发&#34;);
+}
+
+// 点击顺序：
+// 1. 外层捕获阶段触发
+// 2. 内层冒泡阶段触发
+// 3. 外层冒泡阶段（如果有 @click）
+&lt;/script&gt;</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:initial;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><p><strong>事件传播流程：</strong></p><div class=mermaid-container><div class="mermaid sequence">sequenceDiagram
+participant Outer as 外层元素
+participant Inner as 内层元素
+Note over Outer,Inner: 捕获阶段（从外向内）
+Outer->>Inner: 1. @click.capture 触发
+Note over Outer,Inner: 目标阶段
+Inner->>Inner: 2. @click 触发
+Note over Outer,Inner: 冒泡阶段（从内向外）
+Inner->>Outer: 3. 事件冒泡</div></div><style>.mermaid-container{width:100%;overflow:auto;margin:1.5rem 0}.mermaid-container .mermaid{min-width:fit-content}@media screen and (max-width:768px){.mermaid-container{max-width:100%;overflow-x:auto}}</style><h3 id=24-self---仅自身触发>2.4 <code>.self</code> - 仅自身触发</h3><p>只有当事件的目标元素是元素本身时才触发。</p><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>&lt;template&gt;
+  &lt;div class=&#34;container&#34; @click.self=&#34;handleContainerClick&#34;&gt;
+    &lt;p&gt;点击我会触发&lt;/p&gt;
+    &lt;button @click=&#34;handleButtonClick&#34;&gt;点击按钮不会触发容器事件&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script setup&gt;
+function handleContainerClick() {
+  console.log(&#34;容器本身被点击&#34;);
+}
+
+function handleButtonClick() {
+  console.log(&#34;按钮被点击&#34;);
+}
+&lt;/script&gt;
+
+&lt;style scoped&gt;
+.container {
+  padding: 2rem;
+  background-color: #f0f0f0;
+  border: 2px solid #42b883;
+}
+
+.container p {
+  cursor: pointer;
+  color: #35495e;
+}
+
+.container button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #42b883;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+&lt;/style&gt;</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:initial;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><h3 id=25-once---只触发一次>2.5 <code>.once</code> - 只触发一次</h3><p>事件监听器只会触发一次，触发后自动移除。</p><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>&lt;template&gt;
+  &lt;button @click.once=&#34;handleOnceClick&#34;&gt;只能点击一次&lt;/button&gt;
+
+  &lt;!-- 组合使用 --&gt;
+  &lt;form @submit.once=&#34;handleSubmit&#34;&gt;
+    &lt;input type=&#34;text&#34; placeholder=&#34;只能提交一次&#34; /&gt;
+    &lt;button type=&#34;submit&#34;&gt;提交&lt;/button&gt;
+  &lt;/form&gt;
+&lt;/template&gt;
+
+&lt;script setup&gt;
+function handleOnceClick() {
+  console.log(&#34;第一次点击&#34;);
+  // 第二次点击不会触发
+}
+
+function handleSubmit() {
+  console.log(&#34;表单只能提交一次&#34;);
+}
+&lt;/script&gt;</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:initial;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><h2 id=3-按键修饰符深度应用>3. 按键修饰符深度应用</h2><h3 id=31-基础按键修饰符>3.1 基础按键修饰符</h3><p>Vue 提供了常用的按键修饰符：</p><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>&lt;template&gt;
+  &lt;div&gt;
+    &lt;!-- 回车键提交 --&gt;
+    &lt;input
+      v-model=&#34;username&#34;
+      @keyup.enter=&#34;handleSubmit&#34;
+      placeholder=&#34;按回车提交&#34;
+    /&gt;
+
+    &lt;!-- ESC 键取消 --&gt;
+    &lt;input
+      v-model=&#34;searchQuery&#34;
+      @keyup.esc=&#34;handleCancel&#34;
+      placeholder=&#34;按 ESC 取消&#34;
+    /&gt;
+
+    &lt;!-- 删除键清空 --&gt;
+    &lt;input
+      v-model=&#34;text&#34;
+      @keyup.delete=&#34;handleClear&#34;
+      placeholder=&#34;按删除键清空&#34;
+    /&gt;
+
+    &lt;!-- 制表键聚焦 --&gt;
+    &lt;input v-model=&#34;value&#34; @keyup.tab=&#34;handleFocus&#34; placeholder=&#34;按 Tab 聚焦&#34; /&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script setup&gt;
+import { ref } from &#34;vue&#34;;
+
+const username = ref(&#34;&#34;);
+const searchQuery = ref(&#34;&#34;);
+const text = ref(&#34;&#34;);
+const value = ref(&#34;&#34;);
+
+function handleSubmit() {
+  console.log(&#34;提交:&#34;, username.value);
+}
+
+function handleCancel() {
+  console.log(&#34;取消搜索&#34;);
+  searchQuery.value = &#34;&#34;;
+}
+
+function handleClear() {
+  console.log(&#34;清空文本&#34;);
+  text.value = &#34;&#34;;
+}
+
+function handleFocus() {
+  console.log(&#34;聚焦输入&#34;);
+}
+&lt;/script&gt;</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:initial;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><h3 id=32-字母按键修饰符>3.2 字母按键修饰符</h3><p>可以直接使用字母作为修饰符：</p><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>&lt;template&gt;
+  &lt;div @keyup.a=&#34;handleA&#34; @keyup.b=&#34;handleB&#34;&gt;
+    &lt;p&gt;按 A 键：{{ countA }} 次&lt;/p&gt;
+    &lt;p&gt;按 B 键：{{ countB }} 次&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script setup&gt;
+import { ref } from &#34;vue&#34;;
+
+const countA = ref(0);
+const countB = ref(0);
+
+function handleA() {
+  countA.value&#43;&#43;;
+  console.log(&#34;按下了 A 键&#34;);
+}
+
+function handleB() {
+  countB.value&#43;&#43;;
+  console.log(&#34;按下了 B 键&#34;);
+}
+&lt;/script&gt;</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:initial;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><h3 id=33-系统修饰键>3.3 系统修饰键</h3><p>配合 Ctrl、Alt、Shift、Meta 使用：</p><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>&lt;template&gt;
+  &lt;div&gt;
+    &lt;!-- 单个系统修饰键 --&gt;
+    &lt;input @keyup.ctrl=&#34;handleCtrl&#34; placeholder=&#34;按住 Ctrl &#43; 任意键&#34; /&gt;
+
+    &lt;input @keyup.alt=&#34;handleAlt&#34; placeholder=&#34;按住 Alt &#43; 任意键&#34; /&gt;
+
+    &lt;input @keyup.shift=&#34;handleShift&#34; placeholder=&#34;按住 Shift &#43; 任意键&#34; /&gt;
+
+    &lt;input @keyup.meta=&#34;handleMeta&#34; placeholder=&#34;按住 Win/Cmd &#43; 任意键&#34; /&gt;
+
+    &lt;!-- 组合键 --&gt;
+    &lt;input @keyup.ctrl.s=&#34;handleSave&#34; placeholder=&#34;Ctrl &#43; S 保存&#34; /&gt;
+
+    &lt;input @keyup.alt.enter=&#34;handleAltEnter&#34; placeholder=&#34;Alt &#43; Enter 换行&#34; /&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script setup&gt;
+function handleCtrl() {
+  console.log(&#34;Ctrl 组合键&#34;);
+}
+
+function handleAlt() {
+  console.log(&#34;Alt 组合键&#34;);
+}
+
+function handleShift() {
+  console.log(&#34;Shift 组合键&#34;);
+}
+
+function handleMeta() {
+  console.log(&#34;Meta 组合键&#34;);
+}
+
+function handleSave() {
+  console.log(&#34;保存操作 (Ctrl&#43;S)&#34;);
+}
+
+function handleAltEnter() {
+  console.log(&#34;Alt &#43; Enter&#34;);
+}
+&lt;/script&gt;</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:initial;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><h3 id=34-exact-修饰符>3.4 <code>.exact</code> 修饰符</h3><p>确保只有指定的修饰键被按下时才触发：</p><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>&lt;template&gt;
+  &lt;div&gt;
+    &lt;!-- 仅 Ctrl 键，不包含其他修饰键 --&gt;
+    &lt;button @click.ctrl.exact=&#34;handleCtrlOnly&#34;&gt;
+      仅 Ctrl 键（不包含 Alt/Shift）
+    &lt;/button&gt;
+
+    &lt;!-- Ctrl &#43; Shift 组合，不包含其他键 --&gt;
+    &lt;button @click.ctrl.shift.exact=&#34;handleCtrlShift&#34;&gt;Ctrl &#43; Shift 组合&lt;/button&gt;
+
+    &lt;!-- 没有任何修饰键 --&gt;
+    &lt;button @click.exact=&#34;handleNoModifier&#34;&gt;直接点击（无任何修饰键）&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script setup&gt;
+function handleCtrlOnly() {
+  console.log(&#34;仅按下了 Ctrl 键&#34;);
+}
+
+function handleCtrlShift() {
+  console.log(&#34;按下了 Ctrl &#43; Shift&#34;);
+}
+
+function handleNoModifier() {
+  console.log(&#34;直接点击，没有按任何修饰键&#34;);
+}
+&lt;/script&gt;</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:initial;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><h2 id=4-实战案例快捷键系统>4. 实战案例：快捷键系统</h2><h3 id=41-全局快捷键管理器>4.1 全局快捷键管理器</h3><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>&lt;!-- App.vue --&gt;
+&lt;template&gt;
+  &lt;div
+    class=&#34;app&#34;
+    @keydown.ctrl.s.prevent=&#34;handleSave&#34;
+    @keydown.ctrl.n.prevent=&#34;handleNew&#34;
+    @keydown.ctrl.o.prevent=&#34;handleOpen&#34;
+    @keydown.esc.prevent=&#34;handleCancel&#34;
+    @keydown.f1.prevent=&#34;handleHelp&#34;
+    tabindex=&#34;-1&#34;
+  &gt;
+    &lt;header&gt;
+      &lt;h1&gt;文本编辑器&lt;/h1&gt;
+      &lt;div class=&#34;shortcuts-hint&#34;&gt;
+        &lt;span&gt;Ctrl&#43;S: 保存&lt;/span&gt;
+        &lt;span&gt;Ctrl&#43;N: 新建&lt;/span&gt;
+        &lt;span&gt;Ctrl&#43;O: 打开&lt;/span&gt;
+        &lt;span&gt;ESC: 取消&lt;/span&gt;
+        &lt;span&gt;F1: 帮助&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+      &lt;textarea
+        v-model=&#34;content&#34;
+        placeholder=&#34;开始编辑...&#34;
+        @keydown.ctrl.s.prevent=&#34;handleSave&#34;
+      &gt;&lt;/textarea&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+      &lt;p&gt;状态：{{ status }}&lt;/p&gt;
+    &lt;/footer&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script setup&gt;
+import { ref, onMounted, onUnmounted } from &#34;vue&#34;;
+
+const content = ref(&#34;&#34;);
+const status = ref(&#34;就绪&#34;);
+
+function handleSave() {
+  status.value = &#34;保存中...&#34;;
+  console.log(&#34;保存内容:&#34;, content.value);
+
+  setTimeout(() =&gt; {
+    status.value = &#34;已保存&#34;;
+  }, 1000);
+}
+
+function handleNew() {
+  if (confirm(&#34;确定要新建吗？未保存的内容将丢失。&#34;)) {
+    content.value = &#34;&#34;;
+    status.value = &#34;新建文档&#34;;
+  }
+}
+
+function handleOpen() {
+  console.log(&#34;打开文件对话框&#34;);
+  status.value = &#34;打开文件&#34;;
+}
+
+function handleCancel() {
+  console.log(&#34;取消操作&#34;);
+  status.value = &#34;已取消&#34;;
+}
+
+function handleHelp() {
+  alert(
+    &#34;快捷键帮助:\nCtrl&#43;S: 保存\nCtrl&#43;N: 新建\nCtrl&#43;O: 打开\nESC: 取消\nF1: 帮助&#34;,
+  );
+}
+
+// 确保 div 可以接收键盘事件
+onMounted(() =&gt; {
+  document.querySelector(&#34;.app&#34;)?.focus();
+});
+&lt;/script&gt;
+
+&lt;style scoped&gt;
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  outline: none;
+}
+
+header {
+  background-color: #35495e;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shortcuts-hint {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.875rem;
+  opacity: 0.8;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+}
+
+textarea {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  resize: vertical;
+}
+
+footer {
+  background-color: #f0f0f0;
+  padding: 0.5rem 2rem;
+  border-top: 1px solid #e0e0e0;
+}
+&lt;/style&gt;</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:initial;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><h3 id=42-模态框快捷键>4.2 模态框快捷键</h3><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>&lt;!-- Modal.vue --&gt;
+&lt;template&gt;
+  &lt;div
+    class=&#34;modal-overlay&#34;
+    @click.self=&#34;handleOverlayClick&#34;
+    @keydown.esc=&#34;handleEscKey&#34;
+    tabindex=&#34;-1&#34;
+  &gt;
+    &lt;div class=&#34;modal-content&#34;&gt;
+      &lt;header&gt;
+        &lt;h2&gt;{{ title }}&lt;/h2&gt;
+        &lt;button class=&#34;close-btn&#34; @click=&#34;handleClose&#34;&gt;✕&lt;/button&gt;
+      &lt;/header&gt;
+
+      &lt;main&gt;
+        &lt;slot&gt;&lt;/slot&gt;
+      &lt;/main&gt;
+
+      &lt;footer&gt;
+        &lt;button @click=&#34;handleCancel&#34;&gt;取消 (ESC)&lt;/button&gt;
+        &lt;button @click=&#34;handleConfirm&#34; class=&#34;confirm-btn&#34;&gt;确定 (Enter)&lt;/button&gt;
+      &lt;/footer&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script setup&gt;
+const emit = defineEmits([&#34;close&#34;, &#34;confirm&#34;]);
+
+defineProps({
+  title: {
+    type: String,
+    required: true,
+  },
+});
+
+function handleOverlayClick() {
+  emit(&#34;close&#34;);
+}
+
+function handleEscKey() {
+  emit(&#34;close&#34;);
+}
+
+function handleClose() {
+  emit(&#34;close&#34;);
+}
+
+function handleCancel() {
+  emit(&#34;close&#34;);
+}
+
+function handleConfirm() {
+  emit(&#34;confirm&#34;);
+}
+&lt;/script&gt;
+
+&lt;style scoped&gt;
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  outline: none;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 8px;
+  min-width: 400px;
+  max-width: 90%;
+  max-height: 90vh;
+  overflow: auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+}
+
+main {
+  padding: 1.5rem;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.confirm-btn {
+  background-color: #42b883;
+  color: #fff;
+  border-color: #42b883;
+}
+&lt;/style&gt;</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:initial;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><h2 id=5-组件事件修饰符>5. 组件事件修饰符</h2><h3 id=51-原生事件修饰符>5.1 原生事件修饰符</h3><p>在组件上使用事件修饰符：</p><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>&lt;!-- ChildComponent.vue --&gt;
+&lt;template&gt;
+  &lt;button @click=&#34;handleClick&#34;&gt;点击我&lt;/button&gt;
+&lt;/template&gt;
+
+&lt;script setup&gt;
+const emit = defineEmits([&#34;click&#34;]);
+
+function handleClick(event) {
+  emit(&#34;click&#34;, event);
+}
+&lt;/script&gt;</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:initial;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>&lt;!-- ParentComponent.vue --&gt;
+&lt;template&gt;
+  &lt;!-- 阻止事件冒泡 --&gt;
+  &lt;ChildComponent @click.stop=&#34;handleClick&#34; /&gt;
+
+  &lt;!-- 只触发一次 --&gt;
+  &lt;ChildComponent @click.once=&#34;handleClickOnce&#34; /&gt;
+
+  &lt;!-- 阻止默认行为 --&gt;
+  &lt;ChildComponent @click.prevent=&#34;handleClickPrevent&#34; /&gt;
+&lt;/template&gt;
+
+&lt;script setup&gt;
+import ChildComponent from &#34;./ChildComponent.vue&#34;;
+
+function handleClick() {
+  console.log(&#34;点击事件（阻止冒泡）&#34;);
+}
+
+function handleClickOnce() {
+  console.log(&#34;只触发一次&#34;);
+}
+
+function handleClickPrevent() {
+  console.log(&#34;阻止默认行为&#34;);
+}
+&lt;/script&gt;</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:initial;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><h3 id=52-自定义事件修饰符vue-33>5.2 自定义事件修饰符（Vue 3.3+）</h3><p>Vue 3.3 引入了自定义事件修饰符功能：</p><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>&lt;!-- MyInput.vue --&gt;
+&lt;template&gt;
+  &lt;input :value=&#34;modelValue&#34; @input=&#34;handleInput&#34; /&gt;
+&lt;/template&gt;
+
+&lt;script setup&gt;
+defineProps([&#34;modelValue&#34;]);
+const emit = defineEmits({
+  // 声明支持 uppercase 修饰符
+  &#34;update:modelValue&#34;: (value) =&gt; true,
+});
+
+function handleInput(event) {
+  let value = event.target.value;
+
+  // 检查是否使用了 uppercase 修饰符
+  if (event.detail?.uppercase) {
+    value = value.toUpperCase();
+  }
+
+  emit(&#34;update:modelValue&#34;, value);
+}
+&lt;/script&gt;</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:initial;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><h2 id=6-高级技巧与最佳实践>6. 高级技巧与最佳实践</h2><h3 id=61-修饰符链式调用>6.1 修饰符链式调用</h3><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>&lt;template&gt;
+  &lt;!-- 多个修饰符组合 --&gt;
+  &lt;form @submit.stop.prevent.once=&#34;handleSubmit&#34;&gt;
+    &lt;button type=&#34;submit&#34;&gt;提交&lt;/button&gt;
+  &lt;/form&gt;
+
+  &lt;!-- 系统修饰键组合 --&gt;
+  &lt;div @keydown.ctrl.alt.delete=&#34;handleDangerousAction&#34;&gt;
+    按 Ctrl&#43;Alt&#43;Delete 触发危险操作
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script setup&gt;
+function handleSubmit() {
+  console.log(&#34;表单提交（阻止冒泡、阻止默认、只触发一次）&#34;);
+}
+
+function handleDangerousAction() {
+  console.log(&#34;危险操作被触发！&#34;);
+}
+&lt;/script&gt;</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:initial;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><h3 id=62-动态修饰符>6.2 动态修饰符</h3><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>&lt;template&gt;
+  &lt;input :value=&#34;modelValue&#34; @keydown.[keyModifier]=&#34;handleKey&#34; /&gt;
+&lt;/template&gt;
+
+&lt;script setup&gt;
+import { ref, computed } from &#34;vue&#34;;
+
+const props = defineProps({
+  modelValue: String,
+  modifier: {
+    type: String,
+    default: &#34;enter&#34;,
+  },
+});
+
+const emit = defineEmits([&#34;update:modelValue&#34;]);
+
+const keyModifier = computed(() =&gt; props.modifier);
+
+function handleKey(event) {
+  emit(&#34;update:modelValue&#34;, event.target.value);
+}
+&lt;/script&gt;</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:initial;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><h3 id=63-性能优化>6.3 性能优化</h3><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>&lt;script setup&gt;
+import { ref, onUnmounted } from &#34;vue&#34;;
+
+// 使用 once 修饰符自动清理
+function setupOnceListener() {
+  window.addEventListener(&#34;resize&#34;, handleResize, { once: true });
+}
+
+// 手动清理事件监听器
+const controller = new AbortController();
+
+function setupManualListener() {
+  window.addEventListener(&#34;scroll&#34;, handleScroll, {
+    signal: controller.signal,
+  });
+}
+
+function cleanup() {
+  controller.abort();
+}
+
+onUnmounted(() =&gt; {
+  cleanup();
+});
+
+function handleResize() {
+  console.log(&#34;窗口大小改变&#34;);
+}
+
+function handleScroll() {
+  console.log(&#34;页面滚动&#34;);
+}
+&lt;/script&gt;</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:initial;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><h2 id=7-常见报错与解决方案>7. 常见报错与解决方案</h2><h3 id=报错-1修饰符不生效>报错 1：修饰符不生效</h3><p><strong>问题代码：</strong></p><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>&lt;!-- ❌ 错误：修饰符位置不对 --&gt;
+&lt;input @keyup.enter.prevent=&#34;handleSubmit&#34; /&gt;</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:initial;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><p><strong>解决方案：</strong></p><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>&lt;!-- ✅ 正确：修饰符顺序 --&gt;
+&lt;input @keyup.enter.prevent=&#34;handleSubmit&#34; /&gt;</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:initial;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><h3 id=报错-2组合键冲突>报错 2：组合键冲突</h3><p><strong>问题代码：</strong></p><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>&lt;!-- ❌ 多个组合键可能冲突 --&gt;
+&lt;input @keyup.ctrl.s=&#34;handleSave&#34; @keyup.ctrl.a=&#34;handleSelectAll&#34; /&gt;</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:initial;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><p><strong>解决方案：</strong></p><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>&lt;!-- ✅ 使用 .exact 确保精确匹配 --&gt;
+&lt;input @keyup.ctrl.s.exact=&#34;handleSave&#34; @keyup.ctrl.a.exact=&#34;handleSelectAll&#34; /&gt;</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:initial;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><h3 id=报错-3修饰符与事件对象>报错 3：修饰符与事件对象</h3><p><strong>问题代码：</strong></p><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>&lt;!-- ❌ 忘记接收事件对象 --&gt;
+&lt;input @keyup.enter=&#34;handleKey&#34; /&gt;
+
+&lt;script setup&gt;
+function handleKey() {
+  console.log(event.target.value); // event 未定义
+}
+&lt;/script&gt;</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:initial;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><p><strong>解决方案：</strong></p><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>&lt;input @keyup.enter=&#34;handleKey&#34; /&gt;
+
+&lt;script setup&gt;
+function handleKey(event) {
+  console.log(event.target.value);
+}
+&lt;/script&gt;</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:initial;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><h2 id=8-课后-quiz>8. 课后 Quiz</h2><h3 id=问题-1以下代码的执行顺序是什么>问题 1：以下代码的执行顺序是什么？</h3><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>&lt;div @click.capture=&#34;outer&#34;&gt;
+  &lt;button @click.stop.once=&#34;inner&#34;&gt;点击&lt;/button&gt;
+&lt;/div&gt;</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:initial;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><details><summary>点击查看答案解析</summary><p><strong>答案：</strong></p><ol><li><code>outer</code> 函数在捕获阶段执行</li><li><code>inner</code> 函数执行（但阻止了冒泡）</li><li><code>outer</code> 的冒泡阶段不会执行（被 stop 阻止）</li><li>第二次点击时，<code>inner</code> 不会执行（once 修饰符）</li></ol><p><strong>解析：</strong> 修饰符执行顺序为：capture → stop → once</p></details><h3 id=问题-2如何实现仅当按下-ctrl-键不按其他修饰键时触发>问题 2：如何实现仅当按下 Ctrl 键（不按其他修饰键）时触发？</h3><details><summary>点击查看答案解析</summary><p><strong>答案：</strong></p><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>&lt;div @keydown.ctrl.exact=&#34;handleCtrl&#34;&gt;
+  按 Ctrl 键
+&lt;/div&gt;</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:initial;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><p><strong>解析：</strong> <code>.exact</code> 修饰符确保只有指定的修饰键被按下，排除其他修饰键的干扰。</p></details><h2 id=9-性能优化建议>9. 性能优化建议</h2><h3 id=91-避免过度使用修饰符>9.1 避免过度使用修饰符</h3><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>&lt;!-- ❌ 不推荐：修饰符过多 --&gt;
+&lt;button @click.stop.prevent.capture.once.self=&#34;handleClick&#34;&gt;
+  点击
+&lt;/button&gt;
+
+&lt;!-- ✅ 推荐：简化逻辑 --&gt;
+&lt;button @click=&#34;handleClick&#34;&gt;
+  点击
+&lt;/button&gt;
+
+&lt;script setup&gt;
+function handleClick(event) {
+  event.stopPropagation();
+  event.preventDefault();
+  // 在函数中处理其他逻辑
+}
+&lt;/script&gt;</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:initial;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><h3 id=92-使用事件委托>9.2 使用事件委托</h3><div class=highlight-wrapper><div class=highlight><pre class=chroma><code class=language- data-lang>&lt;template&gt;
+  &lt;!-- ❌ 不推荐：每个按钮都绑定事件 --&gt;
+  &lt;div&gt;
+    &lt;button @click=&#34;handleClick(1)&#34;&gt;按钮 1&lt;/button&gt;
+    &lt;button @click=&#34;handleClick(2)&#34;&gt;按钮 2&lt;/button&gt;
+    &lt;button @click=&#34;handleClick(3)&#34;&gt;按钮 3&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;!-- ✅ 推荐：事件委托 --&gt;
+  &lt;div @click=&#34;handleDelegate&#34;&gt;
+    &lt;button data-id=&#34;1&#34;&gt;按钮 1&lt;/button&gt;
+    &lt;button data-id=&#34;2&#34;&gt;按钮 2&lt;/button&gt;
+    &lt;button data-id=&#34;3&#34;&gt;按钮 3&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script setup&gt;
+function handleClick(id) {
+  console.log(&#34;按钮&#34;, id, &#34;被点击&#34;);
+}
+
+function handleDelegate(event) {
+  if (event.target.tagName === &#34;BUTTON&#34;) {
+    const id = event.target.dataset.id;
+    handleClick(id);
+  }
+}
+&lt;/script&gt;</code></pre></div></div><script>function copyCodeToClipboard(e){const t=e.parentElement.parentElement.querySelector("pre"),n=t.textContent;navigator.clipboard.writeText(n).then(function(){const t=e.querySelector(".copy-icon"),n=e.querySelector(".check-icon");t.style.display="none",n.style.display="inline-block",setTimeout(function(){t.style.display="inline-block",n.style.display="none"},2e3)},function(){console.error("复制失败!")})}</script><style>.highlight-wrapper{position:relative;margin:1.5rem 0}.copy-code-button-container{position:absolute;top:5px;right:5px;display:flex;align-items:center;opacity:.7;transition:opacity .2s}.highlight-wrapper:hover .copy-code-button-container{opacity:1}.language-name{font-size:.8rem;color:#718096;margin-right:.5rem}.copy-code-button{background-color:initial;border:none;color:#718096;cursor:pointer;padding:4px;border-radius:4px}.copy-code-button:hover{background-color:rgba(203,213,224,.2);color:#4a5568}.dark .language-name,.dark .copy-code-button{color:#a0aec0}.dark .copy-code-button:hover{background-color:rgba(160,174,192,.2);color:#e2e8f0}</style><hr><p>余下文章内容请点击跳转至 个人博客页面 或者 扫描 <a href=https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg>二维码</a> 关注或者微信搜一搜：<code>编程智域 前端至全栈交流与成长</code>，阅读完整的文章：<a href=https://blog.cmdragon.cn/posts/vue3-component-event-modifiers-and-key-modifiers/>Vue 3 组件事件修饰符与按键修饰符的深度应用</a></p><details><summary>免费好用的热门在线工具</summary><ul><li><a href=https://tools.cmdragon.cn/zh/apps/multi-live-aggregator>多直播聚合器 - 应用商店 | By cmdragon</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/proto-file-generator>Proto 文件生成器 - 应用商店 | By cmdragon</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/image-to-particles>图片转粒子 - 应用商店 | By cmdragon</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/video-downloader>视频下载器 - 应用商店 | By cmdragon</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/file-converter>文件格式转换器 - 应用商店 | By cmdragon</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/m3u8-player>M3U8 在线播放器 - 应用商店 | By cmdragon</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/quick-image-design>快图设计 - 应用商店 | By cmdragon</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/text-to-image-advanced>高级文字转图片转换器 - 应用商店 | By cmdragon</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/raid-calculator>RAID 计算器 - 应用商店 | By cmdragon</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/photoshop-online>在线 PS - 应用商店 | By cmdragon</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/mermaid-live-editor>Mermaid 在线编辑器 - 应用商店 | By cmdragon</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/math-solver-calculator>数学求解计算器 - 应用商店 | By cmdragon</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/smart-teleprompter>智能提词器 - 应用商店 | By cmdragon</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/magic-resume>魔法简历 - 应用商店 | By cmdragon</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/image-puzzle-tool>Image Puzzle Tool - 图片拼图工具 | By cmdragon</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/subtitle-downloader>字幕下载工具 - 应用商店 | By cmdragon</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/lyrics-generator>歌词生成工具 - 应用商店 | By cmdragon</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/cloud-drive-search>网盘资源聚合搜索 - 应用商店 | By cmdragon</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/ascii-art-generator>ASCII 字符画生成器 - 应用商店 | By cmdragon</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/jwt-tool>JWT 工具 - 应用商店 | By cmdragon</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/bcrypt-tool>Bcrypt 密码工具 - 应用商店 | By cmdragon</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/gif-composer>GIF 合成器 - 应用商店 | By cmdragon</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/gif-decomposer>GIF 分解器 - 应用商店 | By cmdragon</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/text-steganography>文本隐写术 - 应用商店 | By cmdragon</a></li><li><a href=https://tools.cmdragon.cn/zh>CMDragon 在线工具 - 高级 AI 工具箱与开发者套件 | 免费好用的在线工具</a></li><li><a href="https://tools.cmdragon.cn/zh/apps?category=trending">应用商店 - 发现 1000+ 提升效率与开发的 AI 工具和实用程序 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/changelog>CMDragon 更新日志 - 最新更新、功能与改进 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/sponsor>支持我们 - 成为赞助者 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/text-to-image-ai>AI 文本生成图像 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/temp-email>临时邮箱 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/qrcode-parser>二维码解析器 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/text-to-mindmap>文本转思维导图 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/regex-visualizer>正则表达式可视化工具 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/steganography-tool>文件隐写工具 - 应用商店 | By cmdragon</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/iptv-explorer>IPTV 频道探索器 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/snapdrop>快传 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/lucky-draw>随机抽奖工具 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/anime-scene-finder>动漫场景查找器 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/time-toolkit>时间工具箱 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/speed-test>网速测试 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/background-remover>AI 智能抠图工具 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/background-replacer>背景替换工具 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/artistic-qrcode>艺术二维码生成器 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/open-graph-generator>Open Graph 元标签生成器 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/image-comparison>图像对比工具 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/image-compressor>图片压缩专业版 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/password-generator>密码生成器 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/svg-optimizer>SVG 优化器 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/color-palette>调色板生成器 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/online-metronome>在线节拍器 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/ip-geolocation>IP 归属地查询 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/css-grid-layout>CSS 网格布局生成器 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/email-validator>邮箱验证工具 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/calligraphy-practice>书法练习字帖 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/finance-calculator-suite>金融计算器套件 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/chinese-kinship-calculator>中国亲戚关系计算器 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/protobuf-toolkit>Protocol Buffer 工具箱 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/ip-geolocation>IP 归属地查询 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/image-upscaler>图片无损放大 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/text-compare>文本比较工具 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/ip-batch-lookup>IP 批量查询工具 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/domain-finder>域名查询工具 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/dns-toolkit>DNS 工具箱 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/zh/apps/favicon-generator>网站图标生成器 - 应用商店 | 免费好用的在线工具</a></li><li><a href=https://tools.cmdragon.cn/sitemap_index.xml>XML Sitemap</a></li></ul></details><p>参考链接：https://vuejs.org/guide/essentials/event-modifiers.html</p></div><div class="border-t border-gray-200 dark:border-gray-700 pt-6 mt-8"><h2 class="text-lg font-medium mb-4 flex items-center"><div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-1.5 rounded text-white mr-2"><iconify-icon icon=mdi:tag-multiple width=16 height=16></iconify-icon></div>标签</h2><div class="flex flex-wrap gap-2"><a href=/tags/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8 class="bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 px-3 py-1.5 rounded-full text-sm hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 dark:hover:text-white transition-colors duration-200" aria-label=标签：基础入门 tabindex=0><iconify-icon icon=mdi:tag class=mr-1 inline></iconify-icon>基础入门
+</a><a href=/tags/%E4%BA%8B%E4%BB%B6%E4%BF%AE%E9%A5%B0%E7%AC%A6 class="bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 px-3 py-1.5 rounded-full text-sm hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 dark:hover:text-white transition-colors duration-200" aria-label=标签：事件修饰符 tabindex=0><iconify-icon icon=mdi:tag class=mr-1 inline></iconify-icon>事件修饰符
+</a><a href=/tags/%E6%8C%89%E9%94%AE%E4%BF%AE%E9%A5%B0%E7%AC%A6 class="bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 px-3 py-1.5 rounded-full text-sm hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 dark:hover:text-white transition-colors duration-200" aria-label=标签：按键修饰符 tabindex=0><iconify-icon icon=mdi:tag class=mr-1 inline></iconify-icon>按键修饰符
+</a><a href=/tags/%E7%BB%84%E5%90%88%E9%94%AE class="bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 px-3 py-1.5 rounded-full text-sm hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 dark:hover:text-white transition-colors duration-200" aria-label=标签：组合键 tabindex=0><iconify-icon icon=mdi:tag class=mr-1 inline></iconify-icon>组合键
+</a><a href=/tags/%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86 class="bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 px-3 py-1.5 rounded-full text-sm hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 dark:hover:text-white transition-colors duration-200" aria-label=标签：事件处理 tabindex=0><iconify-icon icon=mdi:tag class=mr-1 inline></iconify-icon>事件处理
+</a><a href=/tags/%E5%AE%9E%E6%88%98%E6%8A%80%E5%B7%A7 class="bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 px-3 py-1.5 rounded-full text-sm hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 dark:hover:text-white transition-colors duration-200" aria-label=标签：实战技巧 tabindex=0><iconify-icon icon=mdi:tag class=mr-1 inline></iconify-icon>实战技巧</a></div></div><nav class="border-t border-gray-200 dark:border-gray-700 pt-6 mt-8 grid grid-cols-1 md:grid-cols-2 gap-6"><div class="bg-gray-100 dark:bg-gray-700 p-4 rounded-xl transition-all hover:shadow-md duration-300"><span class="block text-sm text-gray-600 dark:text-gray-300 mb-2 flex items-center"><iconify-icon icon=mdi:arrow-left class=mr-2 width=16 height=16></iconify-icon>上一篇
+</span><a href=https://blog.cmdragon.cn/posts/vue3-parent-child-component-event-communication/ class="font-medium text-blue-700 dark:text-blue-300 hover:text-blue-800 dark:hover:text-blue-200 block" aria-label="上一篇：Vue 3 父子组件事件通信：子传父实战指南" tabindex=0>Vue 3 父子组件事件通信：子传父实战指南</a></div><div class="bg-gray-100 dark:bg-gray-700 p-4 rounded-xl md:text-right transition-all hover:shadow-md duration-300"><span class="block text-sm text-gray-600 dark:text-gray-300 mb-2 flex items-center md:justify-end">下一篇<iconify-icon icon=mdi:arrow-right class=ml-2 width=16 height=16></iconify-icon>
+</span><a href=https://blog.cmdragon.cn/posts/vue3-v-model-syntax-sugar-and-two-way-binding/ class="font-medium text-blue-700 dark:text-blue-300 hover:text-blue-800 dark:hover:text-blue-200 block" aria-label="下一篇：Vue 3 v-model 语法糖与组件事件的双向绑定原理" tabindex=0>Vue 3 v-model 语法糖与组件事件的双向绑定原理</a></div></nav><div class="border-t border-gray-200 dark:border-gray-700 pt-6 mt-8"><h2 class="text-lg font-medium mb-4 flex items-center"><div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-1.5 rounded text-white mr-2"><iconify-icon icon=mdi:share-variant width=16 height=16></iconify-icon></div>分享</h2><div class="flex flex-wrap gap-3"><a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fblog.cmdragon.cn%2fposts%2fvue3-component-event-modifiers-and-key-modifiers%2f&text=Vue%203%20%e7%bb%84%e4%bb%b6%e4%ba%8b%e4%bb%b6%e4%bf%ae%e9%a5%b0%e7%ac%a6%e4%b8%8e%e6%8c%89%e9%94%ae%e4%bf%ae%e9%a5%b0%e7%ac%a6%e7%9a%84%e6%b7%b1%e5%ba%a6%e5%ba%94%e7%94%a8" target=_blank rel="noopener noreferrer" class="bg-gradient-to-r from-[#1DA1F2] to-[#0a6da6] text-white px-4 py-2 rounded-lg hover:shadow-md transition-all duration-300" aria-label="分享到 Twitter" tabindex=0><iconify-icon icon=mdi:twitter width=20 height=20></iconify-icon></a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fblog.cmdragon.cn%2fposts%2fvue3-component-event-modifiers-and-key-modifiers%2f" target=_blank rel="noopener noreferrer" class="bg-gradient-to-r from-[#1877F2] to-[#0a4fad] text-white px-4 py-2 rounded-lg hover:shadow-md transition-all duration-300" aria-label="分享到 Facebook" tabindex=0><iconify-icon icon=mdi:facebook width=20 height=20></iconify-icon></a><a href="https://service.weibo.com/share/share.php?url=https%3a%2f%2fblog.cmdragon.cn%2fposts%2fvue3-component-event-modifiers-and-key-modifiers%2f&title=Vue%203%20%e7%bb%84%e4%bb%b6%e4%ba%8b%e4%bb%b6%e4%bf%ae%e9%a5%b0%e7%ac%a6%e4%b8%8e%e6%8c%89%e9%94%ae%e4%bf%ae%e9%a5%b0%e7%ac%a6%e7%9a%84%e6%b7%b1%e5%ba%a6%e5%ba%94%e7%94%a8" target=_blank rel="noopener noreferrer" class="bg-gradient-to-r from-[#E6162D] to-[#ad0f21] text-white px-4 py-2 rounded-lg hover:shadow-md transition-all duration-300" aria-label=分享到微博 tabindex=0><iconify-icon icon=mdi:sina-weibo width=20 height=20></iconify-icon></a><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fblog.cmdragon.cn%2fposts%2fvue3-component-event-modifiers-and-key-modifiers%2f" target=_blank rel="noopener noreferrer" class="bg-gradient-to-r from-[#0A66C2] to-[#07508f] text-white px-4 py-2 rounded-lg hover:shadow-md transition-all duration-300" aria-label="分享到 LinkedIn" tabindex=0><iconify-icon icon=mdi:linkedin width=20 height=20></iconify-icon></a></div></div><div class="border-t border-gray-200 dark:border-gray-700 pt-6 mt-8"><h2 class="text-lg font-medium mb-4 flex items-center"><div class="bg-gradient-to-br from-yellow-500 to-red-600 p-1.5 rounded text-white mr-2"><iconify-icon icon=mdi:hand-coin width=16 height=16></iconify-icon></div>赞赏支持</h2><div class=text-center><p class="text-gray-700 dark:text-gray-300 mb-4">如果我的文章对您有所帮助，欢迎赞赏支持</p><div class="flex flex-col sm:flex-row justify-center items-center gap-6"><div class=donation-item><button class="donate-button alipay-btn bg-[#0066b3] text-white px-5 py-2 rounded-lg hover:bg-[#00518f] transition-colors mb-3 flex items-center justify-center w-full" aria-label=打开支付宝收款码 type=button tabindex=0>
+<iconify-icon icon=mdi:alipay class=mr-2 width=20 height=20></iconify-icon>支付宝</button><div class="donate-qrcode alipay-qrcode hidden"><div class="bg-white p-3 rounded-lg shadow-lg"><img src=/images/alipay.webp alt=支付宝收款码 class="w-48 h-48 object-cover"></div></div></div><div class=donation-item><button class="donate-button wechat-btn bg-green-800 text-white px-5 py-2 rounded-lg hover:bg-green-900 transition-colors mb-3 flex items-center justify-center w-full" aria-label=打开微信收款码 type=button tabindex=0>
+<iconify-icon icon=mdi:wechat class=mr-2 width=20 height=20></iconify-icon>微信</button><div class="donate-qrcode wechat-qrcode hidden"><div class="bg-white p-3 rounded-lg shadow-lg"><img src=/images/wechat_pay.webp alt=微信收款码 class="w-48 h-48 object-cover"></div></div></div></div></div></div><style>.donation-item{position:relative;display:inline-block}.donate-qrcode{width:200px;position:absolute;top:-260px;left:50%;transform:translateX(-50%);z-index:10}</style><script>document.addEventListener("DOMContentLoaded",function(){const n=document.querySelector(".alipay-btn"),s=document.querySelector(".wechat-btn"),e=document.querySelector(".alipay-qrcode"),t=document.querySelector(".wechat-qrcode");n.addEventListener("click",function(){e.classList.toggle("hidden"),t.classList.add("hidden")}),s.addEventListener("click",function(){t.classList.toggle("hidden"),e.classList.add("hidden")}),n.addEventListener("keydown",function(n){(n.key==="Enter"||n.key===" ")&&(n.preventDefault(),e.classList.toggle("hidden"),t.classList.add("hidden"))}),s.addEventListener("keydown",function(n){(n.key==="Enter"||n.key===" ")&&(n.preventDefault(),t.classList.toggle("hidden"),e.classList.add("hidden"))}),document.addEventListener("click",function(o){!n.contains(o.target)&&!e.contains(o.target)&&e.classList.add("hidden"),!s.contains(o.target)&&!t.contains(o.target)&&t.classList.add("hidden")})})</script></article><aside class="w-full lg:w-1/4"><button id=mobile-toc-toggle class="z-50 fixed bottom-4 right-4 z-20 lg:hidden bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+<iconify-icon icon=mdi:table-of-contents width=24 height=24></iconify-icon></button><div id=toc-container class="lg:sticky lg:top-24 bg-white dark:bg-gray-800 rounded-xl shadow-md p-5 mb-8 transition-all duration-300 border border-gray-100 dark:border-gray-700
+fixed inset-y-0 right-0 w-72 z-40 lg:z-20 transform translate-x-full lg:transform-none lg:w-auto
+lg:overflow-visible flex flex-col"><div class="toc-header flex justify-between items-center pb-3 border-b border-gray-100 dark:border-gray-700 lg:mb-4"><h2 class="text-lg font-medium flex items-center"><div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-1.5 rounded text-white mr-2"><iconify-icon icon=mdi:table-of-contents width=16 height=16></iconify-icon></div>目录</h2><div class="flex items-center"><button id=toc-toggle class="text-gray-500 hover:text-blue-700 dark:hover:text-blue-300 transition-colors p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full" aria-label=滚动到底部/顶部>
+<iconify-icon id=toc-icon icon=mdi:arrow-down width=20 height=20></iconify-icon></button>
+<button id=toc-close class="ml-1 lg:hidden text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full">
+<iconify-icon icon=mdi:close width=20 height=20></iconify-icon></button></div></div><div id=toc-content class="toc text-sm text-gray-700 dark:text-gray-300 flex-grow overflow-y-auto"><nav id=TableOfContents><ul><li><a href=#1-事件修饰符的核心概念>1. 事件修饰符的核心概念</a><ul><li><a href=#11-什么是事件修饰符>1.1 什么是事件修饰符？</a></li><li><a href=#12-修饰符的执行顺序>1.2 修饰符的执行顺序</a></li></ul></li><li><a href=#2-基础事件修饰符详解>2. 基础事件修饰符详解</a><ul><li><a href=#21-stop---阻止事件冒泡>2.1 <code>.stop</code> - 阻止事件冒泡</a></li><li><a href=#22-prevent---阻止默认行为>2.2 <code>.prevent</code> - 阻止默认行为</a></li><li><a href=#23-capture---捕获模式监听>2.3 <code>.capture</code> - 捕获模式监听</a></li><li><a href=#24-self---仅自身触发>2.4 <code>.self</code> - 仅自身触发</a></li><li><a href=#25-once---只触发一次>2.5 <code>.once</code> - 只触发一次</a></li></ul></li><li><a href=#3-按键修饰符深度应用>3. 按键修饰符深度应用</a><ul><li><a href=#31-基础按键修饰符>3.1 基础按键修饰符</a></li><li><a href=#32-字母按键修饰符>3.2 字母按键修饰符</a></li><li><a href=#33-系统修饰键>3.3 系统修饰键</a></li><li><a href=#34-exact-修饰符>3.4 <code>.exact</code> 修饰符</a></li></ul></li><li><a href=#4-实战案例快捷键系统>4. 实战案例：快捷键系统</a><ul><li><a href=#41-全局快捷键管理器>4.1 全局快捷键管理器</a></li><li><a href=#42-模态框快捷键>4.2 模态框快捷键</a></li></ul></li><li><a href=#5-组件事件修饰符>5. 组件事件修饰符</a><ul><li><a href=#51-原生事件修饰符>5.1 原生事件修饰符</a></li><li><a href=#52-自定义事件修饰符vue-33>5.2 自定义事件修饰符（Vue 3.3+）</a></li></ul></li><li><a href=#6-高级技巧与最佳实践>6. 高级技巧与最佳实践</a><ul><li><a href=#61-修饰符链式调用>6.1 修饰符链式调用</a></li><li><a href=#62-动态修饰符>6.2 动态修饰符</a></li><li><a href=#63-性能优化>6.3 性能优化</a></li></ul></li><li><a href=#7-常见报错与解决方案>7. 常见报错与解决方案</a><ul><li><a href=#报错-1修饰符不生效>报错 1：修饰符不生效</a></li><li><a href=#报错-2组合键冲突>报错 2：组合键冲突</a></li><li><a href=#报错-3修饰符与事件对象>报错 3：修饰符与事件对象</a></li></ul></li><li><a href=#8-课后-quiz>8. 课后 Quiz</a><ul><li><a href=#问题-1以下代码的执行顺序是什么>问题 1：以下代码的执行顺序是什么？</a></li><li><a href=#问题-2如何实现仅当按下-ctrl-键不按其他修饰键时触发>问题 2：如何实现仅当按下 Ctrl 键（不按其他修饰键）时触发？</a></li></ul></li><li><a href=#9-性能优化建议>9. 性能优化建议</a><ul><li><a href=#91-避免过度使用修饰符>9.1 避免过度使用修饰符</a></li><li><a href=#92-使用事件委托>9.2 使用事件委托</a></li></ul></li></ul></nav></div></div><div id=toc-overlay class="fixed inset-0 bg-black bg-opacity-50 z-30 hidden lg:hidden backdrop-blur-sm"></div><div class="lg:sticky lg:top-[calc(100vh-320px)] bg-white dark:bg-gray-800 rounded-xl shadow-md p-5 mb-8 border border-gray-100 dark:border-gray-700"><div class="text-xs text-gray-500 dark:text-gray-400 mb-3 text-center">广告位</div><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2874982874195135" crossorigin=anonymous></script><ins class=adsbygoogle style=display:block data-ad-client=ca-pub-2874982874195135 data-ad-slot=6984392540 data-ad-format=auto data-full-width-responsive=true></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script></div></aside></div></div><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/bash.min.js></script><link rel=stylesheet href=/css/code-highlight.min.ec690d5f44c0bc50302407e95a0059375527153e46bd5a38ceed951c0c685dabfc65cb5105db63e48a69ea847a6b578104507b3aec7384f448c4ae942b390090.css integrity="sha512-7GkNX0TAvFAwJAfpWgBZN1UnFT5GvVo4zu2VHAxoXav8ZctRBdtj5Ipp6oR6a1eBBFB7OuxzhPRIxK6UKzkAkA=="><link rel=stylesheet href=/css/markdown.min.4721401ceae83b0603d50bb248719ef7b2d064eaba4104198abfc4e6a054363f1f40c58cadd3cd40d1cace04e0df5ee99bbec80b3a9403c7bf65b0b5a35554f7.css integrity="sha512-RyFAHOroOwYD1QuySHGe97LQZOq6QQQZir/E5qBUNj8fQMWMrdPNQNHKzgTg317pm77ICzqUA8e/ZbC1o1VU9w=="><link rel=stylesheet href=/css/image-viewer.min.537f38c9c7d5706d32054a67368e64e9c46e979e7bf2746f42cfaf425a84695ed9e7d869ed650f74df0b8871aaef0959aead28fc3b8abde2ea7b48b80b63e321.css integrity="sha512-U384ycfVcG0yBUpnNo5k6cRul5578nRvQs+vQlqEaV7Z59hp7WUPdN8LiHGq7wlZrq0o/DuKveLqe0i4C2PjIQ=="><script src=/js/code-highlight.min.290edb55b4573dcbbacb8b8a18d03863bbc233fd9bad41196fc20239446170d97ff298f85b171cfb5e7887c00dd6ee33f393a82f05c3a1fc7531e4a67262c437.js integrity="sha512-KQ7bVbRXPcu6y4uKGNA4Y7vCM/2brUEZb8ICOURhcNl/8pj4Wxcc+154h8AN1u4z85OoLwXDofx1MeSmcmLENw=="></script><script src=/js/toc.min.92a4653787fea9432dea3eeb9adc03e050ff554e6d14172e05ab388e02e2710fad92e2eee79e77f913e6a1eb6121b9fcdc7e01737092c908fe94037db5245260.js integrity="sha512-kqRlN4f+qUMt6j7rmtwD4FD/VU5tFBcuBas4jgLicQ+tkuLu5553+RPmoethIbn83H4Bc3CSyQj+lAN9tSRSYA=="></script><script src=/js/image-viewer.min.9f1010ebec4f14ac3dc59adef576c5430e73339d1e527a832c0fb7243683f73a93584bfdc11198edec5c27e609d69d3b985b98cd1931c3f0595e429bf874d23d.js integrity="sha512-nxAQ6+xPFKw9xZre9XbFQw5zM50eUnqDLA+3JDaD9zqTWEv9wRGY7excJ+YJ1p07mFuYzRkxw/BZXkKb+HTSPQ=="></script><script>document.addEventListener("DOMContentLoaded",function(){window.hljs&&document.querySelectorAll("pre code").forEach(function(e){hljs.highlightElement(e)})})</script><style>#toc-content{max-height:none}@media(min-width:1024px){#toc-content{max-height:none;overflow:visible}#toc-container{max-height:calc(100vh - 120px);overflow-y:auto}nav#TableOfContents{overflow:visible}}@media(max-width:1023px){#toc-container{padding-bottom:env(safe-area-inset-bottom,20px);display:flex;flex-direction:column}#toc-content{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding-bottom:20px}}</style></main><footer class="bg-gradient-to-b from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 shadow-inner py-10 mt-12 border-t border-gray-200 dark:border-gray-700"><div class="container mx-auto px-4"><div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8"><div><h3 class="text-lg font-bold mb-4 text-gray-900 dark:text-white flex items-center"><div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-1.5 rounded text-white mr-2"><iconify-icon icon=mdi:information width=16 height=16></iconify-icon></div>关于本站</h3><p class="text-sm text-gray-600 dark:text-gray-400 mb-4">cmdragon's Blog 是一个专注于编程和技术分享的个性化网站，旨在为编程爱好者、学习者和从业者提供全面的前端开发、后端开发以及全栈开发学习资源。</p><div class="flex space-x-3"><a href=mailto:support@cmdragon.cn class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-300 bg-gray-100 dark:bg-gray-700 p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600" aria-label=发送邮件 tabindex=0 target=_blank rel="noopener noreferrer"><iconify-icon icon=mdi:email width=18 height=18></iconify-icon></a><a href=https://github.com/cmdragon class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-300 bg-gray-100 dark:bg-gray-700 p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600" aria-label="GitHub 主页" tabindex=0 target=_blank rel="noopener noreferrer"><iconify-icon icon=mdi:github width=18 height=18></iconify-icon></a><a href=/index.xml class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-300 bg-gray-100 dark:bg-gray-700 p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600" aria-label="RSS 订阅" tabindex=0><iconify-icon icon=mdi:rss width=18 height=18></iconify-icon></a><button class="wechat-btn text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-300 bg-gray-100 dark:bg-gray-700 p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600" aria-label=微信公众号 tabindex=0>
+<iconify-icon icon=mdi:wechat width=18 height=18></iconify-icon></button></div></div><div><h3 class="text-lg font-bold mb-4 text-gray-900 dark:text-white flex items-center"><div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-1.5 rounded text-white mr-2"><iconify-icon icon=mdi:link-variant width=16 height=16></iconify-icon></div>快速链接</h3><ul class=space-y-2><li><a href=https://movie.cmdragon.cn/ class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-300 flex items-center" target=_blank rel="noopener noreferrer" aria-label=高清影视库><iconify-icon icon=mdi:movie-search-outline class="mr-2 text-primary" width=16 height=16></iconify-icon>高清影视库</a></li><li><a href=https://manga.cmdragon.cn/ class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-300 flex items-center" target=_blank rel="noopener noreferrer" aria-label=精选漫画阅读><iconify-icon icon=mdi:comic-thought-bubble-outline class="mr-2 text-primary" width=16 height=16></iconify-icon>精选漫画阅读</a></li><li><a href=https://tools.cmdragon.cn/zh class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-300 flex items-center" target=_blank rel="noopener noreferrer" aria-label=实用在线工具><iconify-icon icon=mdi:tools class="mr-2 text-primary" width=16 height=16></iconify-icon>实用在线工具</a></li><li><a href=https://hot-movie.cmdragon.cn/ class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-300 flex items-center" target=_blank rel="noopener noreferrer" aria-label=热映影视推荐><iconify-icon icon=mdi:filmstrip class="mr-2 text-primary" width=16 height=16></iconify-icon>热映影视推荐</a></li></ul></div><div><h3 class="text-lg font-bold mb-4 text-gray-900 dark:text-white flex items-center"><div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-1.5 rounded text-white mr-2"><iconify-icon icon=mdi:tag-multiple width=16 height=16></iconify-icon></div>热门标签</h3><div class="flex flex-wrap gap-2"><a href=https://blog.cmdragon.cn/tags/fastapi/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#Fastapi <span class="text-xs opacity-70">(167)</span>
+</a><a href=https://blog.cmdragon.cn/tags/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#基础入门 <span class="text-xs opacity-70">(165)</span>
+</a><a href=https://blog.cmdragon.cn/tags/Nuxt/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#Nuxt <span class="text-xs opacity-70">(147)</span>
+</a><a href=https://blog.cmdragon.cn/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#性能优化 <span class="text-xs opacity-70">(70)</span>
+</a><a href=https://blog.cmdragon.cn/tags/%E9%92%A9%E5%AD%90/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#钩子 <span class="text-xs opacity-70">(62)</span>
+</a><a href=https://blog.cmdragon.cn/tags/%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#错误处理 <span class="text-xs opacity-70">(56)</span>
+</a><a href=https://blog.cmdragon.cn/tags/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#在线工具 <span class="text-xs opacity-70">(55)</span>
+</a><a href=https://blog.cmdragon.cn/tags/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#生命周期 <span class="text-xs opacity-70">(40)</span>
+</a><a href=https://blog.cmdragon.cn/tags/mermaid-live-editor/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#Mermaid-Live-Editor <span class="text-xs opacity-70">(34)</span>
+</a><a href=https://blog.cmdragon.cn/tags/PostgreSQL/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#PostgreSQL <span class="text-xs opacity-70">(29)</span></a></div></div></div><div class="border-t border-gray-200 dark:border-gray-700 pt-6"><div class="flex flex-col md:flex-row justify-between items-center"><div class="text-center md:text-left mb-4 md:mb-0"><p class="text-sm text-gray-600 dark:text-gray-400">&copy; 2023 cmdragon's Blog. 保留所有权利.</p><p class="text-xs text-gray-500 dark:text-gray-500 mt-1">由 <a href=https://gohugo.io/ class="hover:text-primary transition-colors duration-300" target=_blank rel="noopener noreferrer">Hugo</a> 强力驱动 |
+<a href=/license/ class="hover:text-primary transition-colors duration-300" aria-label="Apache 2.0 许可证" tabindex=0>Apache License 2.0</a></p></div><button id=back-to-top class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white p-2 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center text-sm font-medium">
+<iconify-icon icon=mdi:arrow-up class=mr-1 width=16 height=16></iconify-icon>返回顶部</button></div></div></div><div id=wechat-modal class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center hidden" onclick='this.classList.add("hidden")'><div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-xl max-w-sm w-full relative" onclick=event.stopPropagation()><button class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200" onclick='document.getElementById("wechat-modal").classList.add("hidden")'>
+<iconify-icon icon=mdi:close width=20 height=20></iconify-icon></button><h4 class="text-center font-medium text-gray-800 dark:text-gray-200 mb-4">扫码关注公众号</h4><div class="flex justify-center"><img src=/images/wechat_qrcode.webp alt=微信二维码 class="w-64 h-64 object-contain"></div></div></div></footer><script>const backToTopButton=document.getElementById("back-to-top");window.addEventListener("scroll",function(){window.scrollY>300?(backToTopButton.classList.remove("opacity-0","invisible"),backToTopButton.classList.add("opacity-100","visible")):(backToTopButton.classList.add("opacity-0","invisible"),backToTopButton.classList.remove("opacity-100","visible"))}),backToTopButton.addEventListener("click",function(){window.scrollTo({top:0,behavior:"smooth"})}),document.querySelector(".wechat-btn")?.addEventListener("click",function(){document.getElementById("wechat-modal").classList.remove("hidden")}),document.querySelector(".wechat-btn")?.addEventListener("keydown",function(e){(e.key==="Enter"||e.key===" ")&&(e.preventDefault(),document.getElementById("wechat-modal").classList.remove("hidden"))})</script></div><script>localStorage.getItem("color-theme")==="dark"||!("color-theme"in localStorage)&&window.matchMedia("(prefers-color-scheme: dark)").matches?document.documentElement.classList.add("dark"):document.documentElement.classList.remove("dark")</script><script src=/js/code-highlight.min.290edb55b4573dcbbacb8b8a18d03863bbc233fd9bad41196fc20239446170d97ff298f85b171cfb5e7887c00dd6ee33f393a82f05c3a1fc7531e4a67262c437.js integrity="sha512-KQ7bVbRXPcu6y4uKGNA4Y7vCM/2brUEZb8ICOURhcNl/8pj4Wxcc+154h8AN1u4z85OoLwXDofx1MeSmcmLENw=="></script><script src=/js/advanced-render.min.077c50eb205e6c2bdd8338b745aa82315971b8a9a4e848099a29b66f42acaee66a260c6ac20b9cac91863baf86da9a641bb920235a53045145fa313a514fe6c3.js integrity="sha512-B3xQ6yBebCvdgzi3RaqCMVlxuKmk6EgJmim2b0KsruZqJgxqwgucrJGGO6+G2ppkG7kgI1pTBFFF+jE6UU/mww=="></script><div id=site-search-modal class="fixed inset-0 z-50 flex items-center justify-center hidden opacity-0 transition-opacity duration-300"><div id=site-search-backdrop class="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div><div class="relative bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 rounded-xl shadow-xl max-w-lg w-full mx-4 z-10 transform transition-all duration-300 scale-95 opacity-0 border border-gray-100 dark:border-gray-700"><div class="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700"><h3 class="text-lg font-medium flex items-center"><div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-1.5 rounded text-white mr-2 shadow-sm"><iconify-icon icon=mdi:magnify width=16 height=16></iconify-icon></div><span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-indigo-600">站内搜索</span></h3><button id=site-search-close class="text-gray-400 hover:text-gray-500 focus:outline-none transition-colors duration-200 p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full">
+<iconify-icon icon=mdi:close width=20 height=20></iconify-icon></button></div><div class=p-6><form id=site-search-form action=/search/ method=get><div class=relative><div class="flex items-center border border-gray-300 dark:border-gray-600 rounded-lg overflow-hidden focus-within:ring-2 focus-within:ring-blue-500 transition-all duration-300 shadow-sm hover:shadow-md"><span class="pl-4 text-gray-400"><iconify-icon icon=mdi:magnify width=20 height=20></iconify-icon></span><input type=text id=site-search-input name=q placeholder=输入关键词搜索... class="w-full px-3 py-3 border-none focus:outline-none bg-transparent text-gray-800 dark:text-gray-200" aria-label=搜索内容 tabindex=0>
+<button type=submit class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-4 py-3 hover:shadow-md transition-all duration-300 flex items-center" aria-label=搜索 tabindex=0>
+<span class="mr-1 hidden sm:inline">搜索</span>
+<iconify-icon icon=mdi:arrow-right width=18 height=18></iconify-icon></button></div></div></form><div class="mt-6 text-sm text-gray-500 dark:text-gray-400 bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg border border-blue-100 dark:border-blue-800/30 flex items-start"><div class="bg-blue-100 dark:bg-blue-800/50 p-1.5 rounded-full mr-3 mt-0.5"><iconify-icon icon=mdi:information width=16 height=16 class="text-blue-500 dark:text-blue-300"></iconify-icon></div><div><p class=mb-1>快捷键提示:</p><ul class=space-y-1><li class="flex items-center"><span class="bg-gray-100 dark:bg-gray-700 px-2 py-0.5 rounded text-xs font-mono mr-2">/</span>
+<span>打开搜索</span></li><li class="flex items-center"><span class="bg-gray-100 dark:bg-gray-700 px-2 py-0.5 rounded text-xs font-mono mr-2">Esc</span>
+<span>关闭搜索</span></li><li class="flex items-center"><span class="bg-gray-100 dark:bg-gray-700 px-2 py-0.5 rounded text-xs font-mono mr-2">Enter</span>
+<span>提交搜索</span></li></ul></div></div><div class="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700"><div class="flex flex-wrap gap-2"><a href=/tags/ class="bg-gradient-to-r hover:bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 text-gray-700 dark:text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-700 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-md flex items-center"><iconify-icon icon=mdi:tag-multiple class=mr-1 width=16 height=16></iconify-icon>标签
+</a><a href=/categories/ class="bg-gradient-to-r hover:bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 text-gray-700 dark:text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-700 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-md flex items-center"><iconify-icon icon=mdi:folder-multiple class=mr-1 width=16 height=16></iconify-icon>分类
+</a><a href=/archives/ class="bg-gradient-to-r hover:bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 text-gray-700 dark:text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-700 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-md flex items-center"><iconify-icon icon=mdi:archive class=mr-1 width=16 height=16></iconify-icon>归档</a></div></div></div></div></div><script>document.addEventListener("DOMContentLoaded",()=>{const e=document.getElementById("site-search-modal"),t=e.querySelector('div[class*="rounded-xl"]'),s=document.getElementById("site-search-backdrop"),o=document.getElementById("site-search-close"),a=document.getElementById("site-search-form"),i=document.getElementById("site-search-input");window.openSiteSearch=function(){e.classList.remove("hidden"),document.body.classList.add("overflow-hidden"),setTimeout(()=>{e.classList.add("opacity-100"),t.classList.remove("scale-95","opacity-0"),t.classList.add("scale-100","opacity-100"),i.focus()},10)};function n(){e.classList.remove("opacity-100"),t.classList.remove("scale-100","opacity-100"),t.classList.add("scale-95","opacity-0"),setTimeout(()=>{e.classList.add("hidden"),document.body.classList.remove("overflow-hidden")},300)}s&&s.addEventListener("click",n),o&&o.addEventListener("click",n),document.addEventListener("keydown",t=>{t.key==="Escape"&&!e.classList.contains("hidden")&&n(),t.key==="/"&&e.classList.contains("hidden")&&document.activeElement.tagName!=="INPUT"&&(t.preventDefault(),openSiteSearch())}),t.addEventListener("click",e=>{e.stopPropagation()})})</script></body></html>
