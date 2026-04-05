@@ -1,0 +1,317 @@
+{{- /* 
+相关文章推荐组件
+基于 string-similarity 算法实现文章相似度匹配
+参数:
+  - page: 当前页面对象
+  - limit: 最大显示数量 (默认 6)
+  - minScore: 最小相似度阈值 (默认 0.3)
+*/ -}}
+
+{{ $page := .page }}
+{{ $limit := default 6 .limit }}
+{{ $minScore := default 0.3 .minScore }}
+
+{{- /* 获取所有文章，排除当前文章 */ -}}
+{{ $allPages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{ $allPages = where $allPages "Permalink" "ne" $page.Permalink }}
+
+{{- if gt (len $allPages) 0 }}
+<section class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
+  <h2 class="text-2xl font-bold mb-6 text-gray-900 dark:text-white flex items-center">
+    <iconify-icon icon="mdi:bookmark-multiple" class="mr-2 text-blue-600" width="28" height="28" aria-hidden="true"></iconify-icon>
+    相关文章推荐
+  </h2>
+  
+  <div id="related-posts-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- 加载中 -->
+    <div class="col-span-full text-center py-8">
+      <iconify-icon icon="mdi:loading" class="animate-spin text-blue-600" width="32" height="32" aria-hidden="true"></iconify-icon>
+      <p class="text-gray-600 dark:text-gray-400 mt-2">正在加载相关文章...</p>
+    </div>
+  </div>
+  
+  <!-- 无相关文章 -->
+  <div id="no-related-posts" class="hidden text-center py-8">
+    <iconify-icon icon="mdi:alert-circle" class="text-gray-400" width="48" height="48" aria-hidden="true"></iconify-icon>
+    <p class="text-gray-600 dark:text-gray-400 mt-2">暂无相关文章</p>
+  </div>
+</section>
+
+<!-- 加载 string-similarity CDN -->
+<script src="https://cdn.jsdelivr.net/npm/string-similarity@4.0.4/umd/string-similarity.min.js"></script>
+
+<script>
+/**
+ * 相关文章推荐功能
+ * 使用 string-similarity 算法计算文章相似度
+ */
+(function() {
+  'use strict';
+  
+  // 配置
+  const CONFIG = {
+    limit: {{ $limit }},
+    minScore: {{ $minScore }},
+    currentUrl: '{{ $page.Permalink }}'
+  };
+  
+  // 当前文章数据
+  const currentPage = {
+    title: '{{ $page.Title | safeJS }}',
+    summary: '{{ $page.Summary | plainify | safeJS }}',
+    content: '{{ $page.Plain | truncate 1000 | safeJS }}',
+    categories: {{ $page.Params.categories | jsonify }},
+    tags: {{ $page.Params.tags | jsonify }},
+    url: CONFIG.currentUrl
+  };
+  
+  // 所有文章数据
+  const allPosts = [
+    {{- range $allPages }}
+    {
+      title: '{{ .Title | safeJS }}',
+      summary: '{{ .Summary | plainify | safeJS }}',
+      content: '{{ .Plain | truncate 1000 | safeJS }}',
+      categories: {{ .Params.categories | jsonify }},
+      tags: {{ .Params.tags | jsonify }},
+      url: '{{ .Permalink }}',
+      date: '{{ .Date.Format "2006-01-02" }}',
+      cover: '{{ .Params.cover | default "" }}'
+    },
+    {{- end }}
+  ];
+  
+  /**
+   * 计算两篇文章的相似度
+   * @param {Object} post1 - 文章 1
+   * @param {Object} post2 - 文章 2
+   * @returns {number} 相似度分数 (0-1)
+   */
+  function calculateSimilarity(post1, post2) {
+    let totalScore = 0;
+    let weightCount = 0;
+    
+    // 确保 categories 和 tags 是数组
+    const post1Categories = Array.isArray(post1.categories) ? post1.categories : [];
+    const post2Categories = Array.isArray(post2.categories) ? post2.categories : [];
+    const post1Tags = Array.isArray(post1.tags) ? post1.tags : [];
+    const post2Tags = Array.isArray(post2.tags) ? post2.tags : [];
+    
+    // 标题相似度 (权重最高)
+    const titleSimilarity = stringSimilarity.compareTwoStrings(post1.title, post2.title);
+    totalScore += titleSimilarity * 5;
+    weightCount += 5;
+    
+    // 摘要相似度
+    const summarySimilarity = stringSimilarity.compareTwoStrings(post1.summary, post2.summary);
+    totalScore += summarySimilarity * 3;
+    weightCount += 3;
+    
+    // 内容相似度 (截断后的内容)
+    const contentSimilarity = stringSimilarity.compareTwoStrings(post1.content, post2.content);
+    totalScore += contentSimilarity * 2;
+    weightCount += 2;
+    
+    // 分类匹配 (完全匹配得高分)
+    if (post1Categories.length > 0 && post2Categories.length > 0) {
+      const commonCategories = post1Categories.filter(cat => 
+        post2Categories.includes(cat)
+      );
+      if (commonCategories.length > 0) {
+        const categoryScore = commonCategories.length / Math.max(post1Categories.length, post2Categories.length);
+        totalScore += categoryScore * 4;
+        weightCount += 4;
+      }
+    }
+    
+    // 标签匹配
+    if (post1Tags.length > 0 && post2Tags.length > 0) {
+      const commonTags = post1Tags.filter(tag => 
+        post2Tags.includes(tag)
+      );
+      if (commonTags.length > 0) {
+        const tagScore = commonTags.length / Math.max(post1Tags.length, post2Tags.length);
+        totalScore += tagScore * 3;
+        weightCount += 3;
+      }
+    }
+    
+    // 计算加权平均分
+    return weightCount > 0 ? totalScore / weightCount : 0;
+  }
+  
+  /**
+   * 查找相关文章
+   * @returns {Array} 相关文章数组 (按相似度排序)
+   */
+  function findRelatedPosts() {
+    const relatedPosts = allPosts.map(post => {
+      const similarity = calculateSimilarity(currentPage, post);
+      return {
+        ...post,
+        similarity: similarity
+      };
+    });
+    
+    // 过滤掉相似度低于阈值的文章
+    return relatedPosts
+      .filter(post => post.similarity >= CONFIG.minScore)
+      .sort((a, b) => b.similarity - a.similarity)
+      .slice(0, CONFIG.limit);
+  }
+  
+  /**
+   * 格式化日期
+   * @param {string} dateStr - 日期字符串
+   * @returns {string} 格式化后的日期
+   */
+  function formatDate(dateStr) {
+    if (!dateStr) return '';
+    try {
+      return new Date(dateStr).toLocaleDateString('zh-CN', {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit'
+      });
+    } catch {
+      return dateStr;
+    }
+  }
+  
+  /**
+   * 渲染相关文章卡片
+   * @param {Array} posts - 相关文章数组
+   */
+  function renderRelatedPosts(posts) {
+    const container = document.getElementById('related-posts-container');
+    const noRelatedEl = document.getElementById('no-related-posts');
+    
+    if (!container) return;
+    
+    if (!posts || posts.length === 0) {
+      container.classList.add('hidden');
+      if (noRelatedEl) {
+        noRelatedEl.classList.remove('hidden');
+      }
+      return;
+    }
+    
+    container.innerHTML = '';
+    
+    posts.forEach(post => {
+      const card = document.createElement('article');
+      card.className = 'bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-700 flex flex-col';
+      
+      const hasCover = post.cover && post.cover !== '';
+      
+      card.innerHTML = `
+        ${hasCover ? `
+        <div class="h-40 overflow-hidden flex-shrink-0">
+          <img src="${post.cover}" alt="${escapeHtml(post.title)}" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+        </div>
+        ` : ''}
+        
+        <div class="p-4 flex flex-col flex-grow">
+          <h3 class="text-lg font-bold mb-2 line-clamp-2">
+            <a href="${post.url}" class="text-gray-900 dark:text-white hover:text-blue-700 dark:hover:text-blue-300 transition-colors duration-200">
+              ${escapeHtml(post.title)}
+            </a>
+          </h3>
+          
+          <div class="flex items-center text-sm text-gray-600 dark:text-gray-300 mb-2">
+            <iconify-icon icon="mdi:calendar" class="mr-1" width="14" height="14" aria-hidden="true"></iconify-icon>
+            ${formatDate(post.date)}
+          </div>
+          
+          ${post.categories && Array.isArray(post.categories) && post.categories.length > 0 ? `
+          <div class="flex flex-wrap gap-1 mb-2">
+            ${post.categories.slice(0, 2).map(cat => `
+              <span class="text-xs px-2 py-1 rounded bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200">
+                ${escapeHtml(cat)}
+              </span>
+            `).join('')}
+          </div>
+          ` : ''}
+          
+          ${post.tags && Array.isArray(post.tags) && post.tags.length > 0 ? `
+          <div class="flex flex-wrap gap-1 mt-auto">
+            ${post.tags.slice(0, 3).map(tag => `
+              <span class="text-xs px-2 py-1 rounded bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300">
+                #${escapeHtml(tag)}
+              </span>
+            `).join('')}
+          </div>
+          ` : ''}
+          
+          <div class="mt-3 pt-3 border-t border-gray-100 dark:border-gray-700 flex items-center justify-between">
+            <a href="${post.url}" class="inline-flex items-center text-blue-800 dark:text-blue-200 text-sm font-medium hover:text-blue-600 dark:hover:text-blue-300 transition-colors">
+              阅读更多
+              <iconify-icon icon="mdi:arrow-right" class="ml-1" width="16" height="16" aria-hidden="true"></iconify-icon>
+            </a>
+            <span class="text-xs text-gray-500 dark:text-gray-400" title="相似度 ${Math.round(post.similarity * 100)}%">
+              <iconify-icon icon="mdi:link-variant" class="mr-1" width="14" height="14" aria-hidden="true"></iconify-icon>
+              ${Math.round(post.similarity * 100)}%
+            </span>
+          </div>
+        </div>
+      `;
+      
+      container.appendChild(card);
+    });
+    
+    if (noRelatedEl) {
+      noRelatedEl.classList.add('hidden');
+    }
+  }
+  
+  /**
+   * 转义 HTML 特殊字符
+   * @param {string} text - 原始文本
+   * @returns {string} 转义后的文本
+   */
+  function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+  }
+  
+  /**
+   * 初始化相关文章推荐
+   */
+  function init() {
+    try {
+      // 检查 string-similarity 是否加载
+      if (typeof stringSimilarity === 'undefined') {
+        throw new Error('string-similarity 库未加载');
+      }
+      
+      // 查找相关文章
+      const relatedPosts = findRelatedPosts();
+      
+      // 渲染结果
+      renderRelatedPosts(relatedPosts);
+      
+      console.log(`[相关文章] 找到 ${relatedPosts.length} 篇相关文章`);
+    } catch (error) {
+      console.error('[相关文章] 初始化失败:', error);
+      const container = document.getElementById('related-posts-container');
+      if (container) {
+        container.innerHTML = `
+          <div class="col-span-full text-center py-8">
+            <iconify-icon icon="mdi:alert-circle" class="text-red-500" width="32" height="32" aria-hidden="true"></iconify-icon>
+            <p class="text-gray-600 dark:text-gray-400 mt-2">加载相关文章失败</p>
+          </div>
+        `;
+      }
+    }
+  }
+  
+  // 页面加载完成后初始化
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+{{- end }}

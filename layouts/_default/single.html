@@ -32,6 +32,9 @@
       <!-- 使用分享组件 -->
       {{ partial "components/article-share.html" . }}
       
+      <!-- 相关文章推荐 -->
+      {{ partial "components/related-posts.html" (dict "page" . "limit" 6 "minScore" 0.3) }}
+      
       <!-- 赞赏功能 -->
       {{ partial "donate.html" . }}
       
