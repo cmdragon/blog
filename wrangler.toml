@@ -1,0 +1,9 @@
+# wrangler pages deploy --commit-message "Deploy game-share project"
+# python ./game_crawler/main.py -l -p 1
+# 项目名（必须和云端 Pages 项目一致）
+name = "game-share"
+compatibility_date = "2026-02-20"
+
+# 新版核心字段：指定要部署的静态文件目录（关键！）
+# 替换为你实际的文件目录，比如 ./public、./dist 或 ./（根目录）
+pages_build_output_dir = "./public"
