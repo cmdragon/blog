@@ -174,6 +174,9 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
       closeButton.focus();
     }, 300);
+    
+    // 显示控制栏
+    showControlBars();
   }
   
   // 渲染 Mermaid 图表
@@ -501,13 +504,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }, 3000);
   });
-  
-  // 打开查看器时显示控制栏
-  const originalOpenViewer = openViewer;
-  openViewer = (index) => {
-    originalOpenViewer(index);
-    showControlBars();
-  };
   
   // 添加手势提示
   const gestureIndicator = document.createElement('div');
