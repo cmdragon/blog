@@ -6,7 +6,7 @@ lastmod: 2026-04-07T10:00:00+08:00
 author: cmdragon
 cover: https://api2.cmdragon.cn/upload/cmder/images/9c564c1b423d4c2eb1c436ab75eb33fc~tplv-5jbd59dj06-image.png
 
-summary: 全面掌握 Vue 3 动态事件绑定、复杂事件参数传递与异步事件处理的核心技术，从基础语法到高级应用，构建响应式、高性能的事件系统
+summary: 全面掌握 Vue 3 动态事件绑定、复杂事件参数传递与异步事件处理的核心技术，从基础语法到高级应用，构建响应式、高性能的事件系统。
 
 categories:
   - vue
