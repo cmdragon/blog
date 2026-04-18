@@ -1,12 +1,13 @@
 ---
-url: /posts/vue3-attributes-fallthrough-chapter1/
-title: Vue 3 透传 Attributes 第一章：基本概念与工作原理完全解析
+url: /posts/vue3-attributes-fallthrough-chapter2/
+title: Vue 3 透传 Attributes 第二章：单根组件的 Attributes 自动透传完全指南
 date: 2026-04-17
 lastmod: 2026-04-17
 author: cmdragon
-cover: https://api2.cmdragon.cn/upload/cmder/images/629e3d2f10cf4ba0b0099ae63134abe3~tplv-5jbd59dj06-image.png
+cover: https://api2.cmdragon.cn/upload/cmder/images/abc9afc0b45148e585bb98415239ab7c~tplv-5jbd59dj06-image.png
 
-summary: Vue 3 的 Attributes 透传机制是组件通信的重要组成部分。本章将深入讲解什么是 Attributes 透传、工作原理以及单根组件与多根组件的透传差异，帮助你建立扎实的基础认知。
+summary:
+  单根组件的 Attributes 自动透传是 Vue 3 的默认行为。本章将详细讲解自动透传的机制、class 和 style 的特殊合并规则、事件监听器的透传处理，以及实际开发中的应用技巧。
 
 categories:
   - vue
@@ -14,284 +15,70 @@ categories:
 tags:
   - 基础入门
   - Attributes 透传
-  - $attrs
-  - inheritAttrs
-  - 组件通信
   - 单根组件
-  - 多根组件
+  - class 合并
+  - style 合并
+  - 事件监听
+  - 组件封装
+
 ---
 
-<img src="https://api2.cmdragon.cn/upload/cmder/images/" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/abc9afc0b45148e585bb98415239ab7c~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
+
 
 扫描 [二维码](https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg) 关注或者微信搜一搜：`编程智域 前端至全栈交流与成长`
 
 [发现 1000+ 提升效率与开发的 AI 工具和实用程序](https://tools.cmdragon.cn/zh/apps?category=ai_chat)：https://tools.cmdragon.cn/
 
-## 一、什么是 Attributes 透传
 
-在 Vue 3 组件开发中，**Attributes 透传**（Attribute Fallthrough）是一个非常重要却又容易被忽视的特性。简单来说，当一个父组件向子组件传递了一些 props 和事件监听器之外的 attributes 时，这些"多余"的 attributes 会自动传递给子组件的根元素。
+## 一、单根组件自动透传机制详解
 
-想象一下这个场景：你有一个按钮组件，父组件在使用时传递了 `class`、`id`、`data-*` 等属性，但这些属性并没有在子组件中通过 `props` 声明。Vue 会自动将这些属性"透传"到子组件的根元素上，这就是 Attributes 透传。
+在 Vue 3 中，**单根组件**（只有一个根元素的组件）会自动将父组件传递的未声明 attributes 透传到根元素上。这是 Vue 3 的默认行为，无需任何额外配置。
 
-```vue
-<!-- 父组件 -->
-<template>
-  <MyButton class="btn-primary" id="submit-btn" data-action="submit" />
-</template>
-
-<!-- 子组件 MyButton.vue -->
-<template>
-  <button>点击我</button>
-  <!-- 最终渲染为：<button class="btn-primary" id="submit-btn" data-action="submit">点击我</button> -->
-</template>
-```
-
-## 二、Vue 3 中 Attributes 透传的机制
-
-### 2.1 透传的 Attributes 包含哪些内容
-
-在 Vue 3 中，以下类型的 attributes 会被透传：
-
-- **HTML 标准属性**：如 `class`、`style`、`id`、`title` 等
-- **自定义属性**：如 `data-*`、`aria-*` 等
-- **事件监听器**：如 `@click`、`@focus` 等（以 `on` 开头的 attributes）
-
-**不会被透传的 attributes**：
-
-- 已在 `props` 或 `emits` 选项中声明的属性
-- `class` 和 `style` 有特殊处理规则（会合并而非覆盖）
-
-### 2.2 透传机制的工作流程
+### 1.1 自动透传的工作原理
 
 ```mermaid
-graph TD
-    A[父组件传递 Attributes] --> B{子组件是否声明 props/emits}
-    B -->|已声明 | C[作为 props/emits 处理]
-    B -->|未声明 | D[进入 $attrs 对象]
-    D --> E{组件类型}
-    E -->|单根组件 | F[自动透传到根元素]
-    E -->|多根组件 | G[需要手动绑定]
+graph LR
+    A[父组件传递 Attributes] --> B{子组件检查}
+    B -->|未声明 props/emits| C[添加到 $attrs]
+    C --> D{组件根节点数量}
+    D -->|单根节点 | E[自动绑定到根元素]
+    D -->|多根节点 | F[需要手动绑定]
 ```
 
-### 2.3 代码示例：基础透传
+### 1.2 基础示例
 
 ```vue
 <!-- ParentComponent.vue -->
 <template>
   <div>
-    <ChildComponent
-      title="子组件标题"
-      class="custom-class"
-      data-info="test"
-      @click="handleClick"
+    <MyInput
+      id="username"
+      class="input-field"
+      placeholder="请输入用户名"
+      data-test="input"
+      @focus="handleFocus"
+      @blur="handleBlur"
     />
   </div>
 </template>
 
 <script setup>
-const handleClick = () => {
-  console.log("子组件被点击");
-};
+const handleFocus = () => console.log('聚焦')
+const handleBlur = () => console.log('失焦')
 </script>
 ```
 
 ```vue
-<!-- ChildComponent.vue -->
+<!-- MyInput.vue -->
 <template>
-  <div class="child-root">
-    <p>{{ title }}</p>
-  </div>
+  <input class="base-input" />
 </template>
 
 <script setup>
-defineProps({
-  title: String,
-});
-</script>
-```
-
-**最终渲染结果**：
-
-```html
-<div class="child-root custom-class" data-info="test">
-  <p>子组件标题</p>
-</div>
-```
-
-注意：`title` 作为 props 被消费，不会出现在 DOM 上；而 `class`、`data-info` 和 `@click` 事件监听器被透传到了根元素。
-
-## 三、单根组件与多根组件的透传差异
-
-### 3.1 单根组件的自动透传
-
-**单根组件**是指模板中只有一个根元素的组件。在 Vue 3 中，单根组件的 Attributes 透传是**自动**的。
-
-```vue
-<!-- SingleRoot.vue -->
-<template>
-  <div class="wrapper">
-    <slot />
-  </div>
-</template>
-
-<script setup>
-// 无需任何额外代码，attributes 自动透传
-</script>
-```
-
-当父组件使用：
-
-```vue
-<SingleRoot class="outer" id="my-wrapper" data-role="container">
-  内容
-</SingleRoot>
-```
-
-渲染结果：
-
-```html
-<div class="wrapper outer" id="my-wrapper" data-role="container">内容</div>
-```
-
-### 3.2 多根组件的手动透传
-
-**多根组件**（Fragment）是指模板中有多个根元素的组件。Vue 3 支持多根节点，但这也带来了歧义：**attributes 应该透传到哪个根元素上？**
-
-因此，多根组件**不会自动透传** attributes，需要开发者手动指定。
-
-```vue
-<!-- MultiRoot.vue -->
-<template>
-  <header class="header">头部</header>
-  <main class="content">
-    <slot />
-  </main>
-  <footer class="footer">底部</footer>
-</template>
-
-<script setup>
-// 多根组件，attributes 不会自动透传
-</script>
-```
-
-### 3.3 使用 $attrs 手动绑定
-
-对于多根组件，我们可以使用 `$attrs` 对象来手动绑定 attributes 到指定的根元素：
-
-```vue
-<!-- MultiRootWithAttrs.vue -->
-<template>
-  <header class="header">头部</header>
-  <main class="content" v-bind="$attrs">
-    <slot />
-  </main>
-  <footer class="footer">底部</footer>
-</template>
-
-<script setup>
-// $attrs 包含所有未声明的 attributes
-</script>
-```
-
-现在父组件传递的 attributes 会绑定到 `<main>` 元素上：
-
-```vue
-<MultiRootWithAttrs class="main-content" data-section="home">
-  主内容区域
-</MultiRootWithAttrs>
-```
-
-渲染结果：
-
-```html
-<header class="header">头部</header>
-<main class="content main-content" data-section="home">主内容区域</main>
-<footer class="footer">底部</footer>
-```
-
-## 四、$attrs 对象详解
-
-### 4.1 $attrs 的结构
-
-`$attrs` 是一个包含所有未通过 `props` 或 `emits` 声明的 attributes 的对象。
-
-```vue
-<template>
-  <div>
-    <p>attrs: {{ $attrs }}</p>
-  </div>
-</template>
-
-<script setup>
-import { onMounted } from "vue";
-
-onMounted(() => {
-  console.log("attrs:", useAttrs());
-});
-</script>
-```
-
-### 4.2 在 script setup 中访问 $attrs
-
-```vue
-<script setup>
-import { useAttrs } from "vue";
-
-const attrs = useAttrs();
-
-console.log(attrs.class);
-console.log(attrs["data-info"]);
-</script>
-```
-
-### 4.3 在 Options API 中访问 $attrs
-
-```vue
-<script>
-export default {
-  created() {
-    console.log(this.$attrs);
-  },
-};
-</script>
-```
-
-## 五、class 和 style 的特殊合并规则
-
-`class` 和 `style` 是特殊的 attributes，它们不会覆盖子组件根元素上已有的值，而是**合并**。
-
-```vue
-<!-- 父组件 -->
-<ChildComponent class="parent-class" :style="{ color: 'red' }" />
-
-<!-- 子组件 -->
-<template>
-  <div class="child-class" :style="{ background: 'blue' }">内容</div>
-</template>
-```
-
-**最终渲染**：
-
-```html
-<div class="child-class parent-class" style="color: red; background: blue;">
-  内容
-</div>
-```
-
-## 六、实际应用场景
-
-### 6.1 封装基础 UI 组件
-
-```vue
-<!-- BaseInput.vue -->
-<template>
-  <input class="base-input" v-bind="$attrs" />
-</template>
-
-<script setup>
-// 自动继承所有 attributes: placeholder、disabled、maxlength 等
+// 无需任何代码，attributes 自动透传
 </script>
 
 <style scoped>
@@ -303,123 +90,742 @@ export default {
 </style>
 ```
 
-使用：
+**最终渲染结果**：
 
-```vue
-<BaseInput
-  v-model="username"
+```html
+<input
+  class="base-input input-field"
+  id="username"
   placeholder="请输入用户名"
-  maxlength="20"
-  disabled
+  data-test="input"
 />
 ```
 
-### 6.2 高阶组件封装
+注意：
+- `class` 被合并（而非覆盖）
+- `@focus` 和 `@blur` 事件监听器也被透传
+
+## 二、class 和 style 的特殊合并规则
+
+### 2.1 class 的合并策略
+
+`class` 是最常用的 attribute 之一。Vue 3 对 `class` 的处理非常智能：**父组件的 class 会追加到子组件的 class 后面，而不是覆盖**。
 
 ```vue
-<!-- WithTooltip.vue -->
+<!-- 父组件 -->
 <template>
-  <div class="tooltip-wrapper">
-    <component v-bind="$attrs" :is="tag" />
-    <div v-if="tooltip" class="tooltip">{{ tooltip }}</div>
+  <ChildComponent class="parent-class another-class" />
+</template>
+```
+
+```vue
+<!-- 子组件 -->
+<template>
+  <div class="child-class">内容</div>
+</template>
+```
+
+**渲染结果**：
+
+```html
+<div class="child-class parent-class another-class">内容</div>
+```
+
+### 2.2 动态 class 的合并
+
+```vue
+<!-- 父组件 -->
+<template>
+  <ChildComponent :class="{ active: isActive, 'error': hasError }" />
+</template>
+
+<script setup>
+const isActive = true
+const hasError = false
+</script>
+```
+
+```vue
+<!-- 子组件 -->
+<template>
+  <div :class="['base-class', { 'disabled': isDisabled }]">
+    内容
   </div>
 </template>
 
 <script setup>
-defineProps({
-  tag: {
-    type: String,
-    default: "button",
-  },
-  tooltip: String,
-});
+const isDisabled = false
 </script>
+```
+
+**渲染结果**：
+
+```html
+<div class="base-class disabled active parent-class">
+  内容
+</div>
+```
+
+### 2.3 style 的合并策略
+
+`style` 属性同样采用合并策略，父组件的 style 会追加到子组件的 style 后面。
+
+```vue
+<!-- 父组件 -->
+<template>
+  <ChildComponent :style="{ color: 'red', fontSize: '16px' }" />
+</template>
+```
+
+```vue
+<!-- 子组件 -->
+<template>
+  <div :style="{ background: 'blue', padding: '10px' }">
+    内容
+  </div>
+</template>
+```
+
+**渲染结果**：
+
+```html
+<div style="background: blue; padding: 10px; color: red; font-size: 16px;">
+  内容
+</div>
+```
+
+**注意**：如果父组件和子组件有相同的 CSS 属性，**父组件的值会覆盖子组件的值**（因为父组件的 style 在后面）。
+
+```vue
+<!-- 父组件 -->
+<ChildComponent :style="{ color: 'red' }" />
+
+<!-- 子组件 -->
+<div :style="{ color: 'blue' }">内容</div>
+
+<!-- 最终：color: red（父组件覆盖） -->
+```
+
+### 2.4 实际案例：可复用的按钮组件
+
+```vue
+<!-- BaseButton.vue -->
+<template>
+  <button class="btn" :class="btnClasses" :style="btnStyles">
+    <slot />
+  </button>
+</template>
+
+<script setup>
+import { computed } from 'vue'
+
+const props = defineProps({
+  type: {
+    type: String,
+    default: 'default'
+  },
+  size: {
+    type: String,
+    default: 'medium'
+  }
+})
+
+const btnClasses = computed(() => ({
+  [`btn-${props.type}`]: true,
+  [`btn-${props.size}`]: true
+}))
+
+const btnStyles = computed(() => ({
+  padding: props.size === 'large' ? '12px 24px' : '8px 16px'
+}))
+</script>
+
+<style scoped>
+.btn {
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-default {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-large {
+  font-size: 16px;
+}
+
+.btn-medium {
+  font-size: 14px;
+}
+</style>
+```
+
+使用：
+
+```vue
+<!-- ParentComponent.vue -->
+<template>
+  <BaseButton
+    type="primary"
+    size="large"
+    class="custom-btn"
+    :style="{ margin: '10px' }"
+  >
+    提交
+  </BaseButton>
+</template>
+
+<style scoped>
+.custom-btn {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+</style>
+```
+
+**最终渲染**：
+
+```html
+<button
+  class="btn btn-primary btn-large custom-btn"
+  style="padding: 12px 24px; margin: 10px;"
+>
+  提交
+</button>
+```
+
+## 三、事件监听器的透传处理
+
+### 3.1 事件监听器的自动透传
+
+除了 `class` 和 `style`，事件监听器也会被自动透传。Vue 3 会将 `@event` 或 `v-on:event` 绑定到根元素上。
+
+```vue
+<!-- 父组件 -->
+<template>
+  <MyInput @keyup.enter="handleSubmit" @focus="handleFocus" />
+</template>
+
+<script setup>
+const handleSubmit = () => console.log('提交')
+const handleFocus = () => console.log('聚焦')
+</script>
+```
+
+```vue
+<!-- MyInput.vue -->
+<template>
+  <input class="input" />
+</template>
+```
+
+**渲染结果**：
+
+```html
+<input class="input" @keyup.enter="handleSubmit" @focus="handleFocus" />
+```
+
+### 3.2 事件对象的传递
+
+透传的事件监听器会接收到原生 DOM 事件对象。
+
+```vue
+<!-- 父组件 -->
+<template>
+  <MyButton @click="handleClick" />
+</template>
+
+<script setup>
+const handleClick = (event) => {
+  console.log('事件对象:', event)
+  console.log('目标元素:', event.target)
+}
+</script>
+```
+
+```vue
+<!-- MyButton.vue -->
+<template>
+  <button>点击我</button>
+</template>
+```
+
+### 3.3 自定义事件与原生事件的区分
+
+**重要**：如果子组件通过 `defineEmits` 声明了自定义事件，则该事件不会被透传为原生事件监听器。
+
+```vue
+<!-- 子组件 -->
+<script setup>
+const emit = defineEmits(['submit', 'change'])
+
+// submit 和 change 已被声明为自定义事件
+// 不会透传为原生事件监听器
+</script>
+```
+
+```vue
+<!-- 父组件 -->
+<template>
+  <!-- 这里的 @submit 会触发自定义事件，而非原生 click 事件 -->
+  <ChildComponent @submit="handleSubmit" />
+</template>
+```
+
+## 四、inheritAttrs 配置项
+
+### 4.1 默认行为
+
+默认情况下，`inheritAttrs` 的值为 `true`，attributes 会自动透传到根元素。
+
+### 4.2 禁用自动透传
+
+如果不想让 attributes 自动透传，可以设置 `inheritAttrs: false`。
+
+```vue
+<!-- MyComponent.vue -->
+<template>
+  <div class="wrapper">
+    <input class="input" />
+  </div>
+</template>
+
+<script setup>
+// Options API 方式
+export default {
+  inheritAttrs: false
+}
+</script>
+```
+
+在 `script setup` 中：
+
+```vue
+<!-- MyComponent.vue -->
+<script setup>
+// script setup 默认 inheritAttrs 为 true
+// 需要通过 defineOptions 设置（Vue 3.3+）
+defineOptions({
+  inheritAttrs: false
+})
+</script>
+```
+
+### 4.3 应用场景：属性分发
+
+当需要将 attributes 透传到非根元素时，需要禁用自动透传，然后手动绑定。
+
+```vue
+<!-- CustomInput.vue -->
+<template>
+  <div class="input-wrapper">
+    <label class="label">{{ label }}</label>
+    <input class="input" v-bind="$attrs" />
+  </div>
+</template>
+
+<script setup>
+defineOptions({
+  inheritAttrs: false
+})
+
+defineProps({
+  label: String
+})
+</script>
+
+<style scoped>
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label {
+  font-size: 14px;
+  color: #666;
+}
+
+.input {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+</style>
+```
+
+使用：
+
+```vue
+<CustomInput
+  label="用户名"
+  placeholder="请输入用户名"
+  maxlength="20"
+  required
+/>
+```
+
+**渲染结果**：
+
+```html
+<div class="input-wrapper">
+  <label class="label">用户名</label>
+  <input
+    class="input"
+    placeholder="请输入用户名"
+    maxlength="20"
+    required
+  />
+</div>
+```
+
+注意：attributes 被绑定到了 `<input>` 元素上，而不是根元素 `<div>` 上。
+
+## 五、实际应用场景
+
+### 5.1 表单组件封装
+
+```vue
+<!-- FormField.vue -->
+<template>
+  <div class="form-field">
+    <label v-if="label" class="label">{{ label }}</label>
+    <component
+      :is="as"
+      class="field-input"
+      v-bind="$attrs"
+    />
+    <span v-if="error" class="error">{{ error }}</span>
+  </div>
+</template>
+
+<script setup>
+defineOptions({
+  inheritAttrs: false
+})
+
+defineProps({
+  as: {
+    type: String,
+    default: 'input'
+  },
+  label: String,
+  error: String
+})
+</script>
+
+<style scoped>
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.field-input {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.error {
+  font-size: 12px;
+  color: #dc3545;
+}
+</style>
+```
+
+使用：
+
+```vue
+<template>
+  <FormField
+    label="邮箱"
+    type="email"
+    v-model="email"
+    placeholder="example@email.com"
+    :error="emailError"
+  />
+</template>
+```
+
+### 5.2 高阶组件：带验证的输入框
+
+```vue
+<!-- ValidatedInput.vue -->
+<template>
+  <div class="validated-input">
+    <input
+      class="input"
+      :class="{ 'is-invalid': hasError }"
+      v-bind="$attrs"
+      @input="handleInput"
+    />
+    <span v-if="hasError" class="error-message">{{ errorMessage }}</span>
+  </div>
+</template>
+
+<script setup>
+import { ref, watch } from 'vue'
+
+defineOptions({
+  inheritAttrs: false
+})
+
+const props = defineProps({
+  modelValue: [String, Number],
+  validator: Function,
+  errorMessage: String
+})
+
+const emit = defineEmits(['update:modelValue'])
+
+const hasError = ref(false)
+
+const handleInput = (event) => {
+  const value = event.target.value
+  emit('update:modelValue', value)
+  
+  if (props.validator) {
+    hasError.value = !props.validator(value)
+  }
+}
+
+watch(() => props.modelValue, () => {
+  if (props.validator && props.modelValue) {
+    hasError.value = !props.validator(props.modelValue)
+  }
+})
+</script>
+
+<style scoped>
+.validated-input {
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.input.is-invalid {
+  border-color: #dc3545;
+}
+
+.error-message {
+  display: block;
+  font-size: 12px;
+  color: #dc3545;
+  margin-top: 4px;
+}
+</style>
+```
+
+使用：
+
+```vue
+<template>
+  <ValidatedInput
+    v-model="username"
+    placeholder="请输入用户名"
+    :validator="(val) => val.length >= 3"
+    error-message="用户名至少 3 个字符"
+  />
+</template>
+
+<script setup>
+import { ref } from 'vue'
+
+const username = ref('')
+</script>
+```
+
+### 5.3 包装第三方组件
+
+```vue
+<!-- ThirdPartyWrapper.vue -->
+<template>
+  <div class="wrapper">
+    <ThirdPartyComponent
+      v-bind="$attrs"
+      class="third-party"
+    />
+  </div>
+</template>
+
+<script setup>
+// 自动透传所有 attributes 到第三方组件
+</script>
+```
+
+## 六、性能优化技巧
+
+### 6.1 避免不必要的透传
+
+如果某些 attributes 不需要透传，应该在 props 中声明它们，这样就不会进入 `$attrs`。
+
+```vue
+<script setup>
+defineProps({
+  internalConfig: Object  // 这个属性不会透传
+})
+</script>
+```
+
+### 6.2 使用 v-bind 优化
+
+```vue
+<!-- 推荐：一次性绑定所有 attrs -->
+<input v-bind="$attrs" />
+
+<!-- 不推荐：逐个绑定 -->
+<input
+  :id="$attrs.id"
+  :class="$attrs.class"
+  :placeholder="$attrs.placeholder"
+/>
+```
+
+### 6.3 选择性绑定
+
+```vue
+<template>
+  <input
+    v-bind="{
+      id: $attrs.id,
+      class: $attrs.class,
+      placeholder: $attrs.placeholder
+    }"
+  />
+  <!-- 其他 attrs 不会绑定 -->
+</template>
 ```
 
 ## 课后 Quiz
 
-**问题 1**：以下代码中，哪些 attributes 会被透传到子组件的根元素？
+**问题 1**：以下代码的最终 class 是什么？
 
 ```vue
 <!-- 父组件 -->
-<ChildComponent title="标题" class="outer" data-id="123" @click="handle" />
+<ChildComponent class="parent-class" :class="{ active: true }" />
 
 <!-- 子组件 -->
-<script setup>
-defineProps({
-  title: String,
-});
-</script>
+<template>
+  <div class="child-class" :class="{ disabled: false }">内容</div>
+</template>
 ```
 
-**答案**：`class`、`data-id` 和 `@click` 会被透传。`title` 已在 props 中声明，不会被透传。
+**答案**：`class="child-class child-class parent-class active"`（实际会合并去重）
 
 ---
 
-**问题 2**：多根组件为什么不能自动透传 attributes？
+**问题 2**：如何让 attributes 透传到子组件的非根元素上？
 
-**答案**：因为存在歧义。多根组件有多个根元素，Vue 无法确定应该将 attributes 透传到哪个元素上，需要开发者使用 `$attrs` 手动指定。
+**答案**：
+1. 设置 `inheritAttrs: false` 禁用自动透传
+2. 在目标元素上使用 `v-bind="$attrs"` 手动绑定
 
 ---
 
-**问题 3**：`class` 和 `style` 在透传时有什么特殊处理？
+**问题 3**：事件监听器透传时，如何区分原生事件和自定义事件？
 
-**答案**：`class` 和 `style` 不会覆盖子组件根元素上已有的值，而是进行合并。父组件的 class 会追加到子组件的 class 后面，style 同理。
+**答案**：如果子组件通过 `defineEmits` 声明了该事件，则作为自定义事件处理；否则作为原生 DOM 事件透传到根元素。
 
 ## 常见报错解决方案
 
-### 报错 1：多根组件 attributes 不生效
+### 报错 1：class 没有按预期合并
 
-**现象**：父组件传递的 attributes 在多根组件上没有效果。
+**现象**：父组件的 class 覆盖了子组件的 class。
 
-**原因**：多根组件不会自动透传 attributes。
+**原因**：可能使用了错误的绑定方式。
 
 **解决方案**：
 
 ```vue
-<!-- 错误示例 -->
-<template>
-  <div>根 1</div>
-  <div>根 2</div>
-</template>
+<!-- 错误：直接绑定字符串会覆盖 -->
+<div :class="someClass"></div>
 
-<!-- 正确示例 -->
-<template>
-  <div>根 1</div>
-  <div v-bind="$attrs">根 2</div>
-</template>
+<!-- 正确：使用数组或对象合并 -->
+<div :class="['base-class', someClass]"></div>
 ```
 
-### 报错 2：$attrs 在 script setup 中无法访问
+### 报错 2：事件监听器不生效
 
-**现象**：在 script setup 中直接使用 `$attrs` 报错。
+**现象**：父组件绑定的事件没有触发。
 
-**原因**：script setup 中需要通过 `useAttrs()` 导入。
+**原因**：可能在子组件中声明了相同名称的 emits。
 
 **解决方案**：
 
 ```vue
+<!-- 子组件 -->
 <script setup>
-import { useAttrs } from "vue";
+// 如果声明了 emits，@click 就变成自定义事件
+const emit = defineEmits(['click'])
 
-const attrs = useAttrs();
+// 需要手动触发
+const handleClick = () => {
+  emit('click')
+}
 </script>
 ```
 
-### 报错 3：props 和 attrs 重复导致警告
+如果希望作为原生事件，不要声明该 emits。
 
-**现象**：控制台警告 "Extraneous non-props attributes"。
+### 报错 3：inheritAttrs 设置不生效
 
-**原因**：同一个 attribute 既在 props 中声明，又试图透传。
+**现象**：设置了 `inheritAttrs: false` 但 attributes 仍然透传。
 
-**解决方案**：确保 attribute 只在 props 中声明或在 attrs 中透传，不要重复。
+**原因**：在 `script setup` 中没有正确使用 `defineOptions`。
+
+**解决方案**（Vue 3.3+）：
+
+```vue
+<script setup>
+defineOptions({
+  inheritAttrs: false
+})
+</script>
+```
+
+Vue 3.2 及以下版本需要使用 Options API：
+
+```vue
+<script>
+export default {
+  inheritAttrs: false
+}
+</script>
+
+<script setup>
+// 其他逻辑
+</script>
+```
 
 ## 参考链接
 
-- [Vue 3 Attributes 透传官方文档](https://vuejs.org/guide/components/attrs.html)
-- [Vue 3 组件基础](https://vuejs.org/guide/essentials/component-basics.html)
+- [Vue 3 Attributes 透传官方文档](https://vuejs.org/guide/components/attrs.html#fallthrough-details)
+- [Vue 3 class 与 style 绑定](https://vuejs.org/guide/essentials/class-and-style.html)
+- [Vue 3 事件处理](https://vuejs.org/guide/essentials/event-handling.html)
 
-余下文章内容请点击跳转至 个人博客页面 或者 扫描 [二维码](https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg) 关注或者微信搜一搜：`编程智域 前端至全栈交流与成长`，阅读完整的文章：[Vue 3 透传 Attributes 第一章：基本概念与工作原理完全解析](https://blog.cmdragon.cn/posts/vue3-attributes-fallthrough-chapter1/)
+余下文章内容请点击跳转至 个人博客页面 或者 扫描 [二维码](https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg) 关注或者微信搜一搜：`编程智域 前端至全栈交流与成长`，阅读完整的文章：[Vue 3 透传 Attributes 第二章：单根组件的 Attributes 自动透传完全指南](https://blog.cmdragon.cn/posts/vue3-attributes-fallthrough-chapter2/)
 
 <details>
 <summary>往期文章归档</summary>
@@ -467,7 +873,7 @@ const attrs = useAttrs();
 - [Vue v-for 的 key：为什么它能解决列表渲染中的"玄学错误"？选错会有哪些后果？](https://blog.cmdragon.cn/posts/1eb3ffac668a743843b5ea1738301d40/)
 - [Vue3 中 v-for 与 v-if 为何不能直接共存于同一元素？](https://blog.cmdragon.cn/posts/138b13c5341f6a1fa9015400433a3611/)
 - [Vue3 中 v-if 与 v-show 的本质区别及动态组件状态保持的关键策略是什么？](https://blog.cmdragon.cn/posts/0242a94dc552b93a1bc335ac4fc33db5/)
-- [Vue3 中 v-show 如何通过 CSS 修改 display 属性控制条件显示？与 v-if 的应用场景该如何区分？](https://blog.cmdragon.cn/posts/97c66a18ae0e9b57c6a69b8b3a41ddf6/)
+ - [Vue3 中 v-show 如何通过 CSS 修改 display 属性控制条件显示？与 v-if 的应用场景该如何区分？](https://blog.cmdragon.cn/posts/97c66a18ae0e9b57c6a69b8b3a41ddf6/)
 - [Vue3 条件渲染中 v-if 系列指令如何合理使用与规避错误？](https://blog.cmdragon.cn/posts/8a1ddfac64b25062ac56403e4c1201d2/)
 - [Vue3 动态样式控制：ref、reactive、watch 与 computed 的应用场景与区别是什么？](https://blog.cmdragon.cn/posts/218c3a59282c3b757447ee08a01937bb/)
 - [Vue3 中动态样式数组的后项覆盖规则如何与计算属性结合实现复杂状态样式管理？](https://blog.cmdragon.cn/posts/1bab953e41f66ac53de099fa9fe76483/)
@@ -529,6 +935,7 @@ const attrs = useAttrs();
 - [如何用 GitHub Actions 为 FastAPI 项目打造自动化测试流水线？ - cmdragon's Blog](https://blog.cmdragon.cn/posts/6157d87338ce894d18c013c3c4777abb/)
 
 </details>
+
 
 <details>
 <summary>免费好用的热门在线工具</summary>
