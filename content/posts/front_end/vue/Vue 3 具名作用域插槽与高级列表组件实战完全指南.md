@@ -4,7 +4,7 @@ title: Vue 3 具名作用域插槽与高级列表组件实战完全指南
 date: 2026-05-02T12:30:00+08:00
 lastmod: 2026-05-02T12:30:00+08:00
 author: cmdragon
-cover: https://api2.cmdragon.cn/upload/cmder/images/
+cover: https://api2.cmdragon.cn/upload/cmder/images/2026年5月4日 23_41_46.png
 
 summary: 本文深入讲解Vue 3具名作用域插槽的使用方式，通过高级列表组件FancyList的完整实现案例，展示如何结合v-bind传递插槽Props、如何在循环中渲染作用域插槽，以及如何处理具名作用域插槽与默认插槽的混用场景。
 
@@ -22,7 +22,7 @@ tags:
   - 列表渲染
 ---
 
-<img src="https://api2.cmdragon.cn/upload/cmder/images/" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2026年5月4日 23_41_46.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

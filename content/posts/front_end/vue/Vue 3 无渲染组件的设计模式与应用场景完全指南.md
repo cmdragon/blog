@@ -4,7 +4,7 @@ title: Vue 3 无渲染组件的设计模式与应用场景完全指南
 date: 2026-05-02T13:00:00+08:00
 lastmod: 2026-05-02T13:00:00+08:00
 author: cmdragon
-cover: https://api2.cmdragon.cn/upload/cmder/images/
+cover: https://api2.cmdragon.cn/upload/cmder/images/2026年5月4日 23_56_01.png
 
 summary: 本文深入讲解Vue 3无渲染组件的概念与设计模式，通过鼠标位置追踪器、数据获取组件等实战案例，展示如何利用作用域插槽将逻辑封装与视图渲染完全解耦，并探讨组合式函数作为更高效替代方案的实际应用。
 
@@ -22,7 +22,7 @@ tags:
   - 架构模式
 ---
 
-<img src="https://api2.cmdragon.cn/upload/cmder/images/" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2026年5月4日 23_56_01.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

@@ -4,7 +4,7 @@ title: Vue 3 作用域插槽的数据传递机制与解构语法完全解析
 date: 2026-05-02T12:00:00+08:00
 lastmod: 2026-05-02T12:00:00+08:00
 author: cmdragon
-cover: https://api2.cmdragon.cn/upload/cmder/images/
+cover: https://api2.cmdragon.cn/upload/cmder/images/2026年5月3日 20_37_55.png
 
 summary: 本文深入讲解Vue 3作用域插槽的数据传递机制，从基本概念入手，通过丰富的示例展示如何向插槽传递Props、如何接收插槽Props、以及如何使用解构语法简化代码，帮助开发者彻底掌握这一强大的组件通信方式。
 
@@ -22,7 +22,7 @@ tags:
   - 高级技巧
 ---
 
-<img src="https://api2.cmdragon.cn/upload/cmder/images/" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2026年5月3日 20_37_55.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
