@@ -4,7 +4,7 @@ title: Vue 3 动态插槽名与条件插槽的灵活应用完全指南
 date: 2026-05-02T11:30:00+08:00
 lastmod: 2026-05-02T11:30:00+08:00
 author: cmdragon
-cover: https://api2.cmdragon.cn/upload/cmder/images/
+cover: https://api2.cmdragon.cn/upload/cmder/images/2026年5月3日 20_31_47.png
 
 summary: 本文深入讲解Vue 3动态插槽名与条件插槽的使用技巧，通过丰富的实战案例展示如何根据运行时状态动态指定插槽名称，以及如何使用$slots属性和v-if实现条件渲染，帮助开发者构建更加灵活的组件。
 
@@ -22,7 +22,7 @@ tags:
   - 运行时渲染
 ---
 
-<img src="https://api2.cmdragon.cn/upload/cmder/images/" title="cover.png" alt="cmdragon_cn.png"/>
+<img src="https://api2.cmdragon.cn/upload/cmder/images/2026年5月3日 20_31_47.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
