@@ -1,7 +1,7 @@
 {
   "totalChunks": 27,
   "targetChunkSize": 512000,
-  "totalPages": 999,
+  "totalPages": 1005,
   "chunks": [
     "index-0.json",
     "index-1.json",
