@@ -8,7 +8,7 @@ author: cmdragon
 summary: 特朗普发AI视频上热搜，AI生成内容彻底出圈了！本文手把手教你用免费AI工具生成图片和视频，从文字描述到精美画面只需3步，零基础也能玩转AI创作。
 
 categories:
-  - AI工具
+  - tweets
 
 tags:
   - AI绘画

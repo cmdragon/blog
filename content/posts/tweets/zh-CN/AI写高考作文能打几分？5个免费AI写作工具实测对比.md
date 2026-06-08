@@ -8,7 +8,7 @@ author: cmdragon
 summary: 2026高考作文题出炉，AI能写好吗？本文实测5款免费AI写作工具，用高考真题逐个测试，看看AI写的作文到底什么水平，以及如何用AI辅助提升写作能力。
 
 categories:
-  - AI工具
+  - tweets
 
 tags:
   - AI写作
