@@ -207,7 +207,94 @@ API）或<code>undefined</code>（Options API）。</p><p><strong>Composition AP
 &amp;lt;template&amp;gt; &amp;lt;input ref=&amp;#34;myInput&amp;#34; type=&amp;#34;text&amp;#34;&amp;gt; &amp;lt;/template&amp;gt; 通过这个ref属性，我们可以在组件逻辑中获取到这个input元素的DOM实例，进而调用其focus()等方法。
 正确访问模板引用的生命周期时机 1. 挂载后访问：onMounted钩子 Vue的组件生命周期中，模板引用只有在组件挂载完成后才会被赋值。在组件创建或第一次渲染时，对应的ref值是null（Composition API）或undefined（Options API）。
 Composition API示例（Vue 3.5+）：
-&amp;lt;script setup&amp;gt; import {useTemplateRef, onMounted} from &amp;#39;vue&amp;#39; // 使用useTemplateRef创建与模板ref同名的引用 const myInput = useTemplateRef(&amp;#39;myInput&amp;#39;) // 组件挂载完成后才能访问ref onMounted(() =&amp;gt; { myInput.value.focus() // 此时input元素已存在，可以调用focus方法 }) &amp;lt;/script&amp;gt; &amp;lt;template&amp;gt; &amp;lt;input ref=&amp;#34;myInput&amp;#34; type=&amp;#34;text&amp;#34;&amp;gt; …`,categories:'["vue"]',tags:'["基础入门","模板引用","生命周期","常见陷阱","Composition API","子组件通信","v-for ref 数组处理"]',url:t.currentUrl},o=[{title:"26届高考生已经不知昼夜为何物？番茄钟帮你找回节奏",summary:"26届高考生卷到不知昼夜？番茄钟白噪音帮你25分钟高效专注，比熬夜刷题效率高3倍！",content:` 立即体验：番茄钟白噪音 - 免费在线工具 | 更多1000+免费工具
+&amp;lt;script setup&amp;gt; import {useTemplateRef, onMounted} from &amp;#39;vue&amp;#39; // 使用useTemplateRef创建与模板ref同名的引用 const myInput = useTemplateRef(&amp;#39;myInput&amp;#39;) // 组件挂载完成后才能访问ref onMounted(() =&amp;gt; { myInput.value.focus() // 此时input元素已存在，可以调用focus方法 }) &amp;lt;/script&amp;gt; &amp;lt;template&amp;gt; &amp;lt;input ref=&amp;#34;myInput&amp;#34; type=&amp;#34;text&amp;#34;&amp;gt; …`,categories:'["vue"]',tags:'["基础入门","模板引用","生命周期","常见陷阱","Composition API","子组件通信","v-for ref 数组处理"]',url:t.currentUrl},o=[{title:"世界杯球衣设计哪家强？3个免费设计工具帮你做出同款",summary:"世界杯球衣设计哪家强冲上B站热搜！想自己设计球衣？本文推荐3个免费在线设计工具，从配色到排版，零基础也能设计出专业级球衣图案。",content:` 立即体验：快图设计 - 免费在线工具 | 更多1000+免费工具
+无需下载安装，打开浏览器即用，完全免费！
+扫描二维码关注或者微信搜一搜：编程智域 前端至全栈交流与成长
+一、世界杯球衣设计，谁家最强？ &amp;ldquo;世界杯球衣设计哪家强&amp;quot;今天冲上B站热搜，热度56万！
+每到世界杯，各队的球衣设计都会成为热议话题。今年的球衣设计更是百花齐放——有融入传统文化的国风元素，有科技感十足的渐变设计，还有致敬经典的复古款式……
+看着这些炫酷的球衣，你是不是也想：&amp;ldquo;我能不能自己设计一件？&amp;rdquo;
+答案是：当然可以！ 而且不需要专业的PS技能，用3个免费在线工具就能搞定！
+二、工具1：快图设计 - 球衣图案设计主战场 👉 立即体验 快图设计
+快图设计是一款在线图片编辑工具，功能类似简化版PS，但操作更简单，零基础也能上手！
+怎么用？3步设计球衣图案 第1步：打开 快图设计，新建一个画布（推荐尺寸：2000x2000px，方便后期缩放）。
+第2步：设计你的球衣图案——
+底色：选择你喜欢的国家队配色（比如巴西黄、阿根廷蓝白、法国蓝） 图案：用形状工具绘制条纹、几何图案、渐变效果 文字：添加队名、号码、赞助商Logo 装饰：加入星星（代表世界杯冠军次数）、国旗元素等 第3步：导出图片，你的球衣设计稿就完成了！
+球衣设计3大要素 要素 设计要点 工具功能 配色 主色+辅色不超过3种，对比鲜明 颜色填充、渐变工具 图案 条纹/几何/渐变，简洁有辨识度 形状工具、图层管理 文字 队名醒目，号码清晰 文字工具、字体选择 💡 设计技巧：好的球衣设计讲究&amp;quot;远看有辨识度，近看有细节&amp;rdquo;。先用大色块确定整体风格，再添加细节图案。
+经典球衣风格参考 经典条纹风：参考尤文图斯、巴萨的条纹设计，简洁永恒 渐变科技风：参考近年Nike的设计，现代感十足 国风元素：融入龙纹、祥云等中国元素，独特有文化底蕴 复古风：参考90年代世界杯球衣，怀旧感满满 三、工具2：调色板 - 配色方案一键生成 👉 立即体验 调色板
+球衣设计最头疼的是什么？配色！
+颜色搭配不好，再好的图案也白搭。调色板工具帮你一键生成专业配色方案！
+怎么用？ 打开 调色板 选择一个主色调（比如你喜欢的国家队代表色） 工具自动生成搭配的辅色和点缀色 复制色值，粘贴到快图设计中使用 世界杯球队经典配色 …`,categories:'["tweets"]',tags:'["世界杯球衣设计哪家强","快图设计","调色板","字体预览","在线设计","免费工具"]',url:"https://blog.cmdragon.cn/posts/world-cup-jersey-design-2026/",date:"2026-06-17",cover:""},{title:"如何理解AI上游通胀与下游通缩？用AI聊天3分钟搞懂这个热搜话题",summary:"如何理解AI上游通胀与下游通缩冲上头条热搜，热度270万！这个经济学概念看不懂？本文教你用AI聊天工具3分钟搞懂，还能用AI文生图把这个概念画出来。",content:` 立即体验：AI聊天 - 免费在线工具 | 更多1000+免费工具
+无需下载安装，打开浏览器即用，完全免费！
+扫描二维码关注或者微信搜一搜：编程智域 前端至全栈交流与成长
+一、&amp;ldquo;AI上游通胀与下游通缩&amp;quot;是什么意思？ &amp;ldquo;如何理解AI上游通胀与下游通缩&amp;quot;今天冲上头条热搜，热度270万！
+看到这个标题，很多人第一反应是：每个字都认识，连在一起就看不懂了……
+别慌！这个概念其实没那么复杂，而且和你息息相关——它解释了为什么AI芯片越来越贵，而AI应用却越来越便宜。
+一句话解释 AI上游通胀：AI芯片、算力、数据等&amp;quot;上游资源&amp;quot;价格在涨（因为需求太大） AI下游通缩：AI应用、AI服务、AI工具等&amp;quot;下游产品&amp;quot;价格在降（因为竞争激烈） 简单说就是：造AI的成本在涨，用AI的价格在降。
+二、工具1：AI聊天 - 3分钟搞懂这个概念 👉 立即体验 AI聊天
+看不懂热搜概念？直接问AI！AI聊天工具就是你的&amp;quot;概念翻译官&amp;rdquo;。
+怎么用？ 打开 AI聊天，输入你的问题，AI秒回！
+推荐提问方式 入门级提问：
+请用大白话解释&amp;quot;AI上游通胀与下游通缩&amp;quot;是什么意思，举一个生活中的例子。
+进阶提问：
+&amp;ldquo;AI上游通胀与下游通缩&amp;quot;对普通人有什么影响？我是普通用户，应该关注什么？
+深度提问：
+请从投资者、创业者、普通用户三个角度，分析&amp;quot;AI上游通胀与下游通缩&amp;quot;带来的机遇和风险。
+AI会怎么回答？ AI的回答大致是这样的（简化版）：
+生活化例子： 想象AI是一条河。上游是&amp;quot;水源&amp;rdquo;——芯片、算力、数据，这些资源稀缺，大家都在抢，所以价格涨（通胀）。下游是&amp;quot;自来水&amp;rdquo;——各种AI应用、AI工具，做的人太多，竞争激烈，所以价格降（通缩）。
+对普通人的影响： 好消息是，你用的AI工具会越来越便宜甚至免费；坏消息是，如果你从事AI相关工作，可能面临更大的竞争压力。
+💡 小技巧：如果AI的回答还是太专业，可以追问：&amp;ldquo;请用小学生能听懂的话再解释一遍！&amp;ldquo;AI会自动调整表达难度。
+三、工具2：AI文生图 - 把抽象概念画出来 👉 立即体验 AI文生图
+经济学概念太抽象？用AI文生图把它画出来，一 …`,categories:'["tweets"]',tags:'["如何理解AI上游通胀与下游通缩","AI聊天","AI文生图","经济学","AI概念","免费工具"]',url:"https://blog.cmdragon.cn/posts/ai-inflation-deflation-explained-2026/",date:"2026-06-17",cover:""},{title:"广州汽水音乐节毕业季来了！用AI写一首毕业歌送给青春",summary:"广州汽水音乐节毕业季火热进行中，热度破778万！毕业季想送自己一首歌？本文教你用2个免费AI音乐工具，从写词到作曲，零基础也能创作属于自己的毕业歌。",content:` 立即体验：歌词生成 - 免费在线工具 | 更多1000+免费工具
+无需下载安装，打开浏览器即用，完全免费！
+扫描二维码关注或者微信搜一搜：编程智域 前端至全栈交流与成长
+一、广州汽水音乐节毕业季，你的青春BGM是什么？ &amp;ldquo;广州汽水音乐节毕业季&amp;quot;今天直接冲上抖音热搜，热度飙到778万！
+又是一年毕业季，汽水音乐节用音乐为毕业生送行。看到现场那些熟悉的面孔在舞台下挥舞荧光棒，你是不是也想起了自己的毕业季？
+那个夏天，那些人，那首歌……
+与其在评论区怀念，不如用AI给自己写一首毕业歌！把那些说不出口的话、那些回不去的时光，都写进歌词里。
+今天教你用2个免费工具，从写词到作曲，零基础也能创作属于自己的毕业歌！
+二、工具1：歌词生成器 - 30秒写一首毕业歌词 👉 立即体验 歌词生成器
+毕业季最戳人的是什么？是那些说不出口的告别。歌词生成器帮你把这些情绪变成一首完整的歌词！
+3步写一首毕业歌词 第1步：打开 歌词生成器，选择风格——推荐&amp;quot;民谣&amp;quot;或&amp;quot;流行&amp;rdquo;，最适合毕业季的氛围。
+第2步：输入你的创作主题和关键词。
+第3步：点击生成，30秒出一首完整歌词！
+毕业季歌词提示词推荐 试试输入这些关键词，看看AI能写出什么：
+主题：毕业告别 | 风格：民谣 | 关键词：教室、夕阳、背包、再见、远方
+主题：青春不散场 | 风格：流行 | 关键词：操场、晚风、合影、约定、夏天
+主题：致那个同桌 | 风格：民谣 | 关键词：课本、纸条、偷笑、毕业照、失联
+💡 小技巧：关键词越具体，AI生成的歌词越有画面感。不要只写&amp;quot;毕业&amp;quot;，试试&amp;quot;最后一节课窗外的蝉鸣&amp;quot;这种场景化描述，歌词会更有代入感。
+实测效果 我试了一下，输入&amp;quot;主题：毕业告别 | 风格：民谣 | 关键词：教室、夕阳、背包、再见、远方&amp;quot;，AI生成的歌词片段：
+教室里的夕阳拉长了影子 背包里装着四年的故事 黑板上的公式还没擦掉 我们却要说再见 远方的路很长很长 但这个夏天的风会一直吹
+说实话，比很多人自己写的歌词还要工整有意境！当然，AI写的歌词是&amp;quot;模板&amp;quot;，你可以在此基础上修改，加入自己的真实经历，让歌词更有你的味道。
+三、工具2：Strudel音乐工作室 - 用代码给歌词配旋律 👉 立即体验 …`,categories:'["tweets"]',tags:'["广州汽水音乐节毕业季","歌词生成","Strudel音乐工作室","AI写歌","毕业季","免费工具"]',url:"https://blog.cmdragon.cn/posts/guangzhou-qishui-music-festival-2026/",date:"2026-06-17",cover:""},{title:"找了1个月的耳机被女儿放洞洞鞋上！找回耳机后先做这2个检测",summary:"找了1个月的耳机被女儿放洞洞鞋上冲上微博热搜！笑过之后，找回的耳机还能用吗？本文推荐2个免费在线工具，帮你检测耳机扬声器和音频设备是否正常。",content:` 立即体验：扬声器测试 - 免费在线工具 | 更多1000+免费工具
+无需下载安装，打开浏览器即用，完全免费！
+扫描二维码关注或者微信搜一搜：编程智域 前端至全栈交流与成长
+一、找了1个月的耳机，居然在洞洞鞋上！ &amp;ldquo;找了1个月的耳机被女儿放洞洞鞋上&amp;quot;今天冲上微博热搜，热度25万！
+这位爸爸找了整整一个月的耳机，翻遍了家里每个角落，最后发现——被女儿塞进了洞洞鞋的洞洞里！
+评论区直接笑疯了：
+&amp;ldquo;哈哈哈哈，洞洞鞋的洞终于派上用场了！&amp;rdquo; &amp;ldquo;女儿：爸爸你的耳机我帮你收好了，在鞋子里。&amp;rdquo; &amp;ldquo;笑死，我家娃也干过这种事，把我的AirPods藏进玩具冰箱里。&amp;rdquo;
+笑过之后，问题来了：耳机丢了1个月，找回来还能用吗？
+耳机长时间放在鞋子里，可能受潮、进灰、甚至被挤压变形。直接戴上就用？万一有问题伤耳朵怎么办？
+别急！用2个免费工具，先给耳机做个全面体检！
+二、工具1：扬声器测试 - 检测耳机是否正常 👉 立即体验 扬声器测试
+耳机找回后，第一件事就是检测扬声器是否正常工作！
+怎么用？ 打开 扬声器测试 戴上要检测的耳机 工具会依次播放左右声道测试音 检查以下项目： 重点检测项目 检测项 怎么测 正常表现 异常表现 左声道 播放左声道测试音 左耳能听到声音 左耳没声音 右声道 播放右声道测试音 右耳能听到声音 右耳没声音 声道平衡 对比左右耳音量 左右音量一致 一边大一边小 杂音检测 仔细听有无杂音 声音干净 有电流声/破音 频率响应 播放高低频测试音 高低音都清晰 高音或低音缺失 发现问题怎么办？ 单边没声音 → 可能是线材断裂或接口氧化，尝试清理接口 有杂音/破音 → 可能是扬声器单元受潮或进灰，放干燥剂里除湿 声道不平衡 → 可能是某侧扬声器损坏，建议更换 频率响应差 → 可能是扬声器老化，影响音质 ⚠️ 重要：如果耳机在鞋子里受潮严重，建议先放在干燥剂里24小时再测试，避免短路损坏设备！
+三、工具2：音频频率生成 - 测试耳机音质 👉 立即体验 音频频率生成
+扬声器测试只能检测&amp;quot;能不能响&amp;rdquo;，音频频率生成工具可以检测&amp;quot;音质好不好&amp;quot;！
+怎么用？ 打开 音频频率生成 把音量调到中等水平（不要太大！） 从低频（20Hz）开始，逐渐调高频率 仔细听每个频率 …`,categories:'["tweets"]',tags:'["找了1个月的耳机被女儿放洞洞鞋上","扬声器测试","音频频率生成","耳机检测","免费工具"]',url:"https://blog.cmdragon.cn/posts/earphone-found-speaker-test-2026/",date:"2026-06-17",cover:""},{title:"炽夏全员玩游戏童心未泯！3个免费工具帮你找回游戏快乐",summary:"炽夏全员玩游戏童心未泯冲上抖音热搜，热度772万！想玩游戏但手柄坏了？想找免费游戏？本文推荐3个免费在线工具，帮你检测手柄、发现免费游戏、还能抽奖，找回童心从工具开始。",content:` 立即体验：手柄检测 - 免费在线工具 | 更多1000+免费工具
+无需下载安装，打开浏览器即用，完全免费！
+扫描二维码关注或者微信搜一搜：编程智域 前端至全栈交流与成长
+一、炽夏全员玩游戏，你的手柄准备好了吗？ &amp;ldquo;炽夏全员玩游戏童心未泯&amp;quot;今天冲上抖音热搜，热度飙到772万！
+夏天到了，又到了宅家打游戏的好时候。看到热搜里大家晒出各种游戏画面——有人重温童年经典的马里奥，有人拉上朋友开黑王者荣耀，还有人翻出吃灰的Switch准备通关塞尔达……
+但是！当你兴冲冲地拿出手柄准备开玩，却发现：
+手柄某个按键没反应？ 摇杆漂移严重？ 连接不上电脑？ 想玩游戏但不知道玩什么？ 想搞个游戏抽奖活动却找不到工具？ 别急！今天推荐3个免费在线工具，帮你解决游戏前的所有准备问题！
+二、工具1：手柄检测 - 开玩前先测手柄 👉 立即体验 手柄检测
+这是玩游戏前最该用的工具！
+手柄放久了容易出现按键失灵、摇杆漂移等问题。与其玩到一半发现按键没反应，不如开玩前先测一遍！
+怎么用？ 打开 手柄检测 用USB线或蓝牙连接手柄到电脑 逐个按下每个按键，工具会实时显示按键状态 移动摇杆，检查是否有漂移 测试扳机键的灵敏度 重点检测项目 检测项 怎么测 问题表现 按键响应 逐个按下ABXY等按键 按了没反应 摇杆漂移 松开摇杆看是否归位 角色自动移动 扳机灵敏度 缓慢按下L2/R2 线性度不准 方向键 上下左右各按几次 连键或失灵 震动功能 触发震动测试 震动异常或无震动 💡 小贴士：如果发现摇杆漂移，可以尝试用压缩空气清理摇杆缝隙的灰尘，很多时候漂移是灰尘导致的！
+手柄检测的3个好处 避免游戏中断：开玩前发现问题，比玩到一半发现强 判断是否需要维修：明确哪个部件坏了，维修更有针对性 二手手柄验机：买二手手柄时当场检测，避免被坑 三、工具2：免费游戏探索 - 不知道玩什么？来这里找！ 👉 立即体验 免费游戏探索
+&amp;ldquo;炽夏全员玩游戏&amp;rdquo;——但玩什么游戏呢？3A大作太贵，免费游戏又不知道哪些好玩？
+免费游戏探索工具帮你发现Epic、Steam等平台的免费游戏和限免活动！
+怎么用？ 打开 免费游戏探索 浏览当前各平台的免费游戏列表 查看游戏简介、评分、类型 点击跳转到官方平台领取 能发现什么类型的游戏？ Epic每周限免：每周都有免费游戏领取，错过就没了 …`,categories:'["tweets"]',tags:'["炽夏全员玩游戏童心未泯","手柄检测","免费游戏探索","抽奖工具","游戏工具","免费工具"]',url:"https://blog.cmdragon.cn/posts/chixia-game-childhood-2026/",date:"2026-06-17",cover:""},{title:"26届高考生已经不知昼夜为何物？番茄钟帮你找回节奏",summary:"26届高考生卷到不知昼夜？番茄钟白噪音帮你25分钟高效专注，比熬夜刷题效率高3倍！",content:` 立即体验：番茄钟白噪音 - 免费在线工具 | 更多1000+免费工具
 无需下载安装，打开浏览器即用，完全免费！
 扫描二维码关注或者微信搜一搜：编程智域 前端至全栈交流与成长
 26届高考生已经不知昼夜为何物了！抖音771万热度，说的就是你们吧？凌晨两点还在刷题，早上六点又爬起来背单词，感觉自己像个永动机，但成绩就是上不去。
@@ -7719,12 +7806,12 @@ lg:overflow-visible flex flex-col"><div class="toc-header flex justify-between i
 <button id=toc-close class="ml-1 lg:hidden text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full">
 <iconify-icon icon=mdi:close width=20 height=20></iconify-icon></button></div></div><div id=toc-content class="toc text-sm text-gray-700 dark:text-gray-300 flex-grow overflow-y-auto"><nav id=TableOfContents><ul><li><a href=#模板引用的生命周期时机正确访问引用的时机与常见陷阱>模板引用的生命周期时机——正确访问引用的时机与常见陷阱</a><ul><li><a href=#什么是模板引用>什么是模板引用？</a></li><li><a href=#正确访问模板引用的生命周期时机>正确访问模板引用的生命周期时机</a><ul><li><a href=#1-挂载后访问onmounted钩子>1. 挂载后访问：onMounted钩子</a></li><li><a href=#2-处理动态更新watcheffect与null检查>2. 处理动态更新：watchEffect与null检查</a></li></ul></li><li><a href=#常见陷阱与解决方案>常见陷阱与解决方案</a><ul><li><a href=#陷阱1在模板中直接引用未挂载的ref>陷阱1：在模板中直接引用未挂载的ref</a></li><li><a href=#陷阱2v-for中的ref数组vue-35变化>陷阱2：v-for中的ref数组（Vue 3.5+变化）</a></li><li><a href=#陷阱3访问子组件ref时的权限问题>陷阱3：访问子组件ref时的权限问题</a></li></ul></li><li><a href=#实践案例聚焦输入框与子组件交互>实践案例：聚焦输入框与子组件交互</a></li><li><a href=#课后quiz>课后Quiz</a></li><li><a href=#常见报错解决方案>常见报错解决方案</a><ul><li><a href=#错误1cannot-read-property-focus-of-null>错误1：Cannot read property &lsquo;focus&rsquo; of null</a></li><li><a href=#错误2v-for中的ref数组为空>错误2：v-for中的ref数组为空</a></li><li><a href=#错误3父组件无法访问子组件的属性>错误3：父组件无法访问子组件的属性</a></li></ul></li><li><a href=#参考链接>参考链接</a></li></ul></li></ul></nav></div></div><div id=toc-overlay class="fixed inset-0 bg-black bg-opacity-50 z-30 hidden lg:hidden backdrop-blur-sm"></div><div class="lg:sticky lg:top-[calc(100vh-320px)] bg-white dark:bg-gray-800 rounded-xl shadow-md p-5 mb-8 border border-gray-100 dark:border-gray-700"><div class="text-xs text-gray-500 dark:text-gray-400 mb-3 text-center">广告位</div><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2874982874195135" crossorigin=anonymous></script><ins class=adsbygoogle style=display:block data-ad-client=ca-pub-2874982874195135 data-ad-slot=6984392540 data-ad-format=auto data-full-width-responsive=true></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script></div></aside></div></div><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/bash.min.js></script><link rel=stylesheet href=/css/code-highlight.min.ec690d5f44c0bc50302407e95a0059375527153e46bd5a38ceed951c0c685dabfc65cb5105db63e48a69ea847a6b578104507b3aec7384f448c4ae942b390090.css integrity="sha512-7GkNX0TAvFAwJAfpWgBZN1UnFT5GvVo4zu2VHAxoXav8ZctRBdtj5Ipp6oR6a1eBBFB7OuxzhPRIxK6UKzkAkA=="><link rel=stylesheet href=/css/markdown.min.4721401ceae83b0603d50bb248719ef7b2d064eaba4104198abfc4e6a054363f1f40c58cadd3cd40d1cace04e0df5ee99bbec80b3a9403c7bf65b0b5a35554f7.css integrity="sha512-RyFAHOroOwYD1QuySHGe97LQZOq6QQQZir/E5qBUNj8fQMWMrdPNQNHKzgTg317pm77ICzqUA8e/ZbC1o1VU9w=="><link rel=stylesheet href=/css/image-viewer.min.537f38c9c7d5706d32054a67368e64e9c46e979e7bf2746f42cfaf425a84695ed9e7d869ed650f74df0b8871aaef0959aead28fc3b8abde2ea7b48b80b63e321.css integrity="sha512-U384ycfVcG0yBUpnNo5k6cRul5578nRvQs+vQlqEaV7Z59hp7WUPdN8LiHGq7wlZrq0o/DuKveLqe0i4C2PjIQ=="><script src=/js/code-highlight.min.290edb55b4573dcbbacb8b8a18d03863bbc233fd9bad41196fc20239446170d97ff298f85b171cfb5e7887c00dd6ee33f393a82f05c3a1fc7531e4a67262c437.js integrity="sha512-KQ7bVbRXPcu6y4uKGNA4Y7vCM/2brUEZb8ICOURhcNl/8pj4Wxcc+154h8AN1u4z85OoLwXDofx1MeSmcmLENw=="></script><script src=/js/toc.min.92a4653787fea9432dea3eeb9adc03e050ff554e6d14172e05ab388e02e2710fad92e2eee79e77f913e6a1eb6121b9fcdc7e01737092c908fe94037db5245260.js integrity="sha512-kqRlN4f+qUMt6j7rmtwD4FD/VU5tFBcuBas4jgLicQ+tkuLu5553+RPmoethIbn83H4Bc3CSyQj+lAN9tSRSYA=="></script><script src=/js/image-viewer.min.9f1010ebec4f14ac3dc59adef576c5430e73339d1e527a832c0fb7243683f73a93584bfdc11198edec5c27e609d69d3b985b98cd1931c3f0595e429bf874d23d.js integrity="sha512-nxAQ6+xPFKw9xZre9XbFQw5zM50eUnqDLA+3JDaD9zqTWEv9wRGY7excJ+YJ1p07mFuYzRkxw/BZXkKb+HTSPQ=="></script><script>document.addEventListener("DOMContentLoaded",function(){window.hljs&&document.querySelectorAll("pre code").forEach(function(e){hljs.highlightElement(e)})})</script><style>#toc-content{max-height:none}@media(min-width:1024px){#toc-content{max-height:none;overflow:visible}#toc-container{max-height:calc(100vh - 120px);overflow-y:auto}nav#TableOfContents{overflow:visible}}@media(max-width:1023px){#toc-container{padding-bottom:env(safe-area-inset-bottom,20px);display:flex;flex-direction:column}#toc-content{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding-bottom:20px}}</style></main><footer class="bg-gradient-to-b from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 shadow-inner py-10 mt-12 border-t border-gray-200 dark:border-gray-700"><div class="container mx-auto px-4"><div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8"><div><h3 class="text-lg font-bold mb-4 text-gray-900 dark:text-white flex items-center"><div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-1.5 rounded text-white mr-2"><iconify-icon icon=mdi:information width=16 height=16></iconify-icon></div>关于本站</h3><p class="text-sm text-gray-600 dark:text-gray-400 mb-4">cmdragon's Blog 是一个专注于编程和技术分享的个性化网站，旨在为编程爱好者、学习者和从业者提供全面的前端开发、后端开发以及全栈开发学习资源。</p><div class="flex space-x-3"><a href=mailto:support@cmdragon.cn class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-300 bg-gray-100 dark:bg-gray-700 p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600" aria-label=发送邮件 tabindex=0 target=_blank rel="noopener noreferrer"><iconify-icon icon=mdi:email width=18 height=18></iconify-icon></a><a href=https://github.com/cmdragon class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-300 bg-gray-100 dark:bg-gray-700 p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600" aria-label="GitHub 主页" tabindex=0 target=_blank rel="noopener noreferrer"><iconify-icon icon=mdi:github width=18 height=18></iconify-icon></a><a href=/index.xml class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-300 bg-gray-100 dark:bg-gray-700 p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600" aria-label="RSS 订阅" tabindex=0><iconify-icon icon=mdi:rss width=18 height=18></iconify-icon></a><button class="wechat-btn text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-300 bg-gray-100 dark:bg-gray-700 p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600" aria-label=微信公众号 tabindex=0>
 <iconify-icon icon=mdi:wechat width=18 height=18></iconify-icon></button></div></div><div><h3 class="text-lg font-bold mb-4 text-gray-900 dark:text-white flex items-center"><div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-1.5 rounded text-white mr-2"><iconify-icon icon=mdi:link-variant width=16 height=16></iconify-icon></div>快速链接</h3><ul class=space-y-2><li><a href=https://movie.cmdragon.cn/ class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-300 flex items-center" target=_blank rel="noopener noreferrer" aria-label=高清影视库><iconify-icon icon=mdi:movie-search-outline class="mr-2 text-primary" width=16 height=16></iconify-icon>高清影视库</a></li><li><a href=https://manga.cmdragon.cn/ class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-300 flex items-center" target=_blank rel="noopener noreferrer" aria-label=精选漫画阅读><iconify-icon icon=mdi:comic-thought-bubble-outline class="mr-2 text-primary" width=16 height=16></iconify-icon>精选漫画阅读</a></li><li><a href=https://tools.cmdragon.cn/zh class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-300 flex items-center" target=_blank rel="noopener noreferrer" aria-label=实用在线工具><iconify-icon icon=mdi:tools class="mr-2 text-primary" width=16 height=16></iconify-icon>实用在线工具</a></li><li><a href=https://hot-movie.cmdragon.cn/ class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-300 flex items-center" target=_blank rel="noopener noreferrer" aria-label=热映影视推荐><iconify-icon icon=mdi:filmstrip class="mr-2 text-primary" width=16 height=16></iconify-icon>热映影视推荐</a></li></ul></div><div><h3 class="text-lg font-bold mb-4 text-gray-900 dark:text-white flex items-center"><div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-1.5 rounded text-white mr-2"><iconify-icon icon=mdi:tag-multiple width=16 height=16></iconify-icon></div>热门标签</h3><div class="flex flex-wrap gap-2"><a href=https://blog.cmdragon.cn/tags/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#基础入门 <span class="text-xs opacity-70">(225)</span>
-</a><a href=https://blog.cmdragon.cn/tags/FastAPI/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#FastAPI <span class="text-xs opacity-70">(167)</span>
-</a><a href=https://blog.cmdragon.cn/tags/nuxt/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#Nuxt <span class="text-xs opacity-70">(147)</span>
+</a><a href=https://blog.cmdragon.cn/tags/fastapi/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#Fastapi <span class="text-xs opacity-70">(167)</span>
+</a><a href=https://blog.cmdragon.cn/tags/Nuxt/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#Nuxt <span class="text-xs opacity-70">(147)</span>
 </a><a href=https://blog.cmdragon.cn/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#性能优化 <span class="text-xs opacity-70">(78)</span>
 </a><a href=https://blog.cmdragon.cn/tags/%E9%92%A9%E5%AD%90/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#钩子 <span class="text-xs opacity-70">(62)</span>
+</a><a href=https://blog.cmdragon.cn/tags/%E5%85%8D%E8%B4%B9%E5%B7%A5%E5%85%B7/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#免费工具 <span class="text-xs opacity-70">(61)</span>
 </a><a href=https://blog.cmdragon.cn/tags/%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#错误处理 <span class="text-xs opacity-70">(57)</span>
-</a><a href=https://blog.cmdragon.cn/tags/%E5%85%8D%E8%B4%B9%E5%B7%A5%E5%85%B7/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#免费工具 <span class="text-xs opacity-70">(56)</span>
 </a><a href=https://blog.cmdragon.cn/tags/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#在线工具 <span class="text-xs opacity-70">(56)</span>
 </a><a href=https://blog.cmdragon.cn/tags/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#生命周期 <span class="text-xs opacity-70">(41)</span>
 </a><a href=https://blog.cmdragon.cn/tags/%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#依赖注入 <span class="text-xs opacity-70">(36)</span></a></div></div></div><div class="border-t border-gray-200 dark:border-gray-700 pt-6"><div class="flex flex-col md:flex-row justify-between items-center"><div class="text-center md:text-left mb-4 md:mb-0"><p class="text-sm text-gray-600 dark:text-gray-400">&copy; 2023 cmdragon's Blog. 保留所有权利.</p><p class="text-xs text-gray-500 dark:text-gray-500 mt-1">由 <a href=https://gohugo.io/ class="hover:text-primary transition-colors duration-300" target=_blank rel="noopener noreferrer">Hugo</a> 强力驱动 |
