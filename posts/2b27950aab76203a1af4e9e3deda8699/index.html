@@ -126,7 +126,409 @@ def cancel_unpaid_order(order_id: str):
 后台任务队列：适用于一次性延时任务 定时调度系统：适用于周期重复任务 graph LR A[触发方式] --&amp;gt; B[客户端请求触发] A --&amp;gt; C[定时器自动触发] B --&amp;gt; D[BackgroundTasks] C --&amp;gt; E[APScheduler] 2. APScheduler 集成方案 APScheduler 是Python中最成熟的定时任务调度库，支持多种调度器和存储方案：
 调度器类型比较：
 调度器类型 适用场景 特点 BlockingScheduler 独立脚本 阻塞主线程 BackgroundScheduler Web应用 后台独立线程 AsyncIOScheduler 异步应用 兼容asyncio 集成示例：
-# requirements.txt fastapi == 0.109 .2 apscheduler == 3.10 .1 pydantic == 2.6 .4 uvicorn == 0.27 .1 from fastapi import FastAPI from apscheduler.schedulers.background import BackgroundScheduler from apscheduler.triggers.cron import CronTrigger from pydantic import BaseModel import logging app = FastAPI() scheduler = BackgroundScheduler() class TaskConfig(BaseModel): &amp;#34;&amp;#34;&amp;#34;定时任务配置模型&amp;#34;&amp;#34;&amp;#34; task_id: str …`,categories:'["fastapi"]',tags:'["定时任务系统","FastAPI","APScheduler","后台任务队列","电商订单处理","分布式环境","错误处理"]',url:t.currentUrl},o=[{title:"减肥减什么肥！先用BMI计算器算算你到底需不需要减",summary:"减肥减什么肥冲上抖音热搜778万！到底该不该减肥？别盲目跟风！BMI计算器免费在线帮你科学判断体质指数，1秒算出你是否真的需要减肥。",content:` 立即体验：BMI计算器 - 免费在线工具 | 更多1000+免费工具
+# requirements.txt fastapi == 0.109 .2 apscheduler == 3.10 .1 pydantic == 2.6 .4 uvicorn == 0.27 .1 from fastapi import FastAPI from apscheduler.schedulers.background import BackgroundScheduler from apscheduler.triggers.cron import CronTrigger from pydantic import BaseModel import logging app = FastAPI() scheduler = BackgroundScheduler() class TaskConfig(BaseModel): &amp;#34;&amp;#34;&amp;#34;定时任务配置模型&amp;#34;&amp;#34;&amp;#34; task_id: str …`,categories:'["fastapi"]',tags:'["定时任务系统","FastAPI","APScheduler","后台任务队列","电商订单处理","分布式环境","错误处理"]',url:t.currentUrl},o=[{title:"三战高考女孩查分大哭看哭网友！3个免费AI工具陪你度过人生路口",summary:"三战高考女孩查分大哭看哭网友冲上百度和头条热搜！三年坚持终于圆梦，无数人被这份执着打动。本文推荐3个免费AI工具，AI聊天+小红书文案+AI简历，帮你度过高考后的人生路口，无论是分享经历、规划未来还是准备简历。",content:` 立即体验：AI聊天 - 免费在线工具 | 更多1000+免费工具
+无需下载安装，打开浏览器即用，完全免费！
+扫描二维码关注或者微信搜一搜：编程智域 前端至全栈交流与成长
+一、三战高考女孩查分大哭，看哭百万网友！ 今天，&amp;ldquo;三战高考女孩查分大哭看哭网友&amp;quot;同时冲上百度热搜和头条热搜！
+视频里，这位三年坚持高考的女孩——
+查分前手抖到点不开屏幕 看到分数那一刻放声大哭 三年熬夜苦读的画面闪回 父母在旁边跟着流泪 最后紧紧抱住妈妈说&amp;quot;妈，我做到了&amp;rdquo; 评论区哭成一片——
+&amp;ldquo;三年啊，谁能坚持下来？&amp;rdquo; &amp;ldquo;我也三战过，懂那种绝望后的狂喜！&amp;rdquo; &amp;ldquo;看哭了，这才是真正的青春！&amp;rdquo; &amp;ldquo;想写一篇关于高考坚持的分享，怎么写更打动人？&amp;rdquo;
+三战高考的故事太打动人了！今天就教你用3个免费AI工具，分享你的高考故事、规划未来方向、准备大学简历！
+二、工具1：AI聊天 - 帮你梳理高考经历与未来规划 👉 立即体验 AI聊天
+三战高考的女孩查分大哭，背后是三年的坚持与挣扎。无论是想梳理自己的高考经历，还是规划大学生活，AI聊天都可以是你的&amp;quot;智能倾听者&amp;quot;和&amp;quot;未来规划师&amp;quot;！
+3步用AI梳理高考经历 第1步：打开 AI聊天，进入对话界面。
+第2步：告诉AI你的高考故事和困惑。
+第3步：AI帮你梳理经历、分析未来方向！
+高考经历梳理提示词模板 模板1：复盘高考经历
+我是一名三战高考生，今年终于考上了理想的大学。请帮我梳理：
+三年高考经历中我学到了什么？ 这段经历对未来人生有什么意义？ 如何在大学阶段发挥这份坚持的优势？ 应该提前为大学生活做哪些准备？ 模板2：规划大学生活
+我即将进入[大学名称]学习[专业]专业。请帮我规划：
+大一新生应该如何安排时间？ 这个专业的就业前景如何？ 大学期间应该重点培养哪些能力？ 是否需要考研？什么时候开始准备？ 模板3：应对复读焦虑
+我是今年的高考生，成绩不理想在犹豫是否复读。请帮我分析：
+复读的利弊各是什么？ 什么样的学生适合复读？ 复读期间如何调整心态？ 如果不复读，还有哪些出路？ 💡 小技巧：AI的分析基于公开数据和逻辑推理，仅供参考。重要决策建议与家长、老师共同讨论！
+AI分析 vs 传统咨询 对比 …`,categories:'["tweets"]',tags:'["三战高考女孩查分大哭看哭网友","AI聊天","小红书文案","AI简历","高考","免费工具"]',url:"https://blog.cmdragon.cn/posts/three-times-gaokao-cry-ai-tools-2026/",date:"2026-06-28",cover:""},{title:"哈兰德发抖音回顾小组赛！2个免费工具帮你保存哈兰德精彩瞬间",summary:"哈兰德发抖音回顾小组赛冲上抖音热搜873万！哈兰德的精彩进球和庆祝动作太上头了，想保存下来反复看？本文推荐2个免费在线工具，视频下载+GIF制作，帮你无水印保存哈兰德精彩瞬间并制作专属表情包。",content:` 立即体验：视频下载 - 免费在线工具 | 更多1000+免费工具
+无需下载安装，打开浏览器即用，完全免费！
+扫描二维码关注或者微信搜一搜：编程智域 前端至全栈交流与成长
+一、哈兰德发抖音回顾小组赛，873万人围观！ 今天，&amp;ldquo;哈兰德发抖音回顾小组赛&amp;quot;冲上抖音热搜，热度飙到873万！
+哈兰德本人亲自下场发抖音，回顾小组赛精彩瞬间——
+暴力抽射破门，球速快到镜头模糊 庆祝动作霸气侧漏，气场两米八 与队友默契配合，进球后拥抱庆祝 训练场花絮，私下憨憨一面 评论区炸了——
+&amp;ldquo;哈兰德的进球像装了加速器！&amp;rdquo; &amp;ldquo;想保存哈兰德的庆祝动作做手机壁纸！&amp;rdquo; &amp;ldquo;能不能把哈兰德的抽射做成GIF表情包？&amp;rdquo;
+今天就教你用2个免费在线工具，无水印保存哈兰德精彩瞬间，制作专属哈兰德GIF表情包！
+二、工具1：视频下载 - 无水印保存哈兰德抖音 👉 立即体验 视频下载
+哈兰德发的抖音视频想保存下来反复看？视频下载工具支持抖音等主流平台，无水印、高清下载，原画质保存！
+3步保存哈兰德抖音视频 第1步：在抖音找到哈兰德发布的小组赛回顾视频，点击分享→复制链接。
+第2步：打开 视频下载，粘贴链接到输入框。
+第3步：点击下载，选择1080P清晰度，保存到本地！
+哈兰德必收藏的精彩瞬间 经典瞬间 推荐理由 收藏价值 暴力头球破门 弹跳力惊人，球速炸裂 ⭐⭐⭐⭐⭐ 抽射进球 技术教科书般完美 ⭐⭐⭐⭐⭐ 庆祝动作 霸气侧漏，气场全开 ⭐⭐⭐⭐⭐ 与队友拥抱 团队默契温情时刻 ⭐⭐⭐⭐ 训练场花絮 私下憨憨反差萌 ⭐⭐⭐⭐ 赛后采访 金句频出幽默风趣 ⭐⭐⭐⭐ 💡 小技巧：下载时选择1080P清晰度，画面细节更丰富，特别是高速运动镜头，高清才能看清哈兰德的肌肉线条和表情！
+三、工具2：GIF制作 - 把哈兰德进球做成表情包 👉 立即体验 GIF制作
+哈兰德的庆祝动作天生就是表情包素材！霸气怒吼、双手展开、自信微笑……用GIF制作工具把这些瞬间变成专属表情包！
+3步制作哈兰德GIF表情包 第1步：打开 GIF制作，上传你保存的哈兰德视频片段。
+第2步：选择要截取的片段（3-5秒最合适），调整播放速度。
+第3步：生成GIF，下载使用！
+哈兰德表情包创意玩法 表情包创意 素材 适用场景 哈兰德怒吼 进球后庆祝画面 &amp;ldquo; …`,categories:'["tweets"]',tags:'["哈兰德发抖音回顾小组赛","视频下载","GIF制作","哈兰德","世界杯","免费工具"]',url:"https://blog.cmdragon.cn/posts/haaland-douyin-group-stage-tools-2026/",date:"2026-06-28",cover:""},{title:"央视曝手机测评作弊乱象！3个免费检测工具帮你验机不踩坑",summary:"央视曝手机测评作弊乱象冲上微博热搜27万！手机测评博主收钱改数据、刷跑分、虚标参数。本文推荐3个免费在线检测工具，屏幕坏点检测+电池状态检测+触屏检测，帮你亲自验机不踩坑。",content:` 立即体验：屏幕坏点检测 - 免费在线工具 | 更多1000+免费工具
+无需下载安装，打开浏览器即用，完全免费！
+扫描二维码关注或者微信搜一搜：编程智域 前端至全栈交流与成长
+一、央视曝手机测评作弊乱象，27万人围观！ 今天，&amp;ldquo;央视曝手机测评作弊乱象&amp;quot;冲上微博热搜，热度飙到27万！
+央视报道揭秘手机测评行业的潜规则——
+测评博主收钱改跑分数据 虚标电池容量，续航虚高 屏幕坏点测试作弊，预置&amp;quot;完美屏&amp;rdquo; 触屏灵敏度测试用脚本作弊 充电功率虚标，标称120W实测仅60W 看完央视报道才发现，原来很多测评博主的&amp;quot;亲测有效&amp;quot;都是收钱办事的剧本！那作为普通消费者，怎么亲自验证手机好坏？
+今天就教你用3个免费在线检测工具，不依赖任何测评博主，自己动手验机！
+二、工具1：屏幕坏点检测 - 验证屏幕质量 👉 立即体验 屏幕坏点检测
+手机屏幕是验机的第一关！坏点、亮点、暗点是屏幕质量的核心指标，但测评博主经常用预置&amp;quot;完美屏&amp;quot;作弊。用屏幕坏点检测工具，自己就能看清屏幕真实状况！
+3步检测手机屏幕 第1步：用手机浏览器打开 屏幕坏点检测。
+第2步：依次切换纯色背景（红、绿、蓝、白、黑）。
+第3步：仔细观察每个颜色下的屏幕，看是否有亮点、暗点或坏点。
+屏幕坏点检查清单 检查项 正常屏幕 问题屏幕 纯白背景 全白无杂色 出现黑点/暗点 纯黑背景 全黑无漏光 出现亮点/白点 纯红背景 全红均匀 出现其他色点 纯绿背景 全绿均匀 出现其他色点 纯蓝背景 全蓝均匀 出现其他色点 屏幕坏点类型识别 坏点类型 表现 严重程度 亮点 全黑背景下持续发光 ⚠️ 严重 暗点 全白背景下不发光 ⚠️ 中等 坏点 始终显示一种颜色 ⚠️ 严重 漏光 黑背景下边缘泛白 ⚠️ 轻微 💡 小技巧：检测屏幕坏点时，建议在暗光环境下进行，关闭自动亮度，把屏幕亮度调到最高，这样坏点会更明显！
+三、工具2：电池状态检测 - 验证电池健康 👉 立即体验 电池状态检测
+电池是手机最重要的部件之一！测评博主经常虚标续航，但电池健康度和实际容量无法造假。用电池状态检测工具，看清电池真实状况！
+3步检测电池状态 第1步：用手机浏览器打开 电池状态检测。
+第2步：点击开始检测，工具会自动读取电池信息。
+第3步：查看电池健康度、充电状态、电压电流等信息。
+电 …`,categories:'["tweets"]',tags:'["央视曝手机测评作弊乱象","屏幕坏点检测","电池状态检测","触屏检测","验机","免费工具"]',url:"https://blog.cmdragon.cn/posts/cctv-phone-review-fraud-detection-tools-2026/",date:"2026-06-28",cover:""},{title:"教育部发布填报志愿诈骗预警！3个免费查询工具帮你识破野鸡大学",summary:"教育部发布填报志愿诈骗预警冲上抖音热搜1202万！野鸡大学、虚假招生网站层出不穷。本文推荐3个免费在线查询工具，ICP备案查询+Whois查询+SSL证书检查，帮你识破虚假大学官网，避免志愿填报被骗。",content:` 立即体验：ICP备案查询 - 免费在线工具 | 更多1000+免费工具
+无需下载安装，打开浏览器即用，完全免费！
+扫描二维码关注或者微信搜一搜：编程智域 前端至全栈交流与成长
+一、教育部发布填报志愿诈骗预警，1202万人关注！ 今天，&amp;ldquo;教育部发布填报志愿诈骗预警&amp;quot;冲上抖音热搜，热度飙到1202万！
+每年高考志愿填报季，都是诈骗分子最猖獗的时候——
+&amp;ldquo;内部指标，分数不够也能上名校&amp;rdquo; &amp;ldquo;我们是XX大学官方招生办&amp;rdquo; &amp;ldquo;缴纳咨询费保你录取&amp;rdquo; &amp;ldquo;野鸡大学&amp;quot;伪装成正规高校官网 教育部明确预警：凡是以收取费用为前提的志愿填报指导，都要高度警惕！特别是那些自称&amp;quot;内部关系&amp;quot;&amp;ldquo;特殊渠道&amp;quot;的招生中介，几乎100%是诈骗。
+但问题是——怎么判断一个招生网站是不是真的？ 怎么识破野鸡大学的伪装？
+今天就教你用3个免费查询工具，从技术角度识破虚假招生网站！
+二、工具1：ICP备案查询 - 验证网站是否合法 👉 立即体验 ICP备案查询
+所有正规网站都必须有ICP备案！这是国家工信部对网站的强制要求。没有备案的网站，要么是非法网站，要么是境外服务器（野鸡大学常用套路）。
+3步验证招生网站备案 第1步：在招生网站底部找到备案号，或复制网站域名。
+第2步：打开 ICP备案查询，输入域名或备案号。
+第3步：查看备案信息——主办单位名称、性质、审核时间。
+真假大学官网备案对比 对比项 正规大学官网 野鸡大学官网 备案性质 事业单位 企业或个人 主办单位 XX大学（与校名一致） XX教育科技公司 审核时间 多年前备案 近期刚备案 备案号格式 京ICP备XXXXXXXX号 异常或不存在 💡 小技巧：正规大学官网的备案主体一定是&amp;quot;XX大学&amp;quot;或&amp;quot;XX学院&amp;rdquo;，性质为&amp;quot;事业单位&amp;rdquo;。如果备案主体是&amp;quot;XX教育咨询公司&amp;quot;&amp;ldquo;XX招生服务公司&amp;rdquo;，基本就是野鸡大学或中介网站！
+常见野鸡大学域名套路 套路 示例 识别方法 域名后缀异常 xxuniversity-edu.com 正规大学多用.edu.cn 域名模仿知名高校 …`,categories:'["tweets"]',tags:'["教育部发布填报志愿诈骗预警","ICP备案查询","Whois查询","SSL证书检查","志愿填报","反诈骗","免费工具"]',url:"https://blog.cmdragon.cn/posts/education-volunteer-fraud-warning-tools-2026/",date:"2026-06-28",cover:""},{title:"迪丽热巴蹲下和粉丝拍照！2个免费工具帮你处理粉丝合影",summary:"迪丽热巴蹲下和粉丝拍照冲上微博热搜25万！蹲下拍照超有爱，但粉丝合影往往背景杂乱、文件太大。本文推荐2个免费在线工具，图片压缩+背景去除，帮你处理和明星的合影，让照片更好看更易分享。",content:` 立即体验：图片压缩 - 免费在线工具 | 更多1000+免费工具
+无需下载安装，打开浏览器即用，完全免费！
+扫描二维码关注或者微信搜一搜：编程智域 前端至全栈交流与成长
+一、迪丽热巴蹲下和粉丝拍照，25万人围观！ 今天，&amp;ldquo;迪丽热巴蹲下和粉丝拍照&amp;quot;冲上微博热搜，热度飙到25万！
+迪丽热巴在活动结束后，主动蹲下身与粉丝合影——
+穿着高跟鞋蹲下，毫无明星架子 与粉丝亲切互动，笑容温柔 多次配合粉丝摆Pose 即使保镖催促也不忘合影 评论区一片好评——
+&amp;ldquo;热巴真的好宠粉！&amp;rdquo; &amp;ldquo;蹲下拍照超有爱，我也想去现场！&amp;rdquo; &amp;ldquo;拍了一堆照片，但背景太乱了想处理一下！&amp;rdquo; &amp;ldquo;照片文件太大发不出去怎么办？&amp;rdquo;
+粉丝合影后，往往会遇到这些图片处理烦恼——背景杂乱、文件太大、想换背景……今天就教你用2个免费在线工具处理粉丝合影！
+二、工具1：图片压缩 - 解决合影文件太大问题 👉 立即体验 图片压缩
+活动现场拍合影，照片往往每张都10MB以上，发微信群里被压缩成糊图，发朋友圈被限制大小！图片压缩工具帮你轻松解决！
+3步压缩粉丝合影 第1步：打开 图片压缩，上传合影照片。
+第2步：选择压缩质量（推荐80%，画质几乎无损）。
+第3步：下载压缩后的照片，文件大小瞬间变小！
+不同场景的压缩建议 使用场景 推荐压缩率 文件大小参考 朋友圈分享 70%-80% 1-2MB 微信群分享 60%-70% 500KB-1MB 微博发布 80%-90% 2-3MB 小红书发布 80%-90% 2-3MB 长期保存 90%-100% 5MB+ 图片压缩效果对比 对比项 原图 压缩后 文件大小 10MB+ 1-2MB 画质清晰度 100% 95%+ 上传速度 慢 快 微信分享 被二次压缩变糊 保持高清 朋友圈发布 经常失败 顺利发布 💡 小技巧：发朋友圈和微信群时，建议先压缩到1-2MB，避免微信二次压缩把照片变糊。原图留着备份，压缩版用于分享！
+三、工具2：背景去除 - 一键抠图让合影更出彩 👉 立即体验 背景去除
+活动现场合影往往背景杂乱、路人抢镜！背景去除工具帮你一键抠图，把热巴或自己从杂乱背景中提取出来！
+3步去除合影背景 第1步：打开 背景去除，上传合影照片。
+第2步：工具自动识别前景人物，一键去 …`,categories:'["tweets"]',tags:'["迪丽热巴蹲下和粉丝拍照","图片压缩","背景去除","粉丝合影","免费工具"]',url:"https://blog.cmdragon.cn/posts/dilireba-fan-photo-tools-2026/",date:"2026-06-28",cover:""},{title:"在抖音的三国文学里出不来了！2个免费工具帮你保存和制作三国名场面",summary:"在抖音的三国文学里出不来了冲上抖音热搜1197万！三国文学短视频太上头了，想保存经典片段？本文推荐2个免费在线工具，视频下载+GIF制作，帮你保存三国名场面和制作表情包。",content:` 立即体验：视频下载 - 免费在线工具 | 更多1000+免费工具
+无需下载安装，打开浏览器即用，完全免费！
+扫描二维码关注或者微信搜一搜：编程智域 前端至全栈交流与成长
+一、在抖音的三国文学里出不来了，1197万人上头！ 今天，&amp;ldquo;在抖音的三国文学里出不来了&amp;quot;冲上抖音热搜，热度飙到1197万！
+评论区一片沉迷——
+&amp;ldquo;本来只想刷5分钟，结果看了两小时三国文学解说……&amp;rdquo; &amp;ldquo;诸葛亮空城计那段被讲得太绝了，想保存下来反复看！&amp;rdquo; &amp;ldquo;想把这些经典片段做成GIF表情包，发群里用！&amp;rdquo;
+抖音上的三国文学短视频太上头了！从诸葛亮空城计到关羽过五关斩六将，每个经典桥段都被讲解得引人入胜。想保存这些名场面？想做三国主题的表情包？今天就教你用2个免费在线工具！
+二、工具1：视频下载 - 无水印保存三国名场面 👉 立即体验 视频下载
+刷到精彩的三国文学短视频，想保存下来？视频下载工具支持抖音等主流平台，无水印、高清下载！
+3步保存三国短视频 第1步：在抖音找到你喜欢的三国文学视频，点击分享→复制链接。
+第2步：打开 视频下载，粘贴链接到输入框。
+第3步：点击下载，选择清晰度，保存到本地！
+三国文学必收藏的经典片段 经典桥段 推荐理由 收藏价值 诸葛亮空城计 智谋天花板，心理博弈经典 ⭐⭐⭐⭐⭐ 关羽过五关斩六将 忠义担当，武将巅峰 ⭐⭐⭐⭐⭐ 草船借箭 以少胜多的智慧 ⭐⭐⭐⭐ 三顾茅庐 求贤若渴的诚意 ⭐⭐⭐⭐ 赤壁之战 三国最大战役 ⭐⭐⭐⭐ 桃园三结义 兄弟情义经典 ⭐⭐⭐⭐ 💡 小技巧：下载时选择1080P清晰度，画面细节更丰富，特别是古代战争场面，高清才能看清细节！
+三、工具2：GIF制作 - 把三国名场面做成表情包 👉 立即体验 GIF制作
+三国文学里太多经典表情包素材了！诸葛亮摇扇微笑、关羽怒目而视、张飞大喝一声……用GIF制作工具把这些瞬间变成表情包！
+3步制作三国GIF表情包 第1步：打开 GIF制作，上传你保存的三国视频片段。
+第2步：选择要截取的片段，调整播放速度。
+第3步：生成GIF，下载使用！
+三国表情包创意玩法 表情包创意 素材 适用场景 诸葛亮微笑 摇扇淡定画面 &amp;ldquo;一切尽在掌握&amp;rdquo; 关羽怒视 瞪眼画面 &amp;ldquo;你在教我做事？&amp;rdquo; 张飞 …`,categories:'["tweets"]',tags:'["在抖音的三国文学里出不来了","视频下载","GIF制作","三国文学","免费工具"]',url:"https://blog.cmdragon.cn/posts/douyin-three-kingdoms-literature-tools-2026/",date:"2026-06-27",cover:""},{title:"当你怎么拍照都不好看时！2个免费工具帮你拯救废片",summary:"当你怎么拍照都不好看时冲上抖音热搜770万！拍照总是废片？别急着删！本文推荐2个免费在线工具，背景去除+图片压缩，帮你拯救废片，让照片焕然一新。",content:` 立即体验：背景去除 - 免费在线工具 | 更多1000+免费工具
+无需下载安装，打开浏览器即用，完全免费！
+扫描二维码关注或者微信搜一搜：编程智域 前端至全栈交流与成长
+一、当你怎么拍照都不好看时，770万人共鸣！ 今天，&amp;ldquo;当你怎么拍照都不好看时&amp;quot;冲上抖音热搜，热度770万！
+评论区一片哀嚎——
+&amp;ldquo;明明本人挺好看的，一拍照就变丑，什么原理？&amp;rdquo; &amp;ldquo;角度不对、光线不对、表情不对，反正就是不对……&amp;rdquo; &amp;ldquo;拍了一百张没有一张能用的，太难了！&amp;rdquo; &amp;ldquo;有没有什么工具能拯救一下废片？&amp;rdquo;
+拍照不好看别急着删！很多&amp;quot;废片&amp;quot;其实只是背景太丑或文件太大被压缩变糊。今天就教你用2个免费在线工具，拯救你的废片！
+二、废片为什么能拯救？ 先了解废片的常见问题——
+废片类型 问题表现 拯救方案 背景杂乱 宿舍/街边太乱 去除背景换干净背景 背景抢镜 背景比人还亮眼 去除背景突出主体 文件太大 发朋友圈被压缩变糊 提前压缩保持清晰 多图发送 9张图一起发卡顿 批量压缩减少体积 💡 核心思路：背景去除解决&amp;quot;背景丑&amp;quot;的问题，图片压缩解决&amp;quot;发图糊&amp;quot;的问题，两个工具配合使用，废片变大片！
+三、工具1：背景去除 - 换掉杂乱背景 👉 立即体验 背景去除
+拍照时背景太杂乱？AI一键去除背景，换上干净好看的背景！
+3步去除背景 第1步：打开 背景去除，上传你的&amp;quot;废片&amp;rdquo;。
+第2步：AI自动识别人物，一键去除背景。
+第3步：下载透明背景图片，或直接换上新背景！
+拯救废片的背景推荐 原始背景 换成什么背景 效果 杂乱宿舍 纯色背景（白/灰/蓝） 干净专业 街边杂物 咖啡店/书店 文艺清新 人多拥挤 海边/山顶 开阔大气 光线不好 落日/暖光背景 温暖治愈 背景太丑 城市夜景 高级感拉满 背景去除后能做什么？ 换背景：把杂乱背景换成纯色或风景 做头像：透明背景头像更专业 做拼图：多张抠图拼在一起 做表情包：抠出人物加文字 做海报：抠图后放到设计模板里 💡 小技巧：拍照时尽量站在纯色背景前（白墙、窗帘），AI抠图效果最好！如果背景太杂乱，抠图边缘可能会有毛边。
+四、工具2：图片压缩 - 发朋友圈不糊不卡 👉 立即体验 图片压缩 …`,categories:'["tweets"]',tags:'["当你怎么拍照都不好看时","背景去除","图片压缩","拯救废片","免费工具"]',url:"https://blog.cmdragon.cn/posts/when-photos-look-bad-tools-2026/",date:"2026-06-27",cover:""},{title:"我喜欢的漫画被AI改编了！2个免费AI工具让你也能改编漫画",summary:"我喜欢的漫画被AI改编了冲上抖音热搜945万！AI改编漫画效果到底好不好？本文推荐2个免费AI工具，AI聊天+AI文生图，让你也能用AI改编和创作自己的漫画。",content:` 立即体验：AI聊天 - 免费在线工具 | 更多1000+免费工具
+无需下载安装，打开浏览器即用，完全免费！
+扫描二维码关注或者微信搜一搜：编程智域 前端至全栈交流与成长
+一、我喜欢的漫画被AI改编了，945万人吵翻！ 今天，&amp;ldquo;我喜欢的漫画被AI改编了&amp;quot;冲上抖音热搜，热度945万！
+评论区直接分裂——
+&amp;ldquo;AI改编的画风还挺好看的，比某些官方重制版还精致！&amp;rdquo; &amp;ldquo;不行！AI改编失去了原作的灵魂和细节！&amp;rdquo; &amp;ldquo;我也想试试用AI改编漫画，有什么工具能用？&amp;rdquo;
+AI改编漫画是好是坏先不争论，但AI确实能做到很多有趣的事情！今天就教你用2个免费AI工具，亲自体验AI改编和创作漫画！
+二、工具1：AI聊天 - 帮你改编漫画剧情 👉 立即体验 AI聊天
+想把喜欢的漫画改编成新版本？AI聊天帮你重新构思剧情、改写角色设定！
+3步用AI改编漫画剧情 第1步：打开 AI聊天，进入对话界面。
+第2步：告诉AI你想改编哪部漫画、想怎么改。
+第3步：AI帮你生成改编后的剧情大纲！
+漫画改编提示词模板 模板1：剧情改编
+请帮我改编漫画《[漫画名]》的剧情，要求：
+保留核心角色，但改变故事走向 给主角一个全新的设定（如：反派变正派） 设计3个关键剧情转折 保持原作的风格和调性 请给出完整的改编剧情大纲。 模板2：角色重塑
+请帮我重新设计《[漫画名]》中[角色名]的形象和背景：
+保留核心特征，但改变性格方向 设计新的背景故事 给出外貌描述（用于AI生图） 设计标志性台词 模板3：IF线创作
+如果《[漫画名]》中[某个事件]没有发生/以不同方式发生，故事会怎么发展？请创作一个IF线剧情，包含5个关键场景。
+💡 小技巧：改编时保留原作的核心魅力（如热血、悬疑、搞笑），只改变方向和走向，这样改编效果最自然！
+三、工具2：AI文生图 - 生成改编后的漫画画面 👉 立即体验 AI文生图
+剧情改编好了，需要画面？AI文生图帮你生成改编后的漫画角色和场景！
+3步生成改编漫画画面 第1步：打开 AI文生图
+第2步：描述你想生成的漫画画面
+第3步：生成图片，看看AI改编的效果！
+漫画风提示词技巧 画面类型 提示词要点 示例 角色立绘 画风+角色特征+姿势 日系漫画风格，黑色长发少年，手持武士刀，帅气站姿，8K超清 场景画面 画风 …`,categories:'["tweets"]',tags:'["我喜欢的漫画被AI改编了","AI聊天","AI文生图","AI漫画","免费工具"]',url:"https://blog.cmdragon.cn/posts/manga-adapted-by-ai-tools-2026/",date:"2026-06-27",cover:""},{title:"走个面儿用英语怎么说！2个免费工具帮你翻译中式表达",summary:"走个面儿用英语怎么说冲上B站热搜213万！中式表达翻译成英语太难了，直译完全不对味！本文推荐2个免费在线工具，英语词典+AI聊天，帮你准确翻译中式俗语和方言表达。",content:` 立即体验：英语词典 - 免费在线工具 | 更多1000+免费工具
+无需下载安装，打开浏览器即用，完全免费！
+扫描二维码关注或者微信搜一搜：编程智域 前端至全栈交流与成长
+一、走个面儿用英语怎么说，213万人好奇！ 今天，&amp;ldquo;走个面儿用英语怎么说&amp;quot;冲上B站热搜，热度213万！
+评论区一片讨论——
+&amp;ldquo;走个面儿就是露个脸、打个招呼的意思，英语怎么说？&amp;rdquo; &amp;ldquo;直译成&amp;rsquo;walk a face&amp;rsquo;肯定不对……&amp;rdquo; &amp;ldquo;中式表达翻译成英语太难了，有没有工具能帮忙？&amp;rdquo;
+&amp;ldquo;走个面儿&amp;quot;是北方方言，意思是&amp;quot;露个面、出席一下、应个景&amp;rdquo;。这种中式表达直译完全不对，需要意译！今天就教你用2个免费在线工具，准确翻译各种中式表达！
+二、工具1：英语词典 - 查单词找准确表达 👉 立即体验 英语词典
+不确定某个英语单词的意思和用法？英语词典帮你精准查询！
+3步查询单词 第1步：打开 英语词典
+第2步：输入你想查询的英语单词
+第3步：查看释义、例句、词性
+&amp;ldquo;走个面儿&amp;quot;相关英语表达查询 中式表达 英语翻译 使用场景 走个面儿 show up / make an appearance &amp;ldquo;I&amp;rsquo;ll just show up for a bit.&amp;rdquo; 露个脸 put in an appearance &amp;ldquo;Let me put in an appearance.&amp;rdquo; 应个景 join in the fun &amp;ldquo;I&amp;rsquo;ll join in the fun.&amp;rdquo; 打个招呼 say hi &amp;ldquo;Let me just say hi.&amp;rdquo; 凑个热闹 tag along &amp;ldquo;Mind if I tag along?&amp;rdquo; 💡 小技巧：查英语单词时，关注例句部分，看这个词在真实语境中怎么用，比光看释义更有用！
+三、工具2：AI聊天 - 翻译中式表达的神器 👉 立即体验 AI聊天
+中式表达太灵活，词典查不到？AI聊天帮你意译，给出最地道的英语表达！
+3步翻译中式表达 第1步：打开 AI聊天，进入对话界面。
+第2步：输入你想翻译的中式表 …`,categories:'["tweets"]',tags:'["走个面儿用英语怎么说","英语词典","AI聊天","英语翻译","免费工具"]',url:"https://blog.cmdragon.cn/posts/chinese-slang-english-translation-tools-2026/",date:"2026-06-27",cover:""},{title:"B站17周年生日短片！2个免费工具帮你保存短片和提取字幕",summary:"B站17周年生日短片冲上B站热搜119万！17年了B站陪伴一代人成长，想保存这部短片留作纪念？本文推荐2个免费在线工具，视频下载+字幕下载，帮你无水印保存B站17周年短片。",content:` 立即体验：视频下载 - 免费在线工具 | 更多1000+免费工具
+无需下载安装，打开浏览器即用，完全免费！
+扫描二维码关注或者微信搜一搜：编程智域 前端至全栈交流与成长
+一、B站17周年生日短片，119万人泪目！ 今天，&amp;ldquo;B站17周年生日短片&amp;quot;冲上B站热搜，热度119万！
+17年了，从一个小众ACG网站到如今的年轻人文化社区，B站陪伴了一代人成长——
+&amp;ldquo;从初中到工作，B站陪了我整个青春……&amp;rdquo; &amp;ldquo;17周年短片太催泪了，想保存下来反复看！&amp;rdquo; &amp;ldquo;短片的文案太好了，想把字幕提取出来收藏！&amp;rdquo;
+想保存B站17周年短片留作纪念？想把那些走心的台词提取出来？今天就教你用2个免费在线工具，无水印保存视频+提取字幕！
+二、工具1：视频下载 - 无水印保存B站短片 👉 立即体验 视频下载
+B站17周年短片想保存下来？视频下载工具支持B站等主流平台，无水印、高清下载！
+3步保存B站短片 第1步：打开B站，找到17周年生日短片，复制视频链接。
+第2步：打开 视频下载，粘贴链接到输入框，点击下载。
+第3步：选择清晰度，下载视频到本地！
+支持的清晰度 清晰度 说明 适合场景 4K 超高清 大屏电视观看 1080P 高清 电脑/手机观看 720P 标清 节省空间 480P 流畅 快速下载 💡 小技巧：B站17周年短片建议下载1080P或以上清晰度，画面细节更丰富，保存为纪念效果更好！
+三、工具2：字幕下载 - 提取短片走心台词 👉 立即体验 字幕下载
+B站17周年短片的文案太走心了？字幕下载工具帮你提取每一句台词！
+3步提取字幕 第1步：打开 字幕下载
+第2步：粘贴B站17周年短片的链接
+第3步：点击提取，下载字幕文件（支持SRT、TXT格式）
+字幕能用来做什么？ 用途 说明 效果 收藏经典台词 保存短片中的金句 随时翻看感动瞬间 制作纪念卡片 把台词做成图片 发朋友圈超有感觉 朋友圈文案 用台词做配文 文艺范儿拉满 二次创作 配合其他素材做视频 致敬B站17年 学习参考 分析短片文案技巧 提升写作水平 💡 小技巧：提取字幕后，可以用 AI聊天 帮你把台词分类整理，挑出最感人的金句！
+四、实测：保存B站17周年短片完整流程 第1步：复制视频链接 在B站搜索&amp;quot;B站17周年生日短片&amp;rdquo;， …`,categories:'["tweets"]',tags:'["B站17周年生日短片","视频下载","字幕下载","无水印下载","免费工具"]',url:"https://blog.cmdragon.cn/posts/bilibili-17-anniversary-video-download-2026/",date:"2026-06-26",cover:""},{title:"UP主手搓AI实时生成游戏！3个免费AI工具让你也来体验AI游戏",summary:"UP主手搓AI实时生成游戏冲上B站热搜！AI实时生成游戏太震撼了，想自己也来试试？本文推荐3个免费AI工具，AI聊天+AI文生图+手柄检测，帮你体验AI生成游戏的乐趣。",content:` 立即体验：AI聊天 - 免费在线工具 | 更多1000+免费工具
+无需下载安装，打开浏览器即用，完全免费！
+扫描二维码关注或者微信搜一搜：编程智域 前端至全栈交流与成长
+一、UP主手搓AI实时生成游戏，B站热搜炸了！ 最近，&amp;ldquo;UP主手搓AI实时生成游戏&amp;quot;冲上B站热搜，热度63万！
+这位UP主用AI实时生成游戏场景和角色，边玩边生成，每个画面都是独一无二的——
+&amp;ldquo;这也太牛了！AI实时生成游戏画面，每个瞬间都不一样！&amp;rdquo; &amp;ldquo;这是不是意味着以后游戏可以无限内容？&amp;rdquo; &amp;ldquo;我也想试试AI生成游戏画面，有什么工具能用？&amp;rdquo;
+AI生成游戏是未来趋势！今天就教你用3个免费AI工具，亲自体验AI生成游戏内容，还能检查手柄准备好开玩！
+二、工具1：AI聊天 - 让AI帮你设计游戏 👉 立即体验 AI聊天
+想做AI游戏但不知道从哪开始？AI聊天帮你设计游戏框架、生成剧情、设计角色！
+3步用AI设计游戏 第1步：打开 AI聊天，进入对话界面。
+第2步：告诉AI你想做什么类型的游戏。
+第3步：AI帮你生成游戏设计文档！
+游戏设计提示词模板 模板1：游戏概念设计
+请帮我设计一个文字冒险游戏，要求：
+主题：科幻/奇幻/恐怖（选一个） 有3个结局，玩家选择影响走向 每个场景给出3个选项 包含角色设定和背景故事 请给出完整的游戏框架。 模板2：角色生成
+请为一个RPG游戏设计3个可玩角色，每个角色包含：名字、种族、职业、技能、背景故事、标志性台词。
+模板3：关卡设计
+请设计5个游戏关卡，难度递增。每个关卡包含：场景描述、敌人设定、解谜元素、奖励。
+💡 小技巧：AI聊天可以当你的&amp;quot;游戏策划&amp;rdquo;，反复对话调整细节，直到设计出满意的游戏框架！
+三、工具2：AI文生图 - 生成游戏画面和角色 👉 立即体验 AI文生图
+游戏设计好了，需要画面？AI文生图帮你生成游戏角色、场景、道具图！
+3步生成游戏画面 第1步：打开 AI文生图
+第2步：描述你想要的游戏画面
+第3步：生成图片，作为游戏素材！
+游戏画面提示词推荐 素材类型 提示词示例 效果 角色立绘 持剑的年轻骑士，银色铠甲，披风飘动，日式RPG风格，8K超清 精美角色图 场景背景 奇幻森林，阳光透过树叶，小溪流淌，远处有古堡，游戏概念画 沉浸式场景 …`,categories:'["tweets"]',tags:'["UP主手搓AI实时生成游戏","AI聊天","AI文生图","手柄检测","免费游戏","免费工具"]',url:"https://blog.cmdragon.cn/posts/uploader-ai-game-generator-tools-2026/",date:"2026-06-26",cover:""},{title:"佟大为新剧手机被陌生人监控！3个免费检测工具帮你检查手机安全",summary:"佟大为新剧手机被陌生人监控冲上抖音热搜766万！手机被监控太可怕了，你的手机安全吗？本文推荐3个免费在线检测工具，屏幕坏点检测+电池状态检测+触屏检测，帮你全面检查手机健康状况。",content:` 立即体验：屏幕坏点检测 - 免费在线工具 | 更多1000+免费工具
+无需下载安装，打开浏览器即用，完全免费！
+扫描二维码关注或者微信搜一搜：编程智域 前端至全栈交流与成长
+一、佟大为新剧手机被陌生人监控，766万人后背发凉！ 今天，&amp;ldquo;佟大为新剧手机被陌生人监控&amp;quot;冲上抖音热搜，热度766万！
+剧中佟大为的手机被陌生人远程监控，通话、短信、位置全部泄露……看完后背发凉——
+&amp;ldquo;这也太可怕了，我手机不会也被监控了吧？&amp;rdquo; &amp;ldquo;看完这个剧赶紧检查了一下自己的手机！&amp;rdquo; &amp;ldquo;怎么知道手机有没有被监控？有什么工具能检测吗？&amp;rdquo;
+手机被监控确实可怕，但更日常的问题是——你的手机硬件本身健康吗？ 屏幕有没有坏点？电池有没有鼓包？触屏灵不灵敏？今天就教你用3个免费在线检测工具，全面检查手机健康状况！
+二、工具1：屏幕坏点检测 - 检查屏幕有没有暗病 👉 立即体验 屏幕坏点检测
+手机屏幕是最容易出问题的部件！坏点、亮点、暗点，不专门检测根本发现不了。
+3步检测屏幕坏点 第1步：打开 屏幕坏点检测，全屏显示纯色画面。
+第2步：依次切换红、绿、蓝、白、黑等纯色，仔细观察屏幕。
+第3步：如果发现颜色不均匀的小点，就是坏点！
+坏点类型说明 类型 表现 影响 坏点（死点） 始终黑色，不发光 该位置永远显示黑色 亮点 始终发光（白/红/绿/蓝） 该位置永远显示亮色 暗点 颜色比周围暗 显示不均匀 💡 小技巧：检测时把屏幕亮度调到最高，在暗光环境下观察效果最好！如果发现坏点超过3个，建议联系售后。
+三、工具2：电池状态检测 - 检查电池健康度 👉 立即体验 电池状态检测
+手机被监控会异常耗电，但更常见的问题是电池老化！电池状态检测帮你了解电池真实健康状况。
+3步检测电池 第1步：打开 电池状态检测
+第2步：工具自动读取电池信息（电量、充电状态、电压等）
+第3步：查看电池健康报告，了解电池是否需要更换
+电池健康度对照表 健康度 状态 建议 90-100% 优秀 正常使用 80-89% 良好 可继续使用 70-79% 一般 建议关注续航 60-69% 较差 建议更换电池 60%以下 差 尽快更换 电池异常的信号 🔋 一天要充好几次电 🔥 手机经常发烫 📉 电量忽高忽低（比如从50%直接跳到20%） 💥 手机背面鼓起（电 …`,categories:'["tweets"]',tags:'["佟大为新剧手机被陌生人监控","屏幕坏点检测","电池状态检测","触屏检测","手机检测","免费工具"]',url:"https://blog.cmdragon.cn/posts/tongdawei-phone-monitoring-device-check-2026/",date:"2026-06-26",cover:""},{title:"奶奶微信有77万条未读消息！3个免费工具帮你清理和美化微信群",summary:"奶奶微信有77万条未读消息冲上头条热搜2320万！微信群消息太多看不过来怎么办？本文推荐3个免费在线工具，艺术二维码+九宫格切图+图片压缩，帮你管理微信群和美化分享内容。",content:` 立即体验：艺术二维码 - 免费在线工具 | 更多1000+免费工具
+无需下载安装，打开浏览器即用，完全免费！
+扫描二维码关注或者微信搜一搜：编程智域 前端至全栈交流与成长
+一、奶奶微信有77万条未读消息，2320万人看呆了！ 今天，&amp;ldquo;奶奶微信有77万条未读消息&amp;quot;冲上头条热搜，热度飙到2320万！
+评论区一片惊叹——
+&amp;ldquo;77万条？！这得看到猴年马月啊！&amp;rdquo; &amp;ldquo;奶奶的微信群比我整个公司的群还多！&amp;rdquo; &amp;ldquo;这未读消息数量，红点恐惧症患者直接晕厥……&amp;rdquo; &amp;ldquo;我也想帮长辈整理微信群，但不知道从哪下手。&amp;rdquo;
+很多长辈被各种微信群&amp;quot;轰炸&amp;rdquo;——亲戚群、广场舞群、养生群、买菜群……消息根本看不过来！今天就教你用3个免费在线工具，帮长辈管理微信群，还能美化分享内容！
+二、工具1：艺术二维码 - 帮长辈生成好看的群二维码 👉 立即体验 艺术二维码
+长辈加群、分享群太频繁，普通的黑白二维码太单调？艺术二维码工具帮你生成好看又实用的群二维码！
+3步生成艺术二维码 第1步：打开 艺术二维码，输入群链接或文字内容。
+第2步：选择喜欢的风格模板（花朵、中国风、卡通等）。
+第3步：生成并下载艺术二维码！
+长辈喜欢的二维码风格 风格 特点 适合场景 花朵风格 鲜花装饰，温馨 亲戚群、家庭群 中国风 红色喜庆，传统 节日群、祝福群 卡通风格 可爱活泼 广场舞群、兴趣群 简约风格 干净清爽 买菜群、社区群 💡 小技巧：给长辈的二维码要选颜色鲜艳、对比度高的风格，这样长辈眼睛看不清也能轻松扫码！
+三、工具2：九宫格切图 - 帮长辈发朋友圈更有排面 👉 立即体验 九宫格切图
+长辈在群里分享照片，9张小图凑在一起才是最有排面的！九宫格切图帮你把一张大图切成9张，朋友圈发出来就是一整面！
+3步制作九宫格 第1步：打开 九宫格切图，上传全家福或风景照。
+第2步：选择3x3九宫格切割模式，点击切割。
+第3步：按顺序保存9张图片，发微信群或朋友圈时按顺序选择！
+长辈喜欢的九宫格内容 内容 说明 效果 全家福 过年过节拍的全家福 亲戚群最爱的内容 旅游照 出去玩拍的好风景 朋友圈点赞收割机 花花草草 阳台花园、公园花卉 养生群必备分享 孙辈照片 小孩的可爱瞬间 家庭群永远的C位 美食 家常菜 …`,categories:'["tweets"]',tags:'["奶奶微信有77万条未读消息","艺术二维码","九宫格切图","图片压缩","免费工具"]',url:"https://blog.cmdragon.cn/posts/grandma-wechat-77-million-messages-tools-2026/",date:"2026-06-26",cover:""},{title:"你对AI脸产生生理性厌恶了吗！2个免费AI工具帮你辨别和生成AI图",summary:"你对AI脸产生生理性厌恶了吗冲上百度热搜！越来越多的人对AI生成的脸感到不适，但也有人觉得AI图很好看。本文推荐2个免费AI工具，AI聊天帮你辨别AI图真伪，AI文生图让你亲自体验AI生图效果。",content:` 立即体验：AI聊天 - 免费在线工具 | 更多1000+免费工具
+无需下载安装，打开浏览器即用，完全免费！
+扫描二维码关注或者微信搜一搜：编程智域 前端至全栈交流与成长
+一、你对AI脸产生生理性厌恶了吗？全网吵翻！ 今天，&amp;ldquo;你对AI脸产生生理性厌恶了吗&amp;quot;冲上百度热搜！
+评论区直接分裂成两派——
+&amp;ldquo;太对了！看到AI生成的脸就莫名不舒服，总觉得哪里不对劲但又说不上来……&amp;rdquo; &amp;ldquo;不会啊，我觉得AI图挺好看的，为什么会有生理性厌恶？&amp;rdquo; &amp;ldquo;是因为AI脸太完美了，缺少真实人的瑕疵和温度，所以让人不舒服。&amp;rdquo; &amp;ldquo;我倒想看看AI到底能做到什么程度，自己能不能分辨。&amp;rdquo;
+不管你站哪边，AI脸确实是当下最火的话题！今天就教你用2个免费AI工具，亲自辨别和体验AI生成的人脸！
+二、为什么AI脸会让人不舒服？ 先了解一下，为什么越来越多人对AI脸感到&amp;quot;生理性厌恶&amp;rdquo;——
+AI脸的&amp;quot;恐怖谷效应&amp;quot; 特征 真实人脸 AI脸 皮肤质感 有毛孔、细纹、不均匀 过于光滑，像磨皮过度 眼神 有灵魂、有情绪 空洞、没有真实情感 对称性 轻微不对称 完美对称，反而不自然 光影 自然光感、有层次 光影过于完美，缺乏环境感 牙齿/手指 可能有细微不齐 经常出现异常（AI的弱项） 心理学上叫**&amp;ldquo;恐怖谷效应&amp;rdquo;**——当一个东西看起来&amp;quot;几乎像人但又不完全是人&amp;quot;时，人类本能地感到恐惧和不适。AI脸就处在这个&amp;quot;谷底&amp;quot;。
+AI脸常见的破绽 想快速判断一张脸是不是AI生成的？看这5个地方——
+手指：AI画手经常多一根或少一根手指 牙齿：AI画的牙齿经常过于整齐或有奇怪的间距 耳朵：形状可能不对称或细节模糊 头发：发丝过于规整，缺少自然凌乱感 背景：AI脸的背景经常模糊或有奇怪的重叠 💡 小技巧：不确定一张图是不是AI生成的？用 AI聊天 把图片特征描述出来，让AI帮你分析！
+三、工具1：AI聊天 - 帮你辨别AI图真伪 👉 立即体验 AI聊天
+看到一张图不确定是真人还是AI？AI聊天可以帮你分析！
+3步辨别AI图 第1步：打开 AI聊天，进入对话界面。
+第2步：描述你看到的图片特征，或者把图片中可疑的细节告诉 …`,categories:'["tweets"]',tags:'["你对AI脸产生生理性厌恶了吗","AI聊天","AI文生图","AI脸","免费工具"]',url:"https://blog.cmdragon.cn/posts/ai-face-disgust-ai-tools-2026/",date:"2026-06-25",cover:""},{title:"当室友教我男生拍照姿势！2个免费工具让你的照片也这么帅",summary:"当室友教我男生拍照姿势冲上抖音热搜772万！男生拍照终于不尴尬了！本文推荐2个免费在线工具，背景去除+图片压缩，帮你修出最帅的照片发朋友圈。",content:` 立即体验：背景去除 - 免费在线工具 | 更多1000+免费工具
+无需下载安装，打开浏览器即用，完全免费！
+扫描二维码关注或者微信搜一搜：编程智域 前端至全栈交流与成长
+一、当室友教我男生拍照姿势，772万人看嗨了！ 今天，&amp;ldquo;当室友教我男生拍照姿势&amp;quot;冲上抖音热搜，热度772万！
+评论区笑疯了——
+&amp;ldquo;我拍照永远只会比耶✌️，看完这个视频我悟了！&amp;rdquo; &amp;ldquo;室友手把手教拍照姿势也太上头了，每个男生都需要这样的室友！&amp;rdquo; &amp;ldquo;学会了姿势，但照片背景好丑怎么办？&amp;rdquo;
+拍照姿势学会了，但拍出来的照片背景杂乱、文件太大发朋友圈被压缩变糊？别急，2个免费在线工具帮你搞定！
+二、工具1：背景去除 - 一键换掉杂乱背景 👉 立即体验 背景去除
+拍照姿势再帅，背景是宿舍乱糟糟的床铺也白搭！背景去除工具一键抠图，换上干净背景，照片瞬间高级感！
+3步去除背景 第1步：打开 背景去除，上传你的照片。
+第2步：AI自动识别人物，一键去除背景。
+第3步：下载透明背景图片，换上你想要的背景！
+男生拍照背景推荐 场景 背景选择 效果 校园照 教学楼、操场、图书馆 阳光清新 街拍 涂鸦墙、咖啡店、小巷 潮流酷炫 运动照 篮球场、健身房 活力阳光 正式照 纯色背景（白/灰/蓝） 干净专业 抠图后能做什么？ 换背景：把宿舍背景换成城市天际线、海边、山顶 做表情包：抠出人物做成搞笑表情包 拼图：多张抠图拼在一起做合照 社交头像：干净背景的头像更专业 💡 小技巧：拍照时尽量站在纯色背景前（白墙、窗帘），这样AI抠图效果最好！如果背景太杂乱，可以用 背景替换 直接换背景。
+三、工具2：图片压缩 - 发朋友圈不糊不卡 👉 立即体验 图片压缩
+拍照姿势帅了，背景也干净了，但9张高清图一起发朋友圈被微信压缩得像马赛克？提前用图片压缩优化！
+3步压缩图片 第1步：打开 图片压缩
+第2步：上传需要压缩的照片（支持批量上传）
+第3步：选择压缩质量，下载压缩后的图片
+发朋友圈压缩建议 发图数量 推荐质量 单张大小 效果 1-3张 85% 200-500KB 画质接近原图 4-6张 80% 150-300KB 画质与体积平衡 7-9张 75% 100-200KB 体积优先，防压缩 为什么要提前压缩？ 微信朋友圈会自动压缩图片，而且压缩算法比较粗 …`,categories:'["tweets"]',tags:'["当室友教我男生拍照姿势","背景去除","图片压缩","在线抠图","免费工具"]',url:"https://blog.cmdragon.cn/posts/roommate-teaches-photo-poses-tools-2026/",date:"2026-06-25",cover:""},{title:"高考出分名场面！3个免费AI工具帮你搞定志愿填报和简历",summary:"高考出分名场面冲上抖音热搜1181万！查完分接下来最头疼的就是志愿填报和准备简历了。本文推荐3个免费AI工具，AI聊天+AI简历+小红书文案，帮你搞定高考后最关键的事。",content:` 立即体验：AI聊天 - 免费在线工具 | 更多1000+免费工具
+无需下载安装，打开浏览器即用，完全免费！
+扫描二维码关注或者微信搜一搜：编程智域 前端至全栈交流与成长
+一、高考出分名场面，1181万人围观！ 今天，&amp;ldquo;高考出分名场面&amp;quot;直接冲上抖音热搜，热度飙到1181万！
+全网都在看高考查分的名场面——
+有考了718分第二天照常早起理发的淡定学霸； 有平时500多分高考出分考了666的逆袭王者； 有全家围在一起查分尖叫的温馨时刻； 也有分数不如意默默流泪的遗憾瞬间……
+但查完分之后呢？最头疼的事才刚开始——
+分数出来了，志愿怎么填？ 专业怎么选？哪个城市好？ 要不要复读？ 暑假要提前准备大学简历吗？ 今天就教你用3个免费AI工具，搞定高考后最关键的事！
+二、工具1：AI聊天 - 智能志愿填报助手 👉 立即体验 AI聊天
+志愿填报比高考还难！选学校、选专业、选城市，信息量大到头疼。AI聊天可以当你的&amp;quot;智能志愿顾问&amp;rdquo;！
+3步让AI帮你分析志愿 第1步：打开 AI聊天，进入对话界面。
+第2步：告诉AI你的分数、省份、偏好。
+第3步：AI帮你分析院校和专业！
+志愿填报提示词模板 模板1：综合分析
+我是2026年[省份]高考生，分数[XXX]分，省排名[XXX]名。请帮我分析：
+这个分数段能报哪些层次的学校？ 推荐几个性价比高的院校 热门专业和冷门专业怎么选？ 选学校重要还是选专业重要？ 模板2：专业对比
+请对比以下两个专业：[专业A] vs [专业B]。从就业前景、薪资水平、学习难度、发展潜力4个维度分析。
+模板3：城市选择
+从大学生活体验和就业机会两个角度，对比[城市A]、[城市B]、[城市C]这三个城市读大学的优劣势。
+💡 小技巧：AI的分析基于公开数据和逻辑推理，仅供参考。最终决策还要结合自己的兴趣和家庭情况，建议和父母、老师一起讨论！
+AI分析 vs 志愿填报机构 对比项 AI聊天 志愿填报机构 费用 完全免费 几千到几万 速度 秒回复 需预约排队 客观性 纯数据驱动 可能有利益导向 个性化 可以反复追问 沟通时间有限 信息量 几乎无限 依赖咨询师水平 三、工具2：AI简历 - 提前准备大学简历 👉 立即体验 AI简历
+高考后暑假别光玩！提前准备一份简历，开学后竞选班干部、加入社团、申请奖学金都用得上！
+3步生成大学简历 …`,categories:'["tweets"]',tags:'["高考出分名场面","AI聊天","AI简历","小红书文案","志愿填报","免费工具"]',url:"https://blog.cmdragon.cn/posts/gaokao-score-reveal-moments-ai-tools-2026/",date:"2026-06-25",cover:""},{title:"高考后的独白！2个免费AI工具帮你写下最走心的话",summary:"高考后的独白冲上抖音热搜1121万！高考结束了，很多话想对自己说却不知道怎么表达？本文推荐2个免费AI工具，AI聊天+小红书文案，帮你写出最走心的独白和分享文案。",content:` 立即体验：AI聊天 - 免费在线工具 | 更多1000+免费工具
+无需下载安装，打开浏览器即用，完全免费！
+扫描二维码关注或者微信搜一搜：编程智域 前端至全栈交流与成长
+一、高考后的独白，1121万人共鸣！ 今天，&amp;ldquo;高考后的独白&amp;quot;冲上抖音热搜，热度飙到1121万！
+高考结束了，分数出来了，但你有没有很多话想对自己说——
+&amp;ldquo;三年了，终于结束了。&amp;rdquo; &amp;ldquo;不管结果怎样，我已经尽力了。&amp;rdquo; &amp;ldquo;以前觉得高考是终点，现在才知道是起点。&amp;rdquo; &amp;ldquo;那些一起刷题到深夜的日子，再也回不去了……&amp;rdquo;
+高考后的独白，是每个人心底最真实的声音。但很多人想写却不知道怎么表达——
+想发朋友圈纪念，写了几行又删了 想在小红书分享经历，不知道从哪写起 想写一封信给未来的自己，却迟迟落不下笔 今天就教你用2个免费AI工具，帮你把心里的话写出来！
+二、工具1：AI聊天 - 帮你写出走心独白 👉 立即体验 AI聊天
+写不出心里的感受？AI聊天帮你找到最恰当的表达方式。
+3步写出高考后的独白 第1步：打开 AI聊天，进入对话界面。
+第2步：告诉AI你想表达的情感和经历。
+第3步：AI帮你润色成走心的文字！
+走心独白提示词模板 模板1：写给自己的信
+请帮我写一封&amp;quot;高考后写给自己的信&amp;rdquo;，要求：
+回顾高中三年的辛苦和成长 对高考结果（满意/不甘/释然）的真实感受 对未来的期待和勇气 语气真实不做作，像在跟朋友说话 500字左右 模板2：朋友圈独白
+帮我写一条高考后的朋友圈文案，要求：简短走心，不要太鸡汤，真实表达此刻的心情（[你的心情]），50字以内。
+模板3：长文独白
+我想写一篇&amp;quot;高考后的独白&amp;quot;长文，主题是[你的主题]，请帮我构思文章框架，并完成全文。要求：真情实感，不煽情，有具体细节，让人有共鸣。
+💡 小技巧：给AI的描述越具体，出来的文字越真实！比如&amp;quot;凌晨三点还在刷数学题&amp;quot;&amp;ldquo;模考失利躲在被子里哭&amp;quot;这种细节，比&amp;quot;很辛苦&amp;quot;&amp;ldquo;很累&amp;quot;更有力量。
+AI能帮你写什么？ 类型 说明 适合发在哪 朋友圈短文 50字以内的走心独白 微信朋友圈 小红书长文 500-1000字的完整独白 小红书 …`,categories:'["tweets"]',tags:'["高考后的独白","AI聊天","小红书文案","高考","免费工具"]',url:"https://blog.cmdragon.cn/posts/gaokao-after-monologue-ai-tools-2026/",date:"2026-06-25",cover:""},{title:"中考后的第一条抖音！3个免费工具帮你记录这个重要时刻",summary:"中考后的第一条抖音冲上抖音热搜772万！中考结束想发个抖音纪念？3个免费工具帮你下载视频、制作GIF、剪辑视频，让你的毕业时刻更有仪式感。",content:` 立即体验：视频下载 - 免费在线工具 | GIF制作 - 免费在线工具
+无需下载安装，打开浏览器即用，完全免费！
+扫描二维码关注或者微信搜一搜：编程智域 前端至全栈交流与成长
+一、中考后的第一条抖音，772万人在记录！ 今天，&amp;ldquo;中考后的第一条抖音&amp;quot;冲上抖音热搜，热度飙到772万！同时，&amp;ldquo;全抖音为2026中考加油&amp;quot;也冲上热搜，热度777万！
+评论区全是中考生的心声——
+&amp;ldquo;终于考完了！第一条抖音必须安排！&amp;rdquo; &amp;ldquo;想做个GIF纪念一下初中三年&amp;rdquo; &amp;ldquo;有没有工具能把视频剪得好看一点？&amp;rdquo;
+中考结束，是人生一个重要节点的结束，也是新旅程的开始！今天推荐3个免费工具，帮你记录这个重要时刻，让你的毕业时刻更有仪式感！
+二、中考后想发抖音，难在哪？ 📹 视频难下载：想保存老师同学的祝福视频，但平台不让下载 🎞️ 想做GIF：想把合照做成动图，但不会用PS ✂️ 不会剪辑：想剪个毕业视频，但剪辑软件太难用 别担心，3个免费工具帮你全部搞定！
+三、工具1：视频下载 - 保存毕业视频 👉 立即体验 视频下载
+中考后，老师、同学、家长都在发祝福视频。用视频下载工具，把这些珍贵瞬间保存下来！
+3步下载毕业视频 第1步：复制视频链接（抖音、B站、微博等）
+第2步：打开 视频下载
+第3步：粘贴链接，点击下载！
+可以下载什么视频？ 🎓 毕业祝福：老师、同学的祝福视频 📸 校园回忆：校园风光、课堂花絮 🎉 毕业典礼：毕业典礼、颁奖现场 🎬 同学混剪：同学们做的毕业混剪视频 💡 小技巧：下载后可以用手机相册分类保存，方便以后回忆！
+四、工具2：GIF制作 - 把合照变成动图 👉 立即体验 GIF制作
+毕业合照太多？用GIF制作工具，把多张照片做成动图，让回忆动起来！
+3步制作毕业GIF 第1步：打开 GIF制作
+第2步：上传多张毕业合照
+第3步：调整顺序和速度，生成GIF！
+毕业GIF玩法 试试这些创意——
+📸 照片轮播：把三年来的照片做成轮播GIF 🎓 毕业瞬间：把毕业典礼的关键瞬间做成动图 👫 同学合影：把和每个同学的合影做成GIF 🏫 校园变迁：把入学到毕业的照片做成对比GIF 💡 小技巧：GIF大小建议控制在5MB以内，方便在抖音、微信等平台分享！
+五、工具3：视频下载+GIF制作组 …`,categories:'["tweets"]',tags:'["中考后的第一条抖音","全抖音为2026中考加油","视频下载","GIF制作","免费工具"]',url:"https://blog.cmdragon.cn/posts/zhongkao-douyin-gif-maker-2026/",date:"2026-06-24",cover:""},{title:"用AI制作一部玄幻短片！2个免费AI工具让你也能当导演",summary:"用AI制作一部玄幻短片冲上抖音热搜911万！不用学剪辑、不用请演员，2个免费AI工具帮你写剧本、生成画面，零基础也能做出玄幻大片效果。",content:` 立即体验：AI聊天 - 免费在线工具 | AI文生图 - 免费在线工具
+无需下载安装，打开浏览器即用，完全免费！
+扫描二维码关注或者微信搜一搜：编程智域 前端至全栈交流与成长
+一、用AI制作玄幻短片，911万人都在看！ 今天，&amp;ldquo;用AI制作一部玄幻短片&amp;quot;直接冲上抖音热搜，热度飙到911万！
+评论区全是惊叹——
+&amp;ldquo;这也太酷了吧！AI现在能拍电影了？&amp;rdquo; &amp;ldquo;画面质感比一些网剧还好，怎么做到的？&amp;rdquo; &amp;ldquo;我也想试试，有没有教程？&amp;rdquo;
+其实，用AI制作玄幻短片没有你想的那么难！今天推荐2个免费AI工具，帮你从写剧本到生成画面，零基础也能做出玄幻大片效果！
+二、AI拍玄幻短片，难在哪？ 📝 剧本创作：玄幻世界观宏大，人物关系复杂，自己写容易卡壳 🎨 画面生成：仙侠场景、法术特效、古装人物，AI绘画经常翻车 🎬 分镜设计：不知道怎么用画面讲故事，节奏容易乱 别担心，2个免费AI工具帮你全部搞定！
+三、工具1：AI聊天 - 让AI帮你写玄幻剧本 👉 立即体验 AI聊天
+玄幻短片最重要的是剧本！AI聊天可以帮你快速构建世界观、设计人物、编写剧情。
+3步生成玄幻剧本 第1步：打开 AI聊天，进入对话界面。
+第2步：告诉AI你想拍什么类型的玄幻短片。
+第3步：根据AI的初稿，继续调整细节！
+超实用的玄幻剧本提示词 直接复制下面的提示词，填入你的想法——
+模板1：完整剧本
+请帮我写一个3分钟的玄幻短片剧本，要求：
+主角是一个修仙少年，性格热血正义 场景：仙山、洞府、战斗场面 剧情：少年获得神秘法宝，与妖魔战斗 需要有3-5个分镜，每个分镜描述画面和台词 请给出详细的剧本内容。 模板2：世界观设定
+请帮我设计一个玄幻世界观：
+修炼体系（境界划分、修炼方式） 主要势力（门派、家族） 核心设定（法宝、功法、禁忌） 故事背景（时代、冲突） 模板3：分镜脚本
+请根据以下剧情，生成5个分镜： [你的剧情概要] 每个分镜需要包含：
+画面描述（场景、人物、动作） 台词/旁白 镜头建议（远景/近景/特写） 💡 小技巧：AI生成的剧本可能不够完美，但可以作为基础框架。你可以反复调整，让剧情更符合你的想法！
+四、工具2：AI文生图 - 让AI帮你画玄幻画面 👉 立即体验 AI文生图
+有了剧本，接下来就是生成画面！AI文生图可 …`,categories:'["tweets"]',tags:'["用AI制作一部玄幻短片","AI聊天","AI文生图","免费工具"]',url:"https://blog.cmdragon.cn/posts/ai-xuanhuan-short-film-2026/",date:"2026-06-24",cover:""},{title:"用AI小卡应援世界杯！2个免费工具让你做出最酷球迷周边",summary:"用AI小卡应援世界杯冲上抖音热搜861万！不用学设计、不用买周边，2个免费AI工具帮你生成专属世界杯应援小卡，让你的球迷身份更有排面。",content:` 立即体验：AI文生图 - 免费在线工具 | AI聊天 - 免费在线工具
+无需下载安装，打开浏览器即用，完全免费！
+扫描二维码关注或者微信搜一搜：编程智域 前端至全栈交流与成长
+一、用AI小卡应援世界杯，861万人都在玩！ 今天，&amp;ldquo;用AI小卡应援世界杯&amp;quot;冲上抖音热搜，热度飙到861万！
+评论区全是球迷在晒——
+&amp;ldquo;我用AI画了梅西捧杯的小卡，太酷了！&amp;rdquo; &amp;ldquo;给我支持的球队做了专属应援卡，准备发到球迷群&amp;rdquo; &amp;ldquo;这个比官方周边还有个性，怎么做到的？&amp;rdquo;
+2026世界杯来了，球迷们的应援方式也升级了！今天推荐2个免费AI工具，帮你生成专属世界杯应援小卡，让你的球迷身份更有排面！
+二、什么是AI应援小卡？ AI应援小卡就是用AI绘画生成的球迷周边图片，可以：
+📱 当手机壁纸：每天看着自己支持的球队 🖼️ 打印收藏：做成实体卡片收藏 📤 分享到球迷群：展示你的创意和热情 🎁 送给球友：独一无二的球迷礼物 三、工具1：AI文生图 - 生成世界杯应援小卡 👉 立即体验 AI文生图
+AI文生图可以根据你的描述，生成世界杯主题的应援小卡。
+3步生成应援小卡 第1步：打开 AI文生图
+第2步：输入你想应援的球队和球员
+第3步：选择风格，生成小卡！
+世界杯应援小卡提示词 试试这些描述，生成高质量的应援小卡——
+提示词1：梅西身穿阿根廷10号球衣，举起世界杯奖杯，金色背景，球迷应援风格，高清细节
+提示词2：法国足球队全家福，蓝色球衣，世界杯主题，史诗感，光影效果
+提示词3：巴西队内马尔射门瞬间，动态构图，黄绿色背景，热血风格
+提示词4：世界杯奖杯特写，金色光芒，2026主题，收藏级画质
+💡 小技巧：加上&amp;quot;应援风格&amp;quot;&amp;ldquo;球迷周边&amp;quot;&amp;ldquo;收藏级画质&amp;quot;等关键词，生成的小卡更有周边感！
+四、工具2：AI聊天 - 帮你写应援文案 👉 立即体验 AI聊天
+有了小卡，还需要配文！AI聊天可以帮你写应援文案。
+应援文案提示词 请帮我写一段世界杯应援文案，要求：
+应援球队：[你支持的球队] 核心球员：[球员名字] 风格：热血/幽默/深情 长度：50字左右 适合发朋友圈/微博 应援文案示例 🇦🇷 梅西，永远的GOAT！2026，再夺世界杯！#梅西 #阿根廷 #世界杯 …`,categories:'["tweets"]',tags:'["用AI小卡应援世界杯","AI文生图","AI聊天","免费工具"]',url:"https://blog.cmdragon.cn/posts/ai-world-cup-card-2026/",date:"2026-06-24",cover:""},{title:"看见音乐计划年度盛典！用AI写一首属于你的歌",summary:"看见音乐计划年度盛典冲上抖音热搜771万！不用学乐理、不用会乐器，免费AI歌词生成工具帮你写歌，让每个人都能成为音乐创作者。",content:` 立即体验：歌词生成 - 免费在线工具
+无需下载安装，打开浏览器即用，完全免费！
+扫描二维码关注或者微信搜一搜：编程智域 前端至全栈交流与成长
+一、看见音乐计划年度盛典，771万人在追！ 今天，&amp;ldquo;看见音乐计划年度盛典&amp;quot;冲上抖音热搜，热度飙到771万！
+评论区全是音乐爱好者——
+&amp;ldquo;太燃了！这些原创歌手太有才了&amp;rdquo; &amp;ldquo;我也想写歌，但完全不会怎么办？&amp;rdquo; &amp;ldquo;有没有AI帮我写歌词？&amp;rdquo;
+2026年，音乐创作不再是专业人士的专利！今天推荐1个免费AI工具，帮你写歌词，让每个人都能成为音乐创作者！
+二、AI写歌，难在哪？ 🎵 没有乐理基础：不懂和弦、不懂曲式，写不出完整的歌 ✍️ 歌词写不出来：想表达情感，但不知道怎么用文字组织 🎤 没有录音设备：就算写出来了，也没法录制成成品 别担心，AI歌词生成工具帮你解决最难的歌词部分！
+三、工具：歌词生成 - 让AI帮你写歌 👉 立即体验 歌词生成
+歌词生成工具可以根据你的主题和风格，自动生成完整的歌词。
+3步生成你的专属歌曲 第1步：打开 歌词生成
+第2步：输入你想写的主题和风格
+第3步：AI自动生成歌词，复制即可使用！
+超实用的歌词生成提示词 直接复制下面的提示词，填入你的想法——
+模板1：情感类歌曲
+请帮我写一首关于[主题]的歌词，要求：
+风格：抒情/伤感/温暖 结构：主歌+副歌+主歌+副歌+桥段+副歌 每段4-8句 要有画面感和情感共鸣 模板2：励志类歌曲
+请帮我写一首励志歌曲的歌词，要求：
+主题：[你的主题，如追梦/奋斗/不放弃] 风格：热血/激昂/正能量 副歌要朗朗上口，容易记住 适合流行摇滚风格 模板3：爱情类歌曲
+请帮我写一首爱情歌曲的歌词，要求：
+故事：[如初恋/分手/暗恋/重逢] 风格：[甜蜜/伤感/怀念] 要有具体的场景和细节 副歌部分要重复，增强记忆点 歌词生成示例 主题：毕业季的怀念
+【主歌1】 教室的窗 阳光洒在课桌上 粉笔的字 还在黑板上摇晃 同桌的你 笑着说未来很长 那时的我们 以为永远不会散场
+【副歌】 毕业季的风 吹散了年少梦 那些年的歌 还在心中轻轻唱 时光的河 带走多少过往 却带不走 那段最美的时光
+【主歌2】 操场的跑道 还留着我们的脚印 图书馆的角落 还藏着我们的秘密 那些熬夜的日子 那些疯狂的青春 都成了 …`,categories:'["tweets"]',tags:'["看见音乐计划年度盛典","歌词生成","AI写歌","免费工具"]',url:"https://blog.cmdragon.cn/posts/ai-lyrics-music-awards-2026/",date:"2026-06-24",cover:""},{title:"减肥减什么肥！先用BMI计算器算算你到底需不需要减",summary:"减肥减什么肥冲上抖音热搜778万！到底该不该减肥？别盲目跟风！BMI计算器免费在线帮你科学判断体质指数，1秒算出你是否真的需要减肥。",content:` 立即体验：BMI计算器 - 免费在线工具 | 更多1000+免费工具
 无需下载安装，打开浏览器即用，完全免费！
 扫描二维码关注或者微信搜一搜：编程智域 前端至全栈交流与成长
 一、&amp;ldquo;减肥减什么肥&amp;quot;778万人都在讨论！ 今天，&amp;ldquo;减肥减什么肥&amp;quot;直接冲上抖音热搜，热度飙到778万！
@@ -8266,13 +8668,13 @@ lg:overflow-visible flex flex-col"><div class="toc-header flex justify-between i
 <iconify-icon icon=mdi:wechat width=18 height=18></iconify-icon></button></div></div><div><h3 class="text-lg font-bold mb-4 text-gray-900 dark:text-white flex items-center"><div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-1.5 rounded text-white mr-2"><iconify-icon icon=mdi:link-variant width=16 height=16></iconify-icon></div>快速链接</h3><ul class=space-y-2><li><a href=https://movie.cmdragon.cn/ class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-300 flex items-center" target=_blank rel="noopener noreferrer" aria-label=高清影视库><iconify-icon icon=mdi:movie-search-outline class="mr-2 text-primary" width=16 height=16></iconify-icon>高清影视库</a></li><li><a href=https://manga.cmdragon.cn/ class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-300 flex items-center" target=_blank rel="noopener noreferrer" aria-label=精选漫画阅读><iconify-icon icon=mdi:comic-thought-bubble-outline class="mr-2 text-primary" width=16 height=16></iconify-icon>精选漫画阅读</a></li><li><a href=https://tools.cmdragon.cn/zh class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-300 flex items-center" target=_blank rel="noopener noreferrer" aria-label=实用在线工具><iconify-icon icon=mdi:tools class="mr-2 text-primary" width=16 height=16></iconify-icon>实用在线工具</a></li><li><a href=https://hot-movie.cmdragon.cn/ class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-300 flex items-center" target=_blank rel="noopener noreferrer" aria-label=热映影视推荐><iconify-icon icon=mdi:filmstrip class="mr-2 text-primary" width=16 height=16></iconify-icon>热映影视推荐</a></li></ul></div><div><h3 class="text-lg font-bold mb-4 text-gray-900 dark:text-white flex items-center"><div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-1.5 rounded text-white mr-2"><iconify-icon icon=mdi:tag-multiple width=16 height=16></iconify-icon></div>热门标签</h3><div class="flex flex-wrap gap-2"><a href=https://blog.cmdragon.cn/tags/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#基础入门 <span class="text-xs opacity-70">(237)</span>
 </a><a href=https://blog.cmdragon.cn/tags/FastAPI/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#FastAPI <span class="text-xs opacity-70">(167)</span>
 </a><a href=https://blog.cmdragon.cn/tags/nuxt/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#Nuxt <span class="text-xs opacity-70">(147)</span>
-</a><a href=https://blog.cmdragon.cn/tags/%E5%85%8D%E8%B4%B9%E5%B7%A5%E5%85%B7/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#免费工具 <span class="text-xs opacity-70">(87)</span>
+</a><a href=https://blog.cmdragon.cn/tags/%E5%85%8D%E8%B4%B9%E5%B7%A5%E5%85%B7/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#免费工具 <span class="text-xs opacity-70">(108)</span>
 </a><a href=https://blog.cmdragon.cn/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#性能优化 <span class="text-xs opacity-70">(78)</span>
 </a><a href=https://blog.cmdragon.cn/tags/%E9%92%A9%E5%AD%90/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#钩子 <span class="text-xs opacity-70">(62)</span>
 </a><a href=https://blog.cmdragon.cn/tags/%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#错误处理 <span class="text-xs opacity-70">(57)</span>
 </a><a href=https://blog.cmdragon.cn/tags/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#在线工具 <span class="text-xs opacity-70">(56)</span>
-</a><a href=https://blog.cmdragon.cn/tags/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#生命周期 <span class="text-xs opacity-70">(41)</span>
-</a><a href=https://blog.cmdragon.cn/tags/%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#依赖注入 <span class="text-xs opacity-70">(36)</span></a></div></div></div><div class="border-t border-gray-200 dark:border-gray-700 pt-6"><div class="flex flex-col md:flex-row justify-between items-center"><div class="text-center md:text-left mb-4 md:mb-0"><p class="text-sm text-gray-600 dark:text-gray-400">&copy; 2023 cmdragon's Blog. 保留所有权利.</p><p class="text-xs text-gray-500 dark:text-gray-500 mt-1">由 <a href=https://gohugo.io/ class="hover:text-primary transition-colors duration-300" target=_blank rel="noopener noreferrer">Hugo</a> 强力驱动 |
+</a><a href=https://blog.cmdragon.cn/tags/AI%E8%81%8A%E5%A4%A9/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#AI聊天 <span class="text-xs opacity-70">(43)</span>
+</a><a href=https://blog.cmdragon.cn/tags/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/ class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">#生命周期 <span class="text-xs opacity-70">(41)</span></a></div></div></div><div class="border-t border-gray-200 dark:border-gray-700 pt-6"><div class="flex flex-col md:flex-row justify-between items-center"><div class="text-center md:text-left mb-4 md:mb-0"><p class="text-sm text-gray-600 dark:text-gray-400">&copy; 2023 cmdragon's Blog. 保留所有权利.</p><p class="text-xs text-gray-500 dark:text-gray-500 mt-1">由 <a href=https://gohugo.io/ class="hover:text-primary transition-colors duration-300" target=_blank rel="noopener noreferrer">Hugo</a> 强力驱动 |
 <a href=/license/ class="hover:text-primary transition-colors duration-300" aria-label="Apache 2.0 许可证" tabindex=0>Apache License 2.0</a></p></div><button id=back-to-top class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white p-2 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center text-sm font-medium">
 <iconify-icon icon=mdi:arrow-up class=mr-1 width=16 height=16></iconify-icon>返回顶部</button></div></div></div><div id=wechat-modal class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center hidden" onclick='this.classList.add("hidden")'><div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-xl max-w-sm w-full relative" onclick=event.stopPropagation()><button class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200" onclick='document.getElementById("wechat-modal").classList.add("hidden")'>
 <iconify-icon icon=mdi:close width=20 height=20></iconify-icon></button><h4 class="text-center font-medium text-gray-800 dark:text-gray-200 mb-4">扫码关注公众号</h4><div class="flex justify-center"><img src=/images/wechat_qrcode.webp alt=微信二维码 class="w-64 h-64 object-contain"></div></div></div></footer><script>const backToTopButton=document.getElementById("back-to-top");window.addEventListener("scroll",function(){window.scrollY>300?(backToTopButton.classList.remove("opacity-0","invisible"),backToTopButton.classList.add("opacity-100","visible")):(backToTopButton.classList.add("opacity-0","invisible"),backToTopButton.classList.remove("opacity-100","visible"))}),backToTopButton.addEventListener("click",function(){window.scrollTo({top:0,behavior:"smooth"})}),document.querySelector(".wechat-btn")?.addEventListener("click",function(){document.getElementById("wechat-modal").classList.remove("hidden")}),document.querySelector(".wechat-btn")?.addEventListener("keydown",function(e){(e.key==="Enter"||e.key===" ")&&(e.preventDefault(),document.getElementById("wechat-modal").classList.remove("hidden"))})</script></div><script>localStorage.getItem("color-theme")==="dark"||!("color-theme"in localStorage)&&window.matchMedia("(prefers-color-scheme: dark)").matches?document.documentElement.classList.add("dark"):document.documentElement.classList.remove("dark")</script><script src=/js/code-highlight.min.290edb55b4573dcbbacb8b8a18d03863bbc233fd9bad41196fc20239446170d97ff298f85b171cfb5e7887c00dd6ee33f393a82f05c3a1fc7531e4a67262c437.js integrity="sha512-KQ7bVbRXPcu6y4uKGNA4Y7vCM/2brUEZb8ICOURhcNl/8pj4Wxcc+154h8AN1u4z85OoLwXDofx1MeSmcmLENw=="></script><script src=/js/advanced-render.min.077c50eb205e6c2bdd8338b745aa82315971b8a9a4e848099a29b66f42acaee66a260c6ac20b9cac91863baf86da9a641bb920235a53045145fa313a514fe6c3.js integrity="sha512-B3xQ6yBebCvdgzi3RaqCMVlxuKmk6EgJmim2b0KsruZqJgxqwgucrJGGO6+G2ppkG7kgI1pTBFFF+jE6UU/mww=="></script><div id=site-search-modal class="fixed inset-0 z-50 flex items-center justify-center hidden opacity-0 transition-opacity duration-300"><div id=site-search-backdrop class="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div><div class="relative bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 rounded-xl shadow-xl max-w-lg w-full mx-4 z-10 transform transition-all duration-300 scale-95 opacity-0 border border-gray-100 dark:border-gray-700"><div class="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700"><h3 class="text-lg font-medium flex items-center"><div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-1.5 rounded text-white mr-2 shadow-sm"><iconify-icon icon=mdi:magnify width=16 height=16></iconify-icon></div><span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-indigo-600">站内搜索</span></h3><button id=site-search-close class="text-gray-400 hover:text-gray-500 focus:outline-none transition-colors duration-200 p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full">
