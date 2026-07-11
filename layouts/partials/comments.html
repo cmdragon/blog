@@ -1,37 +1,44 @@
-{{/* 严格检查评论功能是否启用 - 默认不显示 */}}
+{{/* 评论系统 - cmdragon comment-widget */}}
 {{ if eq .Site.Params.comments.enable true }}
-{{ $giscusConfig := .Site.Params.comments.giscus }}
-{{ $hasValidConfig := and $giscusConfig.repo $giscusConfig.repoId $giscusConfig.category $giscusConfig.categoryId }}
-{{ $hasValidRepo := ne $giscusConfig.repo "username/repo-name" }}
-{{ $hasValidRepoId := ne $giscusConfig.repoId "填写你的仓库ID" }}
-{{ $hasValidCategoryId := ne $giscusConfig.categoryId "填写你的分类ID" }}
+{{ $cw := .Site.Params.comments.cw }}
+{{ if $cw }}
+{{ $appId := $cw.appId }}
+{{ $apiBase := $cw.apiBase }}
+{{ $authCenterUrl := $cw.authCenterUrl }}
+{{ $pageSize := $cw.pageSize}}
+{{ $primaryColor := $cw.primaryColor }}
+{{ $dark := $cw.dark }}
+{{ $locale := $cw.locale }}
+{{ $pageId := .RelPermalink }}
 
-{{ if and $hasValidConfig $hasValidRepo $hasValidRepoId $hasValidCategoryId }}
 <div class="mt-10">
-    <h3 class="text-xl font-bold mb-4 pb-2 border-b border-gray-200 dark:border-gray-700">评论</h3>
-    
-    <script src="https://giscus.app/client.js"
-        data-repo="{{ $giscusConfig.repo }}"
-        data-repo-id="{{ $giscusConfig.repoId }}"
-        data-category="{{ $giscusConfig.category }}"
-        data-category-id="{{ $giscusConfig.categoryId }}"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="preferred_color_scheme"
-        data-lang="zh-CN"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
-    </script>
-    
-    <noscript>请启用JavaScript来加载评论系统。</noscript>
+  <h3 class="text-xl font-bold mb-4 pb-2 border-b border-gray-200 dark:border-gray-700">评论</h3>
+
+  {{/* 评论挂载点 */}}
+  <div id="comment-widget" data-page-id="{{ $pageId }}"></div>
+
+  {{/* comment-widget 样式 */}}
+  <link rel="stylesheet" href="/comment-widget/comment-widget.css">
+
+  {{/* comment-widget IIFE 脚本（内含 Vue 运行时，零外部依赖） */}}
+  <script src="/comment-widget/comment-widget.iife.js"></script>
+
+  {{/* 初始化评论组件 */}}
+  <script>
+    CommentWidget.initComment({
+      appId: {{ $appId | jsonify | safeJS }},
+      pageId: {{ $pageId | jsonify | safeJS }},
+      el: '#comment-widget',
+      apiBase: {{ $apiBase | jsonify | safeJS }},
+      authCenterUrl: {{ $authCenterUrl | jsonify | safeJS }},
+      pageSize: {{ $pageSize }},
+      primaryColor: {{ $primaryColor | jsonify | safeJS }},
+      dark: {{ $dark }},
+      locale: {{ $locale | jsonify | safeJS }}
+    });
+  </script>
+
+  <noscript>请启用 JavaScript 来加载评论系统。</noscript>
 </div>
-{{ else }}
-  {{/* 配置不完整时不显示任何内容 */}}
 {{ end }}
-{{ else }}
-  {{/* 评论功能禁用时不显示任何内容 */}}
-{{ end }} 
+{{ end }}
