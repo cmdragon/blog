@@ -1,8 +1,8 @@
----
+﻿---
 url: /posts/tao-law-v2-thesis-markdown-2026/
 title: UP主解读韬定律V2版论文！用Markdown编辑器+AI聊天帮你写学术论文
-date: 2026-07-06T18:00:00+08:00
-lastmod: 2026-07-06T18:00:00+08:00
+date: 2026-07-06T8:00:00+08:00
+lastmod: 2026-07-06T8:00:00+08:00
 author: cmdragon
 
 summary: UP主解读韬定律V2版论文冲上B站热搜，热度202万！学术论文怎么读怎么写？本文推荐3个免费在线工具，Markdown编辑器排版论文、AI聊天辅助解读、文字计数控制篇幅，学术写作三件套。
