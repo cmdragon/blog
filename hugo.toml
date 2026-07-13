@@ -38,7 +38,7 @@ enableEmoji = true
       apiBase = "https://api2.cmdragon.cn"
       authCenterUrl = "https://u.cmdragon.cn"
       pageSize = 10
-      primaryColor = "#3b82f6"
+      primaryColor = "#1d4ed8"
       dark = false
       locale = "zh"
   

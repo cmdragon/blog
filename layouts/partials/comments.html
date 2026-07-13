@@ -2,13 +2,13 @@
 {{ if eq .Site.Params.comments.enable true }}
 {{ $cw := .Site.Params.comments.cw }}
 {{ if $cw }}
-{{ $appId := $cw.appId }}
-{{ $apiBase := $cw.apiBase }}
-{{ $authCenterUrl := $cw.authCenterUrl }}
-{{ $pageSize := $cw.pageSize}}
-{{ $primaryColor := $cw.primaryColor }}
-{{ $dark := $cw.dark }}
-{{ $locale := $cw.locale }}
+{{ $appId := $cw.appId | default "blog" }}
+{{ $apiBase := $cw.apiBase | default "https://api2.cmdragon.cn" }}
+{{ $authCenterUrl := $cw.authCenterUrl | default "https://u.cmdragon.cn" }}
+{{ $pageSize := $cw.pageSize | default 10 }}
+{{ $primaryColor := $cw.primaryColor | default "#3b82f6" }}
+{{ $dark := $cw.dark | default false }}
+{{ $locale := $cw.locale | default "zh" }}
 {{ $pageId := .RelPermalink }}
 
 <div class="mt-10">
