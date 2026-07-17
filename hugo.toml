@@ -30,14 +30,17 @@ enableEmoji = true
     github = "https://github.com/cmdragon"
     email = "support@cmdragon.cn"
   
-  # 评论系统
+  # 评论系统（cmdragon comment-widget）
   [params.comments]
-    enable = false
-    [params.comments.giscus]
-      repo = "username/repo-name"
-      repoId = "填写你的仓库 ID"
-      category = "Announcements"
-      categoryId = "填写你的分类 ID"
+    enable = true
+    [params.comments.cw]
+      appId = "blog"
+      apiBase = "https://api2.cmdragon.cn"
+      authCenterUrl = "https://u.cmdragon.cn"
+      pageSize = 10
+      primaryColor = "#1d4ed8"
+      dark = false
+      locale = "zh"
   
   # 搜索设置
   [params.search]
