@@ -13,15 +13,12 @@ categories:
 
 tags:
   - fastapi
-  - 多数据库配置
+  - 数据库连接池
   - 微服务架构
   - 分布式事务
-  - Saga模式
-  - 数据库连接池
-  - 电商系统
+  - saga模式
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/open60/2025-05-16/94ffc8da972664ac8a7ab725cf51e805.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

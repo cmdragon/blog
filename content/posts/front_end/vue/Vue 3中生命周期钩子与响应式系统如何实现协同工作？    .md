@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
+  - 组合式API
   - 生命周期钩子
   - 响应式系统
-  - 协同工作
   - 选项式API
-  - 组合式API
-  - 组件生命周期
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_7bb17ccc-cd26-4908-80dd-c709b9af97e4.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

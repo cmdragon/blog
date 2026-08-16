@@ -12,16 +12,10 @@ categories:
   - fastapi
 
 tags:
-  - fastapi零基础
-  - 虚拟环境配置
-  - Uvicorn实战
-  - Swagger UI
-  - API文档自动化
   - 依赖管理
-  - 新手避坑指南
+  - Swagger UI
+
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2025_03_01 15_54_54.png" title="2025_03_01 15_54_54.png" alt="2025_03_01 15_54_54.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

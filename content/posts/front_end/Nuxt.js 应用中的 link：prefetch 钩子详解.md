@@ -12,15 +12,13 @@ categories:
    - 前端开发
 
 tags:
-   - nuxt
-   - link:prefetch
-   - 钩子
-   - 页面加载
-   - 用户体验
-   - 预取优化
-   - Vue 3
----
+  - nuxt
+  - 钩子
+  - 用户体验
+  - Vue 3
+  - 页面加载
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_10_07 13_37_31.png" title="2024_10_07 13_37_31.png" alt="2024_10_07 13_37_31.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

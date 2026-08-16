@@ -17,12 +17,9 @@ tags:
   - 全局注册
   - 局部注册
   - 组件命名规范
-  - PascalCase命名
-  - Kebab-case命名
   - 全局vs局部注册
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_6fa0aac3-6788-4238-887b-54507894f918.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

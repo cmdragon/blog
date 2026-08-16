@@ -12,15 +12,13 @@ categories:
    - 前端开发
 
 tags:
-   - Nuxt
-   - 钩子
-   - 导入
-   - 扩展
-   - 动态
-   - 组件
-   - 模块
----
+  - nuxt
+  - 钩子
+  - 组件
+  - 动态
+  - 模块
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_10_28 13_45_29.png" title="2024_10_28 13_45_29.png" alt="2024_10_28 13_45_29.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

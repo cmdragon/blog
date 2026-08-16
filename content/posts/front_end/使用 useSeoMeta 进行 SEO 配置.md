@@ -12,15 +12,12 @@ categories:
   - 前端开发
 
 tags:
-  - SEO优化
   - nuxt
-  - Web开发
+  - web开发
   - 代码示例
-  - 元标签
-  - 动态配置
-  - 前端技术
----
+  - SEO优化
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_07_30 17_59_07.png" title="2024_07_30 17_59_07.png" alt="2024_07_30 17_59_07.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

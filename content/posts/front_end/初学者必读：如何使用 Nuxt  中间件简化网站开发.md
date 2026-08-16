@@ -12,15 +12,13 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt 3
-  - 中间件
-  - Vue 3
-  - 服务器less
   - 性能优化
+  - 中间件
+  - Nuxt 3
   - 实战案例
-  - 集成技巧
----
+  - Vue 3
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_06_24 13_55_41.png" title="2024_06_24 13_55_41.png" alt="2024_06_24 13_55_41.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

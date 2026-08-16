@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
+  - ref
   - defineExpose
   - <script setup>
-  - 父子组件通信
-  - ref
-  - 组件实例
   - 编译宏
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_7fa84dab-b957-4a5c-a6e0-dcc28925a0b2.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

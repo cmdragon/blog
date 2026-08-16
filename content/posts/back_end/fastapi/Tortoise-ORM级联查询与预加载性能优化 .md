@@ -12,16 +12,13 @@ categories:
   - fastapi
 
 tags:
-  - Tortoise-ORM
-  - 级联查询
-  - 预加载
-  - 性能优化
   - fastapi
-  - 数据库关联
+  - 性能优化
+  - Tortoise-ORM
+  - 预加载
   - N+1查询问题
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/opendc/2025-04-26/eeaefac5732183652d0b21d47ca0db18.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

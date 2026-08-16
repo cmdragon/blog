@@ -14,15 +14,10 @@ categories:
 
 tags:
   - 基础入门
-  - Vue3
-  - 嵌套列表
-  - 递归组件
+  - vue3
   - key
-  - 多层级数据
-  - 列表渲染问题
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_2ac6422a-cc98-4a97-9837-207a11cc5e72.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

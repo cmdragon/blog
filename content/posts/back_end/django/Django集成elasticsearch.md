@@ -7,11 +7,9 @@ categories:
   - 后端开发
 
 tags:
-  - Elasticsearch
   - django
+
 ---
-
-
 在Django项目中集成Elasticsearch通常涉及以下几个步骤：
 
 ### 1. **安装Elasticsearch**：

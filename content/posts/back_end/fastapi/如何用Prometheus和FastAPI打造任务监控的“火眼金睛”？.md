@@ -13,17 +13,12 @@ categories:
   - fastapi
 
 tags:
-  - FastAPI
-  - 任务性能监控
+  - fastapi
+  - 后台任务
   - Prometheus
   - Grafana
-  - 后台任务
-  - 系统稳定性
-  - 可视化仪表盘
 
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 

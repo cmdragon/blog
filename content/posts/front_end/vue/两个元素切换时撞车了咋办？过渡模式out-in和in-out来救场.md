@@ -14,13 +14,9 @@ categories:
 tags:
   - 基础入门
   - Transition
-  - 过渡模式
-  - out-in
-  - in-out
   - 动态组件
-  - 元素切换
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年6月3日 21_45_47.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

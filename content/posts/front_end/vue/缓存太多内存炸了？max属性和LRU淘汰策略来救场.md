@@ -14,12 +14,9 @@ categories:
 tags:
   - 基础入门
   - KeepAlive
-  - max属性
-  - LRU缓存
   - 内存管理
-  - 缓存淘汰
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年6月7日 22_20_31.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

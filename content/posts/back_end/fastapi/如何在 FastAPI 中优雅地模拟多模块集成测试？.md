@@ -13,17 +13,12 @@ categories:
   - fastapi
 
 tags:
-  - FastAPI
-  - 集成测试
-  - pytest
-  - 认证测试
-  - 多模块测试
-  - 数据库隔离
+  - fastapi
   - OAuth2
+  - pytest
+  - 集成测试
 
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 

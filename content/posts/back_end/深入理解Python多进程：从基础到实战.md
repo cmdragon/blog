@@ -7,15 +7,12 @@ categories:
   - 后端开发
 
 tags:
-  - 并发编程
-  - 多进程管理
-  - 错误处理
-  - 资源调度
   - 性能优化
+  - 错误处理
   - 异步编程
-  - Python并发库
----
+  - 并发编程
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_04_29 20_53_37.png" title="2024_04_29 20_53_37.png" alt="2024_04_29 20_53_37.png"/>
 
 ## **引言**

@@ -12,15 +12,13 @@ categories:
    - 前端开发
 
 tags:
-   - Nuxt
-   - 钩子
-   - 数据
-   - 扩展
-   - 自定义
-   - 验证
-   - 应用
----
+  - nuxt
+  - 钩子
+  - 自定义
+  - 数据
+  - 扩展
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_11_10 18_33_43.png" title="2024_11_10 18_33_43.png" alt="2024_11_10 18_33_43.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

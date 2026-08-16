@@ -7,15 +7,11 @@ categories:
   - 后端开发
 
 tags:
-  - 协程
-  - 异步IO
-  - 并发编程
   - Python
-  - aiohttp
-  - asyncio
-  - 网络爬虫
----
+  - 并发编程
+  - 异步IO
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_04_27 17_03_18.png" title="2024_04_27 17_03_18.png" alt="2024_04_27 17_03_18.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_04_27 17_05_32.png" title="2024_04_27 17_05_32.png" alt="2024_04_27 17_05_32.png"/>

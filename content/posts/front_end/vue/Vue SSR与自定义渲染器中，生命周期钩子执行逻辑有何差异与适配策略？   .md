@@ -14,15 +14,10 @@ categories:
 
 tags:
   - 基础入门
-  - Vue SSR
   - 生命周期钩子
-  - 自定义渲染器
   - 同构应用
-  - SSR流程
-  - Hydration
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_cf3dc369-c632-43ac-95e6-d972026d1dc1.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

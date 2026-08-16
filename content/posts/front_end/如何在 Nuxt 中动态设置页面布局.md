@@ -12,15 +12,13 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt
-  - 布局
-  - 动态
-  - 设置
+  - nuxt
   - 中间件
   - 路由
-  - 页面
----
+  - 动态
+  - 布局
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_08_24 09_28_57.png" title="2024_08_24 09_28_57.png" alt="2024_08_24 09_28_57.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

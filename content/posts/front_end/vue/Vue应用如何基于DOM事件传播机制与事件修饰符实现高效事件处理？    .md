@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - Vue事件处理
-  - 事件委托
   - 事件修饰符
+  - 事件委托
+  - Vue事件处理
   - 事件冒泡
-  - 捕获阶段
-  - 事件目标阶段
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_9ab7a0bf-e952-4dc9-a097-717bce023d2c.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

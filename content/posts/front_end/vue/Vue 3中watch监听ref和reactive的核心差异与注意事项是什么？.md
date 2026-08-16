@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 侦听器
   - ref
   - reactive
+  - 侦听器
   - 多数据源监听
-  - 深度监听
-  - 单个属性监听
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_64e72fda-59bc-4a44-b305-3c95aeecf169.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

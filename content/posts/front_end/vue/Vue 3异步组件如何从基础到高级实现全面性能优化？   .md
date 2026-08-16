@@ -14,15 +14,10 @@ categories:
 
 tags:
   - 基础入门
-  - 异步组件注册
-  - 加载状态处理
-  - 懒加载优化
   - 路由懒加载
-  - Suspense 组件
-  - 懒水化
+  - 异步组件注册
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_5f8927ac-ad05-4d5a-929a-50dc97d89302.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

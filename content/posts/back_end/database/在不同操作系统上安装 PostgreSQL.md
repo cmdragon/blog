@@ -13,14 +13,11 @@ categories:
 
 tags:
   - PostgreSQL
+  - 数据库管理
   - 安装指南
   - 操作系统
-  - Linux
-  - Windows
-  - macOS
-  - 数据库管理
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_12_26 16_20_10.png" title="2024_12_26 16_20_10.png" alt="2024_12_26 16_20_10.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

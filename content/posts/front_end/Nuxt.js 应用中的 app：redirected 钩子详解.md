@@ -13,14 +13,12 @@ categories:
 
 tags:
   - nuxt
-  - 重定向
-  - SSR
   - 钩子
-  - 认证
+  - SSR
   - 日志
-  - 示例
----
+  - 重定向
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_10_03 00_26_35.png" title="2024_10_03 00_26_35.png" alt="2024_10_03 00_26_35.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

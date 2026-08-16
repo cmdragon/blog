@@ -13,17 +13,13 @@ categories:
   - fastapi
 
 tags:
-  - FastAPI
-  - 测试环境配置
-  - 依赖管理
-  - 测试覆盖率
-  - pytest
-  - SQLAlchemy
+  - fastapi
   - Pydantic
+  - SQLAlchemy
+  - pytest
+  - 测试覆盖率
 
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 

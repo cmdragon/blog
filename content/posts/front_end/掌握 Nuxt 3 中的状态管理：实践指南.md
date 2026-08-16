@@ -12,15 +12,13 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt 3
-  - Vuex
   - 状态管理
-  - 前后端分离
-  - 模块化
+  - web开发
   - TypeScript
-  - Web开发
----
+  - Nuxt 3
+  - 模块化
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_06_22 14_22_35.png" title="2024_06_22 14_22_35.png" alt="2024_06_22 14_22_35.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

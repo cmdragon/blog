@@ -12,17 +12,11 @@ summary:
 categories:  
   - vue
 
-tags:  
-- 基础入门
-- Testing Library
-- 组件测试
-- render
-- getByRole
-- fireEvent
-- 测试哲学
+tags:
+  - 基础入门
+  - 组件测试
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年7月21日 18_43_19.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

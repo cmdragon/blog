@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 选项式API
-  - 组合式API
-  - 生命周期阶段
-  - 执行顺序
-  - 触发时机
   - 错误处理
+  - 组合式API
+  - 选项式API
+  - 生命周期阶段
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_ba5f9bb0-866b-4361-849e-1c60954d6aa3.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

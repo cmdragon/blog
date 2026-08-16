@@ -12,16 +12,13 @@ categories:
   - fastapi
 
 tags:
-  - WebSocket
-  - 安全认证
-  - JWT
-  - CORS
-  - 防DDOS攻击
-  - 异步处理
   - 性能优化
+  - JWT
+  - 安全认证
+  - WebSocket
+  - 异步处理
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/4a99fc9b90bfe6cf78145bbeda83eafd.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

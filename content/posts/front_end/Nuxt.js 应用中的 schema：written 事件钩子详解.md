@@ -13,15 +13,13 @@ categories:
    - 前端开发
 
 tags:
-   - Nuxt
-   - Vite
-   - 钩子
-   - 生命周期
-   - 配置
-   - 日志
-   - 服务
----
+  - nuxt
+  - 钩子
+  - 生命周期
+  - 配置
+  - Vite
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_11_15 14_06_46.png" title="2024_11_15 14_06_46.png" alt="2024_11_15 14_06_46.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -15,12 +15,9 @@ tags:
   - nuxt
   - 生命周期
   - 钩子函数
-  - 模块导入
   - 全局组件
-  - 导入源
-  - 目录扩展
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_06_30 15_28_59.png" title="2024_06_30 15_28_59.png" alt="2024_06_30 15_28_59.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

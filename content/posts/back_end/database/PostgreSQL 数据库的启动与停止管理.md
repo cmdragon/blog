@@ -12,15 +12,11 @@ categories:
   - 前端开发
 
 tags:
-  - PostgreSQL
-  - 启动数据库
-  - 停止数据库
-  - 数据库管理
-  - 日常维护
-  - 故障处理
   - 性能优化
----
+  - PostgreSQL
+  - 数据库管理
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_12_27 23_57_24.png" title="2024_12_27 23_57_24.png" alt="2024_12_27 23_57_24.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -12,16 +12,12 @@ categories:
   - fastapi
 
 tags:
-  - Alembic
-  - 数据库迁移
-  - SQLAlchemy
-  - 自动生成脚本
-  - 数据库版本管理
   - fastapi
-  - 数据库模式变更
+  - SQLAlchemy
+  - 数据库迁移
+  - Alembic
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/open7c/2025-05-09/fc52dc65fc6a145aafc3d1f0cdc33ce4.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

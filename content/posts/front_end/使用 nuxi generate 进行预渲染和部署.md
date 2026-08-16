@@ -13,15 +13,13 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt
-  - 预渲染
-  - 部署
-  - 静态
-  - HTML
+  - nuxt
   - 性能
   - 安全性
----
+  - 预渲染
+  - 部署
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_09_04 11_55_25.png" title="2024_09_04 11_55_25.png" alt="2024_09_04 11_55_25.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

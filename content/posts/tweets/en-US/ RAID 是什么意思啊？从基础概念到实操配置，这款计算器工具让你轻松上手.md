@@ -15,11 +15,6 @@ categories:
 tags:
   - RAID
   - Beginner Tutorial
-  - RAID Fundamentals
-  - RAID Configuration
-  - RAID Storage Calculator
-  - RAID Capacity Planning
-  - RAID Practical Application
 
 ---
 ![cover.png](/images/ukcgc_00003_.png)

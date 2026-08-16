@@ -15,14 +15,10 @@ categories:
 tags:
   - 基础入门
   - Attributes 透传
-  - 多根组件
-  - Fragment
-  - $attrs 绑定
   - 组件设计
-  - 手动透传
+  - 多根组件
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/a9a0bfdf5b5d444293e0d9ebf379ddc0~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

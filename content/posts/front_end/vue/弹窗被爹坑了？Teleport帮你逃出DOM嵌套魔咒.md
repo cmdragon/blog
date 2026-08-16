@@ -14,12 +14,10 @@ categories:
 tags:
   - 基础入门
   - Teleport
-  - 模态框
-  - DOM传送
-  - z-index
   - 内置组件
----
+  - 模态框
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年6月15日 21_09_42.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -15,14 +15,9 @@ categories:
 tags:
   - 基础入门
   - SQL性能优化
-  - 查询执行流程
-  - 索引使用
-  - 执行计划分析
   - JOIN操作
-  - CTE优化
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/fa4aa5361aef4c398414efdd5231b858~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

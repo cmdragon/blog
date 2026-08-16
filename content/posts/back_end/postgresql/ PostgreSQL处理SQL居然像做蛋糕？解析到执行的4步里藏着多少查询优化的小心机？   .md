@@ -14,15 +14,11 @@ categories:
 
 tags:
   - 基础入门
-  - 查询执行生命周期
   - 查询优化
-  - 代价模型
-  - 统计信息
   - 索引
-  - 连接方式
+  - 统计信息
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/7908ea0678714e43833653cbfdef40a0~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

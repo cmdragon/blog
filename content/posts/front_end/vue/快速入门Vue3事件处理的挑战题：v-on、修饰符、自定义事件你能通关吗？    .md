@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - v-on指令
+  - 组件通信
   - 事件处理
   - 事件修饰符
   - 自定义事件
-  - 组件通信
-  - DOM事件
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/37076889659047936.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

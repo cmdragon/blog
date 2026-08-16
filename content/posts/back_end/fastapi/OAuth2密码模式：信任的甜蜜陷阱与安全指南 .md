@@ -12,16 +12,13 @@ categories:
   - fastapi
 
 tags:
-  - OAuth2
-  - 授权流程
-  - 密码模式
   - fastapi
-  - 安全风险
+  - OAuth2
   - JWT令牌
   - 身份验证
+  - 安全风险
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/opencf/2025-05-29/8d718689481bc6b769c6a1ed2413439a.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

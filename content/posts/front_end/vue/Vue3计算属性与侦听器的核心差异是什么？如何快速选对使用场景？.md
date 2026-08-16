@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 计算属性
-  - 侦听器
-  - 响应式数据
-  - 缓存机制
-  - 副作用操作
   - 性能优化
+  - 计算属性
+  - 响应式数据
+  - 侦听器
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/43babac6b1694cb6a249bd46f9e42c7b~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -12,15 +12,13 @@ categories:
    - 前端开发
 
 tags:
-   - Nuxt
-   - 渲染
-   - 钩子
-   - 客户端
-   - 服务器
-   - 动态
-   - SEO
----
+  - nuxt
+  - 钩子
+  - 动态
+  - 客户端
+  - 服务器
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_12_01 12_52_32.png" title="2024_12_01 12_52_32.png" alt="2024_12_01 12_52_32.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

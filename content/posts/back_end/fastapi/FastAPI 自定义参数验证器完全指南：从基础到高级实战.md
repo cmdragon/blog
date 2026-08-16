@@ -13,15 +13,12 @@ categories:
 
 tags:
   - fastapi
-  - 参数验证
-  - Field函数
-  - API设计
-  - Web开发
-  - 数据校验
+  - web开发
   - 安全性
+  - API设计
+  - 数据校验
+
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2025_03_11 00_11_41.png" title="2025_03_11 00_11_41.png" alt="2025_03_11 00_11_41.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

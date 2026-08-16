@@ -14,15 +14,11 @@ categories:
 
 tags:
   - 基础入门
-  - 表单事件处理
   - v-model
-  - 表单提交验证
-  - 输入框双向绑定
   - 复选框
   - 单选框
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_d6672da0-3b9c-4e21-a367-0e63938c5f64.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

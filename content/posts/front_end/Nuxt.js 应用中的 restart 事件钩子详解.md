@@ -13,14 +13,9 @@ categories:
 
 tags:
   - nuxt
-  - 重启方法
-  - 应用重启
-  - 硬重启
-  - 普通重启
-  - 实例方法
   - 开发技巧
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_10_14 13_43_00.png" title="2024_10_14 13_43_00.png" alt="2024_10_14 13_43_00.png"/>
 
 

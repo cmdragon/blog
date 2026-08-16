@@ -14,15 +14,11 @@ categories:
 
 tags:
   - 基础入门
-  - 基础事件修饰符
-  - 按键修饰符
-  - 系统修饰符
-  - 组合键操作
   - 事件处理
+  - 按键修饰符
   - 报错解决方案
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_4f82abb3-2e03-4f8c-9209-dd04a4c3e601.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

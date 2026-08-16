@@ -12,15 +12,13 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt
-  - 错误
-  - 处理
-  - 显示
-  - 页面
-  - 全屏
+  - nuxt
   - 组件
----
+  - 处理
+  - 错误
+  - 页面
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_08_26 08_44_18.png" title="2024_08_26 08_44_18.png" alt="2024_08_26 08_44_18.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

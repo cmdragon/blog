@@ -13,14 +13,10 @@ categories:
 
 tags:
   - 基础入门
-  - Plugins
   - 插件
-  - app.use
-  - 全局功能
-  - Vue扩展
-  - 插件机制
----
+  - Plugins
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年5月26日 21_02_11.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

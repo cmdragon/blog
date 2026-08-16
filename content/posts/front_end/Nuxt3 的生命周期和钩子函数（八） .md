@@ -14,13 +14,10 @@ categories:
 tags:
   - nuxt
   - 生命周期
-  - 钩子函数
   - TypeScript
-  - 服务器监听
-  - 模式扩展
-  - 数据写入
----
+  - 钩子函数
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_07_02 15_18_34.png" title="2024_07_02 15_18_34.png" alt="2024_07_02 15_18_34.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

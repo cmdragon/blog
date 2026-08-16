@@ -13,14 +13,12 @@ categories:
 
 tags:
   - PostgreSQL
+  - 数据库管理
   - 数据库迁移
   - 版本控制
-  - 数据库管理
-  - DevOps
-  - 软件开发
   - 自动化
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2025_02_05 23_58_04.png" title="2025_02_05 23_58_04.png" alt="2025_02_05 23_58_04.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

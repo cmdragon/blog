@@ -13,16 +13,11 @@ categories:
   - tweets
 
 tags:
-  - Data Visualization
-  - Table Data
-  - Mermaid Live Editor
-  - Graph TD
-  - Real-Time Preview
-  - Multi-Format Export
-  - Flowchart Generation
+  - mermaid live editor
+  - data visualization
+  - graph td
 
 ---
-
 ![cover.png](/images/xjpvh_00004_.png)
 
 In data processing and visualization scenarios, transforming table data into intuitive charts is key to enhancing information delivery efficiency. Whether it’s task progress tables in project management, statistical results in data analysis, or process descriptions in technical documentation, a tool capable of directly converting table data (especially supporting `graph TD` format) into visual charts becomes essential. Such tools eliminate tedious manual formatting and format conversion, transforming static tables into dynamic charts to convey complex information more clearly.

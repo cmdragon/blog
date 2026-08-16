@@ -12,16 +12,13 @@ categories:
   - fastapi
 
 tags:
-  - FastAPI
-  - 后台任务
-  - 异步处理
-  - 邮件通知
-  - 文件批处理
-  - 数据清洗
+  - fastapi
   - 错误处理
+  - 异步处理
+  - 后台任务
+  - 邮件通知
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/6b2ec25619fbcfbe07c8990fc8ec8ae4.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

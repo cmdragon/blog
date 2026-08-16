@@ -14,14 +14,11 @@ categories:
 
 tags:
   - nuxt
-  - 响应码
   - SSR
-  - 404页面
+  - web开发
   - Vue.js
-  - 状态码
-  - Web开发
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_08_25 11_04_08.png" title="2024_08_25 11_04_08.png" alt="2024_08_25 11_04_08.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

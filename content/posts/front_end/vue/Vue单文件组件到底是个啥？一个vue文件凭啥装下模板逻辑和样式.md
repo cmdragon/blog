@@ -13,14 +13,12 @@ categories:
 
 tags:
   - 基础入门
+  - 组合式API
   - SFC
   - 单文件组件
-  - vue文件
-  - template
   - script setup
-  - 组合式API
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年6月18日 18_12_37.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

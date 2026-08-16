@@ -12,15 +12,13 @@ categories:
    - 前端开发
 
 tags:
-   - nuxt
-   - Web开发
-   - URL处理
-   - 组件函数
-   - 服务器端
-   - 客户端
-   - 应用程序
----
+  - nuxt
+  - web开发
+  - 客户端
+  - 组件函数
+  - 服务器端
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_07_26 15_18_38.png" title="2024_07_26 15_18_38.png" alt="2024_07_26 15_18_38.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

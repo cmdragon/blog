@@ -14,15 +14,10 @@ categories:
 
 tags:
   - 基础入门
-  - 组件复用性
-  - Vue3单文件组件
-  - 组件注册方式
-  - Props与Emits
-  - Vue3教程
   - 组件通信
+  - Props与Emits
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_99476a4d-752f-4d3d-a95f-4000e3c3222f.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

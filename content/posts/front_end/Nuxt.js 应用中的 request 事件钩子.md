@@ -12,15 +12,13 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt
-  - 请求
+  - nuxt
   - 钩子
+  - 性能
   - 处理
   - 安全
-  - 性能
-  - 实践
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_12_04 12_46_49.png" title="2024_12_04 12_46_49.png" alt="2024_12_04 12_46_49.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

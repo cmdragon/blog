@@ -12,15 +12,13 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxtjs
-  - 生命周期
   - 钩子
+  - 生命周期
   - 初始化
   - 用户认证
-  - 数据加载
-  - 应用优化
----
+  - nuxtjs
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_10_04 11_21_30.png" title="2024_10_04 11_21_30.png" alt="2024_10_04 11_21_30.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

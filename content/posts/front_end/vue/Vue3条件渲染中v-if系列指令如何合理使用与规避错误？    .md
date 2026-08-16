@@ -14,15 +14,11 @@ categories:
 
 tags:
   - 基础入门
-  - 条件渲染
   - v-if
-  - v-else
-  - v-else-if
+  - 条件渲染
   - v-show
-  - 条件渲染流程
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_633c1df8-b807-4617-a62d-011752890bb4.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

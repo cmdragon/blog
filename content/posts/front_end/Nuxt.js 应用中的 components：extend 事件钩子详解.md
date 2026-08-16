@@ -12,15 +12,13 @@ categories:
    - 前端开发
 
 tags:
-   - Nuxt
-   - 组件
-   - 钩子
-   - 动态
-   - 扩展
-   - 生命周期
-   - Vue
----
+  - nuxt
+  - 钩子
+  - 生命周期
+  - 组件
+  - Vue
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_11_01 11_55_11.png" title="2024_11_01 11_55_11.png" alt="2024_11_01 11_55_11.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

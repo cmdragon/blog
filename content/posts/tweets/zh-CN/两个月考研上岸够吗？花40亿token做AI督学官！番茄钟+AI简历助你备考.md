@@ -11,14 +11,11 @@ categories:
   - tweets
 
 tags:
-  - 两个月考研上岸
-  - AI督学官
-  - 番茄钟白噪音
-  - AI简历
-  - 考研冲刺
   - 免费工具
----
+  - AI简历
+  - 番茄钟白噪音
 
+---
 > **立即体验**：[番茄钟白噪音 - 免费在线工具](https://tools.cmdragon.cn/zh/apps/pomodoro-white-noise) | [AI简历 - 免费在线工具](https://tools.cmdragon.cn/zh/apps/magic-resume) | [更多1000+免费工具](https://tools.cmdragon.cn/zh/apps?category=trending)
 >
 > 无需下载安装，打开浏览器即用，完全免费！

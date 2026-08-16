@@ -9,15 +9,13 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/2026年7月3日 19_41_08.png
 categories:
   - vue
 tags:
-  - Vue
-  - Vue Router
-  - 路由
-  - hashchange
-  - 动态组件
   - 基础入门
+  - Vue
+  - 路由
+  - Vue Router
+  - 动态组件
+
 ---
-
-
 ## 一、先想清楚路由器到底在做什么
 
 上一章我们说过，客户端路由要回答三个问题：

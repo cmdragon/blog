@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - Vue 3
   - ref
+  - Vue 3
   - defineExpose
   - useTemplateRef
-  - 避免滥用模板引用
-  - 模板引用调试
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_85e12871-90e0-4ec8-a75c-62f22e11a5e9.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -12,16 +12,13 @@ categories:
   - fastapi
 
 tags:
-  - Tortoise-ORM
   - fastapi
-  - 异步数据库
-  - 模型定义
-  - 数据库配置
-  - CRUD接口
   - 错误处理
+  - Tortoise-ORM
+  - 数据库配置
+  - 异步数据库
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/open44/2025-04-20/6bcd1d8ab9b0c64e8893ca8577be2c2d.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

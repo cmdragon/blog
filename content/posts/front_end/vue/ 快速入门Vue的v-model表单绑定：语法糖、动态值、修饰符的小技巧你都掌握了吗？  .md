@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-    - Vue.js
   - v-model
-  - 表单绑定
-  - 动态值处理
-  - 修饰符
+  - Vue.js
   - 常见报错解决
+  - 修饰符
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/95f95c601c8f4b66b59eef45fa6ed401~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

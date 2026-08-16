@@ -13,14 +13,12 @@ categories:
 
 tags:
   - nuxt
-  - Nitro
+  - 错误处理
   - 生命周期
   - 钩子函数
-  - 构建优化
   - 预渲染
-  - 错误处理
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_07_01 19_16_34.png" title="2024_07_01 19_16_34.png" alt="2024_07_01 19_16_34.png"/>
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 

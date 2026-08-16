@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - Props
-  - Options API
-  - Composition API
   - 组件通信
-  - 单向数据流
   - TypeScript
+  - composition api
+  - 单向数据流
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_5054effb-7d3c-4735-8c1a-d74ea8149c81.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

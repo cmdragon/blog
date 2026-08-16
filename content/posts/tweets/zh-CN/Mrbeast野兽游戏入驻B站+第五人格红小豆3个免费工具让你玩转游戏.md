@@ -8,16 +8,13 @@ summary: Mrbeast野兽游戏首入驻B站，B站热度435万！被第五人格�
 categories:
   - tweets
 tags:
-  - Mrbeast野兽游戏
-  - 第五人格红小豆
   - 视频下载
+  - 无水印下载
+  - 免费在线工具
   - MBTI测试
   - 手柄检测
-  - 免费在线工具
-  - 游戏人格测试
-  - 无水印下载
----
 
+---
 > 🔧 本文推荐工具：
 > - 🎬 [视频下载](https://tools.cmdragon.cn/zh/apps/video-downloader) — 无水印视频下载/抖音下载
 > - 🧠 [MBTI测试](https://tools.cmdragon.cn/zh/apps/mbti-test) — 人格测试/性格测试

@@ -12,15 +12,13 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt
-  - Kit
-  - 加载
-  - 构建
+  - nuxt
   - 配置
+  - 构建
   - TypeScript
-  - 示例
----
+  - 加载
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_09_12 12_27_04.png" title="2024_09_12 12_27_04.png" alt="2024_09_12 12_27_04.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

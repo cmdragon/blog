@@ -13,15 +13,9 @@ categories:
 
 tags:
   - 数据泄露
-  - 物联网安全
-  - Mars Hydro
-  - Wi-Fi密码
-  - API密钥
   - 网络安全漏洞
-  - 用户隐私保护
 
 ---
-
 ### 27亿条用户数据遭裸奔！中国物联网公司Mars Hydro重大安全泄露暴露Wi-Fi密码与设备API
 
 #### 事件概述

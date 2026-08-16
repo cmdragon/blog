@@ -13,16 +13,12 @@ categories:
   - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
+  - pytest
   - 持续集成
   - GitHub Actions
-  - CI流水线
-  - Pytest
-  - Allure
-  - 测试报告
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/ef10204d56ff47b1b5db99188b0f088b~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

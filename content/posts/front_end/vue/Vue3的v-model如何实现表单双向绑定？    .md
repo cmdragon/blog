@@ -14,15 +14,11 @@ categories:
 
 tags:
   - 基础入门
-  - 表单输入绑定
   - v-model
   - 双向绑定
-  - 文本输入框
   - 复选框
-  - 数据响应式
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_bb5e18c9-6c44-4f06-9d1d-5d6a71d73512.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

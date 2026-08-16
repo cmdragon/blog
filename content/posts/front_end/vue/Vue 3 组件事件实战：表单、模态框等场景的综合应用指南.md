@@ -13,13 +13,12 @@ categories:
 
 tags:
   - 基础入门
+  - 组件通信
   - 组件事件
-  - 实战应用
   - 表单处理
   - 模态框
-  - 组件通信
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/74d5acd5aecf49778f2cea144bf85cb6~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

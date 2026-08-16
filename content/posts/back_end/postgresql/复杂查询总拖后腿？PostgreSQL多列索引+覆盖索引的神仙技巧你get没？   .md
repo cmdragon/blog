@@ -14,15 +14,11 @@ categories:
 
 tags:
   - 基础入门
-  - 多列索引
-  - 覆盖索引
-  - 仅索引扫描
-  - B-tree索引
-  - INCLUDE子句
   - 查询优化
+  - b-tree索引
+  - 多列索引
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/05592ca3758149de81de3acc5f44d04c~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

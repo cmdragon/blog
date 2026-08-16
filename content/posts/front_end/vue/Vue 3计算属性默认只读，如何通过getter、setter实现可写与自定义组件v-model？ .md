@@ -15,14 +15,11 @@ categories:
 tags:
   - 基础入门
   - 计算属性
-  - getter/setter
+  - v-model
   - 双向绑定
   - 自定义组件
-  - v-model
-  - 报错处理
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/c0a44397126b498e87ce9e0ea131947e~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

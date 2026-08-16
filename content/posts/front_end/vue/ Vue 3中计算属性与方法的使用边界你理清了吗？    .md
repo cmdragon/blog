@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 计算属性
-  - 方法
-  - 缓存机制
-  - 响应式数据
   - 性能优化
+  - 计算属性
+  - 响应式数据
   - 事件处理
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/8976c17d2859400ab16220f738da7226~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

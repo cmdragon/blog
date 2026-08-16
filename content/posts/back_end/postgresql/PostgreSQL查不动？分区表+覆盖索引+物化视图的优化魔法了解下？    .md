@@ -14,15 +14,10 @@ categories:
 
 tags:
   - 基础入门
-  - 大数据查询优化
-  - 分区表
-  - 索引策略
   - 物化视图
   - 并行查询
-  - 混合负载优化
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2a4b756e442d4f81a9c1e73df77a9cce~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

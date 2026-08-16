@@ -13,15 +13,12 @@ categories:
 
 tags:
   - 基础入门
-  - 默认插槽
-  - 内容分发
   - 组件设计
-  - 默认内容
-  - 插槽策略
   - 组件复用
+  - 内容分发
   - 开发技巧
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年5月2日 17_27_16.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -14,14 +14,11 @@ categories:
 
 tags:
   - 基础入门
-  - Vitest
   - 单元测试
-  - 断言
-  - 匹配器
+  - Vitest
   - 测试用例
-  - 测试组织
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年7月6日 22_24_40.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -11,16 +11,12 @@ categories:
    - 前端开发
 
 tags:
-   - Vue CLI
-   - 优化构建
-   - 配置管理
-   - 项目部署
-   - 插件系统
-   - Webpack
-   - TypeScript集成
+  - Webpack
+  - Vue CLI
+  - 配置管理
+  - 插件系统
+
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_06_09 01_13_22.png" title="2024_06_09 01_13_22.png" alt="2024_06_09 01_13_22.png"/>
 
 

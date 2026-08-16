@@ -14,16 +14,12 @@ categories:
 
 tags:
   - 基础入门
-    - 数据备份
-  - 数据恢复
   - PostgreSQL
-  - 物理备份
-  - 逻辑备份
-  - 时间点恢复
   - 数据库安全
+  - 数据恢复
+  - 数据备份
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/e5f85f7295db4e70ac6d8b4e85a6e41d~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

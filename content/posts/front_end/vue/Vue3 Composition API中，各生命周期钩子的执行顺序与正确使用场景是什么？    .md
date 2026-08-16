@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 组件生命周期
-  - Composition API
+  - composition api
   - 生命周期钩子
   - onMounted
   - onUnmounted
-  - 错误处理钩子
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_a15f86ec-b511-40aa-a95c-fa7973ee45f5.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

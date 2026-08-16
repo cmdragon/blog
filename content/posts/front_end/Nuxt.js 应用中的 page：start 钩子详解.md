@@ -13,15 +13,13 @@ categories:
    - 前端开发
 
 tags:
-   - nuxt
-   - page:start
-   - 钩子
-   - Suspense
-   - 页面加载
-   - 初始化逻辑
-   - 用户体验
----
+  - nuxt
+  - 钩子
+  - 用户体验
+  - Suspense
+  - 页面加载
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_10_08 11_48_29.png" title="2024_10_08 11_48_29.png" alt="2024_10_08 11_48_29.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

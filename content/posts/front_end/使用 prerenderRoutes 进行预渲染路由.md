@@ -13,15 +13,13 @@ categories:
   - 前端开发
 
 tags:
-  - 前端
-  - Nitro
-  - 预渲染
-  - SEO
   - 路由
+  - 前端
+  - 预渲染
   - 优化
-  - 教程
----
+  - Nitro
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_08_20 11_28_57.png" title="2024_08_20 11_28_57.png" alt="2024_08_20 11_28_57.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

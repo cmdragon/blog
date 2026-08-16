@@ -14,15 +14,11 @@ categories:
 
 tags:
   - 基础入门
-  - UPDATE语句
   - 数据库操作
-  - 数据修改
   - SQL语法
-  - 批量更新
   - 数据过滤
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/4d9200bf46c148008a63805ace2db034~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

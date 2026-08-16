@@ -12,15 +12,10 @@ categories:
    - 前端开发
 
 tags:
-   - nuxt
-   - Composables
-   - 目录架构
-   - 内置API
-   - 高效应用程序
-   - 构建应用
-   - 学习
----
+  - nuxt
+  - Composables
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_06_23 15_00_16.png" title="2024_06_23 15_00_16.png" alt="2024_06_23 15_00_16.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

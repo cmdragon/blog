@@ -12,16 +12,11 @@ categories:
   - fastapi
 
 tags:
-  - APScheduler
-  - FastAPI
-  - 定时任务调度
-  - 后台任务自动化
-  - Cron 表达式
+  - fastapi
   - 异常处理
-  - 持久化存储
+  - APScheduler
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/4c8561fb8241b8c5e1246030c17aa673.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

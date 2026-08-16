@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
+  - 最佳实践
+  - 组件通信
   - 模板引用
   - DOM操作
-  - 组件通信
-  - nextTick
-  - defineExpose
-  - 最佳实践
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/45615ca51f7b4d1788b190a511393b92~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

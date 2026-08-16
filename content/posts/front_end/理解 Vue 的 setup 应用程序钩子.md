@@ -12,15 +12,13 @@ categories:
    - 前端开发
 
 tags:
-   - Vue
-   - setup
-   - 组件
-   - 响应式
-   - 计算属性
-   - 生命周期
-   - 方法
----
+  - 生命周期
+  - 组件
+  - Vue
+  - 计算属性
+  - 响应式
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_09_30 12_17_49.png" title="2024_09_30 12_17_49.png" alt="2024_09_30 12_17_49.png"/>
 
 

@@ -13,15 +13,13 @@ categories:
   - 前端开发
 
 tags:
-  - 性能
-  - Nuxt
-  - 预加载
-  - 用户
-  - 体验
+  - nuxt
   - 组件
+  - 性能
   - 导航
----
+  - 预加载
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_08_19 11_54_33.png" title="2024_08_19 11_54_33.png" alt="2024_08_19 11_54_33.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

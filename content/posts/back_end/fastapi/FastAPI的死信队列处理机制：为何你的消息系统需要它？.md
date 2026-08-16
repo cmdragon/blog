@@ -13,17 +13,13 @@ categories:
   - fastapi
 
 tags:
-  - FastAPI
-  - 死信队列
-  - RabbitMQ
-  - Pydantic
-  - 消息队列
+  - fastapi
   - 错误处理
-  - 消息重试机制
+  - Pydantic
+  - RabbitMQ
+  - 消息队列
 
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 

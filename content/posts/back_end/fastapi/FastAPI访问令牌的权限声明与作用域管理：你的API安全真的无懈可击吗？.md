@@ -13,15 +13,12 @@ categories:
 
 tags:
   - fastapi
-  - 访问令牌
-  - 权限声明
-  - 作用域管理
-  - JWT
   - 依赖注入
+  - JWT
   - API安全
+  - 访问令牌
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/open90/2025-06-15/2945733707c7b5fca17ec9ccdcd7a98c.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

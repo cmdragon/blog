@@ -13,14 +13,11 @@ categories:
 
 tags:
   - fastapi
-  - 依赖注入
-  - 链式调用
-  - 多级参数传递
-  - 实战教程
-  - 最佳实践
   - 错误处理
----
+  - 依赖注入
+  - 最佳实践
 
+---
 <img src="https://static.shutu.cn/shutu/jpeg/open6e/2025-04-05/ff62781b9ddaabe8453eb5bee08e0a3a.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

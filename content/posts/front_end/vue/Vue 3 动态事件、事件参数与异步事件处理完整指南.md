@@ -14,12 +14,10 @@ categories:
 tags:
   - 基础入门
   - 事件处理
-  - 动态事件
-  - 事件参数
-  - 异步处理
   - 实战技巧
----
+  - 异步处理
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/9c564c1b423d4c2eb1c436ab75eb33fc~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

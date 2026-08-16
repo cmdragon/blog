@@ -12,15 +12,13 @@ categories:
    - 前端开发
 
 tags:
-   - Nuxt
-   - 钩子
-   - 开发
-   - 服务器
-   - 监听
-   - 请求
-   - 日志
----
+  - nuxt
+  - 钩子
+  - 开发
+  - 日志
+  - 服务器
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_11_09 14_45_41.png" title="2024_11_09 14_45_41.png" alt="2024_11_09 14_45_41.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

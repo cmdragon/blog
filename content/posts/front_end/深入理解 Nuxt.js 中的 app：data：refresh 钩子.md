@@ -12,15 +12,13 @@ categories:
    - 前端开发
 
 tags:
-   - nuxt
-   - 数据刷新
-   - 钩子函数
-   - 前端开发
-   - 动态更新
-   - UI优化
-   - 代码示例
----
+  - nuxt
+  - 前端开发
+  - 钩子函数
+  - 代码示例
+  - 数据刷新
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_09_29 11_11_43.png" title="2024_09_29 11_11_43.png" alt="2024_09_29 11_11_43.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

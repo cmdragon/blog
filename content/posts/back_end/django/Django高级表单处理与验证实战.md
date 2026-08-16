@@ -7,15 +7,10 @@ categories:
   - 后端开发
 
 tags:
-  - Django表单
-  - 验证逻辑
-  - 模板渲染
-  - 安全措施
-  - 表单测试
-  - 重定向管理
   - 最佳实践
----
+  - 模板渲染
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_06 20_52_18.png" title="2024_05_06 20_52_18.png" alt="2024_05_06 20_52_18.png"/>
 
 ## 引言：

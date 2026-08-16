@@ -12,14 +12,12 @@ categories:
   - vue
 
 tags:
-  - v-model
   - TypeScript
-  - 类型安全
-  - 泛型组件
-  - 类型推断
+  - v-model
   - 实战技巧
----
+  - 类型安全
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/b55210192cbc4c0abf9976c1c684de1a~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

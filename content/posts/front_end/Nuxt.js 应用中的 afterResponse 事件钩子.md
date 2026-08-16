@@ -12,15 +12,13 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt
+  - nuxt
   - 钩子
-  - 日志
   - 性能
+  - 日志
   - 安全
-  - 清理
-  - 响应
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_12_06 20_26_22.png" title="2024_12_06 20_26_22.png" alt="2024_12_06 20_26_22.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -13,17 +13,13 @@ categories:
   - fastapi
 
 tags:
-  - 消息队列
-  - 延迟队列
-  - FastAPI
+  - fastapi
   - Redis
   - RabbitMQ
-  - 异步通信
+  - 消息队列
   - 任务调度
 
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 

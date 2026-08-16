@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 物化视图
-  - 并行查询
+  - 性能优化
   - PostgreSQL
   - 查询优化
   - 数据管理
-  - 性能优化
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/6a97d0f496c04e52b3a94f1423c822a8~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

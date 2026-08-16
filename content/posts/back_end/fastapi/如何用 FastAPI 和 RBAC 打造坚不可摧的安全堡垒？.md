@@ -13,15 +13,12 @@ categories:
 
 tags:
   - fastapi
-  - RBAC
-  - 安全认证
   - JWT
-  - 权限管理
   - 数据加密
-  - 速率限制
+  - 安全认证
+  - 权限管理
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/4add876ab051005970865cbc15d5b683.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

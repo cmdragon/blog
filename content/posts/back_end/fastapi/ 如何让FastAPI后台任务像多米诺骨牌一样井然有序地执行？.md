@@ -12,16 +12,13 @@ categories:
   - fastapi
 
 tags:
-  - FastAPI
-  - BackgroundTasks
-  - 任务依赖管理
-  - 异步处理
-  - 异常处理
-  - 重试机制
+  - fastapi
   - 依赖注入
+  - BackgroundTasks
+  - 异常处理
+  - 异步处理
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/893701cbc1b65427396165bc6470e4ed.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

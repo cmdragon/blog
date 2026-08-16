@@ -13,14 +13,12 @@ categories:
 
 tags:
   - nuxt
-  - 运行时配置
-  - Vue.js
   - SSR
+  - Vue.js
   - 环境变量
-  - .env文件
-  - useRuntimeConfig
----
+  - 运行时配置
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_07_29 17_49_17.png" title="2024_07_29 17_49_17.png" alt="2024_07_29 17_49_17.png"/>
 
 

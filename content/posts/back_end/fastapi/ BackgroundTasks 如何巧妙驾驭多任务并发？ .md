@@ -12,16 +12,12 @@ categories:
   - fastapi
 
 tags:
-  - BackgroundTasks
-  - 异步任务队列
-  - 并发控制
-  - 优先级调度
-  - FastAPI
+  - fastapi
   - 错误处理
-  - 任务管理
+  - BackgroundTasks
+  - 并发控制
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/open27/2025/08/04/44f969e001ba0cae0b9c8c01a3546ff6.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

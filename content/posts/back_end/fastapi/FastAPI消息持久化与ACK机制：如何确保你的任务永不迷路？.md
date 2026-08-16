@@ -12,16 +12,13 @@ categories:
   - fastapi
 
 tags:
-  - FastAPI
-  - 消息持久化
-  - ACK确认机制
+  - fastapi
   - Celery
+  - 异常处理
   - RabbitMQ
   - 任务队列
-  - 异常处理
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/bc0cefa0780c64c037c06b31a2b46167.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

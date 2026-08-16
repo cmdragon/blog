@@ -12,15 +12,13 @@ categories:
   - fastapi
 
 tags:
-  - OpenAPI规范
   - fastapi
-  - API文档生成
   - Pydantic模型
-  - 安全方案配置
+  - OpenAPI规范
   - 动态Schema生成
   - 常见问题解决
----
 
+---
 <img src="https://static.shutu.cn/shutu/jpeg/opene4/2025-03-30/dc4242dbba60d68f4c869e4240d9c18c.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

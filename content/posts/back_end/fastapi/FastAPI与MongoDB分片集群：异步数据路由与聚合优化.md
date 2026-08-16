@@ -14,14 +14,11 @@ categories:
 tags:
   - fastapi
   - MongoDB
-  - 分片集群
-  - Motor驱动
-  - 数据路由
   - 聚合管道
   - 索引优化
+  - Motor驱动
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/open0c/2025-05-27/1235a73ef325cabf66c77ad6731a36c2.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

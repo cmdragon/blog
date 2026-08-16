@@ -12,17 +12,8 @@ summary:
 categories:
   - 隐私安全
 
-tags:
-  - GFW泄漏事件
-  - 网络审查技术
-  - 全球监控输出
-  - 积至信息技术
-  - 中科院MESA实验室
-  - 深度包检测
-  - 网络安全风险
 
 ---
-
 ![ba1c9c34af22496f9f007dfdee6f2065~tplv-5jbd59dj06-image.png](/images/ba1c9c34af22496f9f007dfdee6f2065~tplv-5jbd59dj06-image.png)
 
 ### 事件核心：GFW“底层黑箱”被彻底打开

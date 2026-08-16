@@ -11,16 +11,11 @@ categories:
   - tweets
 
 tags:
-  - 自媒体红利期只剩AI了
+  - 免费工具
   - AI文生图
   - 小红书文案
-  - 视频裁剪
-  - 视频合并
-  - 字幕烧录
-  - 视频水印
-  - 免费工具
----
 
+---
 > **立即体验**：[AI文生图 - 免费在线工具](https://tools.cmdragon.cn/zh/apps/text-to-image-ai) | [小红书文案 - 免费在线工具](https://tools.cmdragon.cn/zh/apps/xiaohongshu-copywriter) | [歌词生成 - 免费在线工具](https://tools.cmdragon.cn/zh/apps/lyrics-generator) | [视频裁剪 - 免费在线工具](https://tools.cmdragon.cn/zh/apps/video-trimmer) | [视频合并 - 免费在线工具](https://tools.cmdragon.cn/zh/apps/video-merger) | [字幕烧录 - 免费在线工具](https://tools.cmdragon.cn/zh/apps/subtitle-burner) | [视频水印 - 免费在线工具](https://tools.cmdragon.cn/zh/apps/video-watermark) | [更多1000+免费工具](https://tools.cmdragon.cn/zh/apps?category=trending)
 >
 > 无需下载安装，打开浏览器即用，完全免费！

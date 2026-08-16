@@ -15,14 +15,8 @@ categories:
 tags:
   - 基础入门
   - 数组语法
-  - Class绑定
-  - 动态类名
-  - 嵌套对象语法
-  - v-for结合
-  - 常见报错处理
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_bfec8c69-e89a-4fec-b856-2adf19f7f11b.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

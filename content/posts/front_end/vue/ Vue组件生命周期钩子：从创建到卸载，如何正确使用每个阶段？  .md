@@ -14,15 +14,8 @@ categories:
 
 tags:
   - 基础入门
-  - Vue生命周期钩子
-  - Vue组件创建阶段
-  - Vue组件挂载阶段
-  - Vue组件更新阶段
-  - Vue组件卸载阶段
-  - Vue生命周期流程图
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_5a94ddcb-f619-4099-a9e3-fc04c6a81fb8.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

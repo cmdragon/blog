@@ -12,14 +12,12 @@ categories:
   - vue
 
 tags:
-  - v-model
-  - 动态参数
-  - 动态绑定
-  - 高级用法
   - 组件通信
+  - v-model
   - 实战技巧
----
+  - 动态参数
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/a88209207ab94ba2bb46a27cf08b366e~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

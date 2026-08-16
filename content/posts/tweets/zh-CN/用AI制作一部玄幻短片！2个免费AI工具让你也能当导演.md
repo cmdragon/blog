@@ -10,12 +10,11 @@ categories:
   - tweets
 
 tags:
-  - 用AI制作一部玄幻短片
-  - AI聊天
-  - AI文生图
   - 免费工具
----
+  - AI文生图
+  - AI聊天
 
+---
 > **立即体验**：[AI聊天 - 免费在线工具](https://tools.cmdragon.cn/zh/apps/ai-chat) | [AI文生图 - 免费在线工具](https://tools.cmdragon.cn/zh/apps/text-to-image-ai)
 >
 > 无需下载安装，打开浏览器即用，完全免费！

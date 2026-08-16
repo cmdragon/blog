@@ -13,13 +13,12 @@ categories:
 
 tags:
   - v-model
-  - 自定义组件
   - 双向绑定
-  - 组件设计
-  - 表单封装
   - 实战技巧
----
+  - 组件设计
+  - 自定义组件
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/0bea77e965584232b48a3cef5dc16eb1~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

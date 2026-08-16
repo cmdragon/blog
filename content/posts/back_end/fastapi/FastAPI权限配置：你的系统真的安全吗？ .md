@@ -13,15 +13,12 @@ categories:
 
 tags:
   - fastapi
+  - 依赖注入
   - 权限管理
   - 生产环境
-  - RBAC模型
   - JWT认证
-  - 依赖注入
-  - 安全配置
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/open03/2025/06/26/5986e6302ed543fc62741841d4103304.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

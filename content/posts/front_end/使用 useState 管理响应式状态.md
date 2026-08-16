@@ -13,14 +13,12 @@ categories:
 
 tags:
   - nuxt
-  - useState
+  - 组件
   - SSR
   - 状态管理
-  - 组件
   - 响应式
-  - 共享状态
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_08_01 11_50_52.png" title="2024_08_01 11_50_52.png" alt="2024_08_01 11_50_52.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

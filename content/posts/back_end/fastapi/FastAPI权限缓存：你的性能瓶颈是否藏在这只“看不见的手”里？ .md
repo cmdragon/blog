@@ -13,15 +13,12 @@ categories:
 
 tags:
   - fastapi
-  - 权限缓存
   - 性能优化
-  - Redis
   - 依赖注入
-  - 缓存策略
+  - Redis
   - 微服务架构
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/open50/2025-06-23/858f17c47b1b93ff0b9899730cda1146.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

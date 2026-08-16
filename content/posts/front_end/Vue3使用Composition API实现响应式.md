@@ -7,16 +7,11 @@ categories:
    - 前端开发
 
 tags:
-   - Vue3
-   - Composition
-   - Refs
-   - Reactive
-   - Watch
-   - Lifecycle
-   - Debugging
+  - reactive
+  - watch
+  - vue3
+
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_29 20_15_53.png" title="2024_05_29 20_15_53.png" alt="2024_05_29 20_15_53.png"/>
 
 ## 1. 介绍

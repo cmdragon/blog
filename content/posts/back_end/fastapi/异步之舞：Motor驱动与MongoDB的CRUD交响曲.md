@@ -12,16 +12,13 @@ categories:
   - fastapi
 
 tags:
-  - Motor
-  - 异步驱动
-  - CRUD操作
-  - MongoDB
   - fastapi
-  - 索引优化
+  - MongoDB
   - 聚合管道
+  - 索引优化
+  - CRUD操作
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/open89/2025-05-20/eeba82a1d0e85e3471ac372bcbcb84ce.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

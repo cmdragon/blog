@@ -11,13 +11,11 @@ categories:
   - tweets
 
 tags:
-  - 第五人格哥特风七夕
+  - 免费工具
   - MBTI测试
   - 人格测试
-  - 免费工具
-  - 哥特风
----
 
+---
 > **立即体验**：[MBTI测试 - 免费在线工具](https://tools.cmdragon.cn/zh/apps/mbti-test) | [更多1000+免费工具](https://tools.cmdragon.cn/zh/apps?category=trending)
 >
 > 无需下载安装，打开浏览器即用，完全免费！

@@ -11,16 +11,8 @@ summary:
 categories:
   - fastapi
 
-tags:
-  - 依赖注入模式
-  - 参数共享机制
-  - DI容器设计
-  - 上下文管理器
-  - 工厂模式注入
-  - 依赖覆盖测试
-  - 错误传播机制
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2025_03_16 14_27_01.png" title="2025_03_16 14_27_01.png" alt="2025_03_16 14_27_01.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

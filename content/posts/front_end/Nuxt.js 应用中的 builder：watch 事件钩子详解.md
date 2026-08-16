@@ -12,15 +12,13 @@ categories:
    - 前端开发
 
 tags:
-   - Nuxt
-   - 生命周期
-   - 钩子
-   - 文件
-   - 变化
-   - 开发
-   - 构建
----
+  - nuxt
+  - 钩子
+  - 生命周期
+  - 开发
+  - 构建
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_10_24 13_31_24.png" title="2024_10_24 13_31_24.png" alt="2024_10_24 13_31_24.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

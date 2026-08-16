@@ -7,15 +7,12 @@ categories:
   - 前端开发
 
 tags:
-  - Vue3基础
-  - 指令详解
-  - 事件处理
-  - 高级事件
-  - 实战案例
-  - 最佳实践
   - 性能优化
----
+  - 最佳实践
+  - 事件处理
+  - 实战案例
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_25 19_04_01.png" title="2024_05_25 19_04_01.png" alt="2024_05_25 19_04_01.png"/>
 
 ## **第1章 Vue 3基础**

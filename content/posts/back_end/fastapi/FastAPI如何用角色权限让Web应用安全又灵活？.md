@@ -13,15 +13,12 @@ categories:
 
 tags:
   - fastapi
-  - 角色访问控制
-  - 权限管理
+  - 错误处理
   - 依赖注入
   - OAuth2
-  - 错误处理
-  - 代码实战
+  - 权限管理
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/opence/2025-06-13/1fcb6d5637200e31758eff8418261c7b.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

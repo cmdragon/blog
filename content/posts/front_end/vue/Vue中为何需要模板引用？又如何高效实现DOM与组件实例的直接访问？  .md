@@ -15,14 +15,11 @@ categories:
 tags:
   - 基础入门
   - 模板引用
-  - ref属性
-  - useTemplateRef
-  - 组件引用
   - DOM操作
   - defineExpose
+  - useTemplateRef
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_d51b5459-884a-41f3-a95c-7a829b76b2e4.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

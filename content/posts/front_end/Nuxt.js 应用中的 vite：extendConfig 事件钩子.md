@@ -13,15 +13,13 @@ categories:
    - 前端开发
 
 tags:
-   - Nuxt
-   - Vite
-   - 配置
-   - 钩子
-   - 插件
-   - 构建
-   - 环境
----
+  - nuxt
+  - 钩子
+  - 配置
+  - 构建
+  - Vite
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_11_16 15_21_43.png" title="2024_11_16 15_21_43.png" alt="2024_11_16 15_21_43.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

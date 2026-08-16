@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
+  - 组件通信
+  - 单向数据流
   - 组件事件
   - defineEmits
-  - 事件传递
-  - 单向数据流
-  - 事件验证
-  - 组件通信
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_e2b9d49c-ac44-43ff-ba24-d88043137ef9.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

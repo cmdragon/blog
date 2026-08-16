@@ -13,16 +13,11 @@ categories:
   - fastapi
 
 tags:
-  - 多版本API
-  - FastAPI
-  - 路由隔离
-  - 向后兼容
-  - Pydantic模型
+  - fastapi
   - 单元测试
-  - 兼容性测试
+  - Pydantic模型
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/22136ffc59b14a5b9b97e3835465c7b7~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

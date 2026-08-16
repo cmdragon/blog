@@ -13,13 +13,12 @@ categories:
 
 tags:
   - 基础入门
-  - 事件处理
   - 性能优化
-  - DOM 事件
-  - 防抖节流
+  - 事件处理
   - 事件委托
----
+  - 防抖节流
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/" title="cover.png" alt="cover.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

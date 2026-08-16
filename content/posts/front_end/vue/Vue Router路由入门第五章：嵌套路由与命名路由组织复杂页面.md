@@ -9,15 +9,12 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/2026年7月4日 20_32_30.png
 categories:
   - vue
 tags:
+  - 基础入门
   - Vue
   - Vue Router
   - 嵌套路由
-  - 命名路由
-  - children
-  - 基础入门
+
 ---
-
-
 ## 一、为什么需要嵌套路由
 
 真实应用的页面经常是"套娃"结构。比如一个用户中心页面：

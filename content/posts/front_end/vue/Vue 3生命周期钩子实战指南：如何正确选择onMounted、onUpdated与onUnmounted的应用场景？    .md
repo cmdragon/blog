@@ -15,14 +15,11 @@ categories:
 tags:
   - 基础入门
   - 生命周期钩子
+  - DOM操作
   - onMounted
   - onUnmounted
-  - 异步数据加载
-  - DOM操作
-  - 内存泄漏
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_168da3ef-fca8-480e-b0c5-7595e6e6d978.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

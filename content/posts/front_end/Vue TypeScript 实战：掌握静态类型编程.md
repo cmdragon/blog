@@ -11,16 +11,13 @@ categories:
   - 前端开发
 
 tags:
-  - TypeScript
-  - Vue.js
   - 组件
   - 状态管理
-  - Vuex
+  - TypeScript
   - 路由
-  - 优化
+  - Vue.js
+
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_06_10 13_33_24.png" title="2024_06_10 13_33_24.png" alt="2024_06_10 13_33_24.png"/>
 
 

@@ -12,15 +12,11 @@ categories:
   - security
 
 tags:
-  - AI 安全
-  - Claude Desktop
-  - 隐私泄露
-  - Native Messaging
-  - 浏览器安全
   - 供应链攻击
-  - 零信任
----
+  - 隐私泄露
+  - 浏览器安全
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/b871c6e44cda4e71ae8bb85ce7475577~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

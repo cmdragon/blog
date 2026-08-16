@@ -12,16 +12,13 @@ categories:
   - fastapi
 
 tags:
-  - JWT
   - fastapi
-  - 令牌生成
-  - 令牌验证
+  - JWT
   - 身份认证
+  - 令牌验证
   - 安全通信
-  - 无状态会话
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/open40/2025-06-10/2ec7ff907f756cc9daaa678bb1322250.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

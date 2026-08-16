@@ -12,15 +12,13 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt
-  - 路由
-  - 管理
+  - nuxt
   - 中间件
-  - 缓存
-  - 重定向
+  - 路由
   - 动态
----
+  - 缓存
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_09_17 11_19_20.png" title="2024_09_17 11_19_20.png" alt="2024_09_17 11_19_20.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

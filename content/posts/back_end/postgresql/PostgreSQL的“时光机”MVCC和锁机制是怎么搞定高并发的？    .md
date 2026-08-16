@@ -14,15 +14,11 @@ categories:
 
 tags:
   - 基础入门
-  - MVCC
   - 并发控制
   - 锁机制
-  - 死锁
-  - 锁等待
-  - 事务优化
+  - MVCC
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/25a48a2f118a4643912a960451640eb4~tplv-5jbd59dj06-aigc.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

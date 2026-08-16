@@ -12,15 +12,13 @@ categories:
    - 前端开发
 
 tags:
-   - nuxt
-   - 生命周期
-   - 钩子
-   - 全局组件
-   - 应用初始化
-   - Vue.js
-   - 插件系统
----
+  - nuxt
+  - 钩子
+  - 生命周期
+  - Vue.js
+  - 全局组件
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_09_26 10_11_55.png" title="2024_09_26 10_11_55.png" alt="2024_09_26 10_11_55.png"/>
 
 

@@ -13,17 +13,12 @@ categories:
   - fastapi
 
 tags:
-  - FastAPI
-  - 资源隔离
-  - 限流策略
-  - 分布式限流
-  - 熔断机制
+  - fastapi
   - 数据库连接池
-  - 电商支付系统
+  - 限流策略
+  - 熔断机制
 
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 

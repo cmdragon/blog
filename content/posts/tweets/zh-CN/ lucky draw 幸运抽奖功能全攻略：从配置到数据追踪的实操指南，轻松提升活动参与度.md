@@ -13,17 +13,10 @@ categories:
   - tweets
 
 tags:
-  - lucky draw
-  - 抽奖功能
-  - 数据追踪
-  - 操作指南
-  - 多场景应用
-  - 权重设置
   - 数据可视化
+  - lucky draw
 
 ---
-
-
 ![cover.png](https://api2.cmdragon.cn/upload/cmder/images/generated_image_668dde21-dc2a-4fd6-bb08-2bbaa4ad7efd.png)
 
 ## 软件lucky draw幸运抽奖功能使用指南：从配置到数据追踪的全流程解析

@@ -138,6 +138,12 @@ enableEmoji = true
   home = ["HTML", "RSS", "JSON"]
   section = ["HTML", "RSS"]
   page = ["HTML"]
+  # taxonomy = 分类法总页（/tags/、/categories/ 列表页）
+  taxonomy = ["HTML", "RSS"]
+  # term = 每个具体 tag/category 的列表页（/tags/xxx/）
+  # 关闭单个 tag 页的 RSS 输出，避免每个 tag 都生成一个 index.xml，
+  # 可显著减少部署文件数量（此前 4000+ 个 tag 各有一个 XML）
+  term = ["HTML"]
 
 [outputFormats]
   [outputFormats.JSON]

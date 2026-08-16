@@ -12,14 +12,12 @@ categories:
   - vue
 
 tags:
+  - 基础入门
   - v-model
   - 双向绑定
   - 语法糖
-  - 基础入门
-  - 原理剖析
-  - Vue 2 vs Vue 3
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/1fec43e47ce74aedabd956154155e58b~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

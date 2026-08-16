@@ -13,14 +13,12 @@ categories:
 
 tags:
   - nuxt
-  - 路由管理
-  - useRouter
-  - 中间件
   - 前端开发
+  - 中间件
+  - web开发
   - Vue.js
-  - Web开发
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_07_28 17_23_32.png" title="2024_07_28 17_23_32.png" alt="2024_07_28 17_23_32.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

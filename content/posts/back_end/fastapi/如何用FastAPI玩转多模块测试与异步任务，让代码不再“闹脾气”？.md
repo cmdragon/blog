@@ -13,17 +13,13 @@ categories:
   - fastapi
 
 tags:
-  - FastAPI
-  - 多模块集成测试
-  - 异步任务
-  - 定时任务
+  - fastapi
   - pytest
   - APScheduler
-  - 模拟依赖
+  - 异步任务
+  - 定时任务
 
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 

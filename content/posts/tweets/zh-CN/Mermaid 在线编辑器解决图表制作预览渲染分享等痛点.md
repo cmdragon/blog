@@ -12,17 +12,8 @@ summary:
 categories:
   - tweets
 
-tags:
-  - Mermaid在线编辑器
-  - 实时同步编辑
-  - 多种图表类型
-  - 导出与分享
-  - 智能代码提示
-  - 多主题切换
-  - 自动保存功能
 
 ---
-
 ![cover.png](/images/b374cd2590ac436fa20ac0bf483d0d29~tplv-5jbd59dj06-aigc.png)
 
 做图表的痛，终于被这个工具治好了！😭  

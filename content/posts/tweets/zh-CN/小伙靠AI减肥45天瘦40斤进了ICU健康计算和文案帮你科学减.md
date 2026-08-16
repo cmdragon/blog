@@ -11,13 +11,12 @@ categories:
   - tweets
 
 tags:
-  - 小伙靠AI减肥 45天瘦40斤进了ICU
+  - 免费工具
+  - AI文生图
   - BMI计算器
   - 健身百科
-  - AI文生图
-  - 免费工具
----
 
+---
 > **立即体验**：[BMI计算器 - 免费在线工具](https://tools.cmdragon.cn/zh/apps/bmi-calculator) | [健身百科 - 免费在线工具](https://tools.cmdragon.cn/zh/apps/fitpedia-fitness) | [更多1000+免费工具](https://tools.cmdragon.cn/zh/apps?category=trending)
 >
 > 无需下载安装，打开浏览器即用，完全免费！

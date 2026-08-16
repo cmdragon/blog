@@ -9,16 +9,13 @@ summary: 系统梳理 Vue 3 异步组件开发中的常见报错场景与排查�
 categories:
   - vue
 tags:
-  - 报错排查
   - 性能优化
-  - 预加载
-  - 代码分割
-  - 打包优化
   - 最佳实践
-  - 调试技巧
   - 异步组件
----
+  - 代码分割
+  - 预加载
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年5月14日 14_17_44.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

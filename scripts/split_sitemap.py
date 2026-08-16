@@ -7,7 +7,6 @@ Hugo Sitemap 分割脚本
 
 import os
 import xml.etree.ElementTree as ET
-from datetime import datetime
 from pathlib import Path
 
 def main():
@@ -65,14 +64,13 @@ def main():
     print(f"Pages: {len(pages)}")
     print(f"已去重 URL: {len(urls) - len(seen_locs)} 个")
     
-    # 获取当前日期（用于缺失的 lastmod）
-    current_date = datetime.now().astimezone().strftime('%Y-%m-%dT%H:%M:%S%z')
-    # 格式化时区（添加冒号）
-    current_date = current_date[:-2] + ':' + current_date[-2:]
-    
     # 创建新的 sitemap XML
+    # 说明：不再为缺失 lastmod 的 URL 填入"构建时间"。
+    # 之前每次构建都写入当前时间，导致 sitemap 文件（含数千 tag 条目）内容每次都变，
+    # 进而让 Wrangler 的哈希去重失效、全量重传。现在只保留 Hugo 原始 lastmod（稳定），
+    # 内容不变时 sitemap 内容也保持不变。
     def create_sitemap(urls_list):
-        """创建 sitemap XML 结构，为缺失的 lastmod 添加默认值"""
+        """创建 sitemap XML 结构，原样保留 Hugo 生成的子元素"""
         new_root = ET.Element('urlset')
         new_root.set('xmlns', 'http://www.sitemaps.org/schemas/sitemap/0.9')
         new_root.set('xmlns:xhtml', 'http://www.w3.org/1999/xhtml')
@@ -80,8 +78,7 @@ def main():
         for url in urls_list:
             new_url = ET.SubElement(new_root, 'url')
             
-            # 复制所有子元素
-            has_lastmod = False
+            # 复制所有子元素（含 lastmod，若有）
             for child in url:
                 tag_name = child.tag.split('}')[-1]
                 new_child = ET.SubElement(new_url, tag_name)
@@ -89,16 +86,20 @@ def main():
                 # 复制属性
                 for key, value in child.attrib.items():
                     new_child.set(key, value)
-                # 检查是否有 lastmod
-                if tag_name == 'lastmod':
-                    has_lastmod = True
-            
-            # 如果没有 lastmod，添加当前日期
-            if not has_lastmod:
-                lastmod_elem = ET.SubElement(new_url, 'lastmod')
-                lastmod_elem.text = current_date
         
         return new_root
+    
+    # 记录每个子 sitemap 的最新 lastmod（用于 sitemapindex）
+    latest_lastmod = {}
+    
+    def get_latest_lastmod(urls_list):
+        """从 URL 列表中提取最大的 lastmod 值（字符串比较，ISO8601 可直接比）。"""
+        values = []
+        for url in urls_list:
+            loc_el = url.find('sitemap:lastmod', ns)
+            if loc_el is not None and loc_el.text:
+                values.append(loc_el.text)
+        return max(values) if values else None
     
     # 保存各个 sitemap 文件
     def save_sitemap(urls_list, filename):
@@ -117,6 +118,9 @@ def main():
             new_tree.write(f, encoding='unicode', xml_declaration=False)
         
         print(f"保存 {filename} - {len(urls_list)} 个 URL")
+        
+        # 记录该子 sitemap 的最新 lastmod
+        latest_lastmod[filename] = get_latest_lastmod(urls_list)
     
     # 保存各个 sitemap 文件
     save_sitemap(posts, "sitemap-posts.xml")
@@ -125,10 +129,9 @@ def main():
     save_sitemap(pages, "sitemap-pages.xml")
     
     # 创建 sitemapindex
+    # 说明：sitemapindex 里的 lastmod 也改用每个子 sitemap 内最新的 lastmod（稳定），
+    # 而非"构建时间"，避免每次构建都变。若无任何 lastmod 则不写该字段。
     print(f"\n创建 sitemapindex.xml...")
-    now = datetime.now().astimezone().strftime('%Y-%m-%dT%H:%M:%S%z')
-    # 格式化时区（添加冒号）
-    now = now[:-2] + ':' + now[-2:]
     
     sitemap_index = ET.Element('sitemapindex')
     sitemap_index.set('xmlns', 'http://www.sitemaps.org/schemas/sitemap/0.9')
@@ -144,8 +147,11 @@ def main():
         sitemap_elem = ET.SubElement(sitemap_index, 'sitemap')
         loc = ET.SubElement(sitemap_elem, 'loc')
         loc.text = f"{base_url}/{sitemap_file}"
-        lastmod = ET.SubElement(sitemap_elem, 'lastmod')
-        lastmod.text = now
+        # 从该子 sitemap 已保存的 URL 中取最大 lastmod 作为稳定值
+        latest = latest_lastmod.get(sitemap_file)
+        if latest:
+            lastmod = ET.SubElement(sitemap_elem, 'lastmod')
+            lastmod.text = latest
     
     # 保存 sitemapindex
     index_tree = ET.ElementTree(sitemap_index)

@@ -12,16 +12,13 @@ categories:
   - fastapi
 
 tags:
-  - Alembic
+  - SQLAlchemy
   - 数据库迁移
-  - 冲突检测
-  - 脚本合并
+  - Alembic
   - 自动化测试
   - 版本控制
-  - SQLAlchemy
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/opene3/2025-05-12/d3fe899b10111050e524d30272102f9b.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

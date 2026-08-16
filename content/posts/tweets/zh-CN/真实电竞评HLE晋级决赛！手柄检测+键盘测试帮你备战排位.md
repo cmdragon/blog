@@ -11,13 +11,11 @@ categories:
   - tweets
 
 tags:
-  - 真实电竞评HLE晋级决赛
-  - 手柄检测
-  - 键盘测试
-  - 电竞
   - 免费工具
----
+  - 键盘测试
+  - 手柄检测
 
+---
 > **立即体验**：[手柄检测 - 免费在线工具](https://tools.cmdragon.cn/zh/apps/gamepad-detector) | [键盘测试 - 免费在线工具](https://tools.cmdragon.cn/zh/apps/keyboard-tester) | [更多1000+免费工具](https://tools.cmdragon.cn/zh/apps?category=trending)
 >
 > 无需下载安装，打开浏览器即用，完全免费！

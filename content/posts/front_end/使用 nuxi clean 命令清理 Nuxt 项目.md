@@ -13,15 +13,13 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt
-  - 清理
-  - 缓存
+  - nuxt
   - 开发
+  - 缓存
   - 项目
   - 工具
-  - 命令
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_09_01 11_15_36.png" title="2024_09_01 11_15_36.png" alt="2024_09_01 11_15_36.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

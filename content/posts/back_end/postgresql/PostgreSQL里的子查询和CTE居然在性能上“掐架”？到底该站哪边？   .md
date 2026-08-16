@@ -14,15 +14,8 @@ categories:
 
 tags:
   - 基础入门
-  - CTE（公共表表达式）
-  - PostgreSQL性能优化
-  - 查询优化技巧
-  - 递归查询
-  - 索引利用
-  - 物化与临时表
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/8c3069cb55c74af788a202a3242e5639~tplv-5jbd59dj06-aigc.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

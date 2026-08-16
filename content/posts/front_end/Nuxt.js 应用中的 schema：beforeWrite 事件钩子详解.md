@@ -12,15 +12,13 @@ categories:
    - 前端开发
 
 tags:
-   - Nuxt
-   - Vite
-   - 钩子
-   - JSON
-   - 验证
-   - 动态
-   - 配置
----
+  - nuxt
+  - 钩子
+  - 配置
+  - Vite
+  - 动态
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_11_14 14_15_34.png" title="2024_11_14 14_15_34.png" alt="2024_11_14 14_15_34.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -12,16 +12,13 @@ categories:
   - fastapi
 
 tags:
-  - FastAPI
-  - 后台任务
-  - 异步处理
-  - 请求-响应周期
-  - Celery
+  - fastapi
   - 错误处理
-  - 依赖管理
+  - Celery
+  - 异步处理
+  - 后台任务
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/c1cb85eb77898b4d62ee491a2c3fff56.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

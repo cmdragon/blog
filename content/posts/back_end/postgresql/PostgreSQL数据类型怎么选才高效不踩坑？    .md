@@ -12,17 +12,11 @@ summary:
 categories:  
   - postgresql
 
-tags:  
+tags:
   - 基础入门
   - 数据类型
-  - 数值类型
-  - 字符类型
-  - 日期时间类型
-  - JSON类型
-  - UUID类型
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/47ac5c3328274a08b6b4c8df8ecb8965~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

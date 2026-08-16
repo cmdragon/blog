@@ -15,13 +15,8 @@ tags:
   - fastapi
   - Tortoise-ORM
   - 数据库迁移
-  - aerich工具
-  - 模型元数据
-  - 数据库初始化
-  - 常见问题解决方案
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/openf0/2025-04-30/91b7f72f2939f2e0dc1f747d386e4e5d.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

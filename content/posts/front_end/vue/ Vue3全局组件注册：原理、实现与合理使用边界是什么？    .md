@@ -17,12 +17,8 @@ tags:
   - 全局组件注册
   - 组件命名规范
   - 全局vs局部注册
-  - 组件注册原理
-  - 批量注册组件
-  - 组件注册错误处理
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_0d9565e4-a98e-49a7-bd10-cc4e20f99b4d.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

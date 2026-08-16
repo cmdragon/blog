@@ -12,15 +12,10 @@ categories:
   - 前端开发
 
 tags:
-  - 文档数据库
-  - 键值存储
-  - 宽列存储
-  - 图数据库
-  - 大数据架构
-  - 云数据库
   - 数据建模
----
+  - 云数据库
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2025_02_19 16_02_39.png" title="2025_02_19 16_02_39.png" alt="2025_02_19 16_02_39.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

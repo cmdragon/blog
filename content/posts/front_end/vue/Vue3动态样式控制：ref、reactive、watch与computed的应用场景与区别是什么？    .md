@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
+  - 生命周期
   - 响应式数据
   - ref
   - reactive
-  - Watch
-  - Computed
-  - 生命周期
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_84188769-98f0-44ed-a6a8-a183825c3e69.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -14,15 +14,11 @@ categories:
 
 tags:
   - 基础入门
-  - 全表扫描
   - 查询优化
-  - 索引创建
-  - 查询规划器
   - SQL性能
   - 统计信息
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/85378aa2dd324c30baec694854257732~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -13,15 +13,12 @@ categories:
 
 tags:
   - fastapi
-  - 数据库连接池
   - Tortoise-ORM
   - 性能监控
+  - 数据库连接池
   - Prometheus
-  - Grafana
-  - 连接池优化
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/open3c/2025-04-28/2b19b09aa8719c6013ed8408e3a46b70.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -14,12 +14,8 @@ categories:
 tags:
   - 基础入门
   - Teleport
-  - to属性
-  - CSS选择器
-  - DOM元素
-  - 目标容器
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年6月17日 00_00_50.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

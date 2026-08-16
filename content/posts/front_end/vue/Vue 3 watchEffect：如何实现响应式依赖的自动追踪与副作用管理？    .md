@@ -15,14 +15,9 @@ categories:
 tags:
   - 基础入门
   - watchEffect
-  - 响应式依赖追踪
-  - 自动依赖追踪
   - 副作用清理
-  - 执行时机控制
-  - 数据请求
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_c66992de-5faf-42ee-b229-281670545725.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

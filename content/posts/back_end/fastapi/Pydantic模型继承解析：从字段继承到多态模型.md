@@ -11,16 +11,8 @@ summary:
 categories:
   - fastapi
 
-tags:
-  - Pydantic模型继承
-  - 字段覆盖机制
-  - 多态数据模型
-  - 类型安全校验
-  - 配置继承策略
-  - 现代化数据建模
-  - 校验错误处理
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2025_03_19 16_48_18.png" title="2025_03_19 16_48_18.png" alt="2025_03_19 16_48_18.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

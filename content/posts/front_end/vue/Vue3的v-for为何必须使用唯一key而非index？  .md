@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 数据绑定
+  - 性能优化
+  - 响应式系统
   - 列表渲染
   - v-for
-  - 响应式系统
-  - Axios
-  - 性能优化
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_d169ec50-f593-4ee3-931b-c05cfe0643a9.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

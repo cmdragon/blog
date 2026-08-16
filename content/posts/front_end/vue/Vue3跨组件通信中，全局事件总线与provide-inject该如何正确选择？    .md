@@ -14,15 +14,9 @@ categories:
 
 tags:
   - 基础入门
-  - 全局事件总线
   - mitt
-  - provide/inject
-  - 子父组件通信
-  - 订阅-发布模式
-  - 跨层级通信
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_867e7740-7267-4a3e-affe-f896f9e9b5a2.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

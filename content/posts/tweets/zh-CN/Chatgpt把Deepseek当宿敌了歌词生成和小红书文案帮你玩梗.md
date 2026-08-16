@@ -8,13 +8,11 @@ summary: Chatgpt把Deepseek当宿敌了登上微博热搜，AI互怼梗刷屏。
 categories:
   - tweets
 tags:
-  - Chatgpt把Deepseek当宿敌了
-  - 歌词生成
-  - 小红书文案
   - AI文生图
-  - AI玩梗
----
+  - 小红书文案
+  - 歌词生成
 
+---
 ## 热词背景：Chatgpt把Deepseek当宿敌了
 
 **Chatgpt把Deepseek当宿敌了** 登上微博热搜，大模型之间的"恩怨"成了热门玩梗素材。想把这段梗做成歌词或文案？下面三款免费工具帮你轻松玩转。

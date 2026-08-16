@@ -13,15 +13,12 @@ categories:
 
 tags:
   - fastapi
-  - Alembic
-  - 数据库迁移
   - SQLAlchemy
-  - 模型变更
+  - 数据库迁移
+  - Alembic
   - 迁移脚本
-  - 自动化管理
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/openc4/2025-05-14/a02a99d5b781debb516416a9b2cf3cd0.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

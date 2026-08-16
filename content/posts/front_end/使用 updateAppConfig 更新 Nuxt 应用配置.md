@@ -13,15 +13,13 @@ categories:
    - 前端开发
 
 tags:
-   - Nuxtjs
-   - 更新
-   - 配置
-   - 动态
-   - 应用
-   - 开发
-   - 工具
----
+  - 配置
+  - 开发
+  - 动态
+  - 应用
+  - 工具
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_08_27 10_30_36.png" title="2024_08_27 10_30_36.png" alt="2024_08_27 10_30_36.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

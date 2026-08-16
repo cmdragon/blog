@@ -13,17 +13,11 @@ categories:
   - tweets
 
 tags:
-  - 在线修图工具
-  - PS替代品
-  - 多图层编辑
-  - 滤镜应用
   - 图像处理
   - 设计工具
   - 无需安装
 
 ---
-
-
 ![cover.png](/images/34eb9edf8d3c470da4350baafb97905b~tplv-5jbd59dj06-image.png)
 
 🎨 浏览器里藏着「专业修图室」！不用装PS也能玩出高级感～

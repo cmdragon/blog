@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 动态事件绑定
-  - 事件委托
-  - 事件解绑
-  - 响应式
-  - 事件冒泡
   - 生命周期钩子
+  - 响应式
+  - 事件委托
+  - 动态事件绑定
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_1941b174-b93d-40a2-99e0-a357b1e61541.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

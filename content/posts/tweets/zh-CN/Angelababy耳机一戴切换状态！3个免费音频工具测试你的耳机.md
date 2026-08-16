@@ -11,13 +11,10 @@ categories:
   - tweets
 
 tags:
-  - Angelababy耳机
-  - 扬声器测试
-  - 音频频率
-  - 在线钢琴
   - 免费工具
----
+  - 扬声器测试
 
+---
 > **立即体验**：[扬声器测试 - 免费在线工具](https://tools.cmdragon.cn/zh/apps/speaker-audio-test) | [音频频率生成 - 免费在线工具](https://tools.cmdragon.cn/zh/apps/audio-frequency-generator) | [在线钢琴 - 免费在线工具](https://tools.cmdragon.cn/zh/apps/online-piano) | [更多1000+免费工具](https://tools.cmdragon.cn/zh/apps?category=trending)
 >
 > 无需下载安装，打开浏览器即用，完全免费！

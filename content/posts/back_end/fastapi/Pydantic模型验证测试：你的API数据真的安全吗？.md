@@ -13,17 +13,13 @@ categories:
   - fastapi
 
 tags:
-  - Pydantic
-  - FastAPI
-  - 数据验证
-  - 单元测试
+  - fastapi
   - 错误处理
-  - API测试
   - 最佳实践
+  - Pydantic
+  - 单元测试
 
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 

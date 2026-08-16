@@ -10,15 +10,12 @@ categories:
   - vue
 tags:
   - 基础入门
-  - 异步组件
-  - 懒加载
   - 性能优化
+  - 异步组件
   - 代码分割
-  - 动态导入
-  - 按需加载
-  - 首屏优化
----
+  - 懒加载
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年5月12日 13_00_53.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -1,5 +1,4 @@
 ---
-
 url: /posts/7f8a1f3d7d4e2c6b9a5f0d3e8c1b2a9f/  
 title: 开放图书馆资源探索神器 - Open Library Explorer  
 date: 2025-07-03T08:37:03+08:00  
@@ -13,17 +12,13 @@ summary:
 categories:
   - tweets
 
-tags:  
-  - 数字图书馆  
-  - 免费资源  
-  - 学术研究  
-  - 电子书籍  
-  - 开源知识  
-  - 在线工具  
-  - 教育科技  
+tags:
+  - 在线工具
+  - 免费资源
+  - 教育科技
+  - 数字图书馆
 
 ---
-
 ![Open Library Explorer](/images/xw_20250703170814.png)
 
 ### 🌍 打破知识壁垒：Open Library Explorer 为何成为学术人的秘密武器？

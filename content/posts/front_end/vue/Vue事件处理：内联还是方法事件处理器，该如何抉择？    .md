@@ -15,14 +15,8 @@ categories:
 tags:
   - 基础入门
   - Vue事件处理
-  - Vue内联事件处理器
-  - Vue方法事件处理器
-  - Vue事件对象
-  - Vue事件处理适用场景
-  - Vue事件处理常见问题
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_2a1cc350-c3f5-42e9-ab97-3cf06f397718.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

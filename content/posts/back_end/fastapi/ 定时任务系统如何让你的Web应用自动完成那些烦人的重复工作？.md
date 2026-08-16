@@ -12,16 +12,11 @@ categories:
   - fastapi
 
 tags:
-  - 定时任务系统
-  - FastAPI
-  - APScheduler
-  - 后台任务队列
-  - 电商订单处理
-  - 分布式环境
+  - fastapi
   - 错误处理
+  - APScheduler
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/58c84f20099691d712da1a297ed2d6ec.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

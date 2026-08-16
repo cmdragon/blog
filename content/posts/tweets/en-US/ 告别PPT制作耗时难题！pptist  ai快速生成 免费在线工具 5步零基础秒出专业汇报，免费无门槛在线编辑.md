@@ -14,12 +14,6 @@ categories:
 
 tags:
   - pptist
-  - AI PPT creation
-  - free PPT tool
-  - online PPT creation
-  - PPT workflow
-  - PPT design optimization
-  - PPT efficiency tool
 
 ---
 ![cover.png](/images/8ad8312df194452ab5085bfa85d05248~tplv-5jbd59dj06-image.png)

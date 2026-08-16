@@ -14,15 +14,10 @@ categories:
 
 tags:
   - 基础入门
-  - 模板编译
-  - 抽象语法树 (AST)
-  - 渲染函数
   - 性能优化
-  - Patch Flags
-  - 静态提升
+  - 模板编译
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/1bc49dcbd6ea4a8f8949c42c6634e6a9~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

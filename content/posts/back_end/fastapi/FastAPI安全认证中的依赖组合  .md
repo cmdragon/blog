@@ -13,14 +13,12 @@ categories:
 
 tags:
   - fastapi
-  - 安全认证
   - 依赖注入
   - JWT
+  - 安全认证
   - 权限校验
-  - 组合依赖
-  - 测试用例
----
 
+---
 <img src="https://static.shutu.cn/shutu/jpeg/open1d/2025-04-12/c01c9013a0096050cab78a0443d66bd7.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

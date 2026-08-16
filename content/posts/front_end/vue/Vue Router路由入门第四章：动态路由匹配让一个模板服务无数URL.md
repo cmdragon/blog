@@ -9,15 +9,13 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/2026年7月4日 20_27_40.png
 categories:
   - vue
 tags:
+  - 基础入门
   - Vue
   - Vue Router
   - 动态路由
   - 路径参数
-  - params
-  - 基础入门
+
 ---
-
-
 ## 一、为什么需要动态路由
 
 假设你要做一个用户详情页，每个用户都有自己的页面。如果按上一章的做法，你得为每个用户配一条路由：

@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 条件渲染
-  - 动态组件
   - v-if
+  - 条件渲染
   - v-show
   - KeepAlive
-  - 动态组件与条件渲染结合
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_2930d342-eca8-46ad-8007-9b03b3748f01.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

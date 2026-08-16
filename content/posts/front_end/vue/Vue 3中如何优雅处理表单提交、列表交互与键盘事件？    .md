@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 表单处理
-  - 列表交互
-  - 键盘事件处理
-  - 事件修饰符
   - v-model
+  - 事件修饰符
   - v-for
+  - 表单处理
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/5ceeb240-7f0b-4ff2-91dd-06e11a0c803a.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

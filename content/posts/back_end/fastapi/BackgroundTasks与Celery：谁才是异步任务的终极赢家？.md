@@ -12,16 +12,13 @@ categories:
   - fastapi
 
 tags:
-  - FastAPI
-  - BackgroundTasks
-  - 消息队列
-  - Celery
-  - 异步任务处理
-  - 生产者-消费者模式
+  - fastapi
   - 错误处理
+  - Celery
+  - BackgroundTasks
+  - 异步任务处理
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/cfe99650b3a07601fa5a51bfd0d3290a.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

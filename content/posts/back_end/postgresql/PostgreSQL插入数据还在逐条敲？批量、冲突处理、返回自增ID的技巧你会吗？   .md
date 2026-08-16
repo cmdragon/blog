@@ -14,16 +14,11 @@ categories:
 
 tags:
   - 基础入门
-    - PostgreSQL
-  - INSERT语句
-  - 数据插入
-  - 冲突处理
-  - WITH子句
-  - RETURNING子句
+  - PostgreSQL
   - 常见报错
+  - 数据插入
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/9ffe8a26458e4a38b0397d27b7f7af66~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

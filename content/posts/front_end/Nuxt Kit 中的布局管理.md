@@ -13,14 +13,11 @@ categories:
 
 tags:
   - nuxt
-  - 布局管理
-  - Web开发
-  - 页面结构
-  - addLayout
-  - 代码示例
+  - web开发
   - 前端
----
+  - 代码示例
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_09_18 11_55_34.png" title="2024_09_18 11_55_34.png" alt="2024_09_18 11_55_34.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

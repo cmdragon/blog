@@ -14,15 +14,11 @@ categories:
 
 tags:
   - 基础入门
-  - Props
-  - 静态Props
-  - 动态Props
-  - TypeScript
-  - 类型约束
   - 组件通信
+  - TypeScript
+  - props
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_07e52c63-17b4-462f-9a35-902f0b37b4b9.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

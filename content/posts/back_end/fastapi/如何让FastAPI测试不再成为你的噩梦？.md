@@ -13,17 +13,13 @@ categories:
   - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - pytest
-  - 测试环境配置
-  - 测试框架搭建
-  - 测试覆盖率
-  - 测试用例设计
   - 持续集成
+  - 测试覆盖率
+  - 测试环境配置
 
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 

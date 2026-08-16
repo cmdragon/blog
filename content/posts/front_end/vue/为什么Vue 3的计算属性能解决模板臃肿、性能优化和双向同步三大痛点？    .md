@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 计算属性
-  - Options API
-  - Composition API
-  - 缓存机制
-  - 可写计算属性
   - 最佳实践
+  - 计算属性
+  - composition api
+  - 缓存机制
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/7154a68f242348718aea62198c272e52~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

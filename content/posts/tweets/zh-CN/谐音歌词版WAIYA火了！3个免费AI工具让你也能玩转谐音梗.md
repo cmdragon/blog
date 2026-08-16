@@ -11,13 +11,12 @@ categories:
   - tweets
 
 tags:
-  - 谐音歌词版WAIYA
+  - 免费工具
+  - AI文生图
   - AI聊天
   - 歌词生成
-  - AI文生图
-  - 免费工具
----
 
+---
 > **立即体验**：[AI聊天 - 免费在线工具](https://tools.cmdragon.cn/zh/apps/ai-chat) | [更多1000+免费工具](https://tools.cmdragon.cn/zh/apps?category=trending)
 >
 > 无需下载安装，打开浏览器即用，完全免费！

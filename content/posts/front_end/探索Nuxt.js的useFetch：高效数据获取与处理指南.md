@@ -13,15 +13,12 @@ categories:
 
 tags:
   - nuxt
-  - useFetch
-  - API
-  - 数据
-  - 异步
-  - Vue.js
   - SSR
+  - Vue.js
+  - 数据
+  - useFetch
+
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 

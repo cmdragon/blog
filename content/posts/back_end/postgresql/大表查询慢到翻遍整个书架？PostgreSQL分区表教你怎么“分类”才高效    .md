@@ -15,14 +15,8 @@ categories:
 tags:
   - 基础入门
   - PostgreSQL
-  - 范围分区
-  - 列表分区
-  - 哈希分区
-  - 分区剪枝
-  - 声明式分区
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/ade3054cba0c47409871c87bb7050a08~tplv-5jbd59dj06-aigc.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

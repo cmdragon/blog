@@ -14,15 +14,11 @@ categories:
 
 tags:
   - 基础入门
-  - v-show
   - 条件渲染
-  - 原理拆解
-  - 性能对比
-  - 选择策略
+  - v-show
   - 常见问题
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_c74a9e79-f190-4db1-89f8-3d07d3f044ed.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

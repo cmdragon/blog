@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - Style绑定
-  - 数组语法
   - 计算属性
   - 动态样式
-  - 样式合并
+  - 数组语法
   - 内联样式
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_01ecf107-77c0-4a2a-929f-06fcf0e9e206.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

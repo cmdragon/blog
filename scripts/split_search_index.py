@@ -1,22 +1,29 @@
 #!/usr/bin/env python3
 """
 Script to split the search index into smaller chunks
+
+分片策略说明（2026-08-16 优化）：
+- 之前按"顺序 + 字节大小"切分，新增一篇文章会改变所有后续分片的边界，
+  导致每次部署几乎全部分片内容变化、Wrangler 哈希去重失效、全量重传。
+- 现在改为按文章 URL 的稳定哈希分桶：每篇文章固定落在某个分片，
+  新增/修改一篇文章只影响它所在的那一个分片，其余分片内容保持不变。
 """
 
 import json
 import os
-import shutil
 
 # Configuration
 SEARCH_INDEX_PATH = 'public/index.json'
 SEARCH_INDEX_DIR = 'public/search-index'
-TARGET_CHUNK_SIZE = 500 * 1024  # 500KB per chunk
+# 固定分片数量。分片数固定后，文章落在哪个分片只由其 URL 哈希决定，
+# 与文章总数无关，从而保证增量稳定。
+NUM_CHUNKS = 32
 
 
 def split_search_index():
     """
-    Split the search index into smaller chunks based on file size
-    After splitting, the original full index file is deleted
+    Split the search index into smaller chunks based on stable URL hashing.
+    After splitting, the original full index file is deleted.
     """
     # Read the original search index
     if not os.path.exists(SEARCH_INDEX_PATH):
@@ -53,74 +60,40 @@ def split_search_index():
     os.makedirs(SEARCH_INDEX_DIR, exist_ok=True)
     print(f"Created/verified directory: {SEARCH_INDEX_DIR}")
     
-    # Calculate approximate size per item by serializing a few items
-    if pages:
-        sample_items = pages[:5]
-        sample_size = len(json.dumps(sample_items, ensure_ascii=False, indent=2).encode('utf-8'))
-        avg_item_size = sample_size / len(sample_items)
-        print(f"Estimated average item size: {avg_item_size:.2f} bytes")
-    else:
-        avg_item_size = 1000
-    
-    # Build chunks
-    chunks = []
-    current_chunk = []
-    current_size = 0
-    chunk_index = 0
-    
+    # 按 URL 稳定哈希分桶：每篇文章固定落在 NUM_CHUNKS 个分片之一。
+    # 使用 URL（或 permalink）作为稳定键，保证新增/删除文章只影响对应分片。
+    buckets = [[] for _ in range(NUM_CHUNKS)]
     for item in pages:
-        # Estimate item size
-        item_size = len(json.dumps(item, ensure_ascii=False, indent=2).encode('utf-8'))
-        
-        # Check if adding this item would exceed the target size
-        if current_size + item_size > TARGET_CHUNK_SIZE:
-            # Save current chunk
-            if current_chunk:
-                chunk_filename = f'index-{chunk_index}.json'
-                chunk_path = os.path.join(SEARCH_INDEX_DIR, chunk_filename)
-                
-                with open(chunk_path, 'w', encoding='utf-8') as f:
-                    json.dump(current_chunk, f, ensure_ascii=False, indent=2)
-                
-                chunks.append(chunk_filename)
-                print(f"Created chunk {chunk_index}: {len(current_chunk)} pages, ~{current_size/1024:.1f}KB")
-                
-                # Start new chunk
-                current_chunk = [item]
-                current_size = item_size
-                chunk_index += 1
-            else:
-                # Single item is larger than target size, add it anyway
-                chunk_filename = f'index-{chunk_index}.json'
-                chunk_path = os.path.join(SEARCH_INDEX_DIR, chunk_filename)
-                
-                with open(chunk_path, 'w', encoding='utf-8') as f:
-                    json.dump([item], f, ensure_ascii=False, indent=2)
-                
-                chunks.append(chunk_filename)
-                print(f"Created chunk {chunk_index}: 1 page, ~{item_size/1024:.1f}KB (single item exceeds target size)")
-                chunk_index += 1
-                current_chunk = []
-                current_size = 0
-        else:
-            # Add item to current chunk
-            current_chunk.append(item)
-            current_size += item_size
+        key = item.get('url') or item.get('permalink') or item.get('title') or ''
+        # 稳定哈希（Python 内置 hash 对字符串跨进程可能因随机化而不同，改用确定性哈希）
+        h = 0
+        for ch in key:
+            h = (h * 31 + ord(ch)) & 0xFFFFFFFF
+        idx = h % NUM_CHUNKS
+        buckets[idx].append(item)
     
-    # Save the last chunk
-    if current_chunk:
-        chunk_filename = f'index-{chunk_index}.json'
+    # 写出各分片（仅写非空分片，文件名固定为 index-<i>.json）
+    chunks = []
+    for i in range(NUM_CHUNKS):
+        if not buckets[i]:
+            continue
+        chunk_filename = f'index-{i}.json'
         chunk_path = os.path.join(SEARCH_INDEX_DIR, chunk_filename)
-        
         with open(chunk_path, 'w', encoding='utf-8') as f:
-            json.dump(current_chunk, f, ensure_ascii=False, indent=2)
-        
+            json.dump(buckets[i], f, ensure_ascii=False, indent=2)
         chunks.append(chunk_filename)
-        print(f"Created chunk {chunk_index}: {len(current_chunk)} pages, ~{current_size/1024:.1f}KB")
-        chunk_index += 1
+        size = os.path.getsize(chunk_path)
+        print(f"Created chunk {i}: {len(buckets[i])} pages, ~{size/1024:.1f}KB")
     
-    total_chunks = chunk_index
+    total_chunks = len(chunks)
     print(f"Split into {total_chunks} chunks")
+    # 清理可能残留的旧分片文件（数量从 37 变为 32 后，多余文件需删除）
+    for old_name in os.listdir(SEARCH_INDEX_DIR):
+        if old_name.startswith('index-') and old_name.endswith('.json'):
+            if old_name not in chunks:
+                old_path = os.path.join(SEARCH_INDEX_DIR, old_name)
+                os.remove(old_path)
+                print(f"Removed stale chunk: {old_name}")
     
     # Delete the original full index file
     try:
@@ -132,7 +105,7 @@ def split_search_index():
     # Create new index file that references the chunks
     new_index = {
         "totalChunks": total_chunks,
-        "targetChunkSize": TARGET_CHUNK_SIZE,
+        "numChunks": NUM_CHUNKS,
         "totalPages": total_pages,
         "chunks": chunks
     }

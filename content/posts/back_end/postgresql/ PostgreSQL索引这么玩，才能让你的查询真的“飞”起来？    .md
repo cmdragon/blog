@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 索引
   - 查询优化
-  - B-Tree
+  - 索引
+  - b-tree
   - GIN
-  - BRIN
-  - 多列索引
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/cfb4fb2b0e2d496d8d23ac078ceb2a52~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

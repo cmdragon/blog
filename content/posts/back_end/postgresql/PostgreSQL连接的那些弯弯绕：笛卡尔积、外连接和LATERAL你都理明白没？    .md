@@ -14,15 +14,11 @@ categories:
 
 tags:
   - 基础入门
-  - 连接类型
   - 查询优化
-  - 连接算法
-  - SQL语法
   - 数据库性能
-  - LATERAL子查询
+  - SQL语法
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/76dae7f9ab96430dada788ce415b2c25~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

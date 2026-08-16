@@ -12,15 +12,12 @@ categories:
    - 前端开发
 
 tags:
-   - Nuxt
-   - 钩子
-   - close
-   - Nitro
-   - 清理
-   - 资源
-   - 生命周
----
+  - nuxt
+  - 钩子
+  - Nitro
+  - 清理
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_12_02 20_16_36.png" title="2024_12_02 20_16_36.png" alt="2024_12_02 20_16_36.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

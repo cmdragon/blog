@@ -12,16 +12,13 @@ categories:
   - fastapi
 
 tags:
-  - SQLAlchemy
-  - ORM
-  - FastAPI
-  - GraphQL
+  - fastapi
   - Pydantic
-  - 数据库连接
+  - SQLAlchemy
+  - GraphQL
   - 数据验证
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/8bc62996c72dd60ffd5a8f6611ce2bd1.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

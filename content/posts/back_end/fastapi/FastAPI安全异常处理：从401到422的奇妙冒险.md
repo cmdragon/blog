@@ -13,15 +13,9 @@ categories:
 
 tags:
   - fastapi
-  - 安全异常处理
-  - HTTP状态码
   - JWT令牌
-  - 认证失败
-  - 异常处理器
-  - 令牌刷新机制
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/openc8/2025-06-06/62fe048b2ef36800964804beb6de8a45.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

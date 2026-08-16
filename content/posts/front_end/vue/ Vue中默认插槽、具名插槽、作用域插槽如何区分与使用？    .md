@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
+  - 作用域插槽
   - 默认插槽
   - 具名插槽
-  - 作用域插槽
   - 组件化开发
-  - 数据传递
-  - 插槽报错处理
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_d86e6697-1270-4684-a495-e7e3080986e0.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

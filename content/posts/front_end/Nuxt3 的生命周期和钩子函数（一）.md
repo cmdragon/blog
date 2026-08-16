@@ -14,11 +14,10 @@ categories:
 tags:
   - nuxt
   - 生命周期
-  - 钩子函数
   - 前端开发
-  - Web框架
+  - 钩子函数
   - Vue.js
-  - 应用教程
+
 ---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_06_25 16_36_08.png" title="2024_06_25 16_36_08.png" alt="2024_06_25 16_36_08.png"/>
 

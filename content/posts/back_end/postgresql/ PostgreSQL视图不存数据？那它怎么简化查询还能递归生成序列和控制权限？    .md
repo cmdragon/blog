@@ -14,15 +14,9 @@ categories:
 
 tags:
   - 基础入门
-  - 视图创建语法
   - 可更新视图
-  - 递归视图
-  - 视图安全
-  - 视图权限
-  - 视图常见报错
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/d7debf4a6a784dd6a4eba17af1c2a803~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

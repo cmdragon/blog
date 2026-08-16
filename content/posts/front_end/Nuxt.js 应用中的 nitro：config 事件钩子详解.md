@@ -12,15 +12,13 @@ categories:
    - 前端开发
 
 tags:
-   - Nuxt
-   - Nitro
-   - 钩子
-   - 配置
-   - 服务器
-   - 自定义
-   - 生命周期
----
+  - nuxt
+  - 钩子
+  - 生命周期
+  - 配置
+  - 自定义
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_11_02 15_32_47.png" title="2024_11_02 15_32_47.png" alt="2024_11_02 15_32_47.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

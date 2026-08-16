@@ -12,17 +12,13 @@ categories:
   - fastapi
 
 tags:
-  - APScheduler
-  - FastAPI
-  - 定时任务
-  - 任务调度
+  - fastapi
   - Python
-  - API集成
-  - 任务持久化
+  - APScheduler
+  - 任务调度
+  - 定时任务
 
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 

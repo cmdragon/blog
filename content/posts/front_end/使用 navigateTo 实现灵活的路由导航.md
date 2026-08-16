@@ -12,15 +12,13 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxtjs
+  - 中间件
   - 路由
   - 导航
+  - nuxtjs
   - 编程
-  - Web
-  - 中间件
-  - URL
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_08_13 09_41_16.png" title="2024_08_13 09_41_16.png" alt="2024_08_13 09_41_16.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

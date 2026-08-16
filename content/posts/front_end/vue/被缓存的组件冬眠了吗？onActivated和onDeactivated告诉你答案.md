@@ -14,12 +14,8 @@ categories:
 tags:
   - 基础入门
   - KeepAlive
-  - onActivated
-  - onDeactivated
-  - 缓存生命周期
-  - 组件激活
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年6月7日 22_30_17.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

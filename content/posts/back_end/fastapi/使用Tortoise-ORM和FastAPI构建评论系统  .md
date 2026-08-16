@@ -12,16 +12,13 @@ categories:
   - fastapi
 
 tags:
-  - Tortoise-ORM
-  - Pydantic
   - fastapi
-  - 评论系统
-  - 数据库模型
+  - Pydantic
+  - Tortoise-ORM
   - 数据验证
-  - 接口测试
+  - 数据库模型
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/open3e/2025-04-25/e11adf11d682fc56231da7e699af1296.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

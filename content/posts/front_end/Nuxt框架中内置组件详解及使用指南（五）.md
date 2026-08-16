@@ -12,13 +12,12 @@ categories:
   - 前端开发
 
 tags:
-  - NuxtJS
   - 组件
-  - 图像
   - 优化
+  - nuxtjs
   - 响应
   - 预览
-  - 传送
+
 ---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_07_10 14_04_16.png" title="2024_07_10 14_04_16.png" alt="2024_07_10 14_04_16.png"/>
 

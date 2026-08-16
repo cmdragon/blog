@@ -14,14 +14,11 @@ categories:
 tags:
   - fastapi
   - Tortoise-ORM
-  - 角色模型
   - 权限管理
-  - 数据库映射
-  - CRUD接口
   - RBAC
+  - CRUD接口
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/open61/2025-06-11/60a10b526057dc76b88fe99927cca2f7.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

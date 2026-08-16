@@ -12,16 +12,9 @@ categories:
   - 隐私安全
 
 tags:
-  - Windows Defender漏洞
-  - Defendnot工具
-  - 系统API滥用
   - 微软安全响应
-  - 企业终端防护
-  - 勒索软件威胁
-  - 纵深防御策略
 
 ---
-
 ### 严重安全漏洞曝光：黑客可伪造杀毒软件绕过Windows Defender
 
 *微软紧急标记恶意工具，企业终端防护面临新挑战*

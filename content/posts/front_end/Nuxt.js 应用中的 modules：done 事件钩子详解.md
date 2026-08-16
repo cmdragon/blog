@@ -14,13 +14,11 @@ categories:
 tags:
   - nuxt
   - 生命周期
-  - modules:done
-  - 应用初始化
-  - 钩子函数
   - 前端开发
+  - 钩子函数
   - 代码示例
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_10_16 13_18_04.png" title="2024_10_16 13_18_04.png" alt="2024_10_16 13_18_04.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

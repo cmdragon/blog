@@ -13,17 +13,9 @@ categories:
   - tweets
 
 tags:
-  - 谷歌Gemini 3 Pro
   - 免费AI工具
-  - cmdragon工具站
-  - 数学解题
-  - 代码编写
-  - 长期项目规划
-  - 无需科学上网
 
 ---
-
-
 ![cover.png](/images/xw_20251119222903.png)
 
 【免费薅到谷歌「最强大脑」！这个工具站直接把王炸模型搬来了】  https://tools.cmdragon.cn/zh/apps?category=ai_chat

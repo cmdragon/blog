@@ -12,15 +12,13 @@ categories:
   - 前端开发
 
 tags:
-  - Vue
   - nuxt
-  - 组件开发
-  - 管理策略
-  - 生命周期
   - 性能优化
-  - 测试文档
----
+  - 生命周期
+  - Vue
+  - 组件开发
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_06_20 14_10_09.png" title="2024_06_20 14_10_09.png" alt="2024_06_20 14_10_09.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

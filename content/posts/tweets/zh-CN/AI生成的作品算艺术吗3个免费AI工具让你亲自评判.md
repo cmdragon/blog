@@ -8,14 +8,12 @@ summary: AI生成的作品算艺术吗冲上抖音热搜1050万！3个免费AI�
 categories:
   - tweets
 tags:
-  - AI生成的作品算艺术吗
-  - AI文生图
-  - 歌词生成
-  - 小红书文案
-  - AI艺术
   - 免费工具
----
+  - AI文生图
+  - 小红书文案
+  - 歌词生成
 
+---
 > 🎨 想亲自评判AI算不算艺术？先动手生成一幅：[AI文生图 - 免费在线工具](https://tools.cmdragon.cn/zh/apps/text-to-image-ai) | [AI高级文生图](https://tools.cmdragon.cn/zh/apps/text-to-image-advanced) | [歌词生成](https://tools.cmdragon.cn/zh/apps/lyrics-generator) | [小红书文案](https://tools.cmdragon.cn/zh/apps/xiaohongshu-copywriter)
 >
 > 无需下载安装，打开浏览器即用，完全免费！

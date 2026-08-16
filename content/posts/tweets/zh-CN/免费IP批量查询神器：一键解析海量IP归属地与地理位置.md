@@ -12,15 +12,12 @@ categories:
   - tweets
 
 tags:
-  - IP查询
-  - 批量处理
-  - 网络工具
-  - 地理定位
+  - 免费工具
   - 网络安全
   - 数据分析
-  - 免费工具
----
+  - 网络工具
 
+---
 ![xw_20250708151826.png](/images/xw_20250708151826.png)
 在网络安全运维、市场地域分析或访问日志处理时，经常需要批量解析IP地址信息。*
 *[IP批量查询工具](https://tools.cmdragon.cn/zh/apps/ip-batch-lookup)**

@@ -15,14 +15,11 @@ categories:
 tags:
   - 基础入门
   - Attributes 透传
-  - 单根组件
-  - class 合并
-  - style 合并
-  - 事件监听
   - 组件封装
+  - 事件监听
+  - 单根组件
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/abc9afc0b45148e585bb98415239ab7c~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

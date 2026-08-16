@@ -8,13 +8,11 @@ summary: CORTIS抖音粉丝破500万登上热搜，用AI做应援图与种草文
 categories:
   - tweets
 tags:
-  - CORTIS抖音粉丝破500万
   - AI文生图
   - 小红书文案
   - AI创作
-  - 偶像追星
----
 
+---
 ## 热词背景：CORTIS抖音粉丝破500万
 
 **CORTIS抖音粉丝破500万**登上热搜，作为 HYBE 新男团，CORTIS 凭清爽舞台形象圈粉无数。用 AI 做应援图、写安利文案，追星也能玩出创作感。

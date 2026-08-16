@@ -14,15 +14,11 @@ categories:
 
 tags:
   - 基础入门
-  - v-show与v-if区别
-  - CSS控制显示
   - 条件渲染
   - 应用场景
-  - 实战示例
   - 常见问题解决
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_dcbf48b5-5bed-474a-b1c3-88891b71f0b5.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

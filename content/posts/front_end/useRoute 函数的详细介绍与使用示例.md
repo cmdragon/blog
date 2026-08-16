@@ -13,14 +13,12 @@ categories:
 
 tags:
   - nuxt
-  - useRoute
-  - 路由
-  - API
   - 组件
-  - 查询
+  - 路由
   - 动态
----
+  - API
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_07_27 15_55_51.png" title="2024_07_27 15_55_51.png" alt="2024_07_27 15_55_51.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

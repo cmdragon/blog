@@ -13,14 +13,12 @@ categories:
 
 tags:
   - nuxt
+  - TypeScript
+  - 安全性
   - 环境变量
   - 配置管理
-  - 运行时配置
-  - 安全性
-  - TypeScript
-  - 多环境部署
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_07_25 15_23_16.png" title="2024_07_25 15_23_16.png" alt="2024_07_25 15_23_16.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

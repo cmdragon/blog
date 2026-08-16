@@ -12,15 +12,13 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt
-  - 异步
-  - 数据
-  - 加载
-  - 框架
+  - nuxt
   - 前端
-  - 编程
----
+  - 数据
+  - 异步
+  - 加载
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_07_20 15_31_40.png" title="2024_07_20 15_31_40.png" alt="2024_07_20 15_31_40.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

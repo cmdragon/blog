@@ -14,15 +14,10 @@ categories:
 
 tags:
   - 基础入门
-  - Props声明
-  - 响应式Props
   - 单向数据流
-  - Props性能优化
-  - Props传递规范
-  - Props常见问题
+  - 响应式Props
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_27bcdba4-81f7-419b-add2-9ee5c477f064.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

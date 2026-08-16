@@ -13,17 +13,12 @@ categories:
   - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - 依赖注入
-  - Mock测试
-  - 单元测试
   - Pydantic
-  - 数据库模拟
-  - 测试最佳实践
+  - 单元测试
 
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 

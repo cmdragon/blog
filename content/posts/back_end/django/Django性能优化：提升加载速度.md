@@ -7,15 +7,10 @@ categories:
   - 后端开发
 
 tags:
-  - 缓存策略
-  - HTTP请求
-  - DNS查询
-  - CDN分发
   - 前端优化
-  - 服务器响应
-  - 浏览器缓存
----
+  - 缓存策略
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_20 20_18_55.png" title="2024_05_20 20_18_55.png" alt="2024_05_20 20_18_55.png"/>
 
 

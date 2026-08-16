@@ -13,14 +13,10 @@ categories:
 
 tags:
   - fastapi
-  - 依赖注入
-  - 上下文管理
-  - 全局依赖
-  - 生命周期管理
-  - 数据库会话
   - 错误处理
----
+  - 依赖注入
 
+---
 <img src="https://static.shutu.cn/shutu/jpeg/open48/2025-04-07/3c12520d11c8e4105e760c78f29ee82f.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

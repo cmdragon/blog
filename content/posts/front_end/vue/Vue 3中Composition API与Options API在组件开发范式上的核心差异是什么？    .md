@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - Vue Composition API
-  - Vue 3
-  - 组件注册
   - 响应式数据
   - 生命周期钩子
+  - Vue 3
   - 常见报错解决
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_f8a8d15d-4dea-4cbe-acb1-d197bdf06b78.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

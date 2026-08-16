@@ -12,15 +12,13 @@ categories:
   - 前端开发
 
 tags:
-  - PostgreSQL
-  - 数据库连接
-  - 客户端工具
-  - 安全性
   - 性能优化
-  - 连接管理
+  - PostgreSQL
+  - 安全性
   - 常见问题
----
+  - 数据库连接
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_12_29 14_56_30.png" title="2024_12_29 14_56_30.png" alt="2024_12_29 14_56_30.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 生命周期钩子
-  - Composition API
-  - 生命周期阶段
-  - onMounted
   - 错误处理
-  - 常见问题
+  - 生命周期钩子
+  - composition api
+  - onMounted
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_02d37572-e982-4487-ad92-913a207eff81.jpeg" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

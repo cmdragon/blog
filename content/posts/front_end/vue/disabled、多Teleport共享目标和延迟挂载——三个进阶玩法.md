@@ -14,12 +14,8 @@ categories:
 tags:
   - 基础入门
   - Teleport
-  - disabled
-  - 共享目标
-  - defer
-  - 延迟挂载
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年6月17日 00_10_04.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

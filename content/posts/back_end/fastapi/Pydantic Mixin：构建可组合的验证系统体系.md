@@ -11,17 +11,8 @@ summary:
 categories:
   - fastapi
 
-tags:
-  - Pydantic Mixin模式
-  - 校验逻辑复用
-  - 组合式校验设计
-  - 动态验证注入
-  - 元类编程技术
-  - 校验策略解耦
-  - 企业级验证架构
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2025_03_22 21_42_25.png" title="2025_03_22 21_42_25.png" alt="2025_03_22 21_42_25.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

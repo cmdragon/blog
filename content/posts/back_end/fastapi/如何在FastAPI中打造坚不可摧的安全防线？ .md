@@ -13,15 +13,12 @@ categories:
 
 tags:
   - fastapi
-  - 中间件
-  - 安全防护
-  - 请求拦截
-  - JWT认证
   - 错误处理
   - 最佳实践
+  - 中间件
+  - 安全防护
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/open04/2025-06-20/1121831c26c52dcd7e0b875082a7a1c4.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

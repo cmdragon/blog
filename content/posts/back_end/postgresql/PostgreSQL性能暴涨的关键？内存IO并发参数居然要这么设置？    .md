@@ -14,15 +14,10 @@ categories:
 
 tags:
   - 基础入门
-  - 内存调优
-  - IO调优
-  - 并发调优
   - 性能优化
   - 数据库配置
-  - 参数调优
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/d56e39d1af3e47e2994b0970d54794c7~tplv-5jbd59dj06-aigc.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

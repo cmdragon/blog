@@ -9,15 +9,12 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/2026年7月3日 19_35_15.png
 categories:
   - vue
 tags:
-  - Vue
-  - Vue Router
-  - 路由
-  - SPA
-  - 客户端路由
   - 基础入门
+  - Vue
+  - 路由
+  - Vue Router
+
 ---
-
-
 ## 一、从一个最熟悉的现象说起：点击链接，页面变了
 
 你打开一个传统的网站，比如一个用 WordPress 搭的博客。点击一篇文章标题，浏览器地址栏变了，页面白一下，然后新内容出来了。

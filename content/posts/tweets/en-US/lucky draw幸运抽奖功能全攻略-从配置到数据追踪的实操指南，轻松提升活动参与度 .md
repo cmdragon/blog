@@ -14,14 +14,9 @@ categories:
 
 tags:
   - lucky draw
-  - lottery feature
-  - data tracking
-  - operation guide
-  - multi-scenario application
-  - weight settings
   - data visualization
----
 
+---
 ![cover.png](https://api2.cmdragon.cn/upload/cmder/images/generated_image_668dde21-dc2a-4fd6-bb08-2bbaa4ad7efd.png)
 
 ## Lucky Draw Feature Usage Guide: Complete Process Analysis from Configuration to Data Tracking

@@ -15,14 +15,10 @@ categories:
 tags:
   - 基础入门
   - 计算属性
-  - 表单验证
-  - 动态数据过滤
-  - 可组合函数
   - 响应式数据
-  - 计算属性缓存
+  - 表单验证
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/macbg_00005_.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 表单组件
   - v-model
   - 双向绑定
-  - 组件封装
   - 表单验证
-  - 组件库设计
+  - 组件封装
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_41ea0870-bd11-466c-8df4-2ad6b1308647.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

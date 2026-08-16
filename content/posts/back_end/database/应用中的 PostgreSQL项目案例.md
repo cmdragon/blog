@@ -14,13 +14,10 @@ categories:
 tags:
   - PostgreSQL
   - 数据库管理
-  - 实际应用
-  - 项目案例
-  - 数据分析
-  - 技术架构
   - 最佳实践
----
+  - 数据分析
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2025_02_03 15_00_48.png" title="2025_02_03 15_00_48.png" alt="2025_02_03 15_00_48.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

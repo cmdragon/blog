@@ -11,17 +11,8 @@ summary:
 categories:
   - tweets
 
-tags:
-  - Multi-Stream Live Aggregator
-  - Multi-Stream Live
-  - HLS Protocol
-  - Custom Layout
-  - Real-time Switching
-  - News Tracking
-  - Sports Multi-Angle
 
 ---
-
 ![](https://api2.cmdragon.cn/upload/cmder/images/4d9d26ae40a54db7b1f0a8774a90d50c~tplv-5jbd59dj06-image.png)
 
 📺 **Say goodbye to the trouble of switching back and forth!** The "Multi-Stream Live Aggregator" lets you control N live streams simultaneously, everything under your control!

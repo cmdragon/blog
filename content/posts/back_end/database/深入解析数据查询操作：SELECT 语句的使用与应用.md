@@ -12,15 +12,13 @@ categories:
   - 前端开发
 
 tags:
-  - 数据查询
-  - SQL
-  - PostgreSQL
-  - SELECT 语句
-  - 数据库管理
   - 性能优化
-  - 编程实践
----
+  - PostgreSQL
+  - 数据库管理
+  - SQL
+  - 数据查询
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2025_01_06 14_55_03.png" title="2025_01_06 14_55_03.png" alt="2025_01_06 14_55_03.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

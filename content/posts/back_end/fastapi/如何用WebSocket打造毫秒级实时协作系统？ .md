@@ -12,16 +12,12 @@ categories:
   - fastapi
 
 tags:
-  - 实时协作系统
-  - WebSocket
-  - FastAPI
+  - fastapi
   - Vue.js
+  - WebSocket
   - 冲突解决
-  - 压力测试
-  - 部署方案
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/779ae1883fdee19e890c5dad42cb06f5.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

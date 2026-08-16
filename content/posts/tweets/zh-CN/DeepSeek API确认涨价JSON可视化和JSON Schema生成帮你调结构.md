@@ -8,13 +8,10 @@ summary: DeepSeek API确认涨价登上热搜，调用成本上升更要省 toke
 categories:
   - tweets
 tags:
-  - DeepSeek API确认涨价
   - JSON可视化
   - JSON Schema生成
-  - API调试
-  - 降本增效
----
 
+---
 ## 热词背景：DeepSeek API确认涨价
 
 **DeepSeek API确认涨价**登上热搜，调用成本上升，每一分 token 都得花在刀刃上。优化 API 请求的第一步，是把 JSON 请求体和响应结构看清楚——结构越精简，token 越省。

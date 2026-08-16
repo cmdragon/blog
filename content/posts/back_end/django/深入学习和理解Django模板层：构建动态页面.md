@@ -7,15 +7,13 @@ categories:
   - 后端开发
 
 tags:
-  - Django模板
-  - 表单处理
-  - 静态文件
-  - 国际化
   - 性能优化
+  - 表单处理
+  - 国际化
   - 安全防护
-  - 部署实践
----
+  - 静态文件
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_05 20_55_55.png" title="2024_05_05 20_55_55.png" alt="2024_05_05 20_55_55.png"/>
 
 ## **第一章：模板语法基础**

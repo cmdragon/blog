@@ -13,15 +13,13 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt
+  - nuxt
   - 组件
-  - 管理
-  - 注册
-  - 导入
-  - 自动化
   - 开发
----
+  - 管理
+  - 导入
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_09_15 13_48_27.png" title="2024_09_15 13_48_27.png" alt="2024_09_15 13_48_27.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

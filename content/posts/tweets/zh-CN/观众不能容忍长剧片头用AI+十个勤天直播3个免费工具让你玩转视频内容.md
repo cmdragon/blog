@@ -8,16 +8,13 @@ summary: 观众为何不能容忍长剧片头用AI，头条热度46万！十个�
 categories:
   - tweets
 tags:
-  - 长剧片头AI
-  - 十个勤天直播
   - AI文生图
-  - 多平台直播聚合
   - 小红书文案
   - 免费在线工具
   - AI绘画
-  - 直播聚合
----
+  - 多平台直播聚合
 
+---
 > 🔧 本文推荐工具：
 > - 🎨 [AI文生图](https://tools.cmdragon.cn/zh/apps/text-to-image-ai) — AI绘画/AI生图/文字生成图片
 > - 📺 [多平台直播聚合](https://tools.cmdragon.cn/zh/apps/multi-live-aggregator) — 直播聚合/多平台直播

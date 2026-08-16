@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 组件开发
+  - 性能优化
   - 组件通信
   - 组合式API
-  - 性能优化
-  - 插槽
-  - Pinia
+  - 组件开发
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_e108304c-68f9-4d26-a71c-5ebde8acef4a.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

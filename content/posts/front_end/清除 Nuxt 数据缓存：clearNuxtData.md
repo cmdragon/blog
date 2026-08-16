@@ -12,15 +12,13 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt
+  - nuxt
+  - 组件
+  - 路由
   - 缓存
   - 数据
-  - 清除
-  - 组件
-  - 刷新
-  - 路由
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_08_06 10_02_16.png" title="2024_08_06 10_02_16.png" alt="2024_08_06 10_02_16.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

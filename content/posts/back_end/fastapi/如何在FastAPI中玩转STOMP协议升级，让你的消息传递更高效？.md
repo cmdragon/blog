@@ -12,16 +12,11 @@ categories:
   - fastapi
 
 tags:
-  - FastAPI
-  - STOMP协议
-  - WebSocket
-  - 消息路由
-  - 发布/订阅模式
-  - 协议升级
+  - fastapi
   - 错误处理
+  - WebSocket
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/192339e3b9cd2603a752918cb90d4535.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

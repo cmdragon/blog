@@ -12,15 +12,13 @@ categories:
    - 前端开发
 
 tags:
-   - Nuxt
-   - 钩子
-   - 导入
-   - 目录
-   - 灵活
-   - 可扩展
-   - 模块化
----
+  - nuxt
+  - 钩子
+  - 模块化
+  - 导入
+  - 目录
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_10_30 15_03_54.png" title="2024_10_30 15_03_54.png" alt="2024_10_30 15_03_54.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

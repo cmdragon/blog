@@ -13,14 +13,12 @@ categories:
 
 tags:
   - Vue 3
+  - 持续集成
   - ESLint
   - Prettier
-  - 代码规范
-  - 持续集成
-  - 代码审查
   - 团队协作
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_06_11 13_23_28.png" title="2024_06_11 13_23_28.png" alt="2024_06_11 13_23_28.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

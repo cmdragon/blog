@@ -12,15 +12,13 @@ categories:
    - 前端开发
 
 tags:
-   - Nuxt
-   - 生命周期
-   - 路由
-   - 钩子
-   - 自定义
-   - 管理
-   - 导航
----
+  - nuxt
+  - 钩子
+  - 生命周期
+  - 自定义
+  - 路由
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_10_25 13_35_54.png" title="2024_10_25 13_35_54.png" alt="2024_10_25 13_35_54.png"/>
 
 

@@ -12,15 +12,9 @@ categories:
   - fastapi
 
 tags:
-  - Pydantic多态模型
-  - 鉴别器模式
-  - 类型安全路由
-  - 动态模型解析
-  - 继承校验策略
-  - 联合类型验证
   - 企业级API设计
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2025_03_20 11_03_47.png" title="2025_03_20 11_03_47.png" alt="2025_03_20 11_03_47.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

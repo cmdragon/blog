@@ -14,13 +14,9 @@ categories:
 tags:
   - 基础入门
   - SFC
-  - 关注点分离
-  - 组件内聚
-  - 资源导入
-  - HMR
   - 代码组织
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年6月18日 18_54_41.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

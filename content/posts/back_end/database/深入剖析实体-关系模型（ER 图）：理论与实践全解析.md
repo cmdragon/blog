@@ -12,15 +12,10 @@ categories:
   - 前端开发
 
 tags:
-  - 实体-关系模型
-  - ER 图
   - 数据库设计
-  - UML 图
   - 数据建模
-  - 关系模型
-  - 数据抽象
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2025_02_08 16_23_17.png" title="2025_02_08 16_23_17.png" alt="2025_02_08 16_23_17.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

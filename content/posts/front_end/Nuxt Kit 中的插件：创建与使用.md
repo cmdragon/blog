@@ -12,15 +12,13 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt 3
-  - 插件创建
-  - Nuxt Kit
-  - TypeScript
-  - 应用插件
-  - 代码示例
   - 最佳实践
----
+  - TypeScript
+  - Nuxt 3
+  - 代码示例
+  - Nuxt Kit
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_09_19 08_57_11.png" title="2024_09_19 08_57_11.png" alt="2024_09_19 08_57_11.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

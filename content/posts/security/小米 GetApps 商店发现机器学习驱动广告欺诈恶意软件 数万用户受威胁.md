@@ -14,16 +14,8 @@ categories:
 
 tags:
   - 小米GetApps
-  - 机器学习恶意软件
-  - 广告欺诈
-  - Android应用
-  - 第三方平台扩散
-  - 设备资源消耗
-  - 用户安全威胁
 
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_9eb0b3d7-3e0e-4ab6-bce2-11862f421d47.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 # 小米海外应用商店GetApps遭机器学习驱动恶意软件入侵，数万用户面临广告欺诈威胁

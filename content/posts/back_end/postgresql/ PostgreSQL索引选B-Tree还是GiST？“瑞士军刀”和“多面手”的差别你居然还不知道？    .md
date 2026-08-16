@@ -14,15 +14,11 @@ categories:
 
 tags:
   - 基础入门
-  - B-Tree索引
-  - GiST索引
   - 查询优化
   - 数据库性能
-  - 空间数据查询
-  - 全文搜索
+  - b-tree索引
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/dde6dfba68f34bfa98aa160bcf409d53~tplv-5jbd59dj06-aigc.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

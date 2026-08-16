@@ -8,16 +8,13 @@ summary: 不要长期向AI倾泻心事，微博热度65万！AI改写创意职�
 categories:
   - tweets
 tags:
-  - 不要向AI倾泻心事
-  - AI改写创意职场
-  - AI冲击短剧行业
   - AI文生图
   - 小红书文案
   - 歌词生成
   - 免费在线工具
   - AI安全创作
----
 
+---
 > 🔧 本文推荐工具：
 > - 🎨 [AI文生图](https://tools.cmdragon.cn/zh/apps/text-to-image-ai) — AI绘画/AI生图/文字生成图片
 > - 📕 [小红书文案](https://tools.cmdragon.cn/zh/apps/xiaohongshu-copywriter) — 小红书写作/种草文案

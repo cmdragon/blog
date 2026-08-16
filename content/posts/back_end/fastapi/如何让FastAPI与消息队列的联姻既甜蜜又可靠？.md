@@ -13,17 +13,13 @@ categories:
   - fastapi
 
 tags:
-  - 消息队列
-  - FastAPI
-  - 事务保障
-  - 幂等性
+  - fastapi
+  - 数据一致性
   - RabbitMQ
   - 分布式系统
-  - 数据一致性
+  - 消息队列
 
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 

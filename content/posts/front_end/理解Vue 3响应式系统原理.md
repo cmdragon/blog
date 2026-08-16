@@ -7,15 +7,11 @@ categories:
    - 前端开发
 
 tags:
-   - Vue3.x
-   - TypeScript
-   - SFC优化
-   - Composition-API
-   - Ref&Reactive
-   - 性能提升
-   - 响应式原理
----
+  - TypeScript
+  - 性能提升
+  - 响应式原理
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_28 15_46_34.png" title="2024_05_28 15_46_34.png" alt="2024_05_28 15_46_34.png"/>
 
 ## 第一章：Vue 3简介

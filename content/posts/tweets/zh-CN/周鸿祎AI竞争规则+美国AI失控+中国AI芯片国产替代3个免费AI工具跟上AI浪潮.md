@@ -8,16 +8,13 @@ summary: 周鸿祎称AI竞争规则正发生巨变，头条热度311万！美国
 categories:
   - tweets
 tags:
-  - 周鸿祎AI竞争
-  - 美国AI失控
-  - 中国AI芯片
   - AI文生图
   - 小红书文案
   - 歌词生成
   - 免费在线工具
   - AI绘画
----
 
+---
 > 🔧 本文推荐工具：
 > - 🎨 [AI文生图](https://tools.cmdragon.cn/zh/apps/text-to-image-ai) — AI绘画/AI生图/文字生成图片
 > - 📕 [小红书文案](https://tools.cmdragon.cn/zh/apps/xiaohongshu-copywriter) — 小红书写作/种草文案

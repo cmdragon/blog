@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 页面加载优化
-  - Tree-shaking
-  - 代码分割
   - SSR
-  - SSG
+  - 代码分割
   - 懒加载
+  - SSG
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

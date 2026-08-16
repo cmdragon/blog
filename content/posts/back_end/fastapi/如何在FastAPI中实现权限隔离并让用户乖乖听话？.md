@@ -13,15 +13,11 @@ categories:
 
 tags:
   - fastapi
-  - 权限隔离
-  - 用户认证
-  - 角色识别
   - 访问控制
+  - 用户认证
   - JWT令牌
-  - 数据级权限
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/openb7/2025-06-19/cd2f49e0392765c787fb0df7d9b658ea.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

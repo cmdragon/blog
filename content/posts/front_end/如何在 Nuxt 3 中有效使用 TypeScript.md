@@ -12,15 +12,12 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt 3
   - TypeScript
-  - 项目创建
-  - 类型检查
+  - Nuxt 3
   - 组件开发
-  - 严格模式
-  - 自动生成类型
----
+  - 类型检查
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_09_09 14_02_44.png" title="2024_09_09 14_02_44.png" alt="2024_09_09 14_02_44.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -13,15 +13,12 @@ categories:
 
 tags:
   - fastapi
-  - OAuth2
   - JWT
+  - OAuth2
   - 安全认证
-  - 微服务
   - 权限控制
-  - 密钥管理
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2ab157172c405fd7ae2b4a20fea5b06f.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
+  - 组合式API
   - 生命周期钩子
   - 选项式API
-  - 组合式API
   - 组件生命周期
-  - 生命周期最佳实践
-  - 错误解决方案
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_0e92d080-5465-4096-baa5-aa4ff9aeafa6.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

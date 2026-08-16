@@ -12,15 +12,13 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt
+  - nuxt
   - 钩子
-  - app
-  - resolve
   - 生命周期
   - 中间件
   - 插件
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_10_17 13_54_46.png" title="2024_10_17 13_54_46.png" alt="2024_10_17 13_54_46.png"/>
 
 

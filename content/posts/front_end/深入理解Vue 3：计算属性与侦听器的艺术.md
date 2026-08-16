@@ -7,15 +7,13 @@ categories:
    - 前端开发
 
 tags:
-   - Vue3
-   - 计算属性
-   - 侦听器
-   - 路由
-   - 模板
-   - 性能优化
-   - 实战案例
----
+  - 性能优化
+  - 路由
+  - 计算属性
+  - 实战案例
+  - 侦听器
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_30 16_02_10.png" title="2024_05_30 16_02_10.png" alt="2024_05_30 16_02_10.png"/>
 
 ## 前言

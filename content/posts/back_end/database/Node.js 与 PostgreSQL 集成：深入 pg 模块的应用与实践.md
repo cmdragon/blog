@@ -12,15 +12,13 @@ categories:
   - 前端开发
 
 tags:
-  - Node.js
+  - 性能优化
   - PostgreSQL
-  - pg 模块
+  - 最佳实践
   - 数据库集成
   - Web 开发
-  - 性能优化
-  - 最佳实践
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2025_02_05 15_14_55.png" title="2025_02_05 15_14_55.png" alt="2025_02_05 15_14_55.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

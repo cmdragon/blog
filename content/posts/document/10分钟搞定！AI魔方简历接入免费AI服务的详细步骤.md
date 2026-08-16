@@ -13,16 +13,11 @@ categories:
   - 帮助文档
 
 tags:
-  - AI 魔方简历
-  - cmdragon
-  - 免费AI服务
-  - 配置AI服务
-  - API Key
-  - 教程资源
   - 在线工具
+  - cmdragon
+  - API Key
 
 ---
-
 ## 第一步：访问 AI 魔方简历
 
 打开 AI 魔方简历网站：  

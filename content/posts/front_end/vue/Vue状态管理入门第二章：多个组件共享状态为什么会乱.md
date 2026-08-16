@@ -10,15 +10,13 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/2026年6月30日 17_17_33.pn
 categories:
   - vue
 tags:
+  - 组件通信
   - Vue
   - 状态管理
-  - 组件通信
   - props
   - emits
-  - 共享状态
+
 ---
-
-
 ## 一、单组件很简单，多组件才是真问题
 
 上一章我们说过，一个组件内部其实已经在管理自己的状态。

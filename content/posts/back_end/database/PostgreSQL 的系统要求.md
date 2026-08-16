@@ -12,15 +12,13 @@ categories:
   - 前端开发
 
 tags:
-  - PostgreSQL
-  - 系统要求
-  - 硬件配置
-  - 操作系统
-  - 数据库管理
-  - 安装指南
   - 性能优化
----
+  - PostgreSQL
+  - 数据库管理
+  - 系统要求
+  - 操作系统
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_12_25 16_31_20.png" title="2024_12_25 16_31_20.png" alt="2024_12_25 16_31_20.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

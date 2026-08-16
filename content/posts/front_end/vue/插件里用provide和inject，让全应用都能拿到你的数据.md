@@ -13,14 +13,12 @@ categories:
 
 tags:
   - 基础入门
+  - 依赖注入
   - Plugins
   - provide
   - inject
-  - 依赖注入
-  - 插件数据传递
-  - Symbol
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年5月26日 21_07_08.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -14,15 +14,11 @@ categories:
 
 tags:
   - 基础入门
-  - 性能分析
-  - 全链路优化
-  - 电商后台
-  - Chrome DevTools
   - 代码分割
-  - 虚拟化
+  - 性能分析
+  - Chrome DevTools
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

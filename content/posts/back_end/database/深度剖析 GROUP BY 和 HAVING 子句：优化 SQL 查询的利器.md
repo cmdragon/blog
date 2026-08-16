@@ -12,15 +12,13 @@ categories:
   - 前端开发
 
 tags:
+  - 性能优化
   - SQL
-  - GROUP BY
-  - HAVING
   - 数据分析
   - 聚合函数
-  - 数据分组
-  - 性能优化
----
+  - GROUP BY
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2025_01_14 16_14_15.png" title="2025_01_14 16_14_15.png" alt="2025_01_14 16_14_15.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -14,15 +14,10 @@ categories:
 
 tags:
   - 基础入门
-  - Vue3 .native修饰符
   - defineEmits
   - 原生DOM事件
-  - Vue2 vs Vue3事件处理
-  - 组件事件透传
-  - 多根元素事件处理
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_94b07c7f-062b-4351-831a-eda36798f11d.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

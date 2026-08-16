@@ -13,16 +13,9 @@ categories:
   - tweets
 
 tags:
-  - 歌词创作
   - AI工具
-  - 音乐灵感
-  - 词曲人必备
-  - 原创歌词
-  - 音乐流派
-  - 创作效率
 
 ---
-
 ![89fa655168dd49738c00301a2701787e~tplv-5jbd59dj06-image.png](https://tools.cmdragon.cn/static/images/apps/lyrics-generator.png)
 
 

@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 模板引用协同使用
-  - 响应式系统
   - 组件通信
   - 生命周期钩子
+  - 响应式系统
   - v-for模板引用
-  - 第三方库集成
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_d9199d06-8d8e-4fda-95d7-8208c809c6cf.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

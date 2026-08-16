@@ -8,15 +8,11 @@ summary: B站热搜88万热度！用AI通关高难度跑步游戏引全网围观
 categories:
   - tweets
 tags:
-  - AI生图
-  - 游戏手柄检测
-  - 键盘测试
-  - 跑步游戏
-  - 王楚然
-  - 游戏工具
   - 免费在线工具
----
+  - 键盘测试
+  - 游戏工具
 
+---
 > 🎮 今日推荐工具：
 > - [AI文生图](https://tools.cmdragon.cn/zh/apps/text-to-image-ai) — 一句话生成精美图片
 > - [手柄检测](https://tools.cmdragon.cn/zh/apps/gamepad-detector) — 检测游戏手柄

@@ -12,16 +12,13 @@ categories:
   - fastapi
 
 tags:
-  - 事务回滚
   - fastapi
+  - web开发
   - SQLAlchemy
-  - Alembic
   - 数据库迁移
-  - Web开发
   - Python
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/open08/2025-05-10/69ec9a799973f9e2614fd4d8e4583abe.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -13,15 +13,12 @@ categories:
 
 tags:
   - fastapi
-  - 认证系统
   - JWT
-  - 用户注册
   - 权限验证
-  - Swagger UI
-  - 安全工具函数
+  - 认证系统
+  - 用户注册
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/openab/2025-06-06/29cf0fdf7274191b4a977ffc364eeed9.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

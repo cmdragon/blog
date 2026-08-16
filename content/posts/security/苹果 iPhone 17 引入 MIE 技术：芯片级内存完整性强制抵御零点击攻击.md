@@ -12,17 +12,8 @@ summary:
 categories:
   - 隐私安全
 
-tags:
-  - iPhone 17
-  - 内存完整性强制（MIE）
-  - 零点击间谍软件
-  - 芯片级安全技术
-  - 垂直整合
-  - 第三方应用接入
-  - 安全竞赛
 
 ---
-
 ![0155975a9f3f40c3ba6e548666a2ebe4~tplv-5jbd59dj06-image.png](/images/0155975a9f3f40c3ba6e548666a2ebe4~tplv-5jbd59dj06-image.png)
 
 当智能手机行业仍聚焦于AI性能、屏幕刷新率等参数竞赛时，苹果公司推出的iPhone 17系列却以一项“底层技术革命”改写了竞争逻辑——

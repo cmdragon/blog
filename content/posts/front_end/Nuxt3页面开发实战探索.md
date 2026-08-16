@@ -13,14 +13,10 @@ categories:
 
 tags:
   - nuxt
-  - 页面开发
-  - 实战探索
   - 前端开发
-  - Vue3框架
   - 服务器端渲染
-  - 开发流程优化
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_06_19 13_51_07.png" title="2024_06_19 13_51_07.png" alt="2024_06_19 13_51_07.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

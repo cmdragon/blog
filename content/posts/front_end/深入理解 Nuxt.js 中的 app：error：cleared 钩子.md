@@ -12,15 +12,13 @@ categories:
    - 前端开发
 
 tags:
-   - nuxt
-   - 错误处理
-   - 生命周期
-   - 钩子
-   - 状态恢复
-   - 用户反馈
-   - 应用开发
----
+  - nuxt
+  - 钩子
+  - 错误处理
+  - 生命周期
+  - 应用开发
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_09_28 09_53_15.png" title="2024_09_28 09_53_15.png" alt="2024_09_28 09_53_15.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

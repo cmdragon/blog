@@ -15,14 +15,11 @@ categories:
 tags:
   - 基础入门
   - Vue
-  - 事件绑定
-  - v-on
   - 事件处理
-  - 方法
   - 事件修饰符
+  - v-on
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_7a8b9ccd-0582-45b7-aec3-73af12f88c38.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

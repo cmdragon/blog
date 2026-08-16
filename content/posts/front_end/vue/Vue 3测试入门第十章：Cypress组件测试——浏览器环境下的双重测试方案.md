@@ -12,17 +12,14 @@ summary:
 categories:  
   - vue
 
-tags:  
-- 基础入门
-- Cypress
-- 组件测试
-- 浏览器测试
-- 原生DOM事件
-- 样式测试
-- 测试框架
+tags:
+  - 基础入门
+  - 组件测试
+  - Cypress
+  - 测试框架
+  - 原生DOM事件
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年7月21日 18_45_28.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

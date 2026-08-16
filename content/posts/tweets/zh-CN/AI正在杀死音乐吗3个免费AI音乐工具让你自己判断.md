@@ -11,14 +11,12 @@ categories:
   - tweets
 
 tags:
-  - AI正在杀死音乐吗
-  - 歌词生成
-  - AI聊天
-  - Strudel音乐工作室
-  - AI音乐
   - 免费工具
----
+  - AI聊天
+  - 歌词生成
+  - Strudel音乐工作室
 
+---
 > **立即体验**：[歌词生成](https://tools.cmdragon.cn/zh/apps/lyrics-generator) | [更多1000+免费工具](https://tools.cmdragon.cn/zh/apps?category=trending)
 >
 > 无需下载安装，打开浏览器即用，完全免费！

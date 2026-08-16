@@ -12,17 +12,14 @@ summary:
 categories:  
   - vue
 
-tags:  
-- 基础入门
-- 自动化测试
-- 单元测试
-- 组件测试
-- 端到端测试
-- 测试金字塔
-- 测试策略
+tags:
+  - 基础入门
+  - 单元测试
+  - 自动化测试
+  - 组件测试
+  - 测试策略
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年7月6日 21_55_30.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

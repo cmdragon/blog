@@ -13,14 +13,10 @@ categories:
 
 tags:
   - nuxt
-  - 混合渲染
-  - 路由规则
   - 预渲染
-  - 实验功能
-  - 静态生成
   - 服务器渲染
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_08_12 09_43_15.png" title="2024_08_12 09_43_15.png" alt="2024_08_12 09_43_15.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

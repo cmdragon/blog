@@ -9,16 +9,13 @@ summary: 深入讲解 Vue 3 中 provide 的组合式 API 用法、选项式 API 
 categories:
   - vue
 tags:
-  - provide
   - 依赖注入
+  - 组件通信
+  - 状态管理
   - 组合式API
   - 选项式API
-  - 应用层配置
-  - 组件通信
-  - 插件开发
-  - 状态管理
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年5月9日 23_28_12.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

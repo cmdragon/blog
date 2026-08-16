@@ -11,13 +11,12 @@ categories:
   - tweets
 
 tags:
-  - 减肥
-  - BMI计算器
-  - 体质指数
-  - 体重管理
   - 免费工具
----
+  - BMI计算器
+  - 减肥
+  - 体质指数
 
+---
 > **立即体验**：[BMI计算器 - 免费在线工具](https://tools.cmdragon.cn/zh/apps/bmi-calculator) | [更多1000+免费工具](https://tools.cmdragon.cn/zh/apps?category=trending)
 >
 > 无需下载安装，打开浏览器即用，完全免费！

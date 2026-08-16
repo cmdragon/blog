@@ -15,14 +15,9 @@ categories:
 tags:
   - 基础入门
   - 事件处理
-  - 参数传递
-  - 内联事件处理
   - $event
-  - 原生事件
-  - 参数顺序
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_4c9ae29f-bb0b-4006-9f87-38c7464c464e.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

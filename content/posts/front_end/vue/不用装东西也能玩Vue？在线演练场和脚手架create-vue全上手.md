@@ -13,14 +13,11 @@ categories:
 
 tags:
   - 基础入门
-  - 工具链
-  - 在线演练场
-  - create-vue
   - Vite
+  - 工具链
   - Vue CLI
-  - 脚手架
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年6月19日 19_19_03.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

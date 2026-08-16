@@ -14,15 +14,11 @@ categories:
 
 tags:
   - 基础入门
-  - 组件数据传递
-  - 数组语法Props
-  - 对象语法Props
-  - 响应式Props
-  - 单向数据流
   - 组件通信
+  - 单向数据流
+  - 响应式Props
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_27bcdba4-81f7-419b-add2-9ee5c477f06a.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

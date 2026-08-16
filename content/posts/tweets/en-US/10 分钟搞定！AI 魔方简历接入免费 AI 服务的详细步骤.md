@@ -12,16 +12,11 @@ categories:
   - tweets
 
 tags:
-  - AI Magic Resume
   - cmdragon
-  - Free AI Services
-  - Configure AI Service
-  - API Key
-  - Tutorial Resources
   - Online Tools
+  - API Key
 
 ---
-
 ## Step 1: Access AI Magic Resume
 
 Open the AI Magic Resume website:  

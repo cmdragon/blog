@@ -13,13 +13,11 @@ categories:
 
 tags:
   - 基础入门
+  - Transition
   - Teleport
   - 模态框
-  - 通知栏
-  - 全屏遮罩
-  - Transition
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年6月17日 14_53_23.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

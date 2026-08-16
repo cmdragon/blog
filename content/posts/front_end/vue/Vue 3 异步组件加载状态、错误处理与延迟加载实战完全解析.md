@@ -9,16 +9,13 @@ summary: 通过实战案例深入讲解 Vue 3 异步组件的加载状态管理�
 categories:
   - vue
 tags:
-  - 异步组件
-  - 加载状态
   - 错误处理
-  - 重试机制
-  - 延迟加载
   - 用户体验
   - 实战案例
-  - 前端优化
----
+  - 异步组件
+  - 加载状态
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年5月12日 13_22_10.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
