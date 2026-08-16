@@ -43,7 +43,7 @@ Footer 模板 - 使用通用组件
           热门标签
         </h3>
         <div class="flex flex-wrap gap-2">
-          {{ range first 10 (sort .Site.Taxonomies.tags "Count" "desc") }}
+          {{ range first 10 .Site.Taxonomies.tags.ByCount }}
           <a href="{{ .Page.Permalink }}" class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">
             #{{ .Page.Title }} <span class="text-xs opacity-70">({{ .Count }})</span>
           </a>
