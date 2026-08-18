@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "bun run build:css && hugo server",
     "build": "npm run build:css && python scripts/normalize_tags.py && hugo --gc --minify --cleanDestinationDir && python scripts/split_search_index.py && python scripts/split_sitemap.py",
-    "build:css": "tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/tailwind.min.css --minify",
+    "build:css": "node scripts/build_css_guard.mjs",
     "clean": "hugo --cleanDestinationDir",
     "preview": "npm run build && hugo server --buildDrafts --buildFuture",
     "sitemap": "python scripts/split_sitemap.py",
