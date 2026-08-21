@@ -42,13 +42,34 @@ Footer 模板 - 使用通用组件
           </div>
           热门标签
         </h3>
-        <div class="flex flex-wrap gap-2">
-          {{ range first 10 .Site.Taxonomies.tags.ByCount }}
-          <a href="{{ .Page.Permalink }}" class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300">
-            #{{ .Page.Title }} <span class="text-xs opacity-70">({{ .Count }})</span>
-          </a>
-          {{ end }}
+        <!-- 热门标签改由 tag-cloud-data.js 动态渲染：
+             标签计数随新增文章变化，若内嵌在 HTML 会导致全站页面内容变化、
+             部署时缓存全部失效。数据独立成文件后，新增文章只重传那一个 JS。 -->
+        <div class="flex flex-wrap gap-2" id="footer-tag-cloud">
         </div>
+
+        {{- /* 热门标签数据独立文件：新增文章只重传本 JS，全站 HTML 保持稳定 */ -}}
+        {{- $tagTmpl := resources.Get "tag-cloud-data.tmpl.js" }}
+        {{- $tagJS := $tagTmpl | resources.ExecuteAsTemplate "tag-cloud-data.js" . }}
+        <script src="{{ $tagJS.RelPermalink }}"></script>
+        <script>
+          // 将热门标签填充到 footer 标签云（样式与服务端渲染时保持一致）
+          (function () {
+            var box = document.getElementById('footer-tag-cloud');
+            if (!box || !Array.isArray(window.__TAG_CLOUD__)) return;
+            window.__TAG_CLOUD__.forEach(function (t) {
+              var a = document.createElement('a');
+              a.href = t.url;
+              a.className = 'text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-colors duration-300';
+              a.textContent = '#' + t.name + ' ';
+              var s = document.createElement('span');
+              s.className = 'text-xs opacity-70';
+              s.textContent = '(' + t.count + ')';
+              a.appendChild(s);
+              box.appendChild(a);
+            });
+          })();
+        </script>
       </div>
     </div>
     

@@ -1,9 +1,9 @@
 {{ define "main" }}
 {{- /* 使用通用列表容器组件 */ -}}
-{{ partial "components/list-container.html" (dict 
+{{ partial "components/list-container.html" (dict
   "title" .Title
   "description" .Description
-  "icon" "mdi:text"
+  "eyebrow" "posts"
   "paginator" .Paginator
   "showAds" true
   "adInterval" 3

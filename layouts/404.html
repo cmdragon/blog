@@ -1,11 +1,15 @@
 {{ define "main" }}
-<div class="container mx-auto px-4 sm:px-6 relative py-8">
+<div class="container mx-auto px-4 sm:px-6 relative">
     <div class="bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 rounded-xl shadow-md border border-gray-100 dark:border-gray-700 overflow-hidden">
         <!-- 页面内容 -->
         <div class="flex flex-col lg:flex-row">
             <!-- 左侧内容区 -->
             <div class="w-full lg:w-2/3 p-6 lg:p-12">
-                <h1 class="text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-indigo-600 text-transparent bg-clip-text">404</h1>
+                <div class="flex items-baseline gap-3 mb-4">
+                    <span class="text-xs uppercase tracking-[0.25em] text-blue-600 dark:text-blue-400 font-semibold">— not found</span>
+                    <span class="h-px flex-1 bg-gradient-to-r from-blue-300 via-blue-200 to-transparent dark:from-blue-700 dark:via-blue-800"></span>
+                </div>
+                <h1 class="text-5xl lg:text-6xl font-black mb-6 text-gray-900 dark:text-white tracking-tight">404<span class="text-blue-600 dark:text-blue-400">.</span></h1>
                 
                 <div class="flex items-center mb-6">
                     <div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-2 rounded-lg text-white mr-3 shadow-md">

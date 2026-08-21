@@ -71,12 +71,7 @@
                 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
                     <span class="text-gray-800 dark:text-gray-200" itemprop="name" title="{{ if .Title }}{{ .Title }}{{ else }}未命名页面{{ end }}">
                         {{- if .Title -}}
-                            {{- $titleLength := len .Title -}}
-                            {{- if gt $titleLength 30 -}}
-                                {{ substr .Title 0 30 }}...
-                            {{- else -}}
-                                {{- .Title -}}
-                            {{- end -}}
+                            {{- .Title | truncate 30 -}}
                         {{- else -}}
                             未命名页面
                         {{- end -}}

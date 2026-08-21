@@ -346,7 +346,9 @@
                     </script>
                 </div>
                 
-                <!-- 最近更新 -->
+                <!-- 最近更新（sticky：侧边栏其余模块滚过后，此模块吸附在视口内，
+                     与文章页 TOC 的 lg:sticky lg:top-24 惯例保持一致） -->
+                <div class="lg:sticky lg:top-24">
                 <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 border border-gray-100 dark:border-gray-700">
                     <h3 class="text-xl font-bold mb-4 flex items-center">
                         <iconify-icon icon="mdi:clock-outline" class="mr-2" width="24" height="24"></iconify-icon>
@@ -369,6 +371,7 @@
                             </a>
                         {{ end }}
                     </div>
+                </div>
                 </div>
             </aside>
         </div>

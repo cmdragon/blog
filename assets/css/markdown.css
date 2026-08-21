@@ -4,9 +4,10 @@
 
 /* 基础文本样式 */
 .article-content {
-  font-size: 1.05rem;
-  line-height: 1.7;
+  font-size: 1.0625rem;
+  line-height: 1.75;
   color: #374151;
+  overflow-wrap: break-word;
 }
 
 .dark .article-content {
@@ -74,14 +75,6 @@
   color: #f3f4f6;
 }
 
-.article-content h3::before {
-  content: "#";
-  color: #1e40af;
-  margin-right: 0.5rem;
-  opacity: 0.7;
-  font-weight: 400;
-}
-
 .article-content h4 {
   font-size: 1.25rem;
   color: #1f2937;
@@ -113,9 +106,9 @@
 
 /* 段落样式 */
 .article-content p {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  word-break: break-all;
+  margin-top: 1.05rem;
+  margin-bottom: 1.05rem;
+  overflow-wrap: break-word;
 }
 
 /* 强调和加粗 */
@@ -137,14 +130,25 @@
 
 /* 引用块 */
 .article-content blockquote {
-  border-left: 4px solid;
-  border-image: linear-gradient(to bottom, #1e40af, #4f46e5) 1;
-  padding: 1rem 1.5rem;
+  position: relative;
+  border-radius: 0.75rem;
+  padding: 1.25rem 1.5rem 1.25rem 2rem;
   margin: 1.5rem 0;
   background-color: #f0f7ff;
-  border-radius: 0 0.5rem 0.5rem 0;
   color: #4b5563;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+/* 渐变竖条：与圆角共存，视觉更精致 */
+.article-content blockquote::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(to bottom, #1e40af, #4f46e5);
 }
 
 .dark .article-content blockquote {
@@ -176,8 +180,6 @@
 .article-content ul li {
   position: relative;
   padding-left: 0.5rem;
-
-  word-break: break-all;
   overflow-wrap: break-word;
   hyphens: auto;
 }
@@ -248,14 +250,14 @@
 }
 
 .article-content thead {
-  background-color: #dbeafe;
+  background: linear-gradient(to right, #dbeafe, #e0e7ff);
   color: #1e40af;
   font-weight: 600;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 .dark .article-content thead {
-  background-color: #1e40af;
+  background: linear-gradient(to right, #1e40af, #4338ca);
   color: #ffffff;
   font-weight: 600;
 }

@@ -17,8 +17,8 @@ module.exports = {
       // 自定义颜色
       colors: {
         primary: blue[700],
-        'primary-light': blue[700],
-        'primary-dark': blue[200],
+        'primary-light': blue[400],
+        'primary-dark': blue[800],
       },
       
       // 排版配置

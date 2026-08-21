@@ -26,21 +26,17 @@ social_links:
 
 # 快速链接配置
 quick_links:
-  - name: "高清影视库"
-    url: "https://movie.cmdragon.cn/"
-    icon: "mdi:movie-search-outline"
-    
-  - name: "精选漫画阅读"
-    url: "https://manga.cmdragon.cn/"
-    icon: "mdi:comic-thought-bubble-outline"
-    
-  - name: "实用在线工具"
+  - name: "CMDragon Tools"
     url: "https://tools.cmdragon.cn/zh"
     icon: "mdi:tools"
-    
-  - name: "热映影视推荐"
-    url: "https://hot-movie.cmdragon.cn/"
-    icon: "mdi:filmstrip"
+
+  - name: "Lint Nest"
+    url: "https://linknest.cmdragon.cn/"
+    icon: "mdi:compass-outline"
+
+  - name: "AI魔术简历"
+    url: "https://magic-resume.cmdragon.cn/app/dashboard/vip"
+    icon: "mdi:file-account-outline"
 
 # 域名切换配置
 domains:

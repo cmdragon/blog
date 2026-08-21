@@ -1,20 +1,25 @@
 {{ define "main" }}
-<div class="container mx-auto px-4 sm:px-6 py-6" role="main" aria-label="搜索页面">
-    <!-- 搜索头部 -->
-    <header class="mb-6" role="banner">
-        <div class="flex items-center justify-between mb-4">
-            <h1 class="text-2xl font-bold text-blue-700 dark:text-blue-400">搜索</h1>
-            <span id="search-stats" class="text-sm text-gray-500 dark:text-gray-400" aria-live="polite"></span>
+<div class="container mx-auto px-4 sm:px-6" role="main" aria-label="搜索页面">
+    <!-- 搜索头部：与分类/标签页统一的 eyebrow + 大标题模式 -->
+    <header class="mb-10">
+        <div class="flex items-baseline gap-3">
+            <span class="text-xs uppercase tracking-[0.25em] text-blue-600 dark:text-blue-400 font-semibold">— search</span>
+            <span class="h-px flex-1 bg-gradient-to-r from-blue-300 via-blue-200 to-transparent dark:from-blue-700 dark:via-blue-800"></span>
         </div>
-        <p class="text-sm text-gray-600 dark:text-gray-400 flex items-center">
-            <iconify-icon icon="mdi:magnify" class="mr-2" width="16" height="16" aria-hidden="true"></iconify-icon>
+        <div class="mt-3 flex flex-wrap items-end justify-between gap-x-6 gap-y-2">
+            <h1 class="text-4xl sm:text-5xl font-black text-gray-900 dark:text-white tracking-tight">
+                搜索<span class="text-blue-600 dark:text-blue-400">.</span>
+            </h1>
+            <span id="search-stats" class="text-sm text-gray-500 dark:text-gray-400 pb-2" aria-live="polite"></span>
+        </div>
+        <p class="mt-3 text-sm text-gray-500 dark:text-gray-400">
             <span id="search-query-display" aria-live="polite">在博客中查找内容</span>
         </p>
     </header>
     
     <!-- 搜索输入框 -->
     <div class="mb-6" role="search">
-        <div class="flex items-center border border-gray-200 dark:border-gray-700 rounded-md overflow-hidden focus-within:ring-2 focus-within:ring-blue-700 focus-within:border-transparent transition-shadow shadow-sm hover:shadow">
+        <div class="flex items-center border border-gray-200 dark:border-gray-700 rounded-md overflow-hidden focus-within:ring-2 focus-within:ring-blue-500 focus-within:border-transparent transition-shadow shadow-sm hover:shadow">
             <input 
                 id="search-input" 
                 type="text" 
