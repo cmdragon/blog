@@ -1,10 +1,10 @@
 ---
-url: /posts/ai-duanpian-22fenzhong-text-to-image-xhs-2026/
+url: /posts/ai-duanpian-22fenzhong-2026-0823/
 title: AI短片二十二分钟怎么做出？AI文生图+小红书文案帮你做
-date: 2026-08-22T00:00:00+08:00
-lastmod: 2026-08-22T00:00:00+08:00
+date: 2026-08-23T00:00:00+08:00
+lastmod: 2026-08-23T00:00:00+08:00
 author: cmdragon
-summary: AI短片二十二分钟登上B站热搜，AI生成短片成新趋势。用AI文生图、小红书文案、歌词生成三款免费工具，帮你把短片脚本、分镜插画与配乐一次搞定。
+summary: AI短片二十二分钟再度登上B站热搜，AI生成短片成持续热点。用AI文生图、小红书文案、歌词生成三款免费工具，帮你把短片脚本、分镜插画与配乐一次搞定。
 categories:
   - tweets
 tags:
@@ -17,7 +17,7 @@ tags:
 
 ## 热词背景：AI短片二十二分钟
 
-**AI短片二十二分钟**登上 B站热搜，热度近 59 万，用 AI 做完整短片成了新玩法。想自己动手做一部？三款免费 AI 工具帮你把前期素材一次备齐。
+**AI短片二十二分钟**再次登上 B站热搜，热度超 31 万，用 AI 做完整短片仍是热门玩法。想自己动手做一部？三款免费 AI 工具帮你把前期素材一次备齐。
 
 ## 工具推荐
 
@@ -59,4 +59,4 @@ tags:
 
 ![编程智域公众号二维码](https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg)
 
-关注**编程智域 前端至全栈交流与成长**，阅读完整文章：[AI短片二十二分钟怎么做出？AI文生图+小红书文案帮你做](https://blog.cmdragon.cn/posts/ai-duanpian-22fenzhong-text-to-image-xhs-2026/)
+关注**编程智域 前端至全栈交流与成长**，阅读完整文章：[AI短片二十二分钟怎么做出？AI文生图+小红书文案帮你做](https://blog.cmdragon.cn/posts/ai-duanpian-22fenzhong-2026-0823/)
