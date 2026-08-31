@@ -9,7 +9,7 @@
     "clean": "hugo --cleanDestinationDir",
     "preview": "npm run build && hugo server --buildDrafts --buildFuture",
     "sitemap": "python scripts/split_sitemap.py",
-    "deploy": "bun run build && wrangler pages deploy",
+    "deploy": "bun run build && wrangler pages deploy && python scripts/indexnow_submit.py",
     "deploy:only": "wrangler pages deploy"
   },
   "dependencies": {
