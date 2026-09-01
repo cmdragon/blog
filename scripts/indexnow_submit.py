@@ -27,6 +27,7 @@ IndexNow 自动提交脚本
 import sys
 import os
 import json
+import time
 import argparse
 import urllib.request
 import urllib.error
@@ -39,8 +40,10 @@ from xml.etree import ElementTree as ET
 # 已通过 static/7d3f9a2c6b8e4105af27c9d1e4b6308f.txt 部署。
 DEFAULT_KEY = "7d3f9a2c6b8e4105af27c9d1e4b6308f"
 
-# IndexNow 官方端点
-INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
+# IndexNow 提交端点
+# 实测（2026-08-31）：共享端点 api.indexnow.org 虽返回 200，但转发给 Bing 不可靠，
+# Bing 面板始终看不到提交记录；改为直连 Bing 端点（GET/POST 实测 200 接收成功）
+INDEXNOW_ENDPOINT = "https://www.bing.com/indexnow"
 
 # 密钥验证文件路径（相对站点根）
 KEY_FILE_NAME = f"{DEFAULT_KEY}.txt"
@@ -52,8 +55,8 @@ POST_SITEMAP = "sitemap-posts.xml"
 CACHE_DIR = Path(".cache")
 CACHE_FILE = CACHE_DIR / "indexnow_submitted.json"
 
-# 单次提交的 URL 批大小（IndexNow 允许上限 10000，200 较稳妥）
-BATCH_SIZE = 200
+# 单次提交的 URL 批大小（IndexNow 官方上限 10000，与 nuxt_comic 可用脚本一致）
+BATCH_SIZE = 10000
 
 # 首次运行（无缓存）时，仅提交最近多少天内的 URL，避免一次性提交上千条
 DEFAULT_SINCE_DAYS = 7
@@ -195,7 +198,7 @@ def compute_pending(entries, cache, include_updated, since_days, submit_all):
 
 
 def submit_batch(host, key, key_location, url_list):
-    """提交一批 URL，返回 (success: bool, status_or_error: str)。"""
+    """提交一批 URL，返回 (success: bool, status: str, body: str)。"""
     payload = {
         "host": host,
         "key": key,
@@ -211,11 +214,19 @@ def submit_batch(host, key, key_location, url_list):
     )
     try:
         with urllib.request.urlopen(req, timeout=HTTP_TIMEOUT) as resp:
-            return True, str(resp.status)
+            status = resp.status
+            body = resp.read().decode("utf-8", "replace")
+            log(f"[indexnow] 响应状态码：{status}")
+            log(f"[indexnow] 响应体：{body}")
+            return True, status, body
     except urllib.error.HTTPError as e:
-        return False, f"HTTP {e.code}: {e.read().decode('utf-8', 'replace')[:200]}"
+        body = e.read().decode("utf-8", "replace")
+        log(f"[indexnow] 响应状态码：{e.code}")
+        log(f"[indexnow] 响应体：{body}")
+        return False, e.code, body
     except Exception as e:
-        return False, str(e)[:200]
+        log(f"[indexnow] 异常：{e}")
+        return False, "ERR", str(e)[:500]
 
 
 def main():
@@ -286,12 +297,16 @@ def main():
     batches = [pending[i:i + batch_size] for i in range(0, len(pending), batch_size)]
     for idx, batch in enumerate(batches, 1):
         url_list = [u for u, _ in batch]
-        ok, info = submit_batch(host, key, key_location, url_list)
+        ok, status, _ = submit_batch(host, key, key_location, url_list)
         if ok:
-            log(f"[indexnow] 第 {idx}/{len(batches)} 批提交成功（{len(url_list)} 条）。")
+            log(f"[indexnow] 第 {idx}/{len(batches)} 批提交成功（{len(url_list)} 条）- 状态码 {status}")
             success_urls.extend(batch)
         else:
-            log(f"[indexnow] 第 {idx}/{len(batches)} 批提交失败：{info}（继续后续批次）")
+            log(f"[indexnow] 第 {idx}/{len(batches)} 批提交失败 - 状态码 {status}，本批不记入缓存，下次运行重试")
+            break
+        # 批间稍作等待，避免触发 IndexNow 频率限制
+        if idx < len(batches):
+            time.sleep(2)
 
     if success_urls:
         submitted = cache.get("submitted", {})
