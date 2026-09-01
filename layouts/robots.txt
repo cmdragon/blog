@@ -29,5 +29,36 @@ Allow: /
 # 设置爬行延迟时间
 Crawl-delay: 5
 
+# AI 搜索与 AI 助手爬虫：显式放行，保证内容可被引用
+# （GPTBot / ChatGPT-User / OAI-SearchBot：OpenAI；PerplexityBot：Perplexity；
+#   ClaudeBot / anthropic-ai：Claude；Google-Extended：Google AI Overviews / Gemini；
+#   Applebot-Extended：Apple 智能；Bytespider：豆包）
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
 # 站点地图位置
 Sitemap: {{ .Site.BaseURL }}sitemap.xml 
