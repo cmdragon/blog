@@ -1,5 +1,5 @@
 ---
-url: /posts/a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2/
+url: /posts/vue-transition-component-css-2026/
 title: Vue的Transition组件到底能干啥？6个CSS类名帮你搞定进出动画
 date: 2026-05-31T10:00:00+08:00
 lastmod: 2026-05-31T10:00:00+08:00

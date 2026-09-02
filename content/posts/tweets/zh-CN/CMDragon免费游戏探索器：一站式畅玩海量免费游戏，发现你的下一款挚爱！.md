@@ -1,5 +1,5 @@
 ---
-url: /posts/a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6/
+url: /posts/cmdragon-free-game-explorer-2025/
 title: CMDragon免费游戏探索器：一站式畅玩海量免费游戏，发现你的下一款挚爱！
 date: 2025-07-02T08:37:03+08:00
 lastmod: 2025-07-02T08:37:03+08:00

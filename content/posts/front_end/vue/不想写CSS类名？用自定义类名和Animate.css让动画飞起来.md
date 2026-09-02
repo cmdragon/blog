@@ -1,5 +1,5 @@
 ---
-url: /posts/b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3/
+url: /posts/vue-animate-css-custom-class-2026/
 title: 不想写CSS类名？用自定义类名和Animate.css让动画飞起来
 date: 2026-05-31T11:00:00+08:00
 lastmod: 2026-05-31T11:00:00+08:00

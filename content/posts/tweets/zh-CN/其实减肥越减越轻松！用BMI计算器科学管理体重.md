@@ -1,5 +1,5 @@
 ---
-url: /posts/weight-loss-bmi-calculator-2026/
+url: /posts/weight-loss-gets-easier-bmi-2026/
 title: 其实减肥越减越轻松！用BMI计算器科学管理体重，3步告别盲目减肥
 date: 2026-07-19T6:30:00+08:00
 lastmod: 2026-07-19T6:30:00+08:00
