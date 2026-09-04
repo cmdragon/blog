@@ -12,17 +12,14 @@ summary:
 categories:  
   - vue
 
-tags:  
-- 基础入门
-- Cypress
-- E2E测试
-- 端到端测试
-- 集成测试
-- Todo实战
-- 测试自动化
+tags:
+  - 基础入门
+  - 集成测试
+  - Cypress
+  - 端到端测试
+  - E2E测试
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年7月21日 18_47_29.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

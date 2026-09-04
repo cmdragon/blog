@@ -14,13 +14,10 @@ categories:
 tags:
   - 基础入门
   - Transition
-  - 可复用过渡
-  - 动态过渡
   - 组件封装
   - TransitionGroup
-  - 动画复用
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年6月3日 21_57_41.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

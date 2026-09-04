@@ -13,15 +13,12 @@ categories:
 
 tags:
   - 基础入门
+  - 组件通信
+  - 高级技巧
   - 作用域插槽
   - 数据传递
-  - 解构语法
-  - 组件通信
-  - Props传递
-  - 插槽Props
-  - 高级技巧
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年5月3日 20_37_55.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

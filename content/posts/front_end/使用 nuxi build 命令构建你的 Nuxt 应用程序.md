@@ -12,15 +12,13 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt
+  - nuxt
   - 构建
-  - 生产
-  - 部署
-  - 预渲染
-  - 环境变量
   - 日志
----
+  - 预渲染
+  - 部署
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_08_30 11_08_14.png" title="2024_08_30 11_08_14.png" alt="2024_08_30 11_08_14.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -11,6 +11,11 @@
 {{ $limit := default 6 .limit }}
 {{ $minScore := default 0.3 .minScore }}
 
+{{- /* 将全站文章数据抽离到独立 JS 文件，避免每个页面内联全部文章导致新增文章时全站重传 */ -}}
+{{ $dataTmpl := resources.Get "related-posts-data.tmpl.js" }}
+{{ $dataJS := $dataTmpl | resources.ExecuteAsTemplate "related-posts-data.js" . }}
+{{ $dataURL := $dataJS.RelPermalink }}
+
 {{- /* 获取所有文章，排除当前文章 */ -}}
 {{ $allPages := where site.RegularPages "Type" "in" site.Params.mainSections }}
 {{ $allPages = where $allPages "Permalink" "ne" $page.Permalink }}
@@ -40,6 +45,9 @@
 <!-- 加载 string-similarity CDN -->
 <script src="https://cdn.jsdelivr.net/npm/string-similarity@4.0.4/umd/string-similarity.min.js"></script>
 
+<!-- 全站文章数据（独立文件，新增文章时只重传本文件） -->
+<script src="{{ $dataURL }}"></script>
+
 <script>
 /**
  * 相关文章推荐功能
@@ -65,21 +73,12 @@
     url: CONFIG.currentUrl
   };
   
-  // 所有文章数据
-  const allPosts = [
-    {{- range $allPages }}
-    {
-      title: '{{ .Title | safeJS }}',
-      summary: '{{ .Summary | plainify | safeJS }}',
-      content: '{{ .Plain | truncate 1000 | safeJS }}',
-      categories: {{ .Params.categories | jsonify }},
-      tags: {{ .Params.tags | jsonify }},
-      url: '{{ .Permalink }}',
-      date: '{{ .Date.Format "2006-01-02" }}',
-      cover: '{{ .Params.cover | default "" }}'
-    },
-    {{- end }}
-  ];
+  // 所有文章数据（来自独立 JS 文件 window.__ALL_POSTS__）
+  const allPosts = window.__ALL_POSTS__ || [];
+  if (!Array.isArray(allPosts) || allPosts.length === 0) {
+    console.error('[相关文章] 全站文章数据未加载');
+    return;
+  }
   
   /**
    * 计算两篇文章的相似度

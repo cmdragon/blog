@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 条件渲染
-  - v-if
-  - v-show
-  - 组件拆分
-  - 单文件组件
   - 组件通信
+  - v-if
+  - 条件渲染
+  - v-show
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_a8423174-52ef-47c8-ac78-15c509f56a44.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -7,16 +7,12 @@ categories:
   - 前端开发
 
 tags:
+  - 性能优化
   - 生命周期
   - 异步加载
-  - 通信原理
   - 父子通信
-  - 兄弟通信
-  - 跨层通信
-  - 性能优化
+
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_27 18_48_19.png" title="2024_05_27 18_48_19.png" alt="2024_05_27 18_48_19.png"/>
 
 

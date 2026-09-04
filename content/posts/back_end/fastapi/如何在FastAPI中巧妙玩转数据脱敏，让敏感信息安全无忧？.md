@@ -13,15 +13,11 @@ categories:
 
 tags:
   - fastapi
-  - 数据脱敏
   - Pydantic模型
-  - 敏感字段处理
-  - Vault加密
-  - 动态脱敏策略
   - 安全实践
+  - 数据脱敏
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/8917b3ffc1f2ba22b8806a397fe73176.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

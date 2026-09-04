@@ -15,14 +15,11 @@ categories:
 tags:
   - 基础入门
   - 计算属性
-  - Options API
-  - Composition API
-  - 缓存机制
   - 响应式数据
-  - 实战场景
+  - composition api
+  - 缓存机制
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/74057a1e940e4e8cae9a816209b7330c~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

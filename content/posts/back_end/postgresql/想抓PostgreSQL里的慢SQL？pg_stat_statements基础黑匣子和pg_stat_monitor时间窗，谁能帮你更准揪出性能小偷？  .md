@@ -14,16 +14,12 @@ categories:
 
 tags:
   - 基础入门
-    - PostgreSQL
-  - 性能监控
-  - pg_stat_statements
-  - SQL优化
+  - PostgreSQL
   - 数据库管理
+  - 性能监控
   - 性能分析
-  - pg_stat_monitor
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/781d5d3d0c6e4f4c99c71fecc18478c9~tplv-5jbd59dj06-aigc.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

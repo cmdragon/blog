@@ -14,15 +14,9 @@ categories:
 
 tags:
   - 基础入门
-  - 侦听器暂停
-  - 侦听器恢复
-  - 手动停止侦听器
   - 副作用清理
-  - onCleanup
-  - AbortController
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_9ba80088-1fba-4148-994d-adf2834d42aa.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

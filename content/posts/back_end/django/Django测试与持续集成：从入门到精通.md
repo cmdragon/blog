@@ -7,15 +7,13 @@ categories:
   - 后端开发
 
 tags:
-  - Django
-  - 测试
-  - CI/CD
+  - django
   - 优化
   - 部署
-  - 监控
-  - 迭代
----
+  - 测试
+  - CI/CD
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_18 16_43_35.png" title="2024_05_18 16_43_35.png" alt="2024_05_18 16_43_35.png"/>
 
 ## 第1章：Django测试基础

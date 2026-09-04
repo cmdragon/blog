@@ -9,15 +9,10 @@ categories:
    - 前端开发
 
 tags:
-   - 过渡
-   - 动画
-   - 组件
-   - 效果
-   - 模式
-   - 列表
-   - 钩子
----
+  - 钩子
+  - 组件
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_06_04 19_02_32.png" title="2024_06_04 19_02_32.png" alt="2024_06_04 19_02_32.png"/>
 
 ### 第一部分：基础知识

@@ -14,13 +14,9 @@ categories:
 tags:
   - 基础入门
   - Transition
-  - 深层级过渡
-  - duration
-  - appear
   - key属性
-  - 过渡细节
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年6月3日 21_48_28.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

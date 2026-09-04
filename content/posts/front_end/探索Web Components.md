@@ -12,15 +12,11 @@ categories:
   - 前端开发
 
 tags:
-  - Web Components
-  - 原生DOM
-  - 封装性
-  - 组件化
-  - 生命周期
-  - 高级设计
   - 性能优化
----
+  - 生命周期
+  - 组件化
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_06_16 14_05_45.png" title="2024_06_16 14_05_45.png" alt="2024_06_16 14_05_45.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

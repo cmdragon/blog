@@ -7,16 +7,10 @@ categories:
   - 后端开发
 
 tags:
-  - Django ORM
-  - 模型设计
-  - 数据库关系
   - 性能优化
   - 数据安全
-  - 查询操作
-  - 模型继承
+
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_03 18_32_02.png" title="2024_05_03 18_32_02.png" alt="2024_05_03 18_32_02.png"/>
 
 ## 第一章：引言

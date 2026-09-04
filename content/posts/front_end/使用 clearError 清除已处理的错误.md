@@ -12,15 +12,13 @@ categories:
    - 前端开发
 
 tags:
-   - 错误处理
-   - clearError
-   - 重定向
-   - Vue组件
-   - 表单提交
-   - 状态管理
-   - 用户体验
----
+  - 错误处理
+  - 状态管理
+  - 用户体验
+  - 重定向
+  - Vue组件
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_08_05 11_19_44.png" title="2024_08_05 11_19_44.png" alt="2024_08_05 11_19_44.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

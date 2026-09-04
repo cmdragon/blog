@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 表达式索引
-  - 数据库优化
   - PostgreSQL
-  - 索引维护
-  - 查询性能
+  - 数据库优化
   - 数据库索引
+  - 查询性能
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/e211b2119c9d43aaafefee6e23e774c1~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -7,15 +7,12 @@ categories:
   - 后端开发
 
 tags:
-  - 微服务
-  - Django
+  - django
   - 负载均衡
   - RESTful
-  - API网关
-  - 容器化
-  - 监控安全
----
+  - 微服务
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_21 20_18_51.png" title="2024_05_21 20_18_51.png" alt="2024_05_21 20_18_51.png"/>
 
 ## 前言

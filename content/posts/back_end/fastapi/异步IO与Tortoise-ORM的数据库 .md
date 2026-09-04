@@ -12,16 +12,13 @@ categories:
   - fastapi
 
 tags:
-  - 异步IO
-  - Tortoise-ORM
-  - 数据库操作
   - fastapi
   - 异步编程
-  - 连接池
+  - Tortoise-ORM
+  - 数据库操作
   - 事务管理
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/open6a/2025-04-29/f09146a0e9eb787bd773e557e4dd75d1.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

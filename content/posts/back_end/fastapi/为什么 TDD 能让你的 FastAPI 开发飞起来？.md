@@ -13,17 +13,10 @@ categories:
   - fastapi
 
 tags:
-  - TDD
-  - FastAPI
+  - fastapi
   - 测试驱动开发
-  - 红绿重构循环
-  - 接口契约优先
-  - 防止回归错误
-  - 测试即文档
 
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 

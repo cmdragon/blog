@@ -11,13 +11,11 @@ categories:
 tags:
   - Vue
   - 状态管理
-  - Pinia
-  - Vuex
-  - DevTools
   - TypeScript
+  - Vuex
+  - Pinia
+
 ---
-
-
 ## 一、手写 store 不是错，只是它有天花板
 
 前几章我们已经用 `reactive()`、`ref()`、`computed()` 做出了简单 store。

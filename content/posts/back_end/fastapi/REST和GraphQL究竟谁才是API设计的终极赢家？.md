@@ -12,16 +12,11 @@ categories:
   - fastapi
 
 tags:
-  - REST API
+  - fastapi
   - GraphQL
-  - FastAPI
-  - 数据获取模式
   - 类型系统
-  - 性能基准测试
-  - 混合架构
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/866e17138801891872a55ccafbb0a0b8.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

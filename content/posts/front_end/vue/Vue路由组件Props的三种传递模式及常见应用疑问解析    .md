@@ -14,15 +14,8 @@ categories:
 
 tags:
   - 基础入门
-  - 路由组件Props
-  - Props布尔模式
-  - Props对象模式
-  - Props函数模式
-  - 命名视图Props
-  - RouterView Props
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_0a97e47f-cbe1-4975-b171-0a60325b90a6.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

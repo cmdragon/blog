@@ -15,14 +15,11 @@ categories:
 tags:
   - 基础入门
   - Vue.js
-  - Vue 3
-  - 事件绑定
   - 事件处理
+  - Vue 3
   - 事件修饰符
-  - 事件对象
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_2ea7adb3-4470-4fb6-8b76-9de94af54844.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

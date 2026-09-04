@@ -1,16 +1,19 @@
 {{ define "main" }}
-<div class="container mx-auto px-4 sm:px-6 py-6">
-    <header class="mb-6" role="banner">
-        <div class="flex items-center justify-between mb-4">
-            <h1 class="text-2xl font-bold text-blue-700 dark:text-blue-400">归档</h1>
-            <span class="text-sm text-gray-500 dark:text-gray-400">
+<div class="container mx-auto px-4 sm:px-6">
+    <header class="mb-10">
+        <div class="flex items-baseline gap-3">
+            <span class="text-xs uppercase tracking-[0.25em] text-blue-600 dark:text-blue-400 font-semibold">— archives</span>
+            <span class="h-px flex-1 bg-gradient-to-r from-blue-300 via-blue-200 to-transparent dark:from-blue-700 dark:via-blue-800"></span>
+        </div>
+        <div class="mt-3 flex flex-wrap items-end justify-between gap-x-6 gap-y-2">
+            <h1 class="text-4xl sm:text-5xl font-black text-gray-900 dark:text-white tracking-tight">
+                归档<span class="text-blue-600 dark:text-blue-400">.</span>
+            </h1>
+            <span class="text-sm text-gray-500 dark:text-gray-400 pb-2">
                 共 {{ len site.RegularPages }} 篇文章
             </span>
         </div>
-        <p class="text-sm text-gray-600 dark:text-gray-400 flex items-center">
-            <iconify-icon icon="mdi:archive-outline" class="mr-2" width="16" height="16" aria-hidden="true"></iconify-icon>
-            所有文章按时间归档
-        </p>
+        <p class="mt-3 text-sm text-gray-500 dark:text-gray-400">所有文章按时间归档</p>
     </header>
     
     <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 border border-gray-200 dark:border-gray-700">

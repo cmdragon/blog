@@ -9,16 +9,13 @@ summary: 系统梳理 Vue 3 provide/inject 开发中的常见报错场景与排�
 categories:
   - vue
 tags:
-  - 报错排查
   - 性能优化
-  - 最佳实践
-  - 调试技巧
   - 依赖注入
-  - DevTools
-  - 内存管理
+  - 最佳实践
   - 组件通信
----
+  - 调试技巧
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年5月10日 23_41_54.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

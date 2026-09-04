@@ -12,15 +12,13 @@ categories:
   - 前端开发
 
 tags:
-  - PostgreSQL
-  - 初始设置
-  - 数据库配置
   - 性能优化
+  - PostgreSQL
   - 安全性
+  - 数据库配置
   - 用户管理
-  - 日志管理
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_12_26 23_49_29.png" title="2024_12_26 23_49_29.png" alt="2024_12_26 23_49_29.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

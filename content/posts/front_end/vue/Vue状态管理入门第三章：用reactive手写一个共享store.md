@@ -11,13 +11,11 @@ categories:
 tags:
   - Vue
   - 状态管理
-  - reactive
-  - store
-  - 共享状态
   - 组合式API
+  - reactive
+  - 共享状态
+
 ---
-
-
 ## 一、store 是什么
 
 先别把 store 想复杂。

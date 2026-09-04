@@ -14,15 +14,9 @@ categories:
 
 tags:
   - 基础入门
-  - Vue 3 Props
-  - Props声明方式
-  - Props传递细节
-  - 数据修改策略
-  - 引用类型Props处理
   - 常见报错解决方案
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_577ccea9-51f3-4e44-a961-76cc5648feff.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

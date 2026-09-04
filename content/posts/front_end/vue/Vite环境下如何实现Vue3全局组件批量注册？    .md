@@ -14,15 +14,11 @@ categories:
 
 tags:
   - 基础入门
-  - 全局组件注册
-  - 批量注册
   - Webpack
   - Vite
-  - require.context
-  - import.meta.glob
+  - 全局组件注册
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_6ed6fba5-23ff-44f2-aa25-338cfaa4d8aa.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

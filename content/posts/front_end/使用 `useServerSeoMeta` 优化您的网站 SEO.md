@@ -12,15 +12,11 @@ categories:
   - 前端开发
 
 tags:
-  - SEO优化
   - nuxt
+  - SEO优化
   - 服务器渲染
-  - 网站性能
-  - OpenGraph
-  - Twitter卡
-  - 元标签设置
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_07_31 17_40_32.png" title="2024_07_31 17_40_32.png" alt="2024_07_31 17_40_32.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

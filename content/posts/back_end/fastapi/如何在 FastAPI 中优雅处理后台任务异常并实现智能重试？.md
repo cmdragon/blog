@@ -12,16 +12,13 @@ categories:
   - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
+  - 异步编程
+  - Pydantic
   - BackgroundTasks
   - 异常处理
-  - 任务重试
-  - 异步编程
-  - 指数退避
-  - Pydantic
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/7e3986f7e7bda51b9974b9c1c5b566a8.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

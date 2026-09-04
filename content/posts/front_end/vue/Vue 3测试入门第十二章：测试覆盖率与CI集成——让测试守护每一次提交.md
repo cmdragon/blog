@@ -12,17 +12,13 @@ summary:
 categories:  
   - vue
 
-tags:  
-- 基础入门
-- 测试覆盖率
-- CI集成
-- GitHub Actions
-- husky
-- lint-staged
-- 自动化测试
+tags:
+  - 基础入门
+  - 自动化测试
+  - 测试覆盖率
+  - GitHub Actions
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年7月21日 18_49_55.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

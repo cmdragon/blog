@@ -7,15 +7,11 @@ categories:
   - 后端开发
 
 tags:
-  - 缓存系统
-  - Redis优点
-  - Memcached优缺点
-  - Django缓存
   - 数据库优化
   - 性能监控
   - 安全实践
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_11 18_37_29.png" title="2024_05_11 18_37_29.png" alt="2024_05_11 18_37_29.png"/>
 
 **引言**

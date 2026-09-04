@@ -13,14 +13,10 @@ categories:
 
 tags:
   - PostgreSQL
-  - 数据库历史
-  - 开源软件
   - 关系型数据库
-  - 数据库技术
-  - 计算机科学
   - 软件开发
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_12_23 11_55_30.png" title="2024_12_23 11_55_30.png" alt="2024_12_23 11_55_30.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

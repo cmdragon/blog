@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 模板引用
   - 组件通信
-  - Composition API
+  - composition api
+  - 模板引用
   - defineExpose
-  - v-for模板引用
-  - 函数式模板引用
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_3aef21cc-6bd3-4f18-bc2c-e885a49a7350.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

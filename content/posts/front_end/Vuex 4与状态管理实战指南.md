@@ -11,17 +11,12 @@ categories:
   - 前端开发
 
 tags:
-  - Vuex
   - 状态管理
   - Vue.js
   - 模块化
-  - 异步操作
-  - 状态变更
-  - 动态注册
+  - Vuex
 
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_06_06 21_12_22.png" title="2024_06_06 21_12_22.png" alt="2024_06_06 21_12_22.png"/>
 
 ## **第一部分 Vuex基础**

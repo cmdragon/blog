@@ -12,15 +12,13 @@ categories:
    - 前端开发
 
 tags:
-   - 服务端渲染
-   - Vue
-   - SSR
-   - 数据获取
-   - API调用
-   - 请求头
-   - useFetch
----
+  - Vue
+  - SSR
+  - useFetch
+  - 数据获取
+  - 服务端渲染
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_07_24 16_16_28.png" title="2024_07_24 16_16_28.png" alt="2024_07_24 16_16_28.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

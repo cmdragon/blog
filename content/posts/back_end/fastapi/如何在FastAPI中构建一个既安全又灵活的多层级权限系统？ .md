@@ -13,15 +13,12 @@ categories:
 
 tags:
   - fastapi
-  - 权限系统
-  - 多层级访问控制
-  - OAuth2
-  - JWT
   - 依赖注入
+  - JWT
+  - OAuth2
   - RBAC
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/openc8/2025-06-14/c5773f29931f03a141e7927115830e36.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

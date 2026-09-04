@@ -13,15 +13,12 @@ categories:
   - tweets
 
 tags:
-  - OCR识别
-  - 文字提取
-  - 图片转文本
   - 免费工具
-  - 文档处理
   - AI工具
   - 效率神器
----
+  - 文档处理
 
+---
 ![xw_20250705203634.png](/images/xw_20250705203634.png)
 在数字化办公时代，我们常遇到图片/PDF中的文字无法直接编辑的困扰。[文本OCR工具](https://tools.cmdragon.cn/zh/apps/text-ocr)
 ，您只需3步即可实现精准文字提取：

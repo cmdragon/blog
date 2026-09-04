@@ -7,15 +7,10 @@ categories:
   - 后端开发
 
 tags:
-  - Django核心
-  - 路由系统
-  - 视图系统
-  - ORM管理
   - 中间件
   - Web框架
-  - 登录装饰器
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_01 20_39_00.png" title="2024_05_01 20_39_00.png" alt="2024_05_01 20_39_00.png"/>
 
 ## 第一章：**Django简介**

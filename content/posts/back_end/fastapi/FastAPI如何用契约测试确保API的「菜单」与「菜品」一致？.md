@@ -13,17 +13,12 @@ categories:
   - fastapi
 
 tags:
-  - 契约测试
-  - FastAPI
-  - OpenAPI规范
-  - Schemathesis
-  - API一致性
-  - Pydantic模型
+  - fastapi
   - 持续集成
+  - Pydantic模型
+  - OpenAPI规范
 
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 

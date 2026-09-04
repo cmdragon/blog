@@ -7,16 +7,13 @@ categories:
   - 后端开发
 
 tags:
-  - Django
-  - 请求处理
-  - 响应生成
-  - 模板渲染
-  - 表单处理
   - 中间件
+  - django
   - 异常处理
+  - 表单处理
+  - 请求处理
+
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_04 17_51_09.png" title="2024_05_04 17_51_09.png" alt="2024_05_04 17_51_09.png"/>
 ## 第一章：Django框架概述
 

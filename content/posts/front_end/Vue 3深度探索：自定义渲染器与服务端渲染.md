@@ -12,15 +12,10 @@ categories:
   - 前端开发
 
 tags:
-  - 自定义渲染
-  - 虚拟DOM
-  - Vue框架
-  - SSR服务端渲染
-  - 同构应用
-  - 数据预取
   - 状态管理
----
+  - 同构应用
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_06_14 12_53_07.png" title="2024_06_14 12_53_07.png" alt="2024_06_14 12_53_07.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

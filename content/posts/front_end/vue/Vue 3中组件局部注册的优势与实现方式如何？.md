@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 局部组件注册
-  - <script setup>
   - 选项式API
-  - 组件注册方法
+  - 局部组件注册
   - 应用场景
-  - Tree-Shaking
+  - <script setup>
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_47e7fe6f-8a7e-4eeb-80bf-b25598173567.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

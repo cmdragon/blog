@@ -13,14 +13,12 @@ categories:
 
 tags:
   - nuxt
+  - 组件
+  - 性能
   - 缓存
   - 数据
-  - 共享
-  - 组件
-  - 更新
-  - 性能
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_07_22 14_42_50.png" title="2024_07_22 14_42_50.png" alt="2024_07_22 14_42_50.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

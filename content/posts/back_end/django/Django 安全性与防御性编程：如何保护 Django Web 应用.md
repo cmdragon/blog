@@ -7,15 +7,10 @@ categories:
   - 后端开发
 
 tags:
-  - CSRF
-  - XSS
   - SQL
-  - Upload
-  - HTTPOnly
-  - Password
-  - Session
----
+  - XSS
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_13 20_31_47.png" title="2024_05_13 20_31_47.png" alt="2024_05_13 20_31_47.png"/>
 
 ## 跨站请求伪造（CSRF）

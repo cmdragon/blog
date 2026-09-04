@@ -12,16 +12,13 @@ categories:
   - fastapi
 
 tags:
-  - FastAPI
-  - Celery
-  - 异步任务处理
-  - Redis
-  - 任务监控
-  - 任务持久化
+  - fastapi
   - 错误处理
+  - Celery
+  - Redis
+  - 异步任务处理
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/b3fbe534ad5ddbd18d1674161d591ac0.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

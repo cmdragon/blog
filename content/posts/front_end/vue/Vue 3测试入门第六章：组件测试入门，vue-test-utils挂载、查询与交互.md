@@ -12,17 +12,12 @@ summary:
 categories:  
   - vue
 
-tags:  
-- 基础入门
-- 组件测试
-- vue-test-utils
-- mount
-- data-testid
-- 交互测试
-- 测试技巧
+tags:
+  - 基础入门
+  - 组件测试
+  - 测试技巧
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年7月8日 11_40_56.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

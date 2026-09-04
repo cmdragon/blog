@@ -14,13 +14,11 @@ categories:
 tags:
   - nuxt
   - SSR
-  - Hook
-  - 请求
-  - 事件
   - 开发
   - 前端
----
+  - 请求
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_07_23 16_34_48.png" title="2024_07_23 16_34_48.png" alt="2024_07_23 16_34_48.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

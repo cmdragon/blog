@@ -13,17 +13,10 @@ categories:
   - tweets
 
 tags:
-  - RAID
   - 新手教程
-  - RAID基础
-  - RAID配置
-  - RAID存储计算器
-  - RAID容量规划
-  - RAID实操应用
+  - RAID
 
 ---
-
-
 ![cover.png](/images/ukcgc_00003_.png)
 
 

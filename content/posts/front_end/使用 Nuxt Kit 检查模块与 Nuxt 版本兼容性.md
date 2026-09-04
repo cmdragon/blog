@@ -13,15 +13,12 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt
-  - 兼容性
-  - 检查
-  - 模块
-  - 版本
   - nuxt
-  - Nuxt2
----
+  - 模块
+  - 兼容性
+  - 版本
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_09_13 11_58_08.png" title="2024_09_13 11_58_08.png" alt="2024_09_13 11_58_08.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

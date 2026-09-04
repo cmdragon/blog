@@ -13,13 +13,12 @@ categories:
 
 tags:
   - 性能优化
-  - 组件事件
   - 最佳实践
-  - 防抖节流
-  - 内存管理
   - 实战技巧
----
+  - 组件事件
+  - 内存管理
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/b19cdc54cbfc44f38278dddae1936a49~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

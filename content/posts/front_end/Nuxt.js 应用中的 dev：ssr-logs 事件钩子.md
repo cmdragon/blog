@@ -13,14 +13,12 @@ categories:
 
 tags:
   - nuxt
-  - SSR
-  - 日志
   - 钩子
+  - SSR
   - 开发
-  - 调试
-  - 监控
----
+  - 日志
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_11_28 16_36_47.png" title="2024_11_28 16_36_47.png" alt="2024_11_28 16_36_47.png"/>
 
 

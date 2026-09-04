@@ -14,15 +14,9 @@ categories:
 
 tags:
   - 基础入门
-  - 事务基础
-  - ACID属性
   - 事务隔离级别
-  - 保存点
-  - 事务管理实践
-  - 常见报错及解决方案
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/40025327bd594a968ab73d2889949482~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

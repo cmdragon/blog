@@ -14,16 +14,11 @@ categories:
 
 tags:
   - 基础入门
-    - SQL
-  - DELETE语句
   - PostgreSQL
+  - SQL
   - 数据库操作
-  - WHERE条件
-  - 批量删除
-  - 清空表
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/061dcd35000f49bd90b456f49a2ca121~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

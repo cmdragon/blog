@@ -7,15 +7,12 @@ categories:
   - 后端开发
 
 tags:
-  - Django REST
-  - API 设计
-  - 版本控制
-  - 安全认证
   - 性能优化
-  - 部署策略
+  - 安全认证
+  - 版本控制
   - 实战项目
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_14 15_39_32.png" title="2024_05_14 15_39_32.png" alt="2024_05_14 15_39_32.png"/>
 
 ## **第1章：Django基础知识**

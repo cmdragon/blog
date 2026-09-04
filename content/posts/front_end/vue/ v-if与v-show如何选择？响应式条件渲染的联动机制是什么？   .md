@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
+  - 计算属性
+  - 响应式数据
   - v-if
   - v-show
-  - v-if vs v-show
-  - 响应式数据
-  - 计算属性
-  - 常见报错解决
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_063ccb41-243d-4f10-855d-ff253f3c78cb.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

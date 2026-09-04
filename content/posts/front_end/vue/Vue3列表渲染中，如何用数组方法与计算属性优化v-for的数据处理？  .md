@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - v-for
-  - 列表渲染
-  - 数组方法
   - 计算属性
   - 响应式数据
-  - 列表渲染常见问题
+  - 列表渲染
+  - v-for
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_e11bf1eb-2a98-424a-b696-fffd8f7d206f.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

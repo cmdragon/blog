@@ -13,16 +13,12 @@ categories:
 
 tags:
   - fastapi
-  - 权限控制
   - 依赖注入
+  - JWT
   - 单元测试
   - 集成测试
-  - JWT
-  - 安全加固
 
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 

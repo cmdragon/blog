@@ -13,16 +13,12 @@ categories:
   - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - Celery
-  - 任务告警
-  - 自动修复
   - 分布式系统
   - 任务监控
-  - 故障诊断
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 

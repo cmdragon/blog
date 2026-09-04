@@ -8,16 +8,13 @@ summary: 为何美国正失去中国AI人才，头条热度37万！不要随意�
 categories:
   - tweets
 tags:
-  - 中国AI人才
-  - AI隐私安全
   - AI文生图
   - 小红书文案
   - 歌词生成
   - 免费在线工具
-  - AI绘画
   - AI写歌
----
 
+---
 > 🔧 本文推荐工具：
 > - 🎨 [AI文生图](https://tools.cmdragon.cn/zh/apps/text-to-image-ai) — AI绘画/AI生图/文字生成图片
 > - 📕 [小红书文案](https://tools.cmdragon.cn/zh/apps/xiaohongshu-copywriter) — 小红书写作/种草文案

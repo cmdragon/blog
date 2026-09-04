@@ -13,14 +13,12 @@ categories:
 
 tags:
   - fastapi
-  - 依赖注入
   - 性能优化
-  - 异步编程
-  - 缓存机制
-  - 单例模式
   - 错误处理
----
+  - 依赖注入
+  - 异步编程
 
+---
 <img src="https://static.shutu.cn/shutu/jpeg/open04/2025-04-12/d74549f00a103057fa41c15c8dee1ec5.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

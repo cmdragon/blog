@@ -7,15 +7,11 @@ categories:
   - 前端开发
 
 tags:
-  - Vue3特性
-  - CompositionAPI
-  - Teleport
   - Suspense
-  - Vue3安装
-  - 组件基础
+  - Teleport
   - 模板语法
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_24 16_35_34.png" title="2024_05_24 16_35_34.png" alt="2024_05_24 16_35_34.png"/>
 
 

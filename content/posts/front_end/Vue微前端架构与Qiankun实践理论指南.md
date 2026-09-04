@@ -12,15 +12,10 @@ categories:
   - 前端开发
 
 tags:
-  - 微前端
   - Vue.js
-  - Qiankun
   - 框架
-  - 架构
-  - 通信
-  - 集成
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_06_15 13_48_44.png" title="2024_06_15 13_48_44.png" alt="2024_06_15 13_48_44.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

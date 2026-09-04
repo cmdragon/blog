@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - Vue 3侦听器
+  - 性能优化
   - watch
   - watchEffect
-  - 侦听器陷阱
   - 调试技巧
-  - 性能优化
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_26f21fd4-ae39-49da-832d-220f0289aa6d.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

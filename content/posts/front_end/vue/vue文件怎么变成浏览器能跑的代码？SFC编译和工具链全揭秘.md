@@ -13,14 +13,12 @@ categories:
 
 tags:
   - 基础入门
-  - SFC
-  - 编译原理
-  - "@vue/compiler-sfc"
   - Vite
+  - SFC
   - Vue CLI
   - 构建工具
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年6月18日 18_49_52.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

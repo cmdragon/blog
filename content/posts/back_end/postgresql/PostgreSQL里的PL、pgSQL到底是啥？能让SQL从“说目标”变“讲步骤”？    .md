@@ -14,15 +14,11 @@ categories:
 
 tags:
   - 基础入门
-  - PL/pgSQL
-  - 存储过程
-  - 数据库编程
-  - 动态SQL
-  - 事务管理
   - 错误处理
+  - 事务管理
+  - 存储过程
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/077edb46078d4bcdac95b88720e8afd1~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

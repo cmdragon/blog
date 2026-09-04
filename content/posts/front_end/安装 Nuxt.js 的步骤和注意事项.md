@@ -12,15 +12,13 @@ categories:
    - 前端开发
 
 tags:
-   - nuxt
-   - Vue.js
-   - SSR
-   - 服务器端渲染
-   - 前端开发
-   - Web性能
-   - 代码部署
----
+  - nuxt
+  - 前端开发
+  - SSR
+  - Vue.js
+  - 服务器端渲染
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_06_17 15_38_09.png" title="2024_06_17 15_38_09.png" alt="2024_06_17 15_38_09.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

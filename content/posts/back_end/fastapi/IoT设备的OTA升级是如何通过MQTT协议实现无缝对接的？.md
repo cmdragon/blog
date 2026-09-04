@@ -12,16 +12,10 @@ categories:
   - fastapi
 
 tags:
-  - IoT设备
-  - OTA升级
-  - FastAPI
-  - MQTT协议
-  - 固件更新
+  - fastapi
   - 异步处理
-  - 分片传输
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/5de34f8f65eaf96c65383412240a274e.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

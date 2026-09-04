@@ -14,14 +14,11 @@ categories:
 
 tags:
   - 基础入门
-  - Vitest
-  - 单元测试
-  - 测试环境
-  - happy-dom
   - Vite
-  - 测试配置
----
+  - 单元测试
+  - Vitest
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年7月6日 22_12_53.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

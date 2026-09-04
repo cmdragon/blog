@@ -14,15 +14,11 @@ categories:
 
 tags:
   - 基础入门
-  - 对象-关系型数据库
-  - 数据库特性
-  - 事务完整性
-  - MVCC
-  - 自定义数据类型
   - 触发器
+  - 数据库特性
+  - MVCC
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/f68692acb80048e2ba9030bc6fea2186~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

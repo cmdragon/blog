@@ -16,13 +16,8 @@ tags:
   - 基础入门
   - GROUP BY
   - 优化策略
-  - 窗口函数
-  - ORDER BY
-  - 功能依赖
-  - 聚合查询
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/849998198ab34b5d8e5f1e8d6009a78b~tplv-5jbd59dj06-aigc.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

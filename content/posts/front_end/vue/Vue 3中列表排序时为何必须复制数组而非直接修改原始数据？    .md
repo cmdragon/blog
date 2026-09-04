@@ -14,15 +14,11 @@ categories:
 
 tags:
   - 基础入门
-  - 列表渲染
-  - 搜索功能
-  - 排序功能
-  - 分页功能
   - 计算属性
   - 响应式数据
+  - 列表渲染
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_445d0843-3ca1-4a8b-8e21-864dd5d4c3f4.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

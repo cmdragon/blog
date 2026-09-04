@@ -7,18 +7,8 @@ categories:
 
   - 后端开发
 
-tags:
-
-  - Auth
-  - Decorators
-  - Permissions
-  - Guardian
-  - RESTAuth
-  - SessionMgmt
-  - MFA
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_07 18_57_50.png" title="2024_05_07 18_57_50.png" alt="2024_05_07 18_57_50.png"/>
 
 ## **第1章：入门Django与设置**

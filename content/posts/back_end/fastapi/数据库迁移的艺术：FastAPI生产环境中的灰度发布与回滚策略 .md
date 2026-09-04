@@ -14,14 +14,10 @@ categories:
 tags:
   - fastapi
   - 数据库迁移
-  - 灰度发布
-  - 回滚预案
-  - 监控告警
   - 生产环境
-  - 工程实践
+  - 灰度发布
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/openba/2025-05-18/4e9f9af706b61c258be55bdf8f8c6aa5.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

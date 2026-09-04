@@ -14,15 +14,10 @@ categories:
 
 tags:
   - 基础入门
-  - :style
-  - 动态样式
-  - 对象语法
   - 响应式
-  - 样式属性类型
-  - 命名规范
+  - 动态样式
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_73269423-1386-4f80-bf48-97452b75c6da.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

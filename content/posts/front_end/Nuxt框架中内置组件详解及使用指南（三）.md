@@ -14,13 +14,11 @@ categories:
 tags:
   - nuxt
   - 组件
-  - NuxtLink
-  - 导航
-  - 链接
-  - 加载
   - 自定义
----
+  - 导航
+  - 加载
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_07_08 16_33_38.png" title="2024_07_08 16_33_38.png" alt="2024_07_08 16_33_38.png"/>
 
 

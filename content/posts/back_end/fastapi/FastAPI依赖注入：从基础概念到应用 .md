@@ -13,15 +13,13 @@ categories:
    - fastapi
 
 tags:
-   - fastapi
-   - 依赖注入
-   - 路由处理
-   - 认证系统
-   - 错误处理
-   - 代码示例
-   - 依赖解析
----
+  - fastapi
+  - 错误处理
+  - 依赖注入
+  - 代码示例
+  - 认证系统
 
+---
 <img src="https://static.shutu.cn/shutu/jpeg/opence/2025-04-04/d5bd558a678cbcf2b9c96b90ebb52f50.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

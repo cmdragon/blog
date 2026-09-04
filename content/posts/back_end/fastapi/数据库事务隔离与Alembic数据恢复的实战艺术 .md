@@ -12,16 +12,13 @@ categories:
   - fastapi
 
 tags:
+  - 最佳实践
   - 数据库迁移
   - Alembic
-  - 事务隔离级别
   - 数据恢复
   - 版本控制
-  - 金融交易
-  - 最佳实践
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/open59/2025-05-15/9ab3182280891e2a37e39475212821db.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

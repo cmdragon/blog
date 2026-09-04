@@ -13,15 +13,12 @@ categories:
 
 tags:
   - fastapi
+  - 错误处理
+  - Pydantic
   - SQLAlchemy
   - 数据库集成
-  - 事务管理
-  - Pydantic
-  - 错误处理
-  - 并发控制
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/openc5/2025-04-18/b48f607e7f83258ad6352a4c6d5cd488.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

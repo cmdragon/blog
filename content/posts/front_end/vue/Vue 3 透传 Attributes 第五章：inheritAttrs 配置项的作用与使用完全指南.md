@@ -13,16 +13,13 @@ categories:
   - vue
 
 tags:
-- 基础入门
-  - inheritAttrs
+  - 基础入门
   - Attributes 透传
-  - 组件封装
-  - 属性分发
-  - 高级配置
   - 组件设计
+  - 组件封装
+  - inheritAttrs
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/a1e3c29680314daba246587dd927f73a~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

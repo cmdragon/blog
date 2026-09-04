@@ -12,17 +12,13 @@ categories:
   - fastapi
 
 tags:
-  - FastAPI
-  - BackgroundTasks
-  - 生产者-消费者模式
-  - 分布式任务处理
+  - fastapi
   - Celery
+  - BackgroundTasks
   - 异常处理
   - 任务优先级
 
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 

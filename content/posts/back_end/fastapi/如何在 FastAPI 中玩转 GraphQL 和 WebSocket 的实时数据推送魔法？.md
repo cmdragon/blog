@@ -12,16 +12,11 @@ categories:
   - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - GraphQL
   - WebSocket
-  - 实时数据推送
-  - Graphene 库
-  - 消息广播
-  - 订阅功能
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2cdb9c770686749b33b8a9ede083f522.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

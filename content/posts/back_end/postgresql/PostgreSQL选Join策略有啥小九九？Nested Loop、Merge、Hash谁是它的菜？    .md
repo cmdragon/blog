@@ -14,15 +14,8 @@ categories:
 
 tags:
   - 基础入门
-  - 连接查询
-  - Join策略
-  - Nested Loop Join
-  - Merge Join
-  - Hash Join
-  - 查询优化器
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/49f3259a2b6e4a3dafa445bad5fc0ded~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

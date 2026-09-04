@@ -14,15 +14,10 @@ categories:
 
 tags:
   - 基础入门
-  - class绑定
-  - style绑定
-  - 动态样式
-  - scoped样式
-  - props/emit
   - 性能优化
+  - 动态样式
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_f79e7b10-8dd2-45c2-b2d9-33185e7b4761.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

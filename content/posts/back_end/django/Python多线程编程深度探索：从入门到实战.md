@@ -7,16 +7,13 @@ categories:
   - 后端开发
 
 tags:
-  - 多线程
-  - 并发编程
-  - 线程安全
-  - Python
-  - 异步IO
   - 性能优化
+  - Python
+  - 并发编程
+  - 异步IO
   - 实战项目
+
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_04_28 19_06_58.png" title="2024_04_28 19_06_58.png" alt="2024_04_28 19_06_58.png"/>
 
 ## **第1章：Python基础知识与多线程概念**

@@ -13,15 +13,12 @@ categories:
 
 tags:
   - fastapi
-  - MongoDB
-  - 日志监控系统
-  - 异步编程
   - 性能优化
+  - 异步编程
+  - MongoDB
   - 数据库索引
-  - 生产环境部署
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/open38/2025-05-27/b31f16c0027f2e9fa73911c23adcaea9.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -10,15 +10,10 @@ categories:
   - 前端开发
   
 tags:
-  - Vue渲染
-  - JSX基础
   - 性能优化
-  - 组件对比
-  - React JSX
-  - 大项目
   - 测试策略
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_06_03 18_48_23.png" title="2024_06_03 18_48_23.png" alt="2024_06_03 18_48_23.png"/>
 
 

@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 事件处理
   - 性能优化
-  - 防抖节流
-  - 事件缓存
-  - 动态事件绑定
+  - 事件处理
   - 事件委托
+  - 防抖节流
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_9b7dd8d0-971d-4872-9f4f-5adbce54d226.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

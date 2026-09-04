@@ -13,14 +13,11 @@ categories:
 
 tags:
   - PostgreSQL
-  - psql
-  - 命令行工具
   - 数据库管理
   - SQL
-  - 数据导入导出
   - 常见问题
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_12_30 18_46_08.png" title="2024_12_30 18_46_08.png" alt="2024_12_30 18_46_08.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

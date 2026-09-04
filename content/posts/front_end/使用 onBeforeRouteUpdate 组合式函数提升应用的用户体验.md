@@ -13,14 +13,12 @@ categories:
 
 tags:
   - nuxt
-  - 路由
   - 组件
-  - 守卫
+  - 路由
   - 用户
   - 测试
-  - 体验
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_08_15 11_44_39.png" title="2024_08_15 11_44_39.png" alt="2024_08_15 11_44_39.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

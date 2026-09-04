@@ -14,15 +14,10 @@ categories:
 
 tags:
   - 基础入门
-  - 键盘事件
-  - keydown
-  - keyup
-  - 按键修饰符
-  - 组合快捷键
   - 事件处理
+  - 按键修饰符
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_ea3a943c-c1cc-4f3c-8d33-171e74def472.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

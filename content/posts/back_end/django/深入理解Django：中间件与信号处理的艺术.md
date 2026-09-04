@@ -7,15 +7,13 @@ categories:
   - 后端开发
 
 tags:
-  - Django
   - 中间件
-  - 信号
-  - 异步
   - 性能
+  - django
   - 缓存
-  - 多语言
----
+  - 异步
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_09 18_45_49.png" title="2024_05_09 18_45_49.png" alt="2024_05_09 18_45_49.png"/>
 
 ## **引言**

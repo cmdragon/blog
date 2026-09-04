@@ -14,13 +14,9 @@ categories:
 tags:
   - 基础入门
   - 工具链
-  - runtime版本
-  - 完整版
   - 模板编译
-  - 构建文件
-  - petite-vue
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年6月19日 19_21_26.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -12,16 +12,9 @@ categories:
   - 隐私安全
 
 tags:
-  - iMessage漏洞
-  - 零点击攻击
   - 高级持续性威胁
-  - 设备监听
-  - iOS安全更新
-  - 内存破坏漏洞
-  - 国家黑客组织
 
 ---
-
 ### iMessage零点击漏洞“NICKNAME”曝光，苹果设备监听攻击波及全球高价值目标
 
 **安全公司iVerify近日披露代号为“NICKNAME”的高级持续性威胁（APT）漏洞**

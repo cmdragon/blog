@@ -13,15 +13,9 @@ categories:
 
 tags:
   - fastapi
-  - TortoiseORM
-  - 全链路开发
   - 数据模型
-  - API端点
-  - 分页机制
-  - 软删除
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/openf0/2025-05-05/0b0b46ad98a23a046b81e1e777b2958f.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

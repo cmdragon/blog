@@ -12,15 +12,13 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt
-  - nuxi
-  - 准备
+  - nuxt
   - 命令
-  - CI
-  - 类型
+  - nuxi
   - 目录
----
+  - 类型
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_09_07 13_53_21.png" title="2024_09_07 13_53_21.png" alt="2024_09_07 13_53_21.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

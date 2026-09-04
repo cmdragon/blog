@@ -13,15 +13,12 @@ categories:
 
 tags:
   - fastapi
-  - 安全机制
-  - OAuth2
-  - JWT
   - 依赖注入
-  - 身份验证
+  - JWT
+  - OAuth2
   - Python
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/open0d/2025-06-07/8f4760ff4baa13d53c67c47251494851.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -12,15 +12,13 @@ categories:
   - 前端开发
 
 tags:
-  - 数据更新
-  - SQL
-  - PostgreSQL
-  - UPDATE 语句
-  - 数据库管理
-  - 事务处理
   - 性能优化
----
+  - PostgreSQL
+  - 数据库管理
+  - SQL
+  - 事务处理
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2025_01_06 14_55_03.png" title="2025_01_06 14_55_03.png" alt="2025_01_06 14_55_03.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

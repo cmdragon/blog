@@ -10,14 +10,12 @@ categories:
   - vue
 tags:
   - Vue
+  - SSR
   - 状态管理
-  - Composable
   - ref
   - computed
-  - SSR
+
 ---
-
-
 ## 一、store 不一定非得是 reactive 对象
 
 上一章我们用了：

@@ -8,17 +8,10 @@ categories:
   - 后端开发
 
 tags:
-
-  - DjangoAdmin
-  - 模型管理
-  - 用户认证
-  - 数据优化
-  - 自定义扩展
   - 实战案例
-  - 性能安全
+  - 用户认证
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_08 14_27_23.png" title="2024_05_08 14_27_23.png" alt="2024_05_08 14_27_23.png"/>
 
 ## **第1章：Django Admin基础**

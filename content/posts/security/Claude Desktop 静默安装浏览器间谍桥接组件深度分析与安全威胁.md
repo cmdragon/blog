@@ -9,18 +9,14 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/b871c6e44cda4e71ae8bb85ce747
 summary: 安全研究员发现 Anthropic Claude Desktop 应用在未告知用户的情况下，向 7 款主流 Chromium 浏览器静默注册 Native Messaging 桥接组件。该组件以用户权限运行于浏览器沙箱之外，具备完整的浏览器自动化能力，引发严重的安全与隐私争议。本文深入剖析技术细节、攻击面扩大风险、合规问题及防御策略。
 
 categories:
-  - security
+  - 隐私安全
 
 tags:
-  - AI 安全
-  - Claude Desktop
-  - 隐私泄露
-  - Native Messaging
-  - 浏览器安全
   - 供应链攻击
-  - 零信任
----
+  - 隐私泄露
+  - 浏览器安全
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/b871c6e44cda4e71ae8bb85ce7475577~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

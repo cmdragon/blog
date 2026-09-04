@@ -15,12 +15,10 @@ tags:
   - nuxt
   - 错误处理
   - 钩子函数
-  - 应用开发
-  - 前端框架
-  - 代码示例
   - 用户体验
----
+  - 代码示例
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_09_27 10_37_45.png" title="2024_09_27 10_37_45.png" alt="2024_09_27 10_37_45.png"/>
 
 

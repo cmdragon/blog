@@ -12,15 +12,13 @@ categories:
    - 前端开发
 
 tags:
-   - nuxt
-   - Webpack
-   - 钩子
-   - 配置
-   - 插件
-   - 模块
-   - 输出
----
+  - nuxt
+  - 钩子
+  - 配置
+  - Webpack
+  - 插件
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_11_20 14_55_42.png" title="2024_11_20 14_55_42.png" alt="2024_11_20 14_55_42.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

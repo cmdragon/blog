@@ -14,12 +14,10 @@ categories:
 tags:
   - 基础入门
   - 自定义指令
-  - binding对象
-  - 指令参数
-  - 动态参数
   - 修饰符
----
+  - 动态参数
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年5月22日 16_49_49.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

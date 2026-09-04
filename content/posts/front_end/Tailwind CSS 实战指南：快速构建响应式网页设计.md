@@ -12,15 +12,12 @@ categories:
   - 前端开发
 
 tags:
-  - Tailwind
-  - CSS框架
-  - 响应式设计
-  - 实用类
-  - 布局
   - 组件
+  - 布局
+  - 响应式设计
   - 自定义配置
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_06_12 14_26_32.png" title="2024_06_12 14_26_32.png" alt="2024_06_12 14_26_32.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -12,15 +12,13 @@ categories:
   - fastapi
 
 tags:
-  - 依赖注入
-  - 数据库会话管理
-  - 事务管理
   - fastapi
-  - SQLAlchemy
+  - 依赖注入
   - 异步编程
-  - SQL注入防护
----
+  - SQLAlchemy
+  - 事务管理
 
+---
 <img src="https://static.shutu.cn/shutu/jpeg/open66/2025-04-09/b80006aec612e1d5c8ba0fa6099c30a3.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

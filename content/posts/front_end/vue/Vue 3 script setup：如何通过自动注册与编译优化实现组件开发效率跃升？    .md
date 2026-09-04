@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - script setup
-  - 组件自动注册
-  - Props与Emits
-  - 编译宏
   - 实战案例
   - 常见报错解决
+  - script setup
+  - Props与Emits
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_d3bc4241-63e6-4f45-abf2-286700218c7a.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

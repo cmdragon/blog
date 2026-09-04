@@ -13,17 +13,13 @@ categories:
   - fastapi
 
 tags:
-  - FastAPI
-  - 单元测试
-  - TestClient
-  - Pydantic
-  - 测试覆盖率
-  - 依赖模拟
+  - fastapi
   - 最佳实践
+  - Pydantic
+  - 单元测试
+  - 测试覆盖率
 
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 

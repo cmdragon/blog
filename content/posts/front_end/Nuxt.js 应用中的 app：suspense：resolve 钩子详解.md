@@ -13,14 +13,10 @@ categories:
 
 tags:
   - nuxt
-  - app:suspense:resolve
-  - Vue Suspense
-  - 异步数据
-  - 组件状态
   - 钩子函数
-  - 异步渲染
----
+  - 异步数据
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_10_06 20_18_48.png" title="2024_10_06 20_18_48.png" alt="2024_10_06 20_18_48.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

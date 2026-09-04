@@ -14,16 +14,8 @@ categories:
 
 tags:
   - 基础入门
-  - Vue计算属性
-  - 计算属性缓存原理
-  - 计算属性缓存失效场景
-  - 计算属性依赖精简
-  - 计算属性实战优化
-  - 响应式依赖处理
-  - 计算属性性能优化
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/b59204d62b584cefbbffaa5e58c54b52~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

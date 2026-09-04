@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 侦听器
   - watch
+  - 侦听器
   - watchEffect
-  - 组件内侦听器
   - Pinia
-  - Pinia状态监听
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_bb324b17-2420-4120-9d18-5e66b7c4bef4.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

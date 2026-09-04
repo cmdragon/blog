@@ -1,5 +1,5 @@
 ---
-url: /posts/a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2/
+url: /posts/vue-transition-component-css-2026/
 title: Vue的Transition组件到底能干啥？6个CSS类名帮你搞定进出动画
 date: 2026-05-31T10:00:00+08:00
 lastmod: 2026-05-31T10:00:00+08:00
@@ -14,13 +14,10 @@ categories:
 tags:
   - 基础入门
   - Transition
-  - 过渡动画
-  - CSS类名
-  - 命名过渡
-  - 进出动画
   - Vue内置组件
----
+  - 过渡动画
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年5月31日 20_33_03.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

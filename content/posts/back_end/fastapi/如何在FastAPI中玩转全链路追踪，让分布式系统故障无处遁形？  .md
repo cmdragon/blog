@@ -13,17 +13,12 @@ categories:
   - fastapi
 
 tags:
-  - 全链路追踪
-  - FastAPI
-  - OpenTelemetry
-  - Jaeger
-  - 微服务监控
-  - 分布式系统
+  - fastapi
   - 性能优化
+  - 分布式系统
+  - 全链路追踪
 
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 

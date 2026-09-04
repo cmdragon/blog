@@ -14,15 +14,11 @@ categories:
 
 tags:
   - 基础入门
-  - 大规模列表渲染
-  - 虚拟滚动
-  - vue-virtual-scroller
-  - v-memo
   - 性能优化
+  - v-memo
   - DOM优化
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_a14c55ba-4eb4-4659-944f-a2f73c843a70.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

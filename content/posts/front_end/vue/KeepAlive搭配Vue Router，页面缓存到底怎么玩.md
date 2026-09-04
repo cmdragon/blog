@@ -13,13 +13,10 @@ categories:
 
 tags:
   - 基础入门
-  - KeepAlive
   - Vue Router
-  - 路由缓存
-  - router-view
-  - meta信息
----
+  - KeepAlive
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年6月7日 22_42_36.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

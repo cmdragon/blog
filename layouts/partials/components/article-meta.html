@@ -6,14 +6,14 @@
 <div class="flex flex-wrap items-center text-sm text-gray-600 dark:text-gray-300 gap-3">
   <!-- 发布日期 -->
   <span class="flex items-center bg-gray-200 dark:bg-gray-700 px-3 py-1.5 rounded-full">
-    <iconify-icon icon="mdi:calendar" class="mr-1" width="16" height="16"></iconify-icon>
+    <iconify-icon icon="mdi:calendar" class="mr-1" width="16" height="16" aria-hidden="true"></iconify-icon>
     {{ .Date.Format "2006-01-02" }}
   </span>
   
   <!-- 分类 -->
   {{ with .Params.categories }}
     <span class="flex items-center bg-blue-200 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1.5 rounded-full">
-      <iconify-icon icon="mdi:folder" class="mr-1" width="16" height="16"></iconify-icon>
+      <iconify-icon icon="mdi:folder" class="mr-1" width="16" height="16" aria-hidden="true"></iconify-icon>
       {{ range $index, $category := . }}
         {{ if $index }}, {{ end }}
         <a href="{{ "/categories/" | relLangURL }}{{ $category | urlize }}" class="hover:text-blue-700 dark:hover:text-blue-300 transition-colors">
@@ -25,7 +25,7 @@
   
   <!-- 阅读时间 -->
   <span class="flex items-center bg-purple-200 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-3 py-1.5 rounded-full">
-    <iconify-icon icon="mdi:clock-outline" class="mr-1" width="16" height="16"></iconify-icon>
+    <iconify-icon icon="mdi:clock-outline" class="mr-1" width="16" height="16" aria-hidden="true"></iconify-icon>
     {{ math.Round (div (countwords .Content) 200.0) }} 分钟阅读
   </span>
   

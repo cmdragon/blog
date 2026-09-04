@@ -13,14 +13,11 @@ categories:
 
 tags:
   - nuxt
-  - 页面过渡
-  - 钩子函数
   - 前端开发
-  - 页面动画
   - 状态管理
-  - UI更新
----
+  - 钩子函数
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_10_10 15_55_36.png" title="2024_10_10 15_55_36.png" alt="2024_10_10 15_55_36.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

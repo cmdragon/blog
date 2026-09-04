@@ -12,16 +12,13 @@ categories:
   - fastapi
 
 tags:
+  - fastapi
   - GraphQL
-  - FastAPI
-  - 类型系统
-  - Schema定义
-  - 数据模型
-  - RESTful对比
   - 实战案例
+  - 数据模型
+  - 类型系统
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/ce1a2d5239507cd3b6541574df7ed8ee.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -6,15 +6,12 @@ lastmod: 2024-06-02T9:08:50+08:00
 categories:
    - 前端开发
 tags:
-   - Vue概览
-   - 动态组件
-   - 异步加载
-   - 性能提升
-   - 路由管理
-   - 状态控制
-   - 工具生态
----
+  - 动态组件
+  - 异步加载
+  - 性能提升
+  - 路由管理
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_06_02 21_12_15.png" title="2024_06_02 21_12_15.png" alt="2024_06_02 21_12_15.png"/>
 
 ## 第1章 Vue.js 简介

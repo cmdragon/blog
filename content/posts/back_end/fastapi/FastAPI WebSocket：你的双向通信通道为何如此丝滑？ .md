@@ -12,16 +12,13 @@ categories:
   - fastapi
 
 tags:
-  - WebSocket
   - fastapi
-  - 路由声明
-  - 握手验证
-  - 连接管理
   - 错误处理
+  - WebSocket
   - 实时通信
+  - 连接管理
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/23c538a4155598463450dabe80333953.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

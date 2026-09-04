@@ -13,14 +13,12 @@ categories:
 
 tags:
   - SQL
-  - 复杂查询
-  - 多表联接
-  - 子查询
-  - 嵌套查询
-  - 视图
   - 数据库优化
----
+  - 子查询
+  - 复杂查询
+  - 嵌套查询
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2025_02_10 15_28_02.png" title="2025_02_10 15_28_02.png" alt="2025_02_10 15_28_02.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

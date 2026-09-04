@@ -13,14 +13,12 @@ categories:
 
 tags:
   - nuxt
-  - 异步数据
   - SSR
-  - 组件函数
   - 数据获取
-  - 响应式对象
-  - 服务端渲染
----
+  - 异步数据
+  - 组件函数
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_07_12 15_51_07.png" title="2024_07_12 15_51_07.png" alt="2024_07_12 15_51_07.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

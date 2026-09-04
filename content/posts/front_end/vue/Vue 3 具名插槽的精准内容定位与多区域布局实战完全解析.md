@@ -13,15 +13,12 @@ categories:
 
 tags:
   - 基础入门
-  - 具名插槽
-  - 多区域布局
   - 组件设计
-  - 内容分发
-  - v-slot指令
-  - 布局系统
   - 组件复用
----
+  - 内容分发
+  - 具名插槽
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年5月2日 20_17_59.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

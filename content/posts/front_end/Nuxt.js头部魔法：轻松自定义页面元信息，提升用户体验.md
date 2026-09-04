@@ -13,14 +13,10 @@ categories:
 
 tags:
   - nuxt
-  - useHead
-  - SEO优化
-  - 页面元信息
   - 前端开发
-  - Unhead库
-  - 动态标题
----
+  - SEO优化
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_07_14 17_05_22.png" title="2024_07_14 17_05_22.png" alt="2024_07_14 17_05_22.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

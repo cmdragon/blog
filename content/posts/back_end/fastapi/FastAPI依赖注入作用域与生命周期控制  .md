@@ -14,13 +14,9 @@ categories:
 tags:
   - fastapi
   - 依赖注入
-  - 作用域
-  - 生命周期控制
-  - 应用级作用域
-  - 请求级作用域
   - 资源管理
----
 
+---
 <img src="https://static.shutu.cn/shutu/jpeg/open5b/2025-04-08/778f5f30b05305afdd003e2d86fedf14.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

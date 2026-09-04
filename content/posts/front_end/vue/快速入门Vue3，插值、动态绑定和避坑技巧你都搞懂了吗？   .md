@@ -14,15 +14,11 @@ categories:
 
 tags:
   - 基础入门
-  - 模板语法
-  - 文本插值
-  - v-html
-  - v-bind
-  - 动态属性
   - 响应式数据
+  - 模板语法
+  - v-bind
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/1d219c3370d94335aacf2e9bc721e5fc~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

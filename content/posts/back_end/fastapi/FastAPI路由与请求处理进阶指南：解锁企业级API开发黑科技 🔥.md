@@ -12,15 +12,9 @@ categories:
   - fastapi
 
 tags:
-  - fastapi高级路由
-  - 请求体嵌套模型
-  - 正则表达式路由
-  - 依赖注入优化
-  - 异步请求处理
-  - 性能调优实战
   - 企业级API设计
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2025_03_03 00_41_23.png" title="2025_03_03 00_41_23.png" alt="2025_03_03 00_41_23.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

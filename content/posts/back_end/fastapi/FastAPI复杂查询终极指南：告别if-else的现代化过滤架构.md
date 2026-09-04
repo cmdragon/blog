@@ -12,15 +12,9 @@ categories:
   - fastapi
 
 tags:
-  - fastapi高级查询
-  - 动态过滤架构
-  - Pydantic验证技巧
-  - ORM性能调优
-  - 安全参数处理
   - 企业级API设计
-  - 可维护代码实践
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2025_03_14 14_48_44.png" title="2025_03_14 14_48_44.png" alt="2025_03_14 14_48_44.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

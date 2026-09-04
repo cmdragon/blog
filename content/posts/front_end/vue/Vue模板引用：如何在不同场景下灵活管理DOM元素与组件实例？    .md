@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 模板引用
   - 组合式API
-  - 选项式API
-  - Vue 3
-  - 子组件引用
   - ref
+  - Vue 3
+  - 模板引用
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_cca67c2d-7154-42a3-b595-1e43e7ed588e.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

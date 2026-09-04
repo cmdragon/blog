@@ -14,13 +14,9 @@ categories:
 tags:
   - 基础入门
   - 工具链
-  - 格式化
   - Prettier
-  - SFC自定义块
-  - compiler-sfc
-  - vue-loader
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年6月20日 20_35_46.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

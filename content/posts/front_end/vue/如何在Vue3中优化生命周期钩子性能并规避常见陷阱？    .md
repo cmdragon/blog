@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - Vue3 性能优化
   - 组合式API
-  - 陷阱规避
   - onMounted
   - onUnmounted
   - 资源清理
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_404d6a74-55e5-4e63-9e83-06bce0a87116.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

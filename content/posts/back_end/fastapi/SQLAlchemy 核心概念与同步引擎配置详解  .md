@@ -12,16 +12,13 @@ categories:
   - fastapi
 
 tags:
-  - SQLAlchemy
-  - ORM
-  - 数据库连接池
   - fastapi
-  - 同步引擎配置
-  - 数据库会话管理
   - 错误处理
+  - SQLAlchemy
+  - 数据库连接池
+  - ORM
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/opencc/2025-04-14/e74e134ba4bb343195275e840ebfd9a4.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

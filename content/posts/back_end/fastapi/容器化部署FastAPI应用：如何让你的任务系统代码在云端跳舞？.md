@@ -12,16 +12,12 @@ categories:
   - fastapi
 
 tags:
-  - FastAPI
-  - 容器化部署
-  - Docker
-  - Kubernetes
+  - fastapi
   - Celery
   - 异步任务
-  - 健康检查
+  - 容器化部署
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/xw_20250818131510.png" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 组件注册
   - 全局组件注册
-  - 局部组件注册
-  - 异步组件注册
   - 内置组件
-  - 组件懒加载
+  - 组件注册
+  - 局部组件注册
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_f390c779-0ec2-4ddd-8162-5807437d4902.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

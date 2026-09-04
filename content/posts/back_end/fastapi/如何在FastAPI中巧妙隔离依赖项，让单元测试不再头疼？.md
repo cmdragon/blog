@@ -13,17 +13,13 @@ categories:
   - fastapi
 
 tags:
-  - FastAPI
-  - 单元测试
-  - 依赖注入
-  - 测试策略
-  - 模拟依赖
-  - 异步测试
+  - fastapi
   - 错误处理
+  - 依赖注入
+  - 单元测试
+  - 测试策略
 
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 

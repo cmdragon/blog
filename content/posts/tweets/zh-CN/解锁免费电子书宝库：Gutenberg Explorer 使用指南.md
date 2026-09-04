@@ -13,15 +13,10 @@ categories:
   - tweets
 
 tags:
-  - 免费电子书
-  - 数字阅读
-  - 古腾堡计划
   - 在线工具
-  - 公共领域资源
-  - 电子书下载
   - 数字图书馆
----
 
+---
 ![Gutenberg Explorer](/images/xw_20250703165905.png)
 
 在数字阅读时代，**古腾堡计划（Project Gutenberg）**

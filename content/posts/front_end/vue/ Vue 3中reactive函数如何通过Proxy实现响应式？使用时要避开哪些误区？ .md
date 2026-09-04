@@ -12,17 +12,12 @@ summary:
 categories:  
   - vue
 
-tags:  
+tags:
   - 基础入门
-  - 响应式对象
-  - reactive函数
   - Proxy
-  - 数据驱动视图
-  - 表单状态管理
-  - 购物车状态管理
+  - 响应式对象
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/c473afe37e1849b48a223ab7aa3625bd~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -17,12 +17,8 @@ tags:
   - 组件通信
   - 单向数据流
   - 类型检查
-  - 调试方法
-  - 问题排查
-  - Prop 传递
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_36998cc1-1cfb-4b16-8951-41cfa781c0d3.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

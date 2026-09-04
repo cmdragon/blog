@@ -12,15 +12,13 @@ categories:
    - 前端开发
 
 tags:
-   - Nuxt
-   - 钩子
-   - 模板
-   - 编译
-   - VFS
-   - 自定义
-   - 处理
----
+  - nuxt
+  - 钩子
+  - 自定义
+  - 处理
+  - 编译
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_10_19 13_29_57.png" title="2024_10_19 13_29_57.png" alt="2024_10_19 13_29_57.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

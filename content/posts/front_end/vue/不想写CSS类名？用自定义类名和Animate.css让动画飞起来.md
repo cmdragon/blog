@@ -1,5 +1,5 @@
 ---
-url: /posts/b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3/
+url: /posts/vue-animate-css-custom-class-2026/
 title: 不想写CSS类名？用自定义类名和Animate.css让动画飞起来
 date: 2026-05-31T11:00:00+08:00
 lastmod: 2026-05-31T11:00:00+08:00
@@ -14,13 +14,9 @@ categories:
 tags:
   - 基础入门
   - Transition
-  - 自定义类名
-  - Animate.css
-  - type属性
   - 动画库
-  - CSS动画
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年5月31日 20_35_19.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

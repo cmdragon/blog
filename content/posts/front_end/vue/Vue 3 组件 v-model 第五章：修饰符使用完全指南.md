@@ -13,13 +13,12 @@ categories:
 
 tags:
   - v-model
-  - 修饰符
-  - 自定义修饰符
-  - 数据处理
-  - 表单验证
   - 实战技巧
----
+  - 表单验证
+  - 修饰符
+  - 数据处理
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/573e704a7a9d49739300a18800dff708~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

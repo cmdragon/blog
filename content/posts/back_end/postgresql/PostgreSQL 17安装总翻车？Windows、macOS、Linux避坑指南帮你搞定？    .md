@@ -14,16 +14,10 @@ categories:
 
 tags:
   - 基础入门
-    - PostgreSQL安装
-  - 系统要求
-  - 版本选择
-  - 操作系统安装步骤
-  - 环境配置
-  - 服务管理
   - 常见报错解决
+  - 系统要求
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/4e6b913334804b5c9214d179eac5b015~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -13,15 +13,12 @@ categories:
 
 tags:
   - fastapi
-  - MongoDB
-  - 异步写入
-  - Motor驱动
   - 性能优化
-  - 批量插入
+  - MongoDB
   - 聚合管道
+  - Motor驱动
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/open82/2025-05-23/0b78c94df97e014fb9a46942ca0c814b.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

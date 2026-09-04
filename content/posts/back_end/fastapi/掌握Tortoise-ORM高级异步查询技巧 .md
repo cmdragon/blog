@@ -12,16 +12,13 @@ categories:
   - fastapi
 
 tags:
+  - 错误处理
   - Tortoise-ORM
-  - 异步查询
-  - Q对象
-  - F表达式
   - 数据模型
   - 复杂查询
-  - 错误处理
+  - Q对象
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/open16/2025-04-22/c842c8ea6b1fdf965837bc13a184d3d5.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

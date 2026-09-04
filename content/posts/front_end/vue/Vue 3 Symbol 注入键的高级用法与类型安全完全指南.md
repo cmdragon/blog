@@ -9,16 +9,12 @@ summary: 深入讲解 Vue 3 中 Symbol 作为注入名的核心优势、使用�
 categories:
   - vue
 tags:
-  - Symbol
-  - 注入键
-  - 类型安全
-  - TypeScript
-  - 大型应用
   - 依赖注入
-  - 组件库开发
-  - 命名冲突
----
+  - TypeScript
+  - Symbol
+  - 类型安全
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmider/images/2026年5月10日 23_36_23.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmider/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

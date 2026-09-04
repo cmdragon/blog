@@ -13,15 +13,11 @@ categories:
 
 tags:
   - fastapi
-  - 跨服务权限校验
   - JWT
-  - 微服务安全
   - 分布式系统
   - 令牌验证
-  - 零信任架构
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/openae/2025-06-24/5c5cbe22e43e906d7f0db1591acc5dce.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

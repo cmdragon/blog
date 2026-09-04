@@ -16,13 +16,9 @@ tags:
   - 基础入门
   - 全局注册
   - 局部注册
-  - 组件注册问题
-  - 组件注册最佳实践
   - 组件命名规范
-  - 自动注册组件
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_33c1e002-9bcc-4c94-a36a-4129bfeccd8c.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

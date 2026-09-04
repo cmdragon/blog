@@ -12,15 +12,12 @@ categories:
   - fastapi
 
 tags:
-  - Pydantic
   - fastapi
-  - 动态必填字段
+  - Pydantic
   - 数据验证
   - 用户注册
-  - 模型验证器
-  - 422错误处理
----
 
+---
 <img src="https://static.shutu.cn/shutu/jpeg/opened/2025-04-03/c9c2ff6a32833a400b6404e0a64a6112.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

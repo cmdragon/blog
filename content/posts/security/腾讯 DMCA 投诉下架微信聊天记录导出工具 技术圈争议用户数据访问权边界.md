@@ -12,18 +12,8 @@ summary:
 categories:
   - 隐私安全
 
-tags:
-  - 腾讯
-  - DMCA投诉
-  - 微信聊天记录导出工具
-  - 用户数据控制权
-  - 技术保护措施边界
-  - 微信生态管控
-  - GitHub
 
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_0422a8a9-ad1f-4265-a904-16c97e6ce575.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 # 腾讯通过DMCA投诉下架多款微信聊天记录导出工具 技术圈引发数据访问权争议

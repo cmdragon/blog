@@ -13,14 +13,12 @@ categories:
 
 tags:
   - nuxt
-  - VueJS
+  - 钩子
+  - 组件
   - SSR
   - 插件
-  - 组件
-  - 钩子
-  - 上下文
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_07_21 14_12_43.png" title="2024_07_21 14_12_43.png" alt="2024_07_21 14_12_43.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -12,16 +12,11 @@ categories:
   - fastapi
 
 tags:
-  - GraphQL
-  - 数据加载器
-  - 批量查询优化
-  - FastAPI
-  - 缓存穿透防护
-  - 布隆过滤器
+  - fastapi
   - 性能优化
+  - GraphQL
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/9fb2368e35a1694fef2e30e6f54a72f4.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

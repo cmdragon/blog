@@ -12,15 +12,9 @@ categories:
   - fastapi
 
 tags:
-  - HTTP实战图解
-  - RESTful误区解析
-  - 披萨店API案例
-  - 请求响应可视化
-  - 数据验证陷阱
-  - fastapi快速入门
   - 新手友好教程
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2025_02_27 16_11_13.png" title="2025_02_27 16_11_13.png" alt="2025_02_27 16_11_13.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

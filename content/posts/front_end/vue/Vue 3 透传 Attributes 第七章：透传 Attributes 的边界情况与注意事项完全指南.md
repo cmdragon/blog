@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
+  - 最佳实践
+  - v-model
   - Attributes 透传
   - 边界情况
-  - 注意事项
-  - v-model
-  - 常见陷阱
-  - 最佳实践
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026_4_23_12_54_24.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

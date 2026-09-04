@@ -13,15 +13,11 @@ categories:
 
 tags:
   - 基础入门
-  - 动态插槽
-  - 条件插槽
-  - $slots属性
   - 组件设计
   - 高级技巧
-  - 灵活布局
-  - 运行时渲染
----
+  - 动态插槽
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年5月3日 20_31_47.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

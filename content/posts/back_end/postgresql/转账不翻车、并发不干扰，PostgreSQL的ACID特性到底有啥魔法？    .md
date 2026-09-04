@@ -14,15 +14,9 @@ categories:
 
 tags:
   - 基础入门
-  - ACID
   - 数据库事务
-  - 原子性
-  - 一致性
-  - 隔离性
-  - 持久性
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/cb91fc57e9f54d70a3caec4aaa43e329~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

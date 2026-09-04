@@ -13,15 +13,12 @@ categories:
 
 tags:
   - 基础入门
-  - 具名作用域插槽
-  - 高级列表组件
-  - v-bind传递
-  - 组件复用
   - 实战案例
-  - 插槽Props
   - 列表渲染
----
+  - 组件复用
+  - 插槽Props
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年5月4日 23_41_46.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

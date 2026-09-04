@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 侦听器
-  - watch API
-  - watchEffect
   - 响应式数据
+  - 侦听器
+  - watchEffect
   - 深度监听
-  - 副作用
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/e69b2e3bc4a645ac8e4ac7602cd0591d~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

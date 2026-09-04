@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - watch
-  - 多数据源监听
-  - Getter函数监听
-  - 数组监听
   - 响应式系统
+  - watch
   - 常见报错解决
+  - 多数据源监听
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_0078b439-b088-406d-b822-4b30eba643f9.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

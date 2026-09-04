@@ -7,15 +7,12 @@ categories:
   - 前端开发
 
 tags:
-  - Vue3组件
-  - Props详解
   - 生命周期
-  - 数据通信
-  - 模板语法
-  - Composition API
+  - composition api
   - 单向数据流
----
+  - 模板语法
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_31 21_06_03.png" title="2024_05_31 21_06_03.png" alt="2024_05_31 21_06_03.png"/>
 
 ## Vue 3 组件基础

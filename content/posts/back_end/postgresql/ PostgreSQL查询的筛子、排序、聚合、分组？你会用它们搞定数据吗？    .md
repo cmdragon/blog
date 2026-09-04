@@ -14,16 +14,12 @@ categories:
 
 tags:
   - 基础入门
-    - PostgreSQL
-  - WHERE子句
-  - ORDER BY子句
+  - PostgreSQL
   - 聚合函数
-  - GROUP BY
-  - HAVING
   - SQL查询
+  - GROUP BY
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/8bf13a56606e453495d69043b2c8fbf3~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

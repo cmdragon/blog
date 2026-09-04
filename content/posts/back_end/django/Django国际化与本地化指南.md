@@ -7,15 +7,12 @@ categories:
   - 后端开发
 
 tags:
-  - Django-i18n
-  - 本地化-L10n
-  - 多语言
-  - 国际化
-  - 翻译工具
-  - 表单验证
   - 性能优化
----
+  - 表单验证
+  - 国际化
+  - 多语言
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_12 16_54_10.png" title="2024_05_12 16_54_10.png" alt="2024_05_12 16_54_10.png"/>
 
 ## 引言

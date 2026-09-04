@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 表单验证
-  - 响应式数据
-  - 异步验证
-  - 加载状态
-  - 错误提示
   - 前端开发
+  - 响应式数据
+  - 表单验证
+  - 加载状态
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_e3a65f0b-37c4-4e29-b6b5-bb86dc49d20d.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

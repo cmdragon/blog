@@ -14,14 +14,11 @@ categories:
 tags:
   - fastapi
   - Tortoise-ORM
-  - 复杂查询
-  - 原子更新
-  - Q对象
-  - F表达式
   - 数据库操作
+  - 复杂查询
+  - Q对象
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/openfa/2025-05-02/22485a6e4f8ec8735faec4b47260f52d.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

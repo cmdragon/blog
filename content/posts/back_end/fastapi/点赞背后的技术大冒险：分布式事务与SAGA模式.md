@@ -12,16 +12,13 @@ categories:
   - fastapi
 
 tags:
-  - 分布式事务
-  - SAGA模式
-  - 微服务架构
-  - 补偿机制
-  - Python实现
-  - 事务管理
   - 数据库操作
+  - 事务管理
+  - 分布式事务
+  - 微服务架构
+  - saga模式
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/openfe/2025-05-07/7e0d8b41625ff95d3024f145e2fa7f31.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

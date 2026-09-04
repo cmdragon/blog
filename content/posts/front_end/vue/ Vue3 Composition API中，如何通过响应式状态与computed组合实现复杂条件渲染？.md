@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - Composition API
-  - 条件渲染
+  - composition api
   - v-if
+  - 条件渲染
   - v-show
-  - computed
-  - 动态组件
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_8b35b18f-0f53-41f7-b726-ee407e6f16eb.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

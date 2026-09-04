@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 模板引用
   - 生命周期
+  - composition api
+  - 模板引用
   - 常见陷阱
-  - Composition API
-  - 子组件通信
-  - v-for ref 数组处理
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_4050fd1a-ca65-4226-b3b7-0d06905f5722.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

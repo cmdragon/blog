@@ -14,15 +14,8 @@ categories:
 
 tags:
   - 基础入门
-  - Vue 3响应式数据
-  - Vue 3 Setup语法糖
-  - Vue 3 ref
-  - Vue 3 reactive
-  - Vue 3 computed
-  - Vue 3 watch
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_e65d6f23-3fcc-42e9-b08e-f8691247cbc1.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

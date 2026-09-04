@@ -13,17 +13,13 @@ categories:
   - fastapi
 
 tags:
-  - 冷热任务分离
-  - FastAPI
-  - 异步编程
-  - 任务队列
+  - fastapi
   - 性能优化
+  - 异步编程
   - 分布式系统
-  - 架构设计
+  - 任务队列
 
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 

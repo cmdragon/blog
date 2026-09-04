@@ -12,15 +12,13 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt
-  - 路径
-  - 解析
-  - 工具
+  - nuxt
   - 模块
-  - 别名
+  - 工具
   - 文件
----
+  - 解析
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_09_22 12_43_06.png" title="2024_09_22 12_43_06.png" alt="2024_09_22 12_43_06.png"/>
 
 

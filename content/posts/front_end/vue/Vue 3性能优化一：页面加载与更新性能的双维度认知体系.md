@@ -15,14 +15,9 @@ categories:
 tags:
   - 基础入门
   - 性能优化
-  - Web Vitals
-  - LCP
-  - INP
   - Chrome DevTools
-  - Vue DevTools
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

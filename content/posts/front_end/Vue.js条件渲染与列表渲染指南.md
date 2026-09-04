@@ -7,15 +7,13 @@ categories:
   - 前端开发
 
 tags:
-  - VueJS
-  - 前端开发
-  - 数据绑定
-  - 列表渲染
-  - 状态管理
-  - 路由配置
   - 性能优化
----
+  - 前端开发
+  - 状态管理
+  - 列表渲染
+  - vuejs
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_26 20_22_57.png" title="2024_05_26 20_22_57.png" alt="2024_05_26 20_22_57.png"/>
 
 ## **第1章：Vue.js基础与环境设置**

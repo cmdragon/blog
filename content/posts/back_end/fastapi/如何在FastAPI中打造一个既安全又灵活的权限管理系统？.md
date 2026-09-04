@@ -13,15 +13,12 @@ categories:
 
 tags:
   - fastapi
-  - 权限系统
   - 依赖注入
-  - 数据库模型
-  - 权限验证
-  - 动态路由
   - 中间件
+  - 权限系统
+  - 动态路由
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/open20/2025-06-16/43bd90e82a95eab5c0ff900a1de0983b.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

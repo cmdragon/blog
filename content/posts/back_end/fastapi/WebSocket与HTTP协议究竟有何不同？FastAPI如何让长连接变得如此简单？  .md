@@ -12,16 +12,13 @@ categories:
   - fastapi
 
 tags:
-  - WebSocket
-  - HTTP协议
   - fastapi
-  - 实时通信
-  - 长连接
+  - WebSocket
   - 异步处理
   - 数据验证
+  - 实时通信
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/7989a41781759816107c155a4591fc73.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

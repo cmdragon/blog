@@ -12,17 +12,13 @@ summary:
 categories:  
   - vue
 
-tags:  
+tags:
   - 基础入门
-  - ref函数
   - 响应式系统
-  - 基本类型
-  - 模板自动解包
-  - 响应式原理
   - 常见报错
+  - 响应式原理
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/307d6ccbe07e4cd99781fcc16b312831~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -11,14 +11,12 @@ categories:
   - tweets
 
 tags:
-  - DeepSeek工资待遇太恐怖了
-  - 税费计算器
-  - 金融计算器
-  - 工资计算
-  - 个税
   - 免费工具
----
+  - 金融计算器
+  - 税费计算器
+  - 工资计算
 
+---
 > **立即体验**：[税费计算器 - 免费在线工具](https://tools.cmdragon.cn/zh/apps/tax-calculator) | [金融计算器 - 免费在线工具](https://tools.cmdragon.cn/zh/apps/financial-calculator) | [更多1000+免费工具](https://tools.cmdragon.cn/zh/apps?category=trending)
 >
 > 无需下载安装，打开浏览器即用，完全免费！

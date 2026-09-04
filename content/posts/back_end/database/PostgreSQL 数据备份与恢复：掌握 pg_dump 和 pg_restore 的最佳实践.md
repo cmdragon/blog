@@ -13,14 +13,11 @@ categories:
 
 tags:
   - PostgreSQL
-  - 数据库备份
-  - 数据恢复
-  - pg_dump
-  - pg_restore
   - 数据安全
+  - 数据恢复
   - DBA最佳实践
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2025_01_28 12_45_52.png" title="2025_01_28 12_45_52.png" alt="2025_01_28 12_45_52.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

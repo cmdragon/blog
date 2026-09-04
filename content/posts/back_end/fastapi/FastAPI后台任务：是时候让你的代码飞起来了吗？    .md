@@ -12,16 +12,13 @@ categories:
   - fastapi
 
 tags:
-  - FastAPI
-  - BackgroundTasks
-  - 后台任务
-  - 异步编程
-  - 数据库事务
+  - fastapi
   - 性能优化
   - 错误处理
+  - 异步编程
+  - BackgroundTasks
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/5319f3352d8c1266c5ad660030d7f215.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

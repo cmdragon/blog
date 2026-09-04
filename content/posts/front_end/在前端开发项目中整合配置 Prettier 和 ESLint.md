@@ -6,19 +6,12 @@ lastmod: 2024-02-04T1:55:24+08:00
 categories:
   - 前端开发
 tags:
+  - 开发者工具
   - TypeScript
   - Prettier
   - ESLint
-  - 代码格式化
-  - 代码风格检查
-  - npm 配置
-  - linting
-  - 项目设置
-  - JavaScript 工具
-  - 开发者工具
+
 ---
-
-
 引言：
 在前端开发中，代码的格式化和规范是非常重要的。Prettier和ESLint是两个常用的工具，可以帮助我们自动格式化代码和检查代码规范。本文将介绍如何在前端开发项目中整合和配置Prettier和ESLint，以提高代码质量和开发效率。
 

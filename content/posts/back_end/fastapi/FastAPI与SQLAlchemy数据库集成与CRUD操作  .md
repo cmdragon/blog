@@ -13,15 +13,12 @@ categories:
 
 tags:
   - fastapi
+  - 错误处理
   - SQLAlchemy
   - 数据库集成
   - CRUD操作
-  - Session管理
-  - 错误处理
-  - MySQL
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/open84/2025-04-16/0ed0bcb43f45243d9af3fb01121d2490.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

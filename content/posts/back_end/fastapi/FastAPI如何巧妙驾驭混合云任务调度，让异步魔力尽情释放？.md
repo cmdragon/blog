@@ -13,17 +13,13 @@ categories:
   - fastapi
 
 tags:
-  - FastAPI
-  - 混合云
-  - 任务调度
+  - fastapi
   - 异步编程
-  - Celery
   - Pydantic
-  - 云架构
+  - Celery
+  - 任务调度
 
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 

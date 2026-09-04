@@ -13,14 +13,11 @@ categories:
 
 tags:
   - 错误处理
+  - 用户体验
   - Nuxt应用
   - Vue组件
-  - API路由
-  - 自定义错误
-  - 元数据
-  - 用户体验
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_08_08 10_00_30.png" title="2024_08_08 10_00_30.png" alt="2024_08_08 10_00_30.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -11,13 +11,12 @@ categories:
   - tweets
 
 tags:
-  - AI绘画
-  - AI视频
   - AI文生图
   - AI创作
+  - AI绘画
   - 免费AI工具
----
 
+---
 > **立即体验**：[AI文生图 - 免费在线工具](https://tools.cmdragon.cn/zh/apps/text-to-image-ai) | [更多1000+免费工具](https://tools.cmdragon.cn/zh/apps?category=trending)
 >
 > 无需下载安装，打开浏览器即用，完全免费！

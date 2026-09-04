@@ -12,15 +12,13 @@ categories:
    - 前端开发
 
 tags:
-   - Nuxt
-   - Vite
-   - 钩子
-   - 编译
-   - 自定义
-   - 热更新
-   - 性能
----
+  - nuxt
+  - 钩子
+  - 自定义
+  - Vite
+  - 性能
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_11_19 15_00_51.png" title="2024_11_19 15_00_51.png" alt="2024_11_19 15_00_51.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

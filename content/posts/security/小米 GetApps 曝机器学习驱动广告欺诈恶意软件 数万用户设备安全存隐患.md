@@ -14,16 +14,8 @@ categories:
 
 tags:
   - 小米GetApps
-  - 机器学习驱动恶意软件
-  - 广告点击欺诈
-  - 设备安全隐患
-  - 第三方渠道传播
-  - TensorFlow.js
-  - 安全预警
 
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_eb09b590-46a5-4f14-aa1f-4b3b94092451.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 # 小米官方应用商店GetApps曝机器学习驱动恶意软件事件 数万用户设备安全存隐患

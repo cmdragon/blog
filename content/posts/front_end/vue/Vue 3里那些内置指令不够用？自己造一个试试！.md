@@ -15,11 +15,9 @@ tags:
   - 基础入门
   - 自定义指令
   - DOM操作
-  - 指令注册
-  - v-focus
   - 代码复用
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年5月22日 16_45_44.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

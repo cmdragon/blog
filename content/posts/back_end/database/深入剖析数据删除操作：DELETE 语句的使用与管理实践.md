@@ -12,15 +12,13 @@ categories:
   - 前端开发
 
 tags:
-  - 数据删除
-  - SQL
-  - PostgreSQL
-  - DELETE 语句
-  - 数据库管理
-  - 数据完整性
   - 性能优化
----
+  - PostgreSQL
+  - 数据库管理
+  - SQL
+  - 数据完整性
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2025_01_08 15_37_36.png" title="2025_01_08 15_37_36.png" alt="2025_01_08 15_37_36.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

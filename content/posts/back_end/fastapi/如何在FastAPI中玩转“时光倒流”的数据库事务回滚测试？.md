@@ -13,16 +13,13 @@ categories:
   - fastapi
 
 tags:
-  - FastAPI
-  - 集成测试
-  - 事务回滚
-  - pytest
+  - fastapi
   - SQLAlchemy
+  - pytest
+  - 集成测试
   - 异步测试
-  - 数据库测试
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 

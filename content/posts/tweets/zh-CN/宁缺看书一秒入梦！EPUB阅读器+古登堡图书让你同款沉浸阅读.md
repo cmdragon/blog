@@ -11,14 +11,11 @@ categories:
   - tweets
 
 tags:
-  - 宁缺看书一秒入梦
+  - 免费工具
   - EPUB阅读器
   - 古登堡图书
-  - 电子书
-  - 免费阅读
-  - 免费工具
----
 
+---
 > **立即体验**：[EPUB阅读器 - 免费在线工具](https://tools.cmdragon.cn/zh/apps/epub-reader) | [古登堡图书 - 免费在线工具](https://tools.cmdragon.cn/zh/apps/project-gutenberg) | [更多1000+免费工具](https://tools.cmdragon.cn/zh/apps?category=trending)
 >
 > 无需下载安装，打开浏览器即用，完全免费！

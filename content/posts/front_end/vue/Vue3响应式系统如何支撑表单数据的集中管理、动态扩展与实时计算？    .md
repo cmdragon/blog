@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 表单处理
-  - 响应式
   - v-model
-  - computed
+  - 响应式
   - reactive
-  - 动态表单
+  - 表单处理
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_440950dc-3626-44da-996d-7e532e036a06.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

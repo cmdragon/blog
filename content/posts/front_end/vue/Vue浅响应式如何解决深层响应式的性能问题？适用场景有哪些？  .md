@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 浅响应式
   - 性能优化
   - 状态管理
+  - 浅响应式
   - shallowReactive
-  - shallowRef
-  - 外部库集成
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/f33ee20a8a074464a43a598f7e4e03fe~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

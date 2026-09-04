@@ -8,6 +8,8 @@ hugo_stats.json
 
 # Hugo的缓存目录
 /.hugo_build.lock
+# IndexNow 本地提交缓存（记录已提交的 URL，勿入库）
+/.cache/
 
 # 操作系统文件
 .DS_Store
@@ -35,3 +37,4 @@ Thumbs.db
 wrangler.toml
 public 分流.rar
 !/wrangler.toml
+.codebuddy

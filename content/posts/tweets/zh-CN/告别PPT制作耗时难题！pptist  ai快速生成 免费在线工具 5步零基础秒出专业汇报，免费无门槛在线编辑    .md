@@ -14,16 +14,8 @@ categories:
 
 tags:
   - pptist
-  - AI PPT生成
-  - 免费PPT工具
-  - 在线PPT制作
-  - PPT制作流程
-  - PPT设计优化
-  - PPT效率工具
 
 ---
-
-
 ![cover.png](/images/8ad8312df194452ab5085bfa85d05248~tplv-5jbd59dj06-image.png)
 ![cover2.png](/images/xw_20251125202052.png)
 

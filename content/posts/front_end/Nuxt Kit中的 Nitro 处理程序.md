@@ -12,15 +12,13 @@ categories:
   - 前端开发
 
 tags:
+  - 插件
   - Nuxt 3
+  - 预渲染
   - Nitro
   - 服务器
-  - 处理程序
-  - 插件
-  - 预渲染
-  - 模块化
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_09_21 12_51_47.png" title="2024_09_21 12_51_47.png" alt="2024_09_21 12_51_47.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

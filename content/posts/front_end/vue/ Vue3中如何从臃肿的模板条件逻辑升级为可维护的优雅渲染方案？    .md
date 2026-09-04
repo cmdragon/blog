@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 条件渲染
-  - v-if
-  - v-show
-  - 复杂条件
   - 计算属性
-  - 组件化
+  - v-if
+  - 条件渲染
+  - v-show
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_8663e6c0-a5e5-44cc-a229-686bcfe08d2f.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

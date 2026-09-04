@@ -12,17 +12,10 @@ summary:
 categories:
   - tweets
 
-tags:  
-  - mermaid live editor  
-  - flowchart  
-  - online tool  
-  - user guide  
-  - grammar-driven  
-  - productivity tool  
-  - full-scenario coverage  
----
- 
+tags:
+  - mermaid live editor
 
+---
 ![cover.png](/images/xw_20251123195835.png)  
 
 In modern work and study, flowcharts serve as vital visual communication tools for organizing process logic, illustrating system architecture, or planning task steps. Whether deconstructing projects in the workplace or structuring knowledge in learning, a simple, configuration-free flowchart tool can significantly boost efficiency.  

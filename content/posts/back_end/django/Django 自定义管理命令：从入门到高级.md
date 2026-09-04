@@ -7,15 +7,10 @@ categories:
   - 后端开发
 
 tags:
-  - Django
-  - 自定义命令
-  - 入门教程
+  - django
   - 高级技巧
-  - 命令创建
-  - 命令使用
-  - 自定义管理
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_16 18_43_11.png" title="2024_05_16 18_43_11.png" alt="2024_05_16 18_43_11.png"/>
 
 ## **第 1 章 简介**

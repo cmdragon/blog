@@ -13,17 +13,10 @@ categories:
   - tweets
 
 tags:
-
   - 在线工具
-  - 绘图软件
-  - 协作工具
-  - 开源项目
-  - 白板软件
   - 思维导图
-  - 视觉笔记
 
 ---
-
 ![Excalidraw](/images/xw_20250702202159.png)
 
 ## Excalidraw - 极简手绘风格的在线白板

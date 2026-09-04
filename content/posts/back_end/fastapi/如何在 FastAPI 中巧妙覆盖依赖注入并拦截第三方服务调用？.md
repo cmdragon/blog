@@ -13,17 +13,13 @@ categories:
   - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
+  - 错误处理
   - 依赖注入
   - 单元测试
   - 请求拦截
-  - 第三方服务调用
-  - 错误处理
-  - 模拟与覆盖
 
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 

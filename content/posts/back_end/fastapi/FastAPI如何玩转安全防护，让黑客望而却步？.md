@@ -13,15 +13,11 @@ categories:
 
 tags:
   - fastapi
-  - 安全架构
-  - OAuth2
   - JWT
+  - OAuth2
   - SQL注入防护
-  - 自动化安全工具
-  - 应急响应机制
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/b2b4ec33176709bf0c2d48b78f73d4c7.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -14,14 +14,9 @@ categories:
 tags:
   - fastapi
   - 安全加固
-  - 密钥轮换
-  - 请求频率限制
-  - 安全头部配置
-  - JWT验证
   - 速率限制
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/1d60bd17cc31a96b1f947594172f4520.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

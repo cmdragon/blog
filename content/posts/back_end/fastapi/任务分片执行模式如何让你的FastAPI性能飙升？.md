@@ -13,17 +13,12 @@ categories:
   - fastapi
 
 tags:
-  - FastAPI
-  - 任务分片
-  - 并发处理
-  - 异步编程
+  - fastapi
   - 性能优化
-  - 分布式计算
+  - 异步编程
   - 图像处理
 
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 

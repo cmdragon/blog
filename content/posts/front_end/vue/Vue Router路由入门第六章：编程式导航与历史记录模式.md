@@ -9,15 +9,11 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/2026年7月4日 20_34_38.png
 categories:
   - vue
 tags:
+  - 基础入门
   - Vue
   - Vue Router
-  - 编程式导航
-  - 历史模式
-  - createWebHistory
-  - 基础入门
+
 ---
-
-
 ## 一、为什么需要"编程式导航"
 
 前面几章我们跳转都靠 `<RouterLink>`，它渲染成一个 `<a>` 标签，用户点一下就跳。

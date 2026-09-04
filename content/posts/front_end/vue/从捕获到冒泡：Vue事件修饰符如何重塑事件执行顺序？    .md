@@ -14,15 +14,8 @@ categories:
 
 tags:
   - 基础入门
-  - DOM事件流
-  - stop修饰符
-  - prevent修饰符
-  - capture修饰符
-  - once修饰符
-  - passive修饰符
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_527d5f3a-836e-4150-ba8d-86197a81175f.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

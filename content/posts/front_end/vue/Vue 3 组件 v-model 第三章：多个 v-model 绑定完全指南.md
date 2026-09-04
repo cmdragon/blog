@@ -12,14 +12,12 @@ categories:
   - vue
 
 tags:
-  - v-model
-  - 多 v-model
-  - 命名 v-model
-  - 双向绑定
   - 组件通信
+  - v-model
+  - 双向绑定
   - 实战技巧
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/75b7903a5fc74ee1a3e392d684dd7b36~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

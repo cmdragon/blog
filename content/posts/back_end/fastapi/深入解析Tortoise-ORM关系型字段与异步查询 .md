@@ -12,16 +12,12 @@ categories:
   - fastapi
 
 tags:
+  - 性能优化
   - Tortoise-ORM
   - 异步数据库操作
-  - 模型关系定义
   - fastapi集成
-  - 多对多关系处理
-  - 性能优化
-  - 异步事务管理
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/open8d/2025-05-01/77ac7b62bd018c3d82d4df60503f1ea7.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

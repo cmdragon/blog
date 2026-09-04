@@ -14,15 +14,8 @@ categories:
 
 tags:
   - 基础入门
-  - 组件样式隔离
-  - Scoped CSS
-  - 深度选择器
-  - 样式穿透
-  - 动态内容样式
-  - 常见样式报错解决方案
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_6335e821-2013-4434-a100-231e836f15c1.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

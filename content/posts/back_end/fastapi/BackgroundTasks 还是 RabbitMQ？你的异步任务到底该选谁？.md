@@ -12,16 +12,13 @@ categories:
   - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
+  - Python
   - BackgroundTasks
   - RabbitMQ
   - 异步任务处理
-  - 消息队列
-  - Python
-  - 任务调度
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/97fdcfb49303ee991f073d5cc17fe6cf.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

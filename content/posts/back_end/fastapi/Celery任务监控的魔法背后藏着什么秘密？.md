@@ -12,16 +12,12 @@ categories:
   - fastapi
 
 tags:
+  - fastapi
   - Celery
-  - 结果存储
-  - 状态监控
   - Redis
-  - Flower
-  - FastAPI
   - 异步任务
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/f8c6f09cffd553d1c959e6c690308866.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

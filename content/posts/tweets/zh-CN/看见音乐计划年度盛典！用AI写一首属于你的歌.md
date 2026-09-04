@@ -10,12 +10,11 @@ categories:
   - tweets
 
 tags:
-  - 看见音乐计划年度盛典
+  - 免费工具
   - 歌词生成
   - AI写歌
-  - 免费工具
----
 
+---
 > **立即体验**：[歌词生成 - 免费在线工具](https://tools.cmdragon.cn/zh/apps/lyrics-generator)
 >
 > 无需下载安装，打开浏览器即用，完全免费！

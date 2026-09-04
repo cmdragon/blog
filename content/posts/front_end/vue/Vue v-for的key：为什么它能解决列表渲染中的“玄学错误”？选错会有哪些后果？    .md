@@ -15,14 +15,9 @@ categories:
 tags:
   - 基础入门
   - key属性
-  - Vue列表渲染
-  - Diff算法
   - DOM优化
-  - 唯一标识
-  - 常见错误处理
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_c3632efd-a638-4cd3-bcaa-9f648108f334.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

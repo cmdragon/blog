@@ -14,15 +14,9 @@ categories:
 
 tags:
   - 基础入门
-  - Vue class对象语法
   - Vue Composition API
-  - 响应式类绑定
-  - Vue Tabs组件
-  - 静态动态类合并
-  - 类名连字符处理
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/exbix_00026_.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

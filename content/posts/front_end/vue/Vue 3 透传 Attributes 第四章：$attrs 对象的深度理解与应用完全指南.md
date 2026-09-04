@@ -13,16 +13,13 @@ categories:
   - vue
 
 tags:
-- 基础入门
-  - $attrs
-  - useAttrs
-  - 响应式
+  - 基础入门
   - 组件通信
-  - 高级应用
+  - 响应式
+  - $attrs
   - 属性分发
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/96b08f1bd56f4be9bb6333848c1ee163~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

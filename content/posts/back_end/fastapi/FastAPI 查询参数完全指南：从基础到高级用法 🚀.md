@@ -13,14 +13,10 @@ categories:
 
 tags:
   - fastapi
-  - 查询参数
-  - 必需参数
-  - 可选参数
-  - 默认值
-  - 多参数处理
   - API设计
----
+  - 默认值
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2025_03_06 00_23_00.png" title="2025_03_06 00_23_00.png" alt="2025_03_06 00_23_00.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

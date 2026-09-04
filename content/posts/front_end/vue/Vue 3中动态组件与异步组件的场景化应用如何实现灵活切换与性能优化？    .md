@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 动态组件
-  - 异步组件
-  - keep-alive
-  - defineAsyncComponent
-  - Suspense
   - 性能优化
+  - Suspense
+  - 异步组件
+  - 动态组件
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_a5ad8f43-af2b-42e8-9807-8f6b927c4ba9.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

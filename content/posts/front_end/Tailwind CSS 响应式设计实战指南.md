@@ -12,15 +12,12 @@ categories:
   - 前端开发
 
 tags:
-  - 响应式设计
-  - Tailwind CSS
   - 前端开发
-  - 网站布局
-  - 移动优先
-  - 代码优化
   - 用户体验
----
+  - 响应式设计
+  - 代码优化
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_06_13 14_05_48.png" title="2024_06_13 14_05_48.png" alt="2024_06_13 14_05_48.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

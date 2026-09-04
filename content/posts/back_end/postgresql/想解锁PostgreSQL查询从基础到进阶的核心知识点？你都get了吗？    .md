@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - SQL查询
-  - SELECT语句
-  - JOIN操作
+  - 常见报错
   - 聚合函数
   - 子查询
-  - 常见报错
+  - SQL查询
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/3552e561f45d41fb81a7d8631cc28e8e~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

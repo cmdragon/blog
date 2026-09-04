@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 模板语法
-  - 指令
-  - v-bind
-  - v-on
   - v-if
   - v-show
+  - 模板语法
+  - v-bind
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/c2f8a35b3a8d4975883f676fc3662b51~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - Vue3
-  - 数组遍历
-  - 列表渲染
-  - key
   - v-if
-  - 数组变化检测
+  - 列表渲染
+  - vue3
+  - key
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_aa46ce2d-2900-409d-b5ff-b0b5c247ebd9.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

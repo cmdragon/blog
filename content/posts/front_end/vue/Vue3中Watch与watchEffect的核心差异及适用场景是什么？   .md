@@ -14,15 +14,11 @@ categories:
 
 tags:
   - 基础入门
-  - Watch
+  - watch
   - watchEffect
-  - 深层侦听器
-  - 即时回调
-  - 一次性侦听器
   - 副作用清理
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_b9784feb-965b-4475-8ef1-36486ae71503.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

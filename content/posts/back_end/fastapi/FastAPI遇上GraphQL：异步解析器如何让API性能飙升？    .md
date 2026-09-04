@@ -12,16 +12,13 @@ categories:
   - fastapi
 
 tags:
-  - GraphQL
-  - RESTful API
-  - FastAPI
-  - 异步编程
-  - DataLoader
-  - API优化
+  - fastapi
   - 错误处理
+  - 异步编程
+  - GraphQL
+  - DataLoader
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/a85480731c05f89f8ee0973bf61292fa.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -13,15 +13,12 @@ categories:
 
 tags:
   - fastapi
-  - SQLAlchemy
-  - 数据库集成
-  - 依赖注入
-  - 数据模型
   - 错误处理
+  - 依赖注入
   - 单元测试
+  - SQLAlchemy
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/open43/2025-04-17/7bcb63bb7fb5fdcff22f284e02d62ced.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

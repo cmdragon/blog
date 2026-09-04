@@ -14,15 +14,10 @@ categories:
 
 tags:
   - 基础入门
-  - v-if vs v-show
-  - 重复渲染优化
-  - key优化
-  - KeepAlive缓存
   - 计算属性
-  - Teleport隔离
+  - v-if vs v-show
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_cfd2b6cf-50b8-42fc-810f-3725ef5d8985.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

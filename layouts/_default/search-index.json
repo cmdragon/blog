@@ -1,5 +1,5 @@
 {{- $.Scratch.Add "searchIndex" slice -}}
-{{- range where .Site.Pages "Kind" "page" -}}
+{{- range (where .Site.Pages "Kind" "page" | sort "Date" "desc") -}}
   {{- if and (ne .Type "taxonomy") (ne .Type "taxonomyTerm") -}}
     {{- $content := .Plain -}}
     {{- $summary := .Summary | plainify -}}

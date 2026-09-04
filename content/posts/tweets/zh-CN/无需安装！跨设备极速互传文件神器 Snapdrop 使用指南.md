@@ -14,17 +14,10 @@ categories:
   - tweets
 
 tags:
-
-  - 文件传输
-  - 跨平台工具
-  - WebRTC
-  - 局域网共享
-  - 免安装应用
   - 效率工具
-  - 即时传输
+  - 文件传输
 
 ---
-
 ![Snapdrop](/images/xw_20250705201528.png)
 *Snapdrop 多设备文件传输实时演示*
 

@@ -12,15 +12,13 @@ categories:
   - 前端开发
 
 tags:
-  - 子查询
-  - SQL
-  - 数据库查询
-  - 嵌套查询
-  - 数据分析
   - 性能优化
-  - SQL最佳实践
----
+  - SQL
+  - 数据分析
+  - 子查询
+  - 数据库查询
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2025_01_12 15_50_05.png" title="2025_01_12 15_50_05.png" alt="2025_01_12 15_50_05.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

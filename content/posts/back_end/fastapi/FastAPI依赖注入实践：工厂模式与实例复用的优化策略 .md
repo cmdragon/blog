@@ -13,14 +13,11 @@ categories:
 
 tags:
   - fastapi
-  - 依赖注入
-  - 工厂模式
-  - 实例复用
-  - 单例模式
-  - 多租户系统
   - 性能优化
----
+  - 依赖注入
+  - 单例模式
 
+---
 <img src="https://static.shutu.cn/shutu/jpeg/opene8/2025-04-06/c6d40b8e98c312d60a6e9113e4f609d9.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

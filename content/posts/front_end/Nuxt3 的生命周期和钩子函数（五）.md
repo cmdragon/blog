@@ -14,13 +14,11 @@ categories:
 tags:
   - nuxt
   - 生命周期
+  - web开发
   - 钩子函数
-  - Web开发
-  - 前端框架
-  - 自定义构建
   - 服务器渲染
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_06_29 14_22_05.png" title="2024_06_29 14_22_05.png" alt="2024_06_29 14_22_05.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

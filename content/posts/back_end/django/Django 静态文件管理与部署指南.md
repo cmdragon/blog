@@ -7,15 +7,9 @@ categories:
   - 后端开发
 
 tags:
-  - WebOpt
-  - CDN加速
-  - DjangoCompress
   - Webpack
-  - StaticDeploy
-  - CICD-Tools
-  - SecStatic
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_10 17_44_56.png" title="2024_05_10 17_44_56.png" alt="2024_05_10 17_44_56.png"/>
 
 ## **第一章：介绍**

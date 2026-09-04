@@ -12,15 +12,13 @@ categories:
   - 前端开发
 
 tags:
+  - 前端开发
+  - 用户体验
   - Nuxt 3
-  - useLazyAsyncData
   - 异步加载
   - 数据获取
-  - 前端开发
-  - 组件优化
-  - 用户体验
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_07_19 14_15_22.png" title="2024_07_19 14_15_22.png" alt="2024_07_19 14_15_22.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

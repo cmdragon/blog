@@ -9,16 +9,13 @@ summary: 深入浅出地讲解 Vue 3 Suspense 组件如何统一管理多个异�
 categories:
   - vue
 tags:
-  - 异步组件
-  - Suspense
-  - 加载状态
-  - 嵌套异步
-  - 实验性功能
   - 组件通信
-  - 路由懒加载
   - 状态管理
----
+  - Suspense
+  - 异步组件
+  - 加载状态
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年5月14日 14_15_31.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

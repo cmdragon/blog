@@ -13,14 +13,12 @@ categories:
 
 tags:
   - nuxt
-  - SSR
   - 钩子
-  - 响应
-  - 事件
-  - 修改
+  - SSR
   - 处理
----
+  - 响应
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_11_29 17_13_46.png" title="2024_11_29 17_13_46.png" alt="2024_11_29 17_13_46.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

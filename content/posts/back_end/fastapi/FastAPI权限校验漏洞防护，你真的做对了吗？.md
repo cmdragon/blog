@@ -14,15 +14,12 @@ categories:
 
 tags:
   - fastapi
-  - 权限校验
-  - 安全漏洞
-  - 防护措施
-  - OAuth2
   - JWT
+  - OAuth2
+  - 安全漏洞
   - SQL注入防护
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/open5b/2025-06-25/f506c85dd3f53159e1b812f09b60d517.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

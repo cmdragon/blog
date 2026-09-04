@@ -1,12 +1,12 @@
 {{ define "main" }}
 {{- $singular := .Data.Singular -}}
 {{- $description := cond (eq $singular "category") "该分类下的所有文章" "该标签下的所有文章" -}}
-{{- $icon := cond (eq $singular "category") "mdi:folder" "mdi:tag" -}}
+{{- $eyebrow := cond (eq $singular "category") "category" "tag" -}}
 {{- /* 使用通用列表容器组件 */ -}}
-{{ partial "components/list-container.html" (dict 
+{{ partial "components/list-container.html" (dict
     "title" .Title
     "description" $description
-    "icon" $icon
+    "eyebrow" $eyebrow
     "paginator" .Paginator
     "showAds" true
     "adInterval" 3

@@ -12,17 +12,8 @@ summary:
 categories:
   - 隐私安全
 
-tags:
-  - Cloudflare
-  - 网络中断
-  - 服务瘫痪
-  - 关键基础设施脆弱性
-  - CDN
-  - 单点故障
-  - 基础设施韧性
 
 ---
-
 ![xw_20251118221723.png](/images/xw_20251118221723.png)
 
 **Cloudflare全球网络中断引发大规模服务瘫痪 凸显关键基础设施脆弱性**

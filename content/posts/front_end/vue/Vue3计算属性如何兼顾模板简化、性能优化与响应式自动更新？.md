@@ -17,12 +17,9 @@ tags:
   - 计算属性
   - 响应式系统
   - 缓存机制
-  - 模板优化
-  - 性能提升
   - 依赖追踪
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/274de17503664028be5526f53bc13700~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

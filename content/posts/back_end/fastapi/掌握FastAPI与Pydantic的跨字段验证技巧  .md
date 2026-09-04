@@ -14,14 +14,12 @@ categories:
 
 tags:
   - fastapi
+  - web开发
   - Pydantic
-  - 跨字段验证
   - 数据校验
-  - Web开发
-  - 验证器
-  - API集成
----
+  - 跨字段验证
 
+---
 <img src="https://static.shutu.cn/shutu/jpeg/opend9/2025-04-01/41aa8c399bf3e1e554fd177c8584e37e.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -12,17 +12,14 @@ summary:
 categories:  
   - vue
 
-tags:  
-   - 基础入门
-   - 侦听器
-   - watch
-   - watchEffect
-   - 对比
-   - 选型
-   - 性能优化
+tags:
+  - 基础入门
+  - 性能优化
+  - watch
+  - 侦听器
+  - watchEffect
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_3aadaf0f-800d-4f93-b157-9c8d2bcfc67f.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

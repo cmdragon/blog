@@ -7,16 +7,11 @@ categories:
   - 后端开发
 
 tags:
-  - DjangoREST
-  - 前端框架
-  - SSR渲染
-  - SPA路由
-  - SEO优化
-  - 组件库集成
   - 状态管理
+  - SEO优化
+  - 前端框架
+
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_05_22 20_14_41.png" title="2024_05_22 20_14_41.png" alt="2024_05_22 20_14_41.png"/>
 
 

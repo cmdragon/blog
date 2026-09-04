@@ -12,16 +12,13 @@ categories:
   - fastapi
 
 tags:
-  - API安全
-  - 认证与授权
-  - OAuth2协议
   - fastapi
-  - 安全威胁
   - 依赖注入
+  - API安全
+  - 安全威胁
   - 访问令牌
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/open71/2025-05-28/7a0bbe27be627e62cd4dbd6c64e64d54.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

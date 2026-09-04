@@ -12,15 +12,13 @@ categories:
    - 前端开发
 
 tags:
-   - Vue
-   - Nuxt
-   - 路由
-   - 组件
-   - 前端
-   - Web
-   - 开发
----
+  - nuxt
+  - 组件
+  - Vue
+  - 开发
+  - 路由
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_08_14 10_44_33.png" title="2024_08_14 10_44_33.png" alt="2024_08_14 10_44_33.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -13,15 +13,12 @@ categories:
 
 tags:
   - fastapi
-  - 请求体参数
-  - Pydantic模型
-  - 嵌套模型
   - 数据校验
   - API设计
+  - Pydantic模型
   - RESTful
+
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2025_03_07 00_06_21.png" title="2025_03_07 00_06_21.png" alt="2025_03_07 00_06_21.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

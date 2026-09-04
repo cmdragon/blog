@@ -13,14 +13,12 @@ categories:
 
 tags:
   - fastapi
-  - 路径参数
-  - 类型转换
-  - 参数校验
-  - 正则表达式
   - API安全
+  - 正则表达式
   - RESTful
----
+  - 路径参数
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2025_03_05 17_10_53.png" title="2025_03_05 17_10_53.png" alt="2025_03_05 17_10_53.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

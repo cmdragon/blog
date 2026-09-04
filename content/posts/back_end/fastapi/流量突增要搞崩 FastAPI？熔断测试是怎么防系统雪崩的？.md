@@ -13,16 +13,10 @@ categories:
   - fastapi
 
 tags:
+  - fastapi
   - 熔断机制
-  - FastAPI
-  - 系统保护
-  - 状态机模型
-  - pybreaker
-  - 流量突增
-  - 性能测试
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/d919a308ede64b158ae9b9579812f64a~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

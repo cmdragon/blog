@@ -12,15 +12,13 @@ categories:
    - 前端开发
 
 tags:
-   - Nuxt
-   - TypeScript
-   - 钩子
-   - 自定义
-   - 类型
-   - 配置
-   - 构建
----
+  - nuxt
+  - 钩子
+  - 配置
+  - 自定义
+  - 构建
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_11_08 15_08_01.png" title="2024_11_08 15_08_01.png" alt="2024_11_08 15_08_01.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

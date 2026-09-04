@@ -12,15 +12,13 @@ categories:
    - 前端开发
 
 tags:
-   - Nuxt
-   - SSG
-   - 预渲染
-   - 钩子
-   - 路由
-   - 动态
-   - SEO
----
+  - nuxt
+  - 钩子
+  - 路由
+  - 动态
+  - 预渲染
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_11_06 15_08_04.png" title="2024_11_06 15_08_04.png" alt="2024_11_06 15_08_04.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

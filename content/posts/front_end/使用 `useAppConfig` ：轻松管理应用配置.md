@@ -12,15 +12,13 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt
-  - 配置
-  - 管理
-  - 动态
-  - 加载
-  - 环境
+  - nuxt
   - 组件
----
+  - 配置
+  - 动态
+  - 管理
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_07_11 16_52_23.png" title="2024_07_11 16_52_23.png" alt="2024_07_11 16_52_23.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

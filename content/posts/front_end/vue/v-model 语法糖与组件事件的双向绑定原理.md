@@ -16,10 +16,9 @@ tags:
   - v-model
   - 双向绑定
   - 组件事件
-  - defineModel
   - 语法糖
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/06808663912842e09373241ae5fa458f~tplv-5jbd59dj06-image.png" title="cover.png" alt="cover.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

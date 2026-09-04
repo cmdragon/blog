@@ -11,13 +11,11 @@ categories:
   - tweets
 
 tags:
-  - AI行情走到哪一步了
-  - AI聊天
-  - AI文生图
-  - AI发展
   - 免费工具
----
+  - AI文生图
+  - AI聊天
 
+---
 > **立即体验**：[AI聊天 - 免费在线工具](https://tools.cmdragon.cn/zh/apps/ai-chat) | [更多1000+免费工具](https://tools.cmdragon.cn/zh/apps?category=trending)
 >
 > 无需下载安装，打开浏览器即用，完全免费！

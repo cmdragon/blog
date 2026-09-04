@@ -15,11 +15,9 @@ tags:
   - 基础入门
   - KeepAlive
   - 动态组件
-  - 组件缓存
-  - 状态保持
   - 内置组件
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年6月7日 21_54_21.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

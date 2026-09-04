@@ -1,188 +1,237 @@
 {{ define "main" }}
-<div class="container mx-auto px-4 sm:px-6 relative py-8">
-    <!-- 添加面包屑导航 -->
-    {{ partial "breadcrumbs.html" . }}
-    
-    <header class="mb-8">
-        <h1 class="text-3xl font-bold mb-3 text-gray-900 dark:text-white flex items-center gap-3">
-            {{ if eq .Data.Plural "categories" }}
-                <span class="inline-flex p-2 rounded-lg bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300">
-                    <iconify-icon icon="mdi:folder-multiple" width="28" height="28" aria-hidden="true"></iconify-icon>
-                </span>
-            {{ else if eq .Data.Plural "tags" }}
-                <span class="inline-flex p-2 rounded-lg bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300">
-                    <iconify-icon icon="mdi:tag-multiple" width="28" height="28" aria-hidden="true"></iconify-icon>
-                </span>
-            {{ end }}
-            {{ .Title }}
+{{- $isCategories := eq .Data.Plural "categories" -}}
+{{- $isTags := eq .Data.Plural "tags" -}}
+{{- $terms := .Data.Terms.ByCount -}}
+
+{{ if $isCategories }}
+{{- /* ===================== 分类页 ===================== */ -}}
+{{- $totalPosts := 0 -}}
+{{- range $terms -}}{{- $totalPosts = add $totalPosts .Count -}}{{- end -}}
+{{- $top := index $terms 0 -}}
+
+<div class="container mx-auto px-4 sm:px-6">
+    <header class="mb-10">
+        <div class="flex items-baseline gap-3">
+            <span class="text-xs uppercase tracking-[0.25em] text-blue-600 dark:text-blue-400 font-semibold">— categories</span>
+            <span class="h-px flex-1 bg-gradient-to-r from-blue-300 via-blue-200 to-transparent dark:from-blue-700 dark:via-blue-800"></span>
+        </div>
+        <h1 class="mt-3 text-4xl sm:text-5xl font-black text-gray-900 dark:text-white tracking-tight">
+            分类<span class="text-blue-600 dark:text-blue-400">.</span>
         </h1>
-        <div class="text-gray-600 dark:text-gray-300 flex items-center gap-2">
-            {{ if eq .Data.Plural "categories" }}
-                <iconify-icon icon="mdi:file-tree" class="flex-shrink-0" width="20" height="20" aria-hidden="true"></iconify-icon>
-                <span>浏览所有内容分类 • 共 <strong>{{ len .Data.Terms }}</strong> 个分类</span>
-            {{ else if eq .Data.Plural "tags" }}
-                <iconify-icon icon="mdi:tag-text" class="flex-shrink-0" width="20" height="20" aria-hidden="true"></iconify-icon>
-                <span>浏览所有文章标签 • 共 <strong>{{ len .Data.Terms }}</strong> 个标签</span>
-            {{ end }}
-        </div>
     </header>
-    
-    <!-- 如果没有内容，显示提示 -->
-    {{ if eq (len .Data.Terms) 0 }}
-        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-8 text-center border border-gray-100 dark:border-gray-700 transition-all duration-300">
-            <div class="inline-flex items-center justify-center p-5 bg-blue-50 dark:bg-blue-900/20 rounded-full mb-5">
-                <iconify-icon icon="mdi:information" class="text-blue-500 dark:text-blue-300" width="40" height="40" aria-hidden="true"></iconify-icon>
-            </div>
-            <h2 class="text-xl font-medium text-gray-900 dark:text-gray-100 mb-3">暂无内容</h2>
-            <p class="text-gray-600 dark:text-gray-400 max-w-md mx-auto">
-                {{ if eq .Data.Plural "categories" }}
-                    目前还没有任何分类。当您为文章添加分类时，它们会显示在这里。
-                {{ else if eq .Data.Plural "tags" }}
-                    目前还没有任何标签。当您为文章添加标签时，它们会显示在这里。
-                {{ end }}
-            </p>
-        </div>
+
+    {{ if eq (len $terms) 0 }}
+    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 text-center py-16">
+        <iconify-icon icon="mdi:folder-open-outline" class="mx-auto text-gray-300 dark:text-gray-600" width="48" height="48" aria-hidden="true"></iconify-icon>
+        <p class="mt-3 text-gray-500 dark:text-gray-400">暂无分类</p>
+    </div>
     {{ else }}
-        <div class="space-y-8">
-            {{ if eq .Data.Plural "categories" }}
-                <!-- 分类列表 -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-100 dark:border-gray-700 overflow-hidden">
-                    <div class="px-6 py-4 border-b border-gray-200 dark:border-gray-700">
-                        <h2 class="text-lg font-semibold text-gray-900 dark:text-white flex items-center gap-2">
-                            <iconify-icon icon="mdi:folder-multiple-outline" width="20" height="20" aria-hidden="true"></iconify-icon>
-                            分类列表
-                        </h2>
-                    </div>
-                    <div class="p-6">
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                            {{ range .Data.Terms.Alphabetical }}
-                                <a href="{{ .Page.Permalink }}" 
-                                   class="group bg-gradient-to-br from-white to-gray-50 dark:from-gray-800/50 dark:to-gray-900/50 p-5 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-600 hover:shadow-md transition-all duration-300 flex items-center"
-                                   aria-label="分类：{{ .Page.Title }} - 包含 {{ .Count }} 篇文章"
-                                   tabindex="0">
-                                    <div class="flex-shrink-0 mr-4">
-                                        <div class="bg-blue-100 dark:bg-blue-900/30 group-hover:bg-blue-500 dark:group-hover:bg-blue-700 w-12 h-12 rounded-lg flex items-center justify-center transition-colors duration-300">
-                                            <iconify-icon icon="mdi:folder-outline" class="text-blue-700 dark:text-blue-300 group-hover:text-white transition-colors duration-300" width="24" height="24" aria-hidden="true"></iconify-icon>
-                                        </div>
-                                    </div>
-                                    <div class="flex-1">
-                                        <div class="font-semibold text-gray-900 dark:text-gray-100 text-lg group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">{{ .Page.Title }}</div>
-                                        <p class="text-sm text-gray-500 dark:text-gray-400">{{ .Count }} 篇文章</p>
-                                    </div>
-                                    <div class="flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity">
-                                        <iconify-icon icon="mdi:arrow-right" class="text-blue-600 dark:text-blue-400" width="20" height="20" aria-hidden="true"></iconify-icon>
-                                    </div>
-                                </a>
-                            {{ end }}
-                        </div>
-                    </div>
+    {{ if $top }}
+    {{- /* 杂志封面区：最热门分类 */ -}}
+    {{- $heroRecent := first 4 $top.Pages -}}
+    <a href="{{ $top.Page.Permalink }}"
+       class="group relative block overflow-hidden rounded-3xl bg-gradient-to-br from-blue-600 via-indigo-600 to-violet-700 p-8 sm:p-12 mb-10 shadow-xl hover:shadow-2xl transition-all duration-500"
+       aria-label="分类：{{ $top.Page.Title }}，包含 {{ $top.Count }} 篇文章">
+        <span class="absolute -top-12 -right-12 w-64 h-64 rounded-full bg-white/10 blur-2xl group-hover:bg-white/20 transition-all duration-500"></span>
+        <span class="absolute -bottom-16 -left-16 w-72 h-72 rounded-full bg-indigo-400/30 blur-3xl"></span>
+        <span class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.3) 1px, transparent 0); background-size: 24px 24px;"></span>
+
+        <div class="relative flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
+            <div class="max-w-2xl">
+                <div class="flex items-center gap-2 text-white/70 text-xs uppercase tracking-widest font-semibold mb-4">
+                    <iconify-icon icon="mdi:star-four-points" width="14" height="14"></iconify-icon>
+                    <span>Top Category</span>
                 </div>
-            {{ else if eq .Data.Plural "tags" }}
-                <!-- 标签云 -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-100 dark:border-gray-700 overflow-hidden">
-                    <div class="px-6 py-4 border-b border-gray-200 dark:border-gray-700">
-                        <h2 class="text-lg font-semibold text-gray-900 dark:text-white flex items-center gap-2">
-                            <iconify-icon icon="mdi:tag-multiple-outline" width="20" height="20" aria-hidden="true"></iconify-icon>
-                            标签云（显示前 100 个最热门标签）
-                        </h2>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex flex-wrap gap-3 justify-center">
-                            {{ $maxCount := 1 }}
-                            {{ $sortedTerms := .Data.Terms.ByCount }}
-                            
-                            {{ range $sortedTerms }}
-                                {{ if gt .Count $maxCount }}
-                                    {{ $maxCount = .Count }}
-                                {{ end }}
-                            {{ end }}
-                            
-                            {{ range $index, $term := first 100 $sortedTerms }}
-                                {{ $isLarge := ge .Count (div $maxCount 2) }}
-                                {{ $isMedium := and (lt .Count (div $maxCount 2)) (ge .Count (div $maxCount 3)) }}
-                                
-                                <a href="{{ .Page.Permalink }}" 
-                                   class="px-4 py-2 rounded-full transition-all duration-300 transform hover:-translate-y-1 hover:shadow-md flex items-center
-                                   {{ if $isLarge }}
-                                     bg-indigo-100 dark:bg-indigo-900/30 text-indigo-800 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800/50 hover:bg-indigo-200 dark:hover:bg-indigo-800/50 text-lg font-semibold
-                                   {{ else if $isMedium }}
-                                     bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 border border-blue-100 dark:border-blue-800/30 hover:bg-blue-100 dark:hover:bg-blue-800/30 text-base font-medium
-                                   {{ else }}
-                                     bg-gray-50 dark:bg-gray-800/50 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700/50 text-sm
-                                   {{ end }}"
-                                   aria-label="标签：{{ .Page.Title }} - 包含 {{ .Count }} 篇文章"
-                                   tabindex="0">
-                                    <iconify-icon icon="mdi:tag" class="mr-1 flex-shrink-0" width="16" height="16" aria-hidden="true"></iconify-icon>
-                                    <span class="tag-title">{{ .Page.Title }}</span>
-                                    <span class="ml-2 text-xs rounded-full px-2 py-0.5 
-                                    {{ if $isLarge }}
-                                      bg-indigo-200 dark:bg-indigo-800 text-indigo-800 dark:text-indigo-200
-                                    {{ else if $isMedium }}
-                                      bg-blue-200 dark:bg-blue-800 text-blue-800 dark:text-blue-200
-                                    {{ else }}
-                                      bg-gray-200 dark:bg-gray-600 text-gray-800 dark:text-gray-200
-                                    {{ end }}">
-                                      {{ .Count }}
-                                    </span>
-                                </a>
-                            {{ end }}
-                            
-                            {{ if gt (len .Data.Terms) 100 }}
-                                <div class="w-full text-center mt-4 text-sm text-gray-500 dark:text-gray-400">
-                                    <span class="bg-gray-100 dark:bg-gray-700 px-3 py-1 rounded-full">
-                                        仅显示最热门的 100 个标签（总计 {{ len .Data.Terms }} 个）
-                                    </span>
-                                </div>
-                            {{ end }}
-                        </div>
-                    </div>
+                <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
+                    {{ $top.Page.Title }}
+                </h2>
+                {{ with $top.Page.Description }}
+                <p class="mt-4 text-white/80 text-base sm:text-lg max-w-xl">{{ . }}</p>
+                {{ else }}
+                <p class="mt-4 text-white/80 text-base sm:text-lg max-w-xl">这里收录了 {{ $top.Count }} 篇文章，是站内最热门的主题方向。</p>
+                {{ end }}
+
+                {{ if $heroRecent }}
+                <ul class="mt-7 space-y-2.5">
+                    {{ range $heroRecent }}
+                    <li class="flex items-center gap-2.5 text-white/90 text-sm sm:text-base">
+                        <span class="w-1.5 h-1.5 rounded-full bg-white shrink-0"></span>
+                        <span class="line-clamp-1 group-hover:text-white transition-colors">{{ .Title }}</span>
+                    </li>
+                    {{ end }}
+                </ul>
+                {{ end }}
+            </div>
+
+            <div class="shrink-0 flex sm:flex-col items-center sm:items-end gap-3">
+                <div class="text-white/60 text-xs uppercase tracking-widest">文章</div>
+                <div class="text-white text-6xl sm:text-7xl font-black leading-none">{{ $top.Count }}</div>
+                <div class="inline-flex items-center gap-1.5 mt-3 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur text-white text-sm group-hover:bg-white/25 transition-colors">
+                    <span>进入</span>
+                    <iconify-icon icon="mdi:arrow-right" width="16" height="16" aria-hidden="true"></iconify-icon>
                 </div>
-            {{ end }}
+            </div>
         </div>
-        
-        <!-- 展示广告 -->
-        <div class="mt-8 bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden border border-gray-100 dark:border-gray-700 p-6">
-            <div class="text-xs text-gray-500 dark:text-gray-400 mb-3 text-center">广告位</div>
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2874982874195135"
-                 crossorigin="anonymous"></script>
-            <!-- 展示广告 -->
-            <div id="container-765d5a842abc46878512aa69bcb17212"></div>
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-2874982874195135"
-                 data-ad-slot="6984392540"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
+    </a>
+    {{ end }}
+
+    {{- $rest := after 1 $terms -}}
+    {{ if gt (len $rest) 0 }}
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {{ range $index, $term := $rest }}
+        {{- $count := $term.Count -}}
+        {{- $recent := first 2 $term.Pages -}}
+        <a href="{{ $term.Page.Permalink }}"
+           class="group relative flex flex-col rounded-2xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-blue-300 dark:hover:border-blue-700 transition-all duration-300 overflow-hidden"
+           aria-label="分类：{{ $term.Page.Title }}，包含 {{ $count }} 篇文章">
+            <div class="absolute top-0 right-0 w-20 h-20 rounded-full bg-gradient-to-br from-blue-50 to-transparent dark:from-blue-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -translate-y-1/2 translate-x-1/2"></div>
+            <div class="relative p-6 flex-1 flex flex-col">
+                <div class="flex items-center justify-between mb-5">
+                    <div class="flex items-center gap-3">
+                        <span class="text-2xl font-black text-blue-100 dark:text-blue-900/40 leading-none">#{{ printf "%02d" (add $index 2) }}</span>
+                        <span class="w-9 h-9 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-500 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                            <iconify-icon icon="mdi:folder-outline" class="text-white" width="18" height="18" aria-hidden="true"></iconify-icon>
+                        </span>
+                    </div>
+                    <span class="text-sm font-bold text-blue-600 dark:text-blue-400">{{ $count }}</span>
+                </div>
+
+                <h2 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-blue-700 dark:group-hover:text-blue-300 transition-colors">
+                    {{ $term.Page.Title }}
+                </h2>
+
+                {{ if $recent }}
+                <ul class="mt-4 space-y-1.5 flex-1">
+                    {{ range $recent }}
+                    <li class="flex items-start gap-2 text-sm text-gray-500 dark:text-gray-400">
+                        <iconify-icon icon="mdi:minus" class="mt-1 text-blue-400 shrink-0" width="12" height="12" aria-hidden="true"></iconify-icon>
+                        <span class="line-clamp-1">{{ .Title }}</span>
+                    </li>
+                    {{ end }}
+                </ul>
+                {{ else }}
+                <p class="mt-3 text-sm text-gray-500 dark:text-gray-400 line-clamp-2 flex-1">
+                    {{ with $term.Page.Description }}{{ . }}{{ else }}浏览该主题下的文章{{ end }}
+                </p>
+                {{ end }}
+
+                <div class="mt-5 flex items-center gap-1 text-blue-600 dark:text-blue-400 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <span>查看全部</span>
+                    <iconify-icon icon="mdi:arrow-right" width="16" height="16" aria-hidden="true"></iconify-icon>
+                </div>
+            </div>
+        </a>
+        {{ end }}
+    </div>
+    {{ end }}
+
+    <div class="mt-10 bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 p-6">
+        <div class="text-xs text-gray-400 dark:text-gray-500 mb-3 text-center">广告位</div>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2874982874195135" crossorigin="anonymous"></script>
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2874982874195135" data-ad-slot="6984392540" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
     {{ end }}
 </div>
 
-<style>
-/* 添加进入动画 */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 20px, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
+{{ else if $isTags }}
+{{- /* ===================== 标签页：活字墙 ===================== */ -}}
+{{- $maxTags := 80 -}}
+{{- $shown := first $maxTags $terms -}}
+{{- $hiddenCount := sub (len $terms) (len $shown) -}}
 
-.container > * {
-  animation: fadeInUp 0.6s ease-out forwards;
-}
+<div class="container mx-auto px-4 sm:px-6">
+    <header class="mb-10">
+        <div class="flex items-baseline gap-3">
+            <span class="text-xs uppercase tracking-[0.25em] text-blue-600 dark:text-blue-400 font-semibold">— tag cloud</span>
+            <span class="h-px flex-1 bg-gradient-to-r from-blue-300 via-blue-200 to-transparent dark:from-blue-700 dark:via-blue-800"></span>
+        </div>
+        <h1 class="mt-3 text-4xl sm:text-5xl font-black text-gray-900 dark:text-white tracking-tight">
+            标签<span class="text-blue-600 dark:text-blue-400">.</span>
+        </h1>
+    </header>
 
-.container > *:nth-child(1) { animation-delay: 0.1s; }
-.container > *:nth-child(2) { animation-delay: 0.2s; }
-.container > *:nth-child(3) { animation-delay: 0.3s; }
+    {{ if eq (len $terms) 0 }}
+    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 text-center py-16">
+        <iconify-icon icon="mdi:tag-off-outline" class="mx-auto text-gray-300 dark:text-gray-600" width="48" height="48" aria-hidden="true"></iconify-icon>
+        <p class="mt-3 text-gray-500 dark:text-gray-400">暂无标签</p>
+    </div>
+    {{ else }}
+    <div class="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4 [column-fill:_balance]">
+        {{ range $index, $term := $shown }}
+        {{- $name := .Page.Title -}}
+        {{- $count := .Count -}}
+        {{- $ratio := div (sub $maxTags $index) $maxTags -}}
+        <a href="{{ .Page.Permalink }}"
+           class="block mb-4 break-inside-avoid rounded-2xl border transition-all duration-300 hover:-translate-y-1 hover:shadow-xl
+                  {{ if lt $index 5 }}
+                      bg-gradient-to-br from-blue-600 via-indigo-600 to-violet-700 border-transparent text-white shadow-lg hover:shadow-2xl
+                  {{ else if lt $index 15 }}
+                      bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-blue-900/30 dark:to-indigo-900/20 border-blue-200/60 dark:border-blue-800/40 text-blue-800 dark:text-blue-200 hover:border-blue-400
+                  {{ else if lt $index 35 }}
+                      bg-white dark:bg-gray-800 border-blue-100 dark:border-gray-700 text-gray-800 dark:text-gray-100 hover:border-blue-400 dark:hover:border-blue-600
+                  {{ else if lt $index 60 }}
+                      bg-blue-50/40 dark:bg-gray-800/50 border-blue-100/60 dark:border-gray-700/60 text-gray-700 dark:text-gray-300 hover:border-blue-300
+                  {{ else }}
+                      bg-gray-50/50 dark:bg-gray-800/30 border-gray-200 dark:border-gray-700/60 text-gray-600 dark:text-gray-400 hover:border-blue-300 dark:hover:border-blue-700
+                  {{ end }}"
+           aria-label="标签：{{ $name }}，{{ $count }} 篇文章">
+            {{ if lt $index 5 }}
+            <div class="p-6 relative overflow-hidden">
+                <span class="absolute -top-8 -right-8 w-32 h-32 rounded-full bg-white/10 blur-xl"></span>
+                <div class="relative">
+                    <div class="flex items-center gap-2 text-white/70 text-[10px] uppercase tracking-widest font-bold mb-3">
+                        <iconify-icon icon="mdi:fire" width="12" height="12"></iconify-icon>
+                        <span>热门</span>
+                    </div>
+                    <div class="text-2xl font-black leading-tight break-words">{{ $name }}</div>
+                    <div class="mt-3 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white/20 backdrop-blur text-white text-xs font-bold">
+                        <span>{{ $count }}</span>
+                        <span class="opacity-70">篇</span>
+                    </div>
+                </div>
+            </div>
+            {{ else if lt $index 15 }}
+            <div class="p-5">
+                <div class="text-xl font-bold leading-tight break-words">{{ $name }}</div>
+                <div class="mt-2 flex items-center gap-1.5 text-xs opacity-80">
+                    <iconify-icon icon="mdi:tag-outline" width="13" height="13" aria-hidden="true"></iconify-icon>
+                    <span>{{ $count }} 篇</span>
+                </div>
+            </div>
+            {{ else if lt $index 35 }}
+            <div class="p-4">
+                <div class="text-base font-semibold leading-snug break-words">{{ $name }}</div>
+                <div class="mt-1.5 text-xs opacity-70">{{ $count }} 篇</div>
+            </div>
+            {{ else if lt $index 60 }}
+            <div class="px-4 py-3 flex items-center justify-between gap-2">
+                <span class="text-sm font-medium leading-tight break-words">{{ $name }}</span>
+                <span class="shrink-0 text-xs opacity-70">{{ $count }}</span>
+            </div>
+            {{ else }}
+            <div class="px-3 py-2 flex items-center justify-between gap-2">
+                <span class="text-[13px] leading-tight break-words">{{ $name }}</span>
+                <span class="shrink-0 text-[11px] opacity-60">{{ $count }}</span>
+            </div>
+            {{ end }}
+        </a>
+        {{ end }}
+    </div>
 
-.grid a:hover {
-  z-index: 10;
-}
-</style>
+    {{ if gt $hiddenCount 0 }}
+    <p class="mt-10 text-center text-sm text-gray-400 dark:text-gray-500">
+        仅展示最热门的 {{ len $shown }} 个标签，其余话题散落在各篇文章中
+    </p>
+    {{ end }}
+
+    <div class="mt-10 bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 p-6">
+        <div class="text-xs text-gray-400 dark:text-gray-500 mb-3 text-center">广告位</div>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2874982874195135" crossorigin="anonymous"></script>
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2874982874195135" data-ad-slot="6984392540" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+    {{ end }}
+</div>
+{{ end }}
 {{ end }}

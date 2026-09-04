@@ -14,15 +14,11 @@ categories:
 
 tags:
   - 基础入门
-  - 数据库创建
-  - 表创建
+  - 数据完整性
   - 数据类型
   - 数据约束
-  - 数据层级结构
-  - 数据完整性
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/60a04ac23c33499abe77f64ad417e7b9~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

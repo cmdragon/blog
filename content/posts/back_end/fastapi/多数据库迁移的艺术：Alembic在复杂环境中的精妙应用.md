@@ -12,16 +12,13 @@ categories:
   - fastapi
 
 tags:
-  - 多数据库迁移
+  - 错误处理
+  - 数据模型
   - Alembic配置
   - SQLAlchemy ORM
-  - 数据库架构
-  - 数据模型
   - 迁移脚本
-  - 错误处理
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/open77/2025-05-11/9fde0111ac2b213acaf80e42ac48db3f.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -13,16 +13,10 @@ categories:
   - tweets
 
 tags:
-  - 存储规划
-  - RAID计算器
-  - IT运维
-  - 服务器工具
-  - 成本控制
   - 性能优化
-  - 风险预警
+  - RAID计算器
 
 ---
-
 ![cover.png](/images/da37a9441d894ee192f390c65069e3d8~tplv-5jbd59dj06-image.png)
 
 🔍 存储规划党速看！是不是总在「容量不够用」「成本超预算」「故障扛不住」之间反复踩坑？

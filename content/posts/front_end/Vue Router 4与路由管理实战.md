@@ -12,14 +12,12 @@ categories:
 
 tags:
   - Vue Router
-  - 单页面应用
-  - 路由管理
-  - 导航守卫
-  - 路由懒加载
   - 代码分割
   - 动态路由
----
+  - 路由管理
+  - 路由懒加载
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_06_07 18_24_06.png" title="2024_06_07 18_24_06.png" alt="2024_06_07 18_24_06.png"/>
 
 

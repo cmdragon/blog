@@ -16,13 +16,10 @@ tags:
   - 基础入门
   - v-model
   - 双向绑定
-  - 表单绑定
-  - 复选框
-  - 单选框
   - 修饰符
+  - 复选框
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_d15240cc-a1ad-4628-a123-811bf06231ba.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

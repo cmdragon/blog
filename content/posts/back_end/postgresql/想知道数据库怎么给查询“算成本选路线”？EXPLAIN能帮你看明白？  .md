@@ -14,16 +14,12 @@ categories:
 
 tags:
   - 基础入门
-    - PostgreSQL
-  - EXPLAIN工具
+  - PostgreSQL
   - 查询优化
-  - 索引扫描
-  - 查询计划
   - 数据库性能
   - SQL优化
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/6b105d4f619e46a1aa9d34b4352d29ba~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

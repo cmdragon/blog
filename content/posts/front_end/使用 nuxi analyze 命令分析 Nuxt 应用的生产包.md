@@ -13,15 +13,11 @@ categories:
   - 前端开发
 
 tags:
-  - Nuxt优化
-  - 生产包分析
-  - nuxi命令
-  - 应用性能
-  - 代码优化
   - 前端开发
-  - 包大小分析
----
+  - 代码优化
+  - nuxi命令
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_08_29 13_39_30.png" title="2024_08_29 13_39_30.png" alt="2024_08_29 13_39_30.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

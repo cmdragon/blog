@@ -12,17 +12,14 @@ summary:
 categories:  
   - vue
 
-tags:  
-- 基础入门
-- 组件测试
-- 白盒测试
-- 黑盒测试
-- Vitest
-- 测试策略
-- 前端测试
+tags:
+  - 基础入门
+  - 组件测试
+  - Vitest
+  - 测试策略
+  - 前端测试
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年7月8日 11_45_39.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

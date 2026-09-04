@@ -11,13 +11,12 @@ categories:
   - tweets
 
 tags:
-  - 造梦师与华纳音乐官宣合作
-  - 歌词生成
-  - Strudel音乐工作室
-  - AI写歌
   - 免费工具
----
+  - 歌词生成
+  - AI写歌
+  - Strudel音乐工作室
 
+---
 > **立即体验**：[歌词生成 - 免费在线工具](https://tools.cmdragon.cn/zh/apps/lyrics-generator) | [更多1000+免费工具](https://tools.cmdragon.cn/zh/apps?category=trending)
 >
 > 无需下载安装，打开浏览器即用，完全免费！

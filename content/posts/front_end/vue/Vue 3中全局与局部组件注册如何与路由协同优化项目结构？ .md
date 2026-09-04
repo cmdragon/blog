@@ -14,15 +14,12 @@ categories:
 
 tags:
   - 基础入门
-  - 全局组件注册
-  - 局部组件注册
   - Vue Router
+  - 全局组件注册
   - 动态路由
-  - 嵌套路由
   - 组件命名规范
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_52114b41-af48-491e-a1cf-1ac267184e9c.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

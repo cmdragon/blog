@@ -12,16 +12,13 @@ categories:
   - fastapi
 
 tags:
-  - MongoDB
   - fastapi
   - 异步编程
+  - MongoDB
   - 数据库集成
-  - CRUD操作
   - 聚合管道
-  - 索引优化
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/openaf/2025-05-18/00333ae863e5596b5677a74ebb2d7ca9.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

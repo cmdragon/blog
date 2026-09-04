@@ -13,15 +13,10 @@ categories:
    - 前端开发
   
 tags:
-   - Nuxt模块
-   - 构建工具
-   - nuxi命令
-   - 生产构建
-   - 模块打包
-   - TypeScript支持
-   - ESM支持
----
+  - 构建工具
+  - nuxi命令
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_08_31 12_50_41.png" title="2024_08_31 12_50_41.png" alt="2024_08_31 12_50_41.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

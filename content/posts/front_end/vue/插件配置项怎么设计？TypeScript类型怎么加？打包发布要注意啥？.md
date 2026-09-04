@@ -13,14 +13,10 @@ categories:
 
 tags:
   - 基础入门
-  - Plugins
   - TypeScript
-  - 插件配置
-  - NPM发布
-  - 模块扩展
-  - Vite库模式
----
+  - Plugins
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年5月26日 21_10_43.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

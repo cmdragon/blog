@@ -14,15 +14,11 @@ categories:
 
 tags:
   - 基础入门
-  - 事件对象
-  - 获取事件对象
-  - 事件属性
-  - 事件方法
-  - 事件委托
   - 表单验证
+  - 事件委托
+  - 事件对象
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_08ee623a-06eb-4245-aab4-f6ae81670f4a.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

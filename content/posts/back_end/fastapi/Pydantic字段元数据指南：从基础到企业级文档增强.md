@@ -11,16 +11,8 @@ summary:
 categories:
   - fastapi
 
-tags:
-  - 字段元数据扩展
-  - OpenAPI文档增强
-  - 多语言支持
-  - 前端组件绑定
-  - 自动化文档生成
-  - 元数据验证
-  - 企业级Schema设计
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/03_28 14_46_45.png" title="03_28 14_46_45.png" alt="03_28 14_46_45.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

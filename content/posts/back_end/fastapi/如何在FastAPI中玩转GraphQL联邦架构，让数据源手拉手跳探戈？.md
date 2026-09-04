@@ -12,16 +12,13 @@ categories:
   - fastapi
 
 tags:
-  - FastAPI
-  - GraphQL
-  - 联邦架构
-  - 多数据源
+  - fastapi
   - 性能优化
   - 错误处理
+  - GraphQL
   - 数据整合
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/8dacb2e8def962ce2e5c68056eeb4195.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

@@ -10,15 +10,12 @@ categories:
   - vue
 tags:
   - 基础入门
-  - 跨组件通信
-  - prop透传
   - 依赖注入
   - 组合式API
-  - 组件树
   - 响应式
-  - 数据共享
----
+  - 跨组件通信
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年5月9日 23_20_17.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

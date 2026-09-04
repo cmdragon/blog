@@ -9,15 +9,12 @@ cover: https://api2.cmdragon.cn/upload/cmder/images/2026年7月3日 19_43_56.png
 categories:
   - vue
 tags:
+  - 基础入门
   - Vue
   - Vue Router
-  - createRouter
   - RouterView
-  - RouterLink
-  - 基础入门
+
 ---
-
-
 ## 一、Vue Router 的三件套，先记住这张关系图
 
 上一章我们手写的简易路由器，核心是"路径表 + 监听 + 动态组件"。Vue Router 把这三件事封装成了三个东西：

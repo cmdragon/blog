@@ -92,7 +92,7 @@
                             </div>
                             <div class="flex items-center">
                                 <iconify-icon icon="mdi:clock-outline" class="mr-1" width="14" height="14"></iconify-icon>
-                                <span id="terminal-time">{{ now.Format "15:04:05" }}</span>
+                                <span id="terminal-time">--:--:--</span>
                             </div>
                         </div>
                     </div>
@@ -279,14 +279,14 @@
                         文章分类
                 </h2>
                     <div class="space-y-2">
-                    {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
-                        <a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}" 
+                    {{ range $name, $taxonomy := .Site.Taxonomies.categories.ByCount }}
+                        <a href="{{ "/categories/" | relLangURL }}{{ $taxonomy.Term | urlize }}" 
                                class="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200"
-                           aria-label="分类: {{ $name }}"
+                           aria-label="分类: {{ $taxonomy.Term }}"
                            tabindex="0">
                                 <span class="flex items-center">
                                     <iconify-icon icon="mdi:chevron-right" class="mr-2 text-blue-700 dark:text-blue-400" width="16" height="16"></iconify-icon>
-                            {{ $name }}
+                            {{ $taxonomy.Term }}
                                 </span>
                                 <span class="bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-md text-xs">
                                     {{ $taxonomy.Count }}
@@ -307,7 +307,7 @@
                 <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">站内最热门的话题标签</p>
                 <div class="flex flex-wrap gap-2">
                     {{ $tagLimit := 20 }}
-                    {{ range $i, $tag := first $tagLimit (sort .Site.Taxonomies.tags "Count" "desc") }}
+                    {{ range $i, $tag := first $tagLimit .Site.Taxonomies.tags.ByCount }}
                         {{ $name := $tag.Page.Title }}
                         {{ $count := $tag.Count }}
                         <a href="{{ $tag.Page.Permalink }}" 
@@ -346,7 +346,9 @@
                     </script>
                 </div>
                 
-                <!-- 最近更新 -->
+                <!-- 最近更新（sticky：侧边栏其余模块滚过后，此模块吸附在视口内，
+                     与文章页 TOC 的 lg:sticky lg:top-24 惯例保持一致） -->
+                <div class="lg:sticky lg:top-24">
                 <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 border border-gray-100 dark:border-gray-700">
                     <h3 class="text-xl font-bold mb-4 flex items-center">
                         <iconify-icon icon="mdi:clock-outline" class="mr-2" width="24" height="24"></iconify-icon>
@@ -369,6 +371,7 @@
                             </a>
                         {{ end }}
                     </div>
+                </div>
                 </div>
             </aside>
         </div>

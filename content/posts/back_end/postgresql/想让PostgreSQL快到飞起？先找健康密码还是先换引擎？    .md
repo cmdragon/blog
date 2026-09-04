@@ -14,15 +14,9 @@ categories:
 
 tags:
   - 基础入门
-  - 数据库配置调优
-  - 慢查询优化
   - 内存管理
-  - Checkpoint优化
-  - 性能瓶颈分析
-  - 数据库监控工具
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/ebbc6843119c4665940ba907fce34259~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

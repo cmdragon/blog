@@ -6,15 +6,10 @@ lastmod: 2024-06-01T9:07:52+08:00
 categories:
   - 前端开发
 tags:
-  - VueSlot
-  - ScopeSlot
   - 组件通信
-  - Vue2/3插槽
-  - 作用域API
   - 动态插槽
-  - 插槽优化
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_06_01 21_11_56.png" title="2024_06_01 21_11_56.png" alt="2024_06_01 21_11_56.png"/>
 
 

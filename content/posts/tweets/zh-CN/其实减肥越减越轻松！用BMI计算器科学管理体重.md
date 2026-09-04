@@ -1,5 +1,5 @@
 ---
-url: /posts/weight-loss-bmi-calculator-2026/
+url: /posts/weight-loss-gets-easier-bmi-2026/
 title: 其实减肥越减越轻松！用BMI计算器科学管理体重，3步告别盲目减肥
 date: 2026-07-19T6:30:00+08:00
 lastmod: 2026-07-19T6:30:00+08:00
@@ -11,13 +11,12 @@ categories:
   - tweets
 
 tags:
-  - 减肥
-  - BMI计算器
-  - 体质指数
-  - 体重管理
   - 免费工具
----
+  - BMI计算器
+  - 减肥
+  - 体质指数
 
+---
 > **立即体验**：[BMI计算器 - 免费在线工具](https://tools.cmdragon.cn/zh/apps/bmi-calculator) | [更多1000+免费工具](https://tools.cmdragon.cn/zh/apps?category=trending)
 >
 > 无需下载安装，打开浏览器即用，完全免费！

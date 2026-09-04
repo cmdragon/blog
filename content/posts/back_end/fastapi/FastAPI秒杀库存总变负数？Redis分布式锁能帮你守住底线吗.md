@@ -13,16 +13,13 @@ categories:
   - fastapi
 
 tags:
-  - FastAPI
-  - 分布式锁
-  - Redis
+  - fastapi
   - 异步编程
-  - Redlock算法
+  - Redis
   - 并发控制
   - 测试策略
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2e41703a0e314d5183094f5ee9ba9cad~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

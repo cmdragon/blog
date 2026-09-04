@@ -9,16 +9,13 @@ summary: 深入讲解 Vue 3 inject 的注入别名机制、默认值设置、工
 categories:
   - vue
 tags:
-  - inject
   - 依赖注入
-  - 默认值
-  - 工厂函数
-  - 注入别名
-  - 防御性编程
-  - 组合式API
   - 组件通信
----
+  - 组合式API
+  - inject
+  - 默认值
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年5月9日 23_33_16.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

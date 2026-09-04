@@ -12,15 +12,13 @@ categories:
    - 前端开发
 
 tags:
-   - Nuxt
-   - Nitro
-   - 生命周期
-   - 钩子
-   - 自定义
-   - 交互
-   - 初始化
----
+  - nuxt
+  - 钩子
+  - 生命周期
+  - 自定义
+  - Nitro
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_11_03 13_30_24.png" title="2024_11_03 13_30_24.png" alt="2024_11_03 13_30_24.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

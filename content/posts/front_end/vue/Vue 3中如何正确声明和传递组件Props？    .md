@@ -16,13 +16,10 @@ tags:
   - 基础入门
   - 组件通信
   - 单向数据流
-  - 类型校验
-  - defineProps
-  - v-bind
   - 组件复用
+  - v-bind
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_bda26789-0957-47c6-a0f1-58a31ed50a19.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

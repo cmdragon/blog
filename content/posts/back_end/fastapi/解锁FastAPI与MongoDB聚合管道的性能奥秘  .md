@@ -13,15 +13,12 @@ categories:
 
 tags:
   - fastapi
-  - MongoDB
-  - 聚合管道
   - 查询优化
+  - MongoDB
   - 数据分析
   - 异常处理
-  - 实战指南
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/opene0/2025-05-21/521fa3f05e5f75237a73096281ee4541.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

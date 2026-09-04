@@ -15,14 +15,11 @@ categories:
 tags:
   - 基础入门
   - 事件处理
-  - 事件对象
-  - 自定义参数
-  - $event
   - 事件修饰符
-  - 错误解决方案
+  - 事件对象
+  - $event
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_bf0faa67-623a-4f1e-b82d-2b5cd6fbf9e6.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

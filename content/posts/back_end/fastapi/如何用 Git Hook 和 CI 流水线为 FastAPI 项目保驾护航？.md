@@ -13,17 +13,13 @@ categories:
   - fastapi
 
 tags:
-  - FastAPI
+  - fastapi
   - 持续集成
-  - Git Hook
-  - GitHub Actions
   - 自动化测试
-  - 代码质量
+  - GitHub Actions
   - CI/CD
 
 ---
-
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/e659b7d8b2374c58a2d66ffb0d2fa001~tplv-5jbd59dj06-image.png" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

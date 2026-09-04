@@ -15,13 +15,9 @@ tags:
   - fastapi
   - Tortoise-ORM
   - 关系型数据库
-  - 1:N关系
-  - M:N关系
   - 异步数据库操作
-  - 数据库关联实现
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/open3a/2025-04-21/a32558b89ccfb655042065f22b8f0a8f.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

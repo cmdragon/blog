@@ -13,15 +13,11 @@ categories:
 
 tags:
   - 基础入门
-  - 插槽机制
+  - 模板语法
   - 内容分发
   - 组件化开发
-  - 渲染作用域
-  - 模板语法
-  - 父子组件
-  - 插槽基础
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年5月2日16_48_50.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

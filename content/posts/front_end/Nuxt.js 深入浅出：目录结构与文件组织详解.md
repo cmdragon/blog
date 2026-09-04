@@ -13,14 +13,12 @@ categories:
 
 tags:
   - nuxt
-  - 前端框架
+  - web开发
   - Vue.js
   - 服务器渲染
-  - 目录结构
-  - 配置文件
-  - Web开发
----
+  - 前端框架
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_06_18 14_16_00.png" title="2024_06_18 14_16_00.png" alt="2024_06_18 14_16_00.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

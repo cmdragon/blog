@@ -13,14 +13,11 @@ categories:
 
 tags:
   - 基础入门
-  - TransitionGroup
-  - 列表动画
   - v-for
-  - 进入离开动画
-  - tag属性
+  - TransitionGroup
   - Vue内置组件
----
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年6月4日 21_07_16.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

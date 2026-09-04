@@ -15,14 +15,11 @@ categories:
 tags:
   - 基础入门
   - Vue 3
-  - Proxy
-  - Reflect
   - 依赖追踪
+  - Proxy
   - 组件状态管理
-  - 调试工具
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/f889b20e537a47d1afc2b52af80bf60b~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

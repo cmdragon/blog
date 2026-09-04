@@ -13,14 +13,11 @@ categories:
 
 tags:
   - nuxt
-  - app:mounted
   - 生命周期
-  - Vue应用
-  - DOM操作
-  - 组件渲染
   - 钩子函数
----
+  - DOM操作
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2024_10_05 11_34_44.png" title="2024_10_05 11_34_44.png" alt="2024_10_05 11_34_44.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

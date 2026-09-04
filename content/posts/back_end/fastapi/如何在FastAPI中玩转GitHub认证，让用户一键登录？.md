@@ -12,16 +12,10 @@ categories:
   - fastapi
 
 tags:
-  - GitHub认证
-  - OAuth2.0
   - fastapi
   - JWT
-  - 第三方登录
-  - 安全增强
-  - 认证流程
 
 ---
-
 <img src="https://static.shutu.cn/shutu/jpeg/open05/2025-06-22/5fbf9b90a1ba8d4c896b61943e50f845.jpeg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

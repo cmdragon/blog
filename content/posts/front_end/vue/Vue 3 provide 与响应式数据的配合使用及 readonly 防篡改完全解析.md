@@ -9,16 +9,13 @@ summary: 深入讲解 Vue 3 中 provide 与响应式数据的配合使用原则�
 categories:
   - vue
 tags:
-  - provide
-  - 响应式数据
-  - readonly
-  - 状态管理
-  - computed
   - 依赖注入
-  - 组合式API
+  - 状态管理
   - 数据安全
----
+  - 组合式API
+  - 响应式数据
 
+---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年5月10日 23_23_03.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

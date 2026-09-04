@@ -14,15 +14,11 @@ categories:
 
 tags:
   - 基础入门
-  - B-tree索引
   - 数据库优化
-  - 索引原理
-  - 查询加速
-  - 适用场景
   - 常见报错
+  - b-tree索引
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/52b0ab4f3f7c428d9965585393bacd1b~tplv-5jbd59dj06-image.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>

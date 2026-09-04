@@ -13,16 +13,9 @@ categories:
   - tweets
 
 tags:
-  - 智能提词器
-  - 内容创作工具
-  - 演讲辅助
-  - 录制工具
-  - 短视频制作
   - 在线工具
 
 ---
-
-
 ![cover.png](/images/42a4378a8af94d728a83db3f25df33a3~tplv-5jbd59dj06-image.png)
 
 🎬内容创作者/演讲者/博主看过来！救你于“忘词崩溃”的神器来了👇

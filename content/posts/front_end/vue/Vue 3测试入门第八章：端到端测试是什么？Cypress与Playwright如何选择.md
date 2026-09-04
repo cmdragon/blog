@@ -12,17 +12,14 @@ summary:
 categories:  
   - vue
 
-tags:  
-- 基础入门
-- 端到端测试
-- Cypress
-- Playwright
-- E2E
-- 测试框架
-- 前端测试
+tags:
+  - 基础入门
+  - Cypress
+  - 测试框架
+  - 端到端测试
+  - 前端测试
 
 ---
-
 <img src="https://api2.cmdragon.cn/upload/cmder/images/2026年7月8日 11_52_48.png" title="cover.png" alt="cmdragon_cn.png"/>
 
 <img src="https://api2.cmdragon.cn/upload/cmder/20250304_012821924.jpg" title="cmdragon_cn.png" alt="cmdragon_cn.png"/>
