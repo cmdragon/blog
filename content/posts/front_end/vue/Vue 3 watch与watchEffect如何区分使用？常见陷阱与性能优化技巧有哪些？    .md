@@ -29,7 +29,7 @@ tags:
 
 [发现1000+提升效率与开发的AI工具和实用程序](https://tools.cmdragon.cn/zh/apps?category=ai_chat)：https://tools.cmdragon.cn/
 
-# Vue 3 常见问题与最佳实践：避免侦听器陷阱与高效调试
+## Vue 3 常见问题与最佳实践：避免侦听器陷阱与高效调试
 
 ## 一、Vue 3 侦听器核心概念回顾
 

@@ -1,6 +1,6 @@
 ---
 url: /posts/vue3-component-v-model-chapter-3-multiple-binding/
-title: Vue 3 组件 v-model 完全指南（三）：多个 v-model 绑定完全指南——命名语法与多字段表单实战
+title: Vue 3 组件 v-model（三）：多个 v-model 绑定——命名与多字段表单实战
 date: 2026-04-12T10:00:00+08:00
 lastmod: 2026-04-12T10:00:00+08:00
 author: cmdragon

@@ -1,6 +1,6 @@
 ---
 url: /posts/vue3-component-v-model-chapter-7-typescript/
-title: Vue 3 组件 v-model 完全指南（七）：TypeScript 结合完全指南——类型安全与泛型组件实战
+title: Vue 3 组件 v-model（七）：TypeScript 结合——类型安全与泛型组件
 date: 2026-04-16T10:00:00+08:00
 lastmod: 2026-04-16T10:00:00+08:00
 author: cmdragon

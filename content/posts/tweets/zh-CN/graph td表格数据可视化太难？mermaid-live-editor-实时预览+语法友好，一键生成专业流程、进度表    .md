@@ -1,6 +1,6 @@
 ---
 url: /posts/4e39beda336567fcc19d7569bcec9c9e/
-title: graph td表格数据可视化太难？mermaid-live-editor-实时预览+语法友好，一键生成专业流程图/进度表
+title: graph td表格可视化太难？mermaid实时预览一键生成专业流程图
 date: 2025-12-06T10:55:55+08:00
 lastmod: 2025-12-06T10:55:55+08:00
 author: cmdragon

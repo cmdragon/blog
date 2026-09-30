@@ -1,6 +1,6 @@
 ---
 url: /posts/ai-company-book-destruction-2026-text-to-image-xiaohongshu-lyrics/
-title: AI公司原版书籍销毁！微博热度420万，3个免费AI工具帮你正确玩转AI创作，文生图+小红书文案+歌词生成一站式搞定！
+title: AI公司原版书籍销毁！微博420万，3个免费AI工具正确玩转AI创作
 date: 2026-07-29T00:00:00+08:00
 lastmod: 2026-07-29T00:00:00+08:00
 author: cmdragon

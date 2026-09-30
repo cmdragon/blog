@@ -1,6 +1,6 @@
 ---
 url: /posts/f4ba34abe80a510080bb8b97f5cc92a8/
-title: Strawberry、Graphene还是Ariadne：谁才是FastAPI中GraphQL的最佳拍档？
+title: FastAPI GraphQL库对比：Strawberry、Graphene、Ariadne
 date: 2025-07-18T03:57:51+08:00
 lastmod: 2025-07-18T03:57:51+08:00
 author: cmdragon

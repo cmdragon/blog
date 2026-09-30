@@ -4,10 +4,11 @@ SEO 元数据组件
 */ -}}
 
 <!-- 基础元数据 -->
+{{- $pageDesc := partial "seo/page-description.html" . -}}
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
-<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ if .IsPage }}{{ .Summary | plainify }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
+<meta name="description" content="{{ $pageDesc }}">
 
 <!-- 增强 SEO 元标签 -->
 <meta name="author" content="{{ .Site.Params.author }}">

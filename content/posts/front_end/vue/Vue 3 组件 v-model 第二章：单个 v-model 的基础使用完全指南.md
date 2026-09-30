@@ -1,6 +1,6 @@
 ---
 url: /posts/vue3-component-v-model-chapter-2-single-binding/
-title: Vue 3 组件 v-model 完全指南（二）：单个 v-model 基础实现——modelValue 与事件机制详解
+title: Vue 3 组件 v-model（二）：单个 v-model 基础——modelValue 与事件机制
 date: 2026-04-11T10:00:00+08:00
 lastmod: 2026-04-11T10:00:00+08:00
 author: cmdragon

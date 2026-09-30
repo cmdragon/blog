@@ -1,6 +1,6 @@
 ---
 url: /posts/zhou-hongyi-ai-rules-us-ai-outage-china-ai-chip-2026-ai-image-xiaohongshu-lyrics/
-title: 周鸿祎AI竞争规则+美国AI失控+中国AI芯片国产替代！3个免费AI工具让你跟上AI浪潮，文生图+小红书文案+歌词生成一站式搞定！
+title: 周鸿祎AI竞争规则+美国AI失控+中国AI芯片国产替代！3个免费AI工具跟上浪潮
 date: 2026-07-26T00:00:00+08:00
 lastmod: 2026-07-26T00:00:00+08:00
 author: cmdragon

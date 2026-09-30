@@ -1,6 +1,6 @@
 ---
 url: /en-US/posts/747a97573bf7d430033a808e441737fb/  
-title: mermaid live editor A Lightweight, Efficient Online Flowchart Tool Essential for Professionals and Students  
+title: Mermaid Live Editor： Lightweight Flowchart Tool
 date: 2025-11-23T10:16:32+08:00  
 lastmod: 2025-11-23T10:16:32+08:00  
 author: cmdragon  

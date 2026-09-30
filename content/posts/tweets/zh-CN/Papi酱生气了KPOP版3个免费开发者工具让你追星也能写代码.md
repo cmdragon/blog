@@ -1,6 +1,6 @@
 ---
 url: /posts/papi-kpop-angry-2026-json-markdown-mermaid-developer-tools/
-title: Papi酱生气了KPOP版爆火B站！3个免费开发者工具让你追星也能写代码，JSON可视化+Markdown编辑器+Mermaid编辑器一站式搞定！
+title: Papi酱生气了KPOP版爆火B站！3个免费开发工具让你追星也能写代码
 date: 2026-07-27T00:00:00+08:00
 lastmod: 2026-07-27T00:00:00+08:00
 author: cmdragon

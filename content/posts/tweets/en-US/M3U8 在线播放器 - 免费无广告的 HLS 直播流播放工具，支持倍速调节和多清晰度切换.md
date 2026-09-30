@@ -1,6 +1,6 @@
 ---
 url: /en-US/posts/07755af00a1779ac0ab6cb087ff3eb04/
-title: M3U8 Online Player - Free Ad-Free HLS Livestream Player with Speed Control and Quality Switching
+title: M3U8 Player： Free Ad-Free HLS Streaming
 date: 2026-03-29T11:00:00+08:00
 lastmod: 2026-03-29T11:00:00+08:00
 author: 前端工具侠

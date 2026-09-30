@@ -13,7 +13,7 @@ categories:
 
 
 ---
-![](https://api2.cmdragon.cn/upload/cmder/images/4d9d26ae40a54db7b1f0a8774a90d50c~tplv-5jbd59dj06-image.png)
+![多路直播聚合器界面截图，展示多个 HLS 直播流同时播放的布局](https://api2.cmdragon.cn/upload/cmder/images/4d9d26ae40a54db7b1f0a8774a90d50c~tplv-5jbd59dj06-image.png)
 
 📺 **告别来回切换的烦恼！** 「多路直播聚合器」让你同时掌控 N 个直播流，一切尽在掌握！
 

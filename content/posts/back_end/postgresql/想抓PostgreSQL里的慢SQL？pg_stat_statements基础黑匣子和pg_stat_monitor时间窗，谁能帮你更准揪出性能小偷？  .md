@@ -1,6 +1,6 @@
 ---
 url: /posts/b2213bfcb5b88a862f2138404c03d596/
-title: 想抓PostgreSQL里的慢SQL？pg_stat_statements基础黑匣子和pg_stat_monitor时间窗，谁能帮你更准揪出性能小偷？
+title: 抓PostgreSQL慢SQL：pg_stat_statements与pg_stat_monitor
 date: 2025-10-16T02:00:15+08:00
 lastmod: 2025-10-16T02:00:15+08:00
 author: cmdragon

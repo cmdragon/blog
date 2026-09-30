@@ -1,6 +1,6 @@
 ---
 url: /en-US/posts/07755af00a1779ac0ab6cb087ff3eb00/
-title: Proto File Generator - Generate Standard Protobuf Files with One Click, Boost Development Efficiency
+title: Proto Generator： One-Click Protobuf Files
 date: 2026-03-29T08:30:00+08:00
 lastmod: 2026-03-29T08:30:00+08:00
 author: cmdragon
@@ -15,7 +15,7 @@ tags:
   - Protobuf
 
 ---
-![](https://api2.cmdragon.cn/upload/cmder/images/1774776197859.png)
+![Proto File Generator interface screenshot showing the visual form and generated Protobuf code preview](https://api2.cmdragon.cn/upload/cmder/images/1774776197859.png)
 
 🔧 **Say goodbye to the hassle of manually writing Proto files!** The "Proto File Generator" makes creating Protobuf files this simple!
 

@@ -1,6 +1,6 @@
 ---
 url: /posts/a453a875e784bbb98f84a81a587310cd/
-title: 告别PPT制作耗时难题！pptist  ai快速生成 免费在线工具 5步零基础秒出专业汇报，免费无门槛在线编辑
+title: 告别PPT耗时难题！pptist免费AI生成专业汇报，5步零基础上手
 date: 2025-11-25T15:05:51+08:00
 lastmod: 2025-11-25T15:05:51+08:00
 author: cmdragon

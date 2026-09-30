@@ -1,6 +1,6 @@
 ---
 url: /posts/vue3-component-v-model-chapter-6-custom-implementation/
-title: Vue 3 组件 v-model 完全指南（六）：自定义组件 v-model 实现完全指南——从表单封装到复杂数据结构
+title: Vue 3 组件 v-model（六）：自定义组件实现——从表单封装到复杂数据结构
 date: 2026-04-15T10:00:00+08:00
 lastmod: 2026-04-15T10:00:00+08:00
 author: cmdragon

@@ -29,7 +29,7 @@ tags:
 
 [发现1000+提升效率与开发的AI工具和实用程序](https://tools.cmdragon.cn/zh/apps?category=ai_chat)：https://tools.cmdragon.cn/
 
-# Vue 3模板引用的扩展应用——与Vue其他特性的协同使用场景
+## Vue 3模板引用的扩展应用——与Vue其他特性的协同使用场景
 
 ## 一、模板引用基础回顾
 

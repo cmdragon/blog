@@ -1,6 +1,6 @@
 ---
 url: /posts/ai-art-debate-tools-2026/
-title: AI生成的作品算艺术吗？抖音热搜1050万！3个免费AI工具让你亲自评判，文生图+歌词生成+小红书文案！
+title: AI作品算艺术吗？3个免费AI工具带你评判
 date: 2026-08-01T00:00:00+08:00
 lastmod: 2026-08-01T00:00:00+08:00
 author: cmdragon

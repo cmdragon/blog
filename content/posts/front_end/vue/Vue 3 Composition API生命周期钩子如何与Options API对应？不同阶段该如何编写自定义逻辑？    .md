@@ -1,6 +1,6 @@
 ---
 url: /posts/f1d0f05b60078c4562b22c8bb6b867f3/
-title: Vue 3 Composition API生命周期钩子如何与Options API对应？不同阶段该如何编写自定义逻辑？
+title: Vue 3 Composition API生命周期钩子如何对应 Options API？
 date: 2026-02-21T08:21:31+08:00
 lastmod: 2026-02-21T08:21:31+08:00
 author: cmdragon
@@ -29,7 +29,7 @@ tags:
 
 [发现1000+提升效率与开发的AI工具和实用程序](https://tools.cmdragon.cn/zh/apps?category=ai_chat)：https://tools.cmdragon.cn/
 
-# Vue 3 Composition API 生命周期钩子映射与使用范式
+## Vue 3 Composition API 生命周期钩子映射与使用范式
 
 ## 一、生命周期钩子的基本概念
 

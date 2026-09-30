@@ -29,7 +29,7 @@ tags:
 
 [发现1000+提升效率与开发的AI工具和实用程序](https://tools.cmdragon.cn/zh/apps?category=ai_chat)：https://tools.cmdragon.cn/
 
-# Vue3 生命周期钩子的性能优化策略与陷阱规避
+## Vue3 生命周期钩子的性能优化策略与陷阱规避
 
 ## 一、Vue3 生命周期钩子基础回顾
 

@@ -29,7 +29,7 @@ tags:
 
 [发现1000+提升效率与开发的AI工具和实用程序](https://tools.cmdragon.cn/zh/apps?category=ai_chat)：https://tools.cmdragon.cn/
 
-# Vue3 侦听器实战案例——在组件与Pinia中的应用
+## Vue3 侦听器实战案例——在组件与Pinia中的应用
 
 ## 一、组件内的侦听器基础
 

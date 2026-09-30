@@ -1,6 +1,6 @@
 ---
 url: /posts/trump-ai-images-mocked-2026-text-to-image-xiaohongshu-lyrics/
-title: 特朗普连发数十张AI图遭吐槽！抖音热度910万，3个免费AI工具让你正确玩转AI创作，文生图+小红书文案+歌词生成一站式搞定！
+title: 特朗普连发数十张AI图遭吐槽！抖音910万，3个免费AI工具正确玩转AI创作
 date: 2026-07-28T00:00:00+08:00
 lastmod: 2026-07-28T00:00:00+08:00
 author: cmdragon

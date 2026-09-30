@@ -1,6 +1,6 @@
 ---
 url: /posts/97c66a18ae0e9b57c6a69b8b3a41ddf6/
-title: Vue3中v-show如何通过CSS修改display属性控制条件显示？与v-if的应用场景该如何区分？
+title: Vue3 v-show vs v-if：条件显示与应用场景区分
 date: 2025-12-21T05:42:29+08:00
 lastmod: 2025-12-21T05:42:29+08:00
 author: cmdragon

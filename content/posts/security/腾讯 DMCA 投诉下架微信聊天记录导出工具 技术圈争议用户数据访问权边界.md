@@ -16,7 +16,7 @@ categories:
 ---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_0422a8a9-ad1f-4265-a904-16c97e6ce575.png" title="cover.png" alt="cmdragon_cn.png"/>
 
-# 腾讯通过DMCA投诉下架多款微信聊天记录导出工具 技术圈引发数据访问权争议
+## 腾讯通过DMCA投诉下架多款微信聊天记录导出工具 技术圈引发数据访问权争议
 
 近日，多款开源、免费的微信聊天记录导出工具在GitHub平台因遭腾讯发起的DMCA（数字千年版权法案）投诉而下架，其中包括曾广受用户好评的WeChat Clean等项目。相关开发者披露，投诉方明确为腾讯公司，这一事件在技术圈引发关于用户数据控制权、技术保护措施边界及DMCA条款适用的广泛争议。
 

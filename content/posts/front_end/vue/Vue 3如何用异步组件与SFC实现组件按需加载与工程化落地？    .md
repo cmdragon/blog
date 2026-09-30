@@ -29,7 +29,7 @@ tags:
 
 [发现1000+提升效率与开发的AI工具和实用程序](https://tools.cmdragon.cn/zh/apps?category=ai_chat)：https://tools.cmdragon.cn/
 
-# Vue 3 组件注册的性能优化与工程化落地
+## Vue 3 组件注册的性能优化与工程化落地
 
 ## 一、组件注册的基本概念
 

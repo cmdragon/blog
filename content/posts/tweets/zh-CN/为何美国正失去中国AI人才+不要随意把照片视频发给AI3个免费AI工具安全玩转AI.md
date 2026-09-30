@@ -1,6 +1,6 @@
 ---
 url: /posts/china-ai-talent-privacy-photo-video-ai-text-to-image-xiaohongshu-lyrics/
-title: 为何美国正失去中国AI人才+不要随意把照片视频发给AI！3个免费AI工具让你安全玩转AI创作，文生图+小红书文案+歌词生成一站式搞定！
+title: 美国失去中国AI人才+别把照片视频发给AI！3个免费AI工具安全玩转
 date: 2026-07-24T00:00:00+08:00
 lastmod: 2026-07-24T00:00:00+08:00
 author: cmdragon

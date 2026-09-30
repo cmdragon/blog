@@ -29,7 +29,7 @@ tags:
 
 [发现1000+提升效率与开发的AI工具和实用程序](https://tools.cmdragon.cn/zh/apps?category=ai_chat)：https://tools.cmdragon.cn/
 
-# Vue3组件注册核心概念与基础认知
+## Vue3组件注册核心概念与基础认知
 
 ## 一、组件注册的核心概念
 

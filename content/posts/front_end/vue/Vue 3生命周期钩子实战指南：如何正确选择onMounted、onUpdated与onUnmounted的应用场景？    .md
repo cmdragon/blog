@@ -1,6 +1,6 @@
 ---
 url: /posts/883c6dbc50ae4183770a4462e0b8ae4d/
-title: Vue 3生命周期钩子实战指南：如何正确选择onMounted、onUpdated与onUnmounted的应用场景？
+title: Vue 3生命周期钩子：如何选onMounted/onUpdated/onUnmounted场景？
 date: 2026-02-24T08:12:50+08:00
 lastmod: 2026-02-24T08:12:50+08:00
 author: cmdragon
@@ -29,7 +29,7 @@ tags:
 
 [发现1000+提升效率与开发的AI工具和实用程序](https://tools.cmdragon.cn/zh/apps?category=ai_chat)：https://tools.cmdragon.cn/
 
-# Vue 3 生命周期钩子：实战场景深度解析
+## Vue 3 生命周期钩子：实战场景深度解析
 
 ## 一、生命周期钩子的核心概念
 

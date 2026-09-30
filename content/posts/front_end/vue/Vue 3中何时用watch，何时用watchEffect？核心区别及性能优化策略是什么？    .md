@@ -30,7 +30,7 @@ tags:
 [发现1000+提升效率与开发的AI工具和实用程序](https://tools.cmdragon.cn/zh/apps?category=ai_chat)：https://tools.cmdragon.cn/
 
 
-# Vue 3 侦听器深度解析：watch 与 watchEffect 对比选型及性能优化
+## Vue 3 侦听器深度解析：watch 与 watchEffect 对比选型及性能优化
 
 ## 一、watch 基本概念与用法
 

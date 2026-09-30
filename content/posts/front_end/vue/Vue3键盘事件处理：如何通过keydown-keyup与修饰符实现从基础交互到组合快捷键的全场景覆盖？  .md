@@ -1,6 +1,6 @@
 ---
 url: /posts/f983613df31ace76123ef7cbc6c542bc/
-title: Vue3键盘事件处理：如何通过keydown/keyup与修饰符实现从基础交互到组合快捷键的全场景覆盖？
+title: Vue3键盘事件：keydown/keyup与修饰符实现全场景覆盖
 date: 2026-01-12T04:24:03+08:00
 lastmod: 2026-01-12T04:24:03+08:00
 author: cmdragon

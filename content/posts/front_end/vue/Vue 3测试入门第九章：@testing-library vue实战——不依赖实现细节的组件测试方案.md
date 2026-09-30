@@ -1,6 +1,6 @@
 ---
 url: posts/a1b2c3d4e5f6g7h8/  
-title: Vue 3测试入门第九章：@testing-library/vue实战——不依赖实现细节的组件测试方案    
+title: Vue 3测试入门：@testing-library/vue组件测试实战
 date: 2026-07-21    
 lastmod: 2026-07-21    
 author:  cmdragon      

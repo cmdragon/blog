@@ -29,7 +29,7 @@ tags:
 
 [发现1000+提升效率与开发的AI工具和实用程序](https://tools.cmdragon.cn/zh/apps?category=ai_chat)：https://tools.cmdragon.cn/
 
-# 第八章：动态组件与异步组件的场景化使用
+## 第八章：动态组件与异步组件的场景化使用
 
 ## 一、动态组件：灵活切换的组件渲染机制
 

@@ -18,7 +18,7 @@ tags:
 ---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_9eb0b3d7-3e0e-4ab6-bce2-11862f421d47.png" title="cover.png" alt="cmdragon_cn.png"/>
 
-# 小米海外应用商店GetApps遭机器学习驱动恶意软件入侵，数万用户面临广告欺诈威胁
+## 小米海外应用商店GetApps遭机器学习驱动恶意软件入侵，数万用户面临广告欺诈威胁
 
 2026年1月22日，国际安全厂商Dr.Web发布警示称，小米官方海外应用商店GetApps中发现多款搭载新型Android恶意程序的应用。该恶意软件借助机器学习技术实施隐蔽的广告点击欺诈行为，已波及数万次下载量，用户需立即自查设备以规避风险。
 

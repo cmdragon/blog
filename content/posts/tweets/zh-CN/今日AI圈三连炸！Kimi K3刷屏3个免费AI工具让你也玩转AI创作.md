@@ -1,6 +1,6 @@
 ---
 url: /posts/ai-trend-2026-kimi-k3-text-to-image-xiaohongshu-lyrics/
-title: 今日AI圈三连炸！Kimi K3刷屏+硅谷大佬偷用中国AI+蔡磊获AI特别贡献奖，3个免费AI工具让你也玩转AI创作！
+title: 今日AI圈三连炸！Kimi K3刷屏，3个免费AI工具让你玩转AI创作
 date: 2026-07-19T15:00:00+08:00
 lastmod: 2026-07-19T15:00:00+08:00
 author: cmdragon

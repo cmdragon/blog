@@ -15,7 +15,8 @@ JSON-LD 结构化数据
     "@type": "Person",
     "name": "{{ .Site.Params.author }}"
   },
-  "description": "{{ if .Description }}{{ .Description }}{{ else }}{{ .Summary | plainify }}{{ end }}",
+{{- $pageDesc := partial "seo/page-description.html" . -}}
+  "description": "{{ $pageDesc }}",
   {{ with .Params.cover }}
   "image": "{{ . | absURL }}",
   {{ else }}

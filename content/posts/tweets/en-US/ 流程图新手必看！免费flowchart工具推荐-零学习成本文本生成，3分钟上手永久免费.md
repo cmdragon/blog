@@ -1,6 +1,6 @@
 ---
 url: /en-US/posts/ed40415a58cc641eab9609637ded76c2/  
-title: Must-Read for Flowchart Beginners! Top Free Flowchart Tools Recommended – Zero Learning Curve, Text-to-Diagram in 3 Minutes, Permanently Free  
+title: Free Flowchart Tools： Text-to-Diagram in 3 Minutes
 date: 2025-11-30T15:08:04+08:00  
 lastmod: 2025-11-30T15:08:04+08:00  
 author: cmdragon  

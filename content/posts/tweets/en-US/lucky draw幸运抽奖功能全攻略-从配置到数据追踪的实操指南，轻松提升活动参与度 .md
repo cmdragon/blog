@@ -1,6 +1,6 @@
 ---
 url: /en-US/posts/789a8a96d0b29c756c16823940badd90/
-title: Complete Guide to Lucky Draw Feature - Practical Guide from Configuration to Data Tracking, Easily Boost Event Participation
+title: Lucky Draw Guide： Setup to Participation
 date: 2026-02-13T01:53:29+08:00
 lastmod: 2026-02-13T01:53:29+08:00
 author: cmdragon

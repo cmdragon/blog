@@ -1,6 +1,6 @@
 ---
 url: /posts/mrbeast-beast-games-bilibili-identity-v-red-bean-2026-video-mbti-gamepad/
-title: Mrbeast野兽游戏入驻B站+第五人格红小豆萌翻！3个免费工具让你玩转游戏，视频下载+MBTI测试+手柄检测一站式搞定！
+title: Mrbeast野兽游戏入驻B站+第五人格红小豆，3个免费工具玩转游戏、测手柄
 date: 2026-07-26T00:00:00+08:00
 lastmod: 2026-07-26T00:00:00+08:00
 author: cmdragon

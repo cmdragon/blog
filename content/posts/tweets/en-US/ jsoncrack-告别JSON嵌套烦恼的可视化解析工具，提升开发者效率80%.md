@@ -1,6 +1,6 @@
 ---
 url: /en-US/posts/fa0f26042a7c13693b5635f3f738429b/  
-title: jsoncrack – Banish the Hassle of Nested JSON with Visual Parsing, Boosting Developer Efficiency by 80%  
+title: jsoncrack： Visual JSON Parser for Nested Data
 date: 2025-11-24T05:43:29+08:00  
 lastmod: 2025-11-24T05:43:29+08:00  
 author: cmdragon  

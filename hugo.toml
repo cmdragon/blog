@@ -14,7 +14,7 @@ enableEmoji = true
 # ===========================================
 [params]
   author = "cmdragon"
-  description = "cmdragon's Blog 是一个专注于编程和技术分享的个性化网站，旨在为编程爱好者、学习者和从业者提供全面的前端开发、后端开发以及全栈开发学习资源。"
+  description = "cmdragon's Blog 是一个专注于编程和技术分享的个性化网站，为编程爱好者、学习者和从业者提供全面的前端开发、后端开发以及全栈开发学习资源。这里每天更新行业热点解读与免费在线工具实战教程，涵盖 AI 创作、效率提升、开发技巧等主题，并提供 1000+ 开箱即用的免费在线工具。"
   mainSections = ["posts"]
   license = "Apache License 2.0"
   licenseURL = "/license/"

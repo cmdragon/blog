@@ -1,6 +1,6 @@
 ---
 url: /en-US/posts/07755af00a1779ac0ab6cb087ff3eaff/
-title: Multi-Stream Live Aggregator Supports HLS Protocol, Opening New Multi-Screen Live Monitoring Experience
+title: Multi-Stream Aggregator： HLS Live Monitoring
 date: 2026-03-29T07:40:34+08:00
 lastmod: 2026-03-29T07:40:34+08:00
 author: cmdragon
@@ -13,7 +13,7 @@ categories:
 
 
 ---
-![](https://api2.cmdragon.cn/upload/cmder/images/4d9d26ae40a54db7b1f0a8774a90d50c~tplv-5jbd59dj06-image.png)
+![Multi-Stream Live Aggregator interface screenshot showing multiple HLS live streams playing in a grid layout](https://api2.cmdragon.cn/upload/cmder/images/4d9d26ae40a54db7b1f0a8774a90d50c~tplv-5jbd59dj06-image.png)
 
 📺 **Say goodbye to the trouble of switching back and forth!** The "Multi-Stream Live Aggregator" lets you control N live streams simultaneously, everything under your control!
 

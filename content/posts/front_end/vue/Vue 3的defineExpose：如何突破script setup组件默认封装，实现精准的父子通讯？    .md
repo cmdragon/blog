@@ -1,6 +1,6 @@
 ---
 url: /posts/202ae0f4acde7128e0e31baf63732fb5/
-title: Vue 3的defineExpose：如何突破script setup组件默认封装，实现精准的父子通讯？
+title: Vue 3 defineExpose：突破组件封装实现精准父子通讯
 date: 2026-02-05T10:09:03+08:00
 lastmod: 2026-02-05T10:09:03+08:00
 author: cmdragon

@@ -1,6 +1,6 @@
 ---
 url: /posts/ai-fake-fruit-ai-actor-2026-text-to-image-xiaohongshu-lyrics/
-title: AI伪造烂水果骗退款+AI演员真假难辨！3个免费AI工具让你也玩转AI创作，文生图+文案+写歌一站式搞定！
+title: AI伪造烂水果骗退款+AI演员真假难辨！3个免费AI工具玩转文生图写歌
 date: 2026-07-23T00:00:00+08:00
 lastmod: 2026-07-23T00:00:00+08:00
 author: cmdragon

@@ -1,6 +1,6 @@
 ---
 url: /posts/38b84e85cfb8988407145f189457af6e/
-title: Vue3中v-bind:class与v-bind:style如何实现条件样式、组件样式合并与深层响应式管理？
+title: Vue3 v-bind 条件样式与深层响应式管理
 date: 2025-12-12T05:31:22+08:00
 lastmod: 2025-12-12T05:31:22+08:00
 author: cmdragon

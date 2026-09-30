@@ -4,7 +4,8 @@ Twitter Cards 元数据
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}">
-<meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ if .IsPage }}{{ .Summary | plainify }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
+{{- $pageDesc := partial "seo/page-description.html" . -}}
+<meta name="twitter:description" content="{{ $pageDesc }}">
 
 {{- /* 封面图片 */ -}}
 {{ with .Params.cover }}

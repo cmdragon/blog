@@ -1,6 +1,6 @@
 ---
 url: /posts/audience-reject-ai-drama-intro-shi-ge-qin-tian-live-2026-ai-image-live-aggregator-xiaohongshu/
-title: 观众不能容忍长剧片头用AI+十个勤天直播！3个免费工具让你玩转视频内容，AI文生图+直播聚合+小红书文案一站式搞定！
+title: 观众不能容忍长剧片头用AI+十个勤天直播！3个免费工具玩转视频内容
 date: 2026-07-26T00:00:00+08:00
 lastmod: 2026-07-26T00:00:00+08:00
 author: cmdragon

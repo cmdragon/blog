@@ -18,7 +18,7 @@ tags:
 ---
 <img src="https://api2.cmdragon.cn/upload/cmder/images/generated_image_eb09b590-46a5-4f14-aa1f-4b3b94092451.png" title="cover.png" alt="cmdragon_cn.png"/>
 
-# 小米官方应用商店GetApps曝机器学习驱动恶意软件事件 数万用户设备安全存隐患
+## 小米官方应用商店GetApps曝机器学习驱动恶意软件事件 数万用户设备安全存隐患
 
 2026年1月22日，国际安全厂商Dr.Web发布安全预警称，小米官方应用商店GetApps中发现多款携带新型Android恶意程序的应用，该类恶意软件借助机器学习技术实施隐蔽的广告点击欺诈行为，即使是高评分应用也可能暗藏风险，目前已有累计数万次下载量的用户或受影响。
 

@@ -1,6 +1,6 @@
 ---
 url: /en-US/posts/1965dc6fabd8ba00aa03ad0dc132ae8f/
-title: Quran Explorer – Free Arabic Quran Analysis Tool, Three-Step Deep Deconstruction of Verses, Effortlessly Overcome Language Barriers
+title: Quran Explorer： Free Arabic Analysis & Verse Guide
 date: 2025-12-03T06:57:49+08:00
 lastmod: 2025-12-03T06:57:49+08:00
 author: cmdragon

@@ -1,6 +1,6 @@
 ---
 url: /posts/bc287e1e36287afd90750fd907eca85e/
-title: Vue 3中watch侦听器的正确使用姿势你掌握了吗？深度监听、与watchEffect的差异及常见报错解析
+title: Vue 3 watch侦听器正确用法：深度监听、与watchEffect差异及报错解析
 date: 2025-11-10T01:48:00+08:00
 lastmod: 2025-11-10T01:48:00+08:00
 author: cmdragon

@@ -1,0 +1,42 @@
+{{- /*
+计算页面 meta description（文章页 / OG / Twitter / JSON-LD 共用）
+规则：
+1. 文章页优先 front matter description，其次 summary
+2. 标签页用「标签名 + 站点描述」组合
+3. 其余页面（首页 / 分类 / 归档等）用站点描述
+4. 描述不足 120 字符时，自动用正文纯文本（剔除推广块与二维码引导）补足到 ~160 字符
+   —— Bing SEO 分析要求 meta description 达到 150-160 字符
+*/ -}}
+
+{{- $siteDesc := .Site.Params.description -}}
+{{- $desc := $siteDesc -}}
+
+{{- if eq .Kind "page" -}}
+  {{- with .Description -}}
+    {{- $desc = . -}}
+  {{- else -}}
+    {{- $desc = .Summary | plainify | strings.TrimSpace -}}
+  {{- end -}}
+{{- else if eq .Kind "term" -}}
+  {{- $desc = printf "「%s」标签下的全部文章与教程，%s" .Title $siteDesc | truncate 158 -}}
+{{- end -}}
+
+{{- /* 内容页描述过短时，用正文纯文本自动补足 */ -}}
+{{- if and (eq .Kind "page") (lt (countrunes $desc) 120) -}}
+  {{- $body := .Content | plainify -}}
+  {{- $body = replaceRE `(?s)立即体验：?.*?完全免费！` "" $body -}}
+  {{- $body = replaceRE `扫描.{0,30}?二维码.{0,40}?搜一搜：` "" $body -}}
+  {{- $body = replaceRE `编程智域\s*前端至全栈交流与成长` "" $body -}}
+  {{- $body = replaceRE `\s+` " " $body -}}
+  {{- $body = strings.TrimSpace $body -}}
+  {{- if $body -}}
+    {{- $desc = truncate 158 (print $desc " " $body) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* 兜底：内容页描述最终仍过短（如归档/友链等正文极少的页面）时回退到站点描述 */ -}}
+{{- if and (eq .Kind "page") (lt (countrunes $desc) 50) -}}
+  {{- $desc = $siteDesc -}}
+{{- end -}}
+
+{{- return $desc -}}

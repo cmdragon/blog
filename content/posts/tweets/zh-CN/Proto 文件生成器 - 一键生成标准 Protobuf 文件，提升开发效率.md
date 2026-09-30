@@ -17,7 +17,7 @@ tags:
   - 代码生成
 
 ---
-![](https://api2.cmdragon.cn/upload/cmder/images/1774776197859.png)
+![Proto 文件生成器界面截图，展示可视化表单与生成的 Protobuf 代码预览](https://api2.cmdragon.cn/upload/cmder/images/1774776197859.png)
 
 🔧 **告别手动编写 Proto 文件的繁琐！** 「Proto 文件生成器」让 Protobuf 文件创建变得如此简单！
 

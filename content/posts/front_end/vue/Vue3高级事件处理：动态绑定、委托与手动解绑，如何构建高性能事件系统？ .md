@@ -29,7 +29,7 @@ tags:
 
 [发现1000+提升效率与开发的AI工具和实用程序](https://tools.cmdragon.cn/zh/apps?category=ai_chat)：https://tools.cmdragon.cn/
 
-# Vue3高级事件处理实战：动态绑定、委托与手动解绑
+## Vue3高级事件处理实战：动态绑定、委托与手动解绑
 
 ## 一、动态事件绑定：让事件随需求灵活变化
 
